@@ -21,6 +21,24 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
         container.innerHTML = "";
 
+        if (response.race.verdict || response.race.bettingForecast) {
+
+            const summary = document.createElement("div");
+            summary.className = "race-summary";
+
+            summary.innerHTML = `
+                ${response.race.verdict
+                    ? `<p class="race-summary-verdict">${response.race.verdict}</p>`
+                    : ""}
+                ${response.race.bettingForecast
+                    ? `<p class="race-summary-forecast"><strong>Forecast:</strong> ${response.race.bettingForecast}</p>`
+                    : ""}
+            `;
+
+            container.appendChild(summary);
+
+        }
+
         const runners = [...response.race.runners];
 
         runners.sort((a, b) => b.elite.rating - a.elite.rating);
@@ -39,9 +57,13 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 			const rating = runner.elite.rating;
 
 			let ratingClass = "rating-blue";
-			if (rating >= 55) ratingClass = "rating-gold";
-			else if (rating >= 40) ratingClass = "rating-green";
-			else if (rating < 25) ratingClass = "rating-grey";
+
+			if (rating >= 55)
+				ratingClass = "rating-gold";
+			else if (rating >= 40)
+				ratingClass = "rating-green";
+			else if (rating < 25)
+				ratingClass = "rating-grey";
 
 			const confidence = Math.min(runner.elite.confidence, 100);
 
@@ -53,6 +75,10 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
 					<div class="runner-medal">
 						${medal}
+					</div>
+
+					<div class="runner-cloth">
+						${runner.official_no}
 					</div>
 
 					<img
@@ -70,7 +96,11 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
 						<div class="runner-meta">
 
-							${runner.trainer}
+							T: ${runner.trainer}
+
+							&nbsp;•&nbsp;
+
+							J: ${runner.jockey}
 
 							&nbsp;•&nbsp;
 
@@ -159,14 +189,22 @@ async function loadRaces(meetingId, meetingName) {
 			card.className = "race-card";
 
 			card.innerHTML = `
-				<h3>${race.time}</h3>
-				<p>Class ${race.class} • ${race.distance}</p>
-				<small>${race.runners} runners</small>
+				<span class="race-card-time">${toLocalTimeString(race.time)}</span>
+				<span class="race-card-meta">Class ${race.class} • ${race.distance}</span>
+				<span class="race-card-runners">${race.runners} runners</span>
 			`;
 
 			card.addEventListener("click", () => {
 
-				loadRace(meetingId, race.index, race.time);
+				container.querySelectorAll(".race-card")
+					.forEach(el => el.classList.remove("active"));
+
+				card.classList.add("active");
+
+				loadRace(meetingId, race.index, toLocalTimeString(race.time));
+
+				document.getElementById("analysisSection")
+					.scrollIntoView({ behavior: "smooth", block: "start" });
 
 			});
 
@@ -198,20 +236,33 @@ export async function loadDashboard() {
 		const dashboard = response.dashboard;
 		const best = dashboard.bestOpportunity;
 
+		if (dashboard.nap && dashboard.nap.active) {
+
+			document.getElementById("napCallout").innerHTML = `
+				<span class="nap-label">Today's Nap</span>
+				<div class="nap-name">${dashboard.nap.name}</div>
+				<div class="nap-meta">
+					${dashboard.nap.meeting} • ${dashboard.nap.time}
+					${dashboard.nap.strength ? ` • ${dashboard.nap.strength}` : ""}
+				</div>
+			`;
+
+		}
+
 		if (!best) {
 
 			document.getElementById("bestHorse").textContent = "No selections";
-			document.getElementById("bestRating").textContent = "--";
-			document.getElementById("bestConfidence").textContent = "--%";
+			document.getElementById("bestRating").textContent = "ELITE --";
+			document.getElementById("bestConfidence").textContent = "Confidence --%";
 
 			return;
 		}
 
         document.getElementById("bestHorse").textContent = best.horse ?? "-";
-        document.getElementById("bestRating").textContent = best.rating ?? "-";
-        document.getElementById("bestConfidence").textContent = (best.confidence ?? "--") + "%";
+        document.getElementById("bestRating").textContent = best.rating != null ? `ELITE ${best.rating}` : "-";
+        document.getElementById("bestConfidence").textContent = best.confidence != null ? `Confidence ${best.confidence}%` : "--%";
 		document.getElementById("bestCourse").textContent = best.course ?? "-";
-		document.getElementById("bestRaceTime").textContent = best.raceTime ?? "-";
+		document.getElementById("bestRaceTime").textContent = best.raceTime ? toLocalTimeString(best.raceTime) : "-";
 		const silk = document.getElementById("bestSilk");
 
 		if (best.silkUrl) {
@@ -220,7 +271,56 @@ export async function loadDashboard() {
 		} else {
 			silk.style.display = "none";
 		}
+
+		const heroBadge = document.getElementById("heroBadge");
+
+		if (best.meetingId != null && best.raceIndex != null) {
+
+			heroBadge.style.cursor = "pointer";
+
+			heroBadge.onclick = async () => {
+
+				await loadRaces(best.meetingId, best.course);
+				await loadRace(best.meetingId, best.raceIndex, toLocalTimeString(best.raceTime));
+
+				document.getElementById("analysisSection")
+					.scrollIntoView({ behavior: "smooth", block: "start" });
+
+			};
+
+		}
 		
+		// Build the global race-time list clock.js needs for the
+		// "next race across all courses" countdown. race.time from the
+		// API is UTC (matches how the scraper stores it) - apply the
+		// same BST-aware conversion used elsewhere on the site so this
+		// lines up correctly with getLondonTime()'s local totalSecs.
+		if (dashboard.raceTimes && typeof getLondonTime === "function") {
+
+			window.allRaceTimes = dashboard.raceTimes.map(r => {
+
+				let [h, m] = r.time.split(":").map(Number);
+
+				h += BST_OFFSET;
+				if (h >= 1 && h <= 11) h += 12;
+				if (h >= 24) h -= 24;
+
+				return {
+					course: r.course,
+					displayTime: r.time,
+					totalSecs: (h * 3600) + (m * 60)
+				};
+
+			}).sort((a, b) => a.totalSecs - b.totalSecs);
+
+			if (!window.timerPool?.liveClock) {
+				window.timerPool ??= {};
+				window.timerPool.liveClock = setInterval(updateClock, 1000);
+				updateClock();
+			}
+
+		}
+
 		await loadMeetings();
 
     }
@@ -250,13 +350,19 @@ async function loadMeetings() {
             const card = document.createElement("div");
 
             card.className = "meeting-card";
+            card.dataset.meetingId = meeting.id;
 
 			card.innerHTML = `
-				<h3>${meeting.name}</h3>
-				<p>${meeting.raceCount} races</p>
+				<span class="meeting-card-name">${meeting.name}</span>
+				<span class="meeting-card-count">${meeting.raceCount}</span>
 			`;
 
 			card.addEventListener("click", () => {
+
+				container.querySelectorAll(".meeting-card")
+					.forEach(el => el.classList.remove("active"));
+
+				card.classList.add("active");
 
 				loadRaces(meeting.id, meeting.name);
 

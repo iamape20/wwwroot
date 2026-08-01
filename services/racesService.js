@@ -28,7 +28,8 @@ function getRaces(meetingId) {
             distance: race.distance,
             class: race.race_class,
             runners: race.runners.length,
-            verdict: race.verdict
+            verdict: race.verdict,
+            bettingForecast: race.betting_forecast
 
         }))
 

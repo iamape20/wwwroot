@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/app.css">
 
+    <script src="js/clock.js"></script>
     <script type="module" src="js/app.js"></script>
 
 </head>
@@ -37,63 +38,65 @@
     </nav>
 
     <div class="topbar-right">
-        <div id="clock"></div>
+        <div id="live-clock" class="topbar-clock"></div>
+        <div id="next-race-countdown" class="topbar-countdown"></div>
     </div>
 
 </header>
 
 <main class="wrapper">
 
-    <!-- Hero -->
+    <!-- Top strip: today's meetings (wraps as needed) + NAP on the left,
+         best-opportunity badge on the right. Stacks to a single column
+         on mobile via CSS. -->
 
     <section id="hero">
-        <div class="hero-card">
-            <div class="hero-left">
-                <span class="hero-badge">
-                    ⭐ TODAY'S BEST OPPORTUNITY
-                </span>
+        <div class="top-strip">
 
-					<div class="hero-selection">
+        <div class="top-strip-left">
+            <span class="top-strip-label">Today's Meetings</span>
+            <div id="meetings"></div>
+            <div id="napCallout" class="nap-callout"></div>
+        </div>
 
-						<img
-							id="bestSilk"
-							class="hero-silk"
-							src=""
-							alt=""
-						/>
+        <div id="heroBadge" class="hero-badge-compact">
 
-						<div>
+            <img
+                id="bestSilk"
+                class="hero-badge-silk"
+                src=""
+                alt=""
+            />
 
-							<h2 id="bestHorse">Loading...</h2>
+            <div class="hero-badge-text">
 
-							<div id="bestRating" class="hero-rating"></div>
+                <span class="hero-badge-label">Best Opportunity</span>
 
-							<div id="bestConfidence" class="hero-confidence"></div>
+                <div class="hero-badge-name" id="bestHorse">Loading...</div>
 
-							<div class="hero-location">
-								<span id="bestCourse"></span>
-								<span class="hero-dot">•</span>
-								<span id="bestRaceTime"></span>
-							</div>
+                <div class="hero-badge-row">
+                    <span id="bestRating" class="hero-rating"></span>
+                    <span id="bestConfidence" class="hero-confidence"></span>
+                </div>
 
-						</div>
+                <div class="hero-badge-location">
+                    <span id="bestCourse"></span>
+                    <span class="hero-dot">•</span>
+                    <span id="bestRaceTime"></span>
+                </div>
 
-					</div>                
-				
-				<button class="primary-btn">
-                    View Analysis →
-                </button>
             </div>
+
+            <span class="hero-badge-arrow">→</span>
+
+        </div>
+
         </div>
     </section>
 
-    <!-- Meetings -->
+    <!-- Meetings now live in the top strip above -->
 
     <section>
-
-        <h2>Today's Meetings</h2>
-
-        <div id="meetings"></div>
 
 		<section id="racesSection">
 

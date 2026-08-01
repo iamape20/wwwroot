@@ -15,12 +15,19 @@ function getDashboard() {
 
     meetings = Object.keys(cards).length;
 
+    const raceTimes = [];
+
     for (const meeting of Object.values(cards)) {
 
         races += meeting.races.length;
 
         for (const race of meeting.races) {
             runners += race.runners.length;
+
+            raceTimes.push({
+                course: meeting.name,
+                time: race.time
+            });
         }
     }
 
@@ -28,15 +35,15 @@ function getDashboard() {
 		? ratings
 		: Object.values(ratings);
 
-	for (const meeting of Object.values(ratings)) {
+	for (const [meetingId, meeting] of Object.entries(ratings)) {
 
 		if (!Array.isArray(meeting.races))
 			continue;
 
-		for (const race of meeting.races) {
+		meeting.races.forEach((race, raceIndex) => {
 
 			if (!Array.isArray(race.runners))
-				continue;
+				return;
 
 			for (const runner of race.runners) {
 
@@ -45,6 +52,7 @@ function getDashboard() {
 					runner.power_rating > bestOpportunity.rating
 				) {
 
+
 					bestOpportunity = {
 
 						horse: runner.name,
@@ -52,14 +60,16 @@ function getDashboard() {
 						confidence: runner.confidence,
 						course: meeting.name,
 						raceTime: race.time,
-						silkUrl: runner.silk_url
+						silkUrl: runner.silk_url,
+						meetingId,
+						raceIndex
 
 					};
 				}
 
 			}
 
-		}
+		});
 
 	}
 
@@ -72,6 +82,7 @@ function getDashboard() {
             daily,
             nap,
             bestOpportunity,
+            raceTimes,
 
             statistics: {
 

@@ -502,3 +502,392 @@ body{
 
     transform:translateY(-2px);
 }
+/* ==========================================================
+   Live clock & next-race countdown (topbar-right)
+   ========================================================== */
+
+.topbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.topbar-clock {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: 0.5px;
+}
+
+.topbar-countdown {
+    font-size: 0.85rem;
+    color: #A0AEC0;
+    white-space: nowrap;
+}
+
+/* ==========================================================
+   Race verdict & betting forecast
+   ========================================================== */
+
+.race-verdict-preview {
+    font-size: 0.85rem;
+    color: #A0AEC0;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.race-forecast {
+    font-size: 0.8rem;
+    color: #D4AF37;
+    margin-top: 4px;
+}
+
+.race-summary {
+    background: #111827;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.race-summary-verdict {
+    color: #E5E7EB;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.race-summary-forecast {
+    color: #A0AEC0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.race-summary-forecast strong {
+    color: #D4AF37;
+}
+
+/* ==========================================================
+   Layout redesign: compact course/time nav, dominant analysis
+   ========================================================== */
+
+#meetings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 0;
+}
+
+.meeting-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.meeting-card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.meeting-card-count {
+    font-size: 11px;
+    color: #A0AEC0;
+    background: #000;
+    border-radius: 10px;
+    padding: 1px 7px;
+}
+
+.meeting-card.active {
+    border-color: #D4AF37;
+    background: #1a2233;
+}
+
+.meeting-card.active .meeting-card-count {
+    color: #D4AF37;
+}
+
+#races {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.race-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 16px;
+    min-width: auto;
+}
+
+.race-card-time {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.race-card-meta,
+.race-card-runners {
+    font-size: 12px;
+    color: #A0AEC0;
+}
+
+.race-card.active {
+    border-color: #D4AF37;
+    background: #1a2233;
+}
+
+.race-card.active .race-card-time {
+    color: #D4AF37;
+}
+
+/* The selected race is the whole point of the page - give it real
+   visual weight instead of competing for space with the nav rows above */
+
+#analysisSection {
+    background: #0a0e17;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 10px;
+}
+
+#raceTitle {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.race-summary {
+    padding: 22px;
+}
+
+.race-summary-verdict {
+    font-size: 1.05rem;
+}
+
+/* ==========================================================
+   Cloth (saddle) number badge
+   ========================================================== */
+
+.runner-cloth {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid #2D3748;
+    color: #E5E7EB;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ==========================================================
+   Hero rating & confidence - was unstyled, now matches the
+   badge language already used in the runner cards below
+   ========================================================== */
+
+.hero-rating {
+    display: inline-block;
+    background: #000;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin: 6px 0 4px 0;
+}
+
+.hero-confidence {
+    display: inline-block;
+    color: #A0AEC0;
+    font-size: 13px;
+    margin: 0 0 6px 8px;
+}
+
+/* ==========================================================
+   Hero: compact right-aligned badge (replaces the old
+   full-width hero-card). Old .hero-card/.hero-left/etc rules
+   above are no longer used by any element - safe to delete
+   later, left in place for now to avoid touching more than
+   necessary in one pass.
+   ========================================================== */
+
+#hero {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.hero-badge-compact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #111827;
+    border: 1px solid #D4AF37;
+    border-radius: 12px;
+    padding: 10px 16px;
+    max-width: 340px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.hero-badge-compact:hover {
+    background: #16203a;
+    transform: translateY(-2px);
+}
+
+.hero-badge-silk {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.hero-badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.hero-badge-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.hero-badge-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hero-badge-row .hero-rating {
+    font-size: 11px;
+    padding: 1px 7px;
+    margin: 0;
+}
+
+.hero-badge-row .hero-confidence {
+    font-size: 11px;
+    margin: 0;
+}
+
+.hero-badge-location {
+    font-size: 11px;
+    color: #A0AEC0;
+}
+
+.hero-badge-arrow {
+    color: #D4AF37;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* ==========================================================
+   Top strip: quick stats + NAP callout (left) and the
+   best-opportunity badge (right). Stacks to one column on
+   narrow/mobile screens instead of leaving empty space.
+   ========================================================== */
+
+.top-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.top-strip-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.nap-callout {
+    background: #111827;
+    border: 1px solid #2D3748;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.nap-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.nap-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 2px;
+}
+
+.nap-meta {
+    font-size: 11px;
+    color: #A0AEC0;
+    margin-top: 2px;
+}
+
+/* Mobile portrait: everything stacks to a single column,
+   badge goes full-width to match the stats/NAP block above it */
+@media (max-width: 480px) {
+
+    .top-strip {
+        flex-direction: column;
+    }
+
+    .top-strip-left {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-badge-compact {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    #meetings,
+    #races {
+        gap: 6px;
+    }
+
+    .meeting-card,
+    .race-card {
+        flex: 1 1 auto;
+    }
+
+}
+
+.top-strip-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #D4AF37;
+    font-weight: 700;
+}
