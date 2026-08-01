@@ -1,0 +1,33 @@
+.container{
+
+    width:min(var(--max-width),95%);
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+section{
+
+    margin-bottom:48px;
+
+}
+
+h2{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
