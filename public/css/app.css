@@ -891,3 +891,65 @@ body{
     color: #D4AF37;
     font-weight: 700;
 }
+
+/* ==========================================================
+   Checklist "show your working" panel per runner
+   ========================================================== */
+
+.checklist-toggle {
+    background: none;
+    border: 1px solid #2D3748;
+    color: #A0AEC0;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: .2s;
+}
+
+.checklist-toggle:hover {
+    border-color: #D4AF37;
+    color: #D4AF37;
+}
+
+.checklist-panel {
+    display: none;
+    grid-template-columns: 110px 50px 110px 1fr;
+    gap: 4px 12px;
+    background: #0a0e17;
+    border-top: 1px solid #2D3748;
+    padding: 14px 20px;
+    font-size: 12px;
+}
+
+.checklist-panel.open {
+    display: grid;
+}
+
+.checklist-row {
+    display: contents;
+}
+
+.checklist-label {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+.checklist-points {
+    color: #FFF;
+}
+
+.checklist-answer {
+    color: #E5E7EB;
+}
+
+.checklist-evidence {
+    color: #A0AEC0;
+}
+
+.checklist-empty {
+    color: #A0AEC0;
+    font-size: 12px;
+    padding: 4px 0;
+}

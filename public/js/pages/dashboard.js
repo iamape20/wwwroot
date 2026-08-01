@@ -5,6 +5,46 @@ import {
     getRace
 } from "../services/api.js";
 
+const CHECKLIST_LABELS = {
+    class: "Class",
+    course: "Course",
+    distance: "Distance",
+    recentForm: "Recent Form",
+    speed: "Speed",
+    going: "Going",
+    draw: "Draw",
+    fitness: "Fitness",
+    firstTimeAids: "First-time Aids",
+    jockey: "Jockey",
+    trainer: "Trainer"
+};
+
+function buildChecklistPanel(breakdown) {
+
+    if (!breakdown) {
+        return "<div class=\"checklist-panel\"><div class=\"checklist-empty\">No breakdown data available for this runner.</div></div>";
+    }
+
+    const rows = Object.entries(breakdown).map((entry) => {
+        const key = entry[0];
+        const data = entry[1];
+        const label = CHECKLIST_LABELS[key] || key;
+        const pointsText = data.max > 0 ? (data.points + "/" + data.max) : "N/A";
+        const evidenceText = data.evidence ? data.evidence : (data.note ? data.note : "");
+        return (
+            "<div class=\"checklist-row\">" +
+                "<span class=\"checklist-label\">" + label + "</span>" +
+                "<span class=\"checklist-points\">" + pointsText + "</span>" +
+                "<span class=\"checklist-answer\">" + data.answer + "</span>" +
+                "<span class=\"checklist-evidence\">" + evidenceText + "</span>" +
+            "</div>"
+        );
+    }).join("");
+
+    return "<div class=\"checklist-panel\">" + rows + "</div>";
+
+}
+
 async function loadRace(meetingId, raceIndex, raceTime) {
 
     try {
@@ -145,11 +185,31 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 						${rating.toFixed(2)}
 					</div>
 
+					<button class="checklist-toggle" type="button">
+						Show working ▾
+					</button>
+
 				</div>
 
 			</div>
 
+			${buildChecklistPanel(runner.elite.checklistBreakdown)}
+
 			`;
+
+			const toggleBtn = card.querySelector(".checklist-toggle");
+			const panel = card.querySelector(".checklist-panel");
+
+			if (toggleBtn && panel) {
+
+				toggleBtn.addEventListener("click", () => {
+
+					const isOpen = panel.classList.toggle("open");
+					toggleBtn.textContent = isOpen ? "Hide working ▴" : "Show working ▾";
+
+				});
+
+			}
 			
 			
 			

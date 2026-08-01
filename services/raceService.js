@@ -25,7 +25,7 @@ function getRace(meetingId, raceIndex) {
 	const ratingsRace = ratingsMeeting
 		? ratingsMeeting.races.find(r => r.time === race.time)
 		: null;
-
+	
     return {
 
         meeting: {
@@ -57,11 +57,15 @@ function getRace(meetingId, raceIndex) {
 						elite: elite ? {
 							rating: elite.power_rating,
 							rank: null,
-							confidence: elite.confidence
+							confidence: elite.confidence,
+							checklistBreakdown: elite.checklist_breakdown,
+							checklistPoints: elite.checklist_points
 						} : {
 						rating: null,
 						rank: null,
-						confidence: null
+						confidence: null,
+						checklistBreakdown: null,
+						checklistPoints: null
 					}
 
 				};
