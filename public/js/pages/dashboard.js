@@ -78,25 +78,29 @@ function buildTripClassBadges(breakdown) {
     const classChange = breakdown.classChange;
     if (classChange && classChange.answer !== "N/A") {
 
-        if (classChange.answer === "Down") {
-            parts.push(`<span class="tc-badge tc-badge-good" title="${classChange.evidence || ""}">↓ Class (advantage)</span>`);
-        } else if (classChange.answer === "Up") {
-            parts.push(`<span class="tc-badge tc-badge-neutral" title="${classChange.evidence || ""}">↑ Class</span>`);
-        } else {
-            parts.push(`<span class="tc-badge tc-badge-neutral" title="${classChange.evidence || ""}">= Class</span>`);
-        }
+        const cls = classChange.answer === "Down" ? "tc-mini-good"
+                  : classChange.answer === "Up" ? "tc-mini-bad"
+                  : "tc-mini-neutral";
+
+        parts.push(`<span class="tc-mini ${cls}" title="Class: ${classChange.evidence || classChange.answer}">C</span>`);
 
     }
 
     const tripChange = breakdown.tripChange;
     if (tripChange && tripChange.answer !== "N/A") {
 
-        const arrow = tripChange.answer === "Up" ? "↑" : tripChange.answer === "Down" ? "↓" : "=";
-        parts.push(`<span class="tc-badge tc-badge-info" title="${tripChange.evidence || ""}">${arrow} Trip</span>`);
+        // Same directional convention as Class, applied here for display
+        // only - dropping back to a proven trip is lower-risk than
+        // stepping up into unproven ground. Doesn't affect the score.
+        const cls = tripChange.answer === "Down" ? "tc-mini-good"
+                  : tripChange.answer === "Up" ? "tc-mini-bad"
+                  : "tc-mini-neutral";
+
+        parts.push(`<span class="tc-mini ${cls}" title="Trip: ${tripChange.evidence || tripChange.answer}">T</span>`);
 
     }
 
-    return parts.length ? `<div class="trip-class-badges">${parts.join("")}</div>` : "";
+    return parts.join("");
 
 }
 
@@ -250,9 +254,9 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
 							Wt ${runner.weight}
 
-						</div>
+							${buildTripClassBadges(runner.elite.checklistBreakdown)}
 
-						${buildTripClassBadges(runner.elite.checklistBreakdown)}
+						</div>
 
 						<div class="confidence-bar">
 

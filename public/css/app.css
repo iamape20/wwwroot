@@ -1103,39 +1103,37 @@ body{
 }
 
 /* ==========================================================
-   Trip/Class change badges - visible on the card directly,
-   not buried behind "Show working"
+   Trip/Class change badges - compact inline letters (C/T)
+   appended to the meta line, not a separate row
    ========================================================== */
 
-.trip-class-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 6px;
-}
-
-.tc-badge {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 9px;
-    border-radius: 5px;
+.tc-mini {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-left: 4px;
     cursor: default;
 }
 
-.tc-badge-good {
-    background: rgba(212, 175, 55, 0.15);
-    border: 1px solid #D4AF37;
-    color: #D4AF37;
+.tc-mini-good {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22C55E;
+    color: #22C55E;
 }
 
-.tc-badge-neutral {
+.tc-mini-bad {
+    background: rgba(220, 38, 38, 0.15);
+    border: 1px solid #DC2626;
+    color: #DC2626;
+}
+
+.tc-mini-neutral {
     background: rgba(160, 174, 192, 0.08);
     border: 1px solid #2D3748;
     color: #A0AEC0;
-}
-
-.tc-badge-info {
-    background: rgba(160, 174, 192, 0.08);
-    border: 1px solid #2D3748;
-    color: #E5E7EB;
 }
