@@ -286,7 +286,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 					</div>
 
 					<div class="rating ${ratingClass}">
-						${rating.toFixed(2)}
+						${rating.toFixed(1)}
 					</div>
 
 					<button class="checklist-toggle" type="button">
