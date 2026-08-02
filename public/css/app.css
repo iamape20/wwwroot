@@ -881,6 +881,17 @@ body{
         width: 100%;
         max-width: none;
         box-sizing: border-box;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .hero-badge-silk {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-badge-name {
+        font-size: 13px;
     }
 
     #meetings,
@@ -891,6 +902,27 @@ body{
     .meeting-card,
     .race-card {
         flex: 1 1 auto;
+    }
+
+    /* Logo and title banner take up space with no functional value
+       on a narrow phone screen - hide them entirely and let the nav
+       and clock have the room instead */
+    .brand-logo,
+    .brand-text {
+        display: none;
+    }
+
+    .topbar {
+        padding: 12px 0 16px;
+        margin-bottom: 16px;
+    }
+
+    .navigation {
+        gap: 14px;
+    }
+
+    .navigation a {
+        font-size: 13px;
     }
 
 }
