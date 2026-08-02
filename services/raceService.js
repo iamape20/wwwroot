@@ -37,6 +37,7 @@ function getRace(meetingId, raceIndex) {
 
         race: {
             index,
+            title: race.display_title || "Race",
             time: race.time,
             distance: race.distance,
             class: race.race_class,

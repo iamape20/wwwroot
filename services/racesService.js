@@ -24,6 +24,7 @@ function getRaces(meetingId) {
         races: meeting.races.map((race, index) => ({
 
             index,
+            title: race.display_title || "Race",
             time: race.time,
             distance: race.distance,
             class: race.race_class,

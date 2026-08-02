@@ -1101,3 +1101,41 @@ body{
 .draw-adv-neutral {
     color: #A0AEC0;
 }
+
+/* ==========================================================
+   Trip/Class change badges - visible on the card directly,
+   not buried behind "Show working"
+   ========================================================== */
+
+.trip-class-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.tc-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.tc-badge-good {
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+}
+
+.tc-badge-neutral {
+    background: rgba(160, 174, 192, 0.08);
+    border: 1px solid #2D3748;
+    color: #A0AEC0;
+}
+
+.tc-badge-info {
+    background: rgba(160, 174, 192, 0.08);
+    border: 1px solid #2D3748;
+    color: #E5E7EB;
+}

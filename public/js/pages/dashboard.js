@@ -69,6 +69,37 @@ function buildChecklistSummary(breakdown) {
 
 }
 
+function buildTripClassBadges(breakdown) {
+
+    if (!breakdown) return "";
+
+    const parts = [];
+
+    const classChange = breakdown.classChange;
+    if (classChange && classChange.answer !== "N/A") {
+
+        if (classChange.answer === "Down") {
+            parts.push(`<span class="tc-badge tc-badge-good" title="${classChange.evidence || ""}">↓ Class (advantage)</span>`);
+        } else if (classChange.answer === "Up") {
+            parts.push(`<span class="tc-badge tc-badge-neutral" title="${classChange.evidence || ""}">↑ Class</span>`);
+        } else {
+            parts.push(`<span class="tc-badge tc-badge-neutral" title="${classChange.evidence || ""}">= Class</span>`);
+        }
+
+    }
+
+    const tripChange = breakdown.tripChange;
+    if (tripChange && tripChange.answer !== "N/A") {
+
+        const arrow = tripChange.answer === "Up" ? "↑" : tripChange.answer === "Down" ? "↓" : "=";
+        parts.push(`<span class="tc-badge tc-badge-info" title="${tripChange.evidence || ""}">${arrow} Trip</span>`);
+
+    }
+
+    return parts.length ? `<div class="trip-class-badges">${parts.join("")}</div>` : "";
+
+}
+
 function buildChecklistPanel(breakdown) {
 
     if (!breakdown) {
@@ -105,7 +136,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
             return;
 
         document.getElementById("raceTitle").textContent =
-            `${response.meeting.name} ${raceTime} - Elite Power Ratings`;
+            `${response.meeting.name} ${raceTime} - ${response.race.title}`;
 
         const drawAdv = response.race.drawAdvantage || "None";
         const drawAdvClass = drawAdv === "None" ? "draw-adv-neutral" : "draw-adv-active";
@@ -221,6 +252,8 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
 						</div>
 
+						${buildTripClassBadges(runner.elite.checklistBreakdown)}
+
 						<div class="confidence-bar">
 
 							<div
@@ -329,9 +362,6 @@ async function loadRaces(meetingId, meetingName) {
 				card.classList.add("active");
 
 				loadRace(meetingId, race.index, toLocalTimeString(race.time));
-
-				document.getElementById("analysisSection")
-					.scrollIntoView({ behavior: "smooth", block: "start" });
 
 			});
 
@@ -447,7 +477,7 @@ export async function loadDashboard() {
 
 				return {
 					course: r.course,
-					displayTime: r.time,
+					displayTime: toLocalTimeString(r.time),
 					totalSecs: (h * 3600) + (m * 60)
 				};
 
