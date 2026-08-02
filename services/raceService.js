@@ -42,6 +42,7 @@ function getRace(meetingId, raceIndex) {
             class: race.race_class,
             verdict: race.verdict,
             bettingForecast: race.betting_forecast,
+            drawAdvantage: ratingsRace?.draw_advantage || "None",
 			runners: race.runners.map(runner => {
 
 			const elite = ratingsRace

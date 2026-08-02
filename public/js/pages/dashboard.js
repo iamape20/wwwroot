@@ -19,6 +19,56 @@ const CHECKLIST_LABELS = {
     trainer: "Trainer"
 };
 
+const CHECKLIST_SHORT = {
+    class: "Cl", course: "Co", distance: "Di", recentForm: "RF",
+    speed: "Sp", going: "Go", draw: "Dr", fitness: "Fi",
+    firstTimeAids: "FT", jockey: "Jo", trainer: "Tr"
+};
+
+function drawBadgeClass(breakdown) {
+
+    const draw = breakdown?.draw;
+    if (!draw || draw.max === 0) return "runner-draw-neutral";
+
+    if (draw.answer === "No") return "runner-draw-good";  // "No" = not inconvenienced
+    if (draw.answer === "Yes") return "runner-draw-bad";  // "Yes" = inconvenienced
+
+    return "runner-draw-neutral";
+
+}
+
+function drawBadgeTitle(breakdown) {
+
+    const draw = breakdown?.draw;
+    if (!draw || draw.max === 0) return "No draw bias data for this course/distance";
+
+    return draw.evidence || (draw.answer === "No" ? "Favourable draw" : "Unfavourable draw");
+
+}
+
+function buildChecklistSummary(breakdown) {
+
+    if (!breakdown) return "";
+
+    const chips = Object.entries(breakdown)
+        .filter(([, data]) => data.max > 0)
+        .map(([key, data]) => {
+
+            const short = CHECKLIST_SHORT[key] || key.slice(0, 2);
+            const full = CHECKLIST_LABELS[key] || key;
+
+            let chipClass = "checklist-chip-zero";
+            if (data.points === data.max) chipClass = "checklist-chip-full";
+            else if (data.points > 0) chipClass = "checklist-chip-partial";
+
+            return "<span class=\"checklist-chip " + chipClass + "\" title=\"" + full + ": " + data.answer + "\">" + short + "</span>";
+
+        }).join("");
+
+    return chips ? "<div class=\"checklist-summary\">" + chips + "</div>" : "";
+
+}
+
 function buildChecklistPanel(breakdown) {
 
     if (!breakdown) {
@@ -57,6 +107,17 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         document.getElementById("raceTitle").textContent =
             `${response.meeting.name} ${raceTime} - Elite Power Ratings`;
 
+        const drawAdv = response.race.drawAdvantage || "None";
+        const drawAdvClass = drawAdv === "None" ? "draw-adv-neutral" : "draw-adv-active";
+
+        document.getElementById("raceInfoBanner").innerHTML = `
+            <span class="race-info-item">Class ${response.race.class ?? "-"}</span>
+            <span class="race-info-dot">•</span>
+            <span class="race-info-item">${response.race.distance ?? "-"}</span>
+            <span class="race-info-dot">•</span>
+            <span class="race-info-item ${drawAdvClass}">Draw Advantage: ${drawAdv}</span>
+        `;
+
         const container = document.getElementById("analysis");
 
         container.innerHTML = "";
@@ -68,7 +129,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
             summary.innerHTML = `
                 ${response.race.verdict
-                    ? `<p class="race-summary-verdict">${response.race.verdict}</p>`
+                    ? `<p class="race-summary-verdict"><strong>Analysis:</strong> ${response.race.verdict}</p>`
                     : ""}
                 ${response.race.bettingForecast
                     ? `<p class="race-summary-forecast"><strong>Forecast:</strong> ${response.race.bettingForecast}</p>`
@@ -121,6 +182,10 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 						${runner.official_no}
 					</div>
 
+					<div class="runner-draw ${drawBadgeClass(runner.elite.checklistBreakdown)}" title="${drawBadgeTitle(runner.elite.checklistBreakdown)}">
+						${runner.draw ?? "-"}
+					</div>
+
 					<img
 						class="runner-silk"
 						src="${runner.silk_url}"
@@ -170,6 +235,8 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 							Confidence ${confidence.toFixed(1)}%
 
 						</div>
+
+						${buildChecklistSummary(runner.elite.checklistBreakdown)}
 
 					</div>
 
@@ -296,9 +363,13 @@ export async function loadDashboard() {
 		const dashboard = response.dashboard;
 		const best = dashboard.bestOpportunity;
 
+		const napEl = document.getElementById("napCallout");
+
 		if (dashboard.nap && dashboard.nap.active) {
 
-			document.getElementById("napCallout").innerHTML = `
+			napEl.style.display = "";
+
+			napEl.innerHTML = `
 				<span class="nap-label">Today's Nap</span>
 				<div class="nap-name">${dashboard.nap.name}</div>
 				<div class="nap-meta">
@@ -306,6 +377,10 @@ export async function loadDashboard() {
 					${dashboard.nap.strength ? ` • ${dashboard.nap.strength}` : ""}
 				</div>
 			`;
+
+		} else {
+
+			napEl.style.display = "none";
 
 		}
 
@@ -338,15 +413,20 @@ export async function loadDashboard() {
 
 			heroBadge.style.cursor = "pointer";
 
-			heroBadge.onclick = async () => {
-
+			const goToBestRace = async () => {
 				await loadRaces(best.meetingId, best.course);
 				await loadRace(best.meetingId, best.raceIndex, toLocalTimeString(best.raceTime));
+			};
 
+			heroBadge.onclick = async () => {
+				await goToBestRace();
 				document.getElementById("analysisSection")
 					.scrollIntoView({ behavior: "smooth", block: "start" });
-
 			};
+
+			// Show real content immediately on page load instead of an
+			// empty "Select a Meeting" placeholder - no click required.
+			goToBestRace();
 
 		}
 		

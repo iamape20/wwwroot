@@ -567,6 +567,10 @@ body{
     color: #D4AF37;
 }
 
+.race-summary-verdict strong {
+    color: #D4AF37;
+}
+
 /* ==========================================================
    Layout redesign: compact course/time nav, dominant analysis
    ========================================================== */
@@ -581,23 +585,29 @@ body{
 .meeting-card {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 14px;
-    border-radius: 20px;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 24px;
+    background: #2A1620;
+    border: 1px solid #5C2E3E;
+}
+
+.meeting-card:hover {
+    border-color: #D4AF37;
 }
 
 .meeting-card-name {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: #FFF;
 }
 
 .meeting-card-count {
-    font-size: 11px;
+    font-size: 12px;
     color: #A0AEC0;
     background: #000;
     border-radius: 10px;
-    padding: 1px 7px;
+    padding: 2px 9px;
 }
 
 .meeting-card.active {
@@ -666,7 +676,7 @@ body{
 }
 
 .race-summary-verdict {
-    font-size: 1.05rem;
+    font-size: 0.9rem;
 }
 
 /* ==========================================================
@@ -674,14 +684,14 @@ body{
    ========================================================== */
 
 .runner-cloth {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background: #000;
-    border: 1px solid #2D3748;
-    color: #E5E7EB;
-    font-size: 13px;
-    font-weight: 700;
+    background: #1a2233;
+    border: 1px solid #4A5568;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -722,7 +732,6 @@ body{
 
 #hero {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 20px;
 }
 
@@ -815,11 +824,13 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
+    width: 100%;
 }
 
 .top-strip-left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     flex: 1;
     min-width: 220px;
@@ -952,4 +963,109 @@ body{
     color: #A0AEC0;
     font-size: 12px;
     padding: 4px 0;
+}
+
+/* ==========================================================
+   Compact per-card checklist summary (always visible, no
+   click needed - the density pass)
+   ========================================================== */
+
+.checklist-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.checklist-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 18px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.checklist-chip-full {
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+}
+
+.checklist-chip-partial {
+    background: rgba(160, 174, 192, 0.1);
+    border: 1px solid #4A5568;
+    color: #A0AEC0;
+}
+
+.checklist-chip-zero {
+    background: rgba(74, 85, 104, 0.08);
+    border: 1px solid #2D3748;
+    color: #4A5568;
+}
+
+/* ==========================================================
+   Draw number badge - highlighted using the checklist
+   engine's own draw-bias verdict (real drawBias data from
+   Libraries.json, not a separate/duplicated calculation)
+   ========================================================== */
+
+.runner-draw {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: default;
+}
+
+.runner-draw-neutral {
+    background: #000;
+    border: 1px solid #2D3748;
+    color: #E5E7EB;
+}
+
+.runner-draw-good {
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+}
+
+.runner-draw-bad {
+    background: rgba(160, 82, 82, 0.12);
+    border: 1px solid #7A3535;
+    color: #C77B7B;
+}
+
+/* ==========================================================
+   Race info banner - Class / Distance / Draw Advantage
+   ========================================================== */
+
+.race-info-banner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #A0AEC0;
+    margin-bottom: 14px;
+}
+
+.race-info-dot {
+    color: #4A5568;
+}
+
+.draw-adv-active {
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.draw-adv-neutral {
+    color: #A0AEC0;
 }
