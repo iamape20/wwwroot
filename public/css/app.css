@@ -102,7 +102,7 @@ body{
 }
 
 #bestHorse{
-    font-size:13px;
+    font-size:19px;
     margin:0;
 }
 
@@ -379,7 +379,7 @@ body{
 #bestHorse{
     margin:0;
     color:#fff;
-    font-size:13px;
+    font-size:19px;
     font-weight:700;
     line-height:1.1;
 }
@@ -585,11 +585,11 @@ body{
 .meeting-card {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 18px;
-    border-radius: 24px;
-    background: #2A1620;
-    border: 1px solid #5C2E3E;
+    gap: 14px;
+    padding: 17px 28px;
+    border-radius: 30px;
+    background: #3D1F2C;
+    border: 3px solid #9C5470;
 }
 
 .meeting-card:hover {
@@ -597,17 +597,17 @@ body{
 }
 
 .meeting-card-name {
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 700;
     color: #FFF;
 }
 
 .meeting-card-count {
-    font-size: 12px;
-    color: #A0AEC0;
+    font-size: 14px;
+    color: #E5E7EB;
     background: #000;
-    border-radius: 10px;
-    padding: 2px 9px;
+    border-radius: 12px;
+    padding: 3px 11px;
 }
 
 .meeting-card.active {
@@ -739,12 +739,13 @@ body{
 .hero-badge-compact {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
     background: #111827;
     border: 1px solid #D4AF37;
-    border-radius: 12px;
-    padding: 8px 14px;
-    max-width: 300px;
+    border-radius: 14px;
+    padding: 14px 22px;
+    max-width: 380px;
+    margin-top: 28px;
     cursor: pointer;
     transition: .2s;
 }
@@ -755,8 +756,8 @@ body{
 }
 
 .hero-badge-silk {
-    width: 34px;
-    height: 34px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -764,12 +765,12 @@ body{
 .hero-badge-text {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
     min-width: 0;
 }
 
 .hero-badge-label {
-    font-size: 9px;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .5px;
     color: #D4AF37;
@@ -777,7 +778,7 @@ body{
 }
 
 .hero-badge-name {
-    font-size: 13px;
+    font-size: 19px;
     font-weight: 700;
     color: #FFF;
     white-space: nowrap;
@@ -792,24 +793,24 @@ body{
 }
 
 .hero-badge-row .hero-rating {
-    font-size: 10px;
-    padding: 1px 6px;
+    font-size: 13px;
+    padding: 2px 9px;
     margin: 0;
 }
 
 .hero-badge-row .hero-confidence {
-    font-size: 10px;
+    font-size: 13px;
     margin: 0;
 }
 
 .hero-badge-location {
-    font-size: 10px;
+    font-size: 13px;
     color: #A0AEC0;
 }
 
 .hero-badge-arrow {
     color: #D4AF37;
-    font-size: 17px;
+    font-size: 22px;
     flex-shrink: 0;
 }
 
@@ -1119,4 +1120,230 @@ body{
     background: rgba(160, 174, 192, 0.08);
     border: 1px solid #2D3748;
     color: #A0AEC0;
+}
+
+/* ==========================================================
+   Portrait mobile (phones) - the desktop-sized hero badge,
+   course pills, and dense runner cards need their own smaller
+   versions here rather than inheriting the desktop sizing.
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+    /* Logo and nav take up valuable space with limited benefit
+       on a narrow phone screen */
+    .brand-logo,
+    .brand-text {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .topbar {
+        padding: 12px 16px 16px;
+    }
+
+    .wrapper {
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    /* Top strip stacks instead of sitting side by side */
+    .top-strip {
+        flex-direction: column;
+    }
+
+    .top-strip-left {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .top-strip-label {
+        font-size: 11px;
+    }
+
+    /* Course pills - desktop made these deliberately bold and
+       large; phones need a scaled-back version of the same idea */
+    .meeting-card {
+        padding: 10px 16px;
+        gap: 8px;
+        border-width: 2px;
+    }
+
+    .meeting-card-name {
+        font-size: 15px;
+    }
+
+    .meeting-card-count {
+        font-size: 11px;
+        padding: 2px 8px;
+    }
+
+    /* Hero badge - back down to a compact size for mobile,
+       full width instead of floating top-right */
+    .hero-badge-compact {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 8px 14px;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .hero-badge-silk {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hero-badge-name,
+    #bestHorse {
+        font-size: 14px !important;
+    }
+
+    .hero-badge-label {
+        font-size: 9px;
+    }
+
+    .hero-badge-row .hero-rating,
+    .hero-badge-row .hero-confidence,
+    .hero-badge-location {
+        font-size: 10px;
+    }
+
+    .hero-badge-arrow {
+        font-size: 17px;
+    }
+
+    /* Race time tiles */
+    .race-card {
+        padding: 8px 12px;
+    }
+
+    .race-card-time {
+        font-size: 14px;
+    }
+
+    .race-card-meta,
+    .race-card-runners {
+        font-size: 10px;
+    }
+
+    /* Analysis section and its heading */
+    #analysisSection {
+        padding: 14px;
+        margin-left: 0;
+    }
+
+    #raceTitle {
+        font-size: 17px;
+        margin-left: 0 !important;
+    }
+
+    .race-summary {
+        padding: 12px;
+    }
+
+    .race-summary-verdict,
+    .race-summary-forecast {
+        font-size: 12px;
+    }
+
+    .race-info-banner {
+        font-size: 11px;
+        flex-wrap: wrap;
+    }
+
+    /* Runner cards - stack instead of squeezing rating box
+       beside the horse info, shrink every icon */
+    .runner-card {
+        padding: 12px 14px;
+    }
+
+    .runner-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .runner-left {
+        gap: 8px;
+    }
+
+    .runner-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .rating {
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    .runner-name {
+        font-size: 14px;
+    }
+
+    .runner-meta {
+        font-size: 11px;
+    }
+
+    .runner-silk {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .runner-cloth {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+
+    .runner-draw {
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
+    }
+
+    .checklist-chip {
+        width: 18px;
+        height: 15px;
+        font-size: 8px;
+    }
+
+    .tc-mini {
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+    }
+
+    .checklist-toggle {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    /* Checklist "show working" panel used a fixed multi-column
+       grid built for desktop width - stack it instead */
+    .checklist-panel {
+        display: block;
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+
+    .checklist-row {
+        display: block;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #1a2233;
+    }
+
+    .checklist-row:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
 }
