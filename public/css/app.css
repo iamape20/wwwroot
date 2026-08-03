@@ -868,49 +868,6 @@ body{
 
 /* Mobile portrait: everything stacks to a single column,
    badge goes full-width to match the stats/NAP block above it */
-/* Phones in landscape: viewport width is large, but the physical
-   screen is still small - target by HEIGHT instead of width, since
-   landscape phones are wide but short */
-@media (max-height: 500px) and (orientation: landscape) {
-
-    .runner-row {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .runner-name {
-        font-size: 14px;
-    }
-
-    .runner-meta {
-        font-size: 10px;
-    }
-
-    .runner-silk {
-        width: 30px !important;
-        height: 30px !important;
-    }
-
-    .rating {
-        font-size: 15px;
-        padding: 6px 12px;
-    }
-
-    #analysisSection {
-        padding: 12px;
-    }
-
-    #raceTitle {
-        font-size: 16px;
-    }
-
-    .race-summary-verdict,
-    .race-summary-forecast,
-    .race-info-banner {
-        font-size: 12px;
-    }
-
-}
 .top-strip-label {
     font-size: 13px;
     text-transform: uppercase;
@@ -1128,7 +1085,7 @@ body{
    versions here rather than inheriting the desktop sizing.
    ========================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 500px) and (orientation: landscape) {
 
     /* Logo and nav take up valuable space with limited benefit
        on a narrow phone screen */
