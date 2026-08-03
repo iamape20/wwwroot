@@ -102,8 +102,8 @@ body{
 }
 
 #bestHorse{
-    font-size:28px;
-    margin:4px 0 10px;
+    font-size:13px;
+    margin:0;
 }
 
 
@@ -326,7 +326,7 @@ body{
     max-width:1400px;
     margin:0 auto 30px auto;
 
-    padding:16px 0 24px;
+    padding:16px 20px 24px;
 
     border-bottom:1px solid #1f2937;
 }
@@ -379,7 +379,7 @@ body{
 #bestHorse{
     margin:0;
     color:#fff;
-    font-size:30px;
+    font-size:13px;
     font-weight:700;
     line-height:1.1;
 }
@@ -630,20 +630,20 @@ body{
 .race-card {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    padding: 10px 16px;
+    gap: 3px;
+    padding: 14px 20px;
     min-width: auto;
 }
 
 .race-card-time {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     color: #FFF;
 }
 
 .race-card-meta,
 .race-card-runners {
-    font-size: 12px;
+    font-size: 14px;
     color: #A0AEC0;
 }
 
@@ -669,6 +669,7 @@ body{
 #raceTitle {
     font-size: 24px;
     margin-bottom: 18px;
+    margin-left: -28px;
 }
 
 .race-summary {
@@ -738,12 +739,12 @@ body{
 .hero-badge-compact {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     background: #111827;
     border: 1px solid #D4AF37;
     border-radius: 12px;
-    padding: 10px 16px;
-    max-width: 340px;
+    padding: 8px 14px;
+    max-width: 300px;
     cursor: pointer;
     transition: .2s;
 }
@@ -754,8 +755,8 @@ body{
 }
 
 .hero-badge-silk {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -768,7 +769,7 @@ body{
 }
 
 .hero-badge-label {
-    font-size: 10px;
+    font-size: 9px;
     text-transform: uppercase;
     letter-spacing: .5px;
     color: #D4AF37;
@@ -776,7 +777,7 @@ body{
 }
 
 .hero-badge-name {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     color: #FFF;
     white-space: nowrap;
@@ -791,24 +792,24 @@ body{
 }
 
 .hero-badge-row .hero-rating {
-    font-size: 11px;
-    padding: 1px 7px;
+    font-size: 10px;
+    padding: 1px 6px;
     margin: 0;
 }
 
 .hero-badge-row .hero-confidence {
-    font-size: 11px;
+    font-size: 10px;
     margin: 0;
 }
 
 .hero-badge-location {
-    font-size: 11px;
+    font-size: 10px;
     color: #A0AEC0;
 }
 
 .hero-badge-arrow {
     color: #D4AF37;
-    font-size: 20px;
+    font-size: 17px;
     flex-shrink: 0;
 }
 
@@ -866,69 +867,51 @@ body{
 
 /* Mobile portrait: everything stacks to a single column,
    badge goes full-width to match the stats/NAP block above it */
-@media (max-width: 480px) {
+/* Phones in landscape: viewport width is large, but the physical
+   screen is still small - target by HEIGHT instead of width, since
+   landscape phones are wide but short */
+@media (max-height: 500px) and (orientation: landscape) {
 
-    .top-strip {
-        flex-direction: column;
+    .runner-row {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .top-strip-left {
-        width: 100%;
-        min-width: 0;
+    .runner-name {
+        font-size: 14px;
     }
 
-    .hero-badge-compact {
-        width: 100%;
-        max-width: none;
-        box-sizing: border-box;
-        padding: 8px 12px;
-        gap: 8px;
+    .runner-meta {
+        font-size: 10px;
     }
 
-    .hero-badge-silk {
-        width: 30px;
-        height: 30px;
+    .runner-silk {
+        width: 30px !important;
+        height: 30px !important;
     }
 
-    .hero-badge-name {
-        font-size: 13px;
+    .rating {
+        font-size: 15px;
+        padding: 6px 12px;
     }
 
-    #meetings,
-    #races {
-        gap: 6px;
+    #analysisSection {
+        padding: 12px;
     }
 
-    .meeting-card,
-    .race-card {
-        flex: 1 1 auto;
+    #raceTitle {
+        font-size: 16px;
     }
 
-    /* Logo and title banner take up space with no functional value
-       on a narrow phone screen - hide them entirely and let the nav
-       and clock have the room instead */
-    .brand-logo,
-    .brand-text {
-        display: none;
-    }
-
-    .topbar {
-        padding: 12px 0 16px;
-        margin-bottom: 16px;
-    }
-
-    .navigation {
-        gap: 14px;
-    }
-
-    .navigation a {
-        font-size: 13px;
+    .race-summary-verdict,
+    .race-summary-forecast,
+    .race-info-banner {
+        font-size: 0.75rem;
     }
 
 }
-
 .top-strip-label {
-    font-size: 10px;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: .5px;
     color: #D4AF37;
