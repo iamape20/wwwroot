@@ -1303,4 +1303,24 @@ body{
         margin-bottom: 0;
     }
 
+    .checklist-label {
+        display: inline-block;
+    }
+
+    .checklist-points {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    .checklist-answer {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .checklist-evidence {
+        display: block;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
 }
