@@ -1284,11 +1284,16 @@ body{
     }
 
     /* Checklist "show working" panel used a fixed multi-column
-       grid built for desktop width - stack it instead */
+       grid built for desktop width - stack it instead. Must stay
+       hidden by default and only appear when .open is added by
+       the "Show working" click, same as desktop. */
     .checklist-panel {
-        display: block;
         padding: 10px 14px;
         font-size: 11px;
+    }
+
+    .checklist-panel.open {
+        display: block;
     }
 
     .checklist-row {
