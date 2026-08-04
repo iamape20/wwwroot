@@ -143,6 +143,22 @@ function checkOddsForCurrentRace() {
 
 setInterval(checkOddsForCurrentRace, 60000);
 
+// Sweeps all of today's finished races and updates the live running
+// tally - unlike odds-checking, this isn't tied to a specific race,
+// so it runs regardless of which page is open. Checked every 5
+// minutes (matching the endpoint's own freshness window) rather than
+// every 60 seconds, since results don't change once posted.
+function checkTodaysResults() {
+
+    fetch("/api/checkResults")
+        .then(r => r.json())
+        .catch(() => {}); // silent - background enrichment, not critical path
+
+}
+
+setInterval(checkTodaysResults, 300000);
+checkTodaysResults(); // also fire once immediately on page load
+
 function setupRaceCountdown(raceTimeStr, elementId) {
 
     function refresh() {

@@ -97,9 +97,6 @@ function buildTripClassBadges(breakdown) {
     const tripChange = breakdown.tripChange;
     if (tripChange && tripChange.answer !== "N/A") {
 
-        // Same directional convention as Class, applied here for display
-        // only - dropping back to a proven trip is lower-risk than
-        // stepping up into unproven ground. Doesn't affect the score.
         const cls = tripChange.answer === "Down" ? "tc-mini-good"
                   : tripChange.answer === "Up" ? "tc-mini-bad"
                   : "tc-mini-neutral";
@@ -109,6 +106,24 @@ function buildTripClassBadges(breakdown) {
     }
 
     return parts.join("");
+
+}
+
+// New: shows a small "LIVE" marker when a runner's marketMove score
+// was recomputed from fresh odds at request time (raceService.js
+// tags this by including "live" in the evidence string), rather than
+// just reflecting this morning's static pipeline run.
+function buildLiveMoveBadge(breakdown) {
+
+    const move = breakdown?.marketMove;
+    if (!move || move.answer === "N/A") return "";
+    if (!move.evidence || !move.evidence.includes("live")) return "";
+
+    const cls = move.answer === "Steamer" ? "live-move-good"
+              : move.answer === "Drifter" ? "live-move-bad"
+              : "live-move-neutral";
+
+    return `<span class="live-move-badge ${cls}" title="${move.evidence}">🔴 LIVE: ${move.answer}</span>`;
 
 }
 
@@ -191,7 +206,12 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
         }
 
-        const runners = [...response.race.runners];
+        // Non-runners shown separately, below the main field, rather
+        // than sorted in among live contenders by rating - they're
+        // no longer actually in the race.
+        const allRunners = [...response.race.runners];
+        const runners = allRunners.filter(r => !r.isNonRunner);
+        const nonRunners = allRunners.filter(r => r.isNonRunner);
 
         runners.sort((a, b) => b.elite.rating - a.elite.rating);
 
@@ -248,6 +268,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
 						<div class="runner-name">
 							${runner.name}
+							${buildLiveMoveBadge(runner.elite.checklistBreakdown)}
 						</div>
 
 						<div class="runner-meta">
@@ -330,12 +351,48 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 				});
 
 			}
-			
-			
-			
+
             container.appendChild(card);
 
         });
+
+        // Non-runners: shown clearly, but visually deprioritised -
+        // never hide real information, just make it obvious they're
+        // no longer in contention.
+        if (nonRunners.length) {
+
+            const nrHeader = document.createElement("div");
+            nrHeader.className = "non-runners-header";
+            nrHeader.textContent = `Non-Runners (${nonRunners.length})`;
+            container.appendChild(nrHeader);
+
+            nonRunners.forEach(runner => {
+
+                const nrCard = document.createElement("div");
+                nrCard.className = "runner-card runner-card-nonrunner";
+
+                nrCard.innerHTML = `
+                    <div class="runner-row">
+                        <div class="runner-left">
+                            <div class="runner-cloth">${runner.official_no}</div>
+                            <div class="runner-details">
+                                <div class="runner-name">${runner.name}</div>
+                                <div class="runner-meta">
+                                    T: ${runner.trainer} &nbsp;•&nbsp; J: ${runner.jockey}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="runner-right">
+                            <span class="non-runner-badge">NON-RUNNER</span>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(nrCard);
+
+            });
+
+        }
 
     }
     catch (err) {
