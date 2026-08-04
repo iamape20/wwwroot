@@ -345,7 +345,7 @@ body{
 .brand-text h1{
     margin:0;
     color:#fff;
-    font-size:30px;
+    font-size: 1.8rem;
     font-weight:700;
 }
 
@@ -353,7 +353,7 @@ body{
     display:block;
     color:#9CA3AF;
     margin-top:4px;
-    font-size:14px;
+    font-size: 1.1rem;
 }
 
 .navigation{
@@ -521,7 +521,7 @@ body{
 }
 
 .topbar-countdown {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     color: #A0AEC0;
     white-space: nowrap;
 }
@@ -869,7 +869,7 @@ body{
 /* Mobile portrait: everything stacks to a single column,
    badge goes full-width to match the stats/NAP block above it */
 .top-strip-label {
-    font-size: 13px;
+    font-size: 1.0rem;
     text-transform: uppercase;
     letter-spacing: .5px;
     color: #D4AF37;
@@ -1025,7 +1025,7 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #A0AEC0;
     margin-bottom: 14px;
 }
@@ -1079,16 +1079,9 @@ body{
     color: #A0AEC0;
 }
 
-/* ==========================================================
-   Portrait mobile (phones) - the desktop-sized hero badge,
-   course pills, and dense runner cards need their own smaller
-   versions here rather than inheriting the desktop sizing.
-   ========================================================== */
 
 @media (max-width: 600px), (max-height: 500px) and (orientation: landscape) {
 
-    /* Logo and nav take up valuable space with limited benefit
-       on a narrow phone screen */
     .brand-logo,
     .brand-text {
         display: none;
@@ -1107,7 +1100,7 @@ body{
         box-sizing: border-box;
     }
 
-    /* Top strip stacks instead of sitting side by side */
+
     .top-strip {
         flex-direction: column;
     }
@@ -1121,12 +1114,10 @@ body{
         font-size: 11px;
     }
 
-    /* Course pills - desktop made these deliberately bold and
-       large; phones need a scaled-back version of the same idea */
     .meeting-card {
         padding: 10px 16px;
         gap: 8px;
-        border-width: 2px;
+        border-width: 1px;
     }
 
     .meeting-card-name {
