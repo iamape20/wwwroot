@@ -1,6 +1,6 @@
 const raceService = require("../../../../services/raceService");
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
 
     try {
 
@@ -8,7 +8,7 @@ module.exports = (req, res) => {
         // [raceIndex] folder/file names — arrive together in req.query.
         const { meetingId, raceIndex } = req.query;
 
-        const result = raceService.getRace(meetingId, raceIndex);
+        const result = await raceService.getRace(meetingId, raceIndex);
 
         res.json({
             success: true,

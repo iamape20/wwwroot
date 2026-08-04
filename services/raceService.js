@@ -1,6 +1,10 @@
 const json = require("./jsonService");
+const { Redis } = require("@upstash/redis");
+const { computeLiveMarketMove, overrideCategory, isNonRunner } = require("./liveScoring");
 
-function getRace(meetingId, raceIndex) {
+const redis = Redis.fromEnv();
+
+async function getRace(meetingId, raceIndex) {
 
     const cards = json.load("stage2_cards.json");
 	const ratings = json.load("final_ratings.json");
@@ -25,7 +29,20 @@ function getRace(meetingId, raceIndex) {
 	const ratingsRace = ratingsMeeting
 		? ratingsMeeting.races.find(r => r.time === race.time)
 		: null;
-	
+
+	// Fetch this race's odds history ONCE, not once per runner - keeps
+	// this to a single Redis call regardless of field size. Silently
+	// falls back to the static, once-a-day ratings if Redis is
+	// unreachable or misconfigured - live re-scoring is an enrichment,
+	// not something that should ever break the page if it fails.
+	let oddsHistory = null;
+
+	try {
+		oddsHistory = await redis.get(`odds:${meetingId}:${index}`);
+	} catch {
+		oddsHistory = null;
+	}
+
     return {
 
         meeting: {
@@ -52,22 +69,56 @@ function getRace(meetingId, raceIndex) {
 				)
 				: null;
 
+				if (!elite) {
+					return {
+						...runner,
+						isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+						elite: {
+							rating: null,
+							rank: null,
+							confidence: null,
+							checklistBreakdown: null,
+							checklistPoints: null
+						}
+					};
+				}
+
+				// Start with the static, once-a-day values - this is
+				// what gets returned if there's no fresher live signal
+				let liveRating = elite.power_rating;
+				let liveBreakdown = elite.checklist_breakdown;
+				let livePoints = elite.checklist_points;
+
+				if (oddsHistory) {
+
+					const liveMove = computeLiveMarketMove(oddsHistory, runner.name);
+
+					if (liveMove) {
+
+						const recomputed = overrideCategory(elite.checklist_breakdown, "marketMove", liveMove);
+
+						if (recomputed) {
+							liveRating = recomputed.rating;
+							liveBreakdown = recomputed.breakdown;
+							livePoints = `${recomputed.earnedPoints}/${recomputed.maxPoints}`;
+						}
+
+					}
+
+				}
+
 				return {
 
 					...runner,
 
-						elite: elite ? {
-							rating: elite.power_rating,
-							rank: null,
-							confidence: elite.confidence,
-							checklistBreakdown: elite.checklist_breakdown,
-							checklistPoints: elite.checklist_points
-						} : {
-						rating: null,
+					isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+
+					elite: {
+						rating: liveRating,
 						rank: null,
-						confidence: null,
-						checklistBreakdown: null,
-						checklistPoints: null
+						confidence: elite.confidence,
+						checklistBreakdown: liveBreakdown,
+						checklistPoints: livePoints
 					}
 
 				};

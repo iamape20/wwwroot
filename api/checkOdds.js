@@ -24,7 +24,7 @@ function getSlug(name) {
     return String(name).replace(/[^a-z0-9\s]/gi, "").replace(/\s+/g, "-").toLowerCase();
 }
 
-async function fetchCurrentOdds(meetingId, date, courseName, raceIndex) {
+async function fetchRaceData(meetingId, date, courseName, raceIndex) {
 
     const url = `https://www.sportinglife.com/racing/fast-cards/${meetingId}/${date}/${getSlug(courseName)}/`;
 
@@ -43,15 +43,26 @@ async function fetchCurrentOdds(meetingId, date, courseName, raceIndex) {
     if (!race) return null;
 
     const odds = {};
+    const nonRunners = [];
 
     for (const runner of race.runners || []) {
         const s = runner.selection || runner;
         const name = s.horse?.name;
+        if (!name) continue;
+
         const currentOdds = s.betting?.current_odds;
-        if (name && currentOdds) odds[name.toUpperCase()] = currentOdds;
+        if (currentOdds) odds[name.toUpperCase()] = currentOdds;
+
+        // Only "RUNNER" is confirmed as the active status - treat
+        // anything else as withdrawn, rather than guess the exact
+        // string Sporting Life uses for a scratched horse.
+        if (s.ride_status && s.ride_status !== "RUNNER") {
+            nonRunners.push(name.toUpperCase());
+        }
+
     }
 
-    return odds;
+    return { odds, nonRunners };
 
 }
 
@@ -72,25 +83,25 @@ module.exports = async (req, res) => {
 
         if (existing?.lastChecked && (now - existing.lastChecked) < ODDS_FRESHNESS_MINUTES * 60 * 1000) {
             // Recently checked - return what we have, no re-fetch
-            return res.json({ success: true, fresh: false, snapshots: existing.snapshots || [] });
+            return res.json({ success: true, fresh: false, snapshots: existing.snapshots || [], nonRunners: existing.nonRunners || [] });
         }
 
-        const currentOdds = await fetchCurrentOdds(meetingId, date, courseName, Number(raceIndex));
+        const currentData = await fetchRaceData(meetingId, date, courseName, Number(raceIndex));
 
-        if (!currentOdds) {
-            return res.json({ success: true, fresh: false, snapshots: existing?.snapshots || [], note: "Fetch failed, kept previous data" });
+        if (!currentData) {
+            return res.json({ success: true, fresh: false, snapshots: existing?.snapshots || [], nonRunners: existing?.nonRunners || [], note: "Fetch failed, kept previous data" });
         }
 
         const snapshots = existing?.snapshots || [];
-        snapshots.push({ time: now, odds: currentOdds });
+        snapshots.push({ time: now, odds: currentData.odds });
 
         // Keep a reasonable cap so one race's history doesn't grow
         // unbounded across a very long day
         const trimmed = snapshots.slice(-20);
 
-        await redis.set(key, { lastChecked: now, snapshots: trimmed });
+        await redis.set(key, { lastChecked: now, snapshots: trimmed, nonRunners: currentData.nonRunners });
 
-        res.json({ success: true, fresh: true, snapshots: trimmed });
+        res.json({ success: true, fresh: true, snapshots: trimmed, nonRunners: currentData.nonRunners });
 
     } catch (err) {
         res.status(500).json({ success: false, error: err.message });
