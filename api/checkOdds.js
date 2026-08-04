@@ -29,7 +29,7 @@ async function fetchCurrentOdds(meetingId, date, courseName, raceIndex) {
     const url = `https://www.sportinglife.com/racing/fast-cards/${meetingId}/${date}/${getSlug(courseName)}/`;
 
     const response = await axios.get(url, {
-        timeout: 15000,
+        timeout: 8000,
         headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }
     });
 
@@ -96,4 +96,8 @@ module.exports = async (req, res) => {
         res.status(500).json({ success: false, error: err.message });
     }
 
+};
+
+module.exports.config = {
+    maxDuration: 15
 };
