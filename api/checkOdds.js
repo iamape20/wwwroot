@@ -43,24 +43,21 @@ async function fetchRaceData(meetingId, date, courseName, raceIndex) {
     if (!race) return null;
 
     const odds = {};
-    const nonRunners = [];
 
     for (const runner of race.runners || []) {
         const s = runner.selection || runner;
         const name = s.horse?.name;
-        if (!name) continue;
-
         const currentOdds = s.betting?.current_odds;
-        if (currentOdds) odds[name.toUpperCase()] = currentOdds;
-
-        // Only "RUNNER" is confirmed as the active status - treat
-        // anything else as withdrawn, rather than guess the exact
-        // string Sporting Life uses for a scratched horse.
-        if (s.ride_status && s.ride_status !== "RUNNER") {
-            nonRunners.push(name.toUpperCase());
-        }
-
+        if (name && currentOdds) odds[name.toUpperCase()] = currentOdds;
     }
+
+    // Withdrawn horses live in their own separate array, not mixed
+    // into race.runners with a different status - confirmed directly
+    // from real Sporting Life data (Roscommon, 2026-08-04).
+    const nonRunners = (race.nonRunners || [])
+        .map(r => (r.selection || r).horse?.name)
+        .filter(Boolean)
+        .map(name => name.toUpperCase());
 
     return { odds, nonRunners };
 
