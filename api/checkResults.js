@@ -63,9 +63,9 @@ async function fetchTodaysResults() {
 
 function loadPredictions() {
     try {
-        return json.load("final_ratings.json");
-    } catch {
-        return {};
+        return { predictions: json.load("final_ratings.json"), loaded: true };
+    } catch (err) {
+        return { predictions: {}, loaded: false, error: err.message };
     }
 }
 
@@ -89,7 +89,7 @@ module.exports = async (req, res) => {
             return res.json({ success: true, fresh: false, ...(existing || { racesChecked: 0, topPickWins: 0, topPickPlaces: 0, details: [] }) });
         }
 
-        const predictions = loadPredictions();
+        const { predictions, loaded: predictionsLoaded, error: predictionsError } = loadPredictions();
 
         const tally = existing || { racesChecked: 0, topPickWins: 0, topPickPlaces: 0, checkedRaces: [], details: [] };
         const alreadyChecked = new Set(tally.checkedRaces || []);
@@ -146,7 +146,7 @@ module.exports = async (req, res) => {
 
         await redis.set(key, tally);
 
-        res.json({ success: true, fresh: true, ...tally });
+        res.json({ success: true, fresh: true, predictionsLoaded, predictionsError, ...tally });
 
     } catch (err) {
         res.status(500).json({ success: false, error: err.message });
