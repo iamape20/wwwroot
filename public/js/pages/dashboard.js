@@ -139,6 +139,14 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         if (!response.success)
             return;
 
+        window.currentRaceContext = {
+            meetingId,
+            raceIndex,
+            date: response.meeting.date,
+            courseName: response.meeting.name,
+            raceTime: response.race.time
+        };
+
         document.getElementById("raceTitle").textContent =
             `${response.meeting.name} ${raceTime} - ${response.race.title}`;
 
