@@ -150,7 +150,7 @@ module.exports = async (req, res) => {
         // Keep the details list from growing unbounded across a long day
         tally.details = tally.details.slice(-50);
 
-        await redis.set(key, tally);
+        await redis.set(key, tally, { ex: 172800 });
 
         res.json({ success: true, fresh: true, predictionsLoaded, predictionsError, ...tally });
 

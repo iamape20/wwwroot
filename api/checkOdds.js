@@ -96,7 +96,7 @@ module.exports = async (req, res) => {
         // unbounded across a very long day
         const trimmed = snapshots.slice(-20);
 
-        await redis.set(key, { lastChecked: now, snapshots: trimmed, nonRunners: currentData.nonRunners });
+        await redis.set(key, { lastChecked: now, snapshots: trimmed, nonRunners: currentData.nonRunners }, { ex: 172800 });
 
         res.json({ success: true, fresh: true, snapshots: trimmed, nonRunners: currentData.nonRunners });
 

@@ -569,12 +569,63 @@ export async function loadDashboard() {
 		}
 
 		await loadMeetings();
+		loadTodaysResults();
+		setInterval(loadTodaysResults, 300000);
 
     }
     catch (err) {
 
         console.error(err);
 
+    }
+
+}
+
+async function loadTodaysResults() {
+
+    try {
+
+        const response = await fetch("/api/checkResults");
+        const data = await response.json();
+
+        const strip = document.getElementById("todaysResultsStrip");
+        if (!strip) return;
+
+        // Nothing checked yet (too early in the day, or Redis not
+        // configured locally) - stay hidden rather than show an empty box.
+        if (!data.success || !data.racesChecked) {
+            strip.style.display = "none";
+            return;
+        }
+
+        const winRate = ((data.topPickWins / data.racesChecked) * 100).toFixed(1);
+        const placeRate = ((data.topPickPlaces / data.racesChecked) * 100).toFixed(1);
+
+        const recentDetails = (data.details || []).slice(-5).reverse();
+
+        strip.innerHTML = `
+            <div class="results-strip-summary">
+                <span class="results-strip-label">Today's Results (Live)</span>
+                <span class="results-strip-stat">${data.racesChecked} races checked</span>
+                <span class="results-strip-stat results-strip-win">${data.topPickWins} won (${winRate}%)</span>
+                <span class="results-strip-stat results-strip-place">${data.topPickPlaces} placed (${placeRate}%)</span>
+            </div>
+            ${recentDetails.length ? `
+                <div class="results-strip-recent">
+                    ${recentDetails.map(d => `
+                        <span class="results-strip-race results-strip-${d.outcome}">
+                            ${d.course} ${toLocalTimeString(d.time)} - ${d.ourPick} (${d.outcome})
+                        </span>
+                    `).join("")}
+                </div>
+            ` : ""}
+        `;
+
+        strip.style.display = "";
+
+    }
+    catch (err) {
+        console.error(err);
     }
 
 }
