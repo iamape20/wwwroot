@@ -16,7 +16,9 @@ const cheerio = require("cheerio");
 const { Redis } = require("@upstash/redis");
 const json = require("../services/jsonService");
 
-const redis = Redis.fromEnv();
+const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
+    ? Redis.fromEnv()
+    : null;
 
 const RESULTS_URL = "https://www.sportinglife.com/racing/results";
 const CHECK_FRESHNESS_MINUTES = 5;
@@ -72,6 +74,10 @@ function loadPredictions() {
 module.exports = async (req, res) => {
 
     try {
+
+        if (!redis) {
+            return res.json({ success: true, fresh: false, note: "Redis not configured (expected in local dev) - live results tracking only runs on the deployed site.", racesChecked: 0, topPickWins: 0, topPickPlaces: 0, details: [] });
+        }
 
         const today = new Date().toISOString().split("T")[0];
         const key = `liveResults:${today}`;

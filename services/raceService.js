@@ -2,7 +2,9 @@ const json = require("./jsonService");
 const { Redis } = require("@upstash/redis");
 const { computeLiveMarketMove, overrideCategory, isNonRunner } = require("./liveScoring");
 
-const redis = Redis.fromEnv();
+const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
+    ? Redis.fromEnv()
+    : null;
 
 async function getRace(meetingId, raceIndex) {
 
@@ -37,10 +39,12 @@ async function getRace(meetingId, raceIndex) {
 	// not something that should ever break the page if it fails.
 	let oddsHistory = null;
 
-	try {
-		oddsHistory = await redis.get(`odds:${meetingId}:${index}`);
-	} catch {
-		oddsHistory = null;
+	if (redis) {
+		try {
+			oddsHistory = await redis.get(`odds:${meetingId}:${index}`);
+		} catch {
+			oddsHistory = null;
+		}
 	}
 
     return {

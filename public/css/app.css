@@ -521,9 +521,15 @@ body{
 }
 
 .topbar-countdown {
-    font-size: 1.1rem;
-    color: #A0AEC0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #D4AF37;
     white-space: nowrap;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background: rgba(212, 175, 55, 0.15);
+    border: 2px solid #D4AF37;
+    display: inline-block;
 }
 
 /* ==========================================================

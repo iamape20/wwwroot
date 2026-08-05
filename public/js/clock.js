@@ -84,8 +84,15 @@ function updateClock() {
             display.innerText =
                 `${next.course} ${next.displayTime} - ${mins}m ${secs}s`;
 
-            display.style.background =
-                mins < 5 ? "#ef4444" : "var(--orange)";
+            if (mins < 5) {
+                display.style.background = "rgba(220, 38, 38, 0.15)";
+                display.style.borderColor = "#DC2626";
+                display.style.color = "#DC2626";
+            } else {
+                display.style.background = "rgba(212, 175, 55, 0.15)";
+                display.style.borderColor = "#D4AF37";
+                display.style.color = "#D4AF37";
+            }
         }
         else {
 
