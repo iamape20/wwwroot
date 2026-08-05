@@ -23,14 +23,15 @@ const CHECKLIST_LABELS = {
     weightChange: "Weight Change",
     trainerCourse: "Trainer at Course",
     jockeyCourse: "Jockey at Course",
-    marketMove: "Market Move"
+    marketMove: "Market Move",
+    winningMark: "Winning Mark"
 };
 
 const CHECKLIST_SHORT = {
     class: "Cl", classChange: "CC", tripChange: "TC", course: "Co", distance: "Di", recentForm: "RF",
     speed: "Sp", going: "Go", draw: "Dr", fitness: "Fi",
     firstTimeAids: "FT", jockey: "Jo", jockeyForm: "JF", trainer: "Tr",
-    weightChange: "Wt", trainerCourse: "TCo", jockeyCourse: "JCo", marketMove: "Mkt"
+    weightChange: "Wt", trainerCourse: "TCo", jockeyCourse: "JCo", marketMove: "Mkt", winningMark: "WM"
 };
 
 function drawBadgeClass(breakdown) {
