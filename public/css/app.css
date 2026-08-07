@@ -571,13 +571,19 @@ body{
 }
 
 .race-summary-forecast strong {
-    color: #9C5470;
+    color: #FFF;
 	font-size: 1.0rem;
+	font-style: italic;
+	border: 1px DOTTED #9C5470;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 .race-summary-verdict strong {
-    color: #9C5470;
+    color: #FFF;
 	font-size: 1.0rem;
+	text-decoration: underline;
+	font-style: italic;
 }
 
 /* ==========================================================
