@@ -234,7 +234,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
             summary.innerHTML = `
                 ${response.race.verdict
-                    ? `<p class="race-summary-verdict"><strong>Analysis:</strong> ${highlightSelectedHorses(response.race.verdict, response.race.verdict, response.race.runners)}</p>`
+                    ? `<p class="race-summary-verdict"><strong>SportingLife:</strong> ${highlightSelectedHorses(response.race.verdict, response.race.verdict, response.race.runners)}</p>`
                     : ""}
                 ${response.race.bettingForecast
                     ? `<p class="race-summary-forecast"><strong>Forecast:</strong> ${highlightSelectedHorses(response.race.bettingForecast, response.race.verdict, response.race.runners)}</p>`
