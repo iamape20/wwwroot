@@ -571,11 +571,13 @@ body{
 }
 
 .race-summary-forecast strong {
-    color: #D4AF37;
+    color: #9C5470;
+	font-size: 1.0rem;
 }
 
 .race-summary-verdict strong {
-    color: #D4AF37;
+    color: #9C5470;
+	font-size: 1.0rem;
 }
 
 /* ==========================================================
@@ -1457,4 +1459,16 @@ body{
 
 .results-strip-unplaced {
     opacity: 0.6;
+}
+
+/* ==========================================================
+   Highlighted horse names within Analysis & Forecast
+   ========================================================== */
+
+.analysis-highlight {
+    color: #D4AF37;
+    font-style: italic;
+    text-decoration: none;
+    text-decoration-color: #D4AF37;
+    text-underline-offset: 2px;
 }

@@ -154,6 +154,44 @@ function buildChecklistPanel(breakdown) {
 
 }
 
+// Sporting Life's verdict text ends with a trailing run of the
+// selected horses' names in ALL CAPS (e.g. "...RECON MISSION (IRE)
+// DIOMED SPIRIT DREAMBIRD DOLLY") - this is the real, explicit
+// selection list, more reliable than guessing from forecast price
+// order (the narrative focus doesn't always match the shortest
+// price). Cross-checks real runner names against that trailing
+// segment, then highlights any occurrence of those specific names
+// in both the verdict and forecast text.
+function highlightSelectedHorses(text, verdictText, runners) {
+
+    if (!text || !verdictText || !runners?.length) return text;
+
+    // The selection list is the tail end of the verdict - checking
+    // the last ~120 characters is enough margin for 2-4 horse names
+    const tail = verdictText.slice(-120).toUpperCase();
+
+    const selected = runners
+        .filter(r => tail.includes(String(r.name || "").toUpperCase()))
+        .map(r => r.name);
+
+    if (!selected.length) return text;
+
+    // Longest names first, so "Diomed Spirit" doesn't get partially
+    // matched before the fuller name is checked
+    const sorted = [...selected].sort((a, b) => b.length - a.length);
+
+    let result = text;
+
+    for (const name of sorted) {
+        const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const pattern = new RegExp(`(${escaped})`, "gi");
+        result = result.replace(pattern, '<span class="analysis-highlight">$1</span>');
+    }
+
+    return result;
+
+}
+
 async function loadRace(meetingId, raceIndex, raceTime) {
 
     try {
@@ -196,10 +234,10 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
             summary.innerHTML = `
                 ${response.race.verdict
-                    ? `<p class="race-summary-verdict"><strong>Analysis:</strong> ${response.race.verdict}</p>`
+                    ? `<p class="race-summary-verdict"><strong>Analysis:</strong> ${highlightSelectedHorses(response.race.verdict, response.race.verdict, response.race.runners)}</p>`
                     : ""}
                 ${response.race.bettingForecast
-                    ? `<p class="race-summary-forecast"><strong>Forecast:</strong> ${response.race.bettingForecast}</p>`
+                    ? `<p class="race-summary-forecast"><strong>Forecast:</strong> ${highlightSelectedHorses(response.race.bettingForecast, response.race.verdict, response.race.runners)}</p>`
                     : ""}
             `;
 
