@@ -36,20 +36,6 @@ const CHECKLIST_SHORT = {
     weightChange: "Wt", trainerCourse: "TCo", jockeyCourse: "JCo", marketMove: "Mkt", winningMark: "WM"
 };
 
-// Category Multipliers for Interaction Weighting
-const CATEGORY_WEIGHTS = {
-    class: 1.4,
-    speed: 1.3,
-    recentForm: 1.2,
-    course: 1.1,
-    distance: 1.1,
-    going: 1.1,
-    draw: 1.0,
-    trainer: 0.9,
-    jockey: 0.8,
-    marketMove: 1.2
-};
-
 // --- Security & Formatting Helpers ---
 
 function escapeHtml(str) {
@@ -86,30 +72,6 @@ function parseLondonTimeToSeconds(timeStr) {
  * Calculates a Bayesian Smoothed & Weighted Rating
  * Prevents small denominator distortion (low sample size)
  */
-function calculateAdjustedRating(breakdown, rawRating) {
-    if (!breakdown) return rawRating || 0;
-
-    let weightedEarned = 0;
-    let weightedMax = 0;
-
-    for (const [key, data] of Object.entries(breakdown)) {
-        if (!data || data.max <= 0) continue;
-        
-        const weight = CATEGORY_WEIGHTS[key] || 1.0;
-        weightedEarned += (data.points || 0) * weight;
-        weightedMax += (data.max || 0) * weight;
-    }
-
-    if (weightedMax === 0) return rawRating || 0;
-
-    // Bayesian Smoothing Parameters (Prior: avg 50% performance over 10 weight units)
-    const alpha = 5;
-    const beta = 10;
-    const smoothedRatio = (weightedEarned + alpha) / (weightedMax + beta);
-
-    return Number((smoothedRatio * 100).toFixed(1));
-}
-
 // --- Badge & Display Builders ---
 
 function drawBadgeClass(breakdown) {
@@ -295,18 +257,16 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         const nonRunners = allRunners.filter(r => r.isNonRunner);
 
         // Sort runners using Bayesian Smoothed Ratings for improved mathematical precision
-        runners.sort((a, b) => {
-            const ratingA = calculateAdjustedRating(a.elite.checklistBreakdown, a.elite.rating);
-            const ratingB = calculateAdjustedRating(b.elite.checklistBreakdown, b.elite.rating);
-            return ratingB - ratingA;
-        });
+        runners.sort((a, b) => b.elite.rating - a.elite.rating);
+
+        const runnerFragment = document.createDocumentFragment();
 
         runners.forEach((runner, index) => {
             const medal = index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : "";
             const card = document.createElement("div");
             card.className = "runner-card";
 
-            const rating = calculateAdjustedRating(runner.elite.checklistBreakdown, runner.elite.rating);
+            const rating = runner.elite.rating;
 
             let ratingClass = "rating-blue";
             if (rating >= 55) ratingClass = "rating-gold";
@@ -360,15 +320,19 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                 });
             }
 
-            container.appendChild(card);
+            runnerFragment.appendChild(card);
         });
+
+        container.appendChild(runnerFragment);
 
         // Non-runners formatting: Visual deprioritisation using CSS opacity and grayscale
         if (nonRunners.length) {
+            const nrFragment = document.createDocumentFragment();
+
             const nrHeader = document.createElement("div");
             nrHeader.className = "non-runners-header";
             nrHeader.textContent = `Non-Runners (${nonRunners.length})`;
-            container.appendChild(nrHeader);
+            nrFragment.appendChild(nrHeader);
 
             nonRunners.forEach(runner => {
                 const nrCard = document.createElement("div");
@@ -393,8 +357,10 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                     </div>
                 `;
 
-                container.appendChild(nrCard);
+                nrFragment.appendChild(nrCard);
             });
+
+            container.appendChild(nrFragment);
         }
     } catch (err) {
         console.error("Error loading race:", err);
