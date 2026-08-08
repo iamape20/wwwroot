@@ -28,7 +28,8 @@ const CHECKLIST_LABELS = {
     marketMove: "Market Move",
     winningMark: "Winning Mark",
     runningStyle: "Running Style",
-    beatenFavourite: "Beaten Favourite"
+    beatenFavourite: "Beaten Favourite",
+    bounceProfile: "Bounce Profile"
 };
 
 const CHECKLIST_SHORT = {
@@ -36,7 +37,7 @@ const CHECKLIST_SHORT = {
     speed: "Sp", going: "Go", draw: "Dr", fitness: "Fi",
     firstTimeAids: "FT", jockey: "Jo", jockeyForm: "JF", trainer: "Tr",
     weightChange: "Wt", trainerCourse: "TCo", jockeyCourse: "JCo", marketMove: "Mkt", winningMark: "WM",
-    runningStyle: "RS", beatenFavourite: "BF"
+    runningStyle: "RS", beatenFavourite: "BF", bounceProfile: "BP"
 };
 
 // --- Security & Formatting Helpers ---
