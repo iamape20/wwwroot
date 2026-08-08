@@ -182,6 +182,16 @@ function buildLiveMoveBadge(breakdown) {
     return `<span class="live-move-badge ${cls}" title="${escapeHtml(move.evidence)}">🔴 LIVE: ${escapeHtml(move.answer)}</span>`;
 }
 
+// Only shown when the horse genuinely qualifies - currently rated
+// below the mark it has already proven capable of winning off. A
+// real, well-treated signal, not just "no data" or "not well-treated".
+function buildWinningMarkBadge(breakdown) {
+    const wm = breakdown?.winningMark;
+    if (!wm || wm.answer !== "Yes") return "";
+
+    return `<span class="winning-mark-badge" title="${escapeHtml(wm.evidence || "")}">⬇ WELL TREATED</span>`;
+}
+
 function buildChecklistPanel(breakdown) {
     if (!breakdown) {
         return `<div class="checklist-panel"><div class="checklist-empty">No breakdown data available for this runner.</div></div>`;
@@ -318,6 +328,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                         <div class="runner-name">
                             ${escapeHtml(runner.name)}
                             ${buildLiveMoveBadge(runner.elite.checklistBreakdown)}
+							${buildWinningMarkBadge(runner.elite.checklistBreakdown)}
                         </div>
                         <div class="runner-meta">
                             T: ${escapeHtml(runner.trainer)} &nbsp;•&nbsp; J: ${escapeHtml(runner.jockey)} &nbsp;•&nbsp; Form ${escapeHtml(runner.formsummary)} &nbsp;•&nbsp; Draw ${escapeHtml(runner.draw)} &nbsp;•&nbsp; Wt ${escapeHtml(runner.weight)}
@@ -510,10 +521,19 @@ export async function loadDashboard() {
 async function loadTodaysResults() {
     try {
         const response = await fetch("/api/checkResults");
-        const data = await response.json();
 
         const strip = document.getElementById("todaysResultsStrip");
         if (!strip) return;
+
+        if (!response.ok) {
+            // Endpoint not available (e.g. missing locally) or a
+            // genuine server error - stay hidden rather than throw
+            // trying to parse whatever non-JSON response came back.
+            strip.style.display = "none";
+            return;
+        }
+
+        const data = await response.json();
 
         if (!data.success || !data.racesChecked) {
             strip.style.display = "none";

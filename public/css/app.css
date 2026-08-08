@@ -571,19 +571,11 @@ body{
 }
 
 .race-summary-forecast strong {
-    color: #FFF;
-	font-size: 1.0rem;
-	font-style: italic;
-	border: 1px DOTTED #9C5470;
-	padding-left: 2px;
-	padding-right: 2px;
+    color: #D4AF37;
 }
 
 .race-summary-verdict strong {
-    color: #FFF;
-	font-size: 1.0rem;
-	text-decoration: underline;
-	font-style: italic;
+    color: #D4AF37;
 }
 
 /* ==========================================================
@@ -1472,9 +1464,29 @@ body{
    ========================================================== */
 
 .analysis-highlight {
-    color: #D4AF37;
+    color: #A0AEC0;
     font-style: italic;
-    text-decoration: none;
-    text-decoration-color: #D4AF37;
+    text-decoration: underline;
+    text-decoration-color: #A0AEC0;
     text-underline-offset: 2px;
+}
+
+/* ==========================================================
+   Winning Mark badge - horse currently rated below its proven
+   best winning mark
+   ========================================================== */
+
+.winning-mark-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22C55E;
+    color: #22C55E;
+    cursor: default;
 }
