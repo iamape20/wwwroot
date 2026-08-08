@@ -522,7 +522,7 @@ async function loadTodaysResults() {
                 <div class="results-strip-recent">
                     ${recentDetails.map(d => `
                         <span class="results-strip-race results-strip-${escapeHtml(d.outcome)}">
-                            ${escapeHtml(d.course)} ${escapeHtml(toLocalTimeString(d.time))} - ${escapeHtml(d.ourPick)} (${escapeHtml(d.outcome)})
+                            ${escapeHtml(d.course)} ${escapeHtml(toLocalTimeString(d.time))} - ${escapeHtml(d.ourPick)} (${escapeHtml(d.outcome)})${d.outcome !== "won" && d.actualWinner ? ` &nbsp;→&nbsp; Winner: ${escapeHtml(d.actualWinner)}` : ""}
                         </span>
                     `).join("")}
                 </div>

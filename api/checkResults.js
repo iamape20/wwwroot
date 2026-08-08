@@ -127,6 +127,7 @@ module.exports = async (req, res) => {
 
                 const pickNameUpper = String(ourTopPick.name || "").toUpperCase();
                 const placing = race.placings.find(p => p.name.toUpperCase() === pickNameUpper);
+                const winner = race.placings.find(p => p.position === 1);
 
                 let outcome = "unplaced";
                 if (placing?.position === 1) {
@@ -138,7 +139,7 @@ module.exports = async (req, res) => {
                     tally.topPickPlaces++;
                 }
 
-                tally.details.push({ course: courseName, time: race.time, ourPick: ourTopPick.name, outcome });
+                tally.details.push({ course: courseName, time: race.time, ourPick: ourTopPick.name, outcome, actualWinner: winner?.name || null });
 
             }
 
