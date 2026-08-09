@@ -371,7 +371,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
     }
 }
 
-async function loadRaces(meetingId, meetingName) {
+async function loadRaces(meetingId, meetingName, autoSelectFirst = true) {
     try {
         document.getElementById("meetingTitle").textContent = `${meetingName} Races`;
         const response = await getRaces(meetingId);
@@ -380,7 +380,9 @@ async function loadRaces(meetingId, meetingName) {
         const container = document.getElementById("races");
         container.innerHTML = "";
 
-        response.races.forEach(race => {
+        let firstCard = null;
+
+        response.races.forEach((race, index) => {
             const card = document.createElement("div");
             card.className = "race-card";
 
@@ -396,8 +398,19 @@ async function loadRaces(meetingId, meetingName) {
                 loadRace(meetingId, race.index, toLocalTimeString(race.time));
             });
 
+            if (index === 0) firstCard = { card, race };
+
             container.appendChild(card);
         });
+
+        // Default straight into the first race of the day, same as
+        // a manual click - one less step after picking a course.
+        // Skipped when the caller (e.g. the hero badge) is about to
+        // load a specific race of its own anyway.
+        if (firstCard && autoSelectFirst) {
+            firstCard.card.classList.add("active");
+            loadRace(meetingId, firstCard.race.index, toLocalTimeString(firstCard.race.time));
+        }
     } catch (err) {
         console.error("Error loading races:", err);
     }
@@ -454,7 +467,7 @@ export async function loadDashboard() {
             heroBadge.style.cursor = "pointer";
 
             const goToBestRace = async () => {
-                await loadRaces(best.meetingId, best.course);
+                await loadRaces(best.meetingId, best.course, false);
                 await loadRace(best.meetingId, best.raceIndex, toLocalTimeString(best.raceTime));
             };
 
