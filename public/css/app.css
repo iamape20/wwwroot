@@ -977,6 +977,14 @@ body{
     color: #D4AF37;
 }
 
+.checklist-chip-high-impact {
+    background: rgba(212, 175, 55, 0.28);
+    border: 2px solid #D4AF37;
+    color: #F5D061;
+    font-weight: 800;
+    box-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
+}
+
 .checklist-chip-partial {
     background: rgba(160, 174, 192, 0.1);
     border: 1px solid #4A5568;
@@ -1490,4 +1498,39 @@ body{
     border: 1px solid #22C55E;
     color: #22C55E;
     cursor: default;
+}
+
+/* ==========================================================
+   Live price badge - shows current price with direction
+   ========================================================== */
+
+.price-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+    cursor: default;
+}
+
+.price-badge-in {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22C55E;
+    color: #22C55E;
+}
+
+.price-badge-out {
+    background: rgba(220, 38, 38, 0.15);
+    border: 1px solid #DC2626;
+    color: #DC2626;
+}
+
+.price-badge-steady {
+    background: rgba(160, 174, 192, 0.1);
+    border: 1px solid #2D3748;
+    color: #A0AEC0;
 }

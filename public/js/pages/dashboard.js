@@ -102,8 +102,17 @@ function buildChecklistSummary(breakdown) {
             const full = CHECKLIST_LABELS[key] || key;
 
             let chipClass = "checklist-chip-zero";
-            if (data.points === data.max) chipClass = "checklist-chip-full";
-            else if (data.points > 0) chipClass = "checklist-chip-partial";
+            if (data.points === data.max) {
+                // A genuinely high-value contributor (2+ points
+                // earned) stands out more than a fully-earned but
+                // small one (0.25-1 points) - with 20+ categories now,
+                // "did it score" alone isn't enough to tell the
+                // categories that actually moved the rating from the
+                // ones that barely nudged it.
+                chipClass = data.points >= 2 ? "checklist-chip-high-impact" : "checklist-chip-full";
+            } else if (data.points > 0) {
+                chipClass = "checklist-chip-partial";
+            }
 
             return `<span class="checklist-chip ${chipClass}" title="${escapeHtml(full)}: ${escapeHtml(data.answer)}">${short}</span>`;
         }).join("");
@@ -134,6 +143,34 @@ function buildTripClassBadges(breakdown) {
     }
 
     return parts.join("");
+}
+
+// Shows the current price whenever real snapshot data exists,
+// regardless of whether a live re-score specifically fired -
+// separate from buildLiveMoveBadge, which only shows for the
+// "🔴 LIVE" recomputed case specifically. UK convention: a
+// shortening price (steamer) is shown green with a down arrow,
+// a drifting price (lengthening) shown red with an up arrow.
+function buildPriceBadge(breakdown) {
+
+    const move = breakdown?.marketMove;
+    if (!move || move.answer === "N/A" || !move.evidence) return "";
+
+    const parts = move.evidence.split(" → ");
+    if (parts.length < 2) return "";
+
+    const latestPrice = parts[1].split(" (")[0].trim();
+    if (!latestPrice) return "";
+
+    const cls = move.answer === "Steamer" ? "price-badge-in"
+              : move.answer === "Drifter" ? "price-badge-out"
+              : "price-badge-steady";
+
+    const arrow = move.answer === "Steamer" ? "▼"
+                : move.answer === "Drifter" ? "▲"
+                : "–";
+
+    return `<span class="price-badge ${cls}" title="${escapeHtml(move.evidence)}">${arrow} ${escapeHtml(latestPrice)}</span>`;
 }
 
 function buildLiveMoveBadge(breakdown) {
@@ -291,6 +328,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                     <div class="runner-details">
                         <div class="runner-name">
                             ${escapeHtml(runner.name)}
+                            ${buildPriceBadge(runner.elite.checklistBreakdown)}
                             ${buildLiveMoveBadge(runner.elite.checklistBreakdown)}
 							${buildWinningMarkBadge(runner.elite.checklistBreakdown)}
                         </div>
