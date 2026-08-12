@@ -1062,6 +1062,29 @@ body{
     color: #A0AEC0;
 }
 
+/* Race confidence tier.
+   How far clear the top pick is, relative to the spread across the
+   field - not the rating itself. Measured on 3,955 reconstructed
+   races (fields of 5+), edge over a blind pick: Strong +20.2pp,
+   Moderate +14.8pp, Open +6.4pp.
+   Colours deliberately reuse the existing rating palette so the two
+   read as the same visual language: gold = best, green = solid,
+   grey = nothing to say. */
+
+.tier-strong {
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.tier-moderate {
+    color: #2ECC71;
+    font-weight: 600;
+}
+
+.tier-open {
+    color: #6B7280;
+}
+
 /* ==========================================================
    Trip/Class change badges - compact inline letters (C/T)
    appended to the meta line, not a separate row

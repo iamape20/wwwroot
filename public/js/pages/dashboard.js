@@ -70,12 +70,61 @@ function parseLondonTimeToSeconds(timeStr) {
     return (hours * 3600) + (mins * 60);
 }
 
-// --- Mathematical Scoring Refinements ---
+// --- Race confidence tier ---
+//
+// Mirrors js/marginTiers.js. Kept as a small standalone copy because
+// this file is deployed to Vercel and cannot require from the local
+// pipeline - the same deliberate, narrow duplication already used for
+// parseFractionalOdds in backend/services/liveScoring.js. If the cuts
+// change there, change them here too.
+//
+// Measured on 3,955 reconstructed races, restricted to fields of 5+,
+// edge over a blind pick by tier: Strong +20.2pp, Moderate +14.8pp,
+// Open +6.4pp. The margin between the top two predicts; the absolute
+// rating does not (picks rated under 30 won as often as picks rated
+// 75+), which is why this is worth showing alongside the number.
+const TIER_STRONG_CUT = 0.50;
+const TIER_MODERATE_CUT = 0.30;
+const TIER_MIN_FIELD_FOR_STRONG = 5;
+const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 
-/**
- * Calculates a Bayesian Smoothed & Weighted Rating
- * Prevents small denominator distortion (low sample size)
- */
+// `runners` must already be sorted best-first - this never re-sorts,
+// so it cannot disagree with the order actually being displayed.
+function raceMarginTier(runners) {
+
+    const ratings = (runners || [])
+        .map(r => r?.elite?.rating)
+        .filter(v => typeof v === "number");
+
+    if (ratings.length < 2) return null;
+
+    const top = ratings[0];
+    const margin = top - ratings[1];
+    const spread = top - ratings[ratings.length - 1];
+
+    if (spread <= 0) return { tier: "Open", margin, relativeMargin: 0 };
+
+    // With two runners the second IS the last, so margin/spread would
+    // always be 1 and every match race would read Strong.
+    const relativeMargin = ratings.length >= 3
+        ? margin / spread
+        : (top > 0 ? margin / top : 0);
+
+    // A ratio breaks down when its denominator is tiny: in a bunched
+    // field a meaningless 0.5-point gap can be half the total spread.
+    if (margin < TIER_MIN_ABSOLUTE_MARGIN) {
+        return { tier: "Open", margin, relativeMargin };
+    }
+
+    const tier = (relativeMargin >= TIER_STRONG_CUT && ratings.length >= TIER_MIN_FIELD_FOR_STRONG)
+        ? "Strong"
+        : relativeMargin >= TIER_MODERATE_CUT ? "Moderate"
+        : "Open";
+
+    return { tier, margin, relativeMargin };
+
+}
+
 // --- Badge & Display Builders ---
 
 function drawBadgeClass(breakdown) {
@@ -264,8 +313,26 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         document.getElementById("raceTitle").textContent =
             `${response.meeting.name} ${raceTime} - ${response.race.title}`;
 
+        // Split and sort BEFORE the info banner is built, so the banner
+        // can carry the race's confidence tier. Ratings come straight
+        // from the backend - nothing is recalculated here.
+        const allRunners = [...response.race.runners];
+        const runners = allRunners.filter(r => !r.isNonRunner);
+        const nonRunners = allRunners.filter(r => r.isNonRunner);
+
+        runners.sort((a, b) => b.elite.rating - a.elite.rating);
+
+        const marginTier = raceMarginTier(runners);
+
         const drawAdv = response.race.drawAdvantage || "None";
         const drawAdvClass = drawAdv === "None" ? "draw-adv-neutral" : "draw-adv-active";
+
+        const tierLabel = marginTier
+            ? `<span class="race-info-dot">•</span>` +
+              `<span class="race-info-item tier-${marginTier.tier.toLowerCase()}" ` +
+              `title="How far clear our top pick is, relative to the spread across this field">` +
+              `${marginTier.tier} pick${marginTier.margin > 0 ? ` (+${marginTier.margin.toFixed(1)} clear)` : ""}</span>`
+            : "";
 
         document.getElementById("raceInfoBanner").innerHTML = `
             <span class="race-info-item">Class ${escapeHtml(response.race.class ?? "-")}</span>
@@ -273,6 +340,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
             <span class="race-info-item">${escapeHtml(response.race.distance ?? "-")}</span>
             <span class="race-info-dot">•</span>
             <span class="race-info-item ${drawAdvClass}">Draw Advantage: ${escapeHtml(drawAdv)}</span>
+            ${tierLabel}
         `;
 
         container.innerHTML = "";
@@ -292,13 +360,6 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
             container.appendChild(summary);
         }
-
-        const allRunners = [...response.race.runners];
-        const runners = allRunners.filter(r => !r.isNonRunner);
-        const nonRunners = allRunners.filter(r => r.isNonRunner);
-
-        // Sort runners using Bayesian Smoothed Ratings for improved mathematical precision
-        runners.sort((a, b) => b.elite.rating - a.elite.rating);
 
         const runnerFragment = document.createDocumentFragment();
 
