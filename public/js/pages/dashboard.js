@@ -523,59 +523,97 @@ export async function loadDashboard() {
         }
 
         const dashboard = response.dashboard;
+
+        // ONE hero panel, driven by the NAP.
+        //
+        // These used to be two separate selections shown side by side,
+        // and they routinely disagreed - the Nap callout said one horse
+        // while the hero badge said another. They were picking on
+        // different things: the Nap on the margin between the top pick
+        // and the runner-up, the hero on the highest ELITE rating of
+        // the day.
+        //
+        // The Nap wins because the margin is the measured signal. On
+        // 301 real archived races, races with a clear top pick won at
+        // 26.1% against 14.1% for the rest (p=0.0125). Absolute rating
+        // carries no signal at all over the same data - picks rated
+        // under 30 won as often as picks rated 75+ (38.4% vs 39.8%).
+        // Leading with the rating meant headlining the one number
+        // measured NOT to predict anything.
+        //
+        // bestOpportunity is kept only as a fallback for days when no
+        // Nap qualifies, so the panel is never empty.
+        const nap = dashboard.nap && dashboard.nap.active ? dashboard.nap : null;
         const best = dashboard.bestOpportunity;
 
-        const napEl = document.getElementById("napCallout");
-        if (dashboard.nap && dashboard.nap.active) {
-            napEl.style.display = "";
-            napEl.innerHTML = `
-                <span class="nap-label">Today's Nap</span>
-                <div class="nap-name">${escapeHtml(dashboard.nap.name)}</div>
-                <div class="nap-meta">
-                    ${escapeHtml(dashboard.nap.meeting)} • ${escapeHtml(dashboard.nap.time)}
-                    ${dashboard.nap.strength ? ` • ${escapeHtml(dashboard.nap.strength)}` : ""}
-                </div>
-            `;
-        } else {
-            napEl.style.display = "none";
-        }
+        const hero = nap ? {
+            horse: nap.name,
+            rating: nap.rating,
+            course: nap.meeting,
+            raceTime: nap.time,
+            silkUrl: nap.silk_url,
+            meetingId: nap.meetingId,
+            raceIndex: nap.raceIndex,
+            tier: nap.tier,
+            gap: nap.gap,
+            isNap: true
+        } : best;
 
-        if (!best) {
+        // The old standalone Nap callout is now redundant - the hero
+        // IS the Nap. Hidden rather than deleted so the markup can stay
+        // as it is.
+        const napEl = document.getElementById("napCallout");
+        if (napEl) napEl.style.display = "none";
+
+        if (!hero) {
             document.getElementById("bestHorse").textContent = "No selections";
             document.getElementById("bestRating").textContent = "ELITE --";
-            document.getElementById("bestConfidence").textContent = "Confidence --%";
+            document.getElementById("bestConfidence").textContent = "No qualified pick today";
             return;
         }
 
-        document.getElementById("bestHorse").textContent = best.horse ?? "-";
-        document.getElementById("bestRating").textContent = best.rating != null ? `ELITE ${best.rating}` : "-";
-        document.getElementById("bestConfidence").textContent = best.confidence != null ? `Confidence ${best.confidence}%` : "--%";
-        document.getElementById("bestCourse").textContent = best.course ?? "-";
-        document.getElementById("bestRaceTime").textContent = best.raceTime ? toLocalTimeString(best.raceTime) : "-";
+        document.getElementById("bestHorse").textContent = hero.horse ?? "-";
+        document.getElementById("bestRating").textContent = hero.rating != null ? `ELITE ${hero.rating}` : "-";
+
+        // Second line shows the tier and margin - the measured signal -
+        // rather than the confidence percentage, which has never been
+        // validated as predictive.
+        const subEl = document.getElementById("bestConfidence");
+        if (hero.isNap) {
+            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` • +${hero.gap.toFixed(1)} clear` : "";
+            subEl.textContent = `${hero.tier ?? "Nap"} pick${gapText}`;
+            subEl.className = `tier-${String(hero.tier ?? "open").toLowerCase()}`;
+        } else {
+            subEl.textContent = "Top rated - no qualified Nap today";
+            subEl.className = "tier-open";
+        }
+
+        document.getElementById("bestCourse").textContent = hero.course ?? "-";
+        document.getElementById("bestRaceTime").textContent = hero.raceTime ? toLocalTimeString(hero.raceTime) : "-";
 
         const silk = document.getElementById("bestSilk");
-        if (best.silkUrl) {
-            silk.src = best.silkUrl;
+        if (hero.silkUrl) {
+            silk.src = hero.silkUrl;
             silk.style.display = "";
         } else {
             silk.style.display = "none";
         }
 
         const heroBadge = document.getElementById("heroBadge");
-        if (best.meetingId != null && best.raceIndex != null) {
+        if (hero.meetingId != null && hero.raceIndex != null) {
             heroBadge.style.cursor = "pointer";
 
-            const goToBestRace = async () => {
-                await loadRaces(best.meetingId, best.course, false);
-                await loadRace(best.meetingId, best.raceIndex, toLocalTimeString(best.raceTime));
+            const goToHeroRace = async () => {
+                await loadRaces(hero.meetingId, hero.course, false);
+                await loadRace(hero.meetingId, hero.raceIndex, toLocalTimeString(hero.raceTime));
             };
 
             heroBadge.onclick = async () => {
-                await goToBestRace();
+                await goToHeroRace();
                 document.getElementById("analysisSection").scrollIntoView({ behavior: "smooth", block: "start" });
             };
 
-            goToBestRace();
+            goToHeroRace();
         }
 
         if (dashboard.raceTimes) {
