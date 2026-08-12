@@ -544,7 +544,31 @@ export async function loadDashboard() {
         // bestOpportunity is kept only as a fallback for days when no
         // Nap qualifies, so the panel is never empty.
         const nap = dashboard.nap && dashboard.nap.active ? dashboard.nap : null;
+
+        // When no nap qualifies, fall back to the day's biggest
+        // SEPARATION, not its highest rating.
+        //
+        // 2026-08-12 showed why: two Strong races on the card, both
+        // with unexposed top picks, so the nap filter removed both and
+        // the panel fell through to the highest ELITE number - which
+        // picked a 89.4-rated horse over one with the day's largest
+        // margin (+38.7). Margin is the measured signal; rating is not.
+        const standout = dashboard.nap && dashboard.nap.standout ? dashboard.nap.standout : null;
         const best = dashboard.bestOpportunity;
+
+        const fallback = standout ? {
+            horse: standout.name,
+            rating: standout.rating,
+            course: standout.meeting,
+            raceTime: standout.time,
+            silkUrl: standout.silk_url,
+            meetingId: standout.meetingId,
+            raceIndex: standout.raceIndex,
+            tier: standout.tier,
+            gap: standout.gap,
+            isStandout: true,
+            isUnexposed: standout.isUnexposed
+        } : best;
 
         const hero = nap ? {
             horse: nap.name,
@@ -557,7 +581,7 @@ export async function loadDashboard() {
             tier: nap.tier,
             gap: nap.gap,
             isNap: true
-        } : best;
+        } : fallback;
 
         // The old standalone Nap callout is now redundant - the hero
         // IS the Nap. Hidden rather than deleted so the markup can stay
@@ -582,6 +606,11 @@ export async function loadDashboard() {
         if (hero.isNap) {
             const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` • +${hero.gap.toFixed(1)} clear` : "";
             subEl.textContent = `${hero.tier ?? "Nap"} pick${gapText}`;
+            subEl.className = `tier-${String(hero.tier ?? "open").toLowerCase()}`;
+        } else if (hero.isStandout) {
+            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` • +${hero.gap.toFixed(1)} clear` : "";
+            const caveat = hero.isUnexposed ? " (unexposed)" : "";
+            subEl.textContent = `Biggest separation${gapText}${caveat}`;
             subEl.className = `tier-${String(hero.tier ?? "open").toLowerCase()}`;
         } else {
             subEl.textContent = "Top rated - no qualified Nap today";
