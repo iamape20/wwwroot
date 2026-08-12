@@ -334,6 +334,14 @@ async function loadRace(meetingId, raceIndex, raceTime) {
               `${marginTier.tier} pick${marginTier.margin > 0 ? ` (+${marginTier.margin.toFixed(1)} clear)` : ""}</span>`
             : "";
 
+        // Dim the ELITE badges when the race is Open - the model has no
+        // strong opinion here, so the numbers should not look as
+        // confident as they do in a race it can call.
+        const analysisSection = document.getElementById("analysisSection");
+        if (analysisSection) {
+            analysisSection.classList.toggle("race-open", marginTier?.tier === "Open");
+        }
+
         document.getElementById("raceInfoBanner").innerHTML = `
             <span class="race-info-item">Class ${escapeHtml(response.race.class ?? "-")}</span>
             <span class="race-info-dot">•</span>

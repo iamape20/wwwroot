@@ -1085,6 +1085,35 @@ body{
     color: #6B7280;
 }
 
+/* Open-race de-emphasis.
+   Applied to the analysis section when the race's tier is Open, i.e.
+   the top pick is not meaningfully clear of the runner-up.
+
+   The threshold is OPEN vs not-Open, deliberately - not Strong vs
+   everything else. On 301 real archived races, Strong+Moderate won
+   26.1% against Open's 14.1% (p=0.0125), while Strong vs Moderate is
+   still indistinguishable (19.2% vs 29.0%, p=0.34 at n=26). Moderate
+   is currently the best-performing tier, so dimming it would hide the
+   selections that win most.
+
+   Only the ELITE rating badge is dimmed, not the card. The rating is
+   the number measured to carry NO signal on its own (picks rated under
+   30 win as often as picks rated 75+), so muting it in a race we
+   cannot call is honest. Form, badges and evidence stay fully legible,
+   because they are what a reader should be looking at instead. */
+
+.race-open .rating {
+    filter: saturate(0.25);
+    opacity: 0.55;
+}
+
+.race-open .rating-label {
+    opacity: 0.55;
+}
+
+/* Never dim the whole card - the form data in an Open race is exactly
+   as valid as in any other, it is only our confidence that differs. */
+
 /* ==========================================================
    Trip/Class change badges - compact inline letters (C/T)
    appended to the meta line, not a separate row
