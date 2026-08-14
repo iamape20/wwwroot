@@ -306,6 +306,23 @@ body{
     background:#6b7280;
 }
 
+.checklist-rating-label {
+    margin-top: 5px;
+    font-size: 8px;
+    line-height: 1;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--epr-muted);
+}
+
+.checklist-rating-value {
+    margin-top: 3px;
+    font-size: 10px;
+    line-height: 1.1;
+    color: #AAB4C3;
+    font-variant-numeric: tabular-nums;
+}
+
 .runner-card{
     transition:.2s;
 }
@@ -2198,6 +2215,16 @@ button,
 }
 
 @media (max-width: 600px) {
+
+    .checklist-rating-label {
+        font-size: 7px;
+        margin-top: 3px;
+    }
+
+    .checklist-rating-value {
+        font-size: 9px;
+        margin-top: 2px;
+    }
 
     .wrapper,
     .topbar {

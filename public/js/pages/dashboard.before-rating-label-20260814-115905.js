@@ -599,13 +599,13 @@ export async function loadDashboard() {
 
         if (!hero) {
             document.getElementById("bestHorse").textContent = "No selections";
-            document.getElementById("bestRating").textContent = "EPR --";
+            document.getElementById("bestRating").textContent = "ELITE --";
             document.getElementById("bestConfidence").textContent = "No qualified pick today";
             return;
         }
 
         document.getElementById("bestHorse").textContent = hero.horse ?? "-";
-        document.getElementById("bestRating").textContent = hero.rating != null ? `EPR ${hero.rating}` : "-";
+        document.getElementById("bestRating").textContent = hero.rating != null ? `ELITE ${hero.rating}` : "-";
 
         // Second line shows the tier and margin - the measured signal -
         // rather than the confidence percentage, which has never been

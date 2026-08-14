@@ -1,4 +1,4 @@
-// dashboard.js - Refined Mathematical & UI Implementation
+﻿// dashboard.js - Refined Mathematical & UI Implementation
 
 import {
     getDashboard,
@@ -197,7 +197,7 @@ function buildTripClassBadges(breakdown) {
 // Shows the current price whenever real snapshot data exists,
 // regardless of whether a live re-score specifically fired -
 // separate from buildLiveMoveBadge, which only shows for the
-// "🔴 LIVE" recomputed case specifically. UK convention: a
+// "ðŸ”´ LIVE" recomputed case specifically. UK convention: a
 // shortening price (steamer) is shown green with a down arrow,
 // a drifting price (lengthening) shown red with an up arrow.
 function buildPriceBadge(breakdown) {
@@ -205,7 +205,7 @@ function buildPriceBadge(breakdown) {
     const move = breakdown?.marketMove;
     if (!move || move.answer === "N/A" || !move.evidence) return "";
 
-    const parts = move.evidence.split(" → ");
+    const parts = move.evidence.split(" â†’ ");
     if (parts.length < 2) return "";
 
     const latestPrice = parts[1].split(" (")[0].trim();
@@ -215,9 +215,9 @@ function buildPriceBadge(breakdown) {
               : move.answer === "Drifter" ? "price-badge-out"
               : "price-badge-steady";
 
-    const arrow = move.answer === "Steamer" ? "▼"
-                : move.answer === "Drifter" ? "▲"
-                : "–";
+    const arrow = move.answer === "Steamer" ? "â–¼"
+                : move.answer === "Drifter" ? "â–²"
+                : "â€“";
 
     return `<span class="price-badge ${cls}" title="${escapeHtml(move.evidence)}">${arrow} ${escapeHtml(latestPrice)}</span>`;
 }
@@ -231,7 +231,7 @@ function buildLiveMoveBadge(breakdown) {
               : move.answer === "Drifter" ? "live-move-bad"
               : "live-move-neutral";
 
-    return `<span class="live-move-badge ${cls}" title="${escapeHtml(move.evidence)}">🔴 LIVE: ${escapeHtml(move.answer)}</span>`;
+    return `<span class="live-move-badge ${cls}" title="${escapeHtml(move.evidence)}">ðŸ”´ LIVE: ${escapeHtml(move.answer)}</span>`;
 }
 
 // Only shown when the horse genuinely qualifies - currently rated
@@ -241,7 +241,7 @@ function buildWinningMarkBadge(breakdown) {
     const wm = breakdown?.winningMark;
     if (!wm || wm.answer !== "Yes") return "";
 
-    return `<span class="winning-mark-badge" title="${escapeHtml(wm.evidence || "")}">⬇ WELL TREATED</span>`;
+    return `<span class="winning-mark-badge" title="${escapeHtml(wm.evidence || "")}">â¬‡ WELL TREATED</span>`;
 }
 
 function buildChecklistPanel(breakdown) {
@@ -328,7 +328,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         const drawAdvClass = drawAdv === "None" ? "draw-adv-neutral" : "draw-adv-active";
 
         const tierLabel = marginTier
-            ? `<span class="race-info-dot">•</span>` +
+            ? `<span class="race-info-dot">â€¢</span>` +
               `<span class="race-info-item tier-${marginTier.tier.toLowerCase()}" ` +
               `title="How far clear our top pick is, relative to the spread across this field">` +
               `${marginTier.tier} pick${marginTier.margin > 0 ? ` (+${marginTier.margin.toFixed(1)} clear)` : ""}</span>`
@@ -344,9 +344,9 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 
         document.getElementById("raceInfoBanner").innerHTML = `
             <span class="race-info-item">Class ${escapeHtml(response.race.class ?? "-")}</span>
-            <span class="race-info-dot">•</span>
+            <span class="race-info-dot">â€¢</span>
             <span class="race-info-item">${escapeHtml(response.race.distance ?? "-")}</span>
-            <span class="race-info-dot">•</span>
+            <span class="race-info-dot">â€¢</span>
             <span class="race-info-item ${drawAdvClass}">Draw Advantage: ${escapeHtml(drawAdv)}</span>
             ${tierLabel}
         `;
@@ -372,11 +372,14 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         const runnerFragment = document.createDocumentFragment();
 
         runners.forEach((runner, index) => {
-            const medal = index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : "";
+            const medal = index === 0 ? "ðŸ¥‡" : index === 1 ? "ðŸ¥ˆ" : index === 2 ? "ðŸ¥‰" : "";
             const card = document.createElement("div");
             card.className = "runner-card";
 
-            const rating = runner.elite.rating;
+            // EPR Power Rating is the actual model rating.
+            // runner.elite.rating is the checklist-derived percentage.
+            const rating = Number(runner.power_rating ?? 0);
+            const checklistRating = Number(runner.elite?.rating ?? 0);
 
             let ratingClass = "rating-blue";
             if (rating >= 55) ratingClass = "rating-gold";
@@ -402,7 +405,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
 							${buildWinningMarkBadge(runner.elite.checklistBreakdown)}
                         </div>
                         <div class="runner-meta">
-                            T: ${escapeHtml(runner.trainer)} &nbsp;•&nbsp; J: ${escapeHtml(runner.jockey)} &nbsp;•&nbsp; Form ${escapeHtml(runner.formsummary)} &nbsp;•&nbsp; Draw ${escapeHtml(runner.draw)} &nbsp;•&nbsp; Wt ${escapeHtml(runner.weight)}
+                            T: ${escapeHtml(runner.trainer)} &nbsp;â€¢&nbsp; J: ${escapeHtml(runner.jockey)} &nbsp;â€¢&nbsp; Form ${escapeHtml(runner.formsummary)} &nbsp;â€¢&nbsp; Draw ${escapeHtml(runner.draw)} &nbsp;â€¢&nbsp; Wt ${escapeHtml(runner.weight)}
                             ${buildTripClassBadges(runner.elite.checklistBreakdown)}
                         </div>
                         <div class="confidence-bar">
@@ -413,9 +416,11 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                     </div>
                 </div>
                 <div class="runner-right">
-                    <div class="rating-label">ELITE</div>
+                    <div class="rating-label">EPR</div>
                     <div class="rating ${ratingClass}">${rating.toFixed(1)}</div>
-                    <button class="checklist-toggle" type="button">Show working ▾</button>
+                    <div class="checklist-rating-label">Checklist</div>
+                    <div class="checklist-rating-value">${checklistRating.toFixed(1)}%</div>
+                    <button class="checklist-toggle" type="button">Show working â–¾</button>
                 </div>
             </div>
             ${buildChecklistPanel(runner.elite.checklistBreakdown)}
@@ -427,7 +432,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
             if (toggleBtn && panel) {
                 toggleBtn.addEventListener("click", () => {
                     const isOpen = panel.classList.toggle("open");
-                    toggleBtn.textContent = isOpen ? "Hide working ▴" : "Show working ▾";
+                    toggleBtn.textContent = isOpen ? "Hide working â–´" : "Show working â–¾";
                 });
             }
 
@@ -458,7 +463,7 @@ async function loadRace(meetingId, raceIndex, raceTime) {
                             <div class="runner-details">
                                 <div class="runner-name">${escapeHtml(runner.name)}</div>
                                 <div class="runner-meta">
-                                    T: ${escapeHtml(runner.trainer)} &nbsp;•&nbsp; J: ${escapeHtml(runner.jockey)}
+                                    T: ${escapeHtml(runner.trainer)} &nbsp;â€¢&nbsp; J: ${escapeHtml(runner.jockey)}
                                 </div>
                             </div>
                         </div>
@@ -495,7 +500,7 @@ async function loadRaces(meetingId, meetingName, autoSelectFirst = true) {
 
             card.innerHTML = `
                 <span class="race-card-time">${escapeHtml(toLocalTimeString(race.time))}</span>
-                <span class="race-card-meta">Class ${escapeHtml(race.class)} • ${escapeHtml(race.distance)}</span>
+                <span class="race-card-meta">Class ${escapeHtml(race.class)} â€¢ ${escapeHtml(race.distance)}</span>
                 <span class="race-card-runners">${escapeHtml(race.runners)} runners</span>
             `;
 
@@ -599,24 +604,24 @@ export async function loadDashboard() {
 
         if (!hero) {
             document.getElementById("bestHorse").textContent = "No selections";
-            document.getElementById("bestRating").textContent = "EPR --";
+            document.getElementById("bestRating").textContent = "ELITE --";
             document.getElementById("bestConfidence").textContent = "No qualified pick today";
             return;
         }
 
         document.getElementById("bestHorse").textContent = hero.horse ?? "-";
-        document.getElementById("bestRating").textContent = hero.rating != null ? `EPR ${hero.rating}` : "-";
+        document.getElementById("bestRating").textContent = hero.rating != null ? `EPR ${Number(hero.rating).toFixed(1)}` : "-";
 
         // Second line shows the tier and margin - the measured signal -
         // rather than the confidence percentage, which has never been
         // validated as predictive.
         const subEl = document.getElementById("bestConfidence");
         if (hero.isNap) {
-            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` • +${hero.gap.toFixed(1)} clear` : "";
+            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` +${hero.gap.toFixed(1)} clear` : "";
             subEl.textContent = `${hero.tier ?? "Nap"} pick${gapText}`;
             subEl.className = `tier-${String(hero.tier ?? "open").toLowerCase()}`;
         } else if (hero.isStandout) {
-            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` • +${hero.gap.toFixed(1)} clear` : "";
+            const gapText = typeof hero.gap === "number" && hero.gap > 0 ? ` +${hero.gap.toFixed(1)} clear` : "";
             const caveat = hero.isUnexposed ? " (unexposed)" : "";
             subEl.textContent = `Biggest separation${gapText}${caveat}`;
             subEl.className = `tier-${String(hero.tier ?? "open").toLowerCase()}`;
@@ -713,7 +718,7 @@ async function loadTodaysResults() {
                 <div class="results-strip-recent">
                     ${recentDetails.map(d => `
                         <span class="results-strip-race results-strip-${escapeHtml(d.outcome)}">
-                            ${escapeHtml(d.course)} ${escapeHtml(toLocalTimeString(d.time))} - ${escapeHtml(d.ourPick)} (${escapeHtml(d.outcome)})${d.outcome !== "won" && d.actualWinner ? ` &nbsp;→&nbsp; Winner: ${escapeHtml(d.actualWinner)}` : ""}
+                            ${escapeHtml(d.course)} ${escapeHtml(toLocalTimeString(d.time))} - ${escapeHtml(d.ourPick)} (${escapeHtml(d.outcome)})${d.outcome !== "won" && d.actualWinner ? ` &nbsp;â†’&nbsp; Winner: ${escapeHtml(d.actualWinner)}` : ""}
                         </span>
                     `).join("")}
                 </div>
@@ -756,3 +761,5 @@ async function loadMeetings() {
         console.error("Error loading meetings:", err);
     }
 }
+
+
