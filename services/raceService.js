@@ -102,11 +102,15 @@ async function getRace(meetingId, raceIndex) {
 						const recomputed = overrideCategory(elite.checklist_breakdown, "marketMove", liveMove);
 
 						if (recomputed) {
-							liveRating = recomputed.rating;
+							// IMPORTANT:
+							// recomputed.rating is a CHECKLIST rating.
+							// Do not replace the production V2 power_rating with it.
+							//
+							// The production ELITE rating must remain the V2 rating.
 							liveBreakdown = recomputed.breakdown;
-							livePoints = `${recomputed.earnedPoints}/${recomputed.maxPoints}`;
+							livePoints =
+								`${recomputed.earnedPoints}/${recomputed.maxPoints}`;
 						}
-
 					}
 
 				}
