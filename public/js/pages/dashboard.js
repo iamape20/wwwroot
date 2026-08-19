@@ -327,16 +327,46 @@ async function loadRace(meetingId, raceIndex, raceTime) {
         const drawAdv = response.race.drawAdvantage || "None";
         const drawAdvClass = drawAdv === "None" ? "draw-adv-neutral" : "draw-adv-active";
 
-        const tierLabel = marginTier
-            ? `<span class="race-info-dot">•</span>` +
-              `<span class="race-info-item tier-${marginTier.tier.toLowerCase()}" ` +
-              `title="How far clear our top pick is, relative to the spread across this field">` +
-              `${marginTier.tier} pick${marginTier.margin > 0 ? ` (+${marginTier.margin.toFixed(1)} clear)` : ""}</span>`
-            : "";
+		// ------------------------------------------------------------
+		// SELECTION STATUS
+		// ------------------------------------------------------------
+		// Existing statistical tiers are retained internally:
+		//   Strong   -> SAFE
+		//   Moderate -> CAUTION
+		//   Open     -> VOID
+		//
+		// This is presentation only. No rating or selection calculation
+		// is changed here.
+		// ------------------------------------------------------------
 
-        // Dim the ELITE badges when the race is Open - the model has no
-        // strong opinion here, so the numbers should not look as
-        // confident as they do in a race it can call.
+		let selectionStatus = null;
+
+		if (marginTier?.tier === "Strong") {
+			selectionStatus = {
+				label: "SAFE BET",
+				className: "selection-safe"
+			};
+		} else if (marginTier?.tier === "Moderate") {
+			selectionStatus = {
+				label: "BET CAUTION",
+				className: "selection-caution"
+			};
+		} else if (marginTier?.tier === "Open") {
+			selectionStatus = {
+				label: "VOID BET",
+				className: "selection-void"
+			};
+		}
+
+		const tierLabel = selectionStatus
+			? `<span class="race-info-dot">•</span>` +
+			  `<span class="race-info-item ${selectionStatus.className}" ` +
+			  `title="Selection status based on the measured separation of the leading rating">` +
+			  `${selectionStatus.label}` +
+			  `${marginTier.margin > 0 ? ` (+${marginTier.margin.toFixed(1)} clear)` : ""}` +
+			  `</span>`
+			: "";
+			
         const analysisSection = document.getElementById("analysisSection");
         if (analysisSection) {
             analysisSection.classList.toggle("race-open", marginTier?.tier === "Open");

@@ -736,6 +736,28 @@ body{
 }
 
 /* ==========================================================
+   Selection status
+   SAFE    = Strong
+   CAUTION = Moderate
+   VOID    = Open
+   ========================================================== */
+
+.selection-safe {
+    color: #2ECC71;
+    font-weight: 700;
+}
+
+.selection-caution {
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.selection-void {
+    color: #6B7280;
+    font-weight: 700;
+}
+
+/* ==========================================================
    Hero rating & confidence - was unstyled, now matches the
    badge language already used in the runner cards below
    ========================================================== */
