@@ -535,13 +535,23 @@ export async function loadDashboard() {
         const standout = dashboard.nap && dashboard.nap.standout ? dashboard.nap.standout : null;
         const best = dashboard.bestOpportunity;
 
+		console.log(
+			"EPR DASHBOARD DATE DEBUG:",
+			JSON.stringify({
+				date: dashboard?.date,
+				meetingDate: dashboard?.meetingDate,
+				meetings: dashboard?.meetings?.map(m => ({
+					name: m?.name,
+					date: m?.date
+				}))
+			}, null, 2)
+		);
+
 		const liveDayEl =
 			document.getElementById("live-day");
 
 		const cardDate =
-			dashboard?.date ||
-			dashboard?.meetingDate ||
-			dashboard?.meetings?.[0]?.date;
+			dashboard?.raceCardDate;
 
 		if (liveDayEl && cardDate) {
 

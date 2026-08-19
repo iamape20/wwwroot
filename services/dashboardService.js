@@ -10,8 +10,20 @@ function getDashboard() {
     let meetings = 0;
     let races = 0;
     let runners = 0;
-
     let bestOpportunity = null;
+	let raceCardDate = null;
+	
+	for (const meeting of Object.values(daily || {})) {
+		
+		const date =
+			meeting?.meeting_summary?.date;
+
+		if (date) {
+			raceCardDate = date;
+			break;
+		}
+
+	}
 
     meetings = Object.keys(cards).length;
 
@@ -83,6 +95,7 @@ function getDashboard() {
             nap,
             bestOpportunity,
             raceTimes,
+			raceCardDate,
 
             statistics: {
 
