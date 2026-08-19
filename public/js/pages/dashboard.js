@@ -531,38 +531,40 @@ export async function loadDashboard() {
         }
 
         const dashboard = response.dashboard;
-
-        // ONE hero panel, driven by the NAP.
-        //
-        // These used to be two separate selections shown side by side,
-        // and they routinely disagreed - the Nap callout said one horse
-        // while the hero badge said another. They were picking on
-        // different things: the Nap on the margin between the top pick
-        // and the runner-up, the hero on the highest ELITE rating of
-        // the day.
-        //
-        // The Nap wins because the margin is the measured signal. On
-        // 301 real archived races, races with a clear top pick won at
-        // 26.1% against 14.1% for the rest (p=0.0125). Absolute rating
-        // carries no signal at all over the same data - picks rated
-        // under 30 won as often as picks rated 75+ (38.4% vs 39.8%).
-        // Leading with the rating meant headlining the one number
-        // measured NOT to predict anything.
-        //
-        // bestOpportunity is kept only as a fallback for days when no
-        // Nap qualifies, so the panel is never empty.
         const nap = dashboard.nap && dashboard.nap.active ? dashboard.nap : null;
-
-        // When no nap qualifies, fall back to the day's biggest
-        // SEPARATION, not its highest rating.
-        //
-        // 2026-08-12 showed why: two Strong races on the card, both
-        // with unexposed top picks, so the nap filter removed both and
-        // the panel fell through to the highest ELITE number - which
-        // picked a 89.4-rated horse over one with the day's largest
-        // margin (+38.7). Margin is the measured signal; rating is not.
         const standout = dashboard.nap && dashboard.nap.standout ? dashboard.nap.standout : null;
         const best = dashboard.bestOpportunity;
+
+		const liveDayEl =
+			document.getElementById("live-day");
+
+		const cardDate =
+			dashboard?.date ||
+			dashboard?.meetingDate ||
+			dashboard?.meetings?.[0]?.date;
+
+		if (liveDayEl && cardDate) {
+
+			const date =
+				new Date(`${cardDate}T12:00:00`);
+
+			if (!Number.isNaN(date.getTime())) {
+
+				liveDayEl.textContent =
+					new Intl.DateTimeFormat(
+						"en-GB",
+						{
+							weekday: "long",
+							day: "numeric",
+							month: "long",
+							year: "numeric",
+							timeZone: "Europe/London"
+						}
+					).format(date);
+
+			}
+
+		}
 
         const fallback = standout ? {
             horse: standout.name,
