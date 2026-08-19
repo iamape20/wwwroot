@@ -290,6 +290,256 @@ function highlightSelectedHorses(text, verdictText, runners) {
     return result;
 }
 
+// ============================================================
+// LIVE INTELLIGENCE TICKER
+// ============================================================
+//
+// Uses raceTimes already supplied by the dashboard API.
+// No additional API call is required.
+//
+// Future market-price items can be added to this same ticker.
+// ============================================================
+
+function getLondonNowSeconds() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/London",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+    }).formatToParts(new Date());
+
+    const get = type =>
+        Number(parts.find(p => p.type === type)?.value ?? 0);
+
+    return (
+        get("hour") * 3600 +
+        get("minute") * 60 +
+        get("second")
+    );
+}
+
+function startLiveTicker(dashboard) {
+
+    const ticker =
+        document.getElementById("live-ticker-content");
+
+    if (!ticker) return;
+
+    const items = [];
+
+    // --------------------------------------------------------
+    // UPCOMING RACES
+    // --------------------------------------------------------
+
+    const raceTimes =
+        Array.isArray(dashboard?.raceTimes)
+            ? dashboard.raceTimes
+            : [];
+
+    const nowSeconds = getLondonNowSeconds();
+
+    const upcoming =
+        raceTimes
+            .map(r => ({
+                ...r,
+                displayTime: toLocalTimeString(r.time),
+                totalSecs: parseLondonTimeToSeconds(r.time)
+            }))
+            .filter(r => r.totalSecs >= nowSeconds)
+            .sort((a, b) => a.totalSecs - b.totalSecs);
+
+    if (upcoming.length) {
+
+        const next = upcoming[0];
+
+		items.push({
+			html:
+				`<span class="ticker-item">` +
+					`<span class="ticker-next">UP NEXT:</span>` +
+					`<span>${escapeHtml(next.course)}</span>` +
+					`<strong>${escapeHtml(next.displayTime)}</strong>` +
+				`</span>`
+		});
+
+        if (upcoming[1]) {
+
+			items.push({
+				html:
+					`<span class="ticker-item">` +
+						`<span class="ticker-next">THERE AFTER:</span>` +
+						`<span>${escapeHtml(upcoming[1].course)}</span>` +
+						`<strong>${escapeHtml(upcoming[1].displayTime)}</strong>` +
+					`</span>`
+			});
+        }
+    }
+
+// --------------------------------------------------------
+// BEST OPPORTUNITY
+// --------------------------------------------------------
+
+const nap =
+    dashboard?.nap?.active
+        ? dashboard.nap
+        : null;
+
+const standout =
+    dashboard?.nap?.standout
+        ? dashboard.nap.standout
+        : null;
+
+const rawBest =
+    nap ||
+    standout ||
+    dashboard?.bestOpportunity;
+
+if (rawBest) {
+
+    const best = {
+        horse:
+            rawBest.horse ??
+            rawBest.name ??
+            "-",
+
+        rating:
+            rawBest.rating ?? null,
+
+        course:
+            rawBest.course ??
+            rawBest.meeting ??
+            "",
+
+        raceTime:
+            rawBest.raceTime ??
+            rawBest.time ??
+            null
+    };
+
+    items.push({
+        html:
+            `<span class="ticker-item">` +
+
+                `<span class="ticker-best">` +
+                    `★ BEST OPPORTUNITY` +
+                `</span>` +
+
+                `<span class="ticker-horse">` +
+                    `${escapeHtml(best.horse)}` +
+                `</span>` +
+
+                `<span class="ticker-rating">` +
+                    `EPR ${escapeHtml(String(best.rating ?? "-"))}` +
+                `</span>` +
+
+                `<span class="ticker-course">` +
+                    `${escapeHtml(best.course)}` +
+                    `${best.raceTime ? ` ${escapeHtml(toLocalTimeString(best.raceTime))}` : ""}` +
+                `</span>` +
+
+            `</span>`
+    });
+}
+
+	// --------------------------------------------------------
+	// UPCOMING RACE BOARD
+	// --------------------------------------------------------
+
+	if (upcoming.length >= 3) {
+
+		const sequence =
+			upcoming
+				.slice(0, 3)
+				.map(r =>
+					`<span class="ticker-race">` +
+						`<span class="ticker-course">${escapeHtml(r.course)}</span>` +
+						`<strong>${escapeHtml(r.displayTime)}</strong>` +
+					`</span>`
+				)
+				.join(
+					`<span class="ticker-separator">•</span>`
+				);
+
+		items.push({
+			html:
+				`<span class="ticker-item">` +
+					`<span class="ticker-next">RACE BOARD</span>` +
+					sequence +
+				`</span>`
+		});
+	}
+
+    // --------------------------------------------------------
+    // NOTHING TO SHOW
+    // --------------------------------------------------------
+
+    if (!items.length) {
+
+        ticker.textContent =
+            "No upcoming races";
+
+        return;
+    }
+
+    let index = 0;
+
+    const showItem = () => {
+
+        // Slide current item out
+        ticker.classList.remove("ticker-entering");
+        ticker.classList.add("ticker-changing");
+
+        setTimeout(() => {
+
+            ticker.innerHTML =
+                items[index].html;
+
+            // Start just to the right
+            ticker.classList.remove("ticker-changing");
+            ticker.classList.add("ticker-entering");
+
+            requestAnimationFrame(() => {
+
+                requestAnimationFrame(() => {
+
+                    ticker.classList.remove("ticker-entering");
+
+                });
+
+            });
+
+            index =
+                (index + 1) % items.length;
+
+        }, 350);
+    };
+
+    // Show first item immediately
+    ticker.innerHTML =
+        items[0].html;
+
+    index = 1;
+
+    ticker.classList.remove(
+        "ticker-changing",
+        "ticker-entering"
+    );
+
+    clearInterval(
+        window.timerPool?.liveTicker
+    );
+
+    window.timerPool ??= {};
+
+    // Six seconds per message
+    window.timerPool.liveTicker =
+        setInterval(
+            showItem,
+            6000
+        );
+}
+
+
 // --- Core Data Loading Functions ---
 
 async function loadRace(meetingId, raceIndex, raceTime) {
@@ -709,6 +959,8 @@ export async function loadDashboard() {
             }
         }
 
+		startLiveTicker(dashboard);
+		
         await loadMeetings();
         loadTodaysResults();
         setInterval(loadTodaysResults, 300000);
