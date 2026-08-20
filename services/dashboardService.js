@@ -85,6 +85,112 @@ function getDashboard() {
 
 	}
 
+    // ------------------------------------------------------------
+    // TODAY'S STRONG CANDIDATES
+    // ------------------------------------------------------------
+    //
+    // Presentation data only.
+    // Does not alter ratings or production selections.
+    // ------------------------------------------------------------
+
+    const strongCandidates = [];
+
+    for (const [meetingId, meeting] of Object.entries(ratings || {})) {
+
+        if (!Array.isArray(meeting.races))
+            continue;
+
+        meeting.races.forEach((race, raceIndex) => {
+
+            if (!Array.isArray(race.runners))
+                return;
+
+            const runners =
+                race.runners
+                    .filter(r =>
+                        r &&
+                        r.isNonRunner !== true
+                    )
+                    .slice()
+                    .sort((a, b) =>
+                        (Number(b.power_rating) || 0) -
+                        (Number(a.power_rating) || 0)
+                    );
+
+            if (runners.length < 2)
+                return;
+
+            const top = runners[0];
+            const second = runners[1];
+
+            const rating =
+                Number(top.power_rating);
+
+            const secondRating =
+                Number(second.power_rating);
+
+            if (
+                !Number.isFinite(rating) ||
+                !Number.isFinite(secondRating)
+            )
+                return;
+
+            const gap =
+                Number(
+                    (rating - secondRating)
+                        .toFixed(1)
+                );
+
+            // Initial research/display threshold.
+            // Experiment 2 may refine this later.
+            if (gap < 10)
+                return;
+
+            strongCandidates.push({
+
+                horse: top.name,
+
+                rating,
+
+                gap,
+
+                confidence:
+                    Number(top.confidence) || null,
+
+                course:
+                    meeting.name,
+
+                raceTime:
+                    race.time,
+
+                meetingId,
+
+                raceIndex,
+
+                tier:
+                    top.tier ||
+                    race.tier ||
+                    null,
+
+                silkUrl:
+                    top.silk_url || null
+
+            });
+
+        });
+
+    }
+
+    strongCandidates.sort((a, b) =>
+        b.gap - a.gap ||
+        b.rating - a.rating
+    );
+	
+
+
+
+
+
     return {
 
         success: true,
@@ -94,6 +200,7 @@ function getDashboard() {
             daily,
             nap,
             bestOpportunity,
+			strongCandidates,
             raceTimes,
 			raceCardDate,
 

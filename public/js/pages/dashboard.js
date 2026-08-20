@@ -40,8 +40,6 @@ const CHECKLIST_SHORT = {
     runningStyle: "RS", beatenFavourite: "BF", bounceProfile: "BP"
 };
 
-// --- Security & Formatting Helpers ---
-
 function escapeHtml(str) {
     if (typeof str !== "string") return str ?? "";
     return str
@@ -70,26 +68,11 @@ function parseLondonTimeToSeconds(timeStr) {
     return (hours * 3600) + (mins * 60);
 }
 
-// --- Race confidence tier ---
-//
-// Mirrors js/marginTiers.js. Kept as a small standalone copy because
-// this file is deployed to Vercel and cannot require from the local
-// pipeline - the same deliberate, narrow duplication already used for
-// parseFractionalOdds in backend/services/liveScoring.js. If the cuts
-// change there, change them here too.
-//
-// Measured on 3,955 reconstructed races, restricted to fields of 5+,
-// edge over a blind pick by tier: Strong +20.2pp, Moderate +14.8pp,
-// Open +6.4pp. The margin between the top two predicts; the absolute
-// rating does not (picks rated under 30 won as often as picks rated
-// 75+), which is why this is worth showing alongside the number.
 const TIER_STRONG_CUT = 0.50;
 const TIER_MODERATE_CUT = 0.30;
 const TIER_MIN_FIELD_FOR_STRONG = 5;
 const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 
-// `runners` must already be sorted best-first - this never re-sorts,
-// so it cannot disagree with the order actually being displayed.
 function raceMarginTier(runners) {
 
     const ratings = (runners || [])
@@ -104,14 +87,10 @@ function raceMarginTier(runners) {
 
     if (spread <= 0) return { tier: "Open", margin, relativeMargin: 0 };
 
-    // With two runners the second IS the last, so margin/spread would
-    // always be 1 and every match race would read Strong.
     const relativeMargin = ratings.length >= 3
         ? margin / spread
         : (top > 0 ? margin / top : 0);
 
-    // A ratio breaks down when its denominator is tiny: in a bunched
-    // field a meaningless 0.5-point gap can be half the total spread.
     if (margin < TIER_MIN_ABSOLUTE_MARGIN) {
         return { tier: "Open", margin, relativeMargin };
     }
@@ -124,8 +103,6 @@ function raceMarginTier(runners) {
     return { tier, margin, relativeMargin };
 
 }
-
-// --- Badge & Display Builders ---
 
 function drawBadgeClass(breakdown) {
     const draw = breakdown?.draw;
@@ -152,12 +129,6 @@ function buildChecklistSummary(breakdown) {
 
             let chipClass = "checklist-chip-zero";
             if (data.points === data.max) {
-                // A genuinely high-value contributor (2+ points
-                // earned) stands out more than a fully-earned but
-                // small one (0.25-1 points) - with 20+ categories now,
-                // "did it score" alone isn't enough to tell the
-                // categories that actually moved the rating from the
-                // ones that barely nudged it.
                 chipClass = data.points >= 2 ? "checklist-chip-high-impact" : "checklist-chip-full";
             } else if (data.points > 0) {
                 chipClass = "checklist-chip-partial";
@@ -194,12 +165,6 @@ function buildTripClassBadges(breakdown) {
     return parts.join("");
 }
 
-// Shows the current price whenever real snapshot data exists,
-// regardless of whether a live re-score specifically fired -
-// separate from buildLiveMoveBadge, which only shows for the
-// "🔴 LIVE" recomputed case specifically. UK convention: a
-// shortening price (steamer) is shown green with a down arrow,
-// a drifting price (lengthening) shown red with an up arrow.
 function buildPriceBadge(breakdown) {
 
     const move = breakdown?.marketMove;
@@ -234,9 +199,6 @@ function buildLiveMoveBadge(breakdown) {
     return `<span class="live-move-badge ${cls}" title="${escapeHtml(move.evidence)}">🔴 LIVE: ${escapeHtml(move.answer)}</span>`;
 }
 
-// Only shown when the horse genuinely qualifies - currently rated
-// below the mark it has already proven capable of winning off. A
-// real, well-treated signal, not just "no data" or "not well-treated".
 function buildWinningMarkBadge(breakdown) {
     const wm = breakdown?.winningMark;
     if (!wm || wm.answer !== "Yes") return "";
@@ -289,16 +251,6 @@ function highlightSelectedHorses(text, verdictText, runners) {
 
     return result;
 }
-
-// ============================================================
-// LIVE INTELLIGENCE TICKER
-// ============================================================
-//
-// Uses raceTimes already supplied by the dashboard API.
-// No additional API call is required.
-//
-// Future market-price items can be added to this same ticker.
-// ============================================================
 
 function getLondonNowSeconds() {
     const parts = new Intl.DateTimeFormat("en-GB", {
@@ -539,8 +491,144 @@ if (rawBest) {
         );
 }
 
+function renderStrongCandidates(dashboard) {
 
-// --- Core Data Loading Functions ---
+    const container =
+        document.getElementById(
+            "strong-candidates-content"
+        );
+
+    if (!container)
+        return;
+
+    const candidates =
+        Array.isArray(
+            dashboard?.strongCandidates
+        )
+            ? dashboard.strongCandidates.slice(0, 3)
+            : [];
+
+    if (!candidates.length) {
+
+        container.innerHTML =
+            `<span class="candidate-empty">
+                No strong candidates
+             </span>`;
+
+        return;
+    }
+
+    container.innerHTML =
+        candidates.map(candidate => {
+
+            const time =
+                candidate.raceTime
+                    ? toLocalTimeString(
+                        candidate.raceTime
+                    )
+                    : "-";
+
+            return `
+			<button
+				type="button"
+				class="candidate-item"
+				data-meeting-id="${escapeHtml(String(candidate.meetingId))}"
+				data-meeting="${escapeHtml(candidate.course || "")}"
+				data-race-index="${escapeHtml(String(candidate.raceIndex))}"
+				data-race-time="${escapeHtml(String(candidate.raceTime || ""))}"
+			>
+				${
+					candidate.silkUrl
+						? `<img
+								src="${escapeHtml(candidate.silkUrl)}"
+								class="candidate-silk"
+								alt=""
+								loading="lazy"
+						  >`
+						: `<span class="candidate-silk candidate-silk-empty"></span>`
+				}
+
+				<span class="candidate-info">
+
+					<span class="candidate-horse">
+						${escapeHtml(candidate.horse || "-")}
+					</span>
+
+					<span class="candidate-course">
+						${escapeHtml(candidate.course || "-")}
+						${escapeHtml(time)}
+						<span class="candidate-gap">
+							&nbsp;•&nbsp; +${escapeHtml(String(candidate.gap))}
+						</span>
+					</span>
+
+				</span>
+
+				<span class="candidate-rating">
+					EPR ${escapeHtml(String(candidate.rating))}
+				</span>
+
+			</button>
+            `;
+
+        }).join("");
+
+    container
+        .querySelectorAll(".candidate-item")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                async () => {
+
+                    const meetingId =
+                        button.dataset.meetingId;
+
+                    const meeting =
+                        button.dataset.meeting;
+
+                    const raceIndex =
+                        Number(
+                            button.dataset.raceIndex
+                        );
+
+                    const raceTime =
+                        button.dataset.raceTime;
+
+                    await loadRaces(
+                        meetingId,
+                        meeting,
+                        false
+                    );
+
+                    await loadRace(
+                        meetingId,
+                        raceIndex,
+                        toLocalTimeString(
+                            raceTime
+                        )
+                    );
+
+                    const analysis =
+                        document.getElementById(
+                            "analysisSection"
+                        );
+
+                    if (analysis) {
+
+                        analysis.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+
+                }
+            );
+
+        });
+
+}
 
 async function loadRace(meetingId, raceIndex, raceTime) {
     try {
@@ -811,6 +899,9 @@ export async function loadDashboard() {
         }
 
         const dashboard = response.dashboard;
+		
+		renderStrongCandidates(dashboard);
+		
         const nap = dashboard.nap && dashboard.nap.active ? dashboard.nap : null;
         const standout = dashboard.nap && dashboard.nap.standout ? dashboard.nap.standout : null;
         const best = dashboard.bestOpportunity;
@@ -959,7 +1050,7 @@ export async function loadDashboard() {
             }
         }
 
-		startLiveTicker(dashboard);
+		//startLiveTicker(dashboard);
 		
         await loadMeetings();
         loadTodaysResults();

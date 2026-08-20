@@ -462,8 +462,127 @@ body{
 }
 
 
+/* ============================================================
+   STRONG CANDIDATES - HEADER
+   ============================================================ */
 
+.topbar-candidates {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 690px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 14px;
+    overflow: hidden;
+}
 
+.candidates-label {
+    flex: 0 0 auto;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    opacity: 0.65;
+}
+
+.candidates-list {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.candidate-item {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 220px;
+    height: 46px;
+    padding: 5px 9px;
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    column-gap: 7px;
+    align-items: center;
+    background: #10151f !important;
+    color: #f5f7fa !important;
+    border: 1px solid #293244 !important;
+    border-radius: 6px;
+    font: inherit;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: none;
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.candidate-item:hover {
+    background: #161d2a !important;
+    border-color: #d8a900 !important;
+    transform: translateY(-1px);
+}
+
+.candidate-silk {
+    width: 26px;
+    height: 32px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.candidate-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.candidate-horse {
+    min-width: 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.candidate-course {
+    min-width: 0;
+    font-size: 9px;
+    color: #8993a5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.candidate-gap {
+    color: #d8a900;
+    font-weight: 700;
+}
+
+.candidate-rating {
+    white-space: nowrap;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    color: #f0c928;
+}
+
+/* Empty state */
+
+.candidate-empty {
+    font-size: 10px;
+    color: #687386;
+    white-space: nowrap;
+}
 
 
 /* =========================================================
