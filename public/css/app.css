@@ -334,25 +334,6 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,.35);
 }
 
-/* ==========================================================
-   EPR LIVE INTELLIGENCE TICKER
-   Kept inside the existing topbar so it does not push the
-   racecard further down the page.
-   ========================================================== */
-
-/* ==========================================================
-   EPR LIVE INTELLIGENCE TICKER
-   ========================================================== */
-
-/* ==========================================================
-   EPR LIVE RACING TICKER
-   ========================================================== */
-
-/* ==========================================================
-   EPR LIVE RACING TICKER
-   Compact rotating intelligence panel
-   ========================================================== */
-
 .topbar-ticker {
     flex: 1 1 auto;
     min-width: 0;
@@ -469,7 +450,7 @@ body{
 .topbar-candidates {
     flex: 1 1 auto;
     min-width: 0;
-    max-width: 690px;
+    max-width: 720px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -568,12 +549,29 @@ body{
 }
 
 .candidate-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     white-space: nowrap;
-
     font-size: 9px;
     font-weight: 700;
-
     color: #f0c928;
+}
+
+.candidate-field {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 15px;
+    padding: 0 3px;
+
+    border: 1px solid #394355;
+    border-radius: 3px;
+
+    color: #9ba5b5;
+    font-size: 8px;
+    font-weight: 700;
 }
 
 /* Empty state */

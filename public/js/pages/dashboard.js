@@ -555,17 +555,29 @@ function renderStrongCandidates(dashboard) {
 					</span>
 
 					<span class="candidate-course">
-						${escapeHtml(candidate.course || "-")}
-						${escapeHtml(time)}
-						<span class="candidate-gap">
-							&nbsp;•&nbsp; +${escapeHtml(String(candidate.gap))}
-						</span>
+							${escapeHtml(candidate.course || "-")}
+							${escapeHtml(time)}
+							<span class="candidate-gap">
+									&nbsp;•&nbsp; +${escapeHtml(String(candidate.gap))}
+							</span>
 					</span>
 
 				</span>
 
 				<span class="candidate-rating">
-					EPR ${escapeHtml(String(candidate.rating))}
+
+					${
+						candidate.fieldSize
+							? `<span class="candidate-field">
+									${escapeHtml(String(candidate.fieldSize))}R
+							   </span>`
+							: ""
+					}
+
+					<span>
+						EPR ${escapeHtml(String(candidate.rating))}
+					</span>
+
 				</span>
 
 			</button>

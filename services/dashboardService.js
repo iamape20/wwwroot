@@ -146,36 +146,39 @@ function getDashboard() {
             if (gap < 10)
                 return;
 
-            strongCandidates.push({
+			 strongCandidates.push({
 
-                horse: top.name,
+				horse: top.name,
 
-                rating,
+				rating,
 
-                gap,
+				gap,
 
-                confidence:
-                    Number(top.confidence) || null,
+				fieldSize:
+					runners.length,
 
-                course:
-                    meeting.name,
+				confidence:
+					Number(top.confidence) || null,
 
-                raceTime:
-                    race.time,
+				course:
+					meeting.name,
 
-                meetingId,
+				raceTime:
+					race.time,
 
-                raceIndex,
+				meetingId,
 
-                tier:
-                    top.tier ||
-                    race.tier ||
-                    null,
+				raceIndex,
 
-                silkUrl:
-                    top.silk_url || null
+				tier:
+					top.tier ||
+					race.tier ||
+					null,
 
-            });
+				silkUrl:
+					top.silk_url || null
+
+			});
 
         });
 
