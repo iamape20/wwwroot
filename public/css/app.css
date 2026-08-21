@@ -2599,3 +2599,423 @@ button,
     }
 }
 
+
+
+/* ============================================================
+   TODAY'S BETTING CANDIDATES
+   Strong = primary candidates
+   Worth Considering = credible alternatives
+   ============================================================ */
+
+.candidate-item {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 220px;
+
+    height: 54px;
+    padding: 6px 9px;
+
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    column-gap: 8px;
+    align-items: center;
+
+    background: #10151f !important;
+    color: #f5f7fa !important;
+    border: 1px solid #293244 !important;
+    border-radius: 6px;
+
+    font: inherit;
+    cursor: pointer;
+    overflow: hidden;
+
+    box-shadow: none;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.candidate-item:hover {
+    background: #161d2a !important;
+    border-color: #d8a900 !important;
+    transform: translateY(-1px);
+}
+
+.candidate-silk {
+    width: 28px;
+    height: 38px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.candidate-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.candidate-horse {
+    min-width: 0;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #ffffff;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.candidate-course {
+    min-width: 0;
+    font-size: 9px;
+    line-height: 12px;
+    color: #8993a5;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.candidate-gap {
+    color: #d8a900;
+    font-weight: 700;
+}
+
+.candidate-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    white-space: nowrap;
+    font-size: 9px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #f0c928;
+}
+
+.candidate-field {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 20px;
+    height: 15px;
+    padding: 0 3px;
+
+    border: 1px solid #394355;
+    border-radius: 3px;
+
+    color: #9ba5b5;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.candidate-board {
+    margin: 22px 0 28px;
+    padding: 22px;
+    background: #0a0e17;
+    border: 1px solid #202938;
+    border-radius: 16px;
+}
+
+.candidate-board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.candidate-board-kicker,
+.candidate-panel-kicker {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #D4AF37;
+}
+
+.candidate-board-header h2 {
+    margin: 4px 0 0;
+    color: #FFF;
+    font-size: 22px;
+}
+
+.candidate-board-note {
+    color: #7F8A9B;
+    font-size: 11px;
+    text-align: right;
+}
+
+.candidate-board-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+}
+
+.candidate-panel {
+    min-width: 0;
+    border-radius: 13px;
+    overflow: hidden;
+    background: #111827;
+    border: 1px solid #293244;
+}
+
+.candidate-panel-strong {
+    border-color: rgba(46, 204, 113, .45);
+}
+
+.candidate-panel-worth {
+    border-color: rgba(212, 175, 55, .35);
+}
+
+.candidate-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 17px;
+    background: rgba(0,0,0,.20);
+    border-bottom: 1px solid #293244;
+}
+
+.candidate-panel-header h3 {
+    margin: 3px 0 0;
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: .04em;
+}
+
+.candidate-panel-count {
+    min-width: 27px;
+    height: 27px;
+    padding: 0 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1A2233;
+    border: 1px solid #3A4558;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.candidate-board-list {
+    display: grid;
+}
+
+.candidate-board-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 16px;
+    border: 0;
+    border-bottom: 1px solid #202938;
+    background: transparent;
+    color: #FFF;
+    text-align: left;
+    cursor: pointer;
+    transition: background .16s ease, transform .16s ease;
+}
+
+.candidate-board-item:last-child {
+    border-bottom: 0;
+}
+
+.candidate-board-item:hover {
+    background: #161D2A;
+    transform: translateX(2px);
+}
+
+.candidate-board-main {
+    min-width: 0;
+    flex: 1;
+}
+
+.candidate-board-horse {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.candidate-board-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 4px;
+    color: #8F9AAC;
+    font-size: 11px;
+}
+
+.candidate-board-location strong {
+    color: #D9DEE7;
+    font-weight: 700;
+}
+
+.candidate-board-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.candidate-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .06em;
+}
+
+.candidate-tag-strong {
+    color: #2ECC71;
+    background: rgba(46,204,113,.10);
+    border: 1px solid rgba(46,204,113,.30);
+}
+
+.candidate-tag-worth {
+    color: #D4AF37;
+    background: rgba(212,175,55,.09);
+    border: 1px solid rgba(212,175,55,.28);
+}
+
+.candidate-tag-grade {
+    color: #AAB4C3;
+    background: #1A2233;
+    border: 1px solid #303B4D;
+}
+
+.candidate-board-metrics {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.candidate-metric,
+.candidate-form {
+    min-width: 42px;
+    text-align: center;
+}
+
+.candidate-metric small,
+.candidate-form small {
+    display: block;
+    color: #687386;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.candidate-metric strong,
+.candidate-form strong {
+    display: block;
+    margin-top: 2px;
+    color: #D4AF37;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.candidate-confidence-strong strong {
+    color: #2ECC71;
+}
+
+.candidate-confidence-good strong {
+    color: #65D98D;
+}
+
+.candidate-confidence-moderate strong {
+    color: #D4AF37;
+}
+
+.candidate-confidence-cautious strong {
+    color: #9BA5B5;
+}
+
+.candidate-odds strong {
+    color: #F1F5F9;
+}
+
+.candidate-form strong {
+    color: #AAB4C3;
+    font-size: 10px;
+}
+
+.candidate-board-arrow {
+    color: #D4AF37;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.candidate-board-empty {
+    padding: 24px 17px;
+    color: #687386;
+    font-size: 12px;
+}
+
+/* Race-level status must never look like a contradictory horse-level
+   betting warning. It describes the race, not the candidate. */
+.race-info-item.selection-safe {
+    color: #2ECC71;
+}
+
+.race-info-item.selection-caution {
+    color: #D4AF37;
+}
+
+.race-info-item.selection-void {
+    color: #7C8594;
+}
+
+@media (max-width: 900px) {
+    .candidate-board-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-board-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .candidate-board-note {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .candidate-board {
+        padding: 14px;
+        border-radius: 13px;
+    }
+
+    .candidate-board-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .candidate-board-metrics {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .candidate-board-arrow {
+        margin-left: auto;
+    }
+}

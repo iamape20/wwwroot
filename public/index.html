@@ -107,6 +107,50 @@
         </div>
     </section>
 
+    <!-- ============================================================
+         TODAY'S BETTING CANDIDATES
+         Strong Candidates are primary selections.
+         Worth Considering contains credible alternatives.
+         ============================================================ -->
+    <section id="candidateBoard" class="candidate-board" aria-label="Today's betting candidates">
+
+        <div class="candidate-board-header">
+            <div>
+                <span class="candidate-board-kicker">TODAY'S BETTING CANDIDATES</span>
+                <h2>Selections &amp; Alternatives</h2>
+            </div>
+            <div class="candidate-board-note">
+                Strong = primary candidates &nbsp;•&nbsp; Worth Considering = credible alternatives
+            </div>
+        </div>
+
+        <div class="candidate-board-grid">
+
+            <section class="candidate-panel candidate-panel-strong">
+                <div class="candidate-panel-header">
+                    <div>
+                        <span class="candidate-panel-kicker">PRIMARY</span>
+                        <h3>STRONG CANDIDATES</h3>
+                    </div>
+                    <span id="strongCandidateCount" class="candidate-panel-count">0</span>
+                </div>
+                <div id="strong-candidates-board" class="candidate-board-list"></div>
+            </section>
+
+            <section class="candidate-panel candidate-panel-worth">
+                <div class="candidate-panel-header">
+                    <div>
+                        <span class="candidate-panel-kicker">ALTERNATIVES</span>
+                        <h3>WORTH CONSIDERING</h3>
+                    </div>
+                    <span id="worthConsideringCount" class="candidate-panel-count">0</span>
+                </div>
+                <div id="worth-considering-board" class="candidate-board-list"></div>
+            </section>
+
+        </div>
+    </section>
+
     <div id="todaysResultsStrip" class="results-strip" style="display:none;"></div>
 
     <!-- Meetings now live in the top strip above -->

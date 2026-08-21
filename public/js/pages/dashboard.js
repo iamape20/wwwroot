@@ -502,9 +502,7 @@ function renderStrongCandidates(dashboard) {
         return;
 
     const candidates =
-        Array.isArray(
-            dashboard?.strongCandidates
-        )
+        Array.isArray(dashboard?.strongCandidates)
             ? dashboard.strongCandidates.slice(0, 3)
             : [];
 
@@ -521,69 +519,132 @@ function renderStrongCandidates(dashboard) {
     container.innerHTML =
         candidates.map(candidate => {
 
-            const time =
+            // --------------------------------------------------------
+            // Support both the current API structure and the older
+            // dashboard structure.
+            //
+            // Current:
+            //   name
+            //   power_rating
+            //
+            // Older:
+            //   horse
+            //   rating
+            // --------------------------------------------------------
+
+            const horse =
+                candidate.name ??
+                candidate.horse ??
+                "-";
+
+            const rating =
+                candidate.power_rating ??
+                candidate.rating ??
+                null;
+
+            const gap =
+                candidate.gap ??
+                null;
+
+            const fieldSize =
+                candidate.fieldSize ??
+                null;
+
+            const course =
+                candidate.course ??
+                candidate.meeting ??
+                "-";
+
+            const raceTime =
                 candidate.raceTime
-                    ? toLocalTimeString(
-                        candidate.raceTime
-                    )
-                    : "-";
+                    ? toLocalTimeString(candidate.raceTime)
+                    : candidate.time
+                        ? toLocalTimeString(candidate.time)
+                        : "-";
+
+            const meetingId =
+                candidate.meetingId ?? "";
+
+            const raceIndex =
+                candidate.raceIndex ?? "";
+
+            const silkUrl =
+                candidate.silkUrl ??
+                candidate.silk_url ??
+                null;
 
             return `
-			<button
-				type="button"
-				class="candidate-item"
-				data-meeting-id="${escapeHtml(String(candidate.meetingId))}"
-				data-meeting="${escapeHtml(candidate.course || "")}"
-				data-race-index="${escapeHtml(String(candidate.raceIndex))}"
-				data-race-time="${escapeHtml(String(candidate.raceTime || ""))}"
-			>
-				${
-					candidate.silkUrl
-						? `<img
-								src="${escapeHtml(candidate.silkUrl)}"
-								class="candidate-silk"
-								alt=""
-								loading="lazy"
-						  >`
-						: `<span class="candidate-silk candidate-silk-empty"></span>`
-				}
+                <button
+                    type="button"
+                    class="candidate-item"
+                    data-meeting-id="${escapeHtml(String(meetingId))}"
+                    data-meeting="${escapeHtml(course)}"
+                    data-race-index="${escapeHtml(String(raceIndex))}"
+                    data-race-time="${escapeHtml(String(candidate.raceTime || candidate.time || ""))}"
+                >
 
-				<span class="candidate-info">
+                    ${
+                        silkUrl
+                            ? `<img
+                                    src="${escapeHtml(silkUrl)}"
+                                    class="candidate-silk"
+                                    alt=""
+                                    loading="lazy"
+                              >`
+                            : `<span class="candidate-silk candidate-silk-empty"></span>`
+                    }
 
-					<span class="candidate-horse">
-						${escapeHtml(candidate.horse || "-")}
-					</span>
+                    <span class="candidate-info">
 
-					<span class="candidate-course">
-							${escapeHtml(candidate.course || "-")}
-							${escapeHtml(time)}
-							<span class="candidate-gap">
-									&nbsp;•&nbsp; +${escapeHtml(String(candidate.gap))}
-							</span>
-					</span>
+                        <span class="candidate-horse">
+                            ${escapeHtml(horse)}
+                        </span>
 
-				</span>
+                        <span class="candidate-course">
+                            ${escapeHtml(course)}
+                            ${escapeHtml(raceTime)}
 
-				<span class="candidate-rating">
+                            ${
+                                gap != null
+                                    ? `<span class="candidate-gap">
+                                            &nbsp;•&nbsp; +${escapeHtml(String(gap))}
+                                       </span>`
+                                    : ""
+                            }
 
-					${
-						candidate.fieldSize
-							? `<span class="candidate-field">
-									${escapeHtml(String(candidate.fieldSize))}R
-							   </span>`
-							: ""
-					}
+                        </span>
 
-					<span>
-						EPR ${escapeHtml(String(candidate.rating))}
-					</span>
+                    </span>
 
-				</span>
+                    <span class="candidate-rating">
 
-			</button>
+                        ${
+                            fieldSize
+                                ? `<span class="candidate-field">
+                                        ${escapeHtml(String(fieldSize))}R
+                                   </span>`
+                                : ""
+                        }
+
+                        <span>
+                            EPR ${
+                                rating != null
+                                    ? escapeHtml(Number(rating).toFixed(1))
+                                    : "-"
+                            }
+                        </span>
+
+                    </span>
+
+                </button>
             `;
 
         }).join("");
+
+
+    // --------------------------------------------------------
+    // Candidate click handling
+    // --------------------------------------------------------
 
     container
         .querySelectorAll(".candidate-item")
@@ -606,6 +667,23 @@ function renderStrongCandidates(dashboard) {
 
                     const raceTime =
                         button.dataset.raceTime;
+
+                    if (
+                        !meetingId ||
+                        !Number.isFinite(raceIndex)
+                    ) {
+                        console.warn(
+                            "Candidate does not contain valid race context:",
+                            {
+                                meetingId,
+                                meeting,
+                                raceIndex,
+                                raceTime
+                            }
+                        );
+
+                        return;
+                    }
 
                     await loadRaces(
                         meetingId,

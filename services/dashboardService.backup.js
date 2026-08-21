@@ -1,4 +1,4 @@
-﻿const json = require("./jsonService");
+const json = require("./jsonService");
 
 // ============================================================================
 // Dashboard candidate classification
@@ -222,7 +222,6 @@ function getDashboard() {
     // ========================================================================
 
 const strongCandidates = [];
-const worthConsidering = [];
 
 for (const [meetingId, meeting] of Object.entries(ratings || {})) {
 
