@@ -14,10 +14,32 @@ module.exports = function predictRace(race, meeting) {
         if (!horse)
             continue;
 
+        // --------------------------------------------------
+        // Today's trainer / jockey
+        // stage2_cards.json is the authoritative source
+        // --------------------------------------------------
+
+        const trainer = history.getTrainer(runner.trainer_id);
+        const jockey = history.getJockey(runner.jockey_id);
+
+        // Attach today's connections to the horse object
+        // so the analysis modules can use their statistics.
+        horse.trainer = trainer;
+        horse.jockey = jockey;
+
+        // --------------------------------------------------
+        // Race context
+        // --------------------------------------------------
+
         const prediction = predictHorse(horse, {
             distance: race.distance,
             going: meeting.going,
-            raceClass: race.race_class
+            raceClass: race.race_class,
+            course: meeting.name,
+            runners: race.runners.length,
+            handicap: race.handicap,
+            surface: race.surface,
+            type: race.type
         });
 
         results.push({
@@ -29,7 +51,11 @@ module.exports = function predictRace(race, meeting) {
         });
     }
 
-    results.sort((a, b) => b.prediction.rating - a.prediction.rating);
+    results.sort(
+        (a, b) =>
+            b.prediction.rating -
+            a.prediction.rating
+    );
 
     return results;
 };
