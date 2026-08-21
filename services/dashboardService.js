@@ -1,5 +1,56 @@
 const json = require("./jsonService");
 
+// ============================================================================
+// Dashboard candidate classification
+// ============================================================================
+//
+// Strong Candidates:
+//   EPR >= 75 AND confidence >= 70
+//
+// Worth Considering:
+//   EPR >= 70 AND confidence >= 45
+//
+// Anything below those thresholds remains out of the positive betting lists.
+//
+// IMPORTANT:
+//   These classifications are presentation/selection layers only.
+//   They do NOT alter the V2 power rating or confidence calculation.
+// ============================================================================
+
+function classifyCandidate(horse) {
+
+    const power = Number(horse?.power_rating ?? 0);
+    const confidence = Number(horse?.confidence ?? 0);
+
+    if (power >= 75 && confidence >= 70) {
+
+        return {
+            tier: "Strong",
+            label: "STRONG CANDIDATE"
+        };
+
+    }
+
+    if (power >= 70 && confidence >= 45) {
+
+        return {
+            tier: "Worth Considering",
+            label: "WORTH CONSIDERING"
+        };
+
+    }
+
+    return {
+        tier: null,
+        label: null
+    };
+}
+
+
+// ============================================================================
+// DASHBOARD
+// ============================================================================
+
 function getDashboard() {
 
     const daily = json.load("daily_data.json");
@@ -10,189 +61,339 @@ function getDashboard() {
     let meetings = 0;
     let races = 0;
     let runners = 0;
+
     let bestOpportunity = null;
-	let raceCardDate = null;
-	
-	for (const meeting of Object.values(daily || {})) {
-		
-		const date =
-			meeting?.meeting_summary?.date;
+    let raceCardDate = null;
 
-		if (date) {
-			raceCardDate = date;
-			break;
-		}
 
-	}
+    // ========================================================================
+    // RACE CARD DATE
+    // ========================================================================
 
-    meetings = Object.keys(cards).length;
+    for (const meeting of Object.values(daily || {})) {
+
+        const date =
+            meeting?.meeting_summary?.date;
+
+        if (date) {
+
+            raceCardDate = date;
+            break;
+
+        }
+
+    }
+
+
+    // ========================================================================
+    // BASIC CARD STATISTICS
+    // ========================================================================
+
+    meetings =
+        Object.keys(cards || {}).length;
 
     const raceTimes = [];
 
-    for (const meeting of Object.values(cards)) {
 
-        races += meeting.races.length;
-
-        for (const race of meeting.races) {
-            runners += race.runners.length;
-
-            raceTimes.push({
-                course: meeting.name,
-                time: race.time
-            });
-        }
-    }
-
-	const ratingRaces = Array.isArray(ratings)
-		? ratings
-		: Object.values(ratings);
-
-	for (const [meetingId, meeting] of Object.entries(ratings)) {
-
-		if (!Array.isArray(meeting.races))
-			continue;
-
-		meeting.races.forEach((race, raceIndex) => {
-
-			if (!Array.isArray(race.runners))
-				return;
-
-			for (const runner of race.runners) {
-
-				if (
-					!bestOpportunity ||
-					runner.power_rating > bestOpportunity.rating
-				) {
-
-
-					bestOpportunity = {
-
-						horse: runner.name,
-						rating: runner.power_rating,
-						confidence: runner.confidence,
-						course: meeting.name,
-						raceTime: race.time,
-						silkUrl: runner.silk_url,
-						meetingId,
-						raceIndex
-
-					};
-				}
-
-			}
-
-		});
-
-	}
-
-    // ------------------------------------------------------------
-    // TODAY'S STRONG CANDIDATES
-    // ------------------------------------------------------------
-    //
-    // Presentation data only.
-    // Does not alter ratings or production selections.
-    // ------------------------------------------------------------
-
-    const strongCandidates = [];
-
-    for (const [meetingId, meeting] of Object.entries(ratings || {})) {
+    for (const meeting of Object.values(cards || {})) {
 
         if (!Array.isArray(meeting.races))
             continue;
+
+
+        races += meeting.races.length;
+
+
+        for (const race of meeting.races) {
+
+            if (!Array.isArray(race.runners))
+                continue;
+
+
+            runners += race.runners.length;
+
+
+            raceTimes.push({
+
+                course: meeting.name,
+                time: race.time
+
+            });
+
+        }
+
+    }
+
+
+    // ========================================================================
+    // BEST OPPORTUNITY
+    // ========================================================================
+    //
+    // This remains the highest EPR-rated runner on the card.
+    //
+    // Informational only.
+    //
+    // It does NOT mean the horse is automatically a Strong Candidate.
+    //
+    // ========================================================================
+
+    for (
+        const [meetingId, meeting]
+        of Object.entries(ratings || {})
+    ) {
+
+        if (!Array.isArray(meeting.races))
+            continue;
+
 
         meeting.races.forEach((race, raceIndex) => {
 
             if (!Array.isArray(race.runners))
                 return;
 
-            const runners =
-                race.runners
-                    .filter(r =>
-                        r &&
-                        r.isNonRunner !== true
-                    )
-                    .slice()
-                    .sort((a, b) =>
-                        (Number(b.power_rating) || 0) -
-                        (Number(a.power_rating) || 0)
-                    );
 
-            if (runners.length < 2)
-                return;
+            for (const runner of race.runners) {
 
-            const top = runners[0];
-            const second = runners[1];
+                const rating =
+                    Number(runner?.power_rating);
 
-            const rating =
-                Number(top.power_rating);
 
-            const secondRating =
-                Number(second.power_rating);
+                if (!Number.isFinite(rating))
+                    continue;
 
-            if (
-                !Number.isFinite(rating) ||
-                !Number.isFinite(secondRating)
-            )
-                return;
 
-            const gap =
-                Number(
-                    (rating - secondRating)
-                        .toFixed(1)
-                );
+                if (
+                    !bestOpportunity ||
+                    rating > bestOpportunity.rating
+                ) {
 
-            // Initial research/display threshold.
-            // Experiment 2 may refine this later.
-            if (gap < 10)
-                return;
+                    bestOpportunity = {
 
-			 strongCandidates.push({
+                        horse:
+                            runner.name,
 
-				horse: top.name,
+                        rating,
 
-				rating,
+                        confidence:
+                            Number.isFinite(
+                                Number(runner.confidence)
+                            )
+                                ? Number(runner.confidence)
+                                : null,
 
-				gap,
+                        course:
+                            meeting.name,
 
-				fieldSize:
-					runners.length,
+                        raceTime:
+                            race.time,
 
-				confidence:
-					Number(top.confidence) || null,
+                        silkUrl:
+                            runner.silk_url || null,
 
-				course:
-					meeting.name,
+                        meetingId,
 
-				raceTime:
-					race.time,
+                        raceIndex
 
-				meetingId,
+                    };
 
-				raceIndex,
+                }
 
-				tier:
-					top.tier ||
-					race.tier ||
-					null,
-
-				silkUrl:
-					top.silk_url || null
-
-			});
+            }
 
         });
 
     }
 
-    strongCandidates.sort((a, b) =>
-        b.gap - a.gap ||
-        b.rating - a.rating
-    );
-	
+
+    // ========================================================================
+    // TODAY'S BETTING CANDIDATES
+    // ========================================================================
+    //
+    // IMPORTANT:
+    //
+    // The production ratings are stored in `ratings`.
+    //
+    // Do NOT use `meetings` here.
+    //
+    // `meetings` is a numeric statistic containing the number of meetings.
+    //
+    // `ratings` contains the actual final_ratings.json data.
+    //
+    // ========================================================================
+
+    const strongCandidates = [];
+    const worthConsidering = [];
 
 
+    for (const meeting of Object.values(ratings || {})) {
+
+        if (!Array.isArray(meeting.races))
+            continue;
 
 
+        for (const race of meeting.races) {
+
+            if (!Array.isArray(race.runners))
+                continue;
+
+
+            for (const horse of race.runners) {
+
+                const classification =
+                    classifyCandidate(horse);
+
+
+                // ------------------------------------------------------------
+                // Not sufficiently strong for either positive category.
+                // ------------------------------------------------------------
+
+                if (!classification.tier)
+                    continue;
+
+
+                const candidate = {
+
+                    meeting:
+                        meeting.name,
+
+                    race:
+                        race.time,
+
+                    name:
+                        horse.name,
+
+                    id:
+                        horse.id,
+
+                    power_rating:
+                        Number(
+                            horse.power_rating ?? 0
+                        ),
+
+                    confidence:
+                        Number(
+                            horse.confidence ?? 0
+                        ),
+
+                    confidence_grade:
+                        horse.confidence_grade || null,
+
+                    odds:
+                        horse.current_odds || null,
+
+                    form:
+                        horse.form || null,
+
+                    rating_breakdown:
+                        horse.rating_breakdown || null,
+
+                    engine_details:
+                        horse.engine_details || null,
+
+                    tier:
+                        classification.tier,
+
+                    label:
+                        classification.label
+
+                };
+
+
+                // ------------------------------------------------------------
+                // STRONG CANDIDATE
+                // ------------------------------------------------------------
+
+                if (
+                    classification.tier === "Strong"
+                ) {
+
+                    strongCandidates.push(
+                        candidate
+                    );
+
+                }
+
+
+                // ------------------------------------------------------------
+                // WORTH CONSIDERING
+                // ------------------------------------------------------------
+
+                else {
+
+                    worthConsidering.push(
+                        candidate
+                    );
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    // ========================================================================
+    // SORT STRONG CANDIDATES
+    // ========================================================================
+    //
+    // Highest EPR first.
+    //
+    // Confidence is the secondary sort.
+    //
+    // ========================================================================
+
+    strongCandidates.sort((a, b) => {
+
+        const powerDifference =
+            b.power_rating -
+            a.power_rating;
+
+
+        if (powerDifference !== 0)
+            return powerDifference;
+
+
+        return (
+            b.confidence -
+            a.confidence
+        );
+
+    });
+
+
+    // ========================================================================
+    // SORT WORTH CONSIDERING
+    // ========================================================================
+    //
+    // Highest EPR first.
+    //
+    // Confidence is the secondary sort.
+    //
+    // ========================================================================
+
+    worthConsidering.sort((a, b) => {
+
+        const powerDifference =
+            b.power_rating -
+            a.power_rating;
+
+
+        if (powerDifference !== 0)
+            return powerDifference;
+
+
+        return (
+            b.confidence -
+            a.confidence
+        );
+
+    });
+
+
+    // ========================================================================
+    // RETURN DASHBOARD DATA
+    // ========================================================================
 
     return {
 
@@ -201,16 +402,25 @@ function getDashboard() {
         dashboard: {
 
             daily,
+
             nap,
+
             bestOpportunity,
-			strongCandidates,
+
+            strongCandidates,
+
+            worthConsidering,
+
             raceTimes,
-			raceCardDate,
+
+            raceCardDate,
 
             statistics: {
 
                 meetings,
+
                 races,
+
                 runners
 
             }
@@ -220,6 +430,11 @@ function getDashboard() {
     };
 
 }
+
+
+// ============================================================================
+// EXPORTS
+// ============================================================================
 
 module.exports = {
 
