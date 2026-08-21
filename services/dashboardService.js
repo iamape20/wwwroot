@@ -1,74 +1,214 @@
-﻿const json = require("./jsonService");
+const json = require("./jsonService");
 
 // ============================================================================
-// Dashboard candidate classification
-// ============================================================================
-//
-// Strong Candidates:
-//   EPR >= 75 AND confidence >= 70
-//
-// Worth Considering:
-//   EPR >= 70 AND confidence >= 45
-//
-// Anything below those thresholds remains out of the positive betting lists.
+// EPR DASHBOARD SERVICE
+// Candidate board uses the production-style race separation tier.
 //
 // IMPORTANT:
-//   These classifications are presentation/selection layers only.
-//   They do NOT alter the V2 power rating or confidence calculation.
+// - final_ratings.json is the source of EPR ratings.
+// - stage2_cards.json is used for the card/race clock statistics.
+// - We do NOT use arbitrary EPR/confidence thresholds to create the board.
+// - Strong = production-style Strong race separation.
+// - Worth Considering = production-style Moderate race separation.
 // ============================================================================
 
-function classifyCandidate(horse) {
+const TIER_STRONG_CUT = 0.50;
+const TIER_MODERATE_CUT = 0.30;
+const TIER_MIN_FIELD_FOR_STRONG = 5;
+const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 
-    const power = Number(horse?.power_rating ?? 0);
-    const confidence = Number(horse?.confidence ?? 0);
 
-    if (power >= 75 && confidence >= 70) {
+function classifyRace(runners) {
+
+    const valid = (runners || [])
+        .filter(r =>
+            r &&
+            r.isNonRunner !== true &&
+            Number.isFinite(Number(r.power_rating))
+        )
+        .slice()
+        .sort(
+            (a, b) =>
+                Number(b.power_rating) -
+                Number(a.power_rating)
+        );
+
+    if (valid.length < 2)
+        return null;
+
+    const top = Number(valid[0].power_rating);
+    const second = Number(valid[1].power_rating);
+    const last = Number(valid[valid.length - 1].power_rating);
+
+    const margin = top - second;
+    const spread = top - last;
+
+    const relativeMargin =
+        spread > 0
+            ? (
+                valid.length >= 3
+                    ? margin / spread
+                    : (top > 0 ? margin / top : 0)
+            )
+            : 0;
+
+    if (margin < TIER_MIN_ABSOLUTE_MARGIN) {
 
         return {
-            tier: "Strong",
-            label: "STRONG CANDIDATE"
+            tier: "Open",
+            margin,
+            relativeMargin,
+            runners: valid
         };
-
     }
 
-    if (power >= 70 && confidence >= 45) {
+    let tier = "Open";
 
-        return {
-            tier: "Worth Considering",
-            label: "WORTH CONSIDERING"
-        };
+    if (
+        relativeMargin >= TIER_STRONG_CUT &&
+        valid.length >= TIER_MIN_FIELD_FOR_STRONG
+    ) {
 
+        tier = "Strong";
+
+    } else if (
+        relativeMargin >= TIER_MODERATE_CUT
+    ) {
+
+        tier = "Moderate";
     }
 
     return {
-        tier: null,
-        label: null
+        tier,
+        margin,
+        relativeMargin,
+        runners: valid
     };
 }
 
 
-// ============================================================================
-// DASHBOARD
-// ============================================================================
+function makeCandidate(
+    meetingId,
+    meeting,
+    race,
+    raceIndex,
+    top,
+    tierInfo
+) {
+
+    return {
+
+        name:
+            top.name || "-",
+
+        horse:
+            top.name || "-",
+
+        meeting:
+            meeting.name || "-",
+
+        course:
+            meeting.name || "-",
+
+        race:
+            race.time || "",
+
+        raceTime:
+            race.time || "",
+
+        meetingId,
+
+        raceIndex,
+
+        silkUrl:
+            top.silk_url ||
+            top.silkUrl ||
+            null,
+
+        silk_url:
+            top.silk_url ||
+            top.silkUrl ||
+            null,
+
+        power_rating:
+            Number(top.power_rating),
+
+        rating:
+            Number(top.power_rating),
+
+        confidence:
+            Number.isFinite(Number(top.confidence))
+                ? Number(top.confidence)
+                : null,
+
+        confidence_grade:
+            top.confidence_grade || null,
+
+        gap:
+            Number(tierInfo.margin.toFixed(1)),
+
+        relativeMargin:
+            Number(tierInfo.relativeMargin.toFixed(3)),
+
+        fieldSize:
+            tierInfo.runners.length,
+
+        odds:
+            top.current_odds ??
+            top.odds ??
+            null,
+
+        form:
+            top.form || null,
+
+        rating_breakdown:
+            top.rating_breakdown || null,
+
+        engine_details:
+            top.engine_details || null,
+
+        tier:
+            tierInfo.tier,
+
+        candidateType:
+            tierInfo.tier === "Strong"
+                ? "STRONG"
+                : "WORTH CONSIDERING",
+
+        label:
+            tierInfo.tier === "Strong"
+                ? "STRONG CANDIDATE"
+                : "WORTH CONSIDERING"
+    };
+}
+
 
 function getDashboard() {
 
-    const daily = json.load("daily_data.json");
-    const ratings = json.load("final_ratings.json");
-    const nap = json.load("nap_spotlight.json");
-    const cards = json.load("stage2_cards.json");
+    const daily =
+        json.load("daily_data.json");
+
+    const ratings =
+        json.load("final_ratings.json");
+
+    const nap =
+        json.load("nap_spotlight.json");
+
+    const cards =
+        json.load("stage2_cards.json");
+
 
     let meetings = 0;
     let races = 0;
     let runners = 0;
 
-    let bestOpportunity = null;
     let raceCardDate = null;
+    let bestOpportunity = null;
 
 
-    // ========================================================================
-    // RACE CARD DATE
-    // ========================================================================
+    // ------------------------------------------------------------------------
+    // DATE
+    // ------------------------------------------------------------------------
 
     for (const meeting of Object.values(daily || {})) {
 
@@ -79,343 +219,213 @@ function getDashboard() {
 
             raceCardDate = date;
             break;
-
         }
-
     }
 
 
-    // ========================================================================
-    // BASIC CARD STATISTICS
-    // ========================================================================
+    // ------------------------------------------------------------------------
+    // CARD STATISTICS / RACE TIMES
+    // ------------------------------------------------------------------------
 
     meetings =
         Object.keys(cards || {}).length;
 
     const raceTimes = [];
 
-
     for (const meeting of Object.values(cards || {})) {
 
-        if (!Array.isArray(meeting.races))
+        if (!Array.isArray(meeting?.races))
             continue;
-
 
         races += meeting.races.length;
 
-
         for (const race of meeting.races) {
 
-            if (!Array.isArray(race.runners))
+            if (!Array.isArray(race?.runners))
                 continue;
-
 
             runners += race.runners.length;
 
-
             raceTimes.push({
 
-                course: meeting.name,
-                time: race.time
+                course:
+                    meeting.name || "",
 
+                time:
+                    race.time || ""
             });
-
         }
-
     }
 
 
-    // ========================================================================
+    // ------------------------------------------------------------------------
     // BEST OPPORTUNITY
-    // ========================================================================
-    //
-    // This remains the highest EPR-rated runner on the card.
-    //
-    // Informational only.
-    //
-    // It does NOT mean the horse is automatically a Strong Candidate.
-    //
-    // ========================================================================
+    // ------------------------------------------------------------------------
 
     for (
         const [meetingId, meeting]
         of Object.entries(ratings || {})
     ) {
 
-        if (!Array.isArray(meeting.races))
+        if (!Array.isArray(meeting?.races))
             continue;
 
+        meeting.races.forEach(
+            (race, raceIndex) => {
 
-        meeting.races.forEach((race, raceIndex) => {
+                if (!Array.isArray(race?.runners))
+                    return;
 
-            if (!Array.isArray(race.runners))
-                return;
+                for (const runner of race.runners) {
 
+                    if (
+                        runner?.isNonRunner === true
+                    )
+                        continue;
 
-            for (const runner of race.runners) {
+                    const rating =
+                        Number(runner?.power_rating);
 
-                const rating =
-                    Number(runner?.power_rating);
+                    if (!Number.isFinite(rating))
+                        continue;
 
+                    if (
+                        !bestOpportunity ||
+                        rating >
+                        Number(bestOpportunity.rating)
+                    ) {
 
-                if (!Number.isFinite(rating))
-                    continue;
+                        bestOpportunity = {
 
+                            horse:
+                                runner.name,
 
-                if (
-                    !bestOpportunity ||
-                    rating > bestOpportunity.rating
-                ) {
+                            rating,
 
-                    bestOpportunity = {
+                            confidence:
+                                runner.confidence,
 
-                        horse:
-                            runner.name,
+                            course:
+                                meeting.name,
 
-                        rating,
+                            raceTime:
+                                race.time,
 
-                        confidence:
-                            Number.isFinite(
-                                Number(runner.confidence)
-                            )
-                                ? Number(runner.confidence)
-                                : null,
+                            silkUrl:
+                                runner.silk_url ||
+                                null,
 
-                        course:
-                            meeting.name,
+                            meetingId,
 
-                        raceTime:
-                            race.time,
-
-                        silkUrl:
-                            runner.silk_url || null,
-
-                        meetingId,
-
-                        raceIndex
-
-                    };
-
+                            raceIndex
+                        };
+                    }
                 }
-
             }
-
-        });
-
+        );
     }
 
 
-    // ========================================================================
+    // ------------------------------------------------------------------------
     // TODAY'S BETTING CANDIDATES
-    // ========================================================================
     //
-    // IMPORTANT:
+    // ONE candidate per race:
+    // the highest EPR runner.
     //
-    // The production ratings are stored in `ratings`.
-    //
-    // Do NOT use `meetings` here.
-    //
-    // `meetings` is a numeric statistic containing the number of meetings.
-    //
-    // `ratings` contains the actual final_ratings.json data.
-    //
-    // ========================================================================
+    // Strong      -> primary candidate
+    // Moderate    -> Worth Considering
+    // Open        -> omitted
+    // ------------------------------------------------------------------------
 
-const strongCandidates = [];
-const worthConsidering = [];
-
-for (const [meetingId, meeting] of Object.entries(ratings || {})) {
-
-    if (!Array.isArray(meeting.races))
-        continue;
-
-    meeting.races.forEach((race, raceIndex) => {
-
-        if (!Array.isArray(race.runners))
-            return;
-
-        const runners =
-            race.runners
-                .filter(r =>
-                    r &&
-                    r.isNonRunner !== true
-                )
-                .slice()
-                .sort((a, b) =>
-                    (Number(b.power_rating) || 0) -
-                    (Number(a.power_rating) || 0)
-                );
-
-        if (runners.length < 2)
-            return;
-
-        const top = runners[0];
-        const second = runners[1];
-
-        const rating =
-            Number(top.power_rating);
-
-        const secondRating =
-            Number(second.power_rating);
-
-        if (
-            !Number.isFinite(rating) ||
-            !Number.isFinite(secondRating)
-        )
-            return;
-
-        const gap =
-            Number(
-                (rating - secondRating)
-                    .toFixed(1)
-            );
-
-        if (gap < 10)
-            return;
-
-strongCandidates.push({
-
-    // ========================================================
-    // RACE CONTEXT
-    // ========================================================
-
-    name:
-        top.name,
-
-    meeting:
-        meeting.name,
-
-    race:
-        race.time,
-
-    id:
-        top.id,
-
-    meetingId:
-        meetingId,
-
-    raceIndex:
-        raceIndex,
-
-    raceTime:
-        race.time,
-
-    // ========================================================
-    // SILK
-    // ========================================================
-
-    silkUrl:
-        top.silk_url ||
-        top.silkUrl ||
-        null,
-
-    // ========================================================
-    // EPR
-    // ========================================================
-
-    power_rating:
-        rating,
-
-    confidence:
-        Number(top.confidence) || null,
-
-    // ========================================================
-    // SELECTION METADATA
-    // ========================================================
-
-    gap,
-
-    fieldSize:
-        runners.length,
-
-    odds:
-        top.odds || null,
-
-    form:
-        top.form || null,
-
-    rating_breakdown:
-        top.rating_breakdown || null,
-
-    engine_details:
-        top.engine_details || null,
-
-    tier:
-        top.tier ||
-        race.tier ||
-        null,
-
-    label:
-        top.label ||
-        "STRONG CANDIDATE"
-
-});
+    const strongCandidates = [];
+    const worthConsidering = [];
 
 
+    for (
+        const [meetingId, meeting]
+        of Object.entries(ratings || {})
+    ) {
 
-    });
-}
-    // ========================================================================
-    // SORT STRONG CANDIDATES
-    // ========================================================================
-    //
-    // Highest EPR first.
-    //
-    // Confidence is the secondary sort.
-    //
-    // ========================================================================
-
-    strongCandidates.sort((a, b) => {
-
-        const powerDifference =
-            b.power_rating -
-            a.power_rating;
+        if (!Array.isArray(meeting?.races))
+            continue;
 
 
-        if (powerDifference !== 0)
-            return powerDifference;
+        meeting.races.forEach(
+            (race, raceIndex) => {
+
+                if (!Array.isArray(race?.runners))
+                    return;
 
 
-        return (
-            b.confidence -
-            a.confidence
+                const tierInfo =
+                    classifyRace(race.runners);
+
+                if (!tierInfo)
+                    return;
+
+
+                const top =
+                    tierInfo.runners[0];
+
+
+                if (
+                    tierInfo.tier === "Strong"
+                ) {
+
+                    strongCandidates.push(
+                        makeCandidate(
+                            meetingId,
+                            meeting,
+                            race,
+                            raceIndex,
+                            top,
+                            tierInfo
+                        )
+                    );
+
+                } else if (
+                    tierInfo.tier === "Moderate"
+                ) {
+
+                    worthConsidering.push(
+                        makeCandidate(
+                            meetingId,
+                            meeting,
+                            race,
+                            raceIndex,
+                            top,
+                            tierInfo
+                        )
+                    );
+                }
+            }
         );
-
-    });
-
-
-    // ========================================================================
-    // SORT WORTH CONSIDERING
-    // ========================================================================
-    //
-    // Highest EPR first.
-    //
-    // Confidence is the secondary sort.
-    //
-    // ========================================================================
-
-    worthConsidering.sort((a, b) => {
-
-        const powerDifference =
-            b.power_rating -
-            a.power_rating;
+    }
 
 
-        if (powerDifference !== 0)
-            return powerDifference;
+    // ------------------------------------------------------------------------
+    // SORT
+    // ------------------------------------------------------------------------
+
+    strongCandidates.sort(
+        (a, b) =>
+            b.relativeMargin - a.relativeMargin ||
+            b.power_rating - a.power_rating ||
+            b.confidence - a.confidence
+    );
 
 
-        return (
-            b.confidence -
-            a.confidence
-        );
+    worthConsidering.sort(
+        (a, b) =>
+            b.relativeMargin - a.relativeMargin ||
+            b.power_rating - a.power_rating ||
+            b.confidence - a.confidence
+    );
 
-    });
 
-
-    // ========================================================================
-    // RETURN DASHBOARD DATA
-    // ========================================================================
+    // ------------------------------------------------------------------------
+    // RETURN
+    // ------------------------------------------------------------------------
 
     return {
 
@@ -444,19 +454,11 @@ strongCandidates.push({
                 races,
 
                 runners
-
             }
-
         }
-
     };
-
 }
 
-
-// ============================================================================
-// EXPORTS
-// ============================================================================
 
 module.exports = {
 
