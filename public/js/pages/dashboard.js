@@ -1234,7 +1234,7 @@ function renderCandidateBoard(dashboard) {
                             ${
                                 raceTime
                                     ? ` ${escapeHtml(
-                                        String(
+                                        toLocalTimeString(
                                             raceTime
                                         )
                                     )}`

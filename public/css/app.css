@@ -142,162 +142,6 @@ button {
 }
 
 /* ============================================================
-   TOP BAR - STRONG CANDIDATES
-   ============================================================ */
-
-.topbar-candidates {
-    flex: 1 1 auto;
-    min-width: 0;
-    max-width: 610px;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    margin: 0 14px;
-    overflow: hidden;
-	display: none;
-}
-
-.candidates-label {
-    flex: 0 0 auto;
-
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    color: #A0AEC0;
-    opacity: .72;
-}
-
-.candidates-list {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    min-width: 0;
-    width: 100%;
-
-    overflow: hidden;
-}
-
-.candidate-item {
-    flex: 1 1 0;
-    min-width: 0;
-    max-width: 190px;
-    height: 38px;
-
-    padding: 4px 7px;
-
-    display: grid;
-    grid-template-columns: minmax(0,1fr) auto;
-    column-gap: 6px;
-    align-items: center;
-
-    background: #10151f !important;
-    color: #f5f7fa !important;
-
-    border: 1px solid #293244 !important;
-    border-radius: 6px;
-
-    font: inherit;
-    cursor: pointer;
-
-    overflow: hidden;
-
-    transition:
-        background .15s ease,
-        border-color .15s ease,
-        transform .15s ease;
-}
-
-.candidate-item:hover {
-    background: #161d2a !important;
-    border-color: var(--epr-gold) !important;
-    transform: translateY(-1px);
-}
-
-.candidate-info {
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-.candidate-horse {
-    min-width: 0;
-
-    color: #fff;
-    font-size: 10px;
-    font-weight: 700;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.candidate-course {
-    min-width: 0;
-
-    color: #8993A5;
-    font-size: 8px;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.candidate-rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
-    color: #F0C928;
-    font-size: 8px;
-    font-weight: 800;
-
-    white-space: nowrap;
-}
-
-.candidate-field {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 18px;
-    height: 14px;
-    padding: 0 3px;
-
-    color: #9BA5B5;
-    font-size: 7px;
-    font-weight: 700;
-
-    border: 1px solid #394355;
-    border-radius: 3px;
-}
-
-.candidate-silk {
-    width: 22px;
-    height: 27px;
-
-    object-fit: contain;
-    object-position: center;
-
-    display: block;
-}
-
-.candidate-empty {
-    color: #687386;
-    font-size: 9px;
-    white-space: nowrap;
-}
-
-/* ============================================================
    TOP BAR - CLOCK
    ============================================================ */
 
@@ -616,6 +460,30 @@ button {
     font-size: 9px;
 }
 
+/* dashboard.js sets #bestConfidence's className directly to
+   tier-strong / tier-moderate / tier-open (replacing, not
+   adding to, hero-confidence) - these must carry the base
+   sizing themselves as well as the tier colour */
+.tier-strong,
+.tier-moderate,
+.tier-open {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.tier-strong {
+    color: var(--epr-green);
+}
+
+.tier-moderate {
+    color: var(--epr-gold-soft);
+}
+
+.tier-open {
+    color: var(--epr-muted);
+    font-weight: 400;
+}
+
 .hero-badge-location {
     color: var(--epr-muted);
     font-size: 9px;
@@ -638,13 +506,12 @@ button {
    ============================================================ */
 
 #meetingTitle {
-    margin: 18px 0 8px;
-
-    color: var(--epr-muted);
-
-    font-size: .8rem;
-    font-weight: 600;
-    letter-spacing: .03em;
+    /* the standalone "X Races" heading isn't shown now that this
+       section sits directly under the meeting buttons - #races
+       already reads clearly against the "Today's Meetings" label
+       above it. Kept (not removed) so loadRaces() has an element
+       to write into without needing a JS change. */
+    display: none;
 }
 
 #races {
@@ -653,7 +520,8 @@ button {
 
     gap: 6px;
 
-    margin: 0 0 16px;
+    width: 100%;
+    margin: 0;
 }
 
 .race-card {
@@ -1764,7 +1632,6 @@ button {
 .race-card:focus-visible,
 .hero-badge-compact:focus-visible,
 .candidate-board-item:focus-visible,
-.candidate-item:focus-visible,
 .checklist-toggle:focus-visible {
     outline: 2px solid var(--epr-gold);
     outline-offset: 2px;
@@ -1798,10 +1665,6 @@ button {
    ============================================================ */
 
 @media (max-width: 1100px) {
-
-    .topbar-candidates {
-        max-width: 470px;
-    }
 
     .candidate-board-item {
         min-height: 72px;
@@ -1842,18 +1705,6 @@ button {
 
     .brand-text span {
         font-size: .72rem;
-    }
-
-    .topbar-candidates {
-        order: 3;
-
-        flex-basis: 100%;
-
-        max-width: none;
-
-        margin: 0;
-
-        height: 30px;
     }
 
     .hero-badge-compact {
@@ -1957,30 +1808,6 @@ button {
         padding: 4px 7px;
     }
 
-    .topbar-candidates {
-        height: 27px;
-    }
-
-    .candidates-label {
-        font-size: 7px;
-    }
-
-    .candidate-item {
-        height: 34px;
-    }
-
-    .candidate-horse {
-        font-size: 8px;
-    }
-
-    .candidate-course {
-        font-size: 7px;
-    }
-
-    .candidate-rating {
-        font-size: 7px;
-    }
-
     .candidate-board {
         margin-top: 14px;
         padding: 10px;
@@ -2024,7 +1851,7 @@ button {
     }
 
     .candidate-board-race {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .candidate-board-rating {
@@ -2034,7 +1861,7 @@ button {
     }
 
     .candidate-board-rating small {
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .candidate-board-tags {
@@ -2042,12 +1869,8 @@ button {
     }
 
     .candidate-tag {
-        font-size: 6px;
+        font-size: 8px;
         padding: 2px 4px;
-    }
-
-    #meetingTitle {
-        font-size: .72rem;
     }
 
     .race-card {
@@ -2061,7 +1884,7 @@ button {
 
     .race-card-meta,
     .race-card-runners {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     #analysisSection {
@@ -2133,7 +1956,7 @@ button {
     }
 
     .runner-meta {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .runner-right {
@@ -2157,7 +1980,7 @@ button {
 
         padding: 9px 11px;
 
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .checklist-panel.open {
@@ -2195,7 +2018,7 @@ button {
     .checklist-evidence {
         display: block;
         margin-top: 2px;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     footer p {
@@ -2216,10 +2039,6 @@ button {
 
     .topbar-right {
         margin-left: auto;
-    }
-
-    .topbar-candidates {
-        display: none;
     }
 
     .hero-badge-compact {

@@ -34,21 +34,6 @@
         </div>
     </div>
 
-	<nav class="navigation">
-	</nav>
-
-	<div id="strong-candidates" class="topbar-candidates">
-
-		<span class="candidates-label">
-			STRONG CANDIDATES
-		</span>
-
-		<div id="strong-candidates-content"
-			 class="candidates-list">
-		</div>
-
-	</div>
-
 	<div class="topbar-right">
 		<div id="live-day" class="topbar-day"></div>
 		<div id="live-clock" class="topbar-clock"></div>
@@ -69,6 +54,15 @@
         <div class="top-strip-left">
             <span class="top-strip-label">Today's Meetings</span>
             <div id="meetings"></div>
+
+            <section id="racesSection">
+
+                <h2 id="meetingTitle"></h2>
+
+                <div id="races"></div>
+
+            </section>
+
             <div id="napCallout" class="nap-callout"></div>
         </div>
 
@@ -77,8 +71,8 @@
             <img
                 id="bestSilk"
                 class="hero-badge-silk"
-                src=""
                 alt=""
+                style="display:none;"
             />
 
             <div class="hero-badge-text">
@@ -153,21 +147,11 @@
 
     <div id="todaysResultsStrip" class="results-strip" style="display:none;"></div>
 
-    <!-- Meetings now live in the top strip above -->
-
     <section>
 
-		<section id="racesSection">
-
-			<h2 id="meetingTitle"></h2>
-
-			<div id="races"></div>
-
-		</section>
-		
 		<section id="analysisSection">
 
-			<h2 id="raceTitle">Elite Power Ratings</h2>
+			<h2 id="raceTitle">Select a race to see full analysis</h2>
 
 			<div id="raceInfoBanner" class="race-info-banner"></div>
 
@@ -179,7 +163,6 @@
 
     </section>
 	
-
 
 </main>
 
