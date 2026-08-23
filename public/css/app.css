@@ -926,7 +926,7 @@ button {
 
     pointer-events: none;
 
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='180'><text x='-20' y='110' font-family='Arial, sans-serif' font-size='60' font-weight='700' letter-spacing='2' fill='rgba(239,136,190,0.10)' transform='rotate(-28 130 90)'>VOID BET</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='180'><text x='-20' y='110' font-family='Arial, sans-serif' font-size='30' font-weight='700' letter-spacing='2' fill='rgba(239,136,190,0.10)' transform='rotate(-28 130 90)'>VOID BET</text></svg>");
     background-repeat: repeat;
 }
 
@@ -1286,6 +1286,15 @@ button {
 
 .race-open .rating-label {
     opacity: .55;
+}
+
+.race-open .runner-card {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(17,24,39,.5),
+            rgba(13,18,26,.55)
+        );
 }
 
 /* ============================================================
