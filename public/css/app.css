@@ -97,7 +97,7 @@ button {
 .header-meetings {
     flex: 1 1 auto;
     min-width: 0;
-	padding-left: 20px;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -212,7 +212,7 @@ button {
 
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    align-items: start;
+    align-items: stretch;
 
     gap: 18px;
 }
@@ -225,6 +225,20 @@ button {
     align-items: flex-start;
 
     gap: 9px;
+
+    padding: 14px 16px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(13,18,26,.98),
+            rgba(8,12,18,.98)
+        );
+
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.20);
 }
 
 .top-strip-right {
@@ -878,6 +892,10 @@ button {
    ============================================================ */
 
 #analysisSection {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
     margin-top: 8px;
     padding: 20px;
 
@@ -894,6 +912,22 @@ button {
     border-radius: 14px;
 
     box-shadow: var(--epr-shadow);
+}
+
+/* VOID BET watermark - tied to the same "race-open" class loadRace()
+   already toggles on #analysisSection for the dimmed-rating effect.
+   Sits behind the content (z-index: -1 within this positioned
+   ancestor), so it reads as a background watermark, not an overlay. */
+#analysisSection.race-open::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    pointer-events: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='180'><text x='-20' y='110' font-family='Arial, sans-serif' font-size='60' font-weight='700' letter-spacing='2' fill='rgba(239,136,190,0.10)' transform='rotate(-28 130 90)'>VOID BET</text></svg>");
+    background-repeat: repeat;
 }
 
 #raceTitle {
@@ -919,11 +953,16 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 6px;
+
     margin-bottom: 14px;
     padding-bottom: 10px;
+
     color: var(--epr-muted);
+
     border-bottom: 1px solid var(--epr-border);
+
     font-size: 10px;
 }
 
@@ -951,7 +990,7 @@ button {
 }
 
 .selection-void {
-    color: #EF88BE;
+    color: #6B7280;
     font-weight: 700;
 }
 
