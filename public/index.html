@@ -34,6 +34,8 @@
         </div>
     </div>
 
+	<div id="meetings" class="header-meetings"></div>
+
 	<div class="topbar-right">
 		<div id="live-day" class="topbar-day"></div>
 		<div id="live-clock" class="topbar-clock"></div>
@@ -44,16 +46,15 @@
 
 <main class="wrapper">
 
-    <!-- Top strip: today's meetings (wraps as needed) + NAP on the left,
-         best-opportunity badge on the right. Stacks to a single column
+    <!-- Top strip: left column is the selected meeting's races + race
+         info; right column is the best-opportunity badge and today's
+         picks, tier-sorted into one list. Stacks to a single column
          on mobile via CSS. -->
 
     <section id="hero">
         <div class="top-strip">
 
         <div class="top-strip-left">
-            <span class="top-strip-label">Today's Meetings</span>
-            <div id="meetings"></div>
 
             <section id="racesSection">
 
@@ -63,84 +64,50 @@
 
             </section>
 
+            <div id="raceInfoBanner" class="race-info-banner"></div>
+
             <div id="napCallout" class="nap-callout"></div>
         </div>
 
-        <div id="heroBadge" class="hero-badge-compact">
+        <div class="top-strip-right">
 
-            <img
-                id="bestSilk"
-                class="hero-badge-silk"
-                alt=""
-                style="display:none;"
-            />
+            <div id="heroBadge" class="hero-badge-compact">
 
-            <div class="hero-badge-text">
+                <img
+                    id="bestSilk"
+                    class="hero-badge-silk"
+                    alt=""
+                    style="display:none;"
+                />
 
-                <span class="hero-badge-label">Best Opportunity</span>
+                <div class="hero-badge-text">
 
-                <div class="hero-badge-name" id="bestHorse"></div>
+                    <span class="hero-badge-label">Best Opportunity</span>
 
-                <div class="hero-badge-row">
-                    <span id="bestRating" class="hero-rating"></span>
-                    <span id="bestConfidence" class="hero-confidence"></span>
-                </div>
+                    <div class="hero-badge-name" id="bestHorse"></div>
 
-                <div class="hero-badge-location">
-                    <span id="bestCourse"></span>
-                    <span class="hero-dot"></span>
-                    <span id="bestRaceTime"></span>
-                </div>
-
-            </div>
-
-            <span class="hero-badge-arrow">→</span>
-
-        </div>
-
-        </div>
-    </section>
-
-    <!-- ============================================================
-         TODAY'S BETTING CANDIDATES
-         Strong Candidates are primary selections.
-         Worth Considering contains credible alternatives.
-         ============================================================ -->
-    <section id="candidateBoard" class="candidate-board" aria-label="Today's betting candidates">
-
-        <div class="candidate-board-header">
-            <div>
-                <span class="candidate-board-kicker">TODAY'S BETTING CANDIDATES</span>
-                <h2>Selections &amp; Alternatives</h2>
-            </div>
-            <div class="candidate-board-note">
-                Strong = primary candidates &nbsp;•&nbsp; Worth Considering = credible alternatives
-            </div>
-        </div>
-
-        <div class="candidate-board-grid">
-
-            <section class="candidate-panel candidate-panel-strong">
-                <div class="candidate-panel-header">
-                    <div>
-                        <span class="candidate-panel-kicker">PRIMARY</span>
-                        <h3>STRONG CANDIDATES</h3>
+                    <div class="hero-badge-row">
+                        <span id="bestRating" class="hero-rating"></span>
+                        <span id="bestConfidence" class="hero-confidence"></span>
                     </div>
-                    <span id="strongCandidateCount" class="candidate-panel-count">0</span>
+
+                    <div class="hero-badge-location">
+                        <span id="bestCourse"></span>
+                        <span class="hero-dot"></span>
+                        <span id="bestRaceTime"></span>
+                    </div>
+
                 </div>
-                <div id="strong-candidates-board" class="candidate-board-list"></div>
+
+                <span class="hero-badge-arrow">→</span>
+
+            </div>
+
+            <section id="pickBoard" class="pick-board" aria-label="Today's betting candidates">
+                <div id="pick-board-list" class="pick-board-list"></div>
             </section>
 
-            <section class="candidate-panel candidate-panel-worth">
-                <div class="candidate-panel-header">
-                    <div>
-                        <span class="candidate-panel-kicker">ALTERNATIVES</span>
-                        <h3>WORTH CONSIDERING</h3>
-                    </div>
-                    <span id="worthConsideringCount" class="candidate-panel-count">0</span>
-                </div>
-                <div id="worth-considering-board" class="candidate-board-list"></div>
-            </section>
+        </div>
 
         </div>
     </section>
@@ -152,8 +119,6 @@
 		<section id="analysisSection">
 
 			<h2 id="raceTitle">Select a race to see full analysis</h2>
-
-			<div id="raceInfoBanner" class="race-info-banner"></div>
 
 			<div id="analysis"></div>
 

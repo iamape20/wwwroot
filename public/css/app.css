@@ -89,9 +89,19 @@ button {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 18px;
 
     border-bottom: 1px solid var(--epr-border);
+}
+
+.header-meetings {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
 }
 
 .brand {
@@ -200,15 +210,14 @@ button {
 .top-strip {
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: start;
 
     gap: 18px;
 }
 
 .top-strip-left {
-    flex: 1 1 auto;
     min-width: 0;
 
     display: flex;
@@ -218,28 +227,18 @@ button {
     gap: 9px;
 }
 
-.top-strip-label {
-    color: var(--epr-muted);
+.top-strip-right {
+    min-width: 0;
 
-    font-size: .68rem;
-    font-weight: 700;
-    letter-spacing: .11em;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
 }
 
 /* ============================================================
    MEETINGS
    ============================================================ */
-
-#meetings {
-    width: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 6px;
-    margin: 0;
-}
 
 .meeting-card {
     display: flex;
@@ -352,10 +351,8 @@ button {
    ============================================================ */
 
 .hero-badge-compact {
-    flex: 0 0 auto;
-
-    width: 295px;
-    max-width: 295px;
+    width: 100%;
+    max-width: none;
 
     display: flex;
     align-items: center;
@@ -598,10 +595,8 @@ button {
    Compact dashboard summary
    ============================================================ */
 
-.candidate-board {
+.pick-board {
     width: 100%;
-    margin: 16px 0 18px;
-    padding: 12px;
 
     background:
         linear-gradient(
@@ -614,142 +609,43 @@ button {
     border-radius: 12px;
 
     box-shadow: 0 8px 24px rgba(0,0,0,.20);
-}
 
-.candidate-board-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 12px;
-    margin-bottom: 8px;
-}
-
-.candidate-board-kicker {
-    display: block;
-
-    color: #D4AF37;
-
-    font-size: 7px;
-    font-weight: 800;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-}
-
-.candidate-board-header h2 {
-    margin: 2px 0 0;
-
-    color: #fff;
-
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.candidate-board-note {
-    color: #687386;
-    font-size: 7px;
-    text-align: right;
-}
-
-/* Two compact panels */
-
-.candidate-board-grid {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0,1fr)
-        minmax(0,1fr);
-
-    gap: 8px;
-}
-
-.candidate-panel {
-    min-width: 0;
     overflow: hidden;
-
-    background: #111827;
-
-    border: 1px solid #293244;
-    border-radius: 8px;
-}
-
-.candidate-panel-strong {
-    border-color: rgba(46,204,113,.32);
-}
-
-.candidate-panel-worth {
-    border-color: rgba(212,175,55,.28);
-}
-
-/* Panel heading */
-
-.candidate-panel-header {
-    height: 34px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 5px 9px;
-
-    background: rgba(0,0,0,.18);
-
-    border-bottom: 1px solid #293244;
-}
-
-.candidate-panel-header h3 {
-    margin: 1px 0 0;
-
-    color: #fff;
-
-    font-size: 8px;
-    font-weight: 800;
-    letter-spacing: .06em;
-}
-
-.candidate-panel-kicker {
-    display: block;
-
-    color: #D4AF37;
-
-    font-size: 6px;
-    font-weight: 800;
-    letter-spacing: .1em;
-}
-
-.candidate-panel-count {
-    width: 19px;
-    height: 19px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #fff;
-    background: #1A2233;
-
-    border: 1px solid #3A4558;
-    border-radius: 50%;
-
-    font-size: 7px;
-    font-weight: 800;
 }
 
 /* ------------------------------------------------------------
    IMPORTANT:
-   Keep the candidate board compact.
-   Five rows are visible; additional candidates scroll INSIDE
-   the panel instead of expanding the entire page.
+   Keep the pick board compact.
+   A handful of rows are visible; additional picks scroll INSIDE
+   the board instead of expanding the entire page.
    ------------------------------------------------------------ */
 
-.candidate-board-list {
-    max-height: 160px;
+.pick-board-list {
+    max-height: 230px;
 
     overflow-y: auto;
     overflow-x: hidden;
 
     scrollbar-width: thin;
     scrollbar-color: #394355 transparent;
+}
+
+/* Tier dot */
+
+.candidate-tier-dot {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+
+    border-radius: 50%;
+}
+
+.candidate-tier-dot.tier-strong {
+    background: var(--epr-green);
+}
+
+.candidate-tier-dot.tier-open {
+    background: var(--epr-gold);
 }
 
 /* Candidate */
@@ -766,7 +662,7 @@ button {
 
     gap: 8px;
 
-    padding: 4px 8px;
+    padding: 4px 10px;
 
     background: transparent;
 
@@ -829,7 +725,7 @@ button {
 
     color: #fff;
 
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 800;
     line-height: 1.15;
 
@@ -845,7 +741,7 @@ button {
 
     color: #8993A5;
 
-    font-size: 7px;
+    font-size: 9px;
     line-height: 1.2;
 
     white-space: nowrap;
@@ -861,7 +757,7 @@ button {
 
     color: #D4AF37;
 
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 800;
 
     line-height: 1.15;
@@ -877,7 +773,7 @@ button {
 
     color: #7F8A9B;
 
-    font-size: 7px;
+    font-size: 8px;
     font-weight: 600;
 }
 
@@ -893,7 +789,7 @@ button {
 
     color: #687386;
 
-    font-size: 8px;
+    font-size: 9px;
 }
 
 /* ============================================================
@@ -1699,30 +1595,18 @@ button {
         gap: 10px;
     }
 
+    .header-meetings {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 2px;
+    }
+
     .brand-text h1 {
         font-size: 1.25rem;
     }
 
     .brand-text span {
         font-size: .72rem;
-    }
-
-    .hero-badge-compact {
-        width: 275px;
-        max-width: 275px;
-    }
-
-    .candidate-board-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .candidate-board-header {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .candidate-board-note {
-        text-align: left;
     }
 
     #analysisSection {
@@ -1737,20 +1621,11 @@ button {
 @media (max-width: 700px) {
 
     .top-strip {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .top-strip-left {
         width: 100%;
-    }
-
-    .hero-badge-compact {
-        width: 100%;
-        max-width: none;
-    }
-
-    .candidate-board {
-        padding: 12px;
     }
 
     .candidate-board-item {
@@ -1803,38 +1678,35 @@ button {
         font-size: .8rem;
     }
 
+    .header-meetings {
+        gap: 5px;
+    }
+
+    .meeting-card {
+        min-height: 26px;
+        padding: 4px 8px;
+        gap: 6px;
+    }
+
+    .meeting-card-name {
+        font-size: 11px;
+    }
+
+    .meeting-card-count {
+        min-width: 17px;
+        height: 16px;
+        font-size: 7px;
+    }
+
     .topbar-countdown {
         font-size: .62rem;
         padding: 4px 7px;
     }
 
-    .candidate-board {
-        margin-top: 14px;
-        padding: 10px;
-        border-radius: 11px;
-    }
-
-    .candidate-board-header h2 {
-        font-size: 15px;
-    }
-
-    .candidate-board-grid {
-        gap: 8px;
-    }
-
-    .candidate-panel-header {
-        min-height: 40px;
-        padding: 7px 9px;
-    }
-
-    .candidate-panel-header h3 {
-        font-size: 9px;
-    }
-
     .candidate-board-item {
         min-height: 66px;
 
-        padding: 5px 8px;
+        padding: 5px 10px;
 
         gap: 8px;
     }
@@ -1862,15 +1734,6 @@ button {
 
     .candidate-board-rating small {
         font-size: 9px;
-    }
-
-    .candidate-board-tags {
-        margin-top: 3px;
-    }
-
-    .candidate-tag {
-        font-size: 8px;
-        padding: 2px 4px;
     }
 
     .race-card {

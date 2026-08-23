@@ -811,256 +811,6 @@ function startLiveTicker(dashboard) {
         );
 }
 
-function renderStrongCandidates(dashboard) {
-
-    const container =
-        document.getElementById(
-            "strong-candidates-content"
-        );
-
-    if (!container) {
-        return;
-    }
-
-    const candidates =
-        Array.isArray(
-            dashboard?.strongCandidates
-        )
-            ? dashboard.strongCandidates.slice(0, 3)
-            : [];
-
-    if (!candidates.length) {
-
-        container.innerHTML =
-            `<span class="candidate-empty">
-                No strong candidates
-             </span>`;
-
-        return;
-    }
-
-    container.innerHTML =
-        candidates
-            .map(candidate => {
-
-                const horse =
-                    candidate.name ??
-                    candidate.horse ??
-                    "-";
-
-                const rating =
-                    candidate.power_rating ??
-                    candidate.rating ??
-                    null;
-
-                const gap =
-                    candidate.gap ??
-                    null;
-
-                const fieldSize =
-                    candidate.fieldSize ??
-                    null;
-
-                const course =
-                    candidate.course ??
-                    candidate.meeting ??
-                    "-";
-
-                const raceTime =
-                    candidate.raceTime
-                        ? toLocalTimeString(
-                            candidate.raceTime
-                        )
-                        : candidate.time
-                            ? toLocalTimeString(
-                                candidate.time
-                            )
-                            : "-";
-
-                const meetingId =
-                    candidate.meetingId ??
-                    "";
-
-                const raceIndex =
-                    candidate.raceIndex ??
-                    "";
-
-                const silkUrl =
-                    candidate.silkUrl ??
-                    candidate.silk_url ??
-                    null;
-
-                return `
-                    <button
-                        type="button"
-                        class="candidate-item"
-                        data-meeting-id="${escapeHtml(
-                            String(meetingId)
-                        )}"
-                        data-meeting="${escapeHtml(
-                            course
-                        )}"
-                        data-race-index="${escapeHtml(
-                            String(raceIndex)
-                        )}"
-                        data-race-time="${escapeHtml(
-                            String(
-                                candidate.raceTime ||
-                                candidate.time ||
-                                ""
-                            )
-                        )}"
-                    >
-
-                        ${
-                            silkUrl
-                                ? `
-                                    <img
-                                        src="${escapeHtml(
-                                            silkUrl
-                                        )}"
-                                        class="candidate-silk"
-                                        alt=""
-                                        loading="lazy"
-                                    >
-                                  `
-                                : `
-                                    <span class="candidate-silk candidate-silk-empty"></span>
-                                  `
-                        }
-
-                        <span class="candidate-info">
-
-                            <span class="candidate-horse">
-                                ${escapeHtml(horse)}
-                            </span>
-
-                            <span class="candidate-course">
-                                ${escapeHtml(course)}
-                                ${escapeHtml(raceTime)}
-
-                                ${
-                                    gap != null
-                                        ? `
-                                            <span class="candidate-gap">
-                                                &nbsp;•&nbsp; +${escapeHtml(
-                                                    String(gap)
-                                                )}
-                                            </span>
-                                          `
-                                        : ""
-                                }
-
-                            </span>
-
-                        </span>
-
-                        <span class="candidate-rating">
-
-                            ${
-                                fieldSize
-                                    ? `
-                                        <span class="candidate-field">
-                                            ${escapeHtml(
-                                                String(fieldSize)
-                                            )}R
-                                        </span>
-                                      `
-                                    : ""
-                            }
-
-                            <span>
-                                EPR ${
-                                    rating != null
-                                        ? escapeHtml(
-                                            Number(
-                                                rating
-                                            ).toFixed(1)
-                                        )
-                                        : "-"
-                                }
-                            </span>
-
-                        </span>
-
-                    </button>
-                `;
-            })
-            .join("");
-
-    container
-        .querySelectorAll(".candidate-item")
-        .forEach(button => {
-
-            button.addEventListener(
-                "click",
-                async () => {
-
-                    const meetingId =
-                        button.dataset.meetingId;
-
-                    const meeting =
-                        button.dataset.meeting;
-
-                    const raceIndex =
-                        Number(
-                            button.dataset.raceIndex
-                        );
-
-                    const raceTime =
-                        button.dataset.raceTime;
-
-                    if (
-                        !meetingId ||
-                        !Number.isFinite(
-                            raceIndex
-                        )
-                    ) {
-
-                        console.warn(
-                            "Candidate does not contain valid race context:",
-                            {
-                                meetingId,
-                                meeting,
-                                raceIndex,
-                                raceTime
-                            }
-                        );
-
-                        return;
-                    }
-
-                    await loadRaces(
-                        meetingId,
-                        meeting,
-                        false
-                    );
-
-                    await loadRace(
-                        meetingId,
-                        raceIndex,
-                        toLocalTimeString(
-                            raceTime
-                        )
-                    );
-
-                    const analysis =
-                        document.getElementById(
-                            "analysisSection"
-                        );
-
-                    if (analysis) {
-
-                        analysis.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start"
-                        });
-                    }
-                }
-            );
-        });
-}
-
 // ============================================================
 // TODAY'S BETTING CANDIDATES BOARD
 // ============================================================
@@ -1075,25 +825,14 @@ function renderStrongCandidates(dashboard) {
 
 function renderCandidateBoard(dashboard) {
 
-    const strongCount =
+    const board =
         document.getElementById(
-            "strongCandidateCount"
+            "pick-board-list"
         );
 
-    const worthCount =
-        document.getElementById(
-            "worthConsideringCount"
-        );
-
-    const strongBoard =
-        document.getElementById(
-            "strong-candidates-board"
-        );
-
-    const worthBoard =
-        document.getElementById(
-            "worth-considering-board"
-        );
+    if (!board) {
+        return;
+    }
 
     const strongCandidates =
         Array.isArray(
@@ -1109,24 +848,35 @@ function renderCandidateBoard(dashboard) {
             ? dashboard.worthConsidering
             : [];
 
-    if (strongCount) {
+    const picks = [
+        ...strongCandidates.map(
+            candidate => ({
+                candidate,
+                tierClass: "tier-strong",
+                tierLabel: "strong"
+            })
+        ),
+        ...worthConsidering.map(
+            candidate => ({
+                candidate,
+                tierClass: "tier-open",
+                tierLabel: "considering"
+            })
+        )
+    ];
 
-        strongCount.textContent =
-            String(
-                strongCandidates.length
-            );
-    }
+    if (!picks.length) {
 
-    if (worthCount) {
+        board.innerHTML =
+            `<div class="candidate-board-empty">
+                No candidates currently meet the criteria
+             </div>`;
 
-        worthCount.textContent =
-            String(
-                worthConsidering.length
-            );
+        return;
     }
 
     const renderCandidate =
-        candidate => {
+        ({ candidate, tierClass, tierLabel }) => {
 
             const horse =
                 candidate?.name ??
@@ -1197,6 +947,11 @@ function renderCandidateBoard(dashboard) {
                         String(raceTime)
                     )}"
                 >
+
+                    <span
+                        class="candidate-tier-dot ${tierClass}"
+                        title="${escapeHtml(tierLabel)}"
+                    ></span>
 
                     ${
                         silkUrl
@@ -1287,43 +1042,12 @@ function renderCandidateBoard(dashboard) {
             `;
         };
 
-    if (strongBoard) {
+    board.innerHTML =
+        picks
+            .map(renderCandidate)
+            .join("");
 
-        if (!strongCandidates.length) {
-
-            strongBoard.innerHTML =
-                `<div class="candidate-board-empty">
-                    No strong candidates today
-                 </div>`;
-
-        } else {
-
-            strongBoard.innerHTML =
-                strongCandidates
-                    .map(renderCandidate)
-                    .join("");
-        }
-    }
-
-    if (worthBoard) {
-
-        if (!worthConsidering.length) {
-
-            worthBoard.innerHTML =
-                `<div class="candidate-board-empty">
-                    No alternatives currently meet the criteria
-                 </div>`;
-
-        } else {
-
-            worthBoard.innerHTML =
-                worthConsidering
-                    .map(renderCandidate)
-                    .join("");
-        }
-    }
-
-    document
+    board
         .querySelectorAll(
             ".candidate-board-item"
         )
@@ -2146,14 +1870,6 @@ export async function loadDashboard() {
 
         const dashboard =
             response.dashboard;
-
-        // ------------------------------------------------------------
-        // TOP BAR STRONG CANDIDATES
-        // ------------------------------------------------------------
-
-        renderStrongCandidates(
-            dashboard
-        );
 
         // ------------------------------------------------------------
         // TODAY'S BETTING CANDIDATES
