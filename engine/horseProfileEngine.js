@@ -67,8 +67,7 @@ const STYLE_SCORES = {
 };
 
 function scoreRunningStyle(description = "") {
-
-    const text = description.toLowerCase();
+    const text = (description || "").toLowerCase();
 
     const scores = {
         LEADER:0,
