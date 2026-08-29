@@ -467,6 +467,77 @@ function buildChecklistPanel(breakdown) {
     `;
 }
 
+const ENGINE_LABELS = {
+    form: "Form",
+    context: "Context",
+    market: "Market",
+    verdict: "Verdict"
+};
+
+// Order matters here for how it reads - form/context/market/verdict,
+// matching the order predictor.js actually scores them in.
+const ENGINE_ORDER = ["form", "context", "market", "verdict"];
+
+function buildEngineBreakdownPanel(engineDetails) {
+
+    if (!engineDetails) {
+
+        return `
+            <div class="engine-panel">
+                <div class="engine-empty">
+                    No scoring breakdown available for this runner.
+                </div>
+            </div>
+        `;
+    }
+
+    const keys =
+        ENGINE_ORDER.filter(k => engineDetails[k]);
+
+    const rows =
+        keys
+            .map(key => {
+
+                const data = engineDetails[key];
+
+                const label =
+                    ENGINE_LABELS[key] ||
+                    key;
+
+                const scoreText =
+                    data?.score != null
+                        ? `${data.score}/100`
+                        : "N/A";
+
+                const confidenceText =
+                    data?.confidence || "";
+
+                const reasonsText =
+                    (data?.reasons || []).join("; ") ||
+                    "No reasons given";
+
+                return (
+                    `<div class="engine-row">` +
+                        `<span class="engine-label">${escapeHtml(label)}</span>` +
+                        `<span class="engine-score">${escapeHtml(scoreText)}</span>` +
+                        `<span class="engine-confidence">${escapeHtml(confidenceText)}</span>` +
+                        `<span class="engine-reasons">${escapeHtml(reasonsText)}</span>` +
+                    `</div>`
+                );
+            })
+            .join("");
+
+    return `
+        <div class="engine-panel">
+            <div class="engine-panel-note">
+                These four combine to set the ELITE rating shown above.
+                The checklist below only ever breaks an exact tie between two runners.
+            </div>
+            ${rows}
+        </div>
+    `;
+}
+
 function highlightSelectedHorses(
     text,
     verdictText,
@@ -1551,12 +1622,23 @@ async function loadRace(
                                 Show working ▾
                             </button>
 
+                            <button
+                                class="engine-toggle"
+                                type="button"
+                            >
+                                Show scoring ▾
+                            </button>
+
                         </div>
 
                     </div>
 
                     ${buildChecklistPanel(
                         runner.elite.checklistBreakdown
+                    )}
+
+                    ${buildEngineBreakdownPanel(
+                        runner.elite.engineDetails
                     )}
 
                 `;
@@ -1589,6 +1671,38 @@ async function loadRace(
                                 isOpen
                                     ? "Hide working ▴"
                                     : "Show working ▾";
+                        }
+                    );
+                }
+
+                const engineToggleBtn =
+                    card.querySelector(
+                        ".engine-toggle"
+                    );
+
+                const enginePanel =
+                    card.querySelector(
+                        ".engine-panel"
+                    );
+
+                if (
+                    engineToggleBtn &&
+                    enginePanel
+                ) {
+
+                    engineToggleBtn.addEventListener(
+                        "click",
+                        () => {
+
+                            const isOpen =
+                                enginePanel.classList.toggle(
+                                    "open"
+                                );
+
+                            engineToggleBtn.textContent =
+                                isOpen
+                                    ? "Hide scoring ▴"
+                                    : "Show scoring ▾";
                         }
                     );
                 }

@@ -82,7 +82,8 @@ async function getRace(meetingId, raceIndex) {
 							rank: null,
 							confidence: null,
 							checklistBreakdown: null,
-							checklistPoints: null
+							checklistPoints: null,
+							engineDetails: null
 						}
 					};
 				}
@@ -126,7 +127,8 @@ async function getRace(meetingId, raceIndex) {
 						rank: null,
 						confidence: elite.confidence,
 						checklistBreakdown: liveBreakdown,
-						checklistPoints: livePoints
+						checklistPoints: livePoints,
+						engineDetails: elite.engine_details
 					}
 
 				};

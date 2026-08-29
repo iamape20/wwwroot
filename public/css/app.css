@@ -1403,6 +1403,90 @@ button {
     font-size: 10px;
 }
 
+.engine-toggle {
+    margin-top: 5px;
+    margin-left: 6px;
+
+    padding: 3px 7px;
+
+    color: #AAB4C3;
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.engine-toggle:hover {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.07);
+    border-color: var(--epr-gold);
+}
+
+.engine-panel {
+    display: none;
+
+    grid-template-columns: 90px 55px 70px 1fr;
+
+    gap: 3px 10px;
+
+    padding: 10px 14px;
+
+    color: #E5E7EB;
+    background: #0A0E17;
+
+    border-top: 1px solid #2D3748;
+    border-left: 2px solid var(--epr-gold);
+
+    font-size: 9px;
+}
+
+.engine-panel.open {
+    display: grid;
+}
+
+.engine-panel-note {
+    grid-column: 1 / -1;
+
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+
+    color: var(--epr-muted);
+    font-size: 8px;
+    font-style: italic;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.engine-row {
+    display: contents;
+}
+
+.engine-label {
+    color: var(--epr-gold);
+    font-weight: 600;
+}
+
+.engine-score {
+    color: #fff;
+}
+
+.engine-confidence {
+    color: #E5E7EB;
+}
+
+.engine-reasons {
+    color: var(--epr-muted);
+}
+
+.engine-empty {
+    color: var(--epr-muted);
+    font-size: 10px;
+}
+
 .checklist-rating-label {
     margin-top: 3px;
     color: var(--epr-muted);
