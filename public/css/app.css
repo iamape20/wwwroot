@@ -1993,6 +1993,44 @@ button {
         font-size: .78rem;
     }
 
+    .engine-panel.open {
+        display: block;
+    }
+
+    .engine-row {
+        display: block;
+
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+
+        border-bottom: 1px solid #1A2233;
+    }
+
+    .engine-row:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .engine-label {
+        display: inline-block;
+    }
+
+    .engine-score {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .engine-confidence {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .engine-reasons {
+        display: block;
+        margin-top: 2px;
+        font-size: .78rem;
+    }
+
     footer p {
         padding-left: 10px !important;
         font-size: .78rem;
