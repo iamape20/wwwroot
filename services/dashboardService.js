@@ -368,24 +368,22 @@ function getDashboard() {
                     tierInfo.runners[0];
 
 
-                if (
-                    tierInfo.tier === "Strong"
-                ) {
+			if (tierInfo.tier === "Strong") {
+				if (tierInfo.margin >= 10) {
 
-                    strongCandidates.push(
-                        makeCandidate(
-                            meetingId,
-                            meeting,
-                            race,
-                            raceIndex,
-                            top,
-                            tierInfo
-                        )
-                    );
+					strongCandidates.push(
+						makeCandidate(
+							meetingId,
+							meeting,
+							race,
+							raceIndex,
+							top,
+							tierInfo
+						)
+					);
 
-                } else if (
-                    tierInfo.tier === "Moderate"
-                ) {
+				}
+			} else if (tierInfo.tier === "Moderate") {
 
                     worthConsidering.push(
                         makeCandidate(
