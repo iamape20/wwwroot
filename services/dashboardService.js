@@ -1,5 +1,7 @@
 const json = require("./jsonService");
-
+const vulnerabilityEngine =
+    require("../../js/vulnerabilityEngine");
+	
 // ============================================================================
 // EPR DASHBOARD SERVICE
 // Candidate board uses the production-style race separation tier.
@@ -93,7 +95,8 @@ function makeCandidate(
     race,
     raceIndex,
     top,
-    tierInfo
+    tierInfo,
+    vulnerability
 ) {
 
     return {
@@ -161,14 +164,16 @@ function makeCandidate(
         form:
             top.form || null,
 
-        rating_breakdown:
-            top.rating_breakdown || null,
+		rating_breakdown:
+			top.rating_breakdown || null,
 
-        engine_details:
-            top.engine_details || null,
+		engine_details:
+			top.engine_details || null,
 
-        tier:
-            tierInfo.tier,
+		vulnerability,
+
+		tier:
+			tierInfo.tier,
 
         candidateType:
             tierInfo.tier === "Strong"
@@ -367,7 +372,11 @@ function getDashboard() {
                 const top =
                     tierInfo.runners[0];
 
-
+				const vulnerability =
+					vulnerabilityEngine.calculateVulnerability(
+						tierInfo.runners
+					);
+	
 			if (tierInfo.tier === "Strong") {
 				if (tierInfo.margin >= 10) {
 
@@ -378,23 +387,24 @@ function getDashboard() {
 							race,
 							raceIndex,
 							top,
-							tierInfo
+							tierInfo,
+							vulnerability
 						)
 					);
-
 				}
 			} else if (tierInfo.tier === "Moderate") {
 
-                    worthConsidering.push(
-                        makeCandidate(
-                            meetingId,
-                            meeting,
-                            race,
-                            raceIndex,
-                            top,
-                            tierInfo
-                        )
-                    );
+					worthConsidering.push(
+						makeCandidate(
+							meetingId,
+							meeting,
+							race,
+							raceIndex,
+							top,
+							tierInfo,
+							vulnerability
+						)
+					);
                 }
             }
         );
