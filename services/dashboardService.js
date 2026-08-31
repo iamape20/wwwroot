@@ -1,6 +1,6 @@
 const json = require("./jsonService");
 const vulnerabilityEngine =
-    require("../../js/vulnerabilityEngine");
+    require("../engine/vulnerabilityEngine");
 	
 // ============================================================================
 // EPR DASHBOARD SERVICE
