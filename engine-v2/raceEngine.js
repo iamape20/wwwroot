@@ -1,13 +1,13 @@
 
 'use strict';
-// ./engine/raceEngine.js
 
 const fs = require("fs");
 const path = require("path");
 
-const predictor = require("../engine-v2/predictor");
-const formProfileEngine = require("../formProfileEngine");
-const checklistEngine = require("../checklistEngine");
+const predictor = require("./predictor");
+const formProfileEngine = require("./formProfileEngine");
+const checklistEngine = require("../../checklistEngine");
+
 
 const DEFAULT_HORSE_DIR = path.join(__dirname, "..", "json", "horses");
 const DEFAULT_TRAINER_DIR = path.join(__dirname, "..", "json", "trainers");
@@ -401,26 +401,26 @@ async function analyseRace(
             // This gives predictor.js a consistent field to consume.
             // ----------------------------------------------------------------
 
-            const existingCurrentOR =
-                Number(
-                    runner.currentOR
-                );
 
-            if (
-                Number.isFinite(existingCurrentOR)
-            ) {
+			// --------------------------------------------------------------------------
+			// AUTHORITATIVE HISTORICAL CURRENT OR
+			// --------------------------------------------------------------------------
+			//
+			// For historical analysis, the OR must represent information available
+			// BEFORE the race.
+			//
+			// Do NOT automatically preserve runner.currentOR here because that field
+			// may represent the OR attached to the race being reconstructed rather than
+			// the last OR known before the race.
+			//
+			// The historical snapshot is authoritative.
+			// --------------------------------------------------------------------------
 
-                runner.currentOR =
-                    existingCurrentOR;
+			runner.currentOR =
+				getHistoricalCurrentOR(
+					historicalRuns
+				);
 
-            } else {
-
-                runner.currentOR =
-                    getHistoricalCurrentOR(
-                        historicalRuns
-                    );
-
-            }
 
 
             // ----------------------------------------------------------------

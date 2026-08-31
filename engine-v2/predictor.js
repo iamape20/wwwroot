@@ -19,8 +19,8 @@ const marketEngine = require('./marketEngine');
 const verdictEngine = require('./verdictEngine');
 const contextEngine = require('./contextEngine');
 const scoreEngine = require('./scoreEngine');
-const horseProfileEngine = require('../horseProfileEngine');
-const confidenceEngine = require('../confidenceEngine');
+const horseProfileEngine = require('../engine/horseProfileEngine');
+const confidenceEngine = require('../engine/confidenceEngine');
 
 // ============================================================================
 // HELPERS
