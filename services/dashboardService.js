@@ -267,69 +267,112 @@ function getDashboard() {
     // BEST OPPORTUNITY
     // ------------------------------------------------------------------------
 
-    for (
-        const [meetingId, meeting]
-        of Object.entries(ratings || {})
-    ) {
+ // ------------------------------------------------------------------------
+// BEST OPPORTUNITY
+//
+// IMPORTANT:
+// Best Opportunity must ONLY come from a race that is actually
+// considered a valid betting opportunity.
+//
+// Do NOT simply select the highest EPR on the card.
+// A high-rated horse in a VOID/OPEN race must never become
+// the dashboard Best Opportunity.
+// ------------------------------------------------------------------------
 
-        if (!Array.isArray(meeting?.races))
-            continue;
+for (
+    const [meetingId, meeting]
+    of Object.entries(ratings || {})
+) {
 
-        meeting.races.forEach(
-            (race, raceIndex) => {
+    if (!Array.isArray(meeting?.races))
+        continue;
 
-                if (!Array.isArray(race?.runners))
-                    return;
+    meeting.races.forEach(
+        (race, raceIndex) => {
 
-                for (const runner of race.runners) {
+            if (!Array.isArray(race?.runners))
+                return;
 
-                    if (
-                        runner?.isNonRunner === true
-                    )
-                        continue;
+            const tierInfo =
+                classifyRace(race.runners);
 
-                    const rating =
-                        Number(runner?.power_rating);
+            if (!tierInfo)
+                return;
 
-                    if (!Number.isFinite(rating))
-                        continue;
+            // ------------------------------------------------------------
+            // VOID / OPEN races are not betting opportunities.
+            //
+            // Strong candidates require a minimum 10-point absolute gap.
+            // Keep Best Opportunity aligned with that production rule.
+            // ------------------------------------------------------------
 
-                    if (
-                        !bestOpportunity ||
-                        rating >
-                        Number(bestOpportunity.rating)
-                    ) {
-
-                        bestOpportunity = {
-
-                            horse:
-                                runner.name,
-
-                            rating,
-
-                            confidence:
-                                runner.confidence,
-
-                            course:
-                                meeting.name,
-
-                            raceTime:
-                                race.time,
-
-                            silkUrl:
-                                runner.silk_url ||
-                                null,
-
-                            meetingId,
-
-                            raceIndex
-                        };
-                    }
-                }
+            if (
+                tierInfo.tier !== "Strong" ||
+                tierInfo.margin < 10
+            ) {
+                return;
             }
-        );
-    }
 
+            const top =
+                tierInfo.runners[0];
+
+            if (!top)
+                return;
+
+            const rating =
+                Number(top.power_rating);
+
+            if (!Number.isFinite(rating))
+                return;
+
+            if (
+                !bestOpportunity ||
+                rating >
+                Number(bestOpportunity.rating)
+            ) {
+
+                bestOpportunity = {
+
+                    horse:
+                        top.name,
+
+                    rating,
+
+                    confidence:
+                        top.confidence,
+
+                    course:
+                        meeting.name,
+
+                    raceTime:
+                        race.time,
+
+                    silkUrl:
+                        top.silk_url ||
+                        null,
+
+                    meetingId,
+
+                    raceIndex,
+
+                    gap:
+                        Number(
+                            tierInfo.margin.toFixed(1)
+                        ),
+
+                    relativeMargin:
+                        Number(
+                            tierInfo.relativeMargin.toFixed(3)
+                        ),
+
+                    fieldSize:
+                        tierInfo.runners.length
+                };
+            }
+
+        }
+    );
+}
 
     // ------------------------------------------------------------------------
     // TODAY'S BETTING CANDIDATES
