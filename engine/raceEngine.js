@@ -31,6 +31,13 @@ const DEFAULT_JOCKEY_DIR = path.join(__dirname, "..", "json", "jockeys");
 // This prevents future results from contaminating historical calculations.
 // ============================================================================
 
+// Mirrors checklistEngine.js's own currentOfficialRating - most recent
+// run's OR is the horse's current, up-to-date ability rating.
+function currentOfficialRating(pastResults) {
+    const withOR = (pastResults || []).find(r => typeof r.official_rating === "number");
+    return withOR ? withOR.official_rating : null;
+}
+
 function getHistoricalRuns(pastResults, asOfDate) {
 
     if (!Array.isArray(pastResults)) {
@@ -465,37 +472,52 @@ async function analyseRace(
         // PRIMARY RANKING
         // ====================================================================
 
-        race.runners.sort(
-            (a, b) => {
+		race.runners.sort(
+			(a, b) => {
 
-                const ratingDiff =
-                    (b.power_rating || 0) -
-                    (a.power_rating || 0);
-
-
-                if (ratingDiff !== 0) {
-                    return ratingDiff;
-                }
+				const ratingDiff =
+					(b.power_rating || 0) -
+					(a.power_rating || 0);
 
 
-                const confidenceDiff =
-                    (b.confidence || 0) -
-                    (a.confidence || 0);
+				if (ratingDiff !== 0) {
+					return ratingDiff;
+				}
 
 
-                if (confidenceDiff !== 0) {
-                    return confidenceDiff;
-                }
+				const confidenceDiff =
+					(b.confidence || 0) -
+					(a.confidence || 0);
 
 
-                return (
-                    (b.checklist_earned_points || 0) -
-                    (a.checklist_earned_points || 0)
-                );
+				if (confidenceDiff !== 0) {
+					return confidenceDiff;
+				}
 
-            }
-        );
 
+				const checklistDiff =
+					(b.checklist_earned_points || 0) -
+					(a.checklist_earned_points || 0);
+
+				if (checklistDiff !== 0) {
+					return checklistDiff;
+				}
+
+				// 2026-09-01: explicit OR tie-break, closing the gap
+				// leaveOneOutAll.js flagged (1.9% of top picks were tied and
+				// decided by array order rather than a real rule). Mirrors
+				// predictor.js's own OR tie-break convention.
+				const orA = currentOfficialRating(a.past_results);
+				const orB = currentOfficialRating(b.past_results);
+
+				if (orA !== null && orB !== null && orB !== orA) {
+					return orB - orA;
+				}
+
+				return 0;
+
+			}
+		);
 
         // ====================================================================
         // DRAW ADVANTAGE
