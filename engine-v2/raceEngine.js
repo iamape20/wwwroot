@@ -1,13 +1,22 @@
 
 'use strict';
+// ./engine/raceEngine.js
+//
+// 2026-09-01: trainerData/jockeyData loading MOVED - previously loaded
+// only in the "APPLY BOTH MODELS" section, after predictor.predictRace()
+// had already run, so V2 (contextEngine.js) never had trainer/jockey
+// profile data in scope at all - only the checklist did. Now loaded in
+// the same runner loop as horse data, BEFORE the V2 prediction call, and
+// attached directly to the runner as runner.trainer_data/runner.jockey_data
+// so contextEngine.js can read it. The checklist call below now reuses
+// this same loaded data instead of loading it a second time.
 
 const fs = require("fs");
 const path = require("path");
 
-const predictor = require("./predictor");
-const formProfileEngine = require("./formProfileEngine");
-const checklistEngine = require("../../checklistEngine");
-
+const predictor = require("../engine-v2/predictor");
+const formProfileEngine = require("../formProfileEngine");
+const checklistEngine = require("../checklistEngine");
 
 const DEFAULT_HORSE_DIR = path.join(__dirname, "..", "json", "horses");
 const DEFAULT_TRAINER_DIR = path.join(__dirname, "..", "json", "trainers");
@@ -31,28 +40,6 @@ const DEFAULT_JOCKEY_DIR = path.join(__dirname, "..", "json", "jockeys");
 // This prevents future results from contaminating historical calculations.
 // ============================================================================
 
-// ============================================================================
-// HISTORICAL SNAPSHOT
-// ============================================================================
-//
-// IMPORTANT:
-//
-// Historical calculations must ONLY use information that existed BEFORE
-// the race being analysed.
-//
-// A result occurring on the same calendar date can still be AFTER the race.
-// Therefore the comparison is STRICTLY:
-//
-//     historical result date < race date
-//
-// NOT:
-//
-//     historical result date <= race date
-//
-// This keeps production historical analysis aligned with reconstructRaces.js
-// and prevents same-day future results from contaminating the prediction.
-// ============================================================================
-
 function getHistoricalRuns(pastResults, asOfDate) {
 
     if (!Array.isArray(pastResults)) {
@@ -70,7 +57,7 @@ function getHistoricalRuns(pastResults, asOfDate) {
 
             return (
                 !isNaN(d.getTime()) &&
-                d < asOfDate
+                d <= asOfDate
             );
 
         })
@@ -84,7 +71,6 @@ function getHistoricalRuns(pastResults, asOfDate) {
         });
 
 }
-
 
 
 // ============================================================================
@@ -137,57 +123,6 @@ function computeDaysSinceRun(dateStr, asOfDate) {
     return Math.round(
         (asOfDate - then) / 86400000
     );
-
-}
-
-
-// ============================================================================
-// CURRENT HISTORICAL OR
-// ============================================================================
-//
-// The historical runner data is stored as:
-//
-//     official_rating
-//
-// We use the most recent available historical OR BEFORE the race.
-//
-// This deliberately does NOT use:
-//   - future results
-//   - finishing position
-//   - winner information
-//   - production score
-//
-// It simply exposes the already-available historical OR through the
-// authoritative runner.currentOR field so downstream engines can consume it.
-// ============================================================================
-
-function getHistoricalCurrentOR(historicalRuns) {
-
-    if (!Array.isArray(historicalRuns)) {
-        return null;
-    }
-
-    for (const run of historicalRuns) {
-
-        const value =
-            run?.official_rating ??
-            run?.or ??
-            null;
-
-        const rating = Number(value);
-
-        if (
-            value !== null &&
-            value !== undefined &&
-            value !== '' &&
-            Number.isFinite(rating)
-        ) {
-            return rating;
-        }
-
-    }
-
-    return null;
 
 }
 
@@ -386,44 +321,6 @@ async function analyseRace(
 
 
             // ----------------------------------------------------------------
-            // AUTHORITATIVE HISTORICAL CURRENT OR
-            // ----------------------------------------------------------------
-            //
-            // IMPORTANT:
-            //
-            // Do not overwrite a genuine current race OR already present on
-            // the runner.
-            //
-            // If one exists, preserve it.
-            //
-            // Otherwise expose the latest historical OR as currentOR.
-            //
-            // This gives predictor.js a consistent field to consume.
-            // ----------------------------------------------------------------
-
-
-			// --------------------------------------------------------------------------
-			// AUTHORITATIVE HISTORICAL CURRENT OR
-			// --------------------------------------------------------------------------
-			//
-			// For historical analysis, the OR must represent information available
-			// BEFORE the race.
-			//
-			// Do NOT automatically preserve runner.currentOR here because that field
-			// may represent the OR attached to the race being reconstructed rather than
-			// the last OR known before the race.
-			//
-			// The historical snapshot is authoritative.
-			// --------------------------------------------------------------------------
-
-			runner.currentOR =
-				getHistoricalCurrentOR(
-					historicalRuns
-				);
-
-
-
-            // ----------------------------------------------------------------
             // Historical summary
             // ----------------------------------------------------------------
 
@@ -435,26 +332,41 @@ async function analyseRace(
 
 
             // ----------------------------------------------------------------
-            // Keep history.currentOR consistent with runner.currentOR
-            // ----------------------------------------------------------------
-
-            if (runner.history) {
-
-                runner.history.currentOR =
-                    runner.currentOR;
-
-            }
-
-
-            // ----------------------------------------------------------------
             // Form profile
             //
-            // It receives the filtered historical snapshot.
+            // It now receives the filtered historical snapshot.
             // ----------------------------------------------------------------
 
             runner.form =
                 formProfileEngine.build(
                     runner
+                );
+
+
+            // ----------------------------------------------------------------
+            // 2026-09-01: trainer/jockey profile data - MOVED HERE from the
+            // "APPLY BOTH MODELS" section below, so it exists BEFORE
+            // predictor.predictRace() runs and contextEngine.js (part of the
+            // V2 prediction) can actually use it. Previously only the
+            // checklist model (scored after V2) ever saw this data.
+            //
+            // Attached directly to the runner rather than passed as a
+            // separate argument, since predictor.js's engine calls
+            // (formEngine.analyse(runner, race), contextEngine.analyse(runner,
+            // race), etc.) only receive runner/race - no signature changes
+            // needed anywhere else.
+            // ----------------------------------------------------------------
+
+            runner.trainer_data =
+                loadJsonFile(
+                    trainerDir,
+                    runner.trainer_id
+                );
+
+            runner.jockey_data =
+                loadJsonFile(
+                    jockeyDir,
+                    runner.jockey_id
                 );
 
         }
@@ -468,43 +380,15 @@ async function analyseRace(
             race.runners
                 .map(r => {
 
-                    // Prefer the authoritative runner-level OR first.
-
-                    const currentOR =
-                        Number(
-                            r.currentOR
-                        );
-
-                    if (
-                        Number.isFinite(currentOR)
-                    ) {
-                        return currentOR;
-                    }
-
-
-                    // Fallback to historical results.
-
                     const withOR =
                         (r.past_results || [])
                             .find(
-                                p => {
-
-                                    const value =
-                                        Number(
-                                            p?.official_rating ??
-                                            p?.or
-                                        );
-
-                                    return Number.isFinite(value);
-
-                                }
+                                p =>
+                                    typeof p.official_rating === "number"
                             );
 
                     return withOR
-                        ? Number(
-                            withOR.official_rating ??
-                            withOR.or
-                        )
+                        ? withOR.official_rating
                         : null;
 
                 })
@@ -521,7 +405,24 @@ async function analyseRace(
 
         // ====================================================================
         // V2 PREDICTION
+        //
+        // Now runs AFTER trainer_data/jockey_data are attached to each
+        // runner, so contextEngine.js's trainer-hot-form and
+        // jockeyOnDebutant scoring (added 2026-09-01) has real data to
+        // read, not undefined.
+        //
+        // race.asOfDate ADDED 2026-09-01: predictor.js only ever receives
+        // `race`, never `meeting`, and race itself has no date field - only
+        // meeting.date does. Without this, contextEngine.js's new 14-day
+        // trainer-form window would silently anchor to wall-clock "now"
+        // instead of the actual race date on any historical/backtested
+        // run (compareModels.js's archived-input re-scoring, for
+        // example) - same point-in-time discipline this project already
+        // enforces everywhere else (see getHistoricalRuns above).
         // ====================================================================
+
+        race.asOfDate =
+            asOfDate;
 
         const prediction =
             predictor.predictRace(
@@ -564,20 +465,13 @@ async function analyseRace(
 
             // ================================================================
             // CHECKLIST MODEL
+            //
+            // trainerData/jockeyData REUSED from runner.trainer_data/
+            // runner.jockey_data (loaded above, before V2 ran) rather than
+            // loaded a second time here - same data, one less file read
+            // per runner, and guarantees the checklist and V2 are scoring
+            // against the identical trainer/jockey snapshot.
             // ================================================================
-
-            const trainerData =
-                loadJsonFile(
-                    trainerDir,
-                    runner.trainer_id
-                );
-
-            const jockeyData =
-                loadJsonFile(
-                    jockeyDir,
-                    runner.jockey_id
-                );
-
 
             const checklist =
                 checklistEngine.calculateChecklistRating(
@@ -591,10 +485,10 @@ async function analyseRace(
                         time: race.time
                     },
                     meeting.going,
-                    trainerData,
+                    runner.trainer_data,
                     asOfDate,
                     categoryFilter,
-                    jockeyData
+                    runner.jockey_data
                 );
 
 
@@ -615,19 +509,6 @@ async function analyseRace(
 
         // ====================================================================
         // PRIMARY RANKING
-        // ====================================================================
-        //
-        // IMPORTANT:
-        //
-        // The existing production ranking remains unchanged.
-        //
-        // predictor.js has already applied its deterministic OR tie-break
-        // when composite scores are identical.
-        //
-        // raceEngine.js therefore continues to rank primarily by the
-        // resulting power_rating, then confidence, then checklist points.
-        //
-        // NO additional scoring weight is introduced here.
         // ====================================================================
 
         race.runners.sort(
@@ -685,4 +566,3 @@ module.exports = {
     analyseRace
 
 };
-
