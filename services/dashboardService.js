@@ -1,6 +1,8 @@
 const json = require("./jsonService");
 const vulnerabilityEngine =
     require("../engine/vulnerabilityEngine");
+const marketIntelligenceEngine =
+    require("../engine/marketIntelligenceEngine");
 	
 // ============================================================================
 // EPR DASHBOARD SERVICE
@@ -96,7 +98,8 @@ function makeCandidate(
     raceIndex,
     top,
     tierInfo,
-    vulnerability
+    vulnerability,
+    marketIntelligence
 ) {
 
     return {
@@ -170,9 +173,12 @@ function makeCandidate(
 		engine_details:
 			top.engine_details || null,
 
-		vulnerability,
+        vulnerability,
 
-		tier:
+        market_intelligence:
+            marketIntelligence,
+
+        tier:
 			tierInfo.tier,
 
         candidateType:
@@ -319,6 +325,11 @@ for (
             if (!top)
                 return;
 
+            const marketIntelligence =
+                marketIntelligenceEngine.analyseRace(
+                    tierInfo.runners
+                );
+				
             const rating =
                 Number(top.power_rating);
 
@@ -365,9 +376,12 @@ for (
                             tierInfo.relativeMargin.toFixed(3)
                         ),
 
-                    fieldSize:
-                        tierInfo.runners.length
-                };
+					fieldSize:
+							tierInfo.runners.length,
+
+						market_intelligence:
+							marketIntelligence
+					};
             }
 
         }
@@ -419,6 +433,11 @@ for (
 					vulnerabilityEngine.calculateVulnerability(
 						tierInfo.runners
 					);
+					
+				const marketIntelligence =
+					marketIntelligenceEngine.analyseRace(
+						tierInfo.runners
+					);
 	
 			if (tierInfo.tier === "Strong") {
 				if (tierInfo.margin >= 10) {
@@ -431,7 +450,8 @@ for (
 							raceIndex,
 							top,
 							tierInfo,
-							vulnerability
+							vulnerability,
+							marketIntelligence
 						)
 					);
 				}
