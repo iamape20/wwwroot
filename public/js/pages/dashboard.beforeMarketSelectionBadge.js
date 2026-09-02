@@ -882,7 +882,6 @@ function startLiveTicker(dashboard) {
 //
 // ============================================================
 
-
 function renderCandidateBoard(dashboard) {
 
     const board =
@@ -984,17 +983,6 @@ function renderCandidateBoard(dashboard) {
                     Number(raceIndex)
                 );
 
-            const selectionSource =
-                String(
-                    candidate?.selection_source ??
-                    "EPR"
-                ).toUpperCase();
-
-            const selectionLabel =
-                selectionSource === "MARKET"
-                    ? "MARKET SELECTION"
-                    : "EPR SELECTION";
-
             return `
                 <button
                     type="button"
@@ -1051,18 +1039,6 @@ function renderCandidateBoard(dashboard) {
                             )}
                         </span>
 
-                        <span
-                            class="candidate-board-selection-source ${
-                                selectionSource === "MARKET"
-                                    ? "market-selection"
-                                    : "epr-selection"
-                            }"
-                        >
-                            ${escapeHtml(
-                                selectionLabel
-                            )}
-                        </span>
-
                         <span class="candidate-board-race">
 
                             ${escapeHtml(
@@ -1081,7 +1057,7 @@ function renderCandidateBoard(dashboard) {
 
                             ${
                                 odds
-                                    ? ` Â· ${escapeHtml(
+                                    ? ` · ${escapeHtml(
                                         String(
                                             odds
                                         )
@@ -1130,8 +1106,90 @@ function renderCandidateBoard(dashboard) {
             .map(renderCandidate)
             .join("");
 
-}
+    board
+        .querySelectorAll(
+            ".candidate-board-item"
+        )
+        .forEach(button => {
 
+            button.addEventListener(
+                "click",
+                async () => {
+
+                    const meetingId =
+                        button.dataset.meetingId;
+
+                    const meeting =
+                        button.dataset.meeting;
+
+                    const raceIndex =
+                        Number(
+                            button.dataset.raceIndex
+                        );
+
+                    const raceTime =
+                        button.dataset.raceTime;
+
+                    if (
+                        !meetingId ||
+                        !Number.isFinite(
+                            raceIndex
+                        )
+                    ) {
+
+                        console.warn(
+                            "Candidate board item has no valid race context:",
+                            {
+                                meetingId,
+                                meeting,
+                                raceIndex,
+                                raceTime
+                            }
+                        );
+
+                        return;
+                    }
+
+                    try {
+
+                        await loadRaces(
+                            meetingId,
+                            meeting,
+                            false
+                        );
+
+                        await loadRace(
+                            meetingId,
+                            raceIndex,
+                            toLocalTimeString(
+                                raceTime
+                            )
+                        );
+
+                        const analysis =
+                            document.getElementById(
+                                "analysisSection"
+                            );
+
+                        if (analysis) {
+
+                            analysis.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+                        }
+
+                    } catch (error) {
+
+                        console.error(
+                            "Failed to open candidate race:",
+                            error
+                        );
+                    }
+                }
+            );
+        });
+}
 
 async function loadRace(
     meetingId,

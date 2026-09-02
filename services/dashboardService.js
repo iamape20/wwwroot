@@ -90,6 +90,106 @@ function classifyRace(runners) {
     };
 }
 
+function applyFrozenMarketHybrid(
+    tierInfo,
+    marketIntelligence
+) {
+
+    if (
+        !tierInfo ||
+        tierInfo.tier !== "Strong" ||
+        !marketIntelligence?.available
+    ) {
+
+        return {
+            decision: "EPR",
+            reason: "No usable market intelligence.",
+            frozen_rule: "2025"
+        };
+    }
+
+    const margin =
+        Number(tierInfo.margin);
+
+    const marketOdds =
+        Number(
+            marketIntelligence?.market?.odds
+        );
+
+    const marketRank =
+        Number(
+            marketIntelligence?.market?.eprRank
+        );
+
+    if (
+        !Number.isFinite(margin) ||
+        !Number.isFinite(marketOdds)
+    ) {
+
+        return {
+            decision: "EPR",
+            reason: "Market data incomplete.",
+            frozen_rule: "2025"
+        };
+    }
+
+    /*
+    ========================================================================
+    FROZEN 2025 -> 2026 RULE
+
+    Market conflict only.
+
+    <20 EPR margin:
+        MARKET
+
+    20+ margin and market odds 3.5-5.0:
+        EPR
+
+    Otherwise:
+        MARKET
+    ========================================================================
+    */
+
+    const conflict =
+        Number.isFinite(marketRank) &&
+        marketRank >= 2;
+
+    if (!conflict) {
+
+        return {
+            decision: "EPR",
+            reason: "Market agrees with EPR #1.",
+            frozen_rule: "2025"
+        };
+    }
+
+    if (margin < 20) {
+
+        return {
+            decision: "MARKET",
+            reason: "EPR margin below 20 with market conflict.",
+            frozen_rule: "2025"
+        };
+    }
+
+    if (
+        marketOdds > 3.5 &&
+        marketOdds <= 5.0
+    ) {
+
+        return {
+            decision: "EPR",
+            reason: "EPR margin 20+ and market odds 3.5-5.0.",
+            frozen_rule: "2025"
+        };
+    }
+
+    return {
+        decision: "MARKET",
+        reason: "Market conflict outside the EPR 3.5-5.0 exception.",
+        frozen_rule: "2025"
+    };
+}
 
 function makeCandidate(
     meetingId,
@@ -102,13 +202,67 @@ function makeCandidate(
     marketIntelligence
 ) {
 
+    const marketHybrid =
+        applyFrozenMarketHybrid(
+            tierInfo,
+            marketIntelligence
+        );
+
+    let selectedRunner = top;
+    let selectionSource = "EPR";
+
+    /*
+    ========================================================================
+    PRODUCTION HYBRID SELECTION
+
+    The EPR rating remains untouched.
+
+    The frozen market rule determines the actionable runner.
+
+    If MARKET is selected, locate the actual market favourite in the
+    production runner set and use that runner for the displayed selection.
+    ========================================================================
+    */
+
+    if (
+        marketHybrid.decision === "MARKET" &&
+        marketIntelligence?.available
+    ) {
+
+        const marketName =
+            String(
+                marketIntelligence?.market?.favourite || ""
+            )
+                .trim()
+                .toUpperCase();
+
+        const marketRunner =
+            tierInfo.runners.find(
+                runner =>
+                    String(
+                        runner?.name || ""
+                    )
+                        .trim()
+                        .toUpperCase() === marketName
+            );
+
+        if (marketRunner) {
+
+            selectedRunner =
+                marketRunner;
+
+            selectionSource =
+                "MARKET";
+        }
+    }
+
     return {
 
         name:
-            top.name || "-",
+            selectedRunner.name || "-",
 
         horse:
-            top.name || "-",
+            selectedRunner.name || "-",
 
         meeting:
             meeting.name || "-",
@@ -127,59 +281,97 @@ function makeCandidate(
         raceIndex,
 
         silkUrl:
-            top.silk_url ||
-            top.silkUrl ||
+            selectedRunner.silk_url ||
+            selectedRunner.silkUrl ||
             null,
 
         silk_url:
-            top.silk_url ||
-            top.silkUrl ||
+            selectedRunner.silk_url ||
+            selectedRunner.silkUrl ||
             null,
 
         power_rating:
-            Number(top.power_rating),
+            Number(
+                selectedRunner.power_rating
+            ),
 
         rating:
-            Number(top.power_rating),
+            Number(
+                selectedRunner.power_rating
+            ),
 
         confidence:
-            Number.isFinite(Number(top.confidence))
-                ? Number(top.confidence)
+            Number.isFinite(
+                Number(selectedRunner.confidence)
+            )
+                ? Number(selectedRunner.confidence)
                 : null,
 
         confidence_grade:
-            top.confidence_grade || null,
+            selectedRunner.confidence_grade ||
+            null,
 
         gap:
-            Number(tierInfo.margin.toFixed(1)),
+            Number(
+                tierInfo.margin.toFixed(1)
+            ),
 
         relativeMargin:
-            Number(tierInfo.relativeMargin.toFixed(3)),
+            Number(
+                tierInfo.relativeMargin.toFixed(3)
+            ),
 
         fieldSize:
             tierInfo.runners.length,
 
         odds:
-            top.current_odds ??
-            top.odds ??
+            selectedRunner.current_odds ??
+            selectedRunner.odds ??
             null,
 
         form:
-            top.form || null,
+            selectedRunner.form ||
+            null,
 
-		rating_breakdown:
-			top.rating_breakdown || null,
+        rating_breakdown:
+            selectedRunner.rating_breakdown ||
+            null,
 
-		engine_details:
-			top.engine_details || null,
+        engine_details:
+            selectedRunner.engine_details ||
+            null,
 
         vulnerability,
 
         market_intelligence:
             marketIntelligence,
 
+        market_hybrid:
+            marketHybrid,
+
+        /*
+        EPR #1 is preserved independently so we can see exactly what
+        caused the production selection to change.
+        */
+
+        epr_original_pick: {
+            horse:
+                top.name || "-",
+
+            rating:
+                Number(top.power_rating),
+
+            odds:
+                top.current_odds ??
+                top.odds ??
+                null
+        },
+
+        selection_source:
+            selectionSource,
+
         tier:
-			tierInfo.tier,
+            tierInfo.tier,
 
         candidateType:
             tierInfo.tier === "Strong"
@@ -187,12 +379,15 @@ function makeCandidate(
                 : "WORTH CONSIDERING",
 
         label:
-            tierInfo.tier === "Strong"
-                ? "STRONG CANDIDATE"
-                : "WORTH CONSIDERING"
+            selectionSource === "MARKET"
+                ? "MARKET SELECTION"
+                : (
+                    tierInfo.tier === "Strong"
+                        ? "STRONG CANDIDATE"
+                        : "WORTH CONSIDERING"
+                )
     };
 }
-
 
 function getDashboard() {
 
@@ -465,7 +660,8 @@ for (
 							raceIndex,
 							top,
 							tierInfo,
-							vulnerability
+							vulnerability,
+							marketIntelligence
 						)
 					);
                 }
