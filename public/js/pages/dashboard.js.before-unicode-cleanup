@@ -319,7 +319,7 @@ function buildPriceBadge(breakdown) {
     }
 
     const parts =
-        move.evidence.split(" → ");
+        move.evidence.split(" â†’ ");
 
     if (parts.length < 2) {
         return "";
@@ -343,10 +343,10 @@ function buildPriceBadge(breakdown) {
 
     const arrow =
         move.answer === "Steamer"
-            ? "▼"
+            ? "â–¼"
             : move.answer === "Drifter"
-                ? "▲"
-                : "–";
+                ? "â–²"
+                : "â€“";
 
     return `
         <span
@@ -909,7 +909,7 @@ function renderCandidateBoard(dashboard) {
 
     /*
     ============================================================================
-    HERO HORSES — CHRONOLOGICAL ORDER
+    HERO HORSES â€” CHRONOLOGICAL ORDER
 
     Sort Strong candidates by race time for display only.
     Production selection, ratings and candidate data remain unchanged.
@@ -1723,7 +1723,7 @@ async function loadRace(
 
                             toggleBtn.textContent =
                                 isOpen
-                                    ? "Hide working ►"
+                                    ? "Hide working â–´"
                                     : "Show working ▾";
                         }
                     );
@@ -1755,7 +1755,7 @@ async function loadRace(
 
                             engineToggleBtn.textContent =
                                 isOpen
-                                    ? "Hide scoring ►"
+                                    ? "Hide scoring â–´"
                                     : "Show scoring ▾";
                         }
                     );
@@ -2538,7 +2538,7 @@ async function loadTodaysResults() {
                                                         "won" &&
                                                     d.actualWinner
                                                         ? `
-                                                            &nbsp;→&nbsp;
+                                                            &nbsp;â†’&nbsp;
                                                             Winner:
                                                             ${escapeHtml(
                                                                 d.actualWinner
