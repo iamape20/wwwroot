@@ -1,4 +1,4 @@
-// dashboard.js - Refined Mathematical & UI Implementation
+﻿// dashboard.js - Refined Mathematical & UI Implementation
 
 import {
     getDashboard,
@@ -319,7 +319,7 @@ function buildPriceBadge(breakdown) {
     }
 
     const parts =
-        move.evidence.split(" → ");
+        move.evidence.split(" â†’ ");
 
     if (parts.length < 2) {
         return "";
@@ -343,10 +343,10 @@ function buildPriceBadge(breakdown) {
 
     const arrow =
         move.answer === "Steamer"
-            ? "▼"
+            ? "â–¼"
             : move.answer === "Drifter"
-                ? "▲"
-                : "–";
+                ? "â–²"
+                : "â€“";
 
     return `
         <span
@@ -387,7 +387,7 @@ function buildLiveMoveBadge(breakdown) {
             class="live-move-badge ${cls}"
             title="${escapeHtml(move.evidence)}"
         >
-            🔴 LIVE: ${escapeHtml(move.answer)}
+            ðŸ”´ LIVE: ${escapeHtml(move.answer)}
         </span>
     `;
 }
@@ -907,23 +907,60 @@ function renderCandidateBoard(dashboard) {
             ? dashboard.worthConsidering
             : [];
 
-    const picks = [
-        ...strongCandidates.map(
-            candidate => ({
-                candidate,
-                tierClass: "tier-strong",
-                tierLabel: "strong"
-            })
-        ),
-        ...worthConsidering.map(
-            candidate => ({
-                candidate,
-                tierClass: "tier-open",
-                tierLabel: "considering"
-            })
-        )
-    ];
+    /*
+    ============================================================================
+    HERO HORSES â€” CHRONOLOGICAL ORDER
 
+    Sort Strong candidates by race time for display only.
+    Production selection, ratings and candidate data remain unchanged.
+    ============================================================================
+    */
+
+ /*
+============================================================================
+HERO HORSES — CHRONOLOGICAL DISPLAY ORDER
+
+Sort the COMPLETE candidate board by race time.
+This affects display order only.
+Production selection, ratings and candidate data remain unchanged.
+============================================================================
+*/
+
+const picks = [
+    ...strongCandidates.map(
+        candidate => ({
+            candidate,
+            tierClass: "tier-strong",
+            tierLabel: "strong"
+        })
+    ),
+    ...worthConsidering.map(
+        candidate => ({
+            candidate,
+            tierClass: "tier-open",
+            tierLabel: "considering"
+        })
+    )
+];
+
+const getCandidateTime = ({ candidate }) =>
+    String(
+        candidate?.raceTime ??
+        candidate?.race ??
+        candidate?.time ??
+        ""
+    );
+
+picks.sort(
+    (a, b) =>
+        getCandidateTime(a).localeCompare(
+            getCandidateTime(b),
+            undefined,
+            {
+                numeric: true
+            }
+        )
+    );
     if (!picks.length) {
 
         board.innerHTML =
@@ -1686,7 +1723,7 @@ async function loadRace(
 
                             toggleBtn.textContent =
                                 isOpen
-                                    ? "Hide working ▴"
+                                    ? "Hide working â–´"
                                     : "Show working ▾";
                         }
                     );
@@ -1718,7 +1755,7 @@ async function loadRace(
 
                             engineToggleBtn.textContent =
                                 isOpen
-                                    ? "Hide scoring ▴"
+                                    ? "Hide scoring â–´"
                                     : "Show scoring ▾";
                         }
                     );
@@ -2501,7 +2538,7 @@ async function loadTodaysResults() {
                                                         "won" &&
                                                     d.actualWinner
                                                         ? `
-                                                            &nbsp;→&nbsp;
+                                                            &nbsp;â†’&nbsp;
                                                             Winner:
                                                             ${escapeHtml(
                                                                 d.actualWinner
@@ -2624,3 +2661,10 @@ async function loadMeetings() {
         );
     }
 }
+
+
+
+
+
+
+

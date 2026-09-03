@@ -1,4 +1,4 @@
-const json = require("./jsonService");
+﻿const json = require("./jsonService");
 const vulnerabilityEngine =
     require("../engine/vulnerabilityEngine");
 const marketIntelligenceEngine =
@@ -94,103 +94,45 @@ function applyFrozenMarketHybrid(
     tierInfo,
     marketIntelligence
 ) {
-
-    if (
-        !tierInfo ||
-        tierInfo.tier !== "Strong" ||
-        !marketIntelligence?.available
-    ) {
-
-        return {
-            decision: "EPR",
-            reason: "No usable market intelligence.",
-            frozen_rule: "2025"
-        };
-    }
-
-    const margin =
-        Number(tierInfo.margin);
-
-    const marketOdds =
-        Number(
-            marketIntelligence?.market?.odds
-        );
-
-    const marketRank =
-        Number(
-            marketIntelligence?.market?.eprRank
-        );
-
-    if (
-        !Number.isFinite(margin) ||
-        !Number.isFinite(marketOdds)
-    ) {
-
-        return {
-            decision: "EPR",
-            reason: "Market data incomplete.",
-            frozen_rule: "2025"
-        };
-    }
-
     /*
-    ========================================================================
-    FROZEN 2025 -> 2026 RULE
+    ============================================================================
+    PRODUCTION MARKET-FIRST SELECTION
 
-    Market conflict only.
+    Historical validation established that the market favourite materially
+    outperforms EPR #1 across the reconstructed population.
 
-    <20 EPR margin:
-        MARKET
+    Production rule:
 
-    20+ margin and market odds 3.5-5.0:
-        EPR
+        Usable market intelligence:
+            MARKET
 
-    Otherwise:
-        MARKET
-    ========================================================================
+        No usable market intelligence:
+            EPR
+
+    The EPR rating itself remains completely unchanged.
+
+    This is deliberately simple. No margin/odds exception is retained because
+    the final strategy tournament did not demonstrate that an EPR override
+    reliably improves upon simply taking the market.
+    ============================================================================
     */
 
-    const conflict =
-        Number.isFinite(marketRank) &&
-        marketRank >= 2;
-
-    if (!conflict) {
-
-        return {
-            decision: "EPR",
-            reason: "Market agrees with EPR #1.",
-            frozen_rule: "2025"
-        };
-    }
-
-    if (margin < 20) {
-
+    if (
+        marketIntelligence?.available
+    ) {
         return {
             decision: "MARKET",
-            reason: "EPR margin below 20 with market conflict.",
-            frozen_rule: "2025"
-        };
-    }
-
-    if (
-        marketOdds > 3.5 &&
-        marketOdds <= 5.0
-    ) {
-
-        return {
-            decision: "EPR",
-            reason: "EPR margin 20+ and market odds 3.5-5.0.",
-            frozen_rule: "2025"
+            reason: "Market available - market-first production selection.",
+            frozen_rule: "2026-MARKET-FIRST"
         };
     }
 
     return {
-        decision: "MARKET",
-        reason: "Market conflict outside the EPR 3.5-5.0 exception.",
-        frozen_rule: "2025"
+        decision: "EPR",
+        reason: "No usable market intelligence - EPR fallback.",
+        frozen_rule: "2026-MARKET-FIRST"
     };
 }
-
 function makeCandidate(
     meetingId,
     meeting,
@@ -732,3 +674,4 @@ module.exports = {
     getDashboard
 
 };
+
