@@ -387,7 +387,7 @@ function buildLiveMoveBadge(breakdown) {
             class="live-move-badge ${cls}"
             title="${escapeHtml(move.evidence)}"
         >
-            ðŸ”´ LIVE: ${escapeHtml(move.answer)}
+            🔴 LIVE: ${escapeHtml(move.answer)}
         </span>
     `;
 }
@@ -2661,6 +2661,7 @@ async function loadMeetings() {
         );
     }
 }
+
 
 
 
