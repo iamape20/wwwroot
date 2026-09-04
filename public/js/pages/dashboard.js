@@ -1880,6 +1880,8 @@ async function loadRace(
     }
 }
 
+window.loadRace = loadRace;
+
 async function loadRaces(
     meetingId,
     meetingName,
@@ -2354,27 +2356,33 @@ export async function loadDashboard() {
             dashboard.raceTimes
         ) {
 
-            window.allRaceTimes =
-                dashboard.raceTimes
-                    .map(r => ({
-                        course:
-                            r.course,
+			window.allRaceTimes =
+				dashboard.raceTimes
+					.map(r => ({
+						course:
+							r.course,
 
-                        displayTime:
-                            toLocalTimeString(
-                                r.time
-                            ),
+						displayTime:
+							toLocalTimeString(
+								r.time
+							),
 
-                        totalSecs:
-                            parseLondonTimeToSeconds(
-                                r.time
-                            )
-                    }))
-                    .sort(
-                        (a, b) =>
-                            a.totalSecs -
-                            b.totalSecs
-                    );
+						totalSecs:
+							parseLondonTimeToSeconds(
+								r.time
+							),
+
+						meetingId:
+							r.meetingId,
+
+						raceIndex:
+							r.raceIndex
+					}))
+					.sort(
+						(a, b) =>
+							a.totalSecs -
+							b.totalSecs
+					);
 
             if (
                 !window.timerPool?.liveClock &&

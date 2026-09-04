@@ -75,31 +75,53 @@ function updateClock() {
 
         if (!display) return;
 
-        if (next) {
+		if (next) {
 
-            const diff = next.totalSecs - london.totalSecs;
-            const mins = Math.floor(diff / 60);
-            const secs = diff % 60;
+			const diff = next.totalSecs - london.totalSecs;
+			const mins = Math.floor(diff / 60);
+			const secs = diff % 60;
 
-            display.innerText =
-                `${next.course} ${next.displayTime} - ${mins}m ${secs}s`;
+			display.innerText =
+				`${next.course} ${next.displayTime} - ${mins}m ${secs}s`;
 
-            if (mins < 5) {
-                display.style.background = "rgba(220, 38, 38, 0.15)";
-                display.style.borderColor = "#DC2626";
-                display.style.color = "#DC2626";
-            } else {
-                display.style.background = "rgba(212, 175, 55, 0.15)";
-                display.style.borderColor = "#D4AF37";
-                display.style.color = "#D4AF37";
-            }
-        }
-        else {
+			if (mins < 5) {
+				display.style.background = "rgba(220, 38, 38, 0.15)";
+				display.style.borderColor = "#DC2626";
+				display.style.color = "#DC2626";
+			} else {
+				display.style.background = "rgba(212, 175, 55, 0.15)";
+				display.style.borderColor = "#D4AF37";
+				display.style.color = "#D4AF37";
+			}
 
-            display.innerText = "ALL RACES FINISHED";
-            display.style.background = "#64748b";
+			// MOVED HERE - was outside the if(next){...} block, would throw on
+			// "ALL RACES FINISHED" when next is undefined
+			if (next.meetingId && next.raceIndex != null && typeof loadRace === "function") {
 
-        }
+				display.style.cursor = "pointer";
+
+				display.onclick = () => loadRace(
+					next.meetingId,
+					next.raceIndex,
+					next.displayTime
+				);
+
+			} else {
+
+				display.style.cursor = "default";
+				display.onclick = null;
+
+			}
+
+		}
+		else {
+
+			display.innerText = "ALL RACES FINISHED";
+			display.style.background = "#64748b";
+
+		}
+		
+		
     }
 }
 

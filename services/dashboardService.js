@@ -380,30 +380,34 @@ function getDashboard() {
 
     const raceTimes = [];
 
-    for (const meeting of Object.values(cards || {})) {
+	for (const [meetingId, meeting] of Object.entries(cards || {})) {
 
-        if (!Array.isArray(meeting?.races))
-            continue;
+		if (!Array.isArray(meeting?.races))
+			continue;
 
-        races += meeting.races.length;
+		races += meeting.races.length;
 
-        for (const race of meeting.races) {
+		meeting.races.forEach((race, raceIndex) => {
 
-            if (!Array.isArray(race?.runners))
-                continue;
+			if (!Array.isArray(race?.runners))
+				return;
 
-            runners += race.runners.length;
+			runners += race.runners.length;
 
-            raceTimes.push({
+			raceTimes.push({
 
-                course:
-                    meeting.name || "",
+				course:
+					meeting.name || "",
 
-                time:
-                    race.time || ""
-            });
-        }
-    }
+				time:
+					race.time || "",
+
+				meetingId,
+
+				raceIndex
+			});
+		});
+	}
 
 
     // ------------------------------------------------------------------------
