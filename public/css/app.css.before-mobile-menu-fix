@@ -1,0 +1,2177 @@
+﻿/* ============================================================
+   ELITE POWER RATINGS
+   app.css
+   2026-08-21 COMPACT CANDIDATE BOARD
+   ============================================================ */
+
+:root {
+    --epr-bg: #07090d;
+    --epr-surface: #0d121a;
+    --epr-surface-2: #111823;
+    --epr-surface-3: #151d29;
+    --epr-border: rgba(255,255,255,.09);
+    --epr-border-strong: rgba(212,175,55,.42);
+    --epr-gold: #D4AF37;
+    --epr-gold-soft: #F0D77A;
+    --epr-text: #F7F8FA;
+    --epr-muted: #94A0B2;
+    --epr-green: #2ECC71;
+    --epr-red: #DC2626;
+    --epr-radius: 10px;
+    --epr-radius-lg: 14px;
+    --epr-shadow: 0 12px 32px rgba(0,0,0,.26);
+}
+
+/* ============================================================
+   PAGE
+   ============================================================ */
+
+html {
+    background: var(--epr-bg);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(212,175,55,.055),
+            transparent 34%
+        ),
+        linear-gradient(
+            180deg,
+            #080b10 0%,
+            #07090d 48%,
+            #05070a 100%
+        );
+    color: var(--epr-text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    font-family: inherit;
+}
+
+::selection {
+    background: rgba(212,175,55,.28);
+    color: #fff;
+}
+
+/* ============================================================
+   MAIN WRAPPER
+   ============================================================ */
+
+.wrapper {
+    width: min(1440px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+
+.topbar {
+    width: min(1440px, calc(100% - 48px));
+    max-width: none;
+    min-height: 76px;
+    box-sizing: border-box;
+    margin: 0 auto 22px;
+    padding: 14px 0 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    border-bottom: 1px solid var(--epr-border);
+}
+
+.header-meetings {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.brand-logo {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 16px rgba(0,0,0,.3);
+}
+
+.brand-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1.1;
+}
+
+.brand-text span {
+    display: block;
+    margin-top: 3px;
+    color: var(--epr-muted);
+    font-size: .78rem;
+    letter-spacing: .01em;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #A0AEC0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    color: var(--epr-gold);
+}
+
+/* ============================================================
+   TOP BAR - CLOCK
+   ============================================================ */
+
+.topbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+
+    flex: 0 0 auto;
+}
+
+.topbar-day {
+    color: #fff;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+.topbar-clock {
+    padding-bottom: 1px;
+
+    color: #E9EDF3;
+    font-size: .92rem;
+    font-weight: 600;
+
+    font-variant-numeric: tabular-nums;
+}
+
+.topbar-countdown {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.08);
+
+    border: 1px solid rgba(212,175,55,.45);
+    border-radius: 7px;
+
+    font-size: .68rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+/* ============================================================
+   HERO / TOP STRIP
+   ============================================================ */
+
+#hero {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.top-strip {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: stretch;
+
+    gap: 18px;
+}
+
+.top-strip-left {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding: 14px 16px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(13,18,26,.98),
+            rgba(8,12,18,.98)
+        );
+
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.20);
+}
+
+.top-strip-right {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+/* ============================================================
+   MEETINGS
+   ============================================================ */
+
+.meeting-card {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    min-height: 32px;
+    padding: 7px 11px;
+
+    background: rgba(17,24,39,.72);
+
+    border: 1px solid var(--epr-border);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        background .15s ease;
+}
+
+.meeting-card:hover {
+    transform: translateY(-1px);
+
+    background: var(--epr-surface-3);
+    border-color: rgba(212,175,55,.55);
+}
+
+.meeting-card.active {
+    background: rgba(212,175,55,.09);
+    border-color: var(--epr-gold);
+}
+
+.meeting-card h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.meeting-card p {
+    margin: 0;
+    color: var(--epr-gold);
+    font-size: .78rem;
+}
+
+.meeting-card-name {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+}
+
+.meeting-card-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 20px;
+    height: 18px;
+    padding: 0 5px;
+
+    color: var(--epr-muted);
+    background: rgba(255,255,255,.055);
+
+    border-radius: 5px;
+
+    font-size: 8px;
+}
+
+/* ============================================================
+   NAP CALLOUT
+   ============================================================ */
+
+.nap-callout {
+    padding: 7px 11px;
+
+    background: rgba(17,24,39,.72);
+
+    border: 1px solid var(--epr-border);
+    border-radius: 8px;
+}
+
+.nap-label {
+    color: var(--epr-gold);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.nap-name {
+    margin-top: 1px;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nap-meta {
+    margin-top: 1px;
+
+    color: var(--epr-muted);
+    font-size: 9px;
+}
+
+/* ============================================================
+   BEST OPPORTUNITY
+   ============================================================ */
+
+.hero-badge-compact {
+    width: 100%;
+    max-width: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 0;
+    padding: 10px 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,.08),
+            rgba(17,24,39,.96) 45%,
+            rgba(10,14,23,.98)
+        );
+
+    border: 1px solid var(--epr-border-strong);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+
+    cursor: pointer;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease;
+}
+
+.hero-badge-compact:hover {
+    transform: translateY(-1px);
+    border-color: rgba(240,215,122,.75);
+}
+
+.hero-badge-silk {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    object-fit: contain;
+
+    padding: 2px;
+
+    border-radius: 7px;
+    background: rgba(255,255,255,.04);
+}
+
+.hero-badge-text {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.hero-badge-label {
+    color: var(--epr-gold-soft);
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+
+.hero-badge-name {
+    min-width: 0;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-rating {
+    display: inline-block;
+
+    padding: 2px 6px;
+
+    color: var(--epr-gold);
+    background: #000;
+
+    border: 1px solid var(--epr-gold);
+    border-radius: 4px;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.hero-confidence {
+    color: var(--epr-muted);
+    font-size: 9px;
+}
+
+/* dashboard.js sets #bestConfidence's className directly to
+   tier-strong / tier-moderate / tier-open (replacing, not
+   adding to, hero-confidence) - these must carry the base
+   sizing themselves as well as the tier colour */
+.tier-strong,
+.tier-moderate,
+.tier-open {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.tier-strong {
+    color: var(--epr-green);
+}
+
+.tier-moderate {
+    color: var(--epr-gold-soft);
+}
+
+.tier-open {
+    color: var(--epr-muted);
+    font-weight: 400;
+}
+
+.hero-badge-location {
+    color: var(--epr-muted);
+    font-size: 9px;
+}
+
+.hero-dot {
+    margin: 0 4px;
+    color: #596273;
+}
+
+.hero-badge-arrow {
+    flex: 0 0 auto;
+
+    color: var(--epr-gold);
+    font-size: 18px;
+}
+
+/* ============================================================
+   RACE NAVIGATION
+   ============================================================ */
+
+#meetingTitle {
+    /* the standalone "X Races" heading isn't shown now that this
+       section sits directly under the meeting buttons - #races
+       already reads clearly against the "Today's Meetings" label
+       above it. Kept (not removed) so loadRaces() has an element
+       to write into without needing a JS change. */
+    display: none;
+}
+
+#races {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    width: 100%;
+    margin: 0;
+}
+
+.race-card {
+    min-width: 72px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    padding: 7px 10px;
+
+    background: rgba(17,24,39,.70);
+
+    border: 1px solid var(--epr-border);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        background .15s ease;
+}
+
+.race-card:hover {
+    transform: translateY(-1px);
+
+    background: var(--epr-surface-3);
+    border-color: rgba(212,175,55,.5);
+}
+
+.race-card.active {
+    background: rgba(212,175,55,.08);
+    border-color: var(--epr-gold);
+}
+
+.race-card h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.race-card p {
+    margin: 0;
+    color: var(--epr-gold);
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.race-card small {
+    color: var(--epr-muted);
+    font-size: 9px;
+}
+
+.race-card-time {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.race-card.active .race-card-time {
+    color: var(--epr-gold);
+}
+
+.race-card-meta,
+.race-card-runners {
+    color: var(--epr-muted);
+    font-size: 9px;
+}
+
+/* ============================================================
+   TODAY'S BETTING CANDIDATES
+   Compact dashboard summary
+   ============================================================ */
+
+.pick-board {
+    width: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(13,18,26,.98),
+            rgba(8,12,18,.98)
+        );
+
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.20);
+
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------------
+   IMPORTANT:
+   Keep the pick board compact.
+   A handful of rows are visible; additional picks scroll INSIDE
+   the board instead of expanding the entire page.
+   ------------------------------------------------------------ */
+
+.pick-board-list {
+    max-height: 230px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: #394355 transparent;
+}
+
+/* Tier dot */
+
+.candidate-tier-dot {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+
+    border-radius: 50%;
+}
+
+.candidate-tier-dot.tier-strong {
+    background: var(--epr-green);
+}
+
+.candidate-tier-dot.tier-open {
+    background: var(--epr-gold);
+}
+
+/* Candidate */
+
+.candidate-board-item {
+    width: 100%;
+    height: 68px;
+    min-height: 68px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 4px 10px;
+
+    background: transparent;
+
+    border: 0;
+    border-bottom: 1px solid #202938;
+
+    color: #fff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        background .12s ease,
+        border-color .12s ease;
+}
+
+.candidate-board-item:last-child {
+    border-bottom: 0;
+}
+
+.candidate-board-item:hover {
+    background: #161D2A;
+}
+
+/* SILK */
+
+.candidate-board-silk,
+.candidate-board-silk-empty {
+    width: 38px;
+    height: 44px;
+
+    flex: 0 0 38px;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Horse information */
+
+.candidate-board-info {
+    min-width: 0;
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+.candidate-board-horse {
+    display: block;
+
+    min-width: 0;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.15;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.candidate-board-race {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8993A5;
+
+    font-size: 9px;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Rating */
+
+.candidate-board-rating {
+    flex: 0 0 48px;
+    min-width: 48px;
+
+    color: #D4AF37;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    text-align: right;
+    white-space: nowrap;
+}
+
+.candidate-board-rating small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7F8A9B;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+/* Empty panel */
+
+.candidate-board-empty {
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+
+    color: #687386;
+
+    font-size: 9px;
+}
+
+/* ============================================================
+   RESULTS STRIP
+   ============================================================ */
+
+.results-strip {
+    margin: 16px 0;
+    padding: 10px 13px;
+
+    background: rgba(17,24,39,.72);
+
+    border: 1px solid var(--epr-border);
+    border-radius: 10px;
+}
+
+.results-strip-summary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.results-strip-label {
+    color: var(--epr-gold-soft);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.results-strip-stat {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.results-strip-win {
+    color: #22C55E;
+}
+
+.results-strip-place {
+    color: var(--epr-muted);
+}
+
+.results-strip-recent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 7px;
+}
+
+.results-strip-race {
+    padding: 2px 7px;
+
+    color: var(--epr-muted);
+    background: rgba(160,174,192,.1);
+
+    border: 1px solid #2D3748;
+    border-radius: 5px;
+
+    font-size: 8px;
+}
+
+.results-strip-won {
+    color: #22C55E;
+    background: rgba(34,197,94,.15);
+    border-color: #22C55E;
+}
+
+.results-strip-placed {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.15);
+    border-color: var(--epr-gold);
+}
+
+.results-strip-unplaced {
+    opacity: .6;
+}
+
+/* ============================================================
+   ANALYSIS SECTION
+   ============================================================ */
+
+#analysisSection {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    margin-top: 8px;
+    padding: 20px;
+
+    min-height: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(13,18,26,.98),
+            rgba(8,12,18,.98)
+        );
+
+    border: 1px solid var(--epr-border);
+    border-radius: 14px;
+
+    box-shadow: var(--epr-shadow);
+}
+
+/* VOID BET watermark - tied to the same "race-open" class loadRace()
+   already toggles on #analysisSection for the dimmed-rating effect.
+   Sits behind the content (z-index: -1 within this positioned
+   ancestor), so it reads as a background watermark, not an overlay. */
+#analysisSection.race-open::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='180'><text x='-20' y='110' font-family='Arial, sans-serif' font-size='30' font-weight='700' letter-spacing='2' fill='rgba(239,136,190,0.30)' transform='rotate(-28 130 90)'>VOID BET</text></svg>");
+    background-repeat: repeat;
+}
+
+#raceTitle {
+    margin: 0 0 7px;
+    padding: 0;
+
+    color: #fff;
+
+    border: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    letter-spacing: -.025em;
+}
+
+#analysis {
+    display: grid;
+    gap: 8px;
+}
+
+.race-info-banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    color: var(--epr-muted);
+    border-bottom: 1px solid var(--epr-border);
+    font-size: .78rem;
+}
+
+.race-info-dot {
+    color: #4A5568;
+}
+
+.draw-adv-active {
+    color: var(--epr-gold);
+    font-weight: 700;
+}
+
+.draw-adv-neutral {
+    color: var(--epr-muted);
+}
+
+.selection-safe {
+    color: #2ECC71;
+    font-weight: 700;
+}
+
+.selection-caution {
+    color: var(--epr-gold);
+    font-weight: 700;
+}
+
+.selection-void {
+    color: #6B7280;
+    font-weight: 700;
+}
+
+/* ============================================================
+   RACE SUMMARY
+   ============================================================ */
+
+.race-summary {
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    background: rgba(17,24,39,.62);
+    border: 1px solid var(--epr-border);
+    border-left: 3px solid rgba(212,175,55,.65);
+    border-radius: 9px;
+}
+
+.race-summary-verdict {
+    margin: 0 0 7px;
+    color: #E5E7EB;
+    line-height: 1.5;
+    font-size: .78rem;
+}
+
+.race-summary-forecast {
+    margin: 0;
+
+    color: var(--epr-muted);
+
+    line-height: 1.45;
+    font-size: .75rem;
+}
+
+.race-summary strong {
+    color: var(--epr-gold);
+}
+
+.race-verdict-preview {
+    margin-top: 5px;
+
+    color: var(--epr-muted);
+
+    font-size: .75rem;
+    line-height: 1.35;
+}
+
+.race-forecast {
+    margin-top: 3px;
+
+    color: var(--epr-gold);
+
+    font-size: .72rem;
+}
+
+/* ============================================================
+   RUNNER CARDS
+   ============================================================ */
+
+.runner-card {
+    padding: 12px 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(17,24,39,.92),
+            rgba(13,18,26,.94)
+        );
+
+    border: 1px solid var(--epr-border);
+    border-radius: 11px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        box-shadow .15s ease;
+}
+
+.runner-card:hover {
+    transform: translateY(-1px);
+
+    border-color: rgba(212,175,55,.34);
+    box-shadow: 0 8px 22px rgba(0,0,0,.22);
+}
+
+.runner-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.runner-left {
+    min-width: 0;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.runner-medal {
+    width: 22px;
+
+    flex: 0 0 22px;
+
+    color: #fff;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.runner-cloth {
+    width: 27px;
+    height: 27px;
+
+    flex: 0 0 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    background: rgba(255,255,255,.035);
+
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.runner-draw {
+    width: 18px;
+    height: 18px;
+
+    flex: 0 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.runner-draw-neutral {
+    color: #E5E7EB;
+    background: #000;
+    border: 1px solid #2D3748;
+}
+
+.runner-draw-good {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.15);
+    border: 1px solid var(--epr-gold);
+}
+
+.runner-draw-bad {
+    color: #C77B7B;
+    background: rgba(160,82,82,.12);
+    border: 1px solid #7A3535;
+}
+
+.runner-silk {
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    object-fit: contain;
+}
+
+.runner-details {
+    min-width: 0;
+    flex: 1;
+}
+
+.runner-name {
+    margin-bottom: 3px;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+
+    line-height: 1.15;
+}
+
+.runner-meta {
+    margin-bottom: 5px;
+
+    color: #9BA7B8;
+
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.confidence-bar {
+    width: 100%;
+    max-width: 320px;
+    height: 4px;
+
+    margin-bottom: 4px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,.07);
+    border-radius: 20px;
+}
+
+.confidence-fill {
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8B6F20,
+            #D4AF37,
+            #F0D77A
+        );
+}
+
+.confidence-text {
+    color: var(--epr-muted);
+
+    font-size: 8px;
+}
+
+.runner-right {
+    width: 86px;
+
+    flex: 0 0 86px;
+
+    text-align: center;
+}
+
+.rating-label {
+    margin-bottom: 4px;
+
+    color: #8B96A6;
+
+    font-size: 8px;
+    letter-spacing: .13em;
+}
+
+.rating {
+    min-width: 54px;
+    padding: 7px 9px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    box-shadow: 0 3px 10px rgba(0,0,0,.18);
+}
+
+.rating-gold {
+    background: linear-gradient(145deg,#D4AF37,#A88720);
+}
+
+.rating-green {
+    background: linear-gradient(145deg,#2ECC71,#208D50);
+}
+
+.rating-blue {
+    background: linear-gradient(145deg,#3478F6,#2457B8);
+}
+
+.rating-grey {
+    background: #4B5563;
+}
+
+.race-open .rating {
+    filter: saturate(.25);
+    opacity: .55;
+}
+
+.race-open .rating-label {
+    opacity: .55;
+}
+
+.race-open .runner-card {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(17,24,39,.5),
+            rgba(13,18,26,.55)
+        );
+}
+
+/* ============================================================
+   CHECKLIST
+   ============================================================ */
+
+.checklist-summary {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 3px;
+
+    margin-top: 5px;
+}
+
+.checklist-chip {
+    width: 18px;
+    height: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.checklist-chip-full {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.15);
+    border: 1px solid var(--epr-gold);
+}
+
+.checklist-chip-high-impact {
+    color: #F5D061;
+    background: rgba(212,175,55,.28);
+    border: 2px solid var(--epr-gold);
+
+    box-shadow: 0 0 5px rgba(212,175,55,.4);
+}
+
+.checklist-chip-partial {
+    color: #A0AEC0;
+    background: rgba(160,174,192,.1);
+    border: 1px solid #4A5568;
+}
+
+.checklist-chip-zero {
+    color: #A0AEC0;
+    background: rgba(74,85,104,.08);
+    border: 1px solid #4A5568;
+}
+
+.checklist-toggle {
+    margin-top: 5px;
+
+    padding: 3px 7px;
+
+    color: #AAB4C3;
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.checklist-toggle:hover {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.07);
+    border-color: var(--epr-gold);
+}
+
+.checklist-panel {
+    display: none;
+
+    grid-template-columns: 100px 45px 100px 1fr;
+
+    gap: 3px 10px;
+
+    padding: 10px 14px;
+
+    color: #E5E7EB;
+    background: #0A0E17;
+
+    border-top: 1px solid #2D3748;
+
+    font-size: 9px;
+}
+
+.checklist-panel.open {
+    display: grid;
+}
+
+.checklist-row {
+    display: contents;
+}
+
+.checklist-label {
+    color: var(--epr-gold);
+    font-weight: 600;
+}
+
+.checklist-points {
+    color: #fff;
+}
+
+.checklist-answer {
+    color: #E5E7EB;
+}
+
+.checklist-evidence {
+    color: var(--epr-muted);
+}
+
+.checklist-empty {
+    color: var(--epr-muted);
+    font-size: 10px;
+}
+
+.engine-toggle {
+    margin-top: 5px;
+    margin-left: 6px;
+
+    padding: 3px 7px;
+
+    color: #AAB4C3;
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.engine-toggle:hover {
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.07);
+    border-color: var(--epr-gold);
+}
+
+.engine-panel {
+    display: none;
+
+    grid-template-columns: 90px 55px 70px 1fr;
+
+    gap: 3px 10px;
+
+    padding: 10px 14px;
+
+    color: #E5E7EB;
+    background: #0A0E17;
+
+    border-top: 1px solid #2D3748;
+    border-left: 2px solid var(--epr-gold);
+
+    font-size: 9px;
+}
+
+.engine-panel.open {
+    display: grid;
+}
+
+.engine-panel-note {
+    grid-column: 1 / -1;
+
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+
+    color: var(--epr-muted);
+    font-size: 8px;
+    font-style: italic;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.engine-row {
+    display: contents;
+}
+
+.engine-label {
+    color: var(--epr-gold);
+    font-weight: 600;
+}
+
+.engine-score {
+    color: #fff;
+}
+
+.engine-confidence {
+    color: #E5E7EB;
+}
+
+.engine-reasons {
+    color: var(--epr-muted);
+}
+
+.engine-empty {
+    color: var(--epr-muted);
+    font-size: 10px;
+}
+
+.checklist-rating-label {
+    margin-top: 3px;
+    color: var(--epr-muted);
+    font-size: .78rem;
+    line-height: 1;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.checklist-rating-value {
+    margin-top: 2px;
+
+    color: #AAB4C3;
+
+    font-size: 8px;
+    line-height: 1.1;
+
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================
+   TRIP / CLASS
+   ============================================================ */
+
+.tc-mini {
+    width: 14px;
+    height: 14px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 3px;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.tc-mini-good {
+    color: #22C55E;
+    background: rgba(34,197,94,.15);
+    border: 1px solid #22C55E;
+}
+
+.tc-mini-bad {
+    color: #DC2626;
+    background: rgba(220,38,38,.15);
+    border: 1px solid #DC2626;
+}
+
+.tc-mini-neutral {
+    color: #A0AEC0;
+    background: rgba(160,174,192,.08);
+    border: 1px solid #2D3748;
+}
+
+/* ============================================================
+   LIVE MARKET / RESULT BADGES
+   ============================================================ */
+
+.non-runners-header {
+    margin: 16px 0 8px;
+
+    color: var(--epr-muted);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.runner-card-nonrunner {
+    opacity: .55;
+}
+
+.non-runner-badge {
+    padding: 3px 7px;
+
+    color: #fff;
+    background: #7A3535;
+
+    border-radius: 5px;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.live-move-badge,
+.winning-mark-badge,
+.price-badge {
+    display: inline-flex;
+    align-items: center;
+
+    margin-left: 5px;
+    padding: 2px 6px;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    vertical-align: middle;
+}
+
+.live-move-good,
+.price-badge-in,
+.winning-mark-badge {
+    color: #22C55E;
+    background: rgba(34,197,94,.15);
+    border: 1px solid #22C55E;
+}
+
+.live-move-bad,
+.price-badge-out {
+    color: #DC2626;
+    background: rgba(220,38,38,.15);
+    border: 1px solid #DC2626;
+}
+
+.live-move-neutral,
+.price-badge-steady {
+    color: #A0AEC0;
+    background: rgba(160,174,192,.1);
+    border: 1px solid #2D3748;
+}
+
+/* ============================================================
+   HIGHLIGHTED HORSES
+   ============================================================ */
+
+.analysis-highlight {
+    color: #A0AEC0;
+
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #A0AEC0;
+    text-underline-offset: 2px;
+}
+
+/* ============================================================
+   FOCUS
+   ============================================================ */
+
+.meeting-card:focus-visible,
+.race-card:focus-visible,
+.hero-badge-compact:focus-visible,
+.candidate-board-item:focus-visible,
+.checklist-toggle:focus-visible {
+    outline: 2px solid var(--epr-gold);
+    outline-offset: 2px;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ============================================================
+   MARKET / EPR SELECTION SOURCE
+   Added for production hybrid candidate display
+   ============================================================ */
+
+.candidate-board-selection-source {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 3px;
+    padding: 2px 6px;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    white-space: nowrap;
+
+    text-transform: uppercase;
+}
+
+.candidate-board-selection-source.epr-selection {
+    color: #7F8A9B;
+    background: rgba(127, 138, 155, 0.10);
+    border: 1px solid rgba(127, 138, 155, 0.20);
+}
+
+.candidate-board-selection-source.market-selection {
+    color: #DE0C7A;
+    background: rgba(222, 12, 122, 0.08);
+    border: 1px solid rgba(222, 12, 122, 0.18);
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 1100px) {
+
+    .candidate-board-item {
+        min-height: 72px;
+    }
+
+    .candidate-board-silk,
+    .candidate-board-silk-empty {
+        width: 52px;
+        height: 58px;
+        flex-basis: 52px;
+    }
+
+    .candidate-board-rating {
+        flex-basis: 62px;
+        min-width: 62px;
+    }
+}
+
+/* ============================================================
+   900px
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .wrapper,
+    .topbar {
+        width: min(100% - 28px, 1440px);
+    }
+
+    .topbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header-meetings {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 2px;
+    }
+
+    .brand-text h1 {
+        font-size: 1.25rem;
+    }
+
+    .brand-text span {
+        font-size: .72rem;
+    }
+
+    #analysisSection {
+        padding: 16px;
+    }
+}
+
+/* ============================================================
+   700px
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .top-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .top-strip-left {
+        width: 100%;
+    }
+
+    .candidate-board-item {
+        min-height: 70px;
+    }
+
+    .runner-row {
+        align-items: stretch;
+    }
+
+    .runner-right {
+        width: 72px;
+        flex-basis: 72px;
+    }
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+    .wrapper,
+    .topbar {
+        width: calc(100% - 24px);
+    }
+
+    .topbar {
+        padding: 10px 0 12px;
+    }
+
+    .brand-logo {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .brand-text h1 {
+        font-size: 1.05rem;
+    }
+
+    .brand-text span {
+        display: none;
+    }
+
+    .topbar-day {
+        font-size: .65rem;
+    }
+
+    .topbar-clock {
+        font-size: .8rem;
+    }
+
+    .header-meetings {
+        gap: 5px;
+    }
+
+    .meeting-card {
+        min-height: 26px;
+        padding: 4px 8px;
+        gap: 6px;
+    }
+
+    .meeting-card-name {
+        font-size: 11px;
+    }
+
+    .meeting-card-count {
+        min-width: 17px;
+        height: 16px;
+        font-size: 7px;
+    }
+
+    .topbar-countdown {
+        font-size: .62rem;
+        padding: 4px 7px;
+    }
+
+    .candidate-board-item {
+        min-height: 66px;
+
+        padding: 5px 10px;
+
+        gap: 8px;
+    }
+
+    .candidate-board-silk,
+    .candidate-board-silk-empty {
+        width: 46px;
+        height: 52px;
+        flex-basis: 46px;
+    }
+
+    .candidate-board-info {
+    min-width: 0;
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+.candidate-board-horse {
+        font-size: 11px;
+    }
+
+    .candidate-board-race {
+        font-size: .78rem;
+    }
+
+    .candidate-board-rating {
+        flex-basis: 58px;
+        min-width: 58px;
+        font-size: 9px;
+    }
+
+    .candidate-board-rating small {
+        font-size: 9px;
+    }
+
+    .race-card {
+        min-width: 62px;
+        padding: 6px 8px;
+    }
+
+    .race-card-time {
+        font-size: 12px;
+    }
+
+    .race-card-meta,
+    .race-card-runners {
+        font-size: .78rem;
+    }
+
+    #analysisSection {
+        padding: 12px;
+        border-radius: 11px;
+    }
+
+    #raceTitle {
+        font-size: 17px;
+    }
+
+    .race-info-banner {
+        font-size: .78rem;
+    }
+
+    .race-summary {
+        padding: 10px 11px;
+    }
+
+    .race-summary-verdict {
+        font-size: .78rem;
+    }
+
+    .race-summary-forecast {
+        font-size: .78rem;
+    }
+
+    .runner-card {
+        padding: 10px;
+    }
+
+    .runner-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .runner-left {
+        gap: 6px;
+    }
+
+    .runner-medal {
+        width: 18px;
+        flex-basis: 18px;
+        font-size: 13px;
+    }
+
+    .runner-cloth {
+        width: 23px;
+        height: 23px;
+        flex-basis: 23px;
+        font-size: .78rem;
+    }
+
+    .runner-draw {
+        width: 15px;
+        height: 15px;
+        flex-basis: 15px;
+        font-size: .78rem;
+    }
+
+    .runner-silk {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+    }
+
+    .runner-name {
+        font-size: 13px;
+    }
+
+    .runner-meta {
+        font-size: .78rem;
+    }
+
+    .runner-right {
+        width: 100%;
+        flex-basis: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        text-align: left;
+    }
+
+    .rating {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .checklist-panel {
+        display: none;
+
+        padding: 9px 11px;
+
+        font-size: .78rem;
+    }
+
+    .checklist-panel.open {
+        display: block;
+    }
+
+    .checklist-row {
+        display: block;
+
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+
+        border-bottom: 1px solid #1A2233;
+    }
+
+    .checklist-row:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .checklist-label {
+        display: inline-block;
+    }
+
+    .checklist-points {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .checklist-answer {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .checklist-evidence {
+        display: block;
+        margin-top: 2px;
+        font-size: .78rem;
+    }
+
+    .engine-panel.open {
+        display: block;
+    }
+
+    .engine-row {
+        display: block;
+
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+
+        border-bottom: 1px solid #1A2233;
+    }
+
+    .engine-row:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .engine-label {
+        display: inline-block;
+    }
+
+    .engine-score {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .engine-confidence {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .engine-reasons {
+        display: block;
+        margin-top: 2px;
+        font-size: .78rem;
+    }
+
+    footer p {
+        padding-left: 10px !important;
+        font-size: .78rem;
+    }
+}
+
+/* ============================================================
+   VERY SMALL SCREENS
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+    .brand-text h1 {
+        font-size: .95rem;
+    }
+
+    .topbar-right {
+        margin-left: auto;
+    }
+
+    .hero-badge-compact {
+        padding: 8px 10px;
+    }
+
+    .hero-badge-silk {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+    }
+
+    .hero-badge-name {
+        font-size: 13px;
+    }
+
+    .candidate-board-item {
+        min-height: 62px;
+    }
+
+    .candidate-board-silk,
+    .candidate-board-silk-empty {
+        width: 42px;
+        height: 48px;
+        flex-basis: 42px;
+    }
+
+    .candidate-board-rating {
+        flex-basis: 52px;
+        min-width: 52px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ============================================================
+   CANDIDATE SELECTION BADGES
+   Matches dashboard.js generated markup
+   ============================================================ */
+
+.candidate-selection-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 3px;
+    padding: 2px 6px;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.candidate-selection-market {
+    color: #DE0C7A;
+    background: rgba(222, 12, 122, 0.08);
+    border: 1px solid rgba(222, 12, 122, 0.18);
+}
+
+.candidate-selection-epr {
+    color: #7F8A9B;
+    background: rgba(127, 138, 155, 0.10);
+    border: 1px solid rgba(127, 138, 155, 0.20);
+}

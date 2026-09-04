@@ -2154,25 +2154,6 @@ export async function loadDashboard() {
                 "none";
         }
 
-        if (!hero) {
-
-            document.getElementById(
-                "bestHorse"
-            ).textContent =
-                "No selections";
-
-            document.getElementById(
-                "bestRating"
-            ).textContent =
-                "EPR --";
-
-            document.getElementById(
-                "bestConfidence"
-            ).textContent =
-                "No qualified pick today";
-
-            return;
-        }
 
         if (hero) {
 
@@ -2407,8 +2388,8 @@ export async function loadDashboard() {
         //
         // startLiveTicker(dashboard);
 
-        await loadMeetings();
-
+        await loadMeetings(!hero);
+		
         loadTodaysResults();
 
         setInterval(
@@ -2580,7 +2561,7 @@ async function loadTodaysResults() {
     }
 }
 
-async function loadMeetings() {
+async function loadMeetings(autoSelectFirst = false) {
 
     try {
 
@@ -2660,6 +2641,33 @@ async function loadMeetings() {
                 );
             }
         );
+
+
+		if (
+			autoSelectFirst &&
+			response.meetings.length
+		) {
+
+			const firstCard =
+				container.querySelector(
+					".meeting-card"
+				);
+
+			if (firstCard) {
+				firstCard.classList.add("active");
+			}
+
+			const first =
+				response.meetings[0];
+
+			loadRaces(
+				first.id,
+				first.name
+			);
+
+		}
+
+
 
     } catch (err) {
 
