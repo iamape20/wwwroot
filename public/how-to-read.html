@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Read This Page — Elite Power Ratings</title>
+<style>
+
+    :root {
+        --epr-bg: #05070c;
+        --epr-panel: #0d1119;
+        --epr-panel-border: #1c2230;
+        --epr-gold: #D4AF37;
+        --epr-gold-soft: rgba(212, 175, 55, 0.15);
+        --epr-red: #DC2626;
+        --epr-red-soft: rgba(220, 38, 38, 0.15);
+        --epr-green: #16a34a;
+        --epr-green-soft: rgba(22, 163, 74, 0.15);
+        --epr-text: #e8eaf0;
+        --epr-text-dim: #8b93a7;
+        --epr-pink: #ec4899;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        background: var(--epr-bg);
+        color: var(--epr-text);
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.55;
+    }
+
+    a { color: var(--epr-gold); }
+
+    .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+    }
+
+    header.page-head {
+        margin-bottom: 40px;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: var(--epr-text-dim);
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .back-link:hover { color: var(--epr-gold); }
+
+    h1 {
+        font-size: 28px;
+        margin: 0 0 8px;
+        color: #fff;
+    }
+
+    .subhead {
+        color: var(--epr-text-dim);
+        font-size: 15px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 19px;
+        color: var(--epr-gold);
+        margin: 48px 0 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--epr-panel-border);
+    }
+
+    p { color: var(--epr-text); font-size: 15px; }
+
+    .lede {
+        font-size: 16px;
+        color: var(--epr-text);
+        border-left: 3px solid var(--epr-gold);
+        padding-left: 16px;
+        margin: 24px 0;
+    }
+
+    .card {
+        background: var(--epr-panel);
+        border: 1px solid var(--epr-panel-border);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin: 16px 0;
+    }
+
+    .card p:first-child { margin-top: 0; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .badge-demo {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .chip {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 3px 8px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .chip-market { background: var(--epr-pink); color: #fff; }
+    .chip-epr { background: var(--epr-gold-soft); border: 1px solid var(--epr-gold); color: var(--epr-gold); }
+    .chip-close { background: var(--epr-red-soft); border: 1px solid var(--epr-red); color: var(--epr-red); }
+    .chip-treated { background: var(--epr-green-soft); border: 1px solid var(--epr-green); color: var(--epr-green); }
+
+    .tier-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 14px;
+    }
+
+    .tier-table th {
+        text-align: left;
+        color: var(--epr-text-dim);
+        font-weight: 600;
+        font-size: 12px;
+        padding: 8px 10px;
+        border-bottom: 1px solid var(--epr-panel-border);
+    }
+
+    .tier-table td {
+        padding: 10px;
+        border-bottom: 1px solid var(--epr-panel-border);
+        vertical-align: top;
+    }
+
+    .tier-dot {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .tier-strong-dot { background: var(--epr-gold); }
+    .tier-moderate-dot { background: #64748b; }
+    .tier-open-dot { background: #3a4152; }
+
+    .legend-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 6px 16px;
+        font-size: 14px;
+        margin: 12px 0;
+    }
+
+    .legend-grid span.abbr {
+        display: inline-block;
+        min-width: 32px;
+        font-weight: 700;
+        color: var(--epr-gold);
+    }
+
+    .honest-box {
+        background: rgba(220, 38, 38, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.35);
+        border-radius: 8px;
+        padding: 18px 20px;
+        margin: 20px 0;
+    }
+
+    .honest-box h3 {
+        margin: 0 0 8px;
+        color: var(--epr-red);
+        font-size: 15px;
+    }
+
+    .honest-box p { margin: 8px 0; font-size: 14px; color: var(--epr-text); }
+
+    footer.responsible {
+        margin-top: 56px;
+        padding-top: 24px;
+        border-top: 1px solid var(--epr-panel-border);
+        color: var(--epr-text-dim);
+        font-size: 13px;
+        text-align: center;
+    }
+
+    footer.responsible a { color: var(--epr-text-dim); text-decoration: underline; }
+
+    /* ---- Worked example card ---- */
+
+    .callout {
+        display: inline-block;
+        background: var(--epr-gold);
+        color: #05070c;
+        font-size: 10px;
+        font-weight: 800;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 50%;
+        margin-left: 4px;
+        vertical-align: super;
+    }
+
+    .example-card {
+        background: var(--epr-panel);
+        border: 1px solid var(--epr-panel-border);
+        border-radius: 8px;
+        padding: 14px 16px;
+        margin: 16px 0 8px;
+    }
+
+    .ex-row { display: flex; align-items: flex-start; gap: 12px; }
+    .ex-left { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
+
+    .ex-medal { font-size: 18px; line-height: 1; padding-top: 4px; }
+
+    .ex-cloth {
+        background: #1c2230;
+        color: var(--epr-text);
+        border-radius: 4px;
+        min-width: 22px;
+        text-align: center;
+        padding: 3px 4px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .ex-draw {
+        border-radius: 4px;
+        min-width: 22px;
+        text-align: center;
+        padding: 3px 4px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .ex-draw-good { background: var(--epr-green-soft); color: var(--epr-green); border: 1px solid var(--epr-green); }
+
+    .ex-silk {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background: linear-gradient(135deg, #7c3aed, #ec4899);
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .ex-silk .callout { position: absolute; top: -6px; right: -6px; margin: 0; }
+
+    .ex-details { min-width: 0; flex: 1; }
+
+    .ex-name { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .ex-name .chip { margin-left: 8px; vertical-align: middle; }
+
+    .ex-price-badge {
+        display: inline-block;
+        margin-left: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--epr-green);
+        background: var(--epr-green-soft);
+        border: 1px solid var(--epr-green);
+        border-radius: 4px;
+        padding: 1px 6px;
+        vertical-align: middle;
+    }
+
+    .ex-meta { font-size: 13px; color: var(--epr-text-dim); margin-bottom: 8px; }
+
+    .ex-conf-bar {
+        height: 5px;
+        background: #1c2230;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 3px;
+    }
+
+    .ex-conf-fill { height: 100%; width: 78%; background: var(--epr-gold); }
+
+    .ex-conf-text { font-size: 11px; color: var(--epr-text-dim); margin-bottom: 8px; }
+
+    .ex-chips { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
+
+    .ex-chip {
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 3px;
+        padding: 2px 5px;
+    }
+
+    .ex-chip-high { background: var(--epr-gold); color: #05070c; }
+    .ex-chip-full { background: var(--epr-gold-soft); color: var(--epr-gold); border: 1px solid var(--epr-gold); }
+    .ex-chip-partial { background: rgba(100,116,139,0.25); color: #94a3b8; }
+    .ex-chip-zero { background: #1c2230; color: #4b5568; }
+
+    .ex-right {
+        text-align: center;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .ex-rating-label { font-size: 10px; color: var(--epr-text-dim); letter-spacing: 0.05em; }
+
+    .ex-rating {
+        background: var(--epr-gold);
+        color: #05070c;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 6px;
+        padding: 4px 12px;
+    }
+
+    .ex-btn {
+        font-size: 11px;
+        color: var(--epr-text-dim);
+        border: 1px solid var(--epr-panel-border);
+        border-radius: 4px;
+        padding: 3px 8px;
+        white-space: nowrap;
+    }
+
+    .callout-legend {
+        font-size: 14px;
+        padding-left: 20px;
+        margin: 16px 0 8px;
+    }
+
+    .callout-legend li { margin-bottom: 6px; }
+
+    @media (max-width: 480px) {
+        .ex-row { flex-wrap: wrap; }
+        .ex-right { flex-direction: row; margin-top: 8px; }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <header class="page-head">
+        <a class="back-link" href="/">&larr; Back to today's card</a>
+        <h1>How to Read This Page</h1>
+        <p class="subhead">A plain explanation of every number, badge and label on Elite Power Ratings — written honestly, including where the model has no edge.</p>
+    </header>
+
+    <p class="lede">
+        Everything on this site comes from a statistical model built from public form, class, going, connections and market data.
+        It is a tool for organising information, not a prediction of the future. Nothing here guarantees a winner.
+    </p>
+
+    <h2>A Worked Example</h2>
+    <p>Here's a single runner entry with every part numbered. Each number is explained below the card, and again in more depth further down the page.</p>
+
+    <div class="example-card">
+
+        <div class="ex-row">
+
+            <div class="ex-left">
+
+                <div class="ex-medal">🥇</div>
+
+                <div class="ex-cloth">4<sup class="callout">1</sup></div>
+
+                <div class="ex-draw ex-draw-good">6<sup class="callout">2</sup></div>
+
+                <div class="ex-silk"><sup class="callout">3</sup></div>
+
+                <div class="ex-details">
+
+                    <div class="ex-name">
+                        MIDNIGHT MELODY<sup class="callout">4</sup>
+                        <span class="chip chip-market">MARKET SELECTION</span><sup class="callout">5</sup>
+                        <span class="ex-price-badge">▼ 5/1</span><sup class="callout">6</sup>
+                    </div>
+
+                    <div class="ex-meta">
+                        T: J Smith &nbsp;•&nbsp; J: R O'Brien &nbsp;•&nbsp; Form 214-1 &nbsp;•&nbsp; Draw 6 &nbsp;•&nbsp; Wt 9-7
+                        <sup class="callout">7</sup>
+                    </div>
+
+                    <div class="ex-conf-bar"><div class="ex-conf-fill"></div></div>
+                    <div class="ex-conf-text">Confidence 78.0%<sup class="callout">8</sup></div>
+
+                    <div class="ex-chips">
+                        <span class="ex-chip ex-chip-high">Cl</span>
+                        <span class="ex-chip ex-chip-full">RF</span>
+                        <span class="ex-chip ex-chip-high">Sp</span>
+                        <span class="ex-chip ex-chip-partial">Jo</span>
+                        <span class="ex-chip ex-chip-full">Tr</span>
+                        <span class="ex-chip ex-chip-zero">WM</span>
+                        <sup class="callout">9</sup>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ex-right">
+
+                <div class="ex-rating-label">ELITE</div>
+                <div class="ex-rating">68.4</div><sup class="callout">10</sup>
+
+                <div class="ex-btn">Show working ▾</div>
+                <div class="ex-btn">Show scoring ▾</div><sup class="callout">11</sup>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <ol class="callout-legend">
+        <li><strong>Cloth number</strong> — the number on the horse's saddlecloth, as printed in the racecard.</li>
+        <li><strong>Draw</strong> — starting stall. Colour shows whether that draw has historically helped or hurt at this course/distance (green = favourable here).</li>
+        <li><strong>Silks</strong> — the jockey's racing colours, for spotting the horse at a glance.</li>
+        <li><strong>Horse name.</strong></li>
+        <li><strong>Selection badge</strong> — see "Selection Badges" below: whether this is the market's favourite or the model's own top pick.</li>
+        <li><strong>Price movement</strong> — how the odds have moved today. ▼ means the price is shortening (more money coming for it); ▲ means it's drifting.</li>
+        <li><strong>Connections &amp; form line</strong> — trainer, jockey, recent finishing positions, draw, and weight carried.</li>
+        <li><strong>Confidence</strong> — see "Confidence %" below: how much reliable data the model had, not a win probability.</li>
+        <li><strong>Checklist chips</strong> — quick-glance factor summary. Brighter/filled = that factor favoured this horse; grey = neutral or no data. Full legend further down.</li>
+        <li><strong>EPR rating</strong> — the model's overall score for this horse. Explained fully below — higher is not simply "more likely to win."</li>
+        <li><strong>Show working / Show scoring</strong> — expand for the full checklist breakdown or the four-part scoring behind the rating.</li>
+    </ol>
+
+    <h2>The EPR Rating</h2>
+    <p>
+        Every horse gets a single EPR score, roughly 0&ndash;100, combining four things in a fixed blend:
+        recent <strong>Form</strong>, career <strong>Context</strong> (official rating, wins, freshness), the current
+        <strong>Market</strong> price, and a short written <strong>Verdict</strong>. The horse with the highest EPR
+        in a race is shown as the top pick.
+    </p>
+    <div class="card">
+        <p>
+            <strong>What the number does not mean:</strong> EPR is not a win probability and a higher number does not
+            reliably mean a stronger chance of winning. Across every race checked to date, a horse rated under 30 has
+            won about as often as one rated 75+. The rating tells you how the model ranks the field, not how likely
+            any single horse is to win.
+        </p>
+    </div>
+
+    <h2>Race Separation: Strong / Moderate / Open</h2>
+    <p>
+        Every race is also tagged by how clearly the top pick stands out from the second-best horse, relative to the
+        spread of the whole field. This is a measure of <strong>clarity</strong>, not of value.
+    </p>
+
+    <table class="tier-table">
+        <tr>
+            <th>Tag</th>
+            <th>What it means</th>
+        </tr>
+        <tr>
+            <td><span class="tier-dot tier-strong-dot"></span><strong>Strong</strong></td>
+            <td>The top pick is clearly separated from the rest of the field on rating.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-dot tier-moderate-dot"></span><strong>Moderate</strong></td>
+            <td>A real but smaller gap between the top pick and the field.</td>
+        </tr>
+        <tr>
+            <td><span class="tier-dot tier-open-dot"></span><strong>Open</strong></td>
+            <td>The field is closely rated — no pick stands out.</td>
+        </tr>
+    </table>
+
+    <div class="honest-box">
+        <h3>The honest part</h3>
+        <p>
+            Strong and Moderate races have historically produced more winners than Open ones — a real, checked pattern.
+            But the betting market prices Strong and Moderate picks accurately too: on average they return almost
+            exactly what their odds imply, once the bookmaker's margin is accounted for. A Strong tag means
+            <em>the model is clearer about who's best</em> — it does not mean the price on offer is generous, or that
+            the bet is safe. Open races are where the model has the least to say.
+        </p>
+    </div>
+
+    <h2>Selection Badges</h2>
+
+    <div class="badge-demo"><span class="chip chip-market">MARKET SELECTION</span></div>
+    <p>
+        Historical results showed that, more often than not, the betting market's own favourite outperforms the
+        model's own top-rated horse. Where that applies, the board shows the market favourite as the pick instead of
+        the model's top EPR — clearly labelled, so you always know which one you're looking at.
+    </p>
+
+    <div class="badge-demo"><span class="chip chip-epr">EPR SELECTION</span></div>
+    <p>
+        The opposite case — no reliable market favourite could be identified for this race, so the model's own
+        top-rated horse is shown instead.
+    </p>
+
+    <div class="badge-demo"><span class="chip chip-close">⚠️ Close call — less certain than usual</span></div>
+    <p>
+        Shown when the top two horses are rated within 3 points of each other. Checked against real results: races
+        like this genuinely produce fewer favourite-following winners than usual (roughly 15% vs 26%) — but that
+        extra uncertainty is spread across the whole field, not concentrated in the second-placed horse specifically.
+        Read it as "this race is harder to call," not "watch out for this one horse."
+    </p>
+
+    <div class="badge-demo"><span class="chip chip-treated">⬇ WELL TREATED</span></div>
+    <p>
+        This horse is currently rated below the best official mark it has ever won off — in racing terms, it may be
+        "well treated" by the handicapper relative to its known form.
+    </p>
+
+    <h2>Confidence %</h2>
+    <p>
+        Shown under each runner's name. This reflects how much reliable data the model had to work with for that
+        horse (enough recent runs, a settled market price, and so on) — it is a measure of the model's own certainty
+        in its inputs, not a probability of winning.
+    </p>
+
+    <h2>Checklist Chips</h2>
+    <p>
+        Click <strong>"Show working"</strong> under any horse to see a full breakdown. The small coloured letters are
+        a quick-glance summary — brighter/filled means that factor favoured this horse:
+    </p>
+    <div class="legend-grid">
+        <div><span class="abbr">Cl</span>Class</div>
+        <div><span class="abbr">CC</span>Class change</div>
+        <div><span class="abbr">Co</span>Course record</div>
+        <div><span class="abbr">Di</span>Distance record</div>
+        <div><span class="abbr">RF</span>Recent form</div>
+        <div><span class="abbr">Sp</span>Speed/rating</div>
+        <div><span class="abbr">Go</span>Going record</div>
+        <div><span class="abbr">Dr</span>Draw bias</div>
+        <div><span class="abbr">Fi</span>Fitness/freshness</div>
+        <div><span class="abbr">FT</span>First-time headgear</div>
+        <div><span class="abbr">Jo</span>Jockey/horse record</div>
+        <div><span class="abbr">JF</span>Jockey's recent form</div>
+        <div><span class="abbr">Tr</span>Trainer's recent form</div>
+        <div><span class="abbr">Wt</span>Weight change</div>
+        <div><span class="abbr">TCo</span>Trainer at this course</div>
+        <div><span class="abbr">JCo</span>Jockey at this course</div>
+        <div><span class="abbr">Mkt</span>Market movement</div>
+        <div><span class="abbr">WM</span>Winning mark</div>
+        <div><span class="abbr">RS</span>Running style</div>
+        <div><span class="abbr">BF</span>Beaten favourite last time</div>
+        <div><span class="abbr">BP</span>Bounce profile</div>
+    </div>
+    <p>
+        <strong>"Show scoring"</strong> reveals the four components that actually set the EPR number — Form, Context,
+        Market, Verdict. The checklist chips above are a separate, supporting reference; they only ever break an
+        exact tie and don't change the published rating.
+    </p>
+
+    <h2>Best Opportunity</h2>
+    <p>
+        The single race of the day, if any, that meets the strictest bar: Strong tier <em>and</em> a rating gap of
+        10 points or more over the second horse. Most days will have one; some days genuinely won't, and the page
+        says so plainly rather than lowering the bar to always show something.
+    </p>
+
+    <div class="honest-box">
+        <h3>What this site is not</h3>
+        <p>
+            This is not a tipping service and does not promise profit. The tiers above describe how clear a race
+            looks to the model, not whether backing the top pick is a good bet at the price on offer. Treat every
+            rating as one input among many, use your own judgement, and never bet more than you can afford to lose.
+        </p>
+    </div>
+
+</div>
+
+<footer class="responsible">
+    Please gamble responsibly. 18+.
+    &nbsp;|&nbsp;
+    <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a>
+</footer>
+
+</body>
+</html>

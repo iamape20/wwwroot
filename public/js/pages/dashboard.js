@@ -1010,7 +1010,11 @@ picks.sort(
 			const selectionLabel =
 				candidate?.label ??
 				"";
-	
+				
+			const vulnerability =
+				candidate?.vulnerability ??
+				null;
+				
             const silkUrl =
                 candidate?.silkUrl ??
                 candidate?.silk_url ??
@@ -1132,6 +1136,22 @@ picks.sort(
                             }
 
                         </span>
+
+						${
+							vulnerability?.vulnerable
+								? `
+									<span
+										class="candidate-vulnerability-badge"
+										style="background: rgba(220, 38, 38, 0.15); border: 1px solid #DC2626; color: #DC2626; border-radius: 4px; padding: 2px 6px; font-size: 11px; margin-left: 6px; display: inline-block;"
+										title="Validated 2026-09-05: top pick wins 15.4% in these races vs 25.9% normally - a real, significant drop. The named challenger itself does not win more than a typical #2 (20.6% vs 19.3%, not significant) - the extra risk is spread across the field, not concentrated on one horse."
+									>
+										⚠️ Close call — less certain than usual
+									</span>
+								  `
+								: ""
+						}
+
+
 
                     </span>
 
@@ -1337,42 +1357,42 @@ async function loadRace(
                 ? "draw-adv-neutral"
                 : "draw-adv-active";
 
-        let selectionStatus =
-            null;
+		let selectionStatus =
+			null;
 
-        if (
-            marginTier?.tier ===
-            "Strong"
-        ) {
+		if (
+			marginTier?.tier ===
+			"Strong"
+		) {
 
-            selectionStatus = {
-                label: "SAFE BET",
-                className:
-                    "selection-safe"
-            };
+			selectionStatus = {
+				label: "CLEAR TOP PICK",
+				className:
+					"selection-safe"
+			};
 
-        } else if (
-            marginTier?.tier ===
-            "Moderate"
-        ) {
+		} else if (
+			marginTier?.tier ===
+			"Moderate"
+		) {
 
-            selectionStatus = {
-                label: "BET CAUTION",
-                className:
-                    "selection-caution"
-            };
+			selectionStatus = {
+				label: "MODERATE SEPARATION",
+				className:
+					"selection-caution"
+			};
 
-        } else if (
-            marginTier?.tier ===
-            "Open"
-        ) {
+		} else if (
+			marginTier?.tier ===
+			"Open"
+		) {
 
-            selectionStatus = {
-                label: "VOID BET",
-                className:
-                    "selection-void"
-            };
-        }
+			selectionStatus = {
+				label: "OPEN FIELD",
+				className:
+					"selection-void"
+			};
+		}
 
         const tierLabel =
             selectionStatus
