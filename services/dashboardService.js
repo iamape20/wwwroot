@@ -353,7 +353,14 @@ function getDashboard() {
     let raceCardDate = null;
     let bestOpportunity = null;
 
+    let dailyDoubleData = null;
+    try {
+        dailyDoubleData = json.load("shortlist.json");
+    } catch (err) {
+        dailyDoubleData = null;
+    }
 
+		
     // ------------------------------------------------------------------------
     // DATE
     // ------------------------------------------------------------------------
@@ -649,6 +656,10 @@ for (
             daily,
 
             nap,
+
+            dailyDouble:
+                
+			dailyDoubleData?.dailyDouble || [],
 
             bestOpportunity,
 

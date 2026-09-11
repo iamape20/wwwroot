@@ -57,6 +57,41 @@ const CHECKLIST_SHORT = {
     bounceProfile: "BP"
 };
 
+function renderDailyDouble(dashboard) {
+
+    const box = document.getElementById("dailyDoubleBox");
+    if (!box) return;
+
+    const picks = Array.isArray(dashboard?.dailyDouble) ? dashboard.dailyDouble : [];
+
+    if (!picks.length) {
+        box.innerHTML = "";
+        return;
+    }
+
+    const rows = picks.map((p, i) => `
+        <div style="display:flex; align-items:flex-start; gap:12px; background:rgba(212,175,55,0.1); border:1px solid #D4AF37; border-radius:8px; padding:12px 14px; margin-bottom:8px;">
+            <div style="font-size:18px; font-weight:800; color:#D4AF37; min-width:20px;">${i + 1}</div>
+            <div>
+                <div style="font-weight:700; color:#fff; font-size:15px;">
+                    ${escapeHtml(p.horse)}
+                    <span style="font-size:10px; font-weight:600; color:#D4AF37; border:1px solid #D4AF37; border-radius:4px; padding:1px 5px; margin-left:6px;">${escapeHtml(p.tier)}</span>
+                </div>
+                <div style="font-size:12px; color:#8b93a7; margin-top:2px;">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
+                <div style="font-size:13px; color:#D4AF37; font-weight:600; margin-top:4px;">EPR ${escapeHtml(p.rating)} <span style="color:#8b93a7; font-weight:400;">(+${escapeHtml(p.margin)} clear)</span></div>
+            </div>
+        </div>
+    `).join("");
+
+    box.innerHTML = `
+        <div style="margin-top:12px;">
+            <div style="font-size:13px; text-transform:uppercase; letter-spacing:0.04em; color:#D4AF37; margin-bottom:8px;">\u2B50 Daily Double</div>
+            ${rows}
+        </div>
+    `;
+
+}
+
 function escapeHtml(str) {
     if (typeof str !== "string") return str ?? "";
 
@@ -2070,6 +2105,10 @@ export async function loadDashboard() {
         renderCandidateBoard(
             dashboard
         );
+
+		renderDailyDouble(
+			dashboard
+		);
 
         const nap =
             dashboard.nap &&
