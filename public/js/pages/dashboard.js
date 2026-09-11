@@ -988,16 +988,25 @@ const getCandidateTime = ({ candidate }) =>
         ""
     );
 
+const getCandidateSeconds = ({ candidate }) => {
+
+    const time =
+        getCandidateTime({ candidate });
+
+    const seconds =
+        parseLondonTimeToSeconds(time);
+
+    return Number.isFinite(seconds)
+        ? seconds
+        : Number.MAX_SAFE_INTEGER;
+};
+
 picks.sort(
     (a, b) =>
-        getCandidateTime(a).localeCompare(
-            getCandidateTime(b),
-            undefined,
-            {
-                numeric: true
-            }
-        )
-    );
+        getCandidateSeconds(a) -
+        getCandidateSeconds(b)
+);
+
     if (!picks.length) {
 
         board.innerHTML =
