@@ -1647,6 +1647,101 @@ button {
 }
 
 /* ============================================================
+   DAILY DOUBLE
+   Matches dashboard.js's renderDailyDouble() generated markup
+   ============================================================ */
+
+.daily-double-panel {
+    margin-top: 12px;
+    width: 100%;
+
+    background: rgba(212,175,55,.08);
+    border: 1px solid var(--epr-gold);
+    border-radius: 12px;
+
+    padding: 12px 14px;
+}
+
+.daily-double-header {
+    color: var(--epr-gold);
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+
+    margin-bottom: 2px;
+}
+
+.daily-double-pick {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 10px 0;
+}
+
+.daily-double-pick + .daily-double-pick {
+    border-top: 1px solid rgba(212,175,55,.25);
+}
+
+.daily-double-rank {
+    min-width: 18px;
+
+    color: var(--epr-gold);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.daily-double-body {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.daily-double-horse {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+
+    overflow-wrap: break-word;
+}
+
+.daily-double-tier {
+    display: inline-block;
+
+    margin-left: 6px;
+    padding: 1px 5px;
+
+    color: var(--epr-gold);
+    border: 1px solid var(--epr-gold);
+    border-radius: 4px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.daily-double-race {
+    margin-top: 2px;
+
+    color: var(--epr-muted);
+    font-size: .78rem;
+}
+
+.daily-double-rating {
+    margin-top: 3px;
+
+    color: var(--epr-gold);
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.daily-double-margin {
+    color: var(--epr-muted);
+    font-weight: 400;
+}
+
+/* ============================================================
    MARKET / EPR SELECTION SOURCE
    Added for production hybrid candidate display
    ============================================================ */
@@ -1874,7 +1969,7 @@ button {
     justify-content: center;
 
     overflow: visible;
-}
+	}
 
 .candidate-board-horse {
         font-size: 11px;
@@ -2042,6 +2137,19 @@ button {
         font-size: .78rem;
     }
 
+    .daily-double-panel {
+        padding: 10px 12px;
+    }
+
+    .daily-double-horse {
+        font-size: 13px;
+    }
+
+    .daily-double-race,
+    .daily-double-rating {
+        font-size: .72rem;
+    }
+	
     .engine-panel.open {
         display: block;
     }
@@ -2130,18 +2238,6 @@ button {
         min-width: 52px;
     }
 }
-
-
-
-
-
-
-
-
-/* ============================================================
-   CANDIDATE SELECTION BADGES
-   Matches dashboard.js generated markup
-   ============================================================ */
 
 .candidate-selection-badge {
     display: inline-flex;
