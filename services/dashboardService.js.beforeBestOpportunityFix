@@ -484,36 +484,11 @@ for (
             if (!Number.isFinite(rating))
                 return;
 
-            const opportunityRelativeMargin =
-                Number(
-                    tierInfo.relativeMargin
-                );
-
-            const opportunityConfidence =
-                Number(
-                    top.confidence
-                );
-
-            const shouldReplaceBestOpportunity =
+            if (
                 !bestOpportunity ||
-                opportunityRelativeMargin >
-                    Number(bestOpportunity.relativeMargin) ||
-                (
-                    opportunityRelativeMargin ===
-                        Number(bestOpportunity.relativeMargin) &&
-                    rating >
-                        Number(bestOpportunity.rating)
-                ) ||
-                (
-                    opportunityRelativeMargin ===
-                        Number(bestOpportunity.relativeMargin) &&
-                    rating ===
-                        Number(bestOpportunity.rating) &&
-                    opportunityConfidence >
-                        Number(bestOpportunity.confidence)
-                );
-
-            if (shouldReplaceBestOpportunity) {
+                rating >
+                Number(bestOpportunity.rating)
+            ) {
 
                 bestOpportunity = {
 
@@ -714,5 +689,4 @@ module.exports = {
     getDashboard
 
 };
-
 
