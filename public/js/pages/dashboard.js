@@ -71,7 +71,16 @@ function renderDailyDouble(dashboard) {
     }
 
     const rows = picks.map((p, i) => `
-        <div class="daily-double-pick">
+        <div
+            class="daily-double-pick"
+            id="daily-double-pick-${i}"
+            data-horse="${escapeHtml(String(p.horse || "").toUpperCase())}"
+            data-course="${escapeHtml(String(p.course || "").toUpperCase())}"
+            data-time="${escapeHtml(p.time || "")}"
+            data-meeting-id="${escapeHtml(String(p.meetingId ?? ""))}"
+            data-race-index="${escapeHtml(String(p.raceIndex ?? ""))}"
+            style="cursor:pointer;"
+        >
             <div class="daily-double-rank">${i + 1}</div>
             <div class="daily-double-body">
                 <div class="daily-double-horse">
@@ -91,8 +100,59 @@ function renderDailyDouble(dashboard) {
         </div>
     `;
 
+    box.querySelectorAll(".daily-double-pick").forEach(el => {
+
+        const meetingId = el.dataset.meetingId;
+        const raceIndex = Number(el.dataset.raceIndex);
+        const course = el.dataset.course;
+        const time = el.dataset.time;
+
+        if (!meetingId || !Number.isFinite(raceIndex)) return;
+
+        el.addEventListener("click", async () => {
+
+            await loadRaces(meetingId, course, false);
+            await loadRace(meetingId, raceIndex, toLocalTimeString(time));
+
+            document.getElementById("analysisSection")
+                .scrollIntoView({ behavior: "smooth", block: "start" });
+
+        });
+
+    });
+
 }
 
+// Adds a small "BEST OPPORTUNITY" badge onto Daily Double pick #1, ONLY
+// when it genuinely is the same race/horse as the live Best Opportunity
+// computation - never shows two different named picks on the same page.
+function applyBestOpportunityBadge(hero) {
+
+    const pick0 = document.getElementById("daily-double-pick-0");
+    if (!pick0) return;
+
+    // Clear any previous badge before deciding whether to re-add one.
+    const existing = pick0.querySelector(".best-opportunity-badge");
+    if (existing) existing.remove();
+
+    if (!hero) return;
+
+    const matches =
+        String(hero.horse || "").toUpperCase() === pick0.dataset.horse &&
+        String(hero.course || "").toUpperCase() === pick0.dataset.course &&
+        String(hero.raceTime || "") === pick0.dataset.time;
+
+    if (!matches) return;
+
+    const horseLine = pick0.querySelector(".daily-double-horse");
+    if (!horseLine) return;
+
+    const badge = document.createElement("span");
+    badge.className = "best-opportunity-badge";
+    badge.textContent = "\u2605 BEST OPPORTUNITY";
+    horseLine.appendChild(badge);
+
+}
 
 function escapeHtml(str) {
     if (typeof str !== "string") return str ?? "";
@@ -2113,6 +2173,9 @@ export async function loadDashboard() {
 			dashboard
 		);
 
+		setupCandidateBoardToggle();
+
+
         const nap =
             dashboard.nap &&
             dashboard.nap.active
@@ -2197,14 +2260,10 @@ export async function loadDashboard() {
             }
         }
 
-        // The hero "Best Opportunity" badge must ONLY ever show the
-        // properly-guarded bestOpportunity (Strong tier, 10pt+
-        // margin) - NAP has its own separate, dedicated napCallout
-        // element below and must never substitute here, since its
-        // selection logic isn't guarded the same way. A previous
-        // version of this code fell back through nap/standout,
-        // silently bypassing the guard whenever a NAP existed.
-        const hero = best;
+
+
+
+		const hero = best;
 
         const napEl =
             document.getElementById(
@@ -2216,184 +2275,47 @@ export async function loadDashboard() {
                 "none";
         }
 
+        applyBestOpportunityBadge(hero);
 
-        if (hero) {
+        if (
+            hero &&
+            hero.meetingId != null &&
+            hero.raceIndex != null
+        ) {
 
-            document.getElementById(
-                "bestHorse"
-            ).textContent =
-                hero.horse ?? "-";
+            const goToHeroRace =
+                async () => {
 
-            document.getElementById(
-                "bestRating"
-            ).textContent =
-                hero.rating != null
-                    ? `EPR ${hero.rating}`
-                    : "-";
+                    await loadRaces(
+                        hero.meetingId,
+                        hero.course,
+                        false
+                    );
 
-            const subEl =
-                document.getElementById(
-                    "bestConfidence"
-                );
+                    await loadRace(
+                        hero.meetingId,
+                        hero.raceIndex,
+                        toLocalTimeString(
+                            hero.raceTime
+                        )
+                    );
+                };
 
-            // bestOpportunity is only ever set when Strong tier AND
-            // a 10pt+ margin - both guaranteed whenever hero is
-            // non-null, so this label is stated directly.
-            const gapText =
-                typeof hero.gap ===
-                    "number" &&
-                hero.gap > 0
-                    ? ` • +${hero.gap.toFixed(1)} clear`
-                    : "";
-
-            subEl.textContent =
-                `Strong pick${gapText}`;
-
-            subEl.className =
-                "tier-strong";
-
-            document.getElementById(
-                "bestCourse"
-            ).textContent =
-                hero.course ?? "-";
-
-            document.getElementById(
-                "bestRaceTime"
-            ).textContent =
-                hero.raceTime
-                    ? toLocalTimeString(
-                        hero.raceTime
-                    )
-                    : "-";
-
-            const silk =
-                document.getElementById(
-                    "bestSilk"
-                );
-
-            if (hero.silkUrl) {
-
-                silk.src =
-                    hero.silkUrl;
-
-                silk.style.display =
-                    "";
-
-            } else {
-
-                silk.style.display =
-                    "none";
-            }
-
-            const heroBadge =
-                document.getElementById(
-                    "heroBadge"
-                );
-
-            if (
-                hero.meetingId != null &&
-                hero.raceIndex != null
-            ) {
-
-                heroBadge.style.cursor =
-                    "pointer";
-
-                const goToHeroRace =
-                    async () => {
-
-                        await loadRaces(
-                            hero.meetingId,
-                            hero.course,
-                            false
-                        );
-
-                        await loadRace(
-                            hero.meetingId,
-                            hero.raceIndex,
-                            toLocalTimeString(
-                                hero.raceTime
-                            )
-                        );
-                    };
-
-                heroBadge.onclick =
-                    async () => {
-
-                        await goToHeroRace();
-
-                        document
-                            .getElementById(
-                                "analysisSection"
-                            )
-                            .scrollIntoView({
-                                behavior:
-                                    "smooth",
-
-                                block:
-                                    "start"
-                            });
-                    };
-
-                goToHeroRace();
-            }
-
-        } else {
-
-            // No race today meets the Strong tier + 10pt margin bar -
-            // a clean, honest empty state, rather than crashing on a
-            // null hero or (as before this fix) silently substituting
-            // an ungated NAP pick instead.
-            document.getElementById(
-                "bestHorse"
-            ).textContent =
-                "-";
-
-            document.getElementById(
-                "bestRating"
-            ).textContent =
-                "-";
-
-            const subEl =
-                document.getElementById(
-                    "bestConfidence"
-                );
-
-            subEl.textContent =
-                "No qualified opportunity today";
-
-            subEl.className =
-                "tier-open";
-
-            document.getElementById(
-                "bestCourse"
-            ).textContent =
-                "-";
-
-            document.getElementById(
-                "bestRaceTime"
-            ).textContent =
-                "-";
-
-            const silk =
-                document.getElementById(
-                    "bestSilk"
-                );
-
-            silk.style.display =
-                "none";
-
-            const heroBadge =
-                document.getElementById(
-                    "heroBadge"
-                );
-
-            heroBadge.style.cursor =
-                "default";
-
-            heroBadge.onclick =
-                null;
+            goToHeroRace();
 
         }
+		
+
+
+
+
+
+
+
+
+
+
+
 
         if (
             dashboard.raceTimes
@@ -2470,11 +2392,7 @@ function updateResultsStripVisibility() {
     if (!strip) return;
 
     const todayBlock = document.getElementById("todayResultsBlock");
-    const yesterdayBlock = document.getElementById("yesterdayResultsBlock");
-
-    const hasContent =
-        (todayBlock && todayBlock.innerHTML.trim() !== "") ||
-        (yesterdayBlock && yesterdayBlock.innerHTML.trim() !== "");
+    const hasContent = todayBlock && todayBlock.innerHTML.trim() !== "";
 
     strip.style.display = hasContent ? "" : "none";
 
@@ -2482,15 +2400,8 @@ function updateResultsStripVisibility() {
 
 function renderYesterdayResults(dashboard) {
 
-    const strip = document.getElementById("todaysResultsStrip");
-    if (!strip) return;
-
-    let block = document.getElementById("yesterdayResultsBlock");
-    if (!block) {
-        block = document.createElement("div");
-        block.id = "yesterdayResultsBlock";
-        strip.insertBefore(block, strip.firstChild);
-    }
+    const block = document.getElementById("dailyDoubleYesterday");
+    if (!block) return;
 
     const y = dashboard?.yesterdayResults;
     const picks = Array.isArray(y?.dailyDouble) ? y.dailyDouble : [];
@@ -2518,7 +2429,26 @@ function renderYesterdayResults(dashboard) {
         <div class="results-strip-recent">${detail}</div>
     `;
 
-    strip.style.display = "";
+}
+
+function setupCandidateBoardToggle() {
+
+    if (window._candidateToggleSetup) return;
+    window._candidateToggleSetup = true;
+
+    const toggle = document.getElementById("candidateBoardToggle");
+    const board = document.getElementById("pickBoard");
+    if (!toggle || !board) return;
+
+    toggle.addEventListener("click", () => {
+
+        const isHidden = board.style.display === "none";
+        board.style.display = isHidden ? "" : "none";
+        toggle.textContent = isHidden
+            ? "Hide today's candidates \u25B4"
+            : "See all today's candidates \u25BE";
+
+    });
 
 }
 

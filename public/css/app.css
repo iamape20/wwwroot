@@ -2149,7 +2149,47 @@ button {
     .daily-double-rating {
         font-size: .72rem;
     }
-	
+
+	.candidate-board-toggle {
+		width: 100%;
+
+		padding: 10px 14px;
+
+		background: rgba(255,255,255,.03);
+		border: 1px solid var(--epr-border);
+		border-radius: 10px;
+
+		color: var(--epr-muted);
+		font-size: .85rem;
+		font-weight: 600;
+		text-align: left;
+
+		cursor: pointer;
+	}
+
+	.candidate-board-toggle:hover {
+		border-color: rgba(212,175,55,.4);
+		color: #fff;
+	}
+
+	.best-opportunity-badge {
+		display: inline-block;
+
+		margin-left: 8px;
+		padding: 1px 6px;
+
+		background: rgba(212,175,55,.15);
+		border: 1px solid var(--epr-gold);
+		border-radius: 4px;
+
+		color: var(--epr-gold);
+		font-size: 9px;
+		font-weight: 700;
+		letter-spacing: .03em;
+
+		vertical-align: middle;
+	}
+
     .engine-panel.open {
         display: block;
     }
