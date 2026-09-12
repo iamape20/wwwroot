@@ -2464,6 +2464,22 @@ export async function loadDashboard() {
     }
 }
 
+function updateResultsStripVisibility() {
+
+    const strip = document.getElementById("todaysResultsStrip");
+    if (!strip) return;
+
+    const todayBlock = document.getElementById("todayResultsBlock");
+    const yesterdayBlock = document.getElementById("yesterdayResultsBlock");
+
+    const hasContent =
+        (todayBlock && todayBlock.innerHTML.trim() !== "") ||
+        (yesterdayBlock && yesterdayBlock.innerHTML.trim() !== "");
+
+    strip.style.display = hasContent ? "" : "none";
+
+}
+
 function renderYesterdayResults(dashboard) {
 
     const strip = document.getElementById("todaysResultsStrip");
@@ -2524,10 +2540,15 @@ async function loadTodaysResults() {
             return;
         }
 
+        const todayBlock =
+            document.getElementById(
+                "todayResultsBlock"
+            );
+
         if (!response.ok) {
 
-            strip.style.display =
-                "none";
+            if (todayBlock) todayBlock.innerHTML = "";
+            updateResultsStripVisibility();
 
             return;
         }
@@ -2540,8 +2561,8 @@ async function loadTodaysResults() {
             !data.racesChecked
         ) {
 
-            strip.style.display =
-                "none";
+            if (todayBlock) todayBlock.innerHTML = "";
+            updateResultsStripVisibility();
 
             return;
         }
@@ -2567,14 +2588,14 @@ async function loadTodaysResults() {
                 .slice(-5)
                 .reverse();
 
- let todayBlock = document.getElementById("todayResultsBlock");
-if (!todayBlock) {
-    todayBlock = document.createElement("div");
-    todayBlock.id = "todayResultsBlock";
-    strip.appendChild(todayBlock);
+ let todayBlockEl = document.getElementById("todayResultsBlock");
+if (!todayBlockEl) {
+    todayBlockEl = document.createElement("div");
+    todayBlockEl.id = "todayResultsBlock";
+    strip.appendChild(todayBlockEl);
 }
 
-todayBlock.innerHTML = `
+todayBlockEl.innerHTML = `
 
             <div class="results-strip-summary">
 
@@ -2656,8 +2677,7 @@ todayBlock.innerHTML = `
 
         `;
 
-        strip.style.display =
-            "";
+        updateResultsStripVisibility();
 
     } catch (err) {
 
