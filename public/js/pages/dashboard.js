@@ -907,18 +907,6 @@ function startLiveTicker(dashboard) {
         );
 }
 
-// ============================================================
-// TODAY'S BETTING CANDIDATES BOARD
-// ============================================================
-//
-// Strong Candidates = primary selections
-// Worth Considering = credible alternatives
-//
-// The dashboard service supplies these arrays.
-// This function does NOT recalculate ratings.
-//
-// ============================================================
-
 function renderCandidateBoard(dashboard) {
 
     const board =
@@ -2121,6 +2109,10 @@ export async function loadDashboard() {
 			dashboard
 		);
 
+		renderYesterdayResults(
+			dashboard
+		);
+
         const nap =
             dashboard.nap &&
             dashboard.nap.active
@@ -2453,10 +2445,6 @@ export async function loadDashboard() {
             }
         }
 
-        // Live ticker deliberately remains disabled
-        // until required by the dashboard layout.
-        //
-        // startLiveTicker(dashboard);
 
         await loadMeetings(!hero);
 		
@@ -2474,6 +2462,48 @@ export async function loadDashboard() {
             err
         );
     }
+}
+
+function renderYesterdayResults(dashboard) {
+
+    const strip = document.getElementById("todaysResultsStrip");
+    if (!strip) return;
+
+    let block = document.getElementById("yesterdayResultsBlock");
+    if (!block) {
+        block = document.createElement("div");
+        block.id = "yesterdayResultsBlock";
+        strip.insertBefore(block, strip.firstChild);
+    }
+
+    const y = dashboard?.yesterdayResults;
+    const picks = Array.isArray(y?.dailyDouble) ? y.dailyDouble : [];
+    const withOutcome = picks.filter(p => p.outcome && p.outcome !== "unknown");
+
+    if (!withOutcome.length) {
+        block.innerHTML = "";
+        return;
+    }
+
+    const won = withOutcome.filter(p => p.outcome === "won").length;
+    const placed = withOutcome.filter(p => p.outcome === "won" || p.outcome === "placed").length;
+
+    const detail = withOutcome.map(p => {
+        const icon = p.outcome === "won" ? "\u2705" : p.outcome === "placed" ? "\u2713" : "\u2717";
+        return `${icon} ${escapeHtml(p.horse)}`;
+    }).join(" &nbsp;\u00b7&nbsp; ");
+
+    block.innerHTML = `
+        <div class="results-strip-summary">
+            <span class="results-strip-label">Yesterday's Daily Double</span>
+            <span class="results-strip-stat results-strip-win">${won}/${withOutcome.length} won</span>
+            <span class="results-strip-stat results-strip-place">${placed}/${withOutcome.length} placed</span>
+        </div>
+        <div class="results-strip-recent">${detail}</div>
+    `;
+
+    strip.style.display = "";
+
 }
 
 async function loadTodaysResults() {
@@ -2537,7 +2567,14 @@ async function loadTodaysResults() {
                 .slice(-5)
                 .reverse();
 
-        strip.innerHTML = `
+ let todayBlock = document.getElementById("todayResultsBlock");
+if (!todayBlock) {
+    todayBlock = document.createElement("div");
+    todayBlock.id = "todayResultsBlock";
+    strip.appendChild(todayBlock);
+}
+
+todayBlock.innerHTML = `
 
             <div class="results-strip-summary">
 

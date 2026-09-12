@@ -360,7 +360,14 @@ function getDashboard() {
         dailyDoubleData = null;
     }
 
-		
+	// ADD alongside the existing dailyDoubleData block
+	let yesterdayResultsData = null;
+	try {
+		yesterdayResultsData = json.load("yesterday-results.json");
+	} catch (err) {
+		yesterdayResultsData = null;
+	}
+
     // ------------------------------------------------------------------------
     // DATE
     // ------------------------------------------------------------------------
@@ -686,6 +693,10 @@ for (
                 
 			dailyDoubleData?.dailyDouble || [],
 
+			yesterdayResults:
+    
+			yesterdayResultsData,
+	
             bestOpportunity,
 
             strongCandidates,
