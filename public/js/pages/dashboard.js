@@ -29,7 +29,9 @@ const CHECKLIST_LABELS = {
     winningMark: "Winning Mark",
     runningStyle: "Running Style",
     beatenFavourite: "Beaten Favourite",
-    bounceProfile: "Bounce Profile"
+    bounceProfile: "Bounce Profile",
+    jockeyTrainerCombo: "Jockey/Trainer Combo",
+    jockeyOnDebutant: "Jockey on Debutant"
 };
 
 const CHECKLIST_SHORT = {
@@ -54,7 +56,9 @@ const CHECKLIST_SHORT = {
     winningMark: "WM",
     runningStyle: "RS",
     beatenFavourite: "BF",
-    bounceProfile: "BP"
+    bounceProfile: "BP",
+    jockeyTrainerCombo: "JTC",
+    jockeyOnDebutant: "JOD"
 };
 
 
@@ -2184,32 +2188,6 @@ export async function loadDashboard() {
 
         const best =
             dashboard.bestOpportunity;
-
-        console.log(
-            "EPR DASHBOARD DATE DEBUG:",
-            JSON.stringify(
-                {
-                    date:
-                        dashboard?.date,
-
-                    meetingDate:
-                        dashboard?.meetingDate,
-
-                    meetings:
-                        dashboard?.meetings?.map(
-                            m => ({
-                                name:
-                                    m?.name,
-
-                                date:
-                                    m?.date
-                            })
-                        )
-                },
-                null,
-                2
-            )
-        );
 
         const liveDayEl =
             document.getElementById(

@@ -14,6 +14,13 @@ const marketIntelligenceEngine =
 // - We do NOT use arbitrary EPR/confidence thresholds to create the board.
 // - Strong = production-style Strong race separation.
 // - Worth Considering = production-style Moderate race separation.
+// - The EPR tier/margin gate above still decides WHICH races qualify as
+//   candidates at all. But the runner actually DISPLAYED for a qualifying
+//   race is decided separately, by applyFrozenMarketHybrid() below: when
+//   usable market intelligence exists for that race, the market favourite
+//   is shown instead of the EPR #1 pick (frozen_rule "2026-MARKET-FIRST").
+//   The EPR rating itself is never altered - see epr_original_pick on each
+//   candidate for what EPR alone would have picked.
 // ============================================================================
 
 const TIER_STRONG_CUT = 0.50;

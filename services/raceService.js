@@ -79,7 +79,6 @@ async function getRace(meetingId, raceIndex) {
 						isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
 						elite: {
 							rating: null,
-							rank: null,
 							confidence: null,
 							checklistBreakdown: null,
 							checklistPoints: null,
@@ -124,7 +123,6 @@ async function getRace(meetingId, raceIndex) {
 
 					elite: {
 						rating: liveRating,
-						rank: null,
 						confidence: elite.confidence,
 						checklistBreakdown: liveBreakdown,
 						checklistPoints: livePoints,
