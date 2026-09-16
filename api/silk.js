@@ -14,7 +14,7 @@
 // specific known image host, not an open fetch-anything relay.
 
 const axios = require("axios");
-const { removeSilkBackground } = require("../backend/silkProcessor");
+const { removeSilkBackground } = require("../silkProcessor");
 
 const ALLOWED_HOST = "www.sportinglife.com";
 
