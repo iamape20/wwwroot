@@ -136,6 +136,19 @@ button {
     letter-spacing: .01em;
 }
 
+.how-to-read-link {
+    display: inline-block;
+    margin-top: 4px;
+    color: #D4AF37;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.how-to-read-link:hover,
+.how-to-read-link:focus-visible {
+    text-decoration: underline;
+}
+
 .navigation {
     display: flex;
     gap: 20px;

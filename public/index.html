@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
 
-    <script src="js/clock.js"></script>
+    <script src="js/clock.js" defer></script>
     <script type="module" src="js/app.js"></script>
 
 </head>
@@ -31,7 +31,7 @@
         <div class="brand-text">
             <h1>Elite Power Ratings</h1>
             <span>Professional Racing Intelligence</span>
-			<!-- <a href="/how-to-read.html" class="how-to-read-link" style="color: #D4AF37; font-size: 13px; text-decoration: none;">How to read this page</a> -->
+			<!-- <a href="/how-to-read.html" class="how-to-read-link">How to read this page</a> -->
         </div>
     </div>
 
@@ -72,7 +72,7 @@
 
         <div class="top-strip-right">
 
-            <button id="candidateBoardToggle" class="candidate-board-toggle" type="button">
+            <button id="candidateBoardToggle" class="candidate-board-toggle" type="button" aria-expanded="false" aria-controls="pickBoard">
                 See all today's candidates ▾
             </button>
 

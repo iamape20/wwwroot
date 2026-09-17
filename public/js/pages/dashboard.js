@@ -2425,6 +2425,7 @@ function setupCandidateBoardToggle() {
         toggle.textContent = isHidden
             ? "Hide today's candidates \u25B4"
             : "See all today's candidates \u25BE";
+        toggle.setAttribute("aria-expanded", isHidden ? "true" : "false");
 
     });
 
