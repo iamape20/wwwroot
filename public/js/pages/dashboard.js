@@ -1536,6 +1536,18 @@ async function loadRace(
                 )}
             </span>
 
+            ${
+                response.meeting.going
+                    ? `<span class="race-info-dot">•</span>
+
+                       <span class="race-info-item">
+                           Going: ${escapeHtml(
+                               response.meeting.going
+                           )}
+                       </span>`
+                    : ""
+            }
+
             <span class="race-info-dot">•</span>
 
             <span class="race-info-item ${drawAdvClass}">
