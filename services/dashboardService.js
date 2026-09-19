@@ -697,8 +697,12 @@ for (
             nap,
 
             dailyDouble:
-                
+
 			dailyDoubleData?.dailyDouble || [],
+
+			dailyDoublePickMode:
+
+			dailyDoubleData?.pickMode || null,
 
 			yesterdayResults:
     

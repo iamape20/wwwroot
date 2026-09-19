@@ -97,9 +97,13 @@ function renderDailyDouble(dashboard) {
         </div>
     `).join("");
 
+    const headerText = dashboard?.dailyDoublePickMode === "single"
+        ? "\u2B50 Daily Single"
+        : "\u2B50 Daily Double";
+
     box.innerHTML = `
         <div class="daily-double-panel">
-            <div class="daily-double-header">\u2B50 Daily Double</div>
+            <div class="daily-double-header">${headerText}</div>
             ${rows}
         </div>
     `;
@@ -2410,9 +2414,13 @@ function renderYesterdayResults(dashboard) {
         return `${icon} ${escapeHtml(p.horse)}`;
     }).join(" &nbsp;\u00b7&nbsp; ");
 
+    const label = y?.pickMode === "single"
+        ? "Yesterday's Daily Single"
+        : "Yesterday's Daily Double";
+
     block.innerHTML = `
         <div class="results-strip-summary">
-            <span class="results-strip-label">Yesterday's Daily Double</span>
+            <span class="results-strip-label">${label}</span>
             <span class="results-strip-stat results-strip-win">${won}/${withOutcome.length} won</span>
             <span class="results-strip-stat results-strip-place">${placed}/${withOutcome.length} placed</span>
         </div>
