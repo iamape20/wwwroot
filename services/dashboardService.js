@@ -29,19 +29,24 @@ const TIER_MIN_FIELD_FOR_STRONG = 5;
 const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 
 
+// NOT re-sorted by raw power_rating, deliberately: race.runners is already
+// produced by raceEngine.js's own sort (power_rating, THEN the market-
+// override swap - see js/testMarketOverrideRule.js, shipped 2026-09-17),
+// so re-sorting here would silently undo that override and compute
+// margin/tier (and feed Best Opportunity / vulnerabilityEngine) against a
+// runner order that doesn't match what's actually being backed. FOUND LIVE
+// 2026-09-19: this function previously DID both re-sort AND filter on
+// `isNonRunner` (a field that doesn't exist on these objects - the real
+// field is `non_runner`, used everywhere else in this codebase - so
+// non-runners were never actually excluded here). Both fixed to match
+// js/marginTiers.js's real, validated classifyRace exactly.
 function classifyRace(runners) {
 
     const valid = (runners || [])
         .filter(r =>
             r &&
-            r.isNonRunner !== true &&
+            r.non_runner !== true &&
             Number.isFinite(Number(r.power_rating))
-        )
-        .slice()
-        .sort(
-            (a, b) =>
-                Number(b.power_rating) -
-                Number(a.power_rating)
         );
 
     if (valid.length < 2)
