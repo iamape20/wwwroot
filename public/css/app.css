@@ -530,12 +530,13 @@ button {
    ============================================================ */
 
 #meetingTitle {
-    /* the standalone "X Races" heading isn't shown now that this
-       section sits directly under the meeting buttons - #races
-       already reads clearly against the "Today's Meetings" label
-       above it. Kept (not removed) so loadRaces() has an element
-       to write into without needing a JS change. */
-    display: none;
+    color: var(--epr-gold);
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+
+    margin: 0 0 8px;
 }
 
 #races {
@@ -621,6 +622,26 @@ button {
    TODAY'S BETTING CANDIDATES
    Compact dashboard summary
    ============================================================ */
+
+/* Daily Double sits at the top of the merged pick board as a
+   highlighted callout; the yesterday recap sits at the bottom - both
+   need their own side/edge padding since .pick-board itself has none
+   (candidate rows handle their own internal padding instead). */
+#dailyDoubleBox {
+    padding: 14px 14px 0;
+}
+
+#dailyDoubleBox:empty {
+    padding: 0;
+}
+
+#dailyDoubleYesterday {
+    padding: 0 14px 14px;
+}
+
+#dailyDoubleYesterday:empty {
+    padding: 0;
+}
 
 .pick-board {
     width: 100%;
