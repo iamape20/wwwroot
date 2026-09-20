@@ -268,6 +268,16 @@ function makeCandidate(
         }
     }
 
+    // Trainer hot/cold form gate - checked here, after selectedRunner is
+    // finalized (EPR pick or market-hybrid override, whichever won above),
+    // not on the earlier pre-override `top` param - same reasoning as
+    // generateDailyShortlist.js. See js/a1ratings_v3.js for the full
+    // validation writeup. Returning null signals the caller to skip this
+    // candidate entirely.
+    if (selectedRunner.trainer_trend === "cold") {
+        return null;
+    }
+
     return {
 
         name:
@@ -550,6 +560,12 @@ for (
             if (!top)
                 return;
 
+            // Trainer hot/cold form gate - see js/a1ratings_v3.js for the
+            // full validation writeup. No market-hybrid override in this
+            // block, so top is already the final pick being evaluated here.
+            if (top.trainer_trend === "cold")
+                return;
+
             const marketIntelligence =
                 marketIntelligenceEngine.analyseRace(
                     tierInfo.runners
@@ -692,33 +708,33 @@ for (
 			if (tierInfo.tier === "Strong") {
 				if (tierInfo.margin >= 10) {
 
-					strongCandidates.push(
-						makeCandidate(
-							meetingId,
-							meeting,
-							race,
-							raceIndex,
-							top,
-							tierInfo,
-							vulnerability,
-							marketIntelligence
-						)
+					const candidate = makeCandidate(
+						meetingId,
+						meeting,
+						race,
+						raceIndex,
+						top,
+						tierInfo,
+						vulnerability,
+						marketIntelligence
 					);
+
+					if (candidate) strongCandidates.push(candidate);
 				}
 			} else if (tierInfo.tier === "Moderate") {
 
-					worthConsidering.push(
-						makeCandidate(
-							meetingId,
-							meeting,
-							race,
-							raceIndex,
-							top,
-							tierInfo,
-							vulnerability,
-							marketIntelligence
-						)
+					const candidate = makeCandidate(
+						meetingId,
+						meeting,
+						race,
+						raceIndex,
+						top,
+						tierInfo,
+						vulnerability,
+						marketIntelligence
 					);
+
+					if (candidate) worthConsidering.push(candidate);
                 }
             }
         );
