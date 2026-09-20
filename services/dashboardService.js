@@ -40,7 +40,7 @@ const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 // field is `non_runner`, used everywhere else in this codebase - so
 // non-runners were never actually excluded here). Both fixed to match
 // js/marginTiers.js's real, validated classifyRace exactly.
-function classifyRace(runners) {
+function classifyRace(runners, raceTitle) {
 
     const valid = (runners || [])
         .filter(r =>
@@ -119,6 +119,23 @@ function classifyRace(runners) {
                     marketGapRatio: gapRatio
                 };
             }
+        }
+
+        // Handicap gate - mirrors js/marginTiers.js exactly (see that
+        // file for the full validation writeup: non-handicap + clear-
+        // market picks ran near-perfect calibration in both a discovery
+        // half, p=0.81, and validation half, p=0.95; handicaps stayed
+        // negative even when clear, -17.6% ROI vs +3.2% for
+        // non-handicaps).
+        if (typeof raceTitle === "string" && /handicap/i.test(raceTitle)) {
+            return {
+                tier: "Open",
+                margin,
+                relativeMargin,
+                runners: valid,
+                downgradedFrom: tier,
+                isHandicap: true
+            };
         }
     }
 
@@ -508,7 +525,7 @@ for (
                 return;
 
             const tierInfo =
-                classifyRace(race.runners);
+                classifyRace(race.runners, race.display_title);
 
             if (!tierInfo)
                 return;
@@ -653,7 +670,7 @@ for (
 
 
                 const tierInfo =
-                    classifyRace(race.runners);
+                    classifyRace(race.runners, race.display_title);
 
                 if (!tierInfo)
                     return;
