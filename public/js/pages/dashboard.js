@@ -2193,8 +2193,6 @@ export async function loadDashboard() {
 			dashboard
 		);
 
-		setupCandidateBoardToggle();
-
 
         const nap =
             dashboard.nap &&
@@ -2426,28 +2424,6 @@ function renderYesterdayResults(dashboard) {
         </div>
         <div class="results-strip-recent">${detail}</div>
     `;
-
-}
-
-function setupCandidateBoardToggle() {
-
-    if (window._candidateToggleSetup) return;
-    window._candidateToggleSetup = true;
-
-    const toggle = document.getElementById("candidateBoardToggle");
-    const board = document.getElementById("pickBoard");
-    if (!toggle || !board) return;
-
-    toggle.addEventListener("click", () => {
-
-        const isHidden = board.style.display === "none";
-        board.style.display = isHidden ? "" : "none";
-        toggle.textContent = isHidden
-            ? "Hide today's candidates \u25B4"
-            : "See all today's candidates \u25BE";
-        toggle.setAttribute("aria-expanded", isHidden ? "true" : "false");
-
-    });
 
 }
 
