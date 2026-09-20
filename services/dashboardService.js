@@ -94,12 +94,53 @@ function classifyRace(runners) {
         tier = "Moderate";
     }
 
+    // Market-clarity gate - mirrors js/marginTiers.js's marketGapRatio()
+    // exactly (see that file for the full validation writeup: "vulnerable"
+    // markets - 2nd favourite's price <50% longer than the favourite's -
+    // ran calib z=-3.16, p=0.002, replicating independently in a
+    // discovery half at p=0.0009 and a validation half at p=0.0001). This
+    // is a property of the field's ODDS (favourite vs 2nd favourite), not
+    // of which runner the market-hybrid selection ends up publishing, so
+    // it cannot disagree with the actual published pick.
+    if (tier === "Strong" || tier === "Moderate") {
+
+        const priced = valid.map(r => parseOdds(r.current_odds)).filter(v => v != null).sort((a, b) => a - b);
+
+        if (priced.length >= 2) {
+            const gapRatio = (priced[1] + 1) / (priced[0] + 1);
+            if (gapRatio < 1.5) {
+                return {
+                    tier: "Open",
+                    margin,
+                    relativeMargin,
+                    runners: valid,
+                    downgradedFrom: tier,
+                    marketVulnerable: true,
+                    marketGapRatio: gapRatio
+                };
+            }
+        }
+    }
+
     return {
         tier,
         margin,
         relativeMargin,
         runners: valid
     };
+}
+
+// Raw fraction ratio - only used to compare PRICES between runners,
+// matching checklistEngine.js's parseFractionalOdds convention in the
+// root repo.
+function parseOdds(value) {
+    if (typeof value !== "string") return null;
+    const clean = value.trim().toLowerCase();
+    if (clean === "evens" || clean === "evs") return 1;
+    const fractionMatch = clean.match(/^(\d+)\/(\d+)$/);
+    if (fractionMatch) return Number(fractionMatch[1]) / Number(fractionMatch[2]);
+    const whole = Number(clean);
+    return isNaN(whole) ? null : (whole > 0 ? whole : null);
 }
 
 function applyFrozenMarketHybrid(
