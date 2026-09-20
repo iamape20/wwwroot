@@ -2090,7 +2090,7 @@ async function loadRaces(
 
                 card.addEventListener(
                     "click",
-                    () => {
+                    async () => {
 
                         container
                             .querySelectorAll(
@@ -2107,13 +2107,16 @@ async function loadRaces(
                             "active"
                         );
 
-                        loadRace(
+                        await loadRace(
                             meetingId,
                             race.index,
                             toLocalTimeString(
                                 race.time
                             )
                         );
+
+                        document.getElementById("analysisSection")
+                            .scrollIntoView({ behavior: "smooth", block: "start" });
                     }
                 );
 
