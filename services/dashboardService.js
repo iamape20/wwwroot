@@ -94,12 +94,46 @@ function classifyRace(runners) {
         tier = "Moderate";
     }
 
+    // Market-favourite gate - mirrors js/marginTiers.js's isMarketFavourite()
+    // exactly (see that file for the full validation writeup: calib 0.83,
+    // p=0.011 full archive, replicates p=0.034 standalone in the
+    // validation half). When our pick is ALSO the market's outright
+    // favourite, downgrade to Open - a proven loser, not published.
+    if (tier === "Strong" || tier === "Moderate") {
+
+        const priced = valid.map(r => parseOdds(r.current_odds)).filter(v => v != null);
+        const topOdds = parseOdds(valid[0].current_odds);
+
+        if (priced.length >= 2 && topOdds != null && topOdds <= Math.min(...priced)) {
+            return {
+                tier: "Open",
+                margin,
+                relativeMargin,
+                runners: valid,
+                downgradedFrom: tier,
+                marketFavourite: true
+            };
+        }
+    }
+
     return {
         tier,
         margin,
         relativeMargin,
         runners: valid
     };
+}
+
+// Raw fraction ratio - only used to RANK runners by price, matching
+// checklistEngine.js's parseFractionalOdds convention in the root repo.
+function parseOdds(value) {
+    if (typeof value !== "string") return null;
+    const clean = value.trim().toLowerCase();
+    if (clean === "evens" || clean === "evs") return 1;
+    const fractionMatch = clean.match(/^(\d+)\/(\d+)$/);
+    if (fractionMatch) return Number(fractionMatch[1]) / Number(fractionMatch[2]);
+    const whole = Number(clean);
+    return isNaN(whole) ? null : (whole > 0 ? whole : null);
 }
 
 function applyFrozenMarketHybrid(
