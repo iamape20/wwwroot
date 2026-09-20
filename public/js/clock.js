@@ -100,11 +100,18 @@ function updateClock() {
 
 				display.style.cursor = "pointer";
 
-				display.onclick = () => loadRace(
-					next.meetingId,
-					next.raceIndex,
-					next.displayTime
-				);
+				display.onclick = async () => {
+
+					await loadRace(
+						next.meetingId,
+						next.raceIndex,
+						next.displayTime
+					);
+
+					document.getElementById("analysisSection")
+						?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+				};
 
 			} else {
 
