@@ -1439,28 +1439,23 @@ async function loadRace(
                 r => r.isNonRunner
             );
 
-        // `runners` is left in the order the API now sends (fixed
-        // 2026-09-24 to be final_ratings.json's real order, INCLUDING the
-        // market-override rule - the same order api/checkResults.js's
-        // results-tracking strip uses for "our pick"). Previously this
-        // re-sorted `runners` itself by elite.rating, which silently
-        // disagreed with the results tracker on which horse was "our
-        // pick" for the same race whenever the override applied.
-        //
-        // raceMarginTier() below still needs a pure power_rating-ranked
-        // view specifically (it reads ratings[0]/[1]/[last] to compute the
-        // margin) - given its own SEPARATE, non-mutating copy so it isn't
-        // affected by the order `runners` is actually displayed in.
-        const ratingRankedRunners =
-            [...runners].sort(
-                (a, b) =>
-                    b.elite.rating -
-                    a.elite.rating
-            );
+        // Numbered 1/2/3 display order is honest rating rank (highest
+        // elite.rating first) - same as before 2026-09-24. The actual
+        // override-adjusted "our pick" (api/checkResults.js's results
+        // tracker uses the same one, via predRace.runners[0]) is flagged
+        // separately per-runner via isOurPick (added to the API response
+        // 2026-09-24) and marked with its own badge below, rather than
+        // reordering the list - a lower-rated official pick still shows
+        // up correctly flagged even when it isn't #1 by rating.
+        runners.sort(
+            (a, b) =>
+                b.elite.rating -
+                a.elite.rating
+        );
 
         const marginTier =
             raceMarginTier(
-                ratingRankedRunners
+                runners
             );
 
         const drawAdv =
@@ -1726,6 +1721,12 @@ async function loadRace(
                                     ${escapeHtml(
                                         runner.name
                                     )}
+
+                                    ${
+                                        runner.isOurPick
+                                            ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
+                                            : ""
+                                    }
 
                                     ${buildPriceBadge(
                                         runner.elite.checklistBreakdown

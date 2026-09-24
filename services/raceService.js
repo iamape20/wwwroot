@@ -47,6 +47,15 @@ async function getRace(meetingId, raceIndex) {
 		}
 	}
 
+    // officialPickId is the id of the FIRST runner in ratingsRace.runners's
+    // own, unmodified order - i.e. the real, override-adjusted pick (same one
+    // api/checkResults.js's results tracker uses via predRace.runners[0]).
+    // The returned runners list below stays in whatever order it is in -
+    // the frontend does its own rating-based sort for DISPLAY - so this flag
+    // is how a lower-rated "our pick" still gets identified correctly even
+    // when it is not first in the list shown to the user.
+    const officialPickId = ratingsRace?.runners?.[0]?.id ?? null;
+
     return {
 
         meeting: {
@@ -90,10 +99,13 @@ async function getRace(meetingId, raceIndex) {
 
 			const elite = ratingsRace ? orderedEntry : null;
 
+			const isOurPick = officialPickId != null && String(runner.id) === String(officialPickId);
+
 				if (!elite) {
 					return {
 						...runner,
 						isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+						isOurPick,
 						elite: {
 							rating: null,
 							confidence: null,
@@ -137,6 +149,8 @@ async function getRace(meetingId, raceIndex) {
 					...runner,
 
 					isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+
+					isOurPick,
 
 					elite: {
 						rating: liveRating,

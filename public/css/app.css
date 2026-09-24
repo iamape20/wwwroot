@@ -2312,6 +2312,35 @@ button {
     text-transform: uppercase;
 }
 
+/* The real, override-adjusted "our pick" for a race - may not be the
+   same runner as the #1 rating-ranked medal position (the market-
+   override rule can promote a shorter-priced runner ahead of our own
+   top rating). Added 2026-09-24 alongside runner.isOurPick, so this
+   stays visible even when the numbered rating order and the actual
+   published pick disagree. */
+.runner-our-pick-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 3px;
+    padding: 2px 6px;
+
+    border-radius: 3px;
+    background: #f5a623;
+    color: #1a1a1a;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
 .candidate-selection-market {
     color: #DE0C7A;
     background: rgba(222, 12, 122, 0.08);
