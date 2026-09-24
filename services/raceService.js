@@ -65,13 +65,30 @@ async function getRace(meetingId, raceIndex) {
             verdict: race.verdict,
             bettingForecast: race.betting_forecast,
             drawAdvantage: ratingsRace?.draw_advantage || "None",
-			runners: race.runners.map(runner => {
+			// Iterates ratingsRace.runners (final_ratings.json) when available,
+			// NOT race.runners (stage2_cards.json) - the stage2_cards order is
+			// just whatever the scraper produced, with no relationship to our
+			// own pick. ratingsRace.runners is raceEngine.js's real output
+			// order, INCLUDING the market-override rule (shipped 2026-09-17)
+			// that moves the market favourite to first place when it differs
+			// from the model's own top rating - the exact same order
+			// api/checkResults.js's results-tracking strip reads via
+			// predRace.runners[0]. Previously this mapped over race.runners
+			// and only used ratingsRace as a per-runner lookup, discarding its
+			// order entirely - dashboard.js then had to reconstruct SOME order
+			// itself client-side (sorting by elite.rating), silently
+			// disagreeing with the results tracker on which horse was
+			// actually "our pick" for the same race. Falls back to
+			// race.runners's own order only when no ratings exist yet for
+			// this race (elite stays null throughout, matching the
+			// pre-existing no-ratings-yet behaviour).
+			runners: (ratingsRace ? ratingsRace.runners : race.runners).map(orderedEntry => {
 
-			const elite = ratingsRace
-				? ratingsRace.runners.find(r =>
-					String(r.id) === String(runner.id)
-				)
-				: null;
+			const runner = ratingsRace
+				? (race.runners.find(r => String(r.id) === String(orderedEntry.id)) || orderedEntry)
+				: orderedEntry;
+
+			const elite = ratingsRace ? orderedEntry : null;
 
 				if (!elite) {
 					return {

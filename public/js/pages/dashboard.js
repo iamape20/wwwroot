@@ -1439,15 +1439,28 @@ async function loadRace(
                 r => r.isNonRunner
             );
 
-        runners.sort(
-            (a, b) =>
-                b.elite.rating -
-                a.elite.rating
-        );
+        // `runners` is left in the order the API now sends (fixed
+        // 2026-09-24 to be final_ratings.json's real order, INCLUDING the
+        // market-override rule - the same order api/checkResults.js's
+        // results-tracking strip uses for "our pick"). Previously this
+        // re-sorted `runners` itself by elite.rating, which silently
+        // disagreed with the results tracker on which horse was "our
+        // pick" for the same race whenever the override applied.
+        //
+        // raceMarginTier() below still needs a pure power_rating-ranked
+        // view specifically (it reads ratings[0]/[1]/[last] to compute the
+        // margin) - given its own SEPARATE, non-mutating copy so it isn't
+        // affected by the order `runners` is actually displayed in.
+        const ratingRankedRunners =
+            [...runners].sort(
+                (a, b) =>
+                    b.elite.rating -
+                    a.elite.rating
+            );
 
         const marginTier =
             raceMarginTier(
-                runners
+                ratingRankedRunners
             );
 
         const drawAdv =
