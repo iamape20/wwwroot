@@ -21,6 +21,69 @@ const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
 const RESULTS_URL = "https://www.sportinglife.com/racing/results";
 const CHECK_FRESHNESS_MINUTES = 5;
 
+function getSlug(name) {
+    return String(name).replace(/[^a-z0-9\s]/gi, "").replace(/\s+/g, "-").toLowerCase();
+}
+
+/*
+ * The results LISTING page (fetchTodaysResults below) only ever
+ * returns "top_horses" - a truncated list of the first 2-3
+ * finishers. A horse that genuinely finished 3rd is sometimes just
+ * absent from that list (SportingLife shows 2 for some races, 3 for
+ * others), which silently misclassifies a real placed finish as
+ * "unplaced" - confirmed 2026-09-24 with Newmarket 12:15, Code Of
+ * Honour (genuine 3rd, listing only carried the top 2).
+ *
+ * js/a1results.js hit this exact issue in August and fixed it by
+ * fetching each race's own detail page, which carries a full
+ * "rides" array with every runner's true finish_position. This is
+ * that same fix, ported here. Unlike a1results.js's backfill sweep
+ * (90+ races, sequential, no time budget), this only ever runs for
+ * races that are BOTH new this check cycle AND ones we have a
+ * prediction for - normally 0-3 per invocation - so it stays well
+ * inside this endpoint's 15s maxDuration without needing a retry
+ * delay. Falls back to the truncated top_horses list on any failure.
+ */
+async function fetchFullField(date, courseName, raceId, slug) {
+
+    const url = `${RESULTS_URL}/${date}/${getSlug(courseName)}/${raceId}/${slug || "race"}`;
+
+    try {
+
+        const response = await axios.get(url, {
+            timeout: 8000,
+            headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }
+        });
+
+        const $ = cheerio.load(response.data);
+        const script = $("#__NEXT_DATA__");
+
+        if (!script.length) {
+            return null;
+        }
+
+        const data = JSON.parse(script.html());
+        const race = data?.props?.pageProps?.race;
+
+        if (!Array.isArray(race?.rides)) {
+            return null;
+        }
+
+        return race.rides
+            .map(ride => ({
+                name: ride.horse?.name,
+                position: ride.finish_position
+            }))
+            .filter(p => p.name && p.position);
+
+    } catch {
+
+        return null;
+
+    }
+
+}
+
 /*
  * Normalise horse names before comparing them.
  *
@@ -76,7 +139,11 @@ async function fetchTodaysResults() {
             .filter(r => r.race_stage === "WEIGHEDIN")
             .map(r => ({
                 time: r.time,
-                placings: (r.top_horses || []).map(h => ({
+                raceId: r.race_summary_reference?.id || null,
+                slug: r.race_slug || null,
+                // Truncated fallback - see fetchFullField above for why
+                // the main loop prefers a per-race detail fetch first.
+                topHorses: (r.top_horses || []).map(h => ({
                     name: h.name,
                     position: h.position
                 }))
@@ -222,7 +289,7 @@ module.exports = async (req, res) => {
                     continue;
                 }
 
-                if (!race.placings?.length) {
+                if (!race.topHorses?.length) {
                     continue;
                 }
 
@@ -273,6 +340,24 @@ module.exports = async (req, res) => {
 
                 tally.racesChecked++;
 
+                /*
+                 * Prefer the full field from the race's own detail
+                 * page (see fetchFullField) over the listing's
+                 * truncated top_horses - this only runs for races
+                 * that are new this cycle AND that we have a
+                 * prediction for, so it stays cheap. Falls back to
+                 * the truncated list if the detail fetch fails.
+                 */
+                const placings =
+                    (race.raceId
+                        ? await fetchFullField(
+                            courseResults.date,
+                            courseName,
+                            race.raceId,
+                            race.slug
+                        )
+                        : null) || race.topHorses;
+
                 const pickName =
                     normaliseHorseName(ourTopPick.name);
 
@@ -280,7 +365,7 @@ module.exports = async (req, res) => {
                  * Find our horse using the normalised name.
                  */
                 const placing =
-                    race.placings.find(
+                    placings.find(
                         p =>
                             normaliseHorseName(p.name) ===
                             pickName
@@ -290,7 +375,7 @@ module.exports = async (req, res) => {
                  * Find the actual winner.
                  */
                 const winner =
-                    race.placings.find(
+                    placings.find(
                         p => Number(p.position) === 1
                     );
 
@@ -323,7 +408,7 @@ module.exports = async (req, res) => {
                  * This does not affect the existing dashboard.
                  */
                 const actualTopThree =
-                    race.placings
+                    placings
                         .filter(p => Number(p.position) <= 3)
                         .sort(
                             (a, b) =>
