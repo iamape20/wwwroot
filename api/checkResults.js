@@ -394,6 +394,7 @@ module.exports = async (req, res) => {
 
                 } else if (
                     placing &&
+                    Number(placing.position) >= 1 &&
                     Number(placing.position) <= 3
                 ) {
 
@@ -406,10 +407,18 @@ module.exports = async (req, res) => {
                 /*
                  * Capture the actual top three for diagnostics.
                  * This does not affect the existing dashboard.
+                 *
+                 * position >= 1 excludes non-finishers - SportingLife
+                 * uses position: 0 (with a casualtyReason like
+                 * "PulledUp"/"Fell"/"Unseated") for a horse that didn't
+                 * complete the race, not "finished 0th". Without this
+                 * guard a pulled-up favourite reads as a podium finish
+                 * - confirmed live 2026-09-25 (Worcester 14:15, Premier
+                 * Tenor pulled up, would have shown as "placed").
                  */
                 const actualTopThree =
                     placings
-                        .filter(p => Number(p.position) <= 3)
+                        .filter(p => Number(p.position) >= 1 && Number(p.position) <= 3)
                         .sort(
                             (a, b) =>
                                 Number(a.position) -
