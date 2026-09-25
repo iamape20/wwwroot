@@ -206,7 +206,8 @@ module.exports = async (req, res) => {
                 racesChecked: 0,
                 topPickWins: 0,
                 topPickPlaces: 0,
-                details: []
+                details: [],
+                yesterday: null
             });
 
         }
@@ -214,6 +215,25 @@ module.exports = async (req, res) => {
         const today = new Date().toISOString().split("T")[0];
         const key = `liveResults:${today}`;
         const now = Date.now();
+
+        /*
+         * Yesterday's tally is still sitting in Redis under its own
+         * date key (the 48-hour TTL below comfortably covers it) -
+         * read-only here, never written to. Summary numbers only
+         * (not the full details array) since this is just a one-line
+         * comparison alongside today's live strip, not a second full
+         * results feed.
+         */
+        const yesterdayDate = new Date(now - 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+        const yesterdayStored = await redis.get(`liveResults:${yesterdayDate}`);
+        const yesterday = yesterdayStored?.racesChecked
+            ? {
+                date: yesterdayDate,
+                racesChecked: yesterdayStored.racesChecked,
+                topPickWins: yesterdayStored.topPickWins || 0,
+                topPickPlaces: yesterdayStored.topPickPlaces || 0
+            }
+            : null;
 
         /*
          * Avoid repeatedly fetching Sporting Life more often than
@@ -230,7 +250,8 @@ module.exports = async (req, res) => {
             return res.json({
                 success: true,
                 fresh: false,
-                ...existing
+                ...existing,
+                yesterday
             });
 
         }
@@ -251,7 +272,8 @@ module.exports = async (req, res) => {
                     topPickWins: 0,
                     topPickPlaces: 0,
                     details: []
-                })
+                }),
+                yesterday
             });
 
         }
@@ -482,7 +504,8 @@ module.exports = async (req, res) => {
             fresh: true,
             predictionsLoaded,
             predictionsError,
-            ...tally
+            ...tally,
+            yesterday
         });
 
     } catch (err) {

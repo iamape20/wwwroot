@@ -993,6 +993,15 @@ button {
     color: var(--epr-muted);
 }
 
+.results-strip-yesterday {
+    margin-top: 7px;
+    padding-top: 7px;
+
+    border-top: 1px solid var(--epr-border);
+
+    opacity: .75;
+}
+
 .results-strip-recent {
     display: flex;
     flex-wrap: wrap;

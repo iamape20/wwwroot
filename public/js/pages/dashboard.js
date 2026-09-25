@@ -2543,6 +2543,27 @@ todayBlockEl.innerHTML = `
             </div>
 
             ${
+                data.yesterday
+                    ? `
+                        <div class="results-strip-summary results-strip-yesterday">
+                            <span class="results-strip-label">Yesterday</span>
+                            <span class="results-strip-stat">
+                                ${data.yesterday.racesChecked} races checked
+                            </span>
+                            <span class="results-strip-stat results-strip-win">
+                                ${data.yesterday.topPickWins}
+                                won (${(data.yesterday.topPickWins / data.yesterday.racesChecked * 100).toFixed(1)}%)
+                            </span>
+                            <span class="results-strip-stat results-strip-place">
+                                ${data.yesterday.topPickPlaces}
+                                placed (${(data.yesterday.topPickPlaces / data.yesterday.racesChecked * 100).toFixed(1)}%)
+                            </span>
+                        </div>
+                    `
+                    : ""
+            }
+
+            ${
                 recentDetails.length
                     ? `
                         <div class="results-strip-recent">
