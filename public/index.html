@@ -27,12 +27,25 @@
 
     <title>Elite Power Ratings</title>
 
-    <link rel="stylesheet" href="css/app.css">
+    <!-- ?v= cache-busts CSS/JS on the browser and any CDN in front -
+         there's no build step here to hash filenames automatically,
+         and this project has no vercel.json setting explicit
+         Cache-Control headers, so a changed file at the SAME url can
+         silently keep being served from cache after a deploy (caught
+         live 2026-09-25 - the theme-toggle CSS fix wasn't showing for
+         a real visitor). Bump this date on every deploy that touches
+         app.css or any of the ES module chain below (app.js ->
+         pages/dashboard.js -> services/api.js) - each of those files'
+         own import statement needs the SAME ?v= too, since the
+         browser's module cache treats a different query string as a
+         different module and busting the entry point alone does not
+         bust what it imports. -->
+    <link rel="stylesheet" href="css/app.css?v=20260925">
 	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
 
-    <script src="js/clock.js" defer></script>
-    <script src="js/theme.js" defer></script>
-    <script type="module" src="js/app.js"></script>
+    <script src="js/clock.js?v=20260925" defer></script>
+    <script src="js/theme.js?v=20260925" defer></script>
+    <script type="module" src="js/app.js?v=20260925"></script>
 
 </head>
 

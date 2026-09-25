@@ -1,11 +1,13 @@
 // dashboard.js - Refined Mathematical & UI Implementation
 
+// ?v= must match index.html's cache-busting version - see the
+// comment there.
 import {
     getDashboard,
     getMeetings,
     getRaces,
     getRace
-} from "../services/api.js";
+} from "../services/api.js?v=20260925";
 
 const CHECKLIST_LABELS = {
     class: "Class",
