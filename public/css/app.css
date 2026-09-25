@@ -20,6 +20,58 @@
     --epr-radius: 10px;
     --epr-radius-lg: 14px;
     --epr-shadow: 0 12px 32px rgba(0,0,0,.26);
+
+    /* RGB triplets (no alpha) so a single variable can back every
+       rgba(...,alpha) usage in the file regardless of which alpha a
+       given element uses - swapping the triplet re-themes all of
+       them together instead of needing one variable per alpha. */
+    --epr-overlay-rgb: 255,255,255;   /* subtle light-on-dark tints: borders, hover washes */
+    --epr-panel-rgb: 17,24,39;        /* translucent card/panel backgrounds */
+    --epr-panel-rgb-2: 13,18,26;      /* panel gradient stop 1 */
+    --epr-panel-rgb-3: 8,12,18;       /* panel gradient stop 2 */
+
+    --epr-panel-deep: #0A0E17;        /* opaque detail-panel background (checklist/engine) */
+    --epr-divider: #2D3748;           /* row/section dividers, secondary borders */
+    --epr-hover-surface: #161D2A;     /* row hover background */
+    --epr-scrollbar: #394355;
+}
+
+/* LIGHT THEME - toggled via data-theme="light" on <html>, set by
+   js/theme.js (localStorage, falls back to prefers-color-scheme on
+   first visit). Only the structural neutrals invert here - accent/
+   status colors (gold, green, red, the market/EPR badge pair) are
+   deliberately left as-is: they're saturated enough to read on both
+   a dark and a light page background, and inverting them too would
+   just be extra risk for no readability gain. Gold and green ARE
+   darkened here specifically because they're also used as TEXT
+   color in this theme (labels, ratings), and the dark-mode shades
+   don't have enough contrast against a white background to read as
+   text - on a dark background that's not an issue since text there
+   only needs to beat a near-black bg. */
+:root[data-theme="light"] {
+    --epr-bg: #f3f4f6;
+    --epr-surface: #ffffff;
+    --epr-surface-2: #f7f8fa;
+    --epr-surface-3: #eef0f3;
+    --epr-border: rgba(15,23,42,.12);
+    --epr-border-strong: rgba(156,122,28,.45);
+    --epr-gold: #9C7A1C;
+    --epr-gold-soft: #8A6D1E;
+    --epr-text: #14181f;
+    --epr-muted: #5b6472;
+    --epr-green: #157347;
+    --epr-red: #DC2626;
+    --epr-shadow: 0 12px 32px rgba(15,23,42,.10);
+
+    --epr-overlay-rgb: 15,23,42;
+    --epr-panel-rgb: 255,255,255;
+    --epr-panel-rgb-2: 255,255,255;
+    --epr-panel-rgb-3: 248,249,251;
+
+    --epr-panel-deep: #eef0f3;
+    --epr-divider: #d8dce2;
+    --epr-hover-surface: #eef1f5;
+    --epr-scrollbar: #c7ccd4;
 }
 
 /* ============================================================
@@ -52,6 +104,21 @@ body {
     text-size-adjust: 100%;
 }
 
+:root[data-theme="light"] body {
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(156,122,28,.06),
+            transparent 34%
+        ),
+        linear-gradient(
+            180deg,
+            #fafbfc 0%,
+            #f3f4f6 48%,
+            #eceef1 100%
+        );
+}
+
 * {
     box-sizing: border-box;
 }
@@ -62,7 +129,7 @@ button {
 
 ::selection {
     background: rgba(212,175,55,.28);
-    color: #fff;
+    color: var(--epr-text);
 }
 
 /* ============================================================
@@ -121,7 +188,7 @@ button {
 
 .brand-text h1 {
     margin: 0;
-    color: #fff;
+    color: var(--epr-text);
     font-size: 1.45rem;
     font-weight: 700;
     letter-spacing: -.025em;
@@ -139,7 +206,7 @@ button {
 .how-to-read-link {
     display: inline-block;
     margin-top: 4px;
-    color: #D4AF37;
+    color: var(--epr-gold);
     font-size: 13px;
     text-decoration: none;
 }
@@ -155,7 +222,7 @@ button {
 }
 
 .navigation a {
-    color: #A0AEC0;
+    color: var(--epr-muted);
     text-decoration: none;
     font-weight: 600;
 }
@@ -177,8 +244,49 @@ button {
     flex: 0 0 auto;
 }
 
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    padding: 0;
+    margin-bottom: 1px;
+
+    color: var(--epr-muted);
+    background: rgba(var(--epr-overlay-rgb),.06);
+
+    border: 1px solid var(--epr-border);
+    border-radius: 7px;
+
+    font-size: 13px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        background .15s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px);
+
+    color: var(--epr-gold);
+    background: rgba(212,175,55,.08);
+    border-color: rgba(212,175,55,.45);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--epr-gold);
+    outline-offset: 2px;
+}
+
 .topbar-day {
-    color: #fff;
+    color: var(--epr-text);
     font-size: .72rem;
     font-weight: 600;
     letter-spacing: .02em;
@@ -187,7 +295,7 @@ button {
 .topbar-clock {
     padding-bottom: 1px;
 
-    color: #E9EDF3;
+    color: var(--epr-text);
     font-size: .92rem;
     font-weight: 600;
 
@@ -244,11 +352,11 @@ button {
     background:
         linear-gradient(
             180deg,
-            rgba(13,18,26,.98),
-            rgba(8,12,18,.98)
+            rgba(var(--epr-panel-rgb-2),.98),
+            rgba(var(--epr-panel-rgb-3),.98)
         );
 
-    border: 1px solid rgba(255,255,255,.09);
+    border: 1px solid rgba(var(--epr-overlay-rgb),.09);
     border-radius: 12px;
 
     box-shadow: 0 8px 24px rgba(0,0,0,.20);
@@ -275,7 +383,7 @@ button {
     min-height: 32px;
     padding: 7px 11px;
 
-    background: rgba(17,24,39,.72);
+    background: rgba(var(--epr-panel-rgb),.72);
 
     border: 1px solid var(--epr-border);
     border-radius: 8px;
@@ -302,7 +410,7 @@ button {
 
 .meeting-card h3 {
     margin: 0;
-    color: #fff;
+    color: var(--epr-text);
     font-size: 13px;
 }
 
@@ -313,7 +421,7 @@ button {
 }
 
 .meeting-card-name {
-    color: #fff;
+    color: var(--epr-text);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: -.01em;
@@ -329,7 +437,7 @@ button {
     padding: 0 5px;
 
     color: var(--epr-muted);
-    background: rgba(255,255,255,.055);
+    background: rgba(var(--epr-overlay-rgb),.055);
 
     border-radius: 5px;
 
@@ -343,7 +451,7 @@ button {
 .nap-callout {
     padding: 7px 11px;
 
-    background: rgba(17,24,39,.72);
+    background: rgba(var(--epr-panel-rgb),.72);
 
     border: 1px solid var(--epr-border);
     border-radius: 8px;
@@ -361,7 +469,7 @@ button {
 .nap-name {
     margin-top: 1px;
 
-    color: #fff;
+    color: var(--epr-text);
     font-size: 12px;
     font-weight: 700;
 }
@@ -393,7 +501,7 @@ button {
         linear-gradient(
             135deg,
             rgba(212,175,55,.08),
-            rgba(17,24,39,.96) 45%,
+            rgba(var(--epr-panel-rgb),.96) 45%,
             rgba(10,14,23,.98)
         );
 
@@ -425,7 +533,7 @@ button {
     padding: 2px;
 
     border-radius: 7px;
-    background: rgba(255,255,255,.04);
+    background: rgba(var(--epr-overlay-rgb),.04);
 }
 
 .hero-badge-text {
@@ -449,7 +557,7 @@ button {
 .hero-badge-name {
     min-width: 0;
 
-    color: #fff;
+    color: var(--epr-text);
     font-size: 15px;
     font-weight: 800;
 
@@ -515,7 +623,7 @@ button {
 
 .hero-dot {
     margin: 0 4px;
-    color: #596273;
+    color: var(--epr-muted);
 }
 
 .hero-badge-arrow {
@@ -559,7 +667,7 @@ button {
 
     padding: 7px 10px;
 
-    background: rgba(17,24,39,.70);
+    background: rgba(var(--epr-panel-rgb),.70);
 
     border: 1px solid var(--epr-border);
     border-radius: 8px;
@@ -586,7 +694,7 @@ button {
 
 .race-card h3 {
     margin: 0;
-    color: #fff;
+    color: var(--epr-text);
     font-size: 14px;
 }
 
@@ -603,7 +711,7 @@ button {
 }
 
 .race-card-time {
-    color: #fff;
+    color: var(--epr-text);
     font-size: 14px;
     font-weight: 700;
 }
@@ -649,11 +757,11 @@ button {
     background:
         linear-gradient(
             180deg,
-            rgba(13,18,26,.98),
-            rgba(8,12,18,.98)
+            rgba(var(--epr-panel-rgb-2),.98),
+            rgba(var(--epr-panel-rgb-3),.98)
         );
 
-    border: 1px solid rgba(255,255,255,.09);
+    border: 1px solid rgba(var(--epr-overlay-rgb),.09);
     border-radius: 12px;
 
     box-shadow: 0 8px 24px rgba(0,0,0,.20);
@@ -675,7 +783,7 @@ button {
     overflow-x: hidden;
 
     scrollbar-width: thin;
-    scrollbar-color: #394355 transparent;
+    scrollbar-color: var(--epr-scrollbar) transparent;
 }
 
 /* Tier dot */
@@ -715,9 +823,9 @@ button {
     background: transparent;
 
     border: 0;
-    border-bottom: 1px solid #202938;
+    border-bottom: 1px solid var(--epr-divider);
 
-    color: #fff;
+    color: var(--epr-text);
 
     text-align: left;
 
@@ -735,7 +843,7 @@ button {
 }
 
 .candidate-board-item:hover {
-    background: #161D2A;
+    background: var(--epr-hover-surface);
 }
 
 /* SILK */
@@ -771,7 +879,7 @@ button {
 
     min-width: 0;
 
-    color: #fff;
+    color: var(--epr-text);
 
     font-size: 11px;
     font-weight: 800;
@@ -787,7 +895,7 @@ button {
 
     margin-top: 3px;
 
-    color: #8993A5;
+    color: var(--epr-muted);
 
     font-size: 9px;
     line-height: 1.2;
@@ -803,7 +911,7 @@ button {
     flex: 0 0 48px;
     min-width: 48px;
 
-    color: #D4AF37;
+    color: var(--epr-gold);
 
     font-size: 9px;
     font-weight: 800;
@@ -835,7 +943,7 @@ button {
 
     padding: 0 10px;
 
-    color: #687386;
+    color: var(--epr-muted);
 
     font-size: 9px;
 }
@@ -848,7 +956,7 @@ button {
     margin: 16px 0;
     padding: 10px 13px;
 
-    background: rgba(17,24,39,.72);
+    background: rgba(var(--epr-panel-rgb),.72);
 
     border: 1px solid var(--epr-border);
     border-radius: 10px;
@@ -872,7 +980,7 @@ button {
 }
 
 .results-strip-stat {
-    color: #fff;
+    color: var(--epr-text);
     font-size: 11px;
     font-weight: 600;
 }
@@ -899,7 +1007,7 @@ button {
     color: var(--epr-muted);
     background: rgba(160,174,192,.1);
 
-    border: 1px solid #2D3748;
+    border: 1px solid var(--epr-divider);
     border-radius: 5px;
 
     font-size: 8px;
@@ -938,8 +1046,8 @@ button {
     background:
         linear-gradient(
             180deg,
-            rgba(13,18,26,.98),
-            rgba(8,12,18,.98)
+            rgba(var(--epr-panel-rgb-2),.98),
+            rgba(var(--epr-panel-rgb-3),.98)
         );
 
     border: 1px solid var(--epr-border);
@@ -966,7 +1074,7 @@ button {
     margin: 0 0 7px;
     padding: 0;
 
-    color: #fff;
+    color: var(--epr-text);
 
     border: 0;
 
@@ -994,7 +1102,7 @@ button {
 }
 
 .race-info-dot {
-    color: #4A5568;
+    color: var(--epr-divider);
 }
 
 .draw-adv-active {
@@ -1007,7 +1115,7 @@ button {
 }
 
 .selection-safe {
-    color: #2ECC71;
+    color: var(--epr-green);
     font-weight: 700;
 }
 
@@ -1017,7 +1125,7 @@ button {
 }
 
 .selection-void {
-    color: #6B7280;
+    color: var(--epr-muted);
     font-weight: 700;
 }
 
@@ -1028,7 +1136,7 @@ button {
 .race-summary {
     margin-bottom: 12px;
     padding: 12px 14px;
-    background: rgba(17,24,39,.62);
+    background: rgba(var(--epr-panel-rgb),.62);
     border: 1px solid var(--epr-border);
     border-left: 3px solid rgba(212,175,55,.65);
     border-radius: 9px;
@@ -1036,7 +1144,7 @@ button {
 
 .race-summary-verdict {
     margin: 0 0 7px;
-    color: #E5E7EB;
+    color: var(--epr-text);
     line-height: 1.5;
     font-size: .78rem;
 }
@@ -1081,8 +1189,8 @@ button {
     background:
         linear-gradient(
             135deg,
-            rgba(17,24,39,.92),
-            rgba(13,18,26,.94)
+            rgba(var(--epr-panel-rgb),.92),
+            rgba(var(--epr-panel-rgb-2),.94)
         );
 
     border: 1px solid var(--epr-border);
@@ -1126,7 +1234,7 @@ button {
 
     flex: 0 0 22px;
 
-    color: #fff;
+    color: var(--epr-text);
 
     font-size: 16px;
     text-align: center;
@@ -1142,10 +1250,10 @@ button {
     align-items: center;
     justify-content: center;
 
-    color: #fff;
-    background: rgba(255,255,255,.035);
+    color: var(--epr-text);
+    background: rgba(var(--epr-overlay-rgb),.035);
 
-    border: 1px solid rgba(255,255,255,.12);
+    border: 1px solid rgba(var(--epr-overlay-rgb),.12);
     border-radius: 50%;
 
     font-size: 11px;
@@ -1169,9 +1277,9 @@ button {
 }
 
 .runner-draw-neutral {
-    color: #E5E7EB;
+    color: var(--epr-text);
     background: #000;
-    border: 1px solid #2D3748;
+    border: 1px solid var(--epr-divider);
 }
 
 .runner-draw-good {
@@ -1203,7 +1311,7 @@ button {
 .runner-name {
     margin-bottom: 3px;
 
-    color: #fff;
+    color: var(--epr-text);
 
     font-size: 15px;
     font-weight: 700;
@@ -1215,7 +1323,7 @@ button {
 .runner-meta {
     margin-bottom: 5px;
 
-    color: #9BA7B8;
+    color: var(--epr-muted);
 
     font-size: 9px;
     line-height: 1.4;
@@ -1230,7 +1338,7 @@ button {
 
     overflow: hidden;
 
-    background: rgba(255,255,255,.07);
+    background: rgba(var(--epr-overlay-rgb),.07);
     border-radius: 20px;
 }
 
@@ -1265,7 +1373,7 @@ button {
 .rating-label {
     margin-bottom: 4px;
 
-    color: #8B96A6;
+    color: var(--epr-muted);
 
     font-size: 8px;
     letter-spacing: .13em;
@@ -1274,7 +1382,7 @@ button {
 .rating {
     min-width: 54px;
     padding: 7px 9px;
-    color: #fff;
+    color: var(--epr-text);
     border-radius: 8px;
     font-size: 17px;
     font-weight: 700;
@@ -1310,8 +1418,8 @@ button {
     background:
         linear-gradient(
             135deg,
-            rgba(17,24,39,.5),
-            rgba(13,18,26,.55)
+            rgba(var(--epr-panel-rgb),.5),
+            rgba(var(--epr-panel-rgb-2),.55)
         );
 }
 
@@ -1357,15 +1465,15 @@ button {
 }
 
 .checklist-chip-partial {
-    color: #A0AEC0;
+    color: var(--epr-muted);
     background: rgba(160,174,192,.1);
-    border: 1px solid #4A5568;
+    border: 1px solid var(--epr-divider);
 }
 
 .checklist-chip-zero {
-    color: #A0AEC0;
+    color: var(--epr-muted);
     background: rgba(74,85,104,.08);
-    border: 1px solid #4A5568;
+    border: 1px solid var(--epr-divider);
 }
 
 .checklist-toggle {
@@ -1373,10 +1481,10 @@ button {
 
     padding: 3px 7px;
 
-    color: #AAB4C3;
-    background: rgba(255,255,255,.025);
+    color: var(--epr-muted);
+    background: rgba(var(--epr-overlay-rgb),.025);
 
-    border: 1px solid rgba(255,255,255,.10);
+    border: 1px solid rgba(var(--epr-overlay-rgb),.10);
     border-radius: 5px;
 
     font-size: 8px;
@@ -1399,10 +1507,10 @@ button {
 
     padding: 10px 14px;
 
-    color: #E5E7EB;
-    background: #0A0E17;
+    color: var(--epr-text);
+    background: var(--epr-panel-deep);
 
-    border-top: 1px solid #2D3748;
+    border-top: 1px solid var(--epr-divider);
 
     font-size: 9px;
 }
@@ -1421,11 +1529,11 @@ button {
 }
 
 .checklist-points {
-    color: #fff;
+    color: var(--epr-text);
 }
 
 .checklist-answer {
-    color: #E5E7EB;
+    color: var(--epr-text);
 }
 
 .checklist-evidence {
@@ -1443,10 +1551,10 @@ button {
 
     padding: 3px 7px;
 
-    color: #AAB4C3;
-    background: rgba(255,255,255,.025);
+    color: var(--epr-muted);
+    background: rgba(var(--epr-overlay-rgb),.025);
 
-    border: 1px solid rgba(255,255,255,.10);
+    border: 1px solid rgba(var(--epr-overlay-rgb),.10);
     border-radius: 5px;
 
     font-size: 8px;
@@ -1469,10 +1577,10 @@ button {
 
     padding: 10px 14px;
 
-    color: #E5E7EB;
-    background: #0A0E17;
+    color: var(--epr-text);
+    background: var(--epr-panel-deep);
 
-    border-top: 1px solid #2D3748;
+    border-top: 1px solid var(--epr-divider);
     border-left: 2px solid var(--epr-gold);
 
     font-size: 9px;
@@ -1492,7 +1600,7 @@ button {
     font-size: 8px;
     font-style: italic;
 
-    border-bottom: 1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(var(--epr-overlay-rgb),.06);
 }
 
 .engine-row {
@@ -1505,11 +1613,11 @@ button {
 }
 
 .engine-score {
-    color: #fff;
+    color: var(--epr-text);
 }
 
 .engine-confidence {
-    color: #E5E7EB;
+    color: var(--epr-text);
 }
 
 .engine-reasons {
@@ -1533,7 +1641,7 @@ button {
 .checklist-rating-value {
     margin-top: 2px;
 
-    color: #AAB4C3;
+    color: var(--epr-muted);
 
     font-size: 8px;
     line-height: 1.1;
@@ -1574,9 +1682,9 @@ button {
 }
 
 .tc-mini-neutral {
-    color: #A0AEC0;
+    color: var(--epr-muted);
     background: rgba(160,174,192,.08);
-    border: 1px solid #2D3748;
+    border: 1px solid var(--epr-divider);
 }
 
 /* ============================================================
@@ -1602,7 +1710,7 @@ button {
 .non-runner-badge {
     padding: 3px 7px;
 
-    color: #fff;
+    color: var(--epr-text);
     background: #7A3535;
 
     border-radius: 5px;
@@ -1645,9 +1753,9 @@ button {
 
 .live-move-neutral,
 .price-badge-steady {
-    color: #A0AEC0;
+    color: var(--epr-muted);
     background: rgba(160,174,192,.1);
-    border: 1px solid #2D3748;
+    border: 1px solid var(--epr-divider);
 }
 
 /* ============================================================
@@ -1655,11 +1763,11 @@ button {
    ============================================================ */
 
 .analysis-highlight {
-    color: #A0AEC0;
+    color: var(--epr-muted);
 
     font-style: italic;
     text-decoration: underline;
-    text-decoration-color: #A0AEC0;
+    text-decoration-color: var(--epr-muted);
     text-underline-offset: 2px;
 }
 
@@ -1732,7 +1840,7 @@ button {
 }
 
 .daily-double-horse {
-    color: #fff;
+    color: var(--epr-text);
     font-size: 14px;
     font-weight: 700;
 
@@ -2143,7 +2251,7 @@ button {
         padding-bottom: 7px;
         margin-bottom: 7px;
 
-        border-bottom: 1px solid #1A2233;
+        border-bottom: 1px solid var(--epr-divider);
     }
 
     .checklist-row:last-child {
@@ -2212,7 +2320,7 @@ button {
         padding-bottom: 7px;
         margin-bottom: 7px;
 
-        border-bottom: 1px solid #1A2233;
+        border-bottom: 1px solid var(--epr-divider);
     }
 
     .engine-row:last-child {

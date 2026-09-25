@@ -6,13 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Elite Power Ratings — data-driven horse racing ratings, race analysis and performance intelligence.">
-	  
+
+    <!-- Sets data-theme before first paint so there's no flash of the
+         wrong theme - must run synchronously here, not as a deferred
+         or module script, since those only run after the page has
+         already started rendering with whatever the CSS defaults to. -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem("epr-theme");
+                var theme = saved === "light" || saved === "dark"
+                    ? saved
+                    : (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                document.documentElement.setAttribute("data-theme", theme);
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+
     <title>Elite Power Ratings</title>
 
     <link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
 
     <script src="js/clock.js" defer></script>
+    <script src="js/theme.js" defer></script>
     <script type="module" src="js/app.js"></script>
 
 </head>
@@ -38,6 +57,7 @@
 	<div id="meetings" class="header-meetings"></div>
 
 	<div class="topbar-right">
+		<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">🌙</button>
 		<div id="live-day" class="topbar-day"></div>
 		<div id="live-clock" class="topbar-clock"></div>
 		<div id="next-race-countdown" class="topbar-countdown"></div>
