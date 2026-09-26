@@ -1014,17 +1014,12 @@ button {
     color: var(--epr-muted);
 }
 
-.results-strip-yesterday {
-    margin-top: 14px;
-    padding: 9px 11px;
-
-    background: rgba(var(--epr-overlay-rgb),.05);
-
-    border: 1px solid var(--epr-divider);
-    border-radius: 8px;
+.results-strip-divider {
+    color: var(--epr-divider);
+    font-size: 11px;
 }
 
-.results-strip-yesterday .results-strip-label {
+.results-strip-yesterday-label {
     color: var(--epr-muted);
 }
 

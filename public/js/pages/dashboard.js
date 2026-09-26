@@ -2598,13 +2598,11 @@ todayBlockEl.innerHTML = `
                     placed (${placeRate}%)
                 </span>
 
-            </div>
-
-            ${
-                data.yesterday
-                    ? `
-                        <div class="results-strip-summary results-strip-yesterday">
-                            <span class="results-strip-label">Yesterday</span>
+                ${
+                    data.yesterday
+                        ? `
+                            <span class="results-strip-divider">│</span>
+                            <span class="results-strip-label results-strip-yesterday-label">Yesterday</span>
                             <span class="results-strip-stat">
                                 ${data.yesterday.racesChecked} races checked
                             </span>
@@ -2616,10 +2614,11 @@ todayBlockEl.innerHTML = `
                                 ${data.yesterday.topPickPlaces}
                                 placed (${(data.yesterday.topPickPlaces / data.yesterday.racesChecked * 100).toFixed(1)}%)
                             </span>
-                        </div>
-                    `
-                    : ""
-            }
+                        `
+                        : ""
+                }
+
+            </div>
 
             ${
                 recentDetails.length
