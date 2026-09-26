@@ -747,10 +747,15 @@ button {
    Compact dashboard summary
    ============================================================ */
 
-/* Daily Double sits at the top of the merged pick board as a
-   highlighted callout; the yesterday recap sits at the bottom - both
-   need their own side/edge padding since .pick-board itself has none
+/* NAP callout sits above Daily Double at the very top of the merged
+   pick board; Daily Double is the highlighted callout below it; the
+   yesterday recap sits at the bottom - all three need their own
+   side/edge margin/padding since .pick-board itself has none
    (candidate rows handle their own internal padding instead). */
+#napCallout {
+    margin: 14px 14px 0;
+}
+
 #dailyDoubleBox {
     padding: 14px 14px 0;
 }
