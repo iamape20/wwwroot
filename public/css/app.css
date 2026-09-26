@@ -449,36 +449,52 @@ button {
    ============================================================ */
 
 .nap-callout {
-    padding: 7px 11px;
+    padding: 12px 15px;
 
-    background: rgba(var(--epr-panel-rgb),.72);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,.14),
+            rgba(var(--epr-panel-rgb),.9)
+        );
 
-    border: 1px solid var(--epr-border);
-    border-radius: 8px;
+    border: 1px solid var(--epr-gold);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 16px rgba(212,175,55,.1);
+
+    transition:
+        transform .15s ease,
+        box-shadow .15s ease;
+}
+
+.nap-callout:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(212,175,55,.16);
 }
 
 .nap-label {
     color: var(--epr-gold);
 
-    font-size: 8px;
-    font-weight: 700;
+    font-size: 10px;
+    font-weight: 800;
     letter-spacing: .08em;
     text-transform: uppercase;
 }
 
 .nap-name {
-    margin-top: 1px;
+    margin-top: 4px;
 
     color: var(--epr-text);
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 800;
 }
 
 .nap-meta {
-    margin-top: 1px;
+    margin-top: 3px;
 
     color: var(--epr-muted);
-    font-size: 9px;
+    font-size: 11px;
 }
 
 /* ============================================================
@@ -1890,6 +1906,14 @@ button {
 .daily-double-margin {
     color: var(--epr-muted);
     font-weight: 400;
+}
+
+.daily-double-empty-text {
+    margin-top: 6px;
+
+    color: var(--epr-muted);
+    font-size: .8rem;
+    line-height: 1.4;
 }
 
 /* ============================================================

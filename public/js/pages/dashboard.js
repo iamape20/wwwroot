@@ -72,7 +72,12 @@ function renderDailyDouble(dashboard) {
     const picks = Array.isArray(dashboard?.dailyDouble) ? dashboard.dailyDouble : [];
 
     if (!picks.length) {
-        box.innerHTML = "";
+        box.innerHTML = `
+            <div class="daily-double-panel">
+                <div class="daily-double-header">⭐ Best Opportunity</div>
+                <div class="daily-double-empty-text">No qualifying Strong picks today — an honest zero, not padded with a weaker race.</div>
+            </div>
+        `;
         return;
     }
 
