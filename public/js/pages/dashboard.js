@@ -164,6 +164,65 @@ function applyBestOpportunityBadge(hero) {
 
 }
 
+// Renders the NAP (3-signal system) pick into its own dedicated,
+// clearly-labelled box - deliberately separate from the Best
+// Opportunity badge above, which is reserved for the statistically-
+// guarded Strong-tier+10pt signal (see applyBestOpportunityBadge /
+// the 2026-08-31 fix). NAP's selection logic isn't guarded the same
+// way, so it's never allowed to substitute for Best Opportunity -
+// it gets its own honest, separately-labelled slot instead.
+function renderNapCallout(nap) {
+
+    const napEl = document.getElementById("napCallout");
+    if (!napEl) return;
+
+    if (!nap) {
+        napEl.style.display = "none";
+        napEl.innerHTML = "";
+        napEl.onclick = null;
+        return;
+    }
+
+    const gapText =
+        typeof nap.gap === "number" && nap.gap > 0
+            ? ` \u2022 +${nap.gap.toFixed(1)} clear`
+            : "";
+
+    const timeText =
+        nap.time ? toLocalTimeString(nap.time) : "-";
+
+    napEl.innerHTML = `
+        <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
+        <div class="nap-name">${escapeHtml(String(nap.name || "").toUpperCase())}</div>
+        <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
+        <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
+    `;
+
+    napEl.style.display = "";
+
+    if (nap.meetingId != null && nap.raceIndex != null) {
+
+        napEl.style.cursor = "pointer";
+
+        napEl.onclick = async () => {
+
+            await loadRaces(nap.meetingId, nap.meeting, false);
+            await loadRace(nap.meetingId, nap.raceIndex, timeText);
+
+            document.getElementById("analysisSection")
+                .scrollIntoView({ behavior: "smooth", block: "start" });
+
+        };
+
+    } else {
+
+        napEl.style.cursor = "default";
+        napEl.onclick = null;
+
+    }
+
+}
+
 function escapeHtml(str) {
     if (typeof str !== "string") return str ?? "";
 
@@ -2276,15 +2335,7 @@ export async function loadDashboard() {
 
 		const hero = best;
 
-        const napEl =
-            document.getElementById(
-                "napCallout"
-            );
-
-        if (napEl) {
-            napEl.style.display =
-                "none";
-        }
+        renderNapCallout(nap);
 
         applyBestOpportunityBadge(hero);
 
