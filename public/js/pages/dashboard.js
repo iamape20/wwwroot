@@ -2585,7 +2585,7 @@ todayBlockEl.innerHTML = `
 
                 <span class="results-strip-stat">
                     ${data.racesChecked}
-                    races checked
+                    races
                 </span>
 
                 <span class="results-strip-stat results-strip-win">
@@ -2604,7 +2604,7 @@ todayBlockEl.innerHTML = `
                             <span class="results-strip-divider">│</span>
                             <span class="results-strip-label results-strip-yesterday-label">Yesterday</span>
                             <span class="results-strip-stat">
-                                ${data.yesterday.racesChecked} races checked
+                                ${data.yesterday.racesChecked} races
                             </span>
                             <span class="results-strip-stat results-strip-win">
                                 ${data.yesterday.topPickWins}
