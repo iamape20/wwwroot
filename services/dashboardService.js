@@ -843,7 +843,10 @@ for (
 
 module.exports = {
 
-    getDashboard
+    getDashboard,
+
+    // exported for js/alignmentCheck.js
+    classifyRace
 
 };
 
