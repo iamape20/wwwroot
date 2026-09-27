@@ -239,6 +239,11 @@ function escapeHtml(str) {
         .replace(/'/g, "&#039;");
 }
 
+// Must agree with clock.js's toLocalTimeString() on how it interprets
+// the same raw time string - found 2026-09-27 to disagree: this
+// function applied the BST shift but not the "1-11 means PM" shift
+// toLocalTimeString applies, so the same race sorted/compared
+// differently depending which of the two functions computed its time.
 function parseLondonTimeToSeconds(timeStr) {
     if (!timeStr) return 0;
 
@@ -249,8 +254,6 @@ function parseLondonTimeToSeconds(timeStr) {
     let hours = parseInt(parts[0], 10);
     const mins = parseInt(parts[1], 10);
 
-    const now = new Date();
-
     const isBST =
         Intl.DateTimeFormat(
             "en-GB",
@@ -259,12 +262,18 @@ function parseLondonTimeToSeconds(timeStr) {
                 timeZoneName: "short"
             }
         )
-        .format(now)
+        .format(new Date())
         .includes("BST");
 
     if (isBST) {
-        hours = (hours + 1) % 24;
+        hours += 1;
     }
+
+    if (hours >= 1 && hours <= 11) {
+        hours += 12;
+    }
+
+    hours = hours % 24;
 
     return (hours * 3600) + (mins * 60);
 }

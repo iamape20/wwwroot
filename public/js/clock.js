@@ -6,12 +6,19 @@
 ==========================================================
 */
 
-const isBST = () => {
-    const d = new Date();
-    const stdTimezoneOffset = new Date(d.getFullYear(), 0, 1).getTimezoneOffset();
-    return d.getTimezoneOffset() < stdTimezoneOffset;
-};
-const BST_OFFSET = isBST() ? 1 : 0;
+// Fixed to the UK's actual Europe/London daylight-saving state, not the
+// visitor's own device timezone - the old version compared the device's
+// getTimezoneOffset() against its January value, which answers "does
+// wherever this browser thinks it is observe DST", not "is it BST right
+// now in London" - wrong for any visitor whose device isn't set to a UK
+// timezone (or a region with different DST dates). Matches the technique
+// dashboard.js's parseLondonTimeToSeconds already uses correctly. Not
+// cached, so it can't go stale if a tab is left open across a DST
+// transition.
+const isBST = () => Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/London",
+    timeZoneName: "short"
+}).format(new Date()).includes("BST");
 
 // Converts a raw UTC time string (how the scraper stores race times,
 // e.g. "13:35") into the correct local BST-aware display time
@@ -24,7 +31,7 @@ function toLocalTimeString(utcTimeStr) {
 
     let [h, m] = utcTimeStr.split(":").map(Number);
 
-    h += BST_OFFSET;
+    h += isBST() ? 1 : 0;
     if (h >= 1 && h <= 11) h += 12;
     if (h >= 24) h -= 24;
 
@@ -153,7 +160,7 @@ function checkOddsForCurrentRace() {
         const london = getLondonTime();
         let [h, m] = ctx.raceTime.split(":").map(Number);
 
-        h += BST_OFFSET;
+        h += isBST() ? 1 : 0;
         if (h >= 1 && h <= 11) h += 12;
         if (h >= 24) h -= 24;
 
@@ -190,7 +197,7 @@ function setupRaceCountdown(raceTimeStr, elementId) {
 
         let [h, m] = raceTimeStr.split(":").map(Number);
 
-        h += BST_OFFSET;
+        h += isBST() ? 1 : 0;
 
         if (h >= 1 && h <= 11) h += 12;
         if (h >= 24) h -= 24;

@@ -286,10 +286,17 @@ function analyseRace(runners) {
     }
 
 
+    // Was checking only isNonRunner - wrong field name for the pipeline's
+    // static data (which uses non_runner), so this never actually
+    // excluded anything real. Matches vulnerabilityEngine.js's own
+    // defensive check (same directory, same job) for all three spellings
+    // this codebase's various data sources use.
     const usable =
         runners.filter(r =>
             r &&
             r.isNonRunner !== true &&
+            r.non_runner !== true &&
+            r.nonRunner !== true &&
             eprRating(r) !== null
         );
 
