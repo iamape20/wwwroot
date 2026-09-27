@@ -49,12 +49,16 @@ async function getRace(meetingId, raceIndex) {
 
     // officialPickId is the id of the FIRST runner in ratingsRace.runners's
     // own, unmodified order - i.e. the real, override-adjusted pick (same one
-    // api/checkResults.js's results tracker uses via predRace.runners[0]).
+    // api/checkResults.js's results tracker uses via predRace.runners[0],
+    // which filters non-runners first - matched here so a withdrawn horse
+    // still carrying the field's highest power_rating can never be flagged
+    // as "our pick" on the race-detail page).
     // The returned runners list below stays in whatever order it is in -
     // the frontend does its own rating-based sort for DISPLAY - so this flag
     // is how a lower-rated "our pick" still gets identified correctly even
     // when it is not first in the list shown to the user.
-    const officialPickId = ratingsRace?.runners?.[0]?.id ?? null;
+    const officialPickId =
+        ratingsRace?.runners?.find(r => r && r.non_runner !== true)?.id ?? null;
 
     return {
 

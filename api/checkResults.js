@@ -318,9 +318,14 @@ module.exports = async (req, res) => {
                 /*
                  * Find our prediction for this exact race.
                  *
-                 * runners[0] remains the authoritative top-rated
-                 * selection because final_ratings.json is already
-                 * sorted by rating.
+                 * runners[0] is the authoritative top-rated selection
+                 * because final_ratings.json is already sorted by
+                 * rating - but that sort never excludes non-runners
+                 * (a withdrawn horse can still carry the field's
+                 * highest power_rating), so non-runners are filtered
+                 * out here first, matching every other live consumer
+                 * of this data (generateDailyShortlist.js,
+                 * dashboardService.js, eliteSpotlight.js).
                  */
                 let ourTopPick = null;
 
@@ -335,10 +340,15 @@ module.exports = async (req, res) => {
                             r => r.time === race.time
                         );
 
-                    if (predRace?.runners?.length) {
+                    const activeRunners =
+                        predRace?.runners?.filter(
+                            r => r && r.non_runner !== true
+                        );
+
+                    if (activeRunners?.length) {
 
                         ourTopPick =
-                            predRace.runners[0];
+                            activeRunners[0];
 
                         break;
 

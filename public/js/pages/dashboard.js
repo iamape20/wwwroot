@@ -274,7 +274,32 @@ const TIER_MODERATE_CUT = 0.30;
 const TIER_MIN_FIELD_FOR_STRONG = 5;
 const TIER_MIN_ABSOLUTE_MARGIN = 1.0;
 
-function raceMarginTier(runners) {
+// Mirrors checklistEngine.js's parseFractionalOdds exactly.
+function parseFractionalOddsLocal(value) {
+
+    if (typeof value !== "string") return null;
+
+    const clean = value.trim().toLowerCase();
+
+    if (clean === "evens" || clean === "evs") return 1;
+
+    const fractionMatch = clean.match(/^(\d+)\/(\d+)$/);
+    if (fractionMatch) return Number(fractionMatch[1]) / Number(fractionMatch[2]);
+
+    const whole = Number(clean);
+    return isNaN(whole) ? null : whole;
+
+}
+
+// This is the 4th independent classifyRace-style reimplementation in
+// this codebase (js/marginTiers.js is canonical; generateDailyShortlist.js
+// and backend/services/dashboardService.js each have their own too) - it
+// drives the live race page's VOID BET watermark and CLEAR TOP PICK /
+// MODERATE SEPARATION label. Found 2026-09-27 to be missing the
+// market-clarity and handicap gates the other three all apply, so a
+// race the authoritative logic would downgrade to Open could still
+// show as confident here. Both gates added to match.
+function raceMarginTier(runners, raceTitle) {
 
     const ratings =
         (runners || [])
@@ -310,7 +335,7 @@ function raceMarginTier(runners) {
         };
     }
 
-    const tier =
+    let tier =
         (
             relativeMargin >= TIER_STRONG_CUT &&
             ratings.length >= TIER_MIN_FIELD_FOR_STRONG
@@ -319,6 +344,34 @@ function raceMarginTier(runners) {
             : relativeMargin >= TIER_MODERATE_CUT
                 ? "Moderate"
                 : "Open";
+
+    if (tier === "Strong" || tier === "Moderate") {
+
+        const priced =
+            (runners || [])
+                .map(r => parseFractionalOddsLocal(r?.current_odds))
+                .filter(v => v != null)
+                .sort((a, b) => a - b);
+
+        if (priced.length >= 2) {
+
+            const gapRatio = (priced[1] + 1) / (priced[0] + 1);
+
+            if (gapRatio < 1.5) {
+                tier = "Open";
+            }
+
+        }
+
+        if (
+            tier !== "Open" &&
+            typeof raceTitle === "string" &&
+            /handicap/i.test(raceTitle)
+        ) {
+            tier = "Open";
+        }
+
+    }
 
     return {
         tier,
@@ -1521,7 +1574,8 @@ async function loadRace(
 
         const marginTier =
             raceMarginTier(
-                runners
+                runners,
+                response.race.title
             );
 
         const drawAdv =
