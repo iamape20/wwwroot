@@ -2297,6 +2297,8 @@ export async function loadDashboard() {
             300000
         );
 
+        startLiveRefresh();
+
     } catch (err) {
 
         console.error(
@@ -2304,6 +2306,92 @@ export async function loadDashboard() {
             err
         );
     }
+}
+
+// ------------------------------------------------------------------
+// LIVE REFRESH
+//
+// Picks change during the day (15min odds refresh, non-runners, the
+// market-override rule) but everything above loads once, so a tab left
+// open kept showing stale picks until manually reloaded. This re-pulls
+// the dashboard (candidates, Daily Double, NAP, Best Opportunity) and the
+// open race every 5 minutes, and straight away when the tab comes back
+// into view. Deliberately NOT loadDashboard() again - that would stack
+// timers and jump the visitor to the hero race.
+// ------------------------------------------------------------------
+
+const LIVE_REFRESH_MS = 300000;
+let liveRefreshInFlight = false;
+let lastLiveRefresh = Date.now();
+
+async function refreshLiveData() {
+
+    if (liveRefreshInFlight || document.hidden) return;
+    liveRefreshInFlight = true;
+    lastLiveRefresh = Date.now();
+
+    try {
+
+        const response = await getDashboard();
+
+        if (response?.success) {
+            const dashboard = response.dashboard;
+            renderCandidateBoard(dashboard);
+            renderDailyDouble(dashboard);
+            renderYesterdayResults(dashboard);
+            renderNapCallout(
+                dashboard.nap && dashboard.nap.active ? dashboard.nap : null
+            );
+            applyBestOpportunityBadge(dashboard.bestOpportunity);
+        }
+
+        // Redraw the open race only if something visible changed, and
+        // keep the visitor's scroll position.
+        const ctx = window.currentRaceContext;
+
+        if (ctx?.meetingId != null && ctx.raceIndex != null) {
+
+            const race = await getRace(ctx.meetingId, ctx.raceIndex);
+
+            if (
+                race?.success &&
+                raceSignature(race) !== ctx.signature &&
+                window.currentRaceContext === ctx
+            ) {
+                const scrollY = window.scrollY;
+                await loadRace(ctx.meetingId, ctx.raceIndex, ctx.displayTime, {
+                    silent: true,
+                    prefetched: race
+                });
+                window.scrollTo(0, scrollY);
+            }
+        }
+
+    } catch (err) {
+        // Background enrichment - the page already shows the last good data.
+        console.warn("Live refresh failed:", err);
+    } finally {
+        liveRefreshInFlight = false;
+    }
+
+}
+
+function startLiveRefresh() {
+
+    window.timerPool ??= {};
+    if (window.timerPool.liveRefresh) return;
+
+    window.timerPool.liveRefresh =
+        setInterval(refreshLiveData, LIVE_REFRESH_MS);
+
+    // Returning to a tab after a while: refresh at once rather than
+    // waiting for the next tick (but not on quick tab flicks).
+    document.addEventListener("visibilitychange", () => {
+        if (!document.hidden && Date.now() - lastLiveRefresh > 60000) {
+            refreshLiveData();
+        }
+    });
+
 }
 
 function updateResultsStripVisibility() {
