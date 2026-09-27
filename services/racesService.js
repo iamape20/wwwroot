@@ -28,7 +28,8 @@ function getRaces(meetingId) {
             time: race.time,
             distance: race.distance,
             class: race.race_class,
-            runners: race.runners.length,
+            // Excludes horses js/applyFreshOdds.js has flagged withdrawn
+            runners: race.runners.filter(r => r && r.non_runner !== true).length,
             verdict: race.verdict,
             bettingForecast: race.betting_forecast
 

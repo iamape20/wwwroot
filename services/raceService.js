@@ -6,6 +6,18 @@ const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
     ? Redis.fromEnv()
     : null;
 
+// Two non-runner signals exist: the static `non_runner` flag that
+// js/applyFreshOdds.js writes onto stage2_cards.json runners (every 15min
+// via js/_1odds.ps1), and the live Redis odds history. Either one is
+// enough - previously only Redis was checked, so an expired/missing key
+// or an unreachable Redis showed a statically-withdrawn horse as running,
+// even though officialPickId (below) already skipped it via non_runner.
+function runnerIsNonRunner(runner, elite, oddsHistory) {
+    return runner?.non_runner === true ||
+        elite?.non_runner === true ||
+        (oddsHistory ? isNonRunner(oddsHistory, runner.name) : false);
+}
+
 async function getRace(meetingId, raceIndex) {
 
     const cards = json.load("stage2_cards.json");
@@ -108,7 +120,7 @@ async function getRace(meetingId, raceIndex) {
 				if (!elite) {
 					return {
 						...runner,
-						isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+						isNonRunner: runnerIsNonRunner(runner, elite, oddsHistory),
 						isOurPick,
 						elite: {
 							rating: null,
@@ -152,7 +164,7 @@ async function getRace(meetingId, raceIndex) {
 
 					...runner,
 
-					isNonRunner: oddsHistory ? isNonRunner(oddsHistory, runner.name) : false,
+					isNonRunner: runnerIsNonRunner(runner, elite, oddsHistory),
 
 					isOurPick,
 
