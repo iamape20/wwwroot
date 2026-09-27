@@ -29,8 +29,12 @@ function parseFractionalOdds(value) {
     const fractionMatch = clean.match(/^(\d+)\/(\d+)$/);
     if (fractionMatch) return Number(fractionMatch[1]) / Number(fractionMatch[2]);
 
+    // whole > 0 guard matches dashboardService.js's own parseOdds
+    // (same job, different file) - without it a malformed "0" or
+    // negative odds string parsed as a valid decimal, which could
+    // then feed a bogus Steamer/Drifter move below.
     const whole = Number(clean);
-    return isNaN(whole) ? null : whole;
+    return isNaN(whole) ? null : (whole > 0 ? whole : null);
 
 }
 

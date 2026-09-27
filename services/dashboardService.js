@@ -607,10 +607,16 @@ for (
                     tierInfo.relativeMargin
                 );
 
+            // typeof-checked, not a bare Number(), to avoid a silent
+            // Number(undefined) === NaN (any comparison with NaN is
+            // false, so this tie-break level would just never fire,
+            // not crash - found 2026-09-27, matches the ?? 0 fallback
+            // convention already used for this field elsewhere, e.g.
+            // js/a1selections.js).
             const opportunityConfidence =
-                Number(
-                    top.confidence
-                );
+                typeof top.confidence === "number"
+                    ? top.confidence
+                    : 0;
 
             const shouldReplaceBestOpportunity =
                 !bestOpportunity ||
@@ -641,7 +647,7 @@ for (
                     rating,
 
                     confidence:
-                        top.confidence,
+                        opportunityConfidence,
 
                     course:
                         meeting.name,
