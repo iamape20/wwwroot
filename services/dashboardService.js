@@ -413,17 +413,42 @@ function makeCandidate(
 
 function getDashboard() {
 
-    const daily =
-        json.load("daily_data.json");
+    // Found 2026-09-27: these 4 core files were loaded with no
+    // try/catch, unlike shortlist.json/yesterday-results.json right
+    // below - jsonService.load() throws if a file is missing, so any
+    // one of these being absent or mid-sync (robocopy-based, so a
+    // request landing in that timing gap is possible) crashed the
+    // entire /api/dashboard response instead of degrading gracefully,
+    // the way the rest of this function already treats missing data
+    // (e.g. `Object.values(daily || {})` right below already assumes
+    // daily could be falsy).
+    let daily = null;
+    try {
+        daily = json.load("daily_data.json");
+    } catch (err) {
+        daily = null;
+    }
 
-    const ratings =
-        json.load("final_ratings.json");
+    let ratings = null;
+    try {
+        ratings = json.load("final_ratings.json");
+    } catch (err) {
+        ratings = null;
+    }
 
-    const nap =
-        json.load("nap_spotlight.json");
+    let nap = null;
+    try {
+        nap = json.load("nap_spotlight.json");
+    } catch (err) {
+        nap = null;
+    }
 
-    const cards =
-        json.load("stage2_cards.json");
+    let cards = null;
+    try {
+        cards = json.load("stage2_cards.json");
+    } catch (err) {
+        cards = null;
+    }
 
 
     let meetings = 0;
