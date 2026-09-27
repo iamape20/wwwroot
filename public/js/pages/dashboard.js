@@ -1276,10 +1276,26 @@ picks.sort(
         });
 }
 
+// What a visitor can actually see change on the race view - used by
+// refreshLiveData() to redraw an open race only when something moved,
+// so expanded checklist/engine panels aren't collapsed for nothing.
+function raceSignature(response) {
+    return JSON.stringify(
+        (response?.race?.runners || []).map(r => [
+            r.id, r.isOurPick, r.isNonRunner, r.current_odds,
+            r.elite?.rating, r.elite?.checklistPoints
+        ])
+    );
+}
+
+// options.silent skips the "Loading race data..." placeholder and
+// options.prefetched reuses a getRace() response already in hand - both
+// used only by the background refreshLiveData() redraw.
 async function loadRace(
     meetingId,
     raceIndex,
-    raceTime
+    raceTime,
+    options = {}
 ) {
 
     try {
@@ -1289,7 +1305,7 @@ async function loadRace(
                 "analysis"
             );
 
-        if (container) {
+        if (container && !options.silent) {
 
             container.innerHTML =
                 `<div class="race-loading">
@@ -1298,6 +1314,7 @@ async function loadRace(
         }
 
         const response =
+            options.prefetched ||
             await getRace(
                 meetingId,
                 raceIndex
@@ -1315,7 +1332,11 @@ async function loadRace(
             courseName:
                 response.meeting.name,
             raceTime:
-                response.race.time
+                response.race.time,
+            displayTime:
+                raceTime,
+            signature:
+                raceSignature(response)
         };
 
         document.getElementById(
