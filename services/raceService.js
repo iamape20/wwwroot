@@ -69,6 +69,11 @@ async function getRace(meetingId, raceIndex) {
     // the frontend does its own rating-based sort for DISPLAY - so this flag
     // is how a lower-rated "our pick" still gets identified correctly even
     // when it is not first in the list shown to the user.
+    // Card times are UTC "HH:MM" - same off-time rule as the freeze in
+    // js/a1ratings_v3.js (isPastOff).
+    const offMs = Date.parse(`${meeting.date}T${String(race.time || "").trim().padStart(5, "0")}:00Z`);
+    const raceIsOff = Number.isFinite(offMs) && Date.now() >= offMs;
+
     const officialPickId =
         ratingsRace?.runners?.find(r => r && r.non_runner !== true)?.id ?? null;
 
@@ -163,6 +168,16 @@ async function getRace(meetingId, raceIndex) {
 				return {
 
 					...runner,
+
+					// After the off, show the price frozen with the ratings
+					// (js/a1ratings_v3.js freezes at the scheduled off), not the
+					// starting price stage2_cards.json picks up afterwards - the
+					// browser's tier badge is computed from these prices, and SPs
+					// could flip a race that was Moderate at the off to "Open"
+					// (caught 2026-09-28 by js/alignmentCheck.js: Hamilton 13:19).
+					...(raceIsOff && elite.current_odds != null
+						? { current_odds: elite.current_odds }
+						: {}),
 
 					isNonRunner: runnerIsNonRunner(runner, elite, oddsHistory),
 
