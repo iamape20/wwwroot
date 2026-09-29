@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bet List</title>
+<style>
+:root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #16181d; --muted: #5d6470; --line: #e3e6ea;
+    --paper: #b26a00; --paper-bg: #fff4e0; --live: #11743b; --live-bg: #e3f6ea; --stop: #b3261e; --stop-bg: #fde7e6;
+    --bet-bg: #eaf2ff; --bet: #1446a0;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111317; --card: #1b1e24; --text: #eceef2; --muted: #a0a6b1; --line: #2c3038;
+        --paper: #ffb74d; --paper-bg: #3a2a10; --live: #6fdc9b; --live-bg: #12321f; --stop: #ff8a80; --stop-bg: #3d1614;
+        --bet-bg: #152440; --bet: #9cc1ff;
+    }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.4rem; margin: 4px 0 12px; }
+h2 { font-size: 1.05rem; margin: 22px 0 8px; }
+.banner { border-radius: 10px; padding: 14px 16px; font-weight: 700; font-size: 1.05rem; }
+.PAPER { background: var(--paper-bg); color: var(--paper); }
+.LIVE { background: var(--live-bg); color: var(--live); }
+.STOPPED, .PAUSED { background: var(--stop-bg); color: var(--stop); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 8px 0; }
+.bet { background: var(--bet-bg); border-color: var(--bet); }
+.bet .horse { color: var(--bet); font-size: 1.2rem; font-weight: 800; }
+.row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+.won { color: var(--live); font-weight: 700; } .lost { color: var(--stop); }
+ol { padding-left: 20px; } li { margin: 4px 0; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
+.stat b { display: block; font-size: 1.2rem; }
+.tablewrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+    <h1>Bet List</h1>
+    <div id="banner" class="banner">Loading...</div>
+    <p class="muted" id="updated"></p>
+
+    <h2>Today</h2>
+    <div id="today"></div>
+
+    <div id="awaitingWrap" hidden>
+        <h2>Awaiting result</h2>
+        <div id="awaiting"></div>
+    </div>
+
+    <h2>Record</h2>
+    <div class="stats" id="stats"></div>
+    <p class="muted" id="backtest"></p>
+
+    <h2>Recent bets</h2>
+    <div class="tablewrap"><table id="recent"></table></div>
+
+    <h2>The rules</h2>
+    <ol id="rules"></ol>
+</main>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const signed = v => v == null ? "-" : (v > 0 ? "+" : "") + v;
+
+async function load() {
+    let d;
+    try {
+        const r = await fetch(`/api/betlist?t=${Date.now()}`, { cache: "no-store" });
+        d = await r.json();
+    } catch { return; }
+    if (!d.success) { document.getElementById("banner").textContent = "Bet list not available yet."; return; }
+
+    const banner = document.getElementById("banner");
+    banner.className = `banner ${d.phase}`;
+    banner.textContent = d.phaseMessage;
+    document.getElementById("updated").textContent =
+        `Updated ${new Date(d.generatedAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })} - refreshes every 10 minutes. Horses appear 5-15 minutes before the off.`;
+
+    const today = d.today || [];
+    document.getElementById("today").innerHTML = d.morningMissing
+        ? `<div class="card">Today's morning snapshot isn't available, so no bets can be checked today.</div>`
+        : today.length ? today.map(r => r.status === "BET"
+            ? `<div class="card bet"><div class="row"><span class="horse">${esc(r.horse)}</span><span><b>${esc(r.price)}</b></span></div>
+               <div class="muted">${esc(r.course)} ${esc(r.off)} - ${d.phase === "LIVE" ? "stake 1 unit" : "paper bet: record only, do not stake"}</div></div>`
+            : `<div class="card"><div class="row"><span>${esc(r.course)} ${esc(r.off)}</span><span class="muted">revealed at ${esc(r.revealAt)} if it still qualifies</span></div></div>`
+        ).join("") : `<div class="card">No qualifying races right now. No bet is a valid outcome.</div>`;
+
+    const aw = d.awaitingResult || [];
+    document.getElementById("awaitingWrap").hidden = !aw.length;
+    document.getElementById("awaiting").innerHTML = aw.map(b => `<div class="card">${esc(b.course)} ${esc(b.off)} - ${esc(b.horse)}</div>`).join("");
+
+    const s = d.stats || {};
+    const cell = (label, st) => st && st.bets ? `<div class="card stat"><span class="muted">${label}</span><b>${st.won}/${st.bets} won</b><span>${signed(st.pl)} units (${signed(st.roi)}%)</span></div>` : `<div class="card stat"><span class="muted">${label}</span><b>0 bets</b></div>`;
+    document.getElementById("stats").innerHTML = cell("Paper phase", s.paper) + cell("Live phase", s.live);
+    document.getElementById("backtest").textContent = `${s.backtest || ""}. Tracking since ${s.trackerStarted ? new Date(s.trackerStarted).toLocaleDateString("en-GB") : "-"}.` +
+        (s.verdict ? ` Verdict ${s.verdict.at.slice(0, 10)}: ${s.verdict.outcome} (${signed(s.verdict.roi)}% over ${s.verdict.bets} bets).` : "");
+
+    const rec = d.recent || [];
+    document.getElementById("recent").innerHTML = rec.length
+        ? `<tr><th>Date</th><th>Race</th><th>Horse</th><th>Result</th><th>BSP</th><th>P/L</th></tr>` + rec.map(b =>
+            `<tr><td>${esc(b.date.slice(5))}</td><td>${esc(b.course)} ${esc(b.off)}</td><td>${esc(b.horse)}</td>
+             <td class="${esc(b.result)}">${esc(b.result)}</td><td>${b.bsp ? esc(b.bsp.toFixed(2)) : b.settledAt === "bookmaker_sp_fallback" ? "SP" : "pending"}</td>
+             <td>${b.pl == null ? "pending" : signed(b.pl)}</td></tr>`).join("")
+        : `<tr><td class="muted">No settled bets yet.</td></tr>`;
+
+    document.getElementById("rules").innerHTML = (d.rules || []).map(r => `<li>${esc(r)}</li>`).join("");
+}
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>

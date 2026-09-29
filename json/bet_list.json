@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-09-29T09:12:59.034Z",
+  "phase": "PAPER",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
+  "rules": [
+    "Back the favourite ONLY in races listed here - nothing else.",
+    "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
+    "The horse is shown 15 minutes before the off - bet then, not earlier.",
+    "Bet on the Betfair exchange (Betfair SP or the price just before the off).",
+    "Stake is always 1 unit. Never more after a win, never more to chase a loss.",
+    "PAPER phase: do not stake until 120 bets have settled and the verdict says LIVE.",
+    "LIVE phase stops automatically at -20 units."
+  ],
+  "morningMissing": false,
+  "today": [
+    {
+      "course": "Ayr",
+      "off": "14:38",
+      "status": "POSSIBLE",
+      "revealAt": "14:23"
+    },
+    {
+      "course": "Bath",
+      "off": "15:32",
+      "status": "POSSIBLE",
+      "revealAt": "15:17"
+    },
+    {
+      "course": "Cork",
+      "off": "16:25",
+      "status": "POSSIBLE",
+      "revealAt": "16:10"
+    },
+    {
+      "course": "Bath",
+      "off": "16:35",
+      "status": "POSSIBLE",
+      "revealAt": "16:20"
+    }
+  ],
+  "awaitingResult": [],
+  "recent": [],
+  "stats": {
+    "paper": {
+      "bets": 0,
+      "won": 0,
+      "pl": 0,
+      "roi": null
+    },
+    "live": {
+      "bets": 0,
+      "won": 0,
+      "pl": 0,
+      "roi": null
+    },
+    "verdict": null,
+    "trackerStarted": "2026-09-29T09:12:59.034Z",
+    "backtest": "Backtest (Aug-Sep 2026): 180 bets, 55.6% winners, +2.0% at Betfair SP after 5% commission"
+  }
+}
