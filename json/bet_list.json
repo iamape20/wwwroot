@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T15:30:33.193Z",
+  "generatedAt": "2026-09-30T15:40:32.435Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 2/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 3/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,14 +20,19 @@
       "revealAt": "17:20"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-09-30",
       "course": "Kempton",
       "off": "16:25",
-      "horse": "REAL BULLET"
-    }
-  ],
-  "recent": [
+      "horse": "REAL BULLET",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-09-30",
       "course": "Bellewstown",
@@ -74,16 +79,16 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T15:30:33.096Z",
+    "updatedAt": "2026-09-30T15:40:32.336Z",
     "claude": {
-      "races": 18,
+      "races": 20,
       "won": 2,
-      "pct": 11.1
+      "pct": 10
     },
     "agreedWithOurPick": {
-      "races": 9,
+      "races": 11,
       "won": 1,
-      "pct": 11.1
+      "pct": 9.1
     },
     "disagreed": {
       "races": 9,
@@ -97,9 +102,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 2,
+      "bets": 3,
       "won": 0,
-      "pl": -2,
+      "pl": -3,
       "roi": -100
     },
     "live": {
