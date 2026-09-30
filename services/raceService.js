@@ -77,6 +77,20 @@ async function getRace(meetingId, raceIndex) {
     const officialPickId =
         ratingsRace?.runners?.find(r => r && r.non_runner !== true)?.id ?? null;
 
+    // Claude's independent view (js/claudePicks.mjs): a second opinion
+    // from pre-race form only - no odds, no EPR ratings. Optional: the
+    // page works the same when there's no pick for this race.
+    let claudePick = null;
+    try {
+        const today = json.load("claude_picks_today.json");
+        if (today?.date === meeting.date) {
+            claudePick = today.picks?.find(p => p.course === meeting.name && p.timeUTC === race.time) || null;
+        }
+    } catch { claudePick = null; }
+
+    const officialPickName =
+        ratingsRace?.runners?.find(r => r && String(r.id) === String(officialPickId))?.name ?? null;
+
     return {
 
         meeting: {
@@ -95,6 +109,12 @@ async function getRace(meetingId, raceIndex) {
             verdict: race.verdict,
             bettingForecast: race.betting_forecast,
             drawAdvantage: ratingsRace?.draw_advantage || "None",
+            claudeView: claudePick ? {
+                pick: claudePick.pick,
+                confidence: claudePick.confidence ?? null,
+                reason: claudePick.reason || "",
+                agreesWithOurPick: officialPickName != null && claudePick.pick === officialPickName
+            } : null,
 			// Iterates ratingsRace.runners (final_ratings.json) when available,
 			// NOT race.runners (stage2_cards.json) - the stage2_cards order is
 			// just whatever the scraper produced, with no relationship to our
@@ -127,6 +147,8 @@ async function getRace(meetingId, raceIndex) {
 						...runner,
 						isNonRunner: runnerIsNonRunner(runner, elite, oddsHistory),
 						isOurPick,
+
+						isClaudePick: claudePick != null && runner.name === claudePick.pick,
 						elite: {
 							rating: null,
 							confidence: null,
@@ -182,6 +204,8 @@ async function getRace(meetingId, raceIndex) {
 					isNonRunner: runnerIsNonRunner(runner, elite, oddsHistory),
 
 					isOurPick,
+
+					isClaudePick: claudePick != null && runner.name === claudePick.pick,
 
 					elite: {
 						rating: liveRating,
