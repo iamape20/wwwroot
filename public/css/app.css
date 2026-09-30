@@ -2498,3 +2498,42 @@ button {
     background: rgba(127, 138, 155, 0.10);
     border: 1px solid rgba(127, 138, 155, 0.20);
 }
+
+/* Claude's independent view (js/claudePicks.mjs in the root pipeline):
+   a second opinion from the form alone, shown beside Our Pick. */
+.runner-claude-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 3px;
+    margin-left: 4px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #6d4bd8;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.claude-view {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(109, 75, 216, 0.35);
+    background: rgba(109, 75, 216, 0.08);
+    font-size: 0.9rem;
+}
+
+.claude-view .runner-claude-badge { margin: 0; }
+.claude-view-text { flex: 1 1 260px; min-width: 0; }
+.claude-view-verdict { font-weight: 700; font-size: 0.82rem; white-space: nowrap; }
+.claude-agrees .claude-view-verdict { color: #2e9e5b; }
+.claude-differs .claude-view-verdict { color: #c77700; }

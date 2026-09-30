@@ -1491,6 +1491,30 @@ async function loadRace(
 
         container.innerHTML = "";
 
+        // Claude's independent view - a second opinion from the form
+        // alone, shown beside Our Pick rather than replacing it.
+        const claudeView = response.race.claudeView;
+
+        if (claudeView) {
+
+            const box = document.createElement("div");
+            box.className =
+                `claude-view ${claudeView.agreesWithOurPick ? "claude-agrees" : "claude-differs"}`;
+
+            box.innerHTML = `
+                <span class="runner-claude-badge">Claude</span>
+                <span class="claude-view-text">
+                    Independent view (form only, no odds or ratings):
+                    <strong>${escapeHtml(claudeView.pick)}</strong>
+                    ${claudeView.reason ? `- ${escapeHtml(claudeView.reason)}` : ""}
+                </span>
+                <span class="claude-view-verdict">
+                    ${claudeView.agreesWithOurPick ? "Agrees with Our Pick" : "Differs from Our Pick"}
+                </span>`;
+
+            container.appendChild(box);
+        }
+
         if (
             response.race.verdict ||
             response.race.bettingForecast
@@ -1644,6 +1668,12 @@ async function loadRace(
                                     ${
                                         runner.isOurPick
                                             ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
+                                            : ""
+                                    }
+
+                                    ${
+                                        runner.isClaudePick
+                                            ? `<span class="runner-claude-badge" title="Claude's independent pick, from the form alone - no odds, no EPR ratings">Claude</span>`
                                             : ""
                                     }
 

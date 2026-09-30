@@ -58,6 +58,10 @@ ol { padding-left: 20px; } li { margin: 4px 0; }
     <div class="stats" id="stats"></div>
     <p class="muted" id="backtest"></p>
 
+    <h2>Claude's independent view</h2>
+    <p class="muted">Claude picks every race from the form alone (no odds, no ratings), before racing. For comparison only - it doesn't change the rules.</p>
+    <div class="stats" id="claude"></div>
+
     <h2>Recent bets</h2>
     <div class="tablewrap"><table id="recent"></table></div>
 
@@ -100,6 +104,15 @@ async function load() {
     document.getElementById("stats").innerHTML = cell("Paper phase", s.paper) + cell("Live phase", s.live);
     document.getElementById("backtest").textContent = `${s.backtest || ""}. Tracking since ${s.trackerStarted ? new Date(s.trackerStarted).toLocaleDateString("en-GB") : "-"}.` +
         (s.verdict ? ` Verdict ${s.verdict.at.slice(0, 10)}: ${s.verdict.outcome} (${signed(s.verdict.roi)}% over ${s.verdict.bets} bets).` : "");
+
+    const c = d.claudeRecord;
+    const pct = st => st && st.races ? `${st.won}/${st.races} won (${st.pct}%)` : "no results yet";
+    document.getElementById("claude").innerHTML = c
+        ? `<div class="card stat"><span class="muted">All Claude picks</span><b>${pct(c.claude)}</b></div>
+           <div class="card stat"><span class="muted">Agreed with Our Pick</span><b>${pct(c.agreedWithOurPick)}</b></div>
+           <div class="card stat"><span class="muted">Differed from Our Pick</span><b>${pct(c.disagreed)}</b>
+             <span class="muted">Our Pick in those: ${c.ourPickWhenDisagreed.won}/${c.ourPickWhenDisagreed.races} won</span></div>`
+        : `<div class="card">No Claude picks recorded yet.</div>`;
 
     const rec = d.recent || [];
     document.getElementById("recent").innerHTML = rec.length
