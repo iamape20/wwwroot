@@ -206581,7 +206581,7 @@
                   "odds": "6/4",
                   "decimal_odds": 2.5,
                   "favourite": true,
-                  "runners_with_prices": 5
+                  "runners_with_prices": 4
                 }
               },
               "verdict": {
@@ -206597,7 +206597,7 @@
                 }
               }
             },
-            "checklist_rating": 59,
+            "checklist_rating": 63.2,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -206628,13 +206628,14 @@
                 "points": 2,
                 "max": 2,
                 "answer": "Yes",
-                "evidence": "OR 146 vs highest in race 148 (99%)"
+                "evidence": "OR 146 vs highest in race 146 (100%)"
               },
               "classDropRatingEdge": {
                 "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "OR 146 vs highest in race 148 - not the field's top rating"
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No class data available for comparison"
               },
               "draw": {
                 "points": 0,
@@ -206741,10 +206742,10 @@
               "weightAdvantage": 0,
               "combined": 17
             },
-            "checklist_points": "9/15.25",
+            "checklist_points": "9/14.25",
             "checklist_earned_points": 9,
             "stat_rating": 10.94,
-            "meta_rating": 23.33,
+            "meta_rating": 24.88,
             "trainer_trend": "hot"
           },
           {
@@ -207625,7 +207626,7 @@
                   "odds": "9/4",
                   "decimal_odds": 3.25,
                   "favourite": false,
-                  "runners_with_prices": 5
+                  "runners_with_prices": 4
                 }
               },
               "verdict": {
@@ -207671,13 +207672,13 @@
                 "points": 2,
                 "max": 2,
                 "answer": "Yes",
-                "evidence": "OR 129 vs highest in race 148 (87%)"
+                "evidence": "OR 129 vs highest in race 146 (88%)"
               },
               "classDropRatingEdge": {
                 "points": 0,
                 "max": 1,
                 "answer": "No",
-                "evidence": "OR 129 vs highest in race 148 - not the field's top rating"
+                "evidence": "OR 129 vs highest in race 146 - not the field's top rating"
               },
               "draw": {
                 "points": 0,
@@ -207787,7 +207788,7 @@
             "checklist_points": "9.4/15.25",
             "checklist_earned_points": 9.4,
             "stat_rating": 17.93,
-            "meta_rating": 16.11,
+            "meta_rating": 15,
             "trainer_trend": "cold"
           },
           {
@@ -208544,7 +208545,7 @@
             "race_time": "13:55",
             "race_class": "N/A",
             "race_id": 940967,
-            "non_runner": false,
+            "non_runner": true,
             "historical_runs": 21,
             "days_since_run": 39,
             "last_run_date_used": "2026-08-22",
@@ -208594,8 +208595,8 @@
               },
               "sample_size": 21
             },
-            "v2_score": 62.3,
-            "power_rating": 62.3,
+            "v2_score": 53.1,
+            "power_rating": 53.1,
             "confidence": 57,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -208610,9 +208611,9 @@
                 "weighted": 11.55
               },
               "market": {
-                "score": 86,
+                "score": 40,
                 "weight": 0.2,
-                "weighted": 17.2
+                "weighted": 8
               },
               "verdict": {
                 "score": 60,
@@ -208664,18 +208665,15 @@
               },
               "market": {
                 "engine": "market",
-                "score": 86,
-                "confidence": "High",
+                "score": 40,
+                "confidence": "Low",
                 "reasons": [
-                  "Market Rank 3",
-                  "Odds 5/2"
+                  "No usable current odds"
                 ],
                 "metrics": {
-                  "rank": 3,
                   "odds": "5/2",
-                  "decimal_odds": 3.5,
-                  "favourite": false,
-                  "runners_with_prices": 5
+                  "rank": null,
+                  "runners_with_prices": 4
                 }
               },
               "verdict": {
@@ -208721,7 +208719,7 @@
                 "points": 2,
                 "max": 2,
                 "answer": "Yes",
-                "evidence": "OR 148 vs highest in race 148 (100%)"
+                "evidence": "OR 148 vs highest in race 146 (101%)"
               },
               "classDropRatingEdge": {
                 "points": 0,
@@ -208803,7 +208801,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Steady",
-                "evidence": "5/2 â†’ 5/2 (20 snapshots)"
+                "evidence": "5/2 â†’ 5/2 (19 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -209203,8 +209201,8 @@
               },
               "sample_size": 8
             },
-            "v2_score": 48.5,
-            "power_rating": 48.5,
+            "v2_score": 49.8,
+            "power_rating": 49.8,
             "confidence": 57,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -209219,9 +209217,9 @@
                 "weighted": 8.7
               },
               "market": {
-                "score": 80,
+                "score": 86,
                 "weight": 0.2,
-                "weighted": 16
+                "weighted": 17.2
               },
               "verdict": {
                 "score": 45,
@@ -209273,18 +209271,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 80,
-                "confidence": "Medium",
+                "score": 86,
+                "confidence": "High",
                 "reasons": [
-                  "Market Rank 4",
+                  "Market Rank 3",
                   "Odds 8/1"
                 ],
                 "metrics": {
-                  "rank": 4,
+                  "rank": 3,
                   "odds": "8/1",
                   "decimal_odds": 9,
                   "favourite": false,
-                  "runners_with_prices": 5
+                  "runners_with_prices": 4
                 }
               },
               "verdict": {
@@ -209330,13 +209328,13 @@
                 "points": 2,
                 "max": 2,
                 "answer": "Yes",
-                "evidence": "OR 129 vs highest in race 148 (87%)"
+                "evidence": "OR 129 vs highest in race 146 (88%)"
               },
               "classDropRatingEdge": {
                 "points": 0,
                 "max": 1,
                 "answer": "No",
-                "evidence": "OR 129 vs highest in race 148 - not the field's top rating"
+                "evidence": "OR 129 vs highest in race 146 - not the field's top rating"
               },
               "draw": {
                 "points": 0,
@@ -210247,8 +210245,8 @@
               },
               "sample_size": 21
             },
-            "v2_score": 42.5,
-            "power_rating": 42.5,
+            "v2_score": 43.8,
+            "power_rating": 43.8,
             "confidence": 57,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -210263,9 +210261,9 @@
                 "weighted": 3.6
               },
               "market": {
-                "score": 74,
+                "score": 80,
                 "weight": 0.2,
-                "weighted": 14.8
+                "weighted": 16
               },
               "verdict": {
                 "score": 45,
@@ -210315,18 +210313,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 74,
+                "score": 80,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 5",
+                  "Market Rank 4",
                   "Odds 66/1"
                 ],
                 "metrics": {
-                  "rank": 5,
+                  "rank": 4,
                   "odds": "66/1",
                   "decimal_odds": 67,
                   "favourite": false,
-                  "runners_with_prices": 5
+                  "runners_with_prices": 4
                 }
               },
               "verdict": {
@@ -210372,13 +210370,13 @@
                 "points": 0,
                 "max": 2,
                 "answer": "No",
-                "evidence": "OR 72 vs highest in race 148 (49%)"
+                "evidence": "OR 72 vs highest in race 146 (49%)"
               },
               "classDropRatingEdge": {
                 "points": 0,
                 "max": 1,
                 "answer": "No",
-                "evidence": "OR 72 vs highest in race 148 - not the field's top rating"
+                "evidence": "OR 72 vs highest in race 146 - not the field's top rating"
               },
               "draw": {
                 "points": 0,
@@ -210494,7 +210492,7 @@
             "trainer_trend": null
           }
         ],
-        "highestOR": 148,
+        "highestOR": 146,
         "medianOR": 129,
         "medianEffectiveWeight": 166,
         "asOfDate": "2026-09-30T00:00:00.000Z",
