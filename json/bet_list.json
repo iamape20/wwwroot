@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T09:40:35.616Z",
+  "generatedAt": "2026-09-30T09:50:48.421Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -56,13 +56,7 @@
       "revealAt": "16:18"
     }
   ],
-  "awaitingResult": [
-    {
-      "course": "Cork",
-      "off": "16:25",
-      "horse": "GOLDEN RING"
-    }
-  ],
+  "awaitingResult": [],
   "recent": [
     {
       "date": "2026-09-29",
@@ -72,8 +66,19 @@
       "phase": "PAPER",
       "result": "lost",
       "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-09-29",
+      "course": "Cork",
+      "off": "16:25",
+      "horse": "GOLDEN RING",
+      "phase": "PAPER",
+      "result": "void",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "abandoned"
     },
     {
       "date": "2026-09-29",
@@ -99,7 +104,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T09:40:35.517Z",
+    "updatedAt": "2026-09-30T09:50:48.325Z",
     "claude": {
       "races": 0,
       "won": 0,
@@ -122,10 +127,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 0,
+      "bets": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "live": {
       "bets": 0,
