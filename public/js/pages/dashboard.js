@@ -251,31 +251,12 @@ function parseLondonTimeToSeconds(timeStr) {
 
     if (parts.length < 2) return 0;
 
-    let hours = parseInt(parts[0], 10);
-    const mins = parseInt(parts[1], 10);
+    // Same real Europe/London conversion as clock.js's toLocalTimeString
+    // (replaces an "add 12 to hours 1-11" guess - see utcTimeToLondon).
+    const t = utcTimeToLondon(`${parts[0]}:${parts[1]}`);
+    if (!t) return 0;
 
-    const isBST =
-        Intl.DateTimeFormat(
-            "en-GB",
-            {
-                timeZone: "Europe/London",
-                timeZoneName: "short"
-            }
-        )
-        .format(new Date())
-        .includes("BST");
-
-    if (isBST) {
-        hours += 1;
-    }
-
-    if (hours >= 1 && hours <= 11) {
-        hours += 12;
-    }
-
-    hours = hours % 24;
-
-    return (hours * 3600) + (mins * 60);
+    return (t.h * 3600) + (t.m * 60);
 }
 
 const TIER_STRONG_CUT = 0.50;

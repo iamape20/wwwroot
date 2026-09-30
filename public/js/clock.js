@@ -25,17 +25,38 @@ const isBST = () => Intl.DateTimeFormat("en-GB", {
 // (e.g. "14:35"). Used throughout dashboard.js wherever a race time
 // is shown to the user. Guards against the "00:00" placeholder used
 // for missing/unknown times.
+// Card times are 24-hour UTC ("13:35"). Converted with the real
+// Europe/London rules for today's date, so GMT and BST are both right.
+// Replaces an older "add 12 to hours 1-11" guess (it assumed every race
+// was in the afternoon), which would have shown winter races before noon
+// - e.g. 11:40 GMT - as 23:40 once the clocks go back (found 2026-09-30).
+function utcTimeToLondon(utcTimeStr) {
+
+    const [h, m] = String(utcTimeStr || "").split(":").map(Number);
+    if (!Number.isFinite(h) || !Number.isFinite(m)) return null;
+
+    const now = new Date();
+    const instant = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m));
+
+    const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/London", hour: "2-digit", minute: "2-digit", hour12: false
+    }).formatToParts(instant);
+
+    const hh = Number(parts.find(p => p.type === "hour")?.value) % 24;
+    const mm = Number(parts.find(p => p.type === "minute")?.value);
+
+    return { h: hh, m: mm };
+
+}
+
 function toLocalTimeString(utcTimeStr) {
 
     if (!utcTimeStr || utcTimeStr === "00:00") return "TBC";
 
-    let [h, m] = utcTimeStr.split(":").map(Number);
+    const t = utcTimeToLondon(utcTimeStr);
+    if (!t) return "TBC";
 
-    h += isBST() ? 1 : 0;
-    if (h >= 1 && h <= 11) h += 12;
-    if (h >= 24) h -= 24;
-
-    return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+    return `${String(t.h).padStart(2, "0")}:${String(t.m).padStart(2, "0")}`;
 
 }
 
@@ -158,13 +179,10 @@ function checkOddsForCurrentRace() {
     if (ctx.raceTime) {
 
         const london = getLondonTime();
-        let [h, m] = ctx.raceTime.split(":").map(Number);
+        const t = utcTimeToLondon(ctx.raceTime);
+        if (!t) return;
 
-        h += isBST() ? 1 : 0;
-        if (h >= 1 && h <= 11) h += 12;
-        if (h >= 24) h -= 24;
-
-        const targetSecs = (h * 3600) + (m * 60);
+        const targetSecs = (t.h * 3600) + (t.m * 60);
         const diff = targetSecs - london.totalSecs;
 
         if (diff <= -600) return; // more than 10 minutes past off - finished

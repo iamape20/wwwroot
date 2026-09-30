@@ -559,6 +559,13 @@ for (
             if (!Array.isArray(race?.runners))
                 return;
 
+            // A race that has already gone off is no longer an
+            // opportunity (found 2026-09-30: Best Opportunity could point
+            // at a finished race late in the day). Card times are UTC.
+            const offMs = Date.parse(`${meeting.date}T${race.time}:00Z`);
+            if (Number.isFinite(offMs) && Date.now() >= offMs)
+                return;
+
             const tierInfo =
                 classifyRace(race.runners, race.display_title);
 

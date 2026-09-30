@@ -18,7 +18,10 @@ const { Redis } = require("@upstash/redis");
 
 const redis = Redis.fromEnv();
 
-const ODDS_FRESHNESS_MINUTES = 15;
+// Must stay below the scheduled odds refresh interval (js\_1odds.ps1,
+// every 10 min) - at 15, every other refresh was served the cached copy,
+// so prices really only updated every 20 minutes (found 2026-09-30).
+const ODDS_FRESHNESS_MINUTES = 8;
 
 function getSlug(name) {
     return String(name).replace(/[^a-z0-9\s]/gi, "").replace(/\s+/g, "-").toLowerCase();
