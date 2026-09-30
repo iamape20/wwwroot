@@ -21,6 +21,23 @@ const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN)
 const RESULTS_URL = "https://www.sportinglife.com/racing/results";
 const CHECK_FRESHNESS_MINUTES = 5;
 
+
+/*
+ * Standard UK/IRE each-way place terms by declared runners
+ * (2026-09-30 - "placed" used to mean top 3 in any field, so 3rd of 5
+ * counted as a place when no bookmaker would pay it):
+ *   1-4 runners: win only, 5-7: 2 places, 8-15: 3,
+ *   16+: 4 in a handicap, otherwise 3.
+ * Mirrored in js/placeTerms.js (root pipeline) - keep the two in step.
+ */
+function placesForField(runners, raceTitle) {
+    if (!Number.isFinite(runners) || runners <= 0) return 3;
+    if (runners <= 4) return 1;
+    if (runners <= 7) return 2;
+    if (runners <= 15) return 3;
+    return /handicap/i.test(String(raceTitle || "")) ? 4 : 3;
+}
+
 function getSlug(name) {
     return String(name).replace(/[^a-z0-9\s]/gi, "").replace(/\s+/g, "-").toLowerCase();
 }
@@ -328,6 +345,7 @@ module.exports = async (req, res) => {
                  * dashboardService.js, eliteSpotlight.js).
                  */
                 let ourTopPick = null;
+                let placesPaid = 3;
 
                 for (const meeting of Object.values(predictions)) {
 
@@ -349,6 +367,12 @@ module.exports = async (req, res) => {
 
                         ourTopPick =
                             activeRunners[0];
+
+                        placesPaid =
+                            placesForField(
+                                activeRunners.length,
+                                predRace.display_title || predRace.title
+                            );
 
                         break;
 
@@ -412,8 +436,9 @@ module.exports = async (req, res) => {
                     );
 
                 /*
-                 * Keep the existing top-three place definition:
-                 * positions 1, 2 and 3 count as a place.
+                 * "Placed" follows standard each-way place terms for
+                 * the declared field (2026-09-30, was always top 3):
+                 * see placesForField.
                  */
                 let outcome = "unplaced";
 
@@ -427,7 +452,7 @@ module.exports = async (req, res) => {
                 } else if (
                     placing &&
                     Number(placing.position) >= 1 &&
-                    Number(placing.position) <= 3
+                    Number(placing.position) <= placesPaid
                 ) {
 
                     outcome = "placed";
