@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T14:40:46.595Z",
+  "generatedAt": "2026-09-30T14:50:38.036Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Bellewstown",
-      "off": "15:50",
-      "status": "BET",
-      "horse": "OSTERODE",
-      "price": "4/6"
-    },
-    {
       "course": "Kempton",
       "off": "16:25",
       "status": "POSSIBLE",
@@ -33,7 +26,13 @@
       "revealAt": "17:20"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Bellewstown",
+      "off": "15:50",
+      "horse": "OSTERODE"
+    }
+  ],
   "recent": [
     {
       "date": "2026-09-30",
@@ -70,11 +69,11 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T14:40:46.407Z",
+    "updatedAt": "2026-09-30T14:50:37.948Z",
     "claude": {
-      "races": 12,
+      "races": 13,
       "won": 2,
-      "pct": 16.7
+      "pct": 15.4
     },
     "agreedWithOurPick": {
       "races": 7,
@@ -82,13 +81,13 @@
       "pct": 14.3
     },
     "disagreed": {
-      "races": 5,
+      "races": 6,
       "won": 1,
-      "pct": 20
+      "pct": 16.7
     },
     "ourPickWhenDisagreed": {
-      "races": 5,
-      "won": 1
+      "races": 6,
+      "won": 2
     }
   },
   "stats": {
