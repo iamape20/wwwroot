@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T10:20:39.902Z",
+  "generatedAt": "2026-09-30T10:30:40.833Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -57,54 +57,9 @@
     }
   ],
   "awaitingResult": [],
-  "recent": [
-    {
-      "date": "2026-09-29",
-      "course": "Bath",
-      "off": "16:35",
-      "horse": "DEVON ANGEL",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-09-29",
-      "course": "Cork",
-      "off": "16:25",
-      "horse": "GOLDEN RING",
-      "phase": "PAPER",
-      "result": "void",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "abandoned"
-    },
-    {
-      "date": "2026-09-29",
-      "course": "Bath",
-      "off": "15:32",
-      "horse": "DIVIDE AND CONQUER",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
-    },
-    {
-      "date": "2026-09-29",
-      "course": "Ayr",
-      "off": "14:38",
-      "horse": "WHAT A GIRL WANTS",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
-    }
-  ],
+  "recent": [],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T10:20:39.763Z",
+    "updatedAt": "2026-09-30T10:30:40.723Z",
     "claude": {
       "races": 0,
       "won": 0,
@@ -127,10 +82,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 1,
+      "bets": 0,
       "won": 0,
-      "pl": -1,
-      "roi": -100
+      "pl": 0,
+      "roi": null
     },
     "live": {
       "bets": 0,
@@ -139,7 +94,7 @@
       "roi": null
     },
     "verdict": null,
-    "trackerStarted": "2026-09-29T09:12:59.034Z",
+    "trackerStarted": "2026-09-30T10:26:29.841Z",
     "backtest": "Backtest (Aug-Sep 2026): 180 bets, 55.6% winners, +2.0% at Betfair SP after 5% commission"
   }
 }
