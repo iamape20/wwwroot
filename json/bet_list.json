@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T13:40:39.089Z",
+  "generatedAt": "2026-09-30T13:50:42.271Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,47 +20,59 @@
       "revealAt": "16:10"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
-      "course": "Sligo",
-      "off": "14:20",
-      "horse": "SIXANDAHALF"
-    },
-    {
+      "date": "2026-09-30",
       "course": "Catterick",
       "off": "14:32",
-      "horse": "GOLD KEY"
+      "horse": "GOLD KEY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-09-30",
+      "course": "Sligo",
+      "off": "14:20",
+      "horse": "SIXANDAHALF",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
-  "recent": [],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T13:40:39.010Z",
+    "updatedAt": "2026-09-30T13:50:42.190Z",
     "claude": {
-      "races": 4,
+      "races": 7,
       "won": 1,
-      "pct": 25
+      "pct": 14.3
     },
     "agreedWithOurPick": {
-      "races": 3,
+      "races": 4,
       "won": 0,
       "pct": 0
     },
     "disagreed": {
-      "races": 0,
+      "races": 2,
       "won": 0,
-      "pct": null
+      "pct": 0
     },
     "ourPickWhenDisagreed": {
-      "races": 0,
-      "won": 0
+      "races": 2,
+      "won": 1
     }
   },
   "stats": {
     "paper": {
-      "bets": 0,
+      "bets": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "live": {
       "bets": 0,
