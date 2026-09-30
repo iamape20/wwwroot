@@ -1,18 +1,19 @@
 {
   "date": "2026-09-30",
-  "strong": [],
-  "moderate": [
+  "strong": [
     {
       "horse": "SOLNESS",
       "course": "Bellewstown",
       "time": "14:50",
       "rating": "62.2",
-      "margin": "15.1",
-      "marginValue": 15.100000000000001,
+      "margin": "16.6",
+      "marginValue": 16.6,
       "confidence": 61,
       "meetingId": "121682",
       "raceIndex": 6
-    },
+    }
+  ],
+  "moderate": [
     {
       "horse": "REAL BULLET",
       "course": "Kempton",
@@ -25,6 +26,19 @@
       "raceIndex": 0
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "SOLNESS",
+      "course": "Bellewstown",
+      "time": "14:50",
+      "rating": "62.2",
+      "margin": "16.6",
+      "marginValue": 16.6,
+      "confidence": 61,
+      "meetingId": "121682",
+      "raceIndex": 6,
+      "tier": "Strong"
+    }
+  ],
+  "pickMode": "single"
 }
