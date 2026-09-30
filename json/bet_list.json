@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T14:20:36.217Z",
+  "generatedAt": "2026-09-30T14:30:34.532Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
   "rules": [
@@ -14,10 +14,22 @@
   "morningMissing": false,
   "today": [
     {
+      "course": "Bellewstown",
+      "off": "15:50",
+      "status": "POSSIBLE",
+      "revealAt": "15:35"
+    },
+    {
       "course": "Kempton",
       "off": "16:25",
       "status": "POSSIBLE",
       "revealAt": "16:10"
+    },
+    {
+      "course": "Bellewstown",
+      "off": "17:35",
+      "status": "POSSIBLE",
+      "revealAt": "17:20"
     }
   ],
   "awaitingResult": [],
@@ -46,11 +58,11 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-09-30T14:20:36.107Z",
+    "updatedAt": "2026-09-30T14:30:34.450Z",
     "claude": {
-      "races": 10,
+      "races": 11,
       "won": 2,
-      "pct": 20
+      "pct": 18.2
     },
     "agreedWithOurPick": {
       "races": 6,
@@ -58,12 +70,12 @@
       "pct": 0
     },
     "disagreed": {
-      "races": 2,
+      "races": 3,
       "won": 0,
       "pct": 0
     },
     "ourPickWhenDisagreed": {
-      "races": 2,
+      "races": 3,
       "won": 1
     }
   },
