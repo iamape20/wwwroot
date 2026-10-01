@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T12:40:54.611Z",
+  "generatedAt": "2026-10-01T12:50:54.584Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 3/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 4/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -16,8 +16,9 @@
     {
       "course": "Salisbury",
       "off": "14:04",
-      "status": "POSSIBLE",
-      "revealAt": "13:49"
+      "status": "BET",
+      "horse": "GOLD ARMY",
+      "price": "2/1"
     },
     {
       "course": "Clonmel",
@@ -40,17 +41,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Salisbury",
-      "off": "13:30",
-      "horse": "YAMANA"
-    },
-    {
       "course": "Bellewstown",
       "off": "13:35",
       "horse": "WHITE SAND BEACH"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-01",
+      "course": "Salisbury",
+      "off": "13:30",
+      "horse": "YAMANA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-09-30",
       "course": "Bellewstown",
@@ -119,7 +126,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T12:40:54.529Z",
+    "updatedAt": "2026-10-01T12:50:54.514Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -142,9 +149,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 3,
+      "bets": 4,
       "won": 0,
-      "pl": -3,
+      "pl": -4,
       "roi": -100
     },
     "live": {
