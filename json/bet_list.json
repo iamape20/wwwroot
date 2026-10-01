@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T13:10:49.193Z",
+  "generatedAt": "2026-10-01T13:20:45.128Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 4/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -33,14 +33,19 @@
       "revealAt": "17:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-01",
       "course": "Salisbury",
       "off": "14:04",
-      "horse": "GOLD ARMY"
-    }
-  ],
-  "recent": [
+      "horse": "GOLD ARMY",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-01",
       "course": "Bellewstown",
@@ -131,7 +136,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T13:10:49.119Z",
+    "updatedAt": "2026-10-01T13:20:45.050Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -154,9 +159,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 4,
+      "bets": 5,
       "won": 0,
-      "pl": -4,
+      "pl": -5,
       "roi": -100
     },
     "live": {
