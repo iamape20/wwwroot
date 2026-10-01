@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T17:00:18.869Z",
+  "generatedAt": "2026-10-01T17:10:17.617Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 6/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 7/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-01",
       "course": "Newcastle",
       "off": "18:00",
-      "horse": "BLAKE'S MONARCH"
-    }
-  ],
-  "recent": [
+      "horse": "BLAKE'S MONARCH",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-01",
       "course": "Nottingham",
@@ -144,7 +149,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T17:00:18.791Z",
+    "updatedAt": "2026-10-01T17:10:17.544Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -167,9 +172,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 6,
+      "bets": 7,
       "won": 0,
-      "pl": -6,
+      "pl": -7,
       "roi": -100
     },
     "live": {
