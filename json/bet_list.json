@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T14:00:44.304Z",
+  "generatedAt": "2026-10-01T14:10:42.800Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 6/120 bets settled before the verdict.",
   "rules": [
@@ -14,20 +14,19 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Nottingham",
-      "off": "15:08",
-      "status": "BET",
-      "horse": "THI QAR",
-      "price": "10/11"
-    },
-    {
       "course": "Newcastle",
       "off": "18:00",
       "status": "POSSIBLE",
       "revealAt": "17:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Nottingham",
+      "off": "15:08",
+      "horse": "THI QAR"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-01",
@@ -141,7 +140,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T14:00:44.220Z",
+    "updatedAt": "2026-10-01T14:10:42.690Z",
     "claude": {
       "races": 38,
       "won": 7,
