@@ -1,44 +1,47 @@
 {
-  "date": "2026-09-29",
-  "strong": [],
+  "date": "2026-09-30",
+  "strong": [
+    {
+      "horse": "SOLNESS",
+      "course": "Bellewstown",
+      "time": "16:35",
+      "rating": "62.2",
+      "margin": "16.6",
+      "marginValue": 16.6,
+      "confidence": 61,
+      "meetingId": "121682",
+      "raceIndex": 6,
+      "outcome": "won"
+    }
+  ],
   "moderate": [
     {
-      "horse": "WHAT A GIRL WANTS",
-      "course": "Ayr",
-      "time": "13:38",
-      "rating": "61.4",
-      "margin": "8.0",
-      "marginValue": 8,
-      "confidence": 77,
-      "meetingId": "121658",
-      "raceIndex": 1,
-      "outcome": "won"
-    },
-    {
-      "horse": "GOLDEN RING",
-      "course": "Cork",
+      "horse": "REAL BULLET",
+      "course": "Kempton",
       "time": "15:25",
-      "rating": "59.8",
-      "margin": "8.8",
-      "marginValue": 8.799999999999997,
-      "confidence": 58,
-      "meetingId": "121687",
-      "raceIndex": 5,
-      "outcome": "unknown"
-    },
-    {
-      "horse": "DEVON ANGEL",
-      "course": "Bath",
-      "time": "15:35",
-      "rating": "63.8",
-      "margin": "10.3",
-      "marginValue": 10.299999999999997,
-      "confidence": 69,
-      "meetingId": "121660",
-      "raceIndex": 5,
+      "rating": "78.2",
+      "margin": "15.0",
+      "marginValue": 15,
+      "confidence": 61,
+      "meetingId": "121683",
+      "raceIndex": 0,
       "outcome": "lost"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "SOLNESS",
+      "course": "Bellewstown",
+      "time": "16:35",
+      "rating": "62.2",
+      "margin": "16.6",
+      "marginValue": 16.6,
+      "confidence": 61,
+      "meetingId": "121682",
+      "raceIndex": 6,
+      "tier": "Strong",
+      "outcome": "won"
+    }
+  ],
+  "pickMode": "single"
 }
