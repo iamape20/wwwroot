@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T13:01:08.966Z",
+  "generatedAt": "2026-10-01T13:10:49.193Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 4/120 bets settled before the verdict.",
   "rules": [
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Salisbury",
-      "off": "14:04",
-      "status": "BET",
-      "horse": "GOLD ARMY",
-      "price": "2/1"
-    },
-    {
       "course": "Clonmel",
       "off": "14:24",
-      "status": "POSSIBLE",
-      "revealAt": "14:09"
+      "status": "BET",
+      "horse": "ROCKY'S HOWYA",
+      "price": "2/1"
     },
     {
       "course": "Nottingham",
@@ -39,7 +33,13 @@
       "revealAt": "17:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Salisbury",
+      "off": "14:04",
+      "horse": "GOLD ARMY"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-01",
@@ -131,7 +131,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T13:01:08.831Z",
+    "updatedAt": "2026-10-01T13:10:49.119Z",
     "claude": {
       "races": 38,
       "won": 7,
