@@ -27,6 +27,48 @@ function getSlug(name) {
     return String(name).replace(/[^a-z0-9\s]/gi, "").replace(/\s+/g, "-").toLowerCase();
 }
 
+// Live bookmaker prices (2026-10-02). The fast card's betting.current_odds
+// is only Sporting Life's morning betting FORECAST - it never moves during
+// the day (historical_odds is always empty), so every "current" price,
+// market override and bet-list favourite was really the forecast: across
+// 1,194 races since 1 Sep the forecast favourite was the real SP
+// favourite only 56% of the time (real SP fav won 35.1%, forecast fav
+// 27.7%). Real prices are on the race's own racecard page as
+// rides[].bookmakerOdds. Consensus = median across the listed bookmakers,
+// kept as one of their real fractional prices.
+function consensusPrice(bookmakerOdds) {
+    const quotes = (bookmakerOdds || [])
+        .filter(b => b && b.fractionalOdds && Number.isFinite(Number(b.decimalOdds)))
+        .sort((a, b) => Number(a.decimalOdds) - Number(b.decimalOdds));
+    if (!quotes.length) return null;
+    return quotes[Math.floor((quotes.length - 1) / 2)].fractionalOdds;
+}
+
+async function fetchLiveOdds(date, courseName, raceSummary) {
+    const raceId = raceSummary?.race_summary_reference?.id;
+    if (!raceId) return null;
+    const url = `https://www.sportinglife.com/racing/racecards/${date}/${getSlug(courseName)}/racecard/${raceId}/${getSlug(raceSummary.name || "race")}`;
+    try {
+        const response = await axios.get(url, {
+            timeout: 6000,
+            headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }
+        });
+        const $ = cheerio.load(response.data);
+        const script = $("#__NEXT_DATA__");
+        if (!script.length) return null;
+        const rides = JSON.parse(script.html())?.props?.pageProps?.race?.rides || [];
+        const odds = {};
+        for (const ride of rides) {
+            const name = ride.horse?.name;
+            const price = consensusPrice(ride.bookmakerOdds);
+            if (name && price) odds[name.toUpperCase()] = price;
+        }
+        return Object.keys(odds).length ? odds : null;
+    } catch {
+        return null;
+    }
+}
+
 async function fetchRaceData(meetingId, date, courseName, raceIndex) {
 
     const url = `https://www.sportinglife.com/racing/fast-cards/${meetingId}/${date}/${getSlug(courseName)}/`;
@@ -54,6 +96,19 @@ async function fetchRaceData(meetingId, date, courseName, raceIndex) {
         if (name && currentOdds) odds[name.toUpperCase()] = currentOdds;
     }
 
+    // Live prices over the forecast wherever a bookmaker has priced the
+    // horse; forecast stays as the fallback (early morning, or the race
+    // page failing).
+    const live = await fetchLiveOdds(date, courseName, race.race_summary);
+    let liveCount = 0;
+    if (live) {
+        for (const name of Object.keys(odds)) {
+            // Declared runners only - the racecard's rides can still list
+            // a withdrawn horse.
+            if (live[name]) { odds[name] = live[name]; liveCount++; }
+        }
+    }
+
     // Withdrawn horses live in their own separate array, not mixed
     // into race.runners with a different status - confirmed directly
     // from real Sporting Life data (Roscommon, 2026-08-04).
@@ -62,7 +117,7 @@ async function fetchRaceData(meetingId, date, courseName, raceIndex) {
         .filter(Boolean)
         .map(name => name.toUpperCase());
 
-    return { odds, nonRunners };
+    return { odds, nonRunners, source: liveCount ? "bookmakers" : "forecast", liveCount };
 
 }
 
@@ -93,7 +148,7 @@ module.exports = async (req, res) => {
         }
 
         const snapshots = existing?.snapshots || [];
-        snapshots.push({ time: now, odds: currentData.odds });
+        snapshots.push({ time: now, odds: currentData.odds, source: currentData.source });
 
         // Keep a reasonable cap so one race's history doesn't grow
         // unbounded across a very long day
@@ -108,6 +163,8 @@ module.exports = async (req, res) => {
     }
 
 };
+
+module.exports.fetchRaceData = fetchRaceData;
 
 module.exports.config = {
     maxDuration: 15
