@@ -248,7 +248,7 @@
                   "odds": "10/11",
                   "decimal_odds": 1.9090909090909092,
                   "favourite": true,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -405,9 +405,9 @@
               "declaredWeight": 153,
               "jockeyClaim": 0,
               "effectiveWeight": 153,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": null,
-              "weightAdvantage": 0,
+              "weightAdvantage": 0.5,
               "combined": null
             },
             "checklist_points": "7.25/13.5",
@@ -898,7 +898,7 @@
                   "odds": "2/1",
                   "decimal_odds": 3,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -1051,10 +1051,10 @@
               "declaredWeight": 154,
               "jockeyClaim": 0,
               "effectiveWeight": 154,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": 1.5,
-              "weightAdvantage": -1,
-              "combined": 0.5
+              "weightAdvantage": -0.5,
+              "combined": 1
             },
             "checklist_points": "9.4/18.5",
             "checklist_earned_points": 9.4,
@@ -1439,7 +1439,7 @@
                   "odds": "8/1",
                   "decimal_odds": 9,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -1592,10 +1592,10 @@
               "declaredWeight": 147,
               "jockeyClaim": 7,
               "effectiveWeight": 140,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": -1.5,
-              "weightAdvantage": 13,
-              "combined": 11.5
+              "weightAdvantage": 13.5,
+              "combined": 12
             },
             "checklist_points": "5.45/16.5",
             "checklist_earned_points": 5.45,
@@ -1863,7 +1863,7 @@
                   "odds": "14/1",
                   "decimal_odds": 15,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -2020,9 +2020,9 @@
               "declaredWeight": 154,
               "jockeyClaim": 0,
               "effectiveWeight": 154,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": null,
-              "weightAdvantage": -1,
+              "weightAdvantage": -0.5,
               "combined": null
             },
             "checklist_points": "2.85/13.5",
@@ -2256,7 +2256,7 @@
                   "odds": "20/1",
                   "decimal_odds": 21,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -2409,9 +2409,9 @@
               "declaredWeight": 154,
               "jockeyClaim": 0,
               "effectiveWeight": 154,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": null,
-              "weightAdvantage": -1,
+              "weightAdvantage": -0.5,
               "combined": null
             },
             "checklist_points": "2.45/14.5",
@@ -2679,8 +2679,8 @@
               },
               "sample_size": 5
             },
-            "v2_score": 38.3,
-            "power_rating": 38.3,
+            "v2_score": 39.5,
+            "power_rating": 39.5,
             "confidence": 51,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -2695,9 +2695,9 @@
                 "weighted": 2.25
               },
               "market": {
-                "score": 62,
+                "score": 68,
                 "weight": 0.2,
-                "weighted": 12.4
+                "weighted": 13.6
               },
               "verdict": {
                 "score": 40,
@@ -2745,18 +2745,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 62,
+                "score": 68,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 7",
+                  "Market Rank 6",
                   "Odds 100/1"
                 ],
                 "metrics": {
-                  "rank": 7,
+                  "rank": 6,
                   "odds": "100/1",
                   "decimal_odds": 101,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -2910,9 +2910,9 @@
               "declaredWeight": 154,
               "jockeyClaim": 3,
               "effectiveWeight": 151,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": null,
-              "weightAdvantage": 2,
+              "weightAdvantage": 2.5,
               "combined": null
             },
             "checklist_points": "2/13.5",
@@ -2954,7 +2954,7 @@
             "race_time": "12:38",
             "race_class": "4",
             "race_id": 941314,
-            "non_runner": false,
+            "non_runner": true,
             "historical_runs": 0,
             "days_since_run": null,
             "last_run_date_used": null,
@@ -2993,8 +2993,8 @@
               },
               "sample_size": 0
             },
-            "v2_score": 35.1,
-            "power_rating": 35.1,
+            "v2_score": 29.5,
+            "power_rating": 29.5,
             "confidence": 42,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -3009,9 +3009,9 @@
                 "weighted": 0
               },
               "market": {
-                "score": 68,
+                "score": 40,
                 "weight": 0.2,
-                "weighted": 13.6
+                "weighted": 8
               },
               "verdict": {
                 "score": 40,
@@ -3056,18 +3056,15 @@
               },
               "market": {
                 "engine": "market",
-                "score": 68,
-                "confidence": "Medium",
+                "score": 40,
+                "confidence": "Low",
                 "reasons": [
-                  "Market Rank 6",
-                  "Odds 20/1"
+                  "No usable current odds"
                 ],
                 "metrics": {
-                  "rank": 6,
                   "odds": "20/1",
-                  "decimal_odds": 21,
-                  "favourite": false,
-                  "runners_with_prices": 7
+                  "rank": null,
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -3194,7 +3191,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Steady",
-                "evidence": "20/1 â†’ 20/1 (20 snapshots)"
+                "evidence": "20/1 â†’ 20/1 (19 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -3222,9 +3219,9 @@
               "declaredWeight": 147,
               "jockeyClaim": 0,
               "effectiveWeight": 147,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 153.5,
               "orAdvantage": null,
-              "weightAdvantage": 6,
+              "weightAdvantage": 6.5,
               "combined": null
             },
             "checklist_points": "1/8",
@@ -3236,7 +3233,7 @@
         ],
         "highestOR": 107,
         "medianOR": 105.5,
-        "medianEffectiveWeight": 153,
+        "medianEffectiveWeight": 153.5,
         "asOfDate": "2026-10-02T00:00:00.000Z",
         "draw_advantage": "None"
       },
@@ -17602,7 +17599,7 @@
                   "odds": "5/2",
                   "decimal_odds": 3.5,
                   "favourite": true,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -17750,14 +17747,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 94,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 160,
               "jockeyClaim": 0,
               "effectiveWeight": 160,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": -8,
-              "weightAdvantage": -2.5,
-              "combined": -10.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": -9,
+              "weightAdvantage": -2,
+              "combined": -11
             },
             "checklist_points": "10.25/19.5",
             "checklist_earned_points": 10.25,
@@ -19650,7 +19647,7 @@
                   "odds": "7/1",
                   "decimal_odds": 8,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -19800,14 +19797,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 111,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 168,
               "jockeyClaim": 7,
               "effectiveWeight": 161,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": 9,
-              "weightAdvantage": -3.5,
-              "combined": 5.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": 8,
+              "weightAdvantage": -3,
+              "combined": 5
             },
             "checklist_points": "13.35/17.5",
             "checklist_earned_points": 13.35,
@@ -20398,7 +20395,7 @@
                   "odds": "3/1",
                   "decimal_odds": 4,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -20551,14 +20548,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 108,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 169,
               "jockeyClaim": 0,
               "effectiveWeight": 169,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": 6,
-              "weightAdvantage": -11.5,
-              "combined": -5.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": 5,
+              "weightAdvantage": -11,
+              "combined": -6
             },
             "checklist_points": "8.8/17.25",
             "checklist_earned_points": 8.8,
@@ -20903,7 +20900,7 @@
                   "odds": "8/1",
                   "decimal_odds": 9,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -21054,13 +21051,13 @@
             },
             "rated_weight_advantage": {
               "runnerOR": null,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 158,
               "jockeyClaim": 0,
               "effectiveWeight": 158,
-              "medianEffectiveWeight": 157.5,
+              "medianEffectiveWeight": 158,
               "orAdvantage": null,
-              "weightAdvantage": -0.5,
+              "weightAdvantage": 0,
               "combined": null
             },
             "checklist_points": "7.15/15.5",
@@ -21068,1182 +21065,6 @@
             "stat_rating": 19.77,
             "meta_rating": 13.09,
             "trainer_trend": null
-          },
-          {
-            "name": "FINAL STRAW",
-            "id": 1187719,
-            "formsummary": "464116-",
-            "official_no": 7,
-            "draw": "",
-            "weight": "11-4",
-            "age": 6,
-            "foaled": "2020-02-26",
-            "sex": "g",
-            "trainer": "M Todhunter",
-            "trainer_id": 470,
-            "jockey": "Ryan Mania",
-            "jockey_id": 4820,
-            "jockey_claim": 0,
-            "current_class": "4",
-            "ride_status": "RUNNER",
-            "current_odds": "10/1",
-            "historical_odds": [],
-            "race_history_stats": [
-              {
-                "type": "BeatenFavourite",
-                "value": "2"
-              }
-            ],
-            "horse_lifetime_stats": [],
-            "medication": [],
-            "insights": [],
-            "past_results": [
-              {
-                "date": "2025-12-04",
-                "pos": 6,
-                "win": false,
-                "place": false,
-                "runners": 7,
-                "course": "Wincanton",
-                "course_code": "WIN",
-                "dist": "3m",
-                "distance_furlongs": 24,
-                "class": 5,
-                "weight": 168,
-                "weight_st": "12-0",
-                "going": "Good to Soft (Soft in places)",
-                "odds": "2/1",
-                "draw": null,
-                "official_rating": 102,
-                "bha": 102,
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "Mr Daniel Williams",
-                "jockey_id": 34642,
-                "ride_description": "Tracked leader, led 2nd, not fluent and headed 3 out, lost place and ridden before 2 out, soon held",
-                "beaten_lengths": "Neck",
-                "race_name": "Weatherbys Stallion Book 'National Hunt' Novices' Handicap Hurdle",
-                "position_in_market": 1,
-                "favourite": true,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3301,
-                "days_since_previous_run": 17
-              },
-              {
-                "date": "2025-11-17",
-                "pos": 1,
-                "win": true,
-                "place": true,
-                "runners": 6,
-                "course": "Plumpton",
-                "course_code": "PLU",
-                "dist": "3m",
-                "distance_furlongs": 24,
-                "class": 5,
-                "weight": 166,
-                "weight_st": "11-12",
-                "going": "Good (Good to Soft in places)",
-                "odds": "10/11",
-                "draw": null,
-                "official_rating": 95,
-                "bha": 95,
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "Mr Daniel Williams",
-                "jockey_id": 34642,
-                "ride_description": "Took keen hold early, prominent, led 2nd, not fluent 4 out, ridden before 2 out, stayed on well",
-                "beaten_lengths": "null",
-                "race_name": "BetGoodwin Novices' Limited Handicap Hurdle",
-                "position_in_market": 1,
-                "favourite": true,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 5281,
-                "days_since_previous_run": 7
-              },
-              {
-                "date": "2025-11-10",
-                "pos": 1,
-                "win": true,
-                "place": true,
-                "runners": 9,
-                "course": "Kempton",
-                "course_code": "KEM",
-                "dist": "3m",
-                "distance_furlongs": 24,
-                "class": 5,
-                "weight": 168,
-                "weight_st": "12-0",
-                "going": "Good",
-                "odds": "11/4",
-                "draw": null,
-                "official_rating": 95,
-                "bha": 95,
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "Freddie Gordon",
-                "jockey_id": 31297,
-                "ride_description": "Prominent, ridden and headway to lead 2 out, soon went clear, awkward last, kept on",
-                "beaten_lengths": "null",
-                "race_name": "JCB Hydradig Conditional Jockeys' Novices' Handicap Hurdle",
-                "position_in_market": 2,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3697,
-                "days_since_previous_run": 64
-              },
-              {
-                "date": "2025-09-07",
-                "pos": 4,
-                "win": false,
-                "place": false,
-                "runners": 8,
-                "course": "Fontwell",
-                "course_code": "FON",
-                "dist": "2m 3f 29y",
-                "distance_furlongs": 19.13,
-                "class": 4,
-                "weight": 158,
-                "weight_st": "11-4",
-                "going": "Good (Good To Soft In Places)",
-                "odds": "15/2",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "Mr Daniel Williams",
-                "jockey_id": 34642,
-                "ride_description": "Prominent, not fluent 6th, ridden and dropped to 4th before 2 out, kept on same pace run-in",
-                "beaten_lengths": "2l",
-                "race_name": "V2 Radio Maiden Hurdle (GBB Race)",
-                "position_in_market": 5,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 4193,
-                "days_since_previous_run": 44
-              },
-              {
-                "date": "2025-07-25",
-                "pos": 6,
-                "win": false,
-                "place": false,
-                "runners": 10,
-                "course": "Uttoxeter",
-                "course_code": "UTT",
-                "dist": "1m 7f 168y",
-                "distance_furlongs": 15.76,
-                "class": 4,
-                "weight": 156,
-                "weight_st": "11-2",
-                "going": "Good",
-                "odds": "3/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "James Bowen",
-                "jockey_id": 24546,
-                "ride_description": "Mid-division, mistake 3 out, jumped left 2 out, weakened before last",
-                "beaten_lengths": "8 1/2l",
-                "race_name": "Boots Opticians Uttoxeter Novices' Hurdle (GBB Race) (Div 2)",
-                "position_in_market": 2,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": true,
-                "mares": false,
-                "prize": 4066,
-                "days_since_previous_run": 46
-              },
-              {
-                "date": "2025-06-09",
-                "pos": 4,
-                "win": false,
-                "place": false,
-                "runners": 8,
-                "course": "Southwell",
-                "course_code": "SOU",
-                "dist": "2m 4f 88y",
-                "distance_furlongs": 20.4,
-                "class": 4,
-                "weight": 158,
-                "weight_st": "11-4",
-                "going": "Good",
-                "odds": "11/4",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "N J Henderson",
-                "trainer_id": 109,
-                "jockey": "James Bowen",
-                "jockey_id": 24546,
-                "ride_description": "Off the pace in last pair, struggling 3 out, hung left and plugged on into remote 4th run-in, never dangerous",
-                "beaten_lengths": "1 1/4 length",
-                "race_name": "HEB Group 'The Power Behind Everyday' Maiden Hurdle (GBB Race)",
-                "position_in_market": 1,
-                "favourite": true,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 4193,
-                "days_since_previous_run": null
-              }
-            ],
-            "is_unexposed": false,
-            "silk_url": "https://www.sportinglife.com/images/silks/20261002hex152307.png",
-            "headgear": [],
-            "race_course": "Hexham",
-            "race_going": "Good-good to firm in places",
-            "race_distance": "2m 4f 28y",
-            "race_time": "14:23",
-            "race_class": "4",
-            "race_id": 941317,
-            "non_runner": false,
-            "historical_runs": 6,
-            "days_since_run": 302,
-            "last_run_date_used": "2025-12-04",
-            "history": {
-              "averageOR": 97,
-              "wins": 2,
-              "places": 0,
-              "averageFinish": 3.7,
-              "daysSinceRun": 302
-            },
-            "form": {
-              "raw": "464116-",
-              "runs": 6,
-              "wins": 2,
-              "places": 0,
-              "strikeRate": 33,
-              "placeRate": 33,
-              "nonFinishers": 0,
-              "lastRun": 6,
-              "trend": "Stable",
-              "momentum": 63,
-              "consistency": 66,
-              "positions": [
-                6,
-                1,
-                1,
-                4,
-                6,
-                4
-              ]
-            },
-            "horse_profile": {
-              "running_style": "PROMINENT",
-              "running_style_confidence": 42,
-              "style_scores": {
-                "LEADER": 6,
-                "PROMINENT": 13,
-                "MIDFIELD": 3,
-                "HELD_UP": 9,
-                "UNKNOWN": 0
-              },
-              "style_distribution": {
-                "LEADER": 19,
-                "PROMINENT": 42,
-                "MIDFIELD": 10,
-                "HELD_UP": 29
-              },
-              "sample_size": 6
-            },
-            "v2_score": 53,
-            "power_rating": 53,
-            "confidence": 40,
-            "confidence_grade": "CAUTIOUS",
-            "rating_breakdown": {
-              "form": {
-                "score": 55,
-                "weight": 0.3,
-                "weighted": 16.5
-              },
-              "context": {
-                "score": 40,
-                "weight": 0.15,
-                "weighted": 6
-              },
-              "market": {
-                "score": 74,
-                "weight": 0.2,
-                "weighted": 14.8
-              },
-              "verdict": {
-                "score": 45,
-                "weight": 0.35,
-                "weighted": 15.75
-              }
-            },
-            "engine_details": {
-              "form": {
-                "engine": "form",
-                "score": 55,
-                "confidence": "High",
-                "reasons": [
-                  "Recent form: 464116-"
-                ],
-                "metrics": {
-                  "runs": 6,
-                  "wins": 2,
-                  "places": 0,
-                  "strikeRate": 33,
-                  "placeRate": 33,
-                  "trend": "Stable",
-                  "momentum": 63,
-                  "consistency": 66,
-                  "nonFinishers": 0
-                }
-              },
-              "context": {
-                "engine": "context",
-                "score": 40,
-                "confidence": "Low",
-                "reasons": [
-                  "Average OR 97",
-                  "2 wins",
-                  "Ran 302 days ago"
-                ],
-                "metrics": {
-                  "averageOR": 97,
-                  "wins": 2,
-                  "places": 0,
-                  "averageFinish": 3.7,
-                  "daysSinceRun": 302,
-                  "trainerFormPoints": 0,
-                  "jockeyOnDebutantPoints": 0,
-                  "jockeyWonOutsiderPoints": 0
-                }
-              },
-              "market": {
-                "engine": "market",
-                "score": 74,
-                "confidence": "Medium",
-                "reasons": [
-                  "Market Rank 5",
-                  "Odds 10/1"
-                ],
-                "metrics": {
-                  "rank": 5,
-                  "odds": "10/1",
-                  "decimal_odds": 11,
-                  "favourite": false,
-                  "runners_with_prices": 10
-                }
-              },
-              "verdict": {
-                "engine": "verdict",
-                "score": 45,
-                "confidence": "Low",
-                "reasons": [
-                  "Positive: gets the nod"
-                ],
-                "metrics": {
-                  "mentioned": false
-                }
-              }
-            },
-            "checklist_rating": 32.1,
-            "checklist_breakdown": {
-              "class": {
-                "points": 0,
-                "max": 3,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No qualifying class history recorded"
-              },
-              "classChange": {
-                "points": 0,
-                "max": 0.25,
-                "answer": "Up",
-                "evidence": "6th, 04/12/2025, Class 5 â†’ 4 today"
-              },
-              "tripChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "Down",
-                "evidence": "-3.9f vs last run (24.0f â†’ 20.1f)"
-              },
-              "recentForm": {
-                "points": 0,
-                "max": 3,
-                "answer": "Well beaten",
-                "evidence": "6th, 04/12/2025, finished 6th last time"
-              },
-              "speed": {
-                "points": 2,
-                "max": 2,
-                "answer": "Yes",
-                "evidence": "OR 102 vs highest in race 111 (92%)"
-              },
-              "classDropRatingEdge": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "OR 102 vs highest in race 111 - not the field's top rating"
-              },
-              "draw": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "fitness": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "302 days since last run (04/12/2025)"
-              },
-              "firstTimeAids": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockey": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockeyForm": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "2 of 4 rides placed in the last 14 days"
-              },
-              "trainer": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "1 of 3 runners placed in the last 14 days"
-              },
-              "weightChange": {
-                "points": 0.25,
-                "max": 0.25,
-                "answer": "Down",
-                "evidence": "6th, 04/12/2025, 10lb less than last time"
-              },
-              "trainerCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyTrainerCombo": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "25% with this jockey (12 runs) vs 6% overall for this trainer"
-              },
-              "jockeyOnDebutant": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Not a debutant - see jockey/jockeyForm instead"
-              },
-              "marketMove": {
-                "points": 0,
-                "max": 1,
-                "answer": "Steady",
-                "evidence": "10/1 â†’ 10/1 (20 snapshots)"
-              },
-              "winningMark": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "Currently rated 102, at or above best winning mark of 95"
-              },
-              "runningStyle": {
-                "points": 1,
-                "max": 1,
-                "answer": "Stays On",
-                "evidence": "4 stayed-on, 1 faded, of last 5 classifiable runs"
-              },
-              "beatenFavourite": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "6th, 04/12/2025, Beaten favourite (finished 6th)"
-              }
-            },
-            "rated_weight_advantage": {
-              "runnerOR": 102,
-              "medianOR": 102,
-              "declaredWeight": 158,
-              "jockeyClaim": 0,
-              "effectiveWeight": 158,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": 0,
-              "weightAdvantage": -0.5,
-              "combined": -0.5
-            },
-            "checklist_points": "6.25/19.5",
-            "checklist_earned_points": 6.25,
-            "stat_rating": 10.6,
-            "meta_rating": 9,
-            "trainer_trend": "flat"
-          },
-          {
-            "name": "DE DELI COUNTER",
-            "id": 1202791,
-            "formsummary": "U2531-6",
-            "official_no": 8,
-            "draw": "",
-            "weight": "11-2",
-            "age": 5,
-            "foaled": "2021-06-06",
-            "sex": "g",
-            "trainer": "M Walford",
-            "trainer_id": 398,
-            "jockey": "Jamie Hamilton",
-            "jockey_id": 1614,
-            "jockey_claim": 0,
-            "current_class": "4",
-            "ride_status": "RUNNER",
-            "current_odds": "10/1",
-            "historical_odds": [],
-            "race_history_stats": [
-              {
-                "type": "BeatenFavourite",
-                "value": "1"
-              }
-            ],
-            "horse_lifetime_stats": [],
-            "medication": [],
-            "insights": [],
-            "past_results": [
-              {
-                "date": "2026-05-08",
-                "pos": 6,
-                "win": false,
-                "place": false,
-                "runners": 7,
-                "course": "Market Rasen",
-                "course_code": "MAR",
-                "dist": "2m 4f 139y",
-                "distance_furlongs": 20.63,
-                "class": 5,
-                "weight": 168,
-                "weight_st": "12-0",
-                "going": "Good",
-                "odds": "9/4",
-                "draw": null,
-                "official_rating": 98,
-                "bha": 98,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Tom Midgley",
-                "jockey_id": 25160,
-                "ride_description": "Disputed lead, headed after 3rd, dropped to midfield and ridden before 6th, weakened before 2 out",
-                "beaten_lengths": "4 1/4l",
-                "race_name": "Fiver Friday Raceday Friday 12th June Conditional Jockeys' Handicap Hurdle",
-                "position_in_market": 1,
-                "favourite": true,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": false,
-                "mares": false,
-                "prize": 3565,
-                "days_since_previous_run": 33
-              },
-              {
-                "date": "2026-04-05",
-                "pos": 1,
-                "win": true,
-                "place": true,
-                "runners": 10,
-                "course": "Market Rasen",
-                "course_code": "MAR",
-                "dist": "2m 4f 139y",
-                "distance_furlongs": 20.63,
-                "class": 5,
-                "weight": 164,
-                "weight_st": "11-10",
-                "going": "Good (Good to Soft in places)",
-                "odds": "5/1",
-                "draw": null,
-                "official_rating": 93,
-                "bha": 93,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Jamie Hamilton",
-                "jockey_id": 1614,
-                "ride_description": "Made all, set very steady pace, asserted from 2 out, not fluent last, ridden and went clear run-in, readily",
-                "beaten_lengths": "null",
-                "race_name": "Mariner Packaging Sing When We're Fishing Novices' Limited Handicap Hurdle",
-                "position_in_market": 3,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3697,
-                "days_since_previous_run": 17
-              },
-              {
-                "date": "2026-03-19",
-                "pos": 3,
-                "win": false,
-                "place": true,
-                "runners": 11,
-                "course": "Sedgefield",
-                "course_code": "SED",
-                "dist": "2m 3f 188y",
-                "distance_furlongs": 19.85,
-                "class": 5,
-                "weight": 166,
-                "weight_st": "11-12",
-                "going": "Good (Good to Soft in places)",
-                "odds": "14/1",
-                "draw": null,
-                "official_rating": 93,
-                "bha": 93,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Mr Paddy Barlow",
-                "jockey_id": 28588,
-                "ride_description": "Prominent, led after 1st, headed 3 out, outpaced by leading pair before last, soon weakened",
-                "beaten_lengths": "1 length",
-                "race_name": "Paxtons No1 CaseIH Dealer In UK&Ireland Novices' Limited Handicap Hurdle",
-                "position_in_market": 5,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3248,
-                "days_since_previous_run": 34
-              },
-              {
-                "date": "2026-02-13",
-                "pos": 5,
-                "win": false,
-                "place": false,
-                "runners": 5,
-                "course": "Fakenham",
-                "course_code": "FAK",
-                "dist": "2m 7f 95y",
-                "distance_furlongs": 23.43,
-                "class": 5,
-                "weight": 163,
-                "weight_st": "11-9",
-                "going": "Soft",
-                "odds": "11/4",
-                "draw": null,
-                "official_rating": 87,
-                "bha": 87,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Harry Cobden",
-                "jockey_id": 711,
-                "ride_description": "Led, ridden and headed after 3 out, weakened after 2 out",
-                "beaten_lengths": "1 3/4 length",
-                "race_name": "Racing TV Novices' Limited Handicap Hurdle",
-                "position_in_market": 2,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3697,
-                "days_since_previous_run": 12
-              },
-              {
-                "date": "2026-02-01",
-                "pos": 2,
-                "win": false,
-                "place": true,
-                "runners": 9,
-                "course": "Market Rasen",
-                "course_code": "MAR",
-                "dist": "2m 4f 139y",
-                "distance_furlongs": 20.63,
-                "class": 5,
-                "weight": 160,
-                "weight_st": "11-6",
-                "going": "Good to Soft (Soft in places)",
-                "odds": "25/1",
-                "draw": null,
-                "official_rating": 87,
-                "bha": 87,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Dylan Johnston",
-                "jockey_id": 29330,
-                "ride_description": "Led, drew clear with one other before 2 out and soon headed narrowly, pushed along and battled on to lead again approaching last, kept on run-in, re-challenged over 110yds out, headed closing stages",
-                "beaten_lengths": "3/4 length",
-                "race_name": "Market Rasen Racecourse Caravan Site Conditional Jockeys' Novices' Handicap Hurdle",
-                "position_in_market": 8,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": true,
-                "mares": false,
-                "prize": 3961,
-                "days_since_previous_run": 17
-              },
-              {
-                "date": "2026-01-15",
-                "pos": null,
-                "win": false,
-                "place": false,
-                "runners": 16,
-                "course": "Newcastle",
-                "course_code": "NCL",
-                "dist": "2m 4f 62y",
-                "distance_furlongs": 20.28,
-                "class": 5,
-                "weight": 155,
-                "weight_st": "11-1",
-                "going": "Good to Soft (Good in places)",
-                "odds": "80/1",
-                "draw": null,
-                "official_rating": 87,
-                "bha": 87,
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Charlotte Jones",
-                "jockey_id": 1446,
-                "ride_description": "Tracked leaders, unseated rider 2nd",
-                "beaten_lengths": "null",
-                "race_name": "Mini Golf At High Gosforth Park Handicap Hurdle",
-                "position_in_market": 15,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": true,
-                "novice": false,
-                "mares": false,
-                "prize": 3248,
-                "days_since_previous_run": 69
-              },
-              {
-                "date": "2025-11-07",
-                "pos": null,
-                "win": false,
-                "place": false,
-                "runners": 11,
-                "course": "Hexham",
-                "course_code": "HEX",
-                "dist": "2m 4f 28y",
-                "distance_furlongs": 20.13,
-                "class": 4,
-                "weight": 157,
-                "weight_st": "11-3",
-                "going": "Good to Soft (Soft in places)",
-                "odds": "300/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Tom Midgley",
-                "jockey_id": 25160,
-                "ride_description": "In rear, ridden and behind 7th, tailed off before 2 out, soon pulled up",
-                "beaten_lengths": "null",
-                "race_name": "Unibet Money Back Races Every Day Maiden Hurdle (GBB Race)",
-                "position_in_market": 11,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 4901,
-                "days_since_previous_run": 8
-              },
-              {
-                "date": "2025-10-30",
-                "pos": 6,
-                "win": false,
-                "place": false,
-                "runners": 9,
-                "course": "Newcastle",
-                "course_code": "NCL",
-                "dist": "2m",
-                "distance_furlongs": 16,
-                "class": 4,
-                "weight": 157,
-                "weight_st": "11-3",
-                "going": "Good (Good to Firm in places)",
-                "odds": "66/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Jamie Hamilton",
-                "jockey_id": 1614,
-                "ride_description": "Midfield, ridden and lost ground after 5th, soon outpaced, never seriously involved",
-                "beaten_lengths": "4 1/4l",
-                "race_name": "Download The At The Races App Maiden Hurdle (GBB Race)",
-                "position_in_market": 8,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 4193,
-                "days_since_previous_run": 15
-              },
-              {
-                "date": "2025-10-15",
-                "pos": 4,
-                "win": false,
-                "place": false,
-                "runners": 4,
-                "course": "Wetherby",
-                "course_code": "WET",
-                "dist": "2m 3f 154y",
-                "distance_furlongs": 19.7,
-                "class": 4,
-                "weight": 152,
-                "weight_st": "10-12",
-                "going": "Good",
-                "odds": "80/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "M Walford",
-                "trainer_id": 398,
-                "jockey": "Jamie Hamilton",
-                "jockey_id": 1614,
-                "ride_description": "Always behind, soon off the pace with novicey errors, ridden and lost touch before 3 out",
-                "beaten_lengths": "53l",
-                "race_name": "Boyle Sports, Home Of The Early Payout Novices' Hurdle (GBB Race)",
-                "position_in_market": 4,
-                "favourite": false,
-                "race_type": "Hurdle",
-                "handicap": false,
-                "novice": true,
-                "mares": false,
-                "prize": 3812,
-                "days_since_previous_run": null
-              }
-            ],
-            "is_unexposed": false,
-            "silk_url": "https://www.sportinglife.com/images/silks/20261002hex152308.png",
-            "headgear": [],
-            "race_course": "Hexham",
-            "race_going": "Good-good to firm in places",
-            "race_distance": "2m 4f 28y",
-            "race_time": "14:23",
-            "race_class": "4",
-            "race_id": 941317,
-            "non_runner": false,
-            "historical_runs": 9,
-            "days_since_run": 147,
-            "last_run_date_used": "2026-05-08",
-            "history": {
-              "averageOR": 91,
-              "wins": 1,
-              "places": 2,
-              "averageFinish": 3.9,
-              "daysSinceRun": 147
-            },
-            "form": {
-              "raw": "U2531-6",
-              "runs": 6,
-              "wins": 1,
-              "places": 2,
-              "strikeRate": 17,
-              "placeRate": 50,
-              "nonFinishers": 1,
-              "lastRun": 6,
-              "trend": "Stable",
-              "momentum": 61,
-              "consistency": 72,
-              "positions": [
-                6,
-                1,
-                3,
-                5,
-                2
-              ]
-            },
-            "horse_profile": {
-              "running_style": "LEADER",
-              "running_style_confidence": 36,
-              "style_scores": {
-                "LEADER": 14,
-                "PROMINENT": 7,
-                "MIDFIELD": 6,
-                "HELD_UP": 12,
-                "UNKNOWN": 0
-              },
-              "style_distribution": {
-                "LEADER": 36,
-                "PROMINENT": 18,
-                "MIDFIELD": 15,
-                "HELD_UP": 31
-              },
-              "sample_size": 9
-            },
-            "v2_score": 52.5,
-            "power_rating": 52.5,
-            "confidence": 40,
-            "confidence_grade": "CAUTIOUS",
-            "rating_breakdown": {
-              "form": {
-                "score": 55,
-                "weight": 0.3,
-                "weighted": 16.5
-              },
-              "context": {
-                "score": 44,
-                "weight": 0.15,
-                "weighted": 6.6
-              },
-              "market": {
-                "score": 68,
-                "weight": 0.2,
-                "weighted": 13.6
-              },
-              "verdict": {
-                "score": 45,
-                "weight": 0.35,
-                "weighted": 15.75
-              }
-            },
-            "engine_details": {
-              "form": {
-                "engine": "form",
-                "score": 55,
-                "confidence": "Medium",
-                "reasons": [
-                  "Recent form: U2531-6"
-                ],
-                "metrics": {
-                  "runs": 6,
-                  "wins": 1,
-                  "places": 2,
-                  "strikeRate": 17,
-                  "placeRate": 50,
-                  "trend": "Stable",
-                  "momentum": 61,
-                  "consistency": 72,
-                  "nonFinishers": 1
-                }
-              },
-              "context": {
-                "engine": "context",
-                "score": 44,
-                "confidence": "Low",
-                "reasons": [
-                  "Average OR 91",
-                  "1 win",
-                  "2 places",
-                  "Ran 147 days ago",
-                  "Booked jockey previously won on this horse (market rank 6)"
-                ],
-                "metrics": {
-                  "averageOR": 91,
-                  "wins": 1,
-                  "places": 2,
-                  "averageFinish": 3.9,
-                  "daysSinceRun": 147,
-                  "trainerFormPoints": 0,
-                  "jockeyOnDebutantPoints": 0,
-                  "jockeyWonOutsiderPoints": 5
-                }
-              },
-              "market": {
-                "engine": "market",
-                "score": 68,
-                "confidence": "Medium",
-                "reasons": [
-                  "Market Rank 6",
-                  "Odds 10/1"
-                ],
-                "metrics": {
-                  "rank": 6,
-                  "odds": "10/1",
-                  "decimal_odds": 11,
-                  "favourite": false,
-                  "runners_with_prices": 10
-                }
-              },
-              "verdict": {
-                "engine": "verdict",
-                "score": 45,
-                "confidence": "Low",
-                "reasons": [
-                  "Positive: gets the nod"
-                ],
-                "metrics": {
-                  "mentioned": false
-                }
-              }
-            },
-            "checklist_rating": 26.9,
-            "checklist_breakdown": {
-              "class": {
-                "points": 0,
-                "max": 3,
-                "answer": "Neither",
-                "evidence": null
-              },
-              "classChange": {
-                "points": 0,
-                "max": 0.25,
-                "answer": "Up",
-                "evidence": "6th, 08/05/2026, Class 5 â†’ 4 today"
-              },
-              "tripChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "Same",
-                "evidence": "Same trip as last run (20.1f)"
-              },
-              "recentForm": {
-                "points": 0,
-                "max": 3,
-                "answer": "Well beaten",
-                "evidence": "6th, 08/05/2026, finished 6th last time"
-              },
-              "speed": {
-                "points": 2,
-                "max": 2,
-                "answer": "Yes",
-                "evidence": "OR 98 vs highest in race 111 (88%)"
-              },
-              "classDropRatingEdge": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "OR 98 vs highest in race 111 - not the field's top rating"
-              },
-              "draw": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "fitness": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "147 days since last run (08/05/2026)"
-              },
-              "firstTimeAids": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockey": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "1st, 05/04/2026, Jamie Hamilton"
-              },
-              "jockeyForm": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "0 of 3 rides placed in the last 14 days"
-              },
-              "trainer": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "1 of 8 runners placed in the last 14 days"
-              },
-              "weightChange": {
-                "points": 0.25,
-                "max": 0.25,
-                "answer": "Down",
-                "evidence": "6th, 08/05/2026, 12lb less than last time"
-              },
-              "trainerCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyCourse": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "0% at this course (11 runs) vs 6% overall"
-              },
-              "jockeyTrainerCombo": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs recorded for this trainer-jockey pairing"
-              },
-              "jockeyOnDebutant": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Not a debutant - see jockey/jockeyForm instead"
-              },
-              "marketMove": {
-                "points": 0,
-                "max": 1,
-                "answer": "Steady",
-                "evidence": "10/1 â†’ 10/1 (20 snapshots)"
-              },
-              "winningMark": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "Currently rated 98, at or above best winning mark of 93"
-              },
-              "runningStyle": {
-                "points": 0,
-                "max": 1,
-                "answer": "Mixed",
-                "evidence": "1 stayed-on, 1 faded, of last 2 classifiable runs"
-              },
-              "beatenFavourite": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "6th, 08/05/2026, Beaten favourite (finished 6th)"
-              }
-            },
-            "rated_weight_advantage": {
-              "runnerOR": 98,
-              "medianOR": 102,
-              "declaredWeight": 156,
-              "jockeyClaim": 0,
-              "effectiveWeight": 156,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": -4,
-              "weightAdvantage": 1.5,
-              "combined": -2.5
-            },
-            "checklist_points": "5.25/19.5",
-            "checklist_earned_points": 5.25,
-            "stat_rating": 12.34,
-            "meta_rating": 7.09,
-            "trainer_trend": "cold"
           },
           {
             "name": "LES'S LEGACY",
@@ -23943,8 +22764,8 @@
               },
               "sample_size": 47
             },
-            "v2_score": 52.3,
-            "power_rating": 52.3,
+            "v2_score": 53.5,
+            "power_rating": 53.5,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -23959,9 +22780,9 @@
                 "weighted": 10.5
               },
               "market": {
-                "score": 56,
+                "score": 62,
                 "weight": 0.2,
-                "weighted": 11.2
+                "weighted": 12.4
               },
               "verdict": {
                 "score": 65,
@@ -23998,7 +22819,7 @@
                   "5 wins",
                   "9 places",
                   "Ran 92 days ago",
-                  "Booked jockey previously won on this horse (market rank 8)"
+                  "Booked jockey previously won on this horse (market rank 7)"
                 ],
                 "metrics": {
                   "averageOR": 100,
@@ -24013,18 +22834,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 56,
+                "score": 62,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 8",
+                  "Market Rank 7",
                   "Odds 14/1"
                 ],
                 "metrics": {
-                  "rank": 8,
+                  "rank": 7,
                   "odds": "14/1",
                   "decimal_odds": 15,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -24173,20 +22994,557 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 95,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 150,
               "jockeyClaim": 0,
               "effectiveWeight": 150,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": -7,
-              "weightAdvantage": 7.5,
-              "combined": 0.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": -8,
+              "weightAdvantage": 8,
+              "combined": 0
             },
             "checklist_points": "4.85/19.5",
             "checklist_earned_points": 4.85,
             "stat_rating": 5.26,
-            "meta_rating": 4.13,
+            "meta_rating": 4.76,
             "trainer_trend": "hot"
+          },
+          {
+            "name": "FINAL STRAW",
+            "id": 1187719,
+            "formsummary": "464116-",
+            "official_no": 7,
+            "draw": "",
+            "weight": "11-4",
+            "age": 6,
+            "foaled": "2020-02-26",
+            "sex": "g",
+            "trainer": "M Todhunter",
+            "trainer_id": 470,
+            "jockey": "Ryan Mania",
+            "jockey_id": 4820,
+            "jockey_claim": 0,
+            "current_class": "4",
+            "ride_status": "RUNNER",
+            "current_odds": "10/1",
+            "historical_odds": [],
+            "race_history_stats": [
+              {
+                "type": "BeatenFavourite",
+                "value": "2"
+              }
+            ],
+            "horse_lifetime_stats": [],
+            "medication": [],
+            "insights": [],
+            "past_results": [
+              {
+                "date": "2025-12-04",
+                "pos": 6,
+                "win": false,
+                "place": false,
+                "runners": 7,
+                "course": "Wincanton",
+                "course_code": "WIN",
+                "dist": "3m",
+                "distance_furlongs": 24,
+                "class": 5,
+                "weight": 168,
+                "weight_st": "12-0",
+                "going": "Good to Soft (Soft in places)",
+                "odds": "2/1",
+                "draw": null,
+                "official_rating": 102,
+                "bha": 102,
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "Mr Daniel Williams",
+                "jockey_id": 34642,
+                "ride_description": "Tracked leader, led 2nd, not fluent and headed 3 out, lost place and ridden before 2 out, soon held",
+                "beaten_lengths": "Neck",
+                "race_name": "Weatherbys Stallion Book 'National Hunt' Novices' Handicap Hurdle",
+                "position_in_market": 1,
+                "favourite": true,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3301,
+                "days_since_previous_run": 17
+              },
+              {
+                "date": "2025-11-17",
+                "pos": 1,
+                "win": true,
+                "place": true,
+                "runners": 6,
+                "course": "Plumpton",
+                "course_code": "PLU",
+                "dist": "3m",
+                "distance_furlongs": 24,
+                "class": 5,
+                "weight": 166,
+                "weight_st": "11-12",
+                "going": "Good (Good to Soft in places)",
+                "odds": "10/11",
+                "draw": null,
+                "official_rating": 95,
+                "bha": 95,
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "Mr Daniel Williams",
+                "jockey_id": 34642,
+                "ride_description": "Took keen hold early, prominent, led 2nd, not fluent 4 out, ridden before 2 out, stayed on well",
+                "beaten_lengths": "null",
+                "race_name": "BetGoodwin Novices' Limited Handicap Hurdle",
+                "position_in_market": 1,
+                "favourite": true,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 5281,
+                "days_since_previous_run": 7
+              },
+              {
+                "date": "2025-11-10",
+                "pos": 1,
+                "win": true,
+                "place": true,
+                "runners": 9,
+                "course": "Kempton",
+                "course_code": "KEM",
+                "dist": "3m",
+                "distance_furlongs": 24,
+                "class": 5,
+                "weight": 168,
+                "weight_st": "12-0",
+                "going": "Good",
+                "odds": "11/4",
+                "draw": null,
+                "official_rating": 95,
+                "bha": 95,
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "Freddie Gordon",
+                "jockey_id": 31297,
+                "ride_description": "Prominent, ridden and headway to lead 2 out, soon went clear, awkward last, kept on",
+                "beaten_lengths": "null",
+                "race_name": "JCB Hydradig Conditional Jockeys' Novices' Handicap Hurdle",
+                "position_in_market": 2,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3697,
+                "days_since_previous_run": 64
+              },
+              {
+                "date": "2025-09-07",
+                "pos": 4,
+                "win": false,
+                "place": false,
+                "runners": 8,
+                "course": "Fontwell",
+                "course_code": "FON",
+                "dist": "2m 3f 29y",
+                "distance_furlongs": 19.13,
+                "class": 4,
+                "weight": 158,
+                "weight_st": "11-4",
+                "going": "Good (Good To Soft In Places)",
+                "odds": "15/2",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "Mr Daniel Williams",
+                "jockey_id": 34642,
+                "ride_description": "Prominent, not fluent 6th, ridden and dropped to 4th before 2 out, kept on same pace run-in",
+                "beaten_lengths": "2l",
+                "race_name": "V2 Radio Maiden Hurdle (GBB Race)",
+                "position_in_market": 5,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 4193,
+                "days_since_previous_run": 44
+              },
+              {
+                "date": "2025-07-25",
+                "pos": 6,
+                "win": false,
+                "place": false,
+                "runners": 10,
+                "course": "Uttoxeter",
+                "course_code": "UTT",
+                "dist": "1m 7f 168y",
+                "distance_furlongs": 15.76,
+                "class": 4,
+                "weight": 156,
+                "weight_st": "11-2",
+                "going": "Good",
+                "odds": "3/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "James Bowen",
+                "jockey_id": 24546,
+                "ride_description": "Mid-division, mistake 3 out, jumped left 2 out, weakened before last",
+                "beaten_lengths": "8 1/2l",
+                "race_name": "Boots Opticians Uttoxeter Novices' Hurdle (GBB Race) (Div 2)",
+                "position_in_market": 2,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": true,
+                "mares": false,
+                "prize": 4066,
+                "days_since_previous_run": 46
+              },
+              {
+                "date": "2025-06-09",
+                "pos": 4,
+                "win": false,
+                "place": false,
+                "runners": 8,
+                "course": "Southwell",
+                "course_code": "SOU",
+                "dist": "2m 4f 88y",
+                "distance_furlongs": 20.4,
+                "class": 4,
+                "weight": 158,
+                "weight_st": "11-4",
+                "going": "Good",
+                "odds": "11/4",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "N J Henderson",
+                "trainer_id": 109,
+                "jockey": "James Bowen",
+                "jockey_id": 24546,
+                "ride_description": "Off the pace in last pair, struggling 3 out, hung left and plugged on into remote 4th run-in, never dangerous",
+                "beaten_lengths": "1 1/4 length",
+                "race_name": "HEB Group 'The Power Behind Everyday' Maiden Hurdle (GBB Race)",
+                "position_in_market": 1,
+                "favourite": true,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 4193,
+                "days_since_previous_run": null
+              }
+            ],
+            "is_unexposed": false,
+            "silk_url": "https://www.sportinglife.com/images/silks/20261002hex152307.png",
+            "headgear": [],
+            "race_course": "Hexham",
+            "race_going": "Good-good to firm in places",
+            "race_distance": "2m 4f 28y",
+            "race_time": "14:23",
+            "race_class": "4",
+            "race_id": 941317,
+            "non_runner": false,
+            "historical_runs": 6,
+            "days_since_run": 302,
+            "last_run_date_used": "2025-12-04",
+            "history": {
+              "averageOR": 97,
+              "wins": 2,
+              "places": 0,
+              "averageFinish": 3.7,
+              "daysSinceRun": 302
+            },
+            "form": {
+              "raw": "464116-",
+              "runs": 6,
+              "wins": 2,
+              "places": 0,
+              "strikeRate": 33,
+              "placeRate": 33,
+              "nonFinishers": 0,
+              "lastRun": 6,
+              "trend": "Stable",
+              "momentum": 63,
+              "consistency": 66,
+              "positions": [
+                6,
+                1,
+                1,
+                4,
+                6,
+                4
+              ]
+            },
+            "horse_profile": {
+              "running_style": "PROMINENT",
+              "running_style_confidence": 42,
+              "style_scores": {
+                "LEADER": 6,
+                "PROMINENT": 13,
+                "MIDFIELD": 3,
+                "HELD_UP": 9,
+                "UNKNOWN": 0
+              },
+              "style_distribution": {
+                "LEADER": 19,
+                "PROMINENT": 42,
+                "MIDFIELD": 10,
+                "HELD_UP": 29
+              },
+              "sample_size": 6
+            },
+            "v2_score": 53,
+            "power_rating": 53,
+            "confidence": 40,
+            "confidence_grade": "CAUTIOUS",
+            "rating_breakdown": {
+              "form": {
+                "score": 55,
+                "weight": 0.3,
+                "weighted": 16.5
+              },
+              "context": {
+                "score": 40,
+                "weight": 0.15,
+                "weighted": 6
+              },
+              "market": {
+                "score": 74,
+                "weight": 0.2,
+                "weighted": 14.8
+              },
+              "verdict": {
+                "score": 45,
+                "weight": 0.35,
+                "weighted": 15.75
+              }
+            },
+            "engine_details": {
+              "form": {
+                "engine": "form",
+                "score": 55,
+                "confidence": "High",
+                "reasons": [
+                  "Recent form: 464116-"
+                ],
+                "metrics": {
+                  "runs": 6,
+                  "wins": 2,
+                  "places": 0,
+                  "strikeRate": 33,
+                  "placeRate": 33,
+                  "trend": "Stable",
+                  "momentum": 63,
+                  "consistency": 66,
+                  "nonFinishers": 0
+                }
+              },
+              "context": {
+                "engine": "context",
+                "score": 40,
+                "confidence": "Low",
+                "reasons": [
+                  "Average OR 97",
+                  "2 wins",
+                  "Ran 302 days ago"
+                ],
+                "metrics": {
+                  "averageOR": 97,
+                  "wins": 2,
+                  "places": 0,
+                  "averageFinish": 3.7,
+                  "daysSinceRun": 302,
+                  "trainerFormPoints": 0,
+                  "jockeyOnDebutantPoints": 0,
+                  "jockeyWonOutsiderPoints": 0
+                }
+              },
+              "market": {
+                "engine": "market",
+                "score": 74,
+                "confidence": "Medium",
+                "reasons": [
+                  "Market Rank 5",
+                  "Odds 10/1"
+                ],
+                "metrics": {
+                  "rank": 5,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
+                  "favourite": false,
+                  "runners_with_prices": 9
+                }
+              },
+              "verdict": {
+                "engine": "verdict",
+                "score": 45,
+                "confidence": "Low",
+                "reasons": [
+                  "Positive: gets the nod"
+                ],
+                "metrics": {
+                  "mentioned": false
+                }
+              }
+            },
+            "checklist_rating": 32.1,
+            "checklist_breakdown": {
+              "class": {
+                "points": 0,
+                "max": 3,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No qualifying class history recorded"
+              },
+              "classChange": {
+                "points": 0,
+                "max": 0.25,
+                "answer": "Up",
+                "evidence": "6th, 04/12/2025, Class 5 â†’ 4 today"
+              },
+              "tripChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "Down",
+                "evidence": "-3.9f vs last run (24.0f â†’ 20.1f)"
+              },
+              "recentForm": {
+                "points": 0,
+                "max": 3,
+                "answer": "Well beaten",
+                "evidence": "6th, 04/12/2025, finished 6th last time"
+              },
+              "speed": {
+                "points": 2,
+                "max": 2,
+                "answer": "Yes",
+                "evidence": "OR 102 vs highest in race 111 (92%)"
+              },
+              "classDropRatingEdge": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "OR 102 vs highest in race 111 - not the field's top rating"
+              },
+              "draw": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "fitness": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "302 days since last run (04/12/2025)"
+              },
+              "firstTimeAids": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockey": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockeyForm": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "2 of 4 rides placed in the last 14 days"
+              },
+              "trainer": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "1 of 3 runners placed in the last 14 days"
+              },
+              "weightChange": {
+                "points": 0.25,
+                "max": 0.25,
+                "answer": "Down",
+                "evidence": "6th, 04/12/2025, 10lb less than last time"
+              },
+              "trainerCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyTrainerCombo": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "25% with this jockey (12 runs) vs 6% overall for this trainer"
+              },
+              "jockeyOnDebutant": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Not a debutant - see jockey/jockeyForm instead"
+              },
+              "marketMove": {
+                "points": 0,
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "10/1 â†’ 10/1 (20 snapshots)"
+              },
+              "winningMark": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "Currently rated 102, at or above best winning mark of 95"
+              },
+              "runningStyle": {
+                "points": 1,
+                "max": 1,
+                "answer": "Stays On",
+                "evidence": "4 stayed-on, 1 faded, of last 5 classifiable runs"
+              },
+              "beatenFavourite": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "6th, 04/12/2025, Beaten favourite (finished 6th)"
+              }
+            },
+            "rated_weight_advantage": {
+              "runnerOR": 102,
+              "medianOR": 103,
+              "declaredWeight": 158,
+              "jockeyClaim": 0,
+              "effectiveWeight": 158,
+              "medianEffectiveWeight": 158,
+              "orAdvantage": -1,
+              "weightAdvantage": 0,
+              "combined": -1
+            },
+            "checklist_points": "6.25/19.5",
+            "checklist_earned_points": 6.25,
+            "stat_rating": 10.6,
+            "meta_rating": 8.41,
+            "trainer_trend": "flat"
           },
           {
             "name": "DINONS",
@@ -25778,8 +25136,8 @@
               },
               "sample_size": 44
             },
-            "v2_score": 46.9,
-            "power_rating": 46.9,
+            "v2_score": 48.1,
+            "power_rating": 48.1,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -25794,9 +25152,9 @@
                 "weighted": 11.55
               },
               "market": {
-                "score": 50,
+                "score": 56,
                 "weight": 0.2,
-                "weighted": 10
+                "weighted": 11.2
               },
               "verdict": {
                 "score": 45,
@@ -25848,18 +25206,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 50,
+                "score": 56,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 9",
+                  "Market Rank 8",
                   "Odds 16/1"
                 ],
                 "metrics": {
-                  "rank": 9,
+                  "rank": 8,
                   "odds": "16/1",
                   "decimal_odds": 17,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -26010,19 +25368,19 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 107,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 162,
               "jockeyClaim": 5,
               "effectiveWeight": 157,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": 5,
-              "weightAdvantage": 0.5,
-              "combined": 5.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": 4,
+              "weightAdvantage": 1,
+              "combined": 5
             },
             "checklist_points": "8.5/16.5",
             "checklist_earned_points": 8.5,
             "stat_rating": 10.28,
-            "meta_rating": 3.94,
+            "meta_rating": 4.23,
             "trainer_trend": "flat"
           },
           {
@@ -26449,8 +25807,8 @@
               },
               "sample_size": 10
             },
-            "v2_score": 45.4,
-            "power_rating": 45.4,
+            "v2_score": 46.6,
+            "power_rating": 46.6,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -26465,9 +25823,9 @@
                 "weighted": 8.25
               },
               "market": {
-                "score": 62,
+                "score": 68,
                 "weight": 0.2,
-                "weighted": 12.4
+                "weighted": 13.6
               },
               "verdict": {
                 "score": 45,
@@ -26518,18 +25876,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 62,
+                "score": 68,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 7",
+                  "Market Rank 6",
                   "Odds 12/1"
                 ],
                 "metrics": {
-                  "rank": 7,
+                  "rank": 6,
                   "odds": "12/1",
                   "decimal_odds": 13,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -26681,20 +26039,655 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 104,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 159,
               "jockeyClaim": 10,
               "effectiveWeight": 149,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": 2,
-              "weightAdvantage": 8.5,
-              "combined": 10.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": 1,
+              "weightAdvantage": 9,
+              "combined": 10
             },
             "checklist_points": "6.35/15.5",
             "checklist_earned_points": 6.35,
             "stat_rating": 7.35,
-            "meta_rating": 4.8,
+            "meta_rating": 5.16,
             "trainer_trend": "hot"
+          },
+          {
+            "name": "DE DELI COUNTER",
+            "id": 1202791,
+            "formsummary": "U2531-6",
+            "official_no": 8,
+            "draw": "",
+            "weight": "11-2",
+            "age": 5,
+            "foaled": "2021-06-06",
+            "sex": "g",
+            "trainer": "M Walford",
+            "trainer_id": 398,
+            "jockey": "Jamie Hamilton",
+            "jockey_id": 1614,
+            "jockey_claim": 0,
+            "current_class": "4",
+            "ride_status": "RUNNER",
+            "current_odds": "10/1",
+            "historical_odds": [],
+            "race_history_stats": [
+              {
+                "type": "BeatenFavourite",
+                "value": "1"
+              }
+            ],
+            "horse_lifetime_stats": [],
+            "medication": [],
+            "insights": [],
+            "past_results": [
+              {
+                "date": "2026-05-08",
+                "pos": 6,
+                "win": false,
+                "place": false,
+                "runners": 7,
+                "course": "Market Rasen",
+                "course_code": "MAR",
+                "dist": "2m 4f 139y",
+                "distance_furlongs": 20.63,
+                "class": 5,
+                "weight": 168,
+                "weight_st": "12-0",
+                "going": "Good",
+                "odds": "9/4",
+                "draw": null,
+                "official_rating": 98,
+                "bha": 98,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Tom Midgley",
+                "jockey_id": 25160,
+                "ride_description": "Disputed lead, headed after 3rd, dropped to midfield and ridden before 6th, weakened before 2 out",
+                "beaten_lengths": "4 1/4l",
+                "race_name": "Fiver Friday Raceday Friday 12th June Conditional Jockeys' Handicap Hurdle",
+                "position_in_market": 1,
+                "favourite": true,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": false,
+                "mares": false,
+                "prize": 3565,
+                "days_since_previous_run": 33
+              },
+              {
+                "date": "2026-04-05",
+                "pos": 1,
+                "win": true,
+                "place": true,
+                "runners": 10,
+                "course": "Market Rasen",
+                "course_code": "MAR",
+                "dist": "2m 4f 139y",
+                "distance_furlongs": 20.63,
+                "class": 5,
+                "weight": 164,
+                "weight_st": "11-10",
+                "going": "Good (Good to Soft in places)",
+                "odds": "5/1",
+                "draw": null,
+                "official_rating": 93,
+                "bha": 93,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Jamie Hamilton",
+                "jockey_id": 1614,
+                "ride_description": "Made all, set very steady pace, asserted from 2 out, not fluent last, ridden and went clear run-in, readily",
+                "beaten_lengths": "null",
+                "race_name": "Mariner Packaging Sing When We're Fishing Novices' Limited Handicap Hurdle",
+                "position_in_market": 3,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3697,
+                "days_since_previous_run": 17
+              },
+              {
+                "date": "2026-03-19",
+                "pos": 3,
+                "win": false,
+                "place": true,
+                "runners": 11,
+                "course": "Sedgefield",
+                "course_code": "SED",
+                "dist": "2m 3f 188y",
+                "distance_furlongs": 19.85,
+                "class": 5,
+                "weight": 166,
+                "weight_st": "11-12",
+                "going": "Good (Good to Soft in places)",
+                "odds": "14/1",
+                "draw": null,
+                "official_rating": 93,
+                "bha": 93,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Mr Paddy Barlow",
+                "jockey_id": 28588,
+                "ride_description": "Prominent, led after 1st, headed 3 out, outpaced by leading pair before last, soon weakened",
+                "beaten_lengths": "1 length",
+                "race_name": "Paxtons No1 CaseIH Dealer In UK&Ireland Novices' Limited Handicap Hurdle",
+                "position_in_market": 5,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3248,
+                "days_since_previous_run": 34
+              },
+              {
+                "date": "2026-02-13",
+                "pos": 5,
+                "win": false,
+                "place": false,
+                "runners": 5,
+                "course": "Fakenham",
+                "course_code": "FAK",
+                "dist": "2m 7f 95y",
+                "distance_furlongs": 23.43,
+                "class": 5,
+                "weight": 163,
+                "weight_st": "11-9",
+                "going": "Soft",
+                "odds": "11/4",
+                "draw": null,
+                "official_rating": 87,
+                "bha": 87,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Harry Cobden",
+                "jockey_id": 711,
+                "ride_description": "Led, ridden and headed after 3 out, weakened after 2 out",
+                "beaten_lengths": "1 3/4 length",
+                "race_name": "Racing TV Novices' Limited Handicap Hurdle",
+                "position_in_market": 2,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3697,
+                "days_since_previous_run": 12
+              },
+              {
+                "date": "2026-02-01",
+                "pos": 2,
+                "win": false,
+                "place": true,
+                "runners": 9,
+                "course": "Market Rasen",
+                "course_code": "MAR",
+                "dist": "2m 4f 139y",
+                "distance_furlongs": 20.63,
+                "class": 5,
+                "weight": 160,
+                "weight_st": "11-6",
+                "going": "Good to Soft (Soft in places)",
+                "odds": "25/1",
+                "draw": null,
+                "official_rating": 87,
+                "bha": 87,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Dylan Johnston",
+                "jockey_id": 29330,
+                "ride_description": "Led, drew clear with one other before 2 out and soon headed narrowly, pushed along and battled on to lead again approaching last, kept on run-in, re-challenged over 110yds out, headed closing stages",
+                "beaten_lengths": "3/4 length",
+                "race_name": "Market Rasen Racecourse Caravan Site Conditional Jockeys' Novices' Handicap Hurdle",
+                "position_in_market": 8,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": true,
+                "mares": false,
+                "prize": 3961,
+                "days_since_previous_run": 17
+              },
+              {
+                "date": "2026-01-15",
+                "pos": null,
+                "win": false,
+                "place": false,
+                "runners": 16,
+                "course": "Newcastle",
+                "course_code": "NCL",
+                "dist": "2m 4f 62y",
+                "distance_furlongs": 20.28,
+                "class": 5,
+                "weight": 155,
+                "weight_st": "11-1",
+                "going": "Good to Soft (Good in places)",
+                "odds": "80/1",
+                "draw": null,
+                "official_rating": 87,
+                "bha": 87,
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Charlotte Jones",
+                "jockey_id": 1446,
+                "ride_description": "Tracked leaders, unseated rider 2nd",
+                "beaten_lengths": "null",
+                "race_name": "Mini Golf At High Gosforth Park Handicap Hurdle",
+                "position_in_market": 15,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": true,
+                "novice": false,
+                "mares": false,
+                "prize": 3248,
+                "days_since_previous_run": 69
+              },
+              {
+                "date": "2025-11-07",
+                "pos": null,
+                "win": false,
+                "place": false,
+                "runners": 11,
+                "course": "Hexham",
+                "course_code": "HEX",
+                "dist": "2m 4f 28y",
+                "distance_furlongs": 20.13,
+                "class": 4,
+                "weight": 157,
+                "weight_st": "11-3",
+                "going": "Good to Soft (Soft in places)",
+                "odds": "300/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Tom Midgley",
+                "jockey_id": 25160,
+                "ride_description": "In rear, ridden and behind 7th, tailed off before 2 out, soon pulled up",
+                "beaten_lengths": "null",
+                "race_name": "Unibet Money Back Races Every Day Maiden Hurdle (GBB Race)",
+                "position_in_market": 11,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 4901,
+                "days_since_previous_run": 8
+              },
+              {
+                "date": "2025-10-30",
+                "pos": 6,
+                "win": false,
+                "place": false,
+                "runners": 9,
+                "course": "Newcastle",
+                "course_code": "NCL",
+                "dist": "2m",
+                "distance_furlongs": 16,
+                "class": 4,
+                "weight": 157,
+                "weight_st": "11-3",
+                "going": "Good (Good to Firm in places)",
+                "odds": "66/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Jamie Hamilton",
+                "jockey_id": 1614,
+                "ride_description": "Midfield, ridden and lost ground after 5th, soon outpaced, never seriously involved",
+                "beaten_lengths": "4 1/4l",
+                "race_name": "Download The At The Races App Maiden Hurdle (GBB Race)",
+                "position_in_market": 8,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 4193,
+                "days_since_previous_run": 15
+              },
+              {
+                "date": "2025-10-15",
+                "pos": 4,
+                "win": false,
+                "place": false,
+                "runners": 4,
+                "course": "Wetherby",
+                "course_code": "WET",
+                "dist": "2m 3f 154y",
+                "distance_furlongs": 19.7,
+                "class": 4,
+                "weight": 152,
+                "weight_st": "10-12",
+                "going": "Good",
+                "odds": "80/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "M Walford",
+                "trainer_id": 398,
+                "jockey": "Jamie Hamilton",
+                "jockey_id": 1614,
+                "ride_description": "Always behind, soon off the pace with novicey errors, ridden and lost touch before 3 out",
+                "beaten_lengths": "53l",
+                "race_name": "Boyle Sports, Home Of The Early Payout Novices' Hurdle (GBB Race)",
+                "position_in_market": 4,
+                "favourite": false,
+                "race_type": "Hurdle",
+                "handicap": false,
+                "novice": true,
+                "mares": false,
+                "prize": 3812,
+                "days_since_previous_run": null
+              }
+            ],
+            "is_unexposed": false,
+            "silk_url": "https://www.sportinglife.com/images/silks/20261002hex152308.png",
+            "headgear": [],
+            "race_course": "Hexham",
+            "race_going": "Good-good to firm in places",
+            "race_distance": "2m 4f 28y",
+            "race_time": "14:23",
+            "race_class": "4",
+            "race_id": 941317,
+            "non_runner": true,
+            "historical_runs": 9,
+            "days_since_run": 147,
+            "last_run_date_used": "2026-05-08",
+            "history": {
+              "averageOR": 91,
+              "wins": 1,
+              "places": 2,
+              "averageFinish": 3.9,
+              "daysSinceRun": 147
+            },
+            "form": {
+              "raw": "U2531-6",
+              "runs": 6,
+              "wins": 1,
+              "places": 2,
+              "strikeRate": 17,
+              "placeRate": 50,
+              "nonFinishers": 1,
+              "lastRun": 6,
+              "trend": "Stable",
+              "momentum": 61,
+              "consistency": 72,
+              "positions": [
+                6,
+                1,
+                3,
+                5,
+                2
+              ]
+            },
+            "horse_profile": {
+              "running_style": "LEADER",
+              "running_style_confidence": 36,
+              "style_scores": {
+                "LEADER": 14,
+                "PROMINENT": 7,
+                "MIDFIELD": 6,
+                "HELD_UP": 12,
+                "UNKNOWN": 0
+              },
+              "style_distribution": {
+                "LEADER": 36,
+                "PROMINENT": 18,
+                "MIDFIELD": 15,
+                "HELD_UP": 31
+              },
+              "sample_size": 9
+            },
+            "v2_score": 46.1,
+            "power_rating": 46.1,
+            "confidence": 40,
+            "confidence_grade": "CAUTIOUS",
+            "rating_breakdown": {
+              "form": {
+                "score": 55,
+                "weight": 0.3,
+                "weighted": 16.5
+              },
+              "context": {
+                "score": 39,
+                "weight": 0.15,
+                "weighted": 5.85
+              },
+              "market": {
+                "score": 40,
+                "weight": 0.2,
+                "weighted": 8
+              },
+              "verdict": {
+                "score": 45,
+                "weight": 0.35,
+                "weighted": 15.75
+              }
+            },
+            "engine_details": {
+              "form": {
+                "engine": "form",
+                "score": 55,
+                "confidence": "Medium",
+                "reasons": [
+                  "Recent form: U2531-6"
+                ],
+                "metrics": {
+                  "runs": 6,
+                  "wins": 1,
+                  "places": 2,
+                  "strikeRate": 17,
+                  "placeRate": 50,
+                  "trend": "Stable",
+                  "momentum": 61,
+                  "consistency": 72,
+                  "nonFinishers": 1
+                }
+              },
+              "context": {
+                "engine": "context",
+                "score": 39,
+                "confidence": "Low",
+                "reasons": [
+                  "Average OR 91",
+                  "1 win",
+                  "2 places",
+                  "Ran 147 days ago"
+                ],
+                "metrics": {
+                  "averageOR": 91,
+                  "wins": 1,
+                  "places": 2,
+                  "averageFinish": 3.9,
+                  "daysSinceRun": 147,
+                  "trainerFormPoints": 0,
+                  "jockeyOnDebutantPoints": 0,
+                  "jockeyWonOutsiderPoints": 0
+                }
+              },
+              "market": {
+                "engine": "market",
+                "score": 40,
+                "confidence": "Low",
+                "reasons": [
+                  "No usable current odds"
+                ],
+                "metrics": {
+                  "odds": "10/1",
+                  "rank": null,
+                  "runners_with_prices": 9
+                }
+              },
+              "verdict": {
+                "engine": "verdict",
+                "score": 45,
+                "confidence": "Low",
+                "reasons": [
+                  "Positive: gets the nod"
+                ],
+                "metrics": {
+                  "mentioned": false
+                }
+              }
+            },
+            "checklist_rating": 26.9,
+            "checklist_breakdown": {
+              "class": {
+                "points": 0,
+                "max": 3,
+                "answer": "Neither",
+                "evidence": null
+              },
+              "classChange": {
+                "points": 0,
+                "max": 0.25,
+                "answer": "Up",
+                "evidence": "6th, 08/05/2026, Class 5 â†’ 4 today"
+              },
+              "tripChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "Same",
+                "evidence": "Same trip as last run (20.1f)"
+              },
+              "recentForm": {
+                "points": 0,
+                "max": 3,
+                "answer": "Well beaten",
+                "evidence": "6th, 08/05/2026, finished 6th last time"
+              },
+              "speed": {
+                "points": 2,
+                "max": 2,
+                "answer": "Yes",
+                "evidence": "OR 98 vs highest in race 111 (88%)"
+              },
+              "classDropRatingEdge": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "OR 98 vs highest in race 111 - not the field's top rating"
+              },
+              "draw": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "fitness": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "147 days since last run (08/05/2026)"
+              },
+              "firstTimeAids": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockey": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "1st, 05/04/2026, Jamie Hamilton"
+              },
+              "jockeyForm": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "0 of 3 rides placed in the last 14 days"
+              },
+              "trainer": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "1 of 8 runners placed in the last 14 days"
+              },
+              "weightChange": {
+                "points": 0.25,
+                "max": 0.25,
+                "answer": "Down",
+                "evidence": "6th, 08/05/2026, 12lb less than last time"
+              },
+              "trainerCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyCourse": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "0% at this course (11 runs) vs 6% overall"
+              },
+              "jockeyTrainerCombo": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs recorded for this trainer-jockey pairing"
+              },
+              "jockeyOnDebutant": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Not a debutant - see jockey/jockeyForm instead"
+              },
+              "marketMove": {
+                "points": 0,
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "10/1 â†’ 10/1 (19 snapshots)"
+              },
+              "winningMark": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "Currently rated 98, at or above best winning mark of 93"
+              },
+              "runningStyle": {
+                "points": 0,
+                "max": 1,
+                "answer": "Mixed",
+                "evidence": "1 stayed-on, 1 faded, of last 2 classifiable runs"
+              },
+              "beatenFavourite": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "6th, 08/05/2026, Beaten favourite (finished 6th)"
+              }
+            },
+            "rated_weight_advantage": {
+              "runnerOR": 98,
+              "medianOR": 103,
+              "declaredWeight": 156,
+              "jockeyClaim": 0,
+              "effectiveWeight": 156,
+              "medianEffectiveWeight": 158,
+              "orAdvantage": -5,
+              "weightAdvantage": 2,
+              "combined": -3
+            },
+            "checklist_points": "5.25/19.5",
+            "checklist_earned_points": 5.25,
+            "stat_rating": 12.34,
+            "meta_rating": 5.74,
+            "trainer_trend": "cold"
           },
           {
             "name": "WELL EDUCATED",
@@ -28416,8 +28409,8 @@
               },
               "sample_size": 48
             },
-            "v2_score": 43.9,
-            "power_rating": 43.9,
+            "v2_score": 44.9,
+            "power_rating": 44.9,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -28432,9 +28425,9 @@
                 "weighted": 10.5
               },
               "market": {
-                "score": 45,
+                "score": 50,
                 "weight": 0.2,
-                "weighted": 9
+                "weighted": 10
               },
               "verdict": {
                 "score": 45,
@@ -28471,7 +28464,7 @@
                   "7 wins",
                   "15 places",
                   "Ran 76 days ago",
-                  "Booked jockey previously won on this horse (market rank 10)"
+                  "Booked jockey previously won on this horse (market rank 9)"
                 ],
                 "metrics": {
                   "averageOR": 109,
@@ -28486,18 +28479,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 45,
+                "score": 50,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 10",
+                  "Market Rank 9",
                   "Odds 20/1"
                 ],
                 "metrics": {
-                  "rank": 10,
+                  "rank": 9,
                   "odds": "20/1",
                   "decimal_odds": 21,
                   "favourite": false,
-                  "runners_with_prices": 10
+                  "runners_with_prices": 9
                 }
               },
               "verdict": {
@@ -28645,14 +28638,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 97,
-              "medianOR": 102,
+              "medianOR": 103,
               "declaredWeight": 153,
               "jockeyClaim": 0,
               "effectiveWeight": 153,
-              "medianEffectiveWeight": 157.5,
-              "orAdvantage": -5,
-              "weightAdvantage": 4.5,
-              "combined": -0.5
+              "medianEffectiveWeight": 158,
+              "orAdvantage": -6,
+              "weightAdvantage": 5,
+              "combined": -1
             },
             "checklist_points": "6.75/19.5",
             "checklist_earned_points": 6.75,
@@ -28662,8 +28655,8 @@
           }
         ],
         "highestOR": 111,
-        "medianOR": 102,
-        "medianEffectiveWeight": 157.5,
+        "medianOR": 103,
+        "medianEffectiveWeight": 158,
         "asOfDate": "2026-10-02T00:00:00.000Z",
         "draw_advantage": "None"
       },
