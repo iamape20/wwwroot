@@ -3583,7 +3583,7 @@
                   "odds": "11/8",
                   "decimal_odds": 2.375,
                   "favourite": true,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -3734,14 +3734,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 74,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 152,
               "jockeyClaim": 0,
               "effectiveWeight": 152,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": -2,
-              "weightAdvantage": 1,
-              "combined": -1
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": 0,
+              "weightAdvantage": 0.5,
+              "combined": 0.5
             },
             "checklist_points": "9.4/16.5",
             "checklist_earned_points": 9.4,
@@ -4258,7 +4258,7 @@
                   "odds": "11/4",
                   "decimal_odds": 3.75,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -4407,14 +4407,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 88,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 166,
               "jockeyClaim": 3,
               "effectiveWeight": 163,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": 12,
-              "weightAdvantage": -10,
-              "combined": 2
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": 14,
+              "weightAdvantage": -10.5,
+              "combined": 3.5
             },
             "checklist_points": "9/19.5",
             "checklist_earned_points": 9,
@@ -4993,7 +4993,7 @@
                   "odds": "10/1",
                   "decimal_odds": 11,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -5143,14 +5143,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 81,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 156,
               "jockeyClaim": 3,
               "effectiveWeight": 153,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": 5,
-              "weightAdvantage": 0,
-              "combined": 5
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": 7,
+              "weightAdvantage": -0.5,
+              "combined": 6.5
             },
             "checklist_points": "5.5/17.5",
             "checklist_earned_points": 5.5,
@@ -5421,7 +5421,7 @@
                   "odds": "7/1",
                   "decimal_odds": 8,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -5571,13 +5571,13 @@
             },
             "rated_weight_advantage": {
               "runnerOR": null,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 162,
               "jockeyClaim": 0,
               "effectiveWeight": 162,
-              "medianEffectiveWeight": 153,
+              "medianEffectiveWeight": 152.5,
               "orAdvantage": null,
-              "weightAdvantage": -9,
+              "weightAdvantage": -9.5,
               "combined": null
             },
             "checklist_points": "2.45/13.5",
@@ -6575,7 +6575,7 @@
                   "odds": "8/1",
                   "decimal_odds": 9,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -6726,14 +6726,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 73,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 151,
               "jockeyClaim": 7,
               "effectiveWeight": 144,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": -3,
-              "weightAdvantage": 9,
-              "combined": 6
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": -1,
+              "weightAdvantage": 8.5,
+              "combined": 7.5
             },
             "checklist_points": "6/12.5",
             "checklist_earned_points": 6,
@@ -7661,7 +7661,7 @@
                   "odds": "14/1",
                   "decimal_odds": 15,
                   "favourite": false,
-                  "runners_with_prices": 7
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -7810,14 +7810,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 53,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 156,
               "jockeyClaim": 7,
               "effectiveWeight": 149,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": -23,
-              "weightAdvantage": 4,
-              "combined": -19
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": -21,
+              "weightAdvantage": 3.5,
+              "combined": -17.5
             },
             "checklist_points": "2.5/16.5",
             "checklist_earned_points": 2.5,
@@ -8001,7 +8001,7 @@
             "race_time": "13:13",
             "race_class": "5",
             "race_id": 941315,
-            "non_runner": false,
+            "non_runner": true,
             "historical_runs": 4,
             "days_since_run": 8,
             "last_run_date_used": "2026-09-24",
@@ -8050,8 +8050,8 @@
               },
               "sample_size": 4
             },
-            "v2_score": 38.5,
-            "power_rating": 38.5,
+            "v2_score": 34.1,
+            "power_rating": 34.1,
             "confidence": 54,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -8066,9 +8066,9 @@
                 "weighted": 2.25
               },
               "market": {
-                "score": 62,
+                "score": 40,
                 "weight": 0.2,
-                "weighted": 12.4
+                "weighted": 8
               },
               "verdict": {
                 "score": 40,
@@ -8116,18 +8116,15 @@
               },
               "market": {
                 "engine": "market",
-                "score": 62,
-                "confidence": "Medium",
+                "score": 40,
+                "confidence": "Low",
                 "reasons": [
-                  "Market Rank 7",
-                  "Odds 16/1"
+                  "No usable current odds"
                 ],
                 "metrics": {
-                  "rank": 7,
                   "odds": "16/1",
-                  "decimal_odds": 17,
-                  "favourite": false,
-                  "runners_with_prices": 7
+                  "rank": null,
+                  "runners_with_prices": 6
                 }
               },
               "verdict": {
@@ -8251,7 +8248,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Steady",
-                "evidence": "16/1 â†’ 16/1 (20 snapshots)"
+                "evidence": "16/1 â†’ 16/1 (19 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -8276,14 +8273,14 @@
             },
             "rated_weight_advantage": {
               "runnerOR": 78,
-              "medianOR": 76,
+              "medianOR": 74,
               "declaredWeight": 154,
               "jockeyClaim": 0,
               "effectiveWeight": 154,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": 2,
-              "weightAdvantage": -1,
-              "combined": 1
+              "medianEffectiveWeight": 152.5,
+              "orAdvantage": 4,
+              "weightAdvantage": -1.5,
+              "combined": 2.5
             },
             "checklist_points": "5/16.5",
             "checklist_earned_points": 5,
@@ -8293,8 +8290,8 @@
           }
         ],
         "highestOR": 88,
-        "medianOR": 76,
-        "medianEffectiveWeight": 153,
+        "medianOR": 74,
+        "medianEffectiveWeight": 152.5,
         "asOfDate": "2026-10-02T00:00:00.000Z",
         "draw_advantage": "None"
       },
