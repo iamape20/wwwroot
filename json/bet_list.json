@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-02T12:50:53.501Z",
+  "generatedAt": "2026-10-02T13:01:00.245Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 7/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 8/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-02",
       "course": "Hexham",
       "off": "13:38",
-      "horse": "DARK TIDE RISING"
-    }
-  ],
-  "recent": [
+      "horse": "DARK TIDE RISING",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-01",
       "course": "Newcastle",
@@ -174,7 +179,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-02T12:50:53.411Z",
+    "updatedAt": "2026-10-02T13:01:00.082Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -197,9 +202,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 7,
+      "bets": 8,
       "won": 0,
-      "pl": -7,
+      "pl": -8,
       "roi": -100
     },
     "live": {
