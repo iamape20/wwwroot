@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:10:27.932Z",
+  "generatedAt": "2026-10-02T17:20:28.262Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
   "rules": [
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Newcastle",
-      "off": "18:15",
-      "status": "BET",
-      "horse": "ASHEYRA",
-      "price": "1/1"
-    },
-    {
       "course": "Dundalk",
       "off": "18:30",
-      "status": "POSSIBLE",
-      "revealAt": "18:15"
+      "status": "BET",
+      "horse": "GOLDEN RING",
+      "price": "8/13"
     },
     {
       "course": "Dundalk",
@@ -39,7 +33,13 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Newcastle",
+      "off": "18:15",
+      "horse": "ASHEYRA"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-02",
@@ -54,7 +54,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-02T17:10:27.853Z",
+    "updatedAt": "2026-10-02T17:20:28.178Z",
     "claude": {
       "races": 38,
       "won": 7,
