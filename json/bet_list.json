@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-02T17:20:28.262Z",
+  "generatedAt": "2026-10-02T17:30:27.280Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 0/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 1/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,13 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Dundalk",
-      "off": "18:30",
-      "status": "BET",
-      "horse": "GOLDEN RING",
-      "price": "8/13"
-    },
     {
       "course": "Dundalk",
       "off": "19:30",
@@ -35,12 +28,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Newcastle",
-      "off": "18:15",
-      "horse": "ASHEYRA"
+      "course": "Dundalk",
+      "off": "18:30",
+      "horse": "GOLDEN RING"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-02",
+      "course": "Newcastle",
+      "off": "18:15",
+      "horse": "ASHEYRA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-02",
       "course": "Ascot",
@@ -54,7 +58,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-02T17:20:28.178Z",
+    "updatedAt": "2026-10-02T17:30:27.180Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -77,10 +81,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 0,
+      "bets": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "live": {
       "bets": 0,
