@@ -173266,7 +173266,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "11/4",
+            "current_odds": "5/2",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -173920,8 +173920,8 @@
               },
               "sample_size": 17
             },
-            "v2_score": 63.1,
-            "power_rating": 63.1,
+            "v2_score": 64.7,
+            "power_rating": 64.7,
             "confidence": 63,
             "confidence_grade": "GOOD",
             "rating_breakdown": {
@@ -173936,9 +173936,9 @@
                 "weighted": 4.5
               },
               "market": {
-                "score": 92,
+                "score": 100,
                 "weight": 0.2,
-                "weighted": 18.4
+                "weighted": 20
               },
               "verdict": {
                 "score": 60,
@@ -173988,17 +173988,18 @@
               },
               "market": {
                 "engine": "market",
-                "score": 92,
+                "score": 100,
                 "confidence": "High",
                 "reasons": [
-                  "Market Rank 2",
-                  "Odds 11/4"
+                  "Market Rank 1",
+                  "Odds 5/2",
+                  "Current favourite"
                 ],
                 "metrics": {
-                  "rank": 2,
-                  "odds": "11/4",
-                  "decimal_odds": 3.75,
-                  "favourite": false,
+                  "rank": 1,
+                  "odds": "5/2",
+                  "decimal_odds": 3.5,
+                  "favourite": true,
                   "runners_with_prices": 10
                 }
               },
@@ -174124,7 +174125,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Steady",
-                "evidence": "11/4 â†’ 11/4 (20 snapshots)"
+                "evidence": "11/4 â†’ 5/2 (20 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -174159,7 +174160,7 @@
             "checklist_points": "12.45/21.5",
             "checklist_earned_points": 12.45,
             "stat_rating": 15.31,
-            "meta_rating": 22.51,
+            "meta_rating": 25.98,
             "trainer_trend": "cold"
           },
           {
@@ -175929,6 +175930,440 @@
             "trainer_trend": "cold"
           },
           {
+            "name": "COULSTY EXCHANGE",
+            "id": 1213348,
+            "formsummary": "736",
+            "official_no": 10,
+            "draw": 7,
+            "weight": "8-12",
+            "age": 4,
+            "foaled": "2022-01-12",
+            "sex": "f",
+            "trainer": "I Jardine",
+            "trainer_id": 346,
+            "jockey": "A Mullen",
+            "jockey_id": 976,
+            "jockey_claim": 0,
+            "current_class": "6",
+            "ride_status": "RUNNER",
+            "current_odds": "18/1",
+            "historical_odds": [],
+            "race_history_stats": [],
+            "horse_lifetime_stats": [],
+            "medication": [],
+            "insights": [],
+            "past_results": [
+              {
+                "date": "2026-02-11",
+                "pos": 6,
+                "win": false,
+                "place": false,
+                "runners": 9,
+                "course": "Dundalk",
+                "course_code": "DUN",
+                "dist": "1m",
+                "distance_furlongs": 8,
+                "class": null,
+                "weight": 130,
+                "weight_st": "9-4",
+                "going": "Standard",
+                "odds": "14/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "A Slattery",
+                "trainer_id": 90,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Tracked leaders, 4th halfway, pushed along approaching straight, 5th and no impression over 1f out, no extra",
+                "beaten_lengths": "1/2 length",
+                "race_name": "Book Online At DundalkStadium.com Maiden",
+                "position_in_market": 5,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 6601,
+                "days_since_previous_run": 12
+              },
+              {
+                "date": "2026-01-30",
+                "pos": 3,
+                "win": false,
+                "place": true,
+                "runners": 10,
+                "course": "Dundalk",
+                "course_code": "DUN",
+                "dist": "1m",
+                "distance_furlongs": 8,
+                "class": null,
+                "weight": 130,
+                "weight_st": "9-4",
+                "going": "Standard",
+                "odds": "9/2",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "A Slattery",
+                "trainer_id": 90,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Led, ridden over 2f out, soon pressed, headed 1f out, no extra in 3rd closing stages",
+                "beaten_lengths": "1 1/2 length",
+                "race_name": "View Restaurant At Dundalk Stadium Fillies Maiden",
+                "position_in_market": 4,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 6601,
+                "days_since_previous_run": 7
+              },
+              {
+                "date": "2026-01-23",
+                "pos": 7,
+                "win": false,
+                "place": false,
+                "runners": 14,
+                "course": "Dundalk",
+                "course_code": "DUN",
+                "dist": "7f",
+                "distance_furlongs": 7,
+                "class": null,
+                "weight": 130,
+                "weight_st": "9-4",
+                "going": "Standard",
+                "odds": "28/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "A Slattery",
+                "trainer_id": 90,
+                "jockey": "Adam Browne-Souza",
+                "jockey_id": 34659,
+                "ride_description": "Mid-division, ridden over 3f out, moderate 7th 1f out, kept on one pace",
+                "beaten_lengths": "Head",
+                "race_name": "View Restaurant At Dundalk Stadium Apprentice Maiden",
+                "position_in_market": 10,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 6601,
+                "days_since_previous_run": null
+              }
+            ],
+            "is_unexposed": false,
+            "silk_url": "https://www.sportinglife.com/images/silks/20261002ncs201510.png",
+            "headgear": [
+              {
+                "symbol": "t",
+                "name": "Tongue strap",
+                "count": 2
+              }
+            ],
+            "race_course": "Newcastle",
+            "race_going": "Standard",
+            "race_distance": "6f",
+            "race_time": "19:15",
+            "race_class": "6",
+            "race_id": 941334,
+            "non_runner": false,
+            "historical_runs": 3,
+            "days_since_run": 233,
+            "last_run_date_used": "2026-02-11",
+            "history": {
+              "averageOR": null,
+              "wins": 0,
+              "places": 1,
+              "averageFinish": 5.3,
+              "daysSinceRun": 233
+            },
+            "form": {
+              "raw": "736",
+              "runs": 3,
+              "wins": 0,
+              "places": 1,
+              "strikeRate": 0,
+              "placeRate": 33,
+              "nonFinishers": 0,
+              "lastRun": 6,
+              "trend": "Improving",
+              "momentum": 36,
+              "consistency": 77,
+              "positions": [
+                6,
+                3,
+                7
+              ]
+            },
+            "horse_profile": {
+              "running_style": "PROMINENT",
+              "running_style_confidence": 40,
+              "style_scores": {
+                "LEADER": 3,
+                "PROMINENT": 4,
+                "MIDFIELD": 3,
+                "HELD_UP": 0,
+                "UNKNOWN": 0
+              },
+              "style_distribution": {
+                "LEADER": 30,
+                "PROMINENT": 40,
+                "MIDFIELD": 30,
+                "HELD_UP": 0
+              },
+              "sample_size": 3
+            },
+            "v2_score": 47.4,
+            "power_rating": 47.4,
+            "confidence": 31,
+            "confidence_grade": "CAUTIOUS",
+            "rating_breakdown": {
+              "form": {
+                "score": 45,
+                "weight": 0.3,
+                "weighted": 13.5
+              },
+              "context": {
+                "score": 19,
+                "weight": 0.15,
+                "weighted": 2.85
+              },
+              "market": {
+                "score": 50,
+                "weight": 0.2,
+                "weighted": 10
+              },
+              "verdict": {
+                "score": 60,
+                "weight": 0.35,
+                "weighted": 21
+              }
+            },
+            "engine_details": {
+              "form": {
+                "engine": "form",
+                "score": 45,
+                "confidence": "Low",
+                "reasons": [
+                  "Recent form: 736"
+                ],
+                "metrics": {
+                  "runs": 3,
+                  "wins": 0,
+                  "places": 1,
+                  "strikeRate": 0,
+                  "placeRate": 33,
+                  "trend": "Improving",
+                  "momentum": 36,
+                  "consistency": 77,
+                  "nonFinishers": 0
+                }
+              },
+              "context": {
+                "engine": "context",
+                "score": 19,
+                "confidence": "Low",
+                "reasons": [
+                  "1 place",
+                  "Ran 233 days ago",
+                  "Trainer hot form: 17/35 placed last 14 days"
+                ],
+                "metrics": {
+                  "averageOR": 0,
+                  "wins": 0,
+                  "places": 1,
+                  "averageFinish": 5.3,
+                  "daysSinceRun": 233,
+                  "trainerFormPoints": 7,
+                  "jockeyOnDebutantPoints": 0,
+                  "jockeyWonOutsiderPoints": 0
+                }
+              },
+              "market": {
+                "engine": "market",
+                "score": 50,
+                "confidence": "Medium",
+                "reasons": [
+                  "Market Rank 9",
+                  "Odds 18/1"
+                ],
+                "metrics": {
+                  "rank": 9,
+                  "odds": "18/1",
+                  "decimal_odds": 19,
+                  "favourite": false,
+                  "runners_with_prices": 10
+                }
+              },
+              "verdict": {
+                "engine": "verdict",
+                "score": 60,
+                "confidence": "Medium",
+                "reasons": [
+                  "Mentioned in analyst verdict"
+                ],
+                "metrics": {
+                  "mentioned": true
+                }
+              }
+            },
+            "checklist_rating": 26.2,
+            "checklist_breakdown": {
+              "class": {
+                "points": 0,
+                "max": 3,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No qualifying class history recorded"
+              },
+              "classChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "tripChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "Down",
+                "evidence": "-2f vs last run (8.0f â†’ 6.0f)"
+              },
+              "recentForm": {
+                "points": 0,
+                "max": 3,
+                "answer": "Well beaten",
+                "evidence": "6th, 11/02/2026, finished 6th last time"
+              },
+              "speed": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No official rating available for comparison"
+              },
+              "classDropRatingEdge": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No official rating available for comparison"
+              },
+              "draw": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": "Draw 7 of 10 - Newcastle favours high draws over 6f"
+              },
+              "fitness": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "233 days since last run (11/02/2026)"
+              },
+              "firstTimeAids": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockey": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockeyForm": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "11 of 27 rides placed in the last 14 days"
+              },
+              "trainer": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "17 of 35 runners placed in the last 14 days"
+              },
+              "weightChange": {
+                "points": 0.25,
+                "max": 0.25,
+                "answer": "Down",
+                "evidence": "6th, 11/02/2026, 6lb less than last time"
+              },
+              "trainerCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyCourse": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "12.5% at this course (16 runs) vs 8% overall"
+              },
+              "jockeyTrainerCombo": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "5.9% with this jockey (17 runs) vs 10% overall for this trainer"
+              },
+              "jockeyOnDebutant": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Not a debutant - see jockey/jockeyForm instead"
+              },
+              "marketMove": {
+                "points": 0,
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "20/1 â†’ 18/1 (20 snapshots)"
+              },
+              "winningMark": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "runningStyle": {
+                "points": 0,
+                "max": 1,
+                "answer": "Mixed",
+                "evidence": "1 stayed-on, 1 faded, of last 2 classifiable runs"
+              },
+              "beatenFavourite": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              }
+            },
+            "rated_weight_advantage": {
+              "runnerOR": null,
+              "medianOR": 61,
+              "declaredWeight": 124,
+              "jockeyClaim": 0,
+              "effectiveWeight": 124,
+              "medianEffectiveWeight": 134,
+              "orAdvantage": null,
+              "weightAdvantage": 10,
+              "combined": null
+            },
+            "checklist_points": "4.25/16.25",
+            "checklist_earned_points": 4.25,
+            "stat_rating": 7.41,
+            "meta_rating": 4.67,
+            "trainer_trend": "hot"
+          },
+          {
             "name": "BLAZING SON",
             "id": 992810,
             "formsummary": "985308",
@@ -175945,7 +176380,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "11/4",
+            "current_odds": "3/1",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -177717,8 +178152,8 @@
               },
               "sample_size": 50
             },
-            "v2_score": 47.4,
-            "power_rating": 47.4,
+            "v2_score": 45.8,
+            "power_rating": 45.8,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -177733,9 +178168,9 @@
                 "weighted": 7.05
               },
               "market": {
-                "score": 100,
+                "score": 92,
                 "weight": 0.2,
-                "weighted": 20
+                "weighted": 18.4
               },
               "verdict": {
                 "score": 40,
@@ -177786,18 +178221,17 @@
               },
               "market": {
                 "engine": "market",
-                "score": 100,
+                "score": 92,
                 "confidence": "High",
                 "reasons": [
-                  "Market Rank 1",
-                  "Odds 11/4",
-                  "Current favourite"
+                  "Market Rank 2",
+                  "Odds 3/1"
                 ],
                 "metrics": {
-                  "rank": 1,
-                  "odds": "11/4",
-                  "decimal_odds": 3.75,
-                  "favourite": true,
+                  "rank": 2,
+                  "odds": "3/1",
+                  "decimal_odds": 4,
+                  "favourite": false,
                   "runners_with_prices": 10
                 }
               },
@@ -177920,7 +178354,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Drifter",
-                "evidence": "9/4 â†’ 11/4 (20 snapshots)"
+                "evidence": "9/4 â†’ 3/1 (20 snapshots)"
               },
               "winningMark": {
                 "points": 1,
@@ -177955,441 +178389,7 @@
             "checklist_points": "9.25/21.5",
             "checklist_earned_points": 9.25,
             "stat_rating": 5.82,
-            "meta_rating": 18.85,
-            "trainer_trend": "hot"
-          },
-          {
-            "name": "COULSTY EXCHANGE",
-            "id": 1213348,
-            "formsummary": "736",
-            "official_no": 10,
-            "draw": 7,
-            "weight": "8-12",
-            "age": 4,
-            "foaled": "2022-01-12",
-            "sex": "f",
-            "trainer": "I Jardine",
-            "trainer_id": 346,
-            "jockey": "A Mullen",
-            "jockey_id": 976,
-            "jockey_claim": 0,
-            "current_class": "6",
-            "ride_status": "RUNNER",
-            "current_odds": "18/1",
-            "historical_odds": [],
-            "race_history_stats": [],
-            "horse_lifetime_stats": [],
-            "medication": [],
-            "insights": [],
-            "past_results": [
-              {
-                "date": "2026-02-11",
-                "pos": 6,
-                "win": false,
-                "place": false,
-                "runners": 9,
-                "course": "Dundalk",
-                "course_code": "DUN",
-                "dist": "1m",
-                "distance_furlongs": 8,
-                "class": null,
-                "weight": 130,
-                "weight_st": "9-4",
-                "going": "Standard",
-                "odds": "14/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "A Slattery",
-                "trainer_id": 90,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Tracked leaders, 4th halfway, pushed along approaching straight, 5th and no impression over 1f out, no extra",
-                "beaten_lengths": "1/2 length",
-                "race_name": "Book Online At DundalkStadium.com Maiden",
-                "position_in_market": 5,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 6601,
-                "days_since_previous_run": 12
-              },
-              {
-                "date": "2026-01-30",
-                "pos": 3,
-                "win": false,
-                "place": true,
-                "runners": 10,
-                "course": "Dundalk",
-                "course_code": "DUN",
-                "dist": "1m",
-                "distance_furlongs": 8,
-                "class": null,
-                "weight": 130,
-                "weight_st": "9-4",
-                "going": "Standard",
-                "odds": "9/2",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "A Slattery",
-                "trainer_id": 90,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Led, ridden over 2f out, soon pressed, headed 1f out, no extra in 3rd closing stages",
-                "beaten_lengths": "1 1/2 length",
-                "race_name": "View Restaurant At Dundalk Stadium Fillies Maiden",
-                "position_in_market": 4,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 6601,
-                "days_since_previous_run": 7
-              },
-              {
-                "date": "2026-01-23",
-                "pos": 7,
-                "win": false,
-                "place": false,
-                "runners": 14,
-                "course": "Dundalk",
-                "course_code": "DUN",
-                "dist": "7f",
-                "distance_furlongs": 7,
-                "class": null,
-                "weight": 130,
-                "weight_st": "9-4",
-                "going": "Standard",
-                "odds": "28/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "A Slattery",
-                "trainer_id": 90,
-                "jockey": "Adam Browne-Souza",
-                "jockey_id": 34659,
-                "ride_description": "Mid-division, ridden over 3f out, moderate 7th 1f out, kept on one pace",
-                "beaten_lengths": "Head",
-                "race_name": "View Restaurant At Dundalk Stadium Apprentice Maiden",
-                "position_in_market": 10,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 6601,
-                "days_since_previous_run": null
-              }
-            ],
-            "is_unexposed": false,
-            "silk_url": "https://www.sportinglife.com/images/silks/20261002ncs201510.png",
-            "headgear": [
-              {
-                "symbol": "t",
-                "name": "Tongue strap",
-                "count": 2
-              }
-            ],
-            "race_course": "Newcastle",
-            "race_going": "Standard",
-            "race_distance": "6f",
-            "race_time": "19:15",
-            "race_class": "6",
-            "race_id": 941334,
-            "non_runner": false,
-            "historical_runs": 3,
-            "days_since_run": 233,
-            "last_run_date_used": "2026-02-11",
-            "history": {
-              "averageOR": null,
-              "wins": 0,
-              "places": 1,
-              "averageFinish": 5.3,
-              "daysSinceRun": 233
-            },
-            "form": {
-              "raw": "736",
-              "runs": 3,
-              "wins": 0,
-              "places": 1,
-              "strikeRate": 0,
-              "placeRate": 33,
-              "nonFinishers": 0,
-              "lastRun": 6,
-              "trend": "Improving",
-              "momentum": 36,
-              "consistency": 77,
-              "positions": [
-                6,
-                3,
-                7
-              ]
-            },
-            "horse_profile": {
-              "running_style": "PROMINENT",
-              "running_style_confidence": 40,
-              "style_scores": {
-                "LEADER": 3,
-                "PROMINENT": 4,
-                "MIDFIELD": 3,
-                "HELD_UP": 0,
-                "UNKNOWN": 0
-              },
-              "style_distribution": {
-                "LEADER": 30,
-                "PROMINENT": 40,
-                "MIDFIELD": 30,
-                "HELD_UP": 0
-              },
-              "sample_size": 3
-            },
-            "v2_score": 47.4,
-            "power_rating": 47.4,
-            "confidence": 31,
-            "confidence_grade": "CAUTIOUS",
-            "rating_breakdown": {
-              "form": {
-                "score": 45,
-                "weight": 0.3,
-                "weighted": 13.5
-              },
-              "context": {
-                "score": 19,
-                "weight": 0.15,
-                "weighted": 2.85
-              },
-              "market": {
-                "score": 50,
-                "weight": 0.2,
-                "weighted": 10
-              },
-              "verdict": {
-                "score": 60,
-                "weight": 0.35,
-                "weighted": 21
-              }
-            },
-            "engine_details": {
-              "form": {
-                "engine": "form",
-                "score": 45,
-                "confidence": "Low",
-                "reasons": [
-                  "Recent form: 736"
-                ],
-                "metrics": {
-                  "runs": 3,
-                  "wins": 0,
-                  "places": 1,
-                  "strikeRate": 0,
-                  "placeRate": 33,
-                  "trend": "Improving",
-                  "momentum": 36,
-                  "consistency": 77,
-                  "nonFinishers": 0
-                }
-              },
-              "context": {
-                "engine": "context",
-                "score": 19,
-                "confidence": "Low",
-                "reasons": [
-                  "1 place",
-                  "Ran 233 days ago",
-                  "Trainer hot form: 17/35 placed last 14 days"
-                ],
-                "metrics": {
-                  "averageOR": 0,
-                  "wins": 0,
-                  "places": 1,
-                  "averageFinish": 5.3,
-                  "daysSinceRun": 233,
-                  "trainerFormPoints": 7,
-                  "jockeyOnDebutantPoints": 0,
-                  "jockeyWonOutsiderPoints": 0
-                }
-              },
-              "market": {
-                "engine": "market",
-                "score": 50,
-                "confidence": "Medium",
-                "reasons": [
-                  "Market Rank 9",
-                  "Odds 18/1"
-                ],
-                "metrics": {
-                  "rank": 9,
-                  "odds": "18/1",
-                  "decimal_odds": 19,
-                  "favourite": false,
-                  "runners_with_prices": 10
-                }
-              },
-              "verdict": {
-                "engine": "verdict",
-                "score": 60,
-                "confidence": "Medium",
-                "reasons": [
-                  "Mentioned in analyst verdict"
-                ],
-                "metrics": {
-                  "mentioned": true
-                }
-              }
-            },
-            "checklist_rating": 26.2,
-            "checklist_breakdown": {
-              "class": {
-                "points": 0,
-                "max": 3,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No qualifying class history recorded"
-              },
-              "classChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "tripChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "Down",
-                "evidence": "-2f vs last run (8.0f â†’ 6.0f)"
-              },
-              "recentForm": {
-                "points": 0,
-                "max": 3,
-                "answer": "Well beaten",
-                "evidence": "6th, 11/02/2026, finished 6th last time"
-              },
-              "speed": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No official rating available for comparison"
-              },
-              "classDropRatingEdge": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No official rating available for comparison"
-              },
-              "draw": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": "Draw 7 of 10 - Newcastle favours high draws over 6f"
-              },
-              "fitness": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "233 days since last run (11/02/2026)"
-              },
-              "firstTimeAids": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockey": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockeyForm": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "11 of 27 rides placed in the last 14 days"
-              },
-              "trainer": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "17 of 35 runners placed in the last 14 days"
-              },
-              "weightChange": {
-                "points": 0.25,
-                "max": 0.25,
-                "answer": "Down",
-                "evidence": "6th, 11/02/2026, 6lb less than last time"
-              },
-              "trainerCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyCourse": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "12.5% at this course (16 runs) vs 8% overall"
-              },
-              "jockeyTrainerCombo": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "5.9% with this jockey (17 runs) vs 10% overall for this trainer"
-              },
-              "jockeyOnDebutant": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Not a debutant - see jockey/jockeyForm instead"
-              },
-              "marketMove": {
-                "points": 0,
-                "max": 1,
-                "answer": "Steady",
-                "evidence": "20/1 â†’ 18/1 (20 snapshots)"
-              },
-              "winningMark": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "runningStyle": {
-                "points": 0,
-                "max": 1,
-                "answer": "Mixed",
-                "evidence": "1 stayed-on, 1 faded, of last 2 classifiable runs"
-              },
-              "beatenFavourite": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              }
-            },
-            "rated_weight_advantage": {
-              "runnerOR": null,
-              "medianOR": 61,
-              "declaredWeight": 124,
-              "jockeyClaim": 0,
-              "effectiveWeight": 124,
-              "medianEffectiveWeight": 134,
-              "orAdvantage": null,
-              "weightAdvantage": 10,
-              "combined": null
-            },
-            "checklist_points": "4.25/16.25",
-            "checklist_earned_points": 4.25,
-            "stat_rating": 7.41,
-            "meta_rating": 4.35,
+            "meta_rating": 15.13,
             "trainer_trend": "hot"
           },
           {
@@ -181247,7 +181247,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "9/1",
+            "current_odds": "10/1",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -182445,12 +182445,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 6",
-                  "Odds 9/1"
+                  "Odds 10/1"
                 ],
                 "metrics": {
                   "rank": 6,
-                  "odds": "9/1",
-                  "decimal_odds": 10,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
                   "favourite": false,
                   "runners_with_prices": 10
                 }
@@ -182576,8 +182576,8 @@
               "marketMove": {
                 "points": 0,
                 "max": 1,
-                "answer": "Steady",
-                "evidence": "8/1 â†’ 9/1 (20 snapshots)"
+                "answer": "Drifter",
+                "evidence": "8/1 â†’ 10/1 (20 snapshots)"
               },
               "winningMark": {
                 "points": 1,
