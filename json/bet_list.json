@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T21:00:09.866Z",
+  "generatedAt": "2026-10-02T06:00:42.872Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 7/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,32 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Hexham",
+      "off": "13:38",
+      "status": "POSSIBLE",
+      "revealAt": "13:23"
+    },
+    {
+      "course": "Ascot",
+      "off": "15:35",
+      "status": "POSSIBLE",
+      "revealAt": "15:20"
+    },
+    {
+      "course": "Dundalk",
+      "off": "17:30",
+      "status": "POSSIBLE",
+      "revealAt": "17:15"
+    },
+    {
+      "course": "Dundalk",
+      "off": "18:30",
+      "status": "POSSIBLE",
+      "revealAt": "18:15"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -149,7 +174,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-01T21:00:09.790Z",
+    "updatedAt": "2026-10-02T06:00:42.761Z",
     "claude": {
       "races": 38,
       "won": 7,
