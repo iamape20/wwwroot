@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-02T19:10:17.570Z",
+  "generatedAt": "2026-10-02T19:20:16.578Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 2/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 3/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-02",
       "course": "Dundalk",
       "off": "20:00",
-      "horse": "EMIZA"
-    }
-  ],
-  "recent": [
+      "horse": "EMIZA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-02",
       "course": "Dundalk",
@@ -67,7 +72,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-02T19:10:17.490Z",
+    "updatedAt": "2026-10-02T19:20:16.503Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -90,9 +95,9 @@
   },
   "stats": {
     "paper": {
-      "bets": 2,
+      "bets": 3,
       "won": 0,
-      "pl": -2,
+      "pl": -3,
       "roi": -100
     },
     "live": {
