@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-03T08:51:16.955Z",
+  "generatedAt": "2026-10-03T09:01:42.985Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 3/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -62,6 +62,12 @@
       "revealAt": "14:45"
     },
     {
+      "course": "Redcar",
+      "off": "15:20",
+      "status": "POSSIBLE",
+      "revealAt": "15:05"
+    },
+    {
       "course": "Gowran Park",
       "off": "16:15",
       "status": "POSSIBLE",
@@ -99,9 +105,9 @@
       "horse": "GOLDEN RING",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.41,
+      "pl": 0.389,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-02",
@@ -121,13 +127,13 @@
       "horse": "INFRAAD",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.76,
+      "pl": 0.722,
+      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T08:51:16.816Z",
+    "updatedAt": "2026-10-03T09:01:42.821Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -152,9 +158,9 @@
     "paper": {
       "bets": 5,
       "won": 2,
-      "pl": -1.93,
-      "roi": -38.7,
-      "provisional": 2
+      "pl": -1.89,
+      "roi": -37.8,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
