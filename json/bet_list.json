@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:41:12.856Z",
+  "generatedAt": "2026-10-03T11:51:10.429Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
@@ -16,8 +16,9 @@
     {
       "course": "Newmarket",
       "off": "13:00",
-      "status": "POSSIBLE",
-      "revealAt": "12:45"
+      "status": "BET",
+      "horse": "NIGHT IN VEGAS",
+      "price": "8/13"
     },
     {
       "course": "Ascot",
@@ -66,12 +67,6 @@
       "off": "15:20",
       "status": "POSSIBLE",
       "revealAt": "15:05"
-    },
-    {
-      "course": "Gowran Park",
-      "off": "16:15",
-      "status": "POSSIBLE",
-      "revealAt": "16:00"
     }
   ],
   "awaitingResult": [],
@@ -133,7 +128,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T11:41:12.759Z",
+    "updatedAt": "2026-10-03T11:51:10.323Z",
     "claude": {
       "races": 38,
       "won": 7,
