@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:20:32.348Z",
+  "generatedAt": "2026-10-03T15:40:31.868Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 7/120 bets settled before the verdict.",
   "rules": [
@@ -12,15 +12,28 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
-  "awaitingResult": [
+  "today": [
     {
       "course": "Gowran Park",
-      "off": "16:15",
-      "horse": "FOU DE TOI"
+      "off": "16:50",
+      "status": "BET",
+      "horse": "ARCADIAN EMPEROR",
+      "price": "10/11"
     }
   ],
+  "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-03",
+      "course": "Gowran Park",
+      "off": "16:15",
+      "horse": "FOU DE TOI",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-03",
       "course": "Ascot",
@@ -144,7 +157,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T15:20:32.271Z",
+    "updatedAt": "2026-10-03T15:40:31.775Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -167,11 +180,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 11,
-      "won": 6,
-      "pl": -1.52,
-      "roi": -13.9,
-      "provisional": 4
+      "bets": 12,
+      "won": 7,
+      "pl": -0.42,
+      "roi": -3.5,
+      "provisional": 5
     },
     "live": {
       "bets": 0,
