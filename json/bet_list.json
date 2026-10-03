@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-03T13:31:03.213Z",
+  "generatedAt": "2026-10-03T13:41:10.495Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 6/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,14 +20,19 @@
       "revealAt": "14:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-03",
       "course": "Ascot",
       "off": "14:25",
-      "horse": "TENABILITY"
-    }
-  ],
-  "recent": [
+      "horse": "TENABILITY",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-03",
       "course": "Gowran Park",
@@ -129,7 +134,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T13:31:03.135Z",
+    "updatedAt": "2026-10-03T13:41:10.400Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -152,10 +157,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 9,
+      "bets": 10,
       "won": 6,
-      "pl": 0.48,
-      "roi": 5.3,
+      "pl": -0.52,
+      "roi": -5.2,
       "provisional": 4
     },
     "live": {
