@@ -35,7 +35,7 @@ function placesForField(runners, raceTitle) {
     if (runners <= 4) return 1;
     if (runners <= 7) return 2;
     if (runners <= 15) return 3;
-    return /handicap/i.test(String(raceTitle || "")) ? 4 : 3;
+    return /handicap|nursery/i.test(String(raceTitle || "")) ? 4 : 3;
 }
 
 function getSlug(name) {

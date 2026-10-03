@@ -127,7 +127,7 @@ function classifyRace(runners, raceTitle) {
         // half, p=0.81, and validation half, p=0.95; handicaps stayed
         // negative even when clear, -17.6% ROI vs +3.2% for
         // non-handicaps).
-        if (typeof raceTitle === "string" && /handicap/i.test(raceTitle)) {
+        if (typeof raceTitle === "string" && /handicap|nursery/i.test(raceTitle)) {
             return {
                 tier: "Open",
                 margin,

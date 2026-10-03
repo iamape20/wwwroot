@@ -356,7 +356,7 @@ function raceMarginTier(runners, raceTitle) {
         if (
             tier !== "Open" &&
             typeof raceTitle === "string" &&
-            /handicap/i.test(raceTitle)
+            /handicap|nursery/i.test(raceTitle)
         ) {
             tier = "Open";
         }
