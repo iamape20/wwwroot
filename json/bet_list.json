@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:50:56.559Z",
+  "generatedAt": "2026-10-03T13:01:18.801Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Gowran Park",
-      "off": "13:55",
-      "status": "BET",
-      "horse": "WITCHES FAMILIAR",
-      "price": "1/2"
-    },
-    {
       "course": "Ascot",
       "off": "14:25",
       "status": "POSSIBLE",
@@ -31,15 +24,15 @@
       "off": "15:00",
       "status": "POSSIBLE",
       "revealAt": "14:45"
-    },
-    {
-      "course": "Redcar",
-      "off": "15:20",
-      "status": "POSSIBLE",
-      "revealAt": "15:05"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Gowran Park",
+      "off": "13:55",
+      "horse": "WITCHES FAMILIAR"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-03",
@@ -131,7 +124,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T12:50:56.480Z",
+    "updatedAt": "2026-10-03T13:01:18.637Z",
     "claude": {
       "races": 38,
       "won": 7,
