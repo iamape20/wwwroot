@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:31:07.715Z",
+  "generatedAt": "2026-10-03T12:41:13.890Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
@@ -14,30 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Newmarket",
-      "off": "13:35",
-      "status": "BET",
-      "horse": "BLUE BOLT",
-      "price": "1/4"
-    },
-    {
-      "course": "Redcar",
-      "off": "13:42",
-      "status": "BET",
-      "horse": "CHARTED COURSE",
-      "price": "1/1"
-    },
-    {
-      "course": "Ascot",
-      "off": "13:50",
-      "status": "POSSIBLE",
-      "revealAt": "13:35"
-    },
-    {
       "course": "Gowran Park",
       "off": "13:55",
-      "status": "POSSIBLE",
-      "revealAt": "13:40"
+      "status": "BET",
+      "horse": "WITCHES FAMILIAR",
+      "price": "8/15"
     },
     {
       "course": "Ascot",
@@ -58,7 +39,13 @@
       "revealAt": "15:05"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Newmarket",
+      "off": "13:35",
+      "horse": "BLUE BOLT"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-03",
@@ -139,7 +126,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T12:31:07.636Z",
+    "updatedAt": "2026-10-03T12:41:13.809Z",
     "claude": {
       "races": 38,
       "won": 7,
