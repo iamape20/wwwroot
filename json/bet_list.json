@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:01:18.801Z",
+  "generatedAt": "2026-10-03T13:11:00.069Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
@@ -16,8 +16,9 @@
     {
       "course": "Ascot",
       "off": "14:25",
-      "status": "POSSIBLE",
-      "revealAt": "14:10"
+      "status": "BET",
+      "horse": "TENABILITY",
+      "price": "1/1"
     },
     {
       "course": "Ascot",
@@ -26,14 +27,19 @@
       "revealAt": "14:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-03",
       "course": "Gowran Park",
       "off": "13:55",
-      "horse": "WITCHES FAMILIAR"
-    }
-  ],
-  "recent": [
+      "horse": "WITCHES FAMILIAR",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-03",
       "course": "Newmarket",
@@ -124,7 +130,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T13:01:18.637Z",
+    "updatedAt": "2026-10-03T13:10:59.966Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -147,11 +153,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 8,
-      "won": 5,
-      "pl": 0.08,
-      "roi": 1,
-      "provisional": 3
+      "bets": 9,
+      "won": 6,
+      "pl": 0.48,
+      "roi": 5.3,
+      "provisional": 4
     },
     "live": {
       "bets": 0,
