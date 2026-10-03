@@ -45,9 +45,16 @@ function computeLiveMarketMove(oddsHistory, horseName) {
 
     const horseKey = String(horseName || "").toUpperCase();
 
-    const withThisHorse = oddsHistory.snapshots
+    // Same price source as the latest snapshot only (2026-10-03) - mirrors
+    // checklistEngine.js scoreMarketMove: forecast snapshots (taken before
+    // bookmakers price a race; no source = forecast) vs live bookmaker
+    // prices is not a market move.
+    const sourceOf = s => s.source || "forecast";
+    const sorted = oddsHistory.snapshots
         .filter(s => s.odds && s.odds[horseKey])
         .sort((a, b) => a.time - b.time);
+    const latestSource = sorted.length ? sourceOf(sorted[sorted.length - 1]) : null;
+    const withThisHorse = sorted.filter(s => sourceOf(s) === latestSource);
 
     if (withThisHorse.length < 2) return null;
 
