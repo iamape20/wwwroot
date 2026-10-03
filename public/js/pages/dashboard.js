@@ -97,6 +97,7 @@ function renderDailyDouble(dashboard) {
                 <div class="daily-double-horse">
                     ${escapeHtml(p.horse)}
                     <span class="daily-double-tier">${escapeHtml(p.tier)}</span>
+                    ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
                 </div>
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(+${escapeHtml(p.margin)} clear)</span></div>

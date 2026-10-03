@@ -203,6 +203,17 @@ function applyFrozenMarketHybrid(
         frozen_rule: "2026-MARKET-FIRST"
     };
 }
+// True when the pick's race is on today's card but the horse is no longer
+// a declared runner (Sporting Life drops withdrawn horses from the list).
+function isWithdrawnPick(ratings, entry) {
+    const meeting = Object.values(ratings || {}).find(m =>
+        String(m?.name || "").toUpperCase() === String(entry?.course || "").toUpperCase());
+    const race = meeting?.races?.find(r => r.time === entry?.time);
+    if (!race?.runners?.length) return false;
+    return !race.runners.some(r => r && r.non_runner !== true &&
+        String(r.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase());
+}
+
 function makeCandidate(
     meetingId,
     meeting,
@@ -821,9 +832,16 @@ for (
 
             nap,
 
+            // Flag a locked Daily Double horse that has since been withdrawn
+            // (2026-10-03): the list is locked in the morning, and 3 of 134
+            // shortlist picks so far were not running at the off - the page
+            // showed them as the day's bet with no warning.
             dailyDouble:
 
-			dailyDoubleData?.dailyDouble || [],
+			(dailyDoubleData?.dailyDouble || []).map(e => ({
+				...e,
+				nonRunner: isWithdrawnPick(ratings, e)
+			})),
 
 			dailyDoublePickMode:
 
