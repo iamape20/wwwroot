@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-03T16:00:29.843Z",
+  "generatedAt": "2026-10-03T16:20:28.503Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 7/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 8/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-03",
       "course": "Gowran Park",
       "off": "16:50",
-      "horse": "ARCADIAN EMPEROR"
-    }
-  ],
-  "recent": [
+      "horse": "ARCADIAN EMPEROR",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-03",
       "course": "Gowran Park",
@@ -59,6 +64,17 @@
       "course": "Gowran Park",
       "off": "13:55",
       "horse": "WITCHES FAMILIAR",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-03",
+      "course": "Redcar",
+      "off": "13:42",
+      "horse": "CHARTED COURSE",
       "phase": "PAPER",
       "result": "won",
       "bsp": null,
@@ -155,7 +171,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T16:00:29.766Z",
+    "updatedAt": "2026-10-03T16:20:28.420Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -178,11 +194,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 12,
-      "won": 7,
-      "pl": -0.42,
-      "roi": -3.5,
-      "provisional": 5
+      "bets": 14,
+      "won": 8,
+      "pl": 0.08,
+      "roi": 0.5,
+      "provisional": 6
     },
     "live": {
       "bets": 0,
