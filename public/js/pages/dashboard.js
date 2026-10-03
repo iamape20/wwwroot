@@ -2657,14 +2657,22 @@ async function loadMeetings(autoSelectFirst = false) {
                     </span>
 
                     <span class="meeting-card-count">
-                        ${escapeHtml(
-                            meeting.raceCount
-                        )}
+                        ${Number(meeting.raceCount) > 0
+                            ? escapeHtml(meeting.raceCount)
+                            : "Abandoned"}
                     </span>
 
                 `;
 
-                card.addEventListener(
+                // A meeting with no races (abandoned - 2026-10-03: "Warwick 0"
+                // on 30 Sep) gets no click handler: it would only open an
+                // empty race list.
+                if (!(Number(meeting.raceCount) > 0)) {
+                    card.classList.add("meeting-card-empty");
+                    card.style.opacity = "0.55";
+                    card.style.cursor = "default";
+                    card.title = "No races - meeting abandoned";
+                } else card.addEventListener(
                     "click",
                     () => {
 
@@ -2702,22 +2710,25 @@ async function loadMeetings(autoSelectFirst = false) {
 			response.meetings.length
 		) {
 
-			const firstCard =
-				container.querySelector(
-					".meeting-card"
-				);
+			// First meeting that actually has races (2026-10-03) - an
+			// abandoned meeting first in the list used to open an empty page.
+			const first =
+				response.meetings.find(m => Number(m.raceCount) > 0);
+
+			const firstCard = first
+				? container.querySelector(`.meeting-card[data-meeting-id="${first.id}"]`)
+				: null;
 
 			if (firstCard) {
 				firstCard.classList.add("active");
 			}
 
-			const first =
-				response.meetings[0];
-
-			loadRaces(
-				first.id,
-				first.name
-			);
+			if (first) {
+				loadRaces(
+					first.id,
+					first.name
+				);
+			}
 
 		}
 
