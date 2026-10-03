@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T21:00:10.956Z",
+  "generatedAt": "2026-10-03T02:29:06.358Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 3/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,50 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Newmarket",
+      "off": "13:00",
+      "status": "POSSIBLE",
+      "revealAt": "12:45"
+    },
+    {
+      "course": "Ascot",
+      "off": "13:15",
+      "status": "POSSIBLE",
+      "revealAt": "13:00"
+    },
+    {
+      "course": "Newmarket",
+      "off": "13:35",
+      "status": "POSSIBLE",
+      "revealAt": "13:20"
+    },
+    {
+      "course": "Gowran Park",
+      "off": "13:55",
+      "status": "POSSIBLE",
+      "revealAt": "13:40"
+    },
+    {
+      "course": "Ascot",
+      "off": "14:25",
+      "status": "POSSIBLE",
+      "revealAt": "14:10"
+    },
+    {
+      "course": "Ascot",
+      "off": "15:00",
+      "status": "POSSIBLE",
+      "revealAt": "14:45"
+    },
+    {
+      "course": "Newmarket",
+      "off": "15:15",
+      "status": "POSSIBLE",
+      "revealAt": "15:00"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -95,16 +138,18 @@
   },
   "stats": {
     "paper": {
-      "bets": 3,
-      "won": 0,
-      "pl": -3,
-      "roi": -100
+      "bets": 5,
+      "won": 2,
+      "pl": -1.93,
+      "roi": -38.7,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
       "won": 0,
       "pl": 0,
-      "roi": null
+      "roi": null,
+      "provisional": 0
     },
     "verdict": null,
     "trackerStarted": "2026-10-02T13:51:24.265Z",

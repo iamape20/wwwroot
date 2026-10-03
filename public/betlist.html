@@ -96,7 +96,7 @@ async function load() {
     document.getElementById("awaiting").innerHTML = aw.map(b => `<div class="card">${esc(b.course)} ${esc(b.off)} - ${esc(b.horse)}</div>`).join("");
 
     const s = d.stats || {};
-    const cell = (label, st) => st && st.bets ? `<div class="card stat"><span class="muted">${label}</span><b>${st.won}/${st.bets} won</b><span>${signed(st.pl)} units (${signed(st.roi)}%)</span></div>` : `<div class="card stat"><span class="muted">${label}</span><b>0 bets</b></div>`;
+    const cell = (label, st) => st && st.bets ? `<div class="card stat"><span class="muted">${label}</span><b>${st.won}/${st.bets} won</b><span>${signed(st.pl)} units (${signed(st.roi)}%)</span>${st.provisional ? `<span class="muted">${st.provisional} winner${st.provisional > 1 ? "s" : ""} at bookmaker SP until Betfair SP is published</span>` : ""}</div>` : `<div class="card stat"><span class="muted">${label}</span><b>0 bets</b></div>`;
     document.getElementById("stats").innerHTML = cell("Paper phase", s.paper) + cell("Live phase", s.live);
     document.getElementById("backtest").textContent = `${s.backtest || ""}. Tracking since ${s.trackerStarted ? new Date(s.trackerStarted).toLocaleDateString("en-GB") : "-"}.` +
         (s.verdict ? ` Verdict ${s.verdict.at.slice(0, 10)}: ${s.verdict.outcome} (${signed(s.verdict.roi)}% over ${s.verdict.bets} bets).` : "");
