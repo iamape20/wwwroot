@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:21:13.842Z",
+  "generatedAt": "2026-10-03T12:31:07.715Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 5/120 bets settled before the verdict.",
   "rules": [
@@ -18,13 +18,14 @@
       "off": "13:35",
       "status": "BET",
       "horse": "BLUE BOLT",
-      "price": "3/10"
+      "price": "1/4"
     },
     {
       "course": "Redcar",
       "off": "13:42",
-      "status": "POSSIBLE",
-      "revealAt": "13:27"
+      "status": "BET",
+      "horse": "CHARTED COURSE",
+      "price": "1/1"
     },
     {
       "course": "Ascot",
@@ -57,14 +58,19 @@
       "revealAt": "15:05"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-03",
       "course": "Ascot",
       "off": "13:15",
-      "horse": "SO REGAL"
-    }
-  ],
-  "recent": [
+      "horse": "SO REGAL",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-03",
       "course": "Newmarket",
@@ -133,7 +139,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-03T12:21:13.766Z",
+    "updatedAt": "2026-10-03T12:31:07.636Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -156,11 +162,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 6,
-      "won": 3,
-      "pl": -1.27,
-      "roi": -21.2,
-      "provisional": 1
+      "bets": 7,
+      "won": 4,
+      "pl": -0.17,
+      "roi": -2.5,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
