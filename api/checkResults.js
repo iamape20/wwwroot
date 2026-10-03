@@ -229,9 +229,13 @@ module.exports = async (req, res) => {
 
         }
 
-        const today = new Date().toISOString().split("T")[0];
-        const key = `liveResults:${today}`;
+        // UK calendar date, not UTC (2026-10-03): Sporting Life's results
+        // page is the UK racing day, but toISOString() is UTC, so from
+        // 00:00 to 01:00 BST "today" was still the previous day - the
+        // strip showed yesterday's races as today's.
         const now = Date.now();
+        const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(now);
+        const key = `liveResults:${today}`;
 
         /*
          * Yesterday's tally is still sitting in Redis under its own
@@ -241,7 +245,9 @@ module.exports = async (req, res) => {
          * comparison alongside today's live strip, not a second full
          * results feed.
          */
-        const yesterdayDate = new Date(now - 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+        // The calendar day before `today` (via midday UTC, so a 23- or
+        // 25-hour clock-change day can't skip or repeat a date).
+        const yesterdayDate = new Date(Date.parse(`${today}T12:00:00Z`) - 24 * 60 * 60 * 1000).toISOString().split("T")[0];
         const yesterdayStored = await redis.get(`liveResults:${yesterdayDate}`);
         const yesterday = yesterdayStored?.racesChecked
             ? {
