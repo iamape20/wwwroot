@@ -105,7 +105,7 @@ async function load() {
     document.getElementById("recent").innerHTML = rec.length
         ? `<tr><th>Date</th><th>Race</th><th>Horse</th><th>Result</th><th>BSP</th><th>P/L</th></tr>` + rec.map(b =>
             `<tr><td>${esc(b.date.slice(5))}</td><td>${esc(b.course)} ${esc(b.off)}</td><td>${esc(b.horse)}</td>
-             <td class="${esc(b.result)}">${esc(b.result)}</td><td>${b.bsp ? esc(b.bsp.toFixed(2)) : b.settledAt === "bookmaker_sp_fallback" ? "SP" : "pending"}</td>
+             <td class="${esc(b.result)}">${esc(b.result)}</td><td>${b.bsp ? esc(b.bsp.toFixed(2)) : b.settledAt === "bookmaker_sp_fallback" ? "SP" : (b.result === "lost" || b.result === "void") ? "-" : "pending"}</td>
              <td>${b.pl == null ? "pending" : signed(b.pl)}</td></tr>`).join("")
         : `<tr><td class="muted">No settled bets yet.</td></tr>`;
 
