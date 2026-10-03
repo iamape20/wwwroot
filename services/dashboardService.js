@@ -722,6 +722,14 @@ for (
                 if (!Array.isArray(race?.runners))
                     return;
 
+                // Races still to run only (2026-10-03) - same rule as Best
+                // Opportunity above (30 Sep). These lists feed the side
+                // board's MARKET SELECTION entries, which otherwise kept
+                // offering races that had already finished.
+                const candidateOffMs = Date.parse(`${meeting.date}T${race.time}:00Z`);
+                if (Number.isFinite(candidateOffMs) && Date.now() >= candidateOffMs)
+                    return;
+
 
                 const tierInfo =
                     classifyRace(race.runners, race.display_title);
