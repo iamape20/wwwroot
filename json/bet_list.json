@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-04T13:40:37.042Z",
+  "generatedAt": "2026-10-04T14:00:36.141Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 14/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 15/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -12,24 +12,26 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
-    {
-      "course": "Killarney",
-      "off": "14:45",
-      "status": "BET",
-      "horse": "LIPS FREEDOM",
-      "price": "10/11"
-    },
+  "today": [],
+  "awaitingResult": [
     {
       "course": "Kelso",
       "off": "14:55",
-      "status": "BET",
-      "horse": "TUPPENCE",
-      "price": "1/2"
+      "horse": "TUPPENCE"
     }
   ],
-  "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-04",
+      "course": "Killarney",
+      "off": "14:45",
+      "horse": "LIPS FREEDOM",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-04",
       "course": "Curragh",
@@ -183,21 +185,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-02",
-      "course": "Ascot",
-      "off": "15:35",
-      "horse": "INFRAAD",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.76,
-      "pl": 0.722,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-04T13:40:36.946Z",
+    "updatedAt": "2026-10-04T14:00:36.066Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -220,10 +211,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 15,
+      "bets": 16,
       "won": 9,
-      "pl": 0.82,
-      "roi": 5.4,
+      "pl": -0.18,
+      "roi": -1.2,
       "provisional": 1
     },
     "live": {
