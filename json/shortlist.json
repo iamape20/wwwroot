@@ -1,7 +1,44 @@
 {
   "date": "2026-10-04",
-  "strong": [],
-  "moderate": [],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "strong": [
+    {
+      "horse": "HMAS PERTH",
+      "course": "Curragh",
+      "time": "12:55",
+      "rating": "66.5",
+      "margin": "18.0",
+      "marginValue": 18,
+      "confidence": 68,
+      "meetingId": "121773",
+      "raceIndex": 1
+    }
+  ],
+  "moderate": [
+    {
+      "horse": "ASTELIA",
+      "course": "Killarney",
+      "time": "12:35",
+      "rating": "63.9",
+      "margin": "8.9",
+      "marginValue": 8.899999999999999,
+      "confidence": 63,
+      "meetingId": "121772",
+      "raceIndex": 0
+    }
+  ],
+  "dailyDouble": [
+    {
+      "horse": "HMAS PERTH",
+      "course": "Curragh",
+      "time": "12:55",
+      "rating": "66.5",
+      "margin": "18.0",
+      "marginValue": 18,
+      "confidence": 68,
+      "meetingId": "121773",
+      "raceIndex": 1,
+      "tier": "Strong"
+    }
+  ],
+  "pickMode": "single"
 }
