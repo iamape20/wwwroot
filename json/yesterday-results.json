@@ -1,32 +1,59 @@
 {
-  "date": "2026-10-02",
-  "strong": [],
+  "date": "2026-10-03",
+  "strong": [
+    {
+      "horse": "SO REGAL",
+      "course": "Ascot",
+      "time": "12:15",
+      "rating": "70.7",
+      "margin": "17.9",
+      "marginValue": 17.900000000000006,
+      "confidence": 70,
+      "meetingId": "121633",
+      "raceIndex": 0,
+      "outcome": "won"
+    }
+  ],
   "moderate": [
     {
-      "horse": "INFRAAD",
-      "course": "Ascot",
-      "time": "14:35",
-      "rating": "84.5",
-      "margin": "13.2",
-      "marginValue": 13.200000000000003,
-      "confidence": 83,
-      "meetingId": "121724",
-      "raceIndex": 3,
+      "horse": "NIGHT IN VEGAS",
+      "course": "Newmarket",
+      "time": "12:00",
+      "rating": "83.6",
+      "margin": "21.6",
+      "marginValue": 21.599999999999994,
+      "confidence": 80,
+      "meetingId": "116738",
+      "raceIndex": 1,
       "outcome": "won"
     },
     {
-      "horse": "SIR LES PATTERSON",
-      "course": "Dundalk",
-      "time": "16:30",
-      "rating": "58.0",
-      "margin": "6.2",
-      "marginValue": 6.200000000000003,
-      "confidence": 63,
-      "meetingId": "121751",
-      "raceIndex": 1,
-      "outcome": "placed"
+      "horse": "TENABILITY",
+      "course": "Ascot",
+      "time": "13:25",
+      "rating": "81.7",
+      "margin": "9.2",
+      "marginValue": 9.200000000000003,
+      "confidence": 80,
+      "meetingId": "121633",
+      "raceIndex": 2,
+      "outcome": "lost"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "SO REGAL",
+      "course": "Ascot",
+      "time": "12:15",
+      "rating": "70.7",
+      "margin": "17.9",
+      "marginValue": 17.900000000000006,
+      "confidence": 70,
+      "meetingId": "121633",
+      "raceIndex": 0,
+      "tier": "Strong",
+      "outcome": "won"
+    }
+  ],
+  "pickMode": "single"
 }
