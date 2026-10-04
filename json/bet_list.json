@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T13:00:51.176Z",
+  "generatedAt": "2026-10-04T13:20:37.336Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 14/120 bets settled before the verdict.",
   "rules": [
@@ -26,14 +26,19 @@
       "revealAt": "14:40"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-04",
       "course": "Curragh",
       "off": "13:55",
-      "horse": "HMAS PERTH"
-    }
-  ],
-  "recent": [
+      "horse": "HMAS PERTH",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-03",
       "course": "Gowran Park",
@@ -190,7 +195,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-04T13:00:51.060Z",
+    "updatedAt": "2026-10-04T13:20:37.266Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -213,11 +218,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 14,
-      "won": 8,
-      "pl": 0.52,
-      "roi": 3.7,
-      "provisional": 0
+      "bets": 15,
+      "won": 9,
+      "pl": 0.82,
+      "roi": 5.4,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
