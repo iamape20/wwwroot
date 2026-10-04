@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T12:40:44.573Z",
+  "generatedAt": "2026-10-04T13:00:51.176Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 14/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Curragh",
-      "off": "13:55",
-      "status": "BET",
-      "horse": "HMAS PERTH",
-      "price": "2/7"
-    },
-    {
       "course": "Killarney",
       "off": "14:45",
       "status": "POSSIBLE",
@@ -33,7 +26,13 @@
       "revealAt": "14:40"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Curragh",
+      "off": "13:55",
+      "horse": "HMAS PERTH"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-03",
@@ -191,7 +190,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-04T12:40:44.478Z",
+    "updatedAt": "2026-10-04T13:00:51.060Z",
     "claude": {
       "races": 38,
       "won": 7,
