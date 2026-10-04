@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T14:00:36.141Z",
+  "generatedAt": "2026-10-04T14:10:31.930Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 15/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-04",
       "course": "Kelso",
       "off": "14:55",
-      "horse": "TUPPENCE"
-    }
-  ],
-  "recent": [
+      "horse": "TUPPENCE",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-04",
       "course": "Killarney",
@@ -174,21 +179,10 @@
       "bsp": 1.41,
       "pl": 0.389,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-02",
-      "course": "Newcastle",
-      "off": "18:15",
-      "horse": "ASHEYRA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-04T14:00:36.066Z",
+    "updatedAt": "2026-10-04T14:10:31.853Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 16,
-      "won": 9,
-      "pl": -0.18,
-      "roi": -1.2,
-      "provisional": 1
+      "bets": 17,
+      "won": 10,
+      "pl": 0.43,
+      "roi": 2.5,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
