@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-04T08:40:58.251Z",
+  "generatedAt": "2026-10-04T09:01:03.090Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 8/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 14/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -24,6 +24,12 @@
       "off": "13:55",
       "status": "POSSIBLE",
       "revealAt": "13:40"
+    },
+    {
+      "course": "Killarney",
+      "off": "14:45",
+      "status": "POSSIBLE",
+      "revealAt": "14:30"
     },
     {
       "course": "Kelso",
@@ -52,9 +58,9 @@
       "horse": "FOU DE TOI",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.26,
+      "pl": 1.197,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -85,9 +91,9 @@
       "horse": "WITCHES FAMILIAR",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.45,
+      "pl": 0.427,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -96,9 +102,9 @@
       "horse": "CHARTED COURSE",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.70544335,
+      "pl": 1.62,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -107,9 +113,9 @@
       "horse": "BLUE BOLT",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.33697649,
+      "pl": 0.32,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -118,9 +124,9 @@
       "horse": "SO REGAL",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.25668337,
+      "pl": 1.194,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -129,9 +135,9 @@
       "horse": "NIGHT IN VEGAS",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.68,
+      "pl": 0.646,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-02",
@@ -190,7 +196,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-04T08:40:58.121Z",
+    "updatedAt": "2026-10-04T09:01:02.862Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -215,9 +221,9 @@
     "paper": {
       "bets": 14,
       "won": 8,
-      "pl": 0.08,
-      "roi": 0.5,
-      "provisional": 6
+      "pl": 0.52,
+      "roi": 3.7,
+      "provisional": 0
     },
     "live": {
       "bets": 0,

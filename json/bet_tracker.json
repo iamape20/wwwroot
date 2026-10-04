@@ -94,8 +94,9 @@
       "stake": 1,
       "result": "won",
       "isp": "8/13",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.68,
+      "pl": 0.646,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Ascot|12:15",
@@ -109,8 +110,9 @@
       "stake": 1,
       "result": "won",
       "isp": "11/10",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.25668337,
+      "pl": 1.194,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Newmarket|12:35",
@@ -124,8 +126,9 @@
       "stake": 1,
       "result": "won",
       "isp": "1/4",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.33697649,
+      "pl": 0.32,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Redcar|12:42",
@@ -141,8 +144,9 @@
       "note": "Added 2026-10-03 after the reveal-time fix: shown on the bet list as BET from 13:31 UK, but the old at-the-off re-check dropped it (2nd fav shortened, ratio 1.36). Under the rule (bet when shown) it was a bet.",
       "result": "won",
       "isp": "6/4",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.70544335,
+      "pl": 1.62,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Gowran Park|12:55",
@@ -156,8 +160,9 @@
       "stake": 1,
       "result": "won",
       "isp": "2/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.45,
+      "pl": 0.427,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Ascot|13:25",
@@ -203,8 +208,9 @@
       "stake": 1,
       "result": "won",
       "isp": "11/10",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.26,
+      "pl": 1.197,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-03|Gowran Park|15:50",
@@ -226,5 +232,5 @@
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1791093648816
+  "lastBackfill": 1791104464187
 }
