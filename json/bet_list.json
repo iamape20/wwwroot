@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:41:12.906Z",
+  "generatedAt": "2026-10-05T14:01:15.244Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 17/120 bets settled before the verdict.",
   "rules": [
@@ -32,14 +32,19 @@
       "revealAt": "17:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-05",
       "course": "Fairyhouse",
       "off": "14:30",
-      "horse": "STATE PENSION"
-    }
-  ],
-  "recent": [
+      "horse": "STATE PENSION",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-05",
       "course": "Pontefract",
@@ -193,21 +198,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-02",
-      "course": "Dundalk",
-      "off": "19:30",
-      "horse": "SALT LAKE",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-05T13:41:12.824Z",
+    "updatedAt": "2026-10-05T14:01:15.146Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 18,
-      "won": 11,
-      "pl": 0.85,
-      "roi": 4.7,
-      "provisional": 1
+      "bets": 19,
+      "won": 12,
+      "pl": 1.22,
+      "roi": 6.4,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
