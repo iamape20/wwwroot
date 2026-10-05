@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T06:21:32.725Z",
+  "generatedAt": "2026-10-05T06:41:30.603Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 15/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 17/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -44,10 +44,10 @@
       "revealAt": "15:40"
     },
     {
-      "course": "Kempton",
-      "off": "16:10",
+      "course": "Wolverhampton",
+      "off": "18:00",
       "status": "POSSIBLE",
-      "revealAt": "15:55"
+      "revealAt": "17:45"
     }
   ],
   "awaitingResult": [],
@@ -59,9 +59,9 @@
       "horse": "TUPPENCE",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.75210818,
+      "pl": 0.715,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-04",
@@ -81,9 +81,9 @@
       "horse": "HMAS PERTH",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.39265889,
+      "pl": 0.373,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-03",
@@ -219,7 +219,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-05T06:21:32.636Z",
+    "updatedAt": "2026-10-05T06:41:30.497Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -244,9 +244,9 @@
     "paper": {
       "bets": 17,
       "won": 10,
-      "pl": 0.43,
-      "roi": 2.5,
-      "provisional": 2
+      "pl": 0.6,
+      "roi": 3.5,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
