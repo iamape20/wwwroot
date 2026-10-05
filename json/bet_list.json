@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T17:10:32.296Z",
+  "generatedAt": "2026-10-05T17:20:28.143Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 18/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 19/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-05",
       "course": "Wolverhampton",
       "off": "18:00",
-      "horse": "LADY BRANKSOME"
-    }
-  ],
-  "recent": [
+      "horse": "LADY BRANKSOME",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-05",
       "course": "Killarney",
@@ -174,21 +179,10 @@
       "bsp": 1.33697649,
       "pl": 0.32,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-03",
-      "course": "Ascot",
-      "off": "13:15",
-      "horse": "SO REGAL",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.25668337,
-      "pl": 1.194,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-05T17:10:32.187Z",
+    "updatedAt": "2026-10-05T17:20:28.036Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 21,
+      "bets": 22,
       "won": 13,
-      "pl": 0.66,
-      "roi": 3.1,
+      "pl": -0.34,
+      "roi": -1.5,
       "provisional": 3
     },
     "live": {
