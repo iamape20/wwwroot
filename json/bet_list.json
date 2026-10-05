@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:31:28.821Z",
+  "generatedAt": "2026-10-05T12:41:29.080Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 17/120 bets settled before the verdict.",
   "rules": [
@@ -38,14 +38,19 @@
       "revealAt": "17:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-05",
       "course": "Pontefract",
       "off": "13:30",
-      "horse": "NARRJOO"
-    }
-  ],
-  "recent": [
+      "horse": "NARRJOO",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-04",
       "course": "Kelso",
@@ -199,21 +204,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-02",
-      "course": "Dundalk",
-      "off": "18:30",
-      "horse": "GOLDEN RING",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.41,
-      "pl": 0.389,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-05T12:31:28.741Z",
+    "updatedAt": "2026-10-05T12:41:29.002Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,11 +230,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 17,
-      "won": 10,
-      "pl": 0.6,
-      "roi": 3.5,
-      "provisional": 0
+      "bets": 18,
+      "won": 11,
+      "pl": 0.85,
+      "roi": 4.7,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
