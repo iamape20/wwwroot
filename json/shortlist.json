@@ -1,19 +1,44 @@
 {
   "date": "2026-10-06",
-  "strong": [],
-  "moderate": [
+  "strong": [
     {
       "horse": "WAY WITH WORDS",
       "course": "Galway",
       "time": "16:15",
       "rating": "63.0",
-      "margin": "11.6",
-      "marginValue": 11.600000000000001,
+      "margin": "14.0",
+      "marginValue": 14,
       "confidence": 68,
       "meetingId": "121820",
       "raceIndex": 6
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "moderate": [
+    {
+      "horse": "WOODVALE",
+      "course": "Leicester",
+      "time": "13:06",
+      "rating": "70.4",
+      "margin": "13.0",
+      "marginValue": 13.000000000000007,
+      "confidence": 71,
+      "meetingId": "121799",
+      "raceIndex": 1
+    }
+  ],
+  "dailyDouble": [
+    {
+      "horse": "WAY WITH WORDS",
+      "course": "Galway",
+      "time": "16:15",
+      "rating": "63.0",
+      "margin": "14.0",
+      "marginValue": 14,
+      "confidence": 68,
+      "meetingId": "121820",
+      "raceIndex": 6,
+      "tier": "Strong"
+    }
+  ],
+  "pickMode": "single"
 }
