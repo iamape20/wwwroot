@@ -29,7 +29,11 @@
       "rating": 62.6,
       "runners": 20,
       "recordedAt": "2026-10-06T12:31:02.341Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-06|Leicester|13:06",
@@ -46,10 +50,10 @@
   ],
   "stats": {
     "recorded": 3,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
-    "pl": 0.55,
-    "roi": 55.2
+    "pl": -0.45,
+    "roi": -22.4
   },
   "lastBackfill": 1791277274266
 }
