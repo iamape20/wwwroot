@@ -298,27 +298,81 @@
       "marketVolume": 287
     },
     "lastBeforeOff": {
-      "at": "2026-10-07T13:40:48.240Z",
+      "at": "2026-10-07T14:00:48.109Z",
       "eventId": 34524479719901024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.33,
-      "available": 27,
+      "bestBack": 1.3,
+      "available": 155.78,
       "depth": [
         [
-          1.33,
-          27
+          1.3,
+          155.78
         ],
         [
-          1.32,
-          9.69
+          1.29,
+          528.82
         ],
         [
-          1.31,
-          247.24
+          1.28,
+          402.68
         ]
       ],
-      "marketVolume": 45860
+      "marketVolume": 46665
+    }
+  },
+  "BET|2026-10-07|Worcester|14:05|LEXINGTONWOOD": {
+    "type": "BET",
+    "date": "2026-10-07",
+    "course": "Worcester",
+    "time": "14:05",
+    "horse": "LEXINGTON WOOD",
+    "betId": "2026-10-07|Worcester|14:05",
+    "atReveal": {
+      "at": "2026-10-07T13:51:01.615Z",
+      "eventId": 34523873150302080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.5,
+      "available": 11.41,
+      "depth": [
+        [
+          2.5,
+          11.41
+        ],
+        [
+          2.48,
+          170.88
+        ],
+        [
+          2.46,
+          341.37
+        ]
+      ],
+      "marketVolume": 141762
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-07T14:00:48.103Z",
+      "eventId": 34523873150302080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.2,
+      "available": 34.33,
+      "depth": [
+        [
+          2.2,
+          34.33
+        ],
+        [
+          2.18,
+          95.77
+        ],
+        [
+          2.16,
+          144.61
+        ]
+      ],
+      "marketVolume": 490929
     }
   }
 }
