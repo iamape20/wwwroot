@@ -377,8 +377,9 @@
       "revealedAt": "2026-10-06T12:51:03.416Z",
       "result": "won",
       "isp": "4/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.9231344,
+      "pl": 0.877,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-06|Huntingdon|15:48",
@@ -418,5 +419,5 @@
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1791352871688
+  "lastBackfill": 1791363673957
 }
