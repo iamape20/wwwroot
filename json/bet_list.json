@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T14:40:39.780Z",
+  "generatedAt": "2026-10-07T15:00:39.823Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 26/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Navan",
-      "off": "15:45",
-      "status": "BET",
-      "horse": "JESUS GREEN",
-      "price": "2/9"
-    },
-    {
       "course": "Kempton",
       "off": "17:30",
       "status": "POSSIBLE",
@@ -29,6 +22,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-07",
+      "course": "Navan",
+      "off": "15:45",
+      "horse": "JESUS GREEN",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-07",
       "course": "Worcester",
@@ -182,21 +186,10 @@
       "bsp": 2.26,
       "pl": 1.197,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-03",
-      "course": "Ascot",
-      "off": "15:00",
-      "horse": "DIVISION",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-07T14:40:39.681Z",
+    "updatedAt": "2026-10-07T15:00:39.643Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 26,
-      "won": 14,
-      "pl": -2.3,
-      "roi": -8.9,
-      "provisional": 0
+      "bets": 27,
+      "won": 15,
+      "pl": -1.94,
+      "roi": -7.2,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
