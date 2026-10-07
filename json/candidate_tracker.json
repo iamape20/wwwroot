@@ -174,7 +174,11 @@
       "rating": 62.3,
       "runners": 13,
       "recordedAt": "2026-10-07T13:01:20.837Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-07|Sedgefield|13:20",
@@ -203,10 +207,10 @@
   ],
   "stats": {
     "recorded": 13,
-    "settled": 9,
+    "settled": 10,
     "won": 4,
-    "pl": -1.58,
-    "roi": -17.5
+    "pl": -2.58,
+    "roi": -25.8
   },
   "lastBackfill": 1791376267082
 }
