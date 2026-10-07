@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forward Test Progress</title>
+<style>
+:root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #16181d; --muted: #5d6470; --line: #e3e6ea; --grid: #eef0f3;
+    --paper: #b26a00; --paper-bg: #fff4e0; --live: #11743b; --live-bg: #e3f6ea; --stop: #b3261e; --stop-bg: #fde7e6;
+    --series: #1446a0; --ref: #8a919c; --bar-bg: #e3e6ea;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111317; --card: #1b1e24; --text: #eceef2; --muted: #a0a6b1; --line: #2c3038; --grid: #23272e;
+        --paper: #ffb74d; --paper-bg: #3a2a10; --live: #6fdc9b; --live-bg: #12321f; --stop: #ff8a80; --stop-bg: #3d1614;
+        --series: #9cc1ff; --ref: #7d8490; --bar-bg: #2c3038;
+    }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.4rem; margin: 4px 0 12px; }
+h2 { font-size: 1.05rem; margin: 26px 0 8px; }
+.banner { border-radius: 10px; padding: 14px 16px; font-weight: 700; font-size: 1.05rem; }
+.banner small { display: block; font-weight: 500; font-size: 0.92rem; margin-top: 4px; }
+.ahead { background: var(--live-bg); color: var(--live); }
+.behind { background: var(--paper-bg); color: var(--paper); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 8px 0; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.stat span { color: var(--muted); font-size: 0.85rem; }
+.stat b { display: block; font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+.stat i { display: block; font-style: normal; color: var(--muted); font-size: 0.82rem; }
+.progress { height: 10px; background: var(--bar-bg); border-radius: 5px; overflow: hidden; margin: 10px 0 4px; }
+.progress div { height: 100%; background: var(--series); border-radius: 5px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+td.num, th.num { text-align: right; }
+.won { color: var(--live); font-weight: 700; } .lost { color: var(--stop); }
+.tablewrap { overflow-x: auto; }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { fill: var(--muted); font-size: 11px; font-family: inherit; }
+.tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+       padding: 6px 9px; font-size: 0.85rem; box-shadow: 0 2px 8px rgba(0,0,0,.15); white-space: nowrap; display: none; }
+details summary { cursor: pointer; color: var(--muted); font-size: 0.92rem; margin: 8px 0; }
+a { color: var(--series); }
+</style>
+</head>
+<body>
+<main>
+    <h1>Forward Test Progress</h1>
+    <div id="banner" class="banner">Loading...</div>
+    <p class="muted" id="updated"></p>
+
+    <h2>Bet list: progress to the 120-bet verdict</h2>
+    <div class="card">
+        <div class="row" id="progressText"></div>
+        <div class="progress"><div id="progressBar" style="width:0"></div></div>
+        <div class="muted" id="eta"></div>
+    </div>
+    <div class="stats" id="stats"></div>
+
+    <h2>Running profit/loss (units, £1 level stakes)</h2>
+    <div class="card chart" id="chartWrap">
+        <svg id="chart" viewBox="0 0 700 300" role="img" aria-label="Running profit and loss by bet number"></svg>
+        <div class="tip" id="tip"></div>
+    </div>
+    <p class="muted">Dashed lines show where the total would be at the backtest's pace (+2.0% per bet) and at the
+        historical test's pace (−4.8% per bet). The blue line is what has actually happened.</p>
+
+    <h2>Where it could finish</h2>
+    <div class="tablewrap"><table id="scenarios"></table></div>
+    <p class="muted" id="needed"></p>
+
+    <h2>Candidate rule (favourite shorter than 6/4 that is also our top-rated horse)</h2>
+    <div class="stats" id="candStats"></div>
+    <div class="tablewrap"><table id="candScenarios"></table></div>
+
+    <h2>Matchbook prices (read-only shadow, no bets placed)</h2>
+    <div class="tablewrap"><table id="matchbook"></table></div>
+
+    <details>
+        <summary>Every settled bet-list bet</summary>
+        <div class="tablewrap"><table id="bets"></table></div>
+    </details>
+
+    <p class="muted">Paper test only: no money is staked. Profit/loss is settled at Betfair SP after 5% commission
+        (bookmaker SP until Betfair SP is published); void races are excluded. Ranges are 95% confidence.
+        See also the <a href="/betlist.html">bet list</a>.</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const pct = (v, dp = 1) => v == null ? "–" : (v >= 0 ? "+" : "−") + Math.abs(100 * v).toFixed(dp) + "%";
+const plain = (v, dp = 1) => v == null ? "–" : (100 * v).toFixed(dp) + "%";
+const units = v => (v >= 0 ? "+" : "−") + Math.abs(v).toFixed(2) + "u";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const ukTime = (date, time) => {
+    try { return new Date(`${date}T${time}:00Z`).toLocaleTimeString("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit" }); }
+    catch { return time; }
+};
+const stat = (label, value, note) => `<div class="stat"><span>${label}</span><b>${value}</b>${note ? `<i>${note}</i>` : ""}</div>`;
+
+function scenarioTable(el, s) {
+    el.innerHTML = `<tr><th>If the true edge is…</th><th class="num">Expected final</th><th class="num">Chance of finishing above 0</th></tr>` +
+        s.scenarios.map(x => `<tr><td>${esc(x.label)}</td><td class="num">${units(x.expectedPl)} (${pct(x.expectedRoi)})</td><td class="num">${plain(x.chanceAboveZero, 0)}</td></tr>`).join("");
+}
+
+function drawChart(b, benchmarks) {
+    const svg = $("chart"), narrow = $("chartWrap").clientWidth < 520;
+    // Drawn at the real container width so the 11px labels stay 11px on a phone.
+    const W = Math.max(300, Math.min(700, $("chartWrap").clientWidth - 30)), H = narrow ? 240 : 300;
+    const L = 34, R = narrow ? 86 : 128, T = 14, B = 34;
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    const xMax = b.target;
+    const lines = [benchmarks.backtest, benchmarks.history].map(e => e * xMax);
+    const vals = [0, ...b.path.map(p => p.total), ...lines];
+    let yMin = Math.min(...vals), yMax = Math.max(...vals);
+    const pad = Math.max(1, (yMax - yMin) * 0.1); yMin -= pad; yMax += pad;
+    const x = n => L + (n / xMax) * (W - L - R);
+    const y = v => T + (yMax - v) / (yMax - yMin) * (H - T - B);
+
+    let g = "";
+    const step = (yMax - yMin) > 12 ? 4 : 2;
+    for (let v = Math.ceil(yMin / step) * step; v <= yMax; v += step) {
+        g += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>`;
+        g += `<text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v > 0 ? "+" : ""}${v}</text>`;
+    }
+    for (let n = 0; n <= xMax; n += narrow ? 40 : 20) g += `<text x="${x(n)}" y="${H - B + 18}" text-anchor="middle">${n}</text>`;
+    g += `<text x="${(L + W - R) / 2}" y="${H - 2}" text-anchor="middle">bets settled</text>`;
+    g += `<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="var(--ref)" stroke-width="1"/>`;
+    g += `<text x="${W - R + 6}" y="${y(0) + 4}">break-even</text>`;
+    g += `<line x1="${x(b.settled)}" x2="${x(b.settled)}" y1="${T}" y2="${H - B}" stroke="var(--line)" stroke-width="1"/>`;
+
+    const refs = [[narrow ? "backtest" : "backtest +2.0%", lines[0]], [narrow ? "historical" : "historical −4.8%", lines[1]]];
+    for (const [label, end] of refs) {
+        g += `<line x1="${x(0)}" y1="${y(0)}" x2="${x(xMax)}" y2="${y(end)}" stroke="var(--ref)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+        g += `<text x="${W - R + 6}" y="${y(end) + 4}">${label}</text>`;
+    }
+
+    const pts = [[0, 0], ...b.path.map(p => [p.n, p.total])];
+    g += `<polyline fill="none" stroke="var(--series)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts.map(([n, v]) => `${x(n)},${y(v)}`).join(" ")}"/>`;
+    const last = b.path[b.path.length - 1];
+    if (last) {
+        g += `<circle cx="${x(last.n)}" cy="${y(last.total)}" r="4.5" fill="var(--series)" stroke="var(--card)" stroke-width="2"/>`;
+        g += `<text x="${x(last.n) + 8}" y="${y(last.total) - 8}" style="fill:var(--text);font-weight:600">${units(last.total)} after ${last.n}</text>`;
+    }
+    g += `<line id="cross" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--muted)" stroke-width="1" visibility="hidden"/>`;
+    g += `<circle id="dot" r="4.5" fill="var(--series)" stroke="var(--card)" stroke-width="2" visibility="hidden"/>`;
+    g += `<rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="hit"/>`;
+    svg.innerHTML = g;
+
+    const tip = $("tip"), wrap = $("chartWrap");
+    const hide = () => { tip.style.display = "none"; $("cross").setAttribute("visibility", "hidden"); $("dot").setAttribute("visibility", "hidden"); };
+    $("hit").addEventListener("pointerleave", hide);
+    $("hit").addEventListener("pointermove", ev => {
+        if (!b.path.length) return;
+        const r = svg.getBoundingClientRect();
+        const sx = (ev.clientX - r.left) * W / r.width;
+        const n = Math.round((sx - L) / (W - L - R) * xMax);
+        const p = b.path[Math.min(Math.max(n, 1), b.path.length) - 1];
+        $("cross").setAttribute("x1", x(p.n)); $("cross").setAttribute("x2", x(p.n)); $("cross").setAttribute("visibility", "visible");
+        $("dot").setAttribute("cx", x(p.n)); $("dot").setAttribute("cy", y(p.total)); $("dot").setAttribute("visibility", "visible");
+        tip.innerHTML = `<b>Bet ${p.n}</b> · ${esc(p.date)} ${ukTime(p.date, p.time)} ${esc(p.course)}<br>${esc(p.horse)} – <span class="${p.result}">${esc(p.result)}</span> ${units(p.pl)}<br>Running total <b>${units(p.total)}</b>`;
+        tip.style.display = "block";
+        const px = x(p.n) * r.width / W, py = y(p.total) * r.height / H;
+        tip.style.left = Math.min(px + 12, r.width - tip.offsetWidth - 4) + "px";
+        tip.style.top = Math.max(py - tip.offsetHeight - 10, 0) + "px";
+    });
+}
+
+async function load() {
+    let d;
+    try {
+        const r = await fetch(`/api/progress?t=${Date.now()}`, { cache: "no-store" });
+        d = await r.json();
+        if (!d.success) throw new Error(d.error);
+    } catch (e) {
+        $("banner").textContent = "Progress data is not available right now.";
+        return;
+    }
+    const b = d.betList;
+
+    let verdict, cls;
+    if (b.settled >= b.target) { verdict = "Verdict reached: 120 bets settled"; cls = b.pl > 0 ? "ahead" : "behind"; }
+    else if (b.roi != null && b.roi >= d.benchmarks.backtest) { verdict = "On course: at or ahead of the backtest's pace"; cls = "ahead"; }
+    else if (b.pl >= 0) { verdict = "In profit, but below the backtest's pace"; cls = "ahead"; }
+    else { verdict = "Behind: needs " + pct(b.neededToFinishLevel) + " per bet from here to finish level"; cls = "behind"; }
+    $("banner").className = "banner " + cls;
+    $("banner").innerHTML = esc(verdict) + `<small>${b.settled} of ${b.target} bets settled, so too early to separate a real edge from luck. Paper phase: do not stake.</small>`;
+    $("updated").textContent = "Updated " + new Date(d.generatedAt).toLocaleString("en-GB", { timeZone: "Europe/London" }) + " UK";
+
+    $("progressText").innerHTML = `<b>${b.settled}</b>&nbsp;of ${b.target} settled` + (b.pending ? ` · ${b.pending} awaiting result or Betfair SP` : "");
+    $("progressBar").style.width = Math.min(100, 100 * b.settled / b.target) + "%";
+    $("eta").textContent = b.eta ? `About ${b.perDay.toFixed(1)} bets a day: verdict expected around ${new Date(b.eta).toLocaleDateString("en-GB", { day: "numeric", month: "long" })}.` : "";
+
+    $("stats").innerHTML =
+        stat("Winners", `${b.won} (${plain(b.strike)})`, `break-even at these prices: ${plain(b.breakEvenStrike)}`) +
+        stat("Profit / loss", units(b.pl), "level £1 stakes") +
+        stat("Return per bet", pct(b.roi), b.range ? `95% range ${pct(b.range[0], 0)} to ${pct(b.range[1], 0)}` : "") +
+        stat("Backtest", pct(d.benchmarks.backtest), "180 bets, Aug–Sep 2026");
+
+    drawChart(b, d.benchmarks);
+    let resizeTimer;
+    window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => drawChart(b, d.benchmarks), 150); });
+    scenarioTable($("scenarios"), b);
+    $("needed").textContent = b.neededToFinishLevel != null
+        ? `To finish the ${b.target} bets level, the remaining ${b.target - b.settled} need to return ${pct(b.neededToFinishLevel)} per bet; ` +
+          `to finish at the backtest's +2.0% they need ${pct((d.benchmarks.backtest * b.target - b.pl) / (b.target - b.settled))}.`
+        : "";
+
+    const c = d.candidate;
+    if (c) {
+        $("candStats").innerHTML =
+            stat("Settled", `${c.settled} / ${c.target}`, c.pending ? `${c.pending} awaiting result or Betfair SP` : "") +
+            stat("Winners", `${c.won} (${plain(c.strike)})`, `break-even: ${plain(c.breakEvenStrike)}`) +
+            stat("Profit / loss", units(c.pl), `${pct(c.roi)} per bet`) +
+            stat("Archive study", pct(d.benchmarks.candidateStudy), "must stay clearly positive");
+        scenarioTable($("candScenarios"), c);
+    }
+
+    const mb = Object.entries(d.matchbook || {});
+    const names = { BET: "Bet-list bets", NAP: "NAP", BEST: "Best Opportunity" };
+    $("matchbook").innerHTML = mb.length
+        ? `<tr><th>Picks</th><th class="num">Recorded</th><th class="num">Median £ at best price</th><th class="num">Under £10</th></tr>` +
+          mb.map(([t, m]) => `<tr><td>${names[t] || esc(t)}</td><td class="num">${m.recorded}</td><td class="num">£${Number(m.medianAvailable).toFixed(2)}</td><td class="num">${m.underTen}</td></tr>`).join("")
+        : `<tr><td class="muted">No Matchbook prices recorded yet.</td></tr>`;
+
+    $("bets").innerHTML = `<tr><th>#</th><th>Date</th><th>Race (UK)</th><th>Horse</th><th class="num">Price</th><th>Result</th><th class="num">P/L</th><th class="num">Total</th></tr>` +
+        b.path.slice().reverse().map(p => `<tr><td>${p.n}</td><td>${esc(p.date)}</td><td>${ukTime(p.date, p.time)} ${esc(p.course)}</td><td>${esc(p.horse)}</td>` +
+            `<td class="num">${p.price ? p.price.toFixed(2) : "–"}</td><td class="${p.result}">${esc(p.result)}</td><td class="num">${units(p.pl)}</td><td class="num">${units(p.total)}</td></tr>`).join("");
+}
+load();
+</script>
+</body>
+</html>
