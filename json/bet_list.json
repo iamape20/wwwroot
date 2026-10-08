@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:00:11.122Z",
+  "generatedAt": "2026-10-08T06:01:14.947Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 26/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,26 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Bath",
+      "off": "15:15",
+      "status": "POSSIBLE",
+      "revealAt": "15:00"
+    },
+    {
+      "course": "Tramore",
+      "off": "17:05",
+      "status": "POSSIBLE",
+      "revealAt": "16:50"
+    },
+    {
+      "course": "Southwell",
+      "off": "20:00",
+      "status": "POSSIBLE",
+      "revealAt": "19:45"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -182,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-07T21:00:11.040Z",
+    "updatedAt": "2026-10-08T06:01:14.851Z",
     "claude": {
       "races": 38,
       "won": 7,
