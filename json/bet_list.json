@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T14:20:52.687Z",
+  "generatedAt": "2026-10-08T14:30:50.468Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 29/120 bets settled before the verdict.",
   "rules": [
@@ -26,14 +26,19 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-08",
       "course": "Bath",
       "off": "15:15",
-      "horse": "BRILLIANT STAR"
-    }
-  ],
-  "recent": [
+      "horse": "BRILLIANT STAR",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-08",
       "course": "Tramore",
@@ -187,21 +192,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-04",
-      "course": "Curragh",
-      "off": "13:55",
-      "horse": "HMAS PERTH",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.39265889,
-      "pl": 0.373,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T14:20:52.604Z",
+    "updatedAt": "2026-10-08T14:30:50.381Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,11 +218,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 29,
-      "won": 16,
-      "pl": -2.12,
-      "roi": -7.3,
-      "provisional": 0
+      "bets": 30,
+      "won": 17,
+      "pl": -0.75,
+      "roi": -2.5,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
