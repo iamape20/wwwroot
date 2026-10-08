@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-08T19:00:15.286Z",
+  "generatedAt": "2026-10-08T19:20:15.153Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 30/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 31/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-08",
       "course": "Southwell",
       "off": "20:00",
-      "horse": "DORIGO"
-    }
-  ],
-  "recent": [
+      "horse": "DORIGO",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-08",
       "course": "Tramore",
@@ -174,21 +179,10 @@
       "bsp": 1.4,
       "pl": 0.38,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-05",
-      "course": "Pontefract",
-      "off": "13:30",
-      "horse": "NARRJOO",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.34,
-      "pl": 0.323,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T19:00:15.211Z",
+    "updatedAt": "2026-10-08T19:20:15.062Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 32,
+      "bets": 33,
       "won": 18,
-      "pl": -0.75,
-      "roi": -2.3,
+      "pl": -1.75,
+      "roi": -5.3,
       "provisional": 2
     },
     "live": {
