@@ -399,7 +399,11 @@
       "rating": 62.5,
       "runners": 5,
       "recordedAt": "2026-10-08T15:40:50.275Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-08|Ayr|16:13",
@@ -416,10 +420,10 @@
   ],
   "stats": {
     "recorded": 26,
-    "settled": 20,
+    "settled": 21,
     "won": 11,
-    "pl": 2.4,
-    "roi": 12
+    "pl": 1.4,
+    "roi": 6.7
   },
   "lastBackfill": 1791474641451
 }

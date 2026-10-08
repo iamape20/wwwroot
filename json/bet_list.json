@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T16:00:37.446Z",
+  "generatedAt": "2026-10-08T16:10:35.801Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 30/120 bets settled before the verdict.",
   "rules": [
@@ -14,20 +14,19 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Tramore",
-      "off": "17:05",
-      "status": "BET",
-      "horse": "RATTLEDELATCH",
-      "price": "11/10"
-    },
-    {
       "course": "Southwell",
       "off": "20:00",
       "status": "POSSIBLE",
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Tramore",
+      "off": "17:05",
+      "horse": "RATTLEDELATCH"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-08",
@@ -196,7 +195,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T16:00:37.356Z",
+    "updatedAt": "2026-10-08T16:10:35.687Z",
     "claude": {
       "races": 38,
       "won": 7,
