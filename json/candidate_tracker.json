@@ -162,7 +162,10 @@
       "recordedAt": "2026-10-07T12:01:13.956Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.75426672,
+      "pl": 1.667,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Navan|13:15",
@@ -192,7 +195,10 @@
       "recordedAt": "2026-10-07T13:11:04.025Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/4"
+      "isp": "5/4",
+      "bsp": 2.44,
+      "pl": 1.368,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Nottingham|13:29",
@@ -206,7 +212,10 @@
       "recordedAt": "2026-10-07T13:20:51.310Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/6"
+      "isp": "5/6",
+      "bsp": 1.87,
+      "pl": 0.827,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Navan|14:45",
@@ -220,7 +229,10 @@
       "recordedAt": "2026-10-07T14:30:45.638Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/11"
+      "isp": "4/11",
+      "bsp": 1.41,
+      "pl": 0.389,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Worcester|14:35",
@@ -234,7 +246,10 @@
       "recordedAt": "2026-10-07T14:30:45.666Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/6"
+      "isp": "4/6",
+      "bsp": 1.80555701,
+      "pl": 0.765,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Kempton|17:30",
@@ -248,7 +263,10 @@
       "recordedAt": "2026-10-07T17:20:20.610Z",
       "stake": 1,
       "result": "won",
-      "isp": "7/4"
+      "isp": "7/4",
+      "bsp": 3.1,
+      "pl": 1.995,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-07|Kempton|18:00",
@@ -262,15 +280,18 @@
       "recordedAt": "2026-10-07T17:50:20.853Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/6"
+      "isp": "5/6",
+      "bsp": 2.02,
+      "pl": 0.969,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 17,
-    "settled": 10,
-    "won": 4,
-    "pl": -2.58,
-    "roi": -25.8
+    "settled": 17,
+    "won": 11,
+    "pl": 5.4,
+    "roi": 31.8
   },
-  "lastBackfill": 1791439280202
+  "lastBackfill": 1791450098521
 }

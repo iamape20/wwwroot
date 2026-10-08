@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-08T08:41:22.332Z",
+  "generatedAt": "2026-10-08T09:01:30.585Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 26/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 28/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -53,9 +53,9 @@
       "horse": "TWELVE BARS",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.83264456,
+      "pl": 0.791,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-07",
@@ -64,9 +64,9 @@
       "horse": "JESUS GREEN",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.41,
+      "pl": 0.389,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-07",
@@ -213,7 +213,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T08:41:22.176Z",
+    "updatedAt": "2026-10-08T09:01:30.397Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -238,9 +238,9 @@
     "paper": {
       "bets": 28,
       "won": 16,
-      "pl": -1.14,
-      "roi": -4.1,
-      "provisional": 2
+      "pl": -1.12,
+      "roi": -4,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
