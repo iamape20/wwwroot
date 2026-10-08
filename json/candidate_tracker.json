@@ -383,7 +383,11 @@
       "rating": 57,
       "runners": 9,
       "recordedAt": "2026-10-08T15:40:50.247Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-08|Market Rasen|15:48",
@@ -396,14 +400,26 @@
       "runners": 5,
       "recordedAt": "2026-10-08T15:40:50.275Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-08|Ayr|16:13",
+      "date": "2026-10-08",
+      "course": "Ayr",
+      "time": "16:13",
+      "horse": "AIGHEAR",
+      "price": "8/11",
+      "rating": 69,
+      "runners": 5,
+      "recordedAt": "2026-10-08T16:00:39.734Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 25,
-    "settled": 19,
+    "recorded": 26,
+    "settled": 20,
     "won": 11,
-    "pl": 3.4,
-    "roi": 17.9
+    "pl": 2.4,
+    "roi": 12
   },
-  "lastBackfill": 1791463278097
+  "lastBackfill": 1791474641451
 }
