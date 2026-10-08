@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-08T13:21:05.041Z",
+  "generatedAt": "2026-10-08T13:41:03.772Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 28/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 29/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-08",
       "course": "Tramore",
       "off": "14:10",
-      "horse": "LLEM'S"
-    }
-  ],
-  "recent": [
+      "horse": "LLEM'S",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-07",
       "course": "Kempton",
@@ -193,21 +198,10 @@
       "bsp": 1.39265889,
       "pl": 0.373,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-03",
-      "course": "Gowran Park",
-      "off": "16:50",
-      "horse": "ARCADIAN EMPEROR",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T13:21:04.969Z",
+    "updatedAt": "2026-10-08T13:41:03.692Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 28,
+      "bets": 29,
       "won": 16,
-      "pl": -1.12,
-      "roi": -4,
+      "pl": -2.12,
+      "roi": -7.3,
       "provisional": 0
     },
     "live": {
