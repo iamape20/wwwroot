@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T16:20:37.616Z",
+  "generatedAt": "2026-10-08T16:40:34.223Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 30/120 bets settled before the verdict.",
   "rules": [
@@ -20,14 +20,19 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-08",
       "course": "Tramore",
       "off": "17:05",
-      "horse": "RATTLEDELATCH"
-    }
-  ],
-  "recent": [
+      "horse": "RATTLEDELATCH",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-08",
       "course": "Thurles",
@@ -181,21 +186,10 @@
       "bsp": 1.34,
       "pl": 0.323,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-04",
-      "course": "Kelso",
-      "off": "14:55",
-      "horse": "TUPPENCE",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.75210818,
-      "pl": 0.715,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-08T16:20:37.428Z",
+    "updatedAt": "2026-10-08T16:40:34.051Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 31,
-      "won": 17,
-      "pl": -1.75,
-      "roi": -5.6,
-      "provisional": 1
+      "bets": 32,
+      "won": 18,
+      "pl": -0.75,
+      "roi": -2.3,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
