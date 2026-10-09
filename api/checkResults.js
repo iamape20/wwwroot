@@ -395,14 +395,6 @@ module.exports = async (req, res) => {
                 }
 
                 /*
-                 * We have both a result and a prediction,
-                 * so this race can now safely be counted.
-                 */
-                alreadyChecked.add(raceKey);
-
-                tally.racesChecked++;
-
-                /*
                  * Prefer the full field from the race's own detail
                  * page (see fetchFullField) over the listing's
                  * truncated top_horses - this only runs for races
@@ -410,15 +402,17 @@ module.exports = async (req, res) => {
                  * prediction for, so it stays cheap. Falls back to
                  * the truncated list if the detail fetch fails.
                  */
-                const placings =
-                    (race.raceId
+                const fullField =
+                    race.raceId
                         ? await fetchFullField(
                             courseResults.date,
                             courseName,
                             race.raceId,
                             race.slug
                         )
-                        : null) || race.topHorses;
+                        : null;
+
+                const placings = fullField || race.topHorses;
 
                 const pickName =
                     normaliseHorseName(ourTopPick.name);
@@ -432,6 +426,26 @@ module.exports = async (req, res) => {
                             normaliseHorseName(p.name) ===
                             pickName
                     );
+
+                /*
+                 * Detail fetch failed and our pick isn't in the
+                 * truncated top 2-3: it may still have placed (the
+                 * 2026-09-24 Code Of Honour case), and once a race is
+                 * marked checked it is never looked at again. Leave
+                 * it unchecked so the next cycle retries the full
+                 * field (2026-10-09).
+                 */
+                if (race.raceId && !fullField && !placing) {
+                    continue;
+                }
+
+                /*
+                 * We have both a result and a prediction,
+                 * so this race can now safely be counted.
+                 */
+                alreadyChecked.add(raceKey);
+
+                tally.racesChecked++;
 
                 /*
                  * Find the actual winner.
