@@ -53,7 +53,12 @@ function computeLiveMarketMove(oddsHistory, horseName) {
     const sorted = oddsHistory.snapshots
         .filter(s => s.odds && s.odds[horseKey])
         .sort((a, b) => a.time - b.time);
-    const latestSource = sorted.length ? sourceOf(sorted[sorted.length - 1]) : null;
+    // Live prices once any exist (2026-10-09): a failed racecard fetch in
+    // checkOdds.js stores a forecast snapshot after live ones, which used
+    // to make the comparison forecast-vs-forecast (see applyFreshOdds.js).
+    const latestSource = sorted.some(s => sourceOf(s) === "bookmakers")
+        ? "bookmakers"
+        : (sorted.length ? sourceOf(sorted[sorted.length - 1]) : null);
     const withThisHorse = sorted.filter(s => sourceOf(s) === latestSource);
 
     if (withThisHorse.length < 2) return null;
