@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-09T08:41:28.208Z",
+  "generatedAt": "2026-10-09T09:01:32.588Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 31/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 33/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -36,6 +36,12 @@
       "off": "14:13",
       "status": "POSSIBLE",
       "revealAt": "13:58"
+    },
+    {
+      "course": "Newmarket",
+      "off": "14:25",
+      "status": "POSSIBLE",
+      "revealAt": "14:10"
     },
     {
       "course": "Newmarket",
@@ -82,9 +88,9 @@
       "horse": "RATTLEDELATCH",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.13575798,
+      "pl": 1.079,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-08",
@@ -104,9 +110,9 @@
       "horse": "BRILLIANT STAR",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.44431365,
+      "pl": 1.372,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-08",
@@ -231,7 +237,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-09T08:41:28.071Z",
+    "updatedAt": "2026-10-09T09:01:32.411Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -256,9 +262,9 @@
     "paper": {
       "bets": 33,
       "won": 18,
-      "pl": -1.75,
-      "roi": -5.3,
-      "provisional": 2
+      "pl": -1.67,
+      "roi": -5.1,
+      "provisional": 0
     },
     "live": {
       "bets": 0,

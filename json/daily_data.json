@@ -78,7 +78,7 @@
         "distance": "7f",
         "date": "2026-10-09",
         "time": "12:50",
-        "ride_count": 15,
+        "ride_count": 14,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good",
@@ -223,7 +223,7 @@
         "distance": "1m 2f",
         "date": "2026-10-09",
         "time": "15:45",
-        "ride_count": 16,
+        "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good",
@@ -342,7 +342,7 @@
         "distance": "6f",
         "date": "2026-10-09",
         "time": "15:38",
-        "ride_count": 11,
+        "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Standard / Slow",
@@ -458,7 +458,7 @@
         "distance": "1m",
         "date": "2026-10-09",
         "time": "17:45",
-        "ride_count": 11,
+        "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Standard / Slow",
@@ -606,7 +606,7 @@
         "distance": "7f 192y",
         "date": "2026-10-09",
         "time": "12:30",
-        "ride_count": 18,
+        "ride_count": 17,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good to Soft (Good in places)",
@@ -664,7 +664,7 @@
         "distance": "1m 5f 188y",
         "date": "2026-10-09",
         "time": "13:40",
-        "ride_count": 10,
+        "ride_count": 9,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good to Soft (Good in places)",
@@ -751,7 +751,7 @@
         "distance": "5f",
         "date": "2026-10-09",
         "time": "15:25",
-        "ride_count": 17,
+        "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good to Soft (Good in places)",
@@ -780,7 +780,7 @@
         "distance": "7f",
         "date": "2026-10-09",
         "time": "16:00",
-        "ride_count": 22,
+        "ride_count": 20,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good to Soft (Good in places)",
@@ -1104,7 +1104,7 @@
         "distance": "7f",
         "date": "2026-10-09",
         "time": "15:50",
-        "ride_count": 17,
+        "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Standard",
@@ -1160,7 +1160,7 @@
         "distance": "7f",
         "date": "2026-10-09",
         "time": "17:00",
-        "ride_count": 15,
+        "ride_count": 14,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Standard",
@@ -1244,7 +1244,7 @@
         "distance": "1m 2f 150y",
         "date": "2026-10-09",
         "time": "18:30",
-        "ride_count": 17,
+        "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Standard",
@@ -1416,7 +1416,7 @@
         "distance": "2m 1f 65y",
         "date": "2026-10-09",
         "time": "14:23",
-        "ride_count": 9,
+        "ride_count": 8,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good",
@@ -1500,7 +1500,7 @@
         "distance": "2m 3f 100y",
         "date": "2026-10-09",
         "time": "16:05",
-        "ride_count": 9,
+        "ride_count": 8,
         "race_stage": "DORMANT",
         "has_video": false,
         "going": "Good",
@@ -4351,9 +4351,10 @@
           "long_name": "France"
         }
       },
-      "going": "Soft",
+      "going": "Very Soft",
       "surface_summary": "Turf",
-      "visible": true
+      "visible": true,
+      "weather": "Sunny Intervals"
     },
     "races": [
       {
@@ -4378,7 +4379,8 @@
         "ride_count": 7,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4404,7 +4406,8 @@
         "ride_count": 7,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4430,7 +4433,8 @@
         "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4456,7 +4460,8 @@
         "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4482,7 +4487,8 @@
         "ride_count": 14,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4508,7 +4514,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       },
@@ -4534,7 +4541,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       },
@@ -4560,7 +4568,8 @@
         "ride_count": 8,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       }
@@ -4589,9 +4598,10 @@
           "long_name": "France"
         }
       },
-      "going": "Heavy",
+      "going": "Very Soft",
       "surface_summary": "Turf",
-      "visible": true
+      "visible": true,
+      "weather": "Overcast"
     },
     "races": [
       {
@@ -4616,7 +4626,8 @@
         "ride_count": 8,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4642,7 +4653,8 @@
         "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4668,7 +4680,8 @@
         "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4694,7 +4707,8 @@
         "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       },
@@ -4720,7 +4734,8 @@
         "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4746,7 +4761,8 @@
         "ride_count": 12,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": false,
         "hidden": false
       },
@@ -4772,7 +4788,8 @@
         "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       },
@@ -4798,7 +4815,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       },
@@ -4824,7 +4842,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Very Soft",
+        "going_shortcode": "SFT",
         "has_handicap": true,
         "hidden": false
       }
@@ -4855,7 +4874,8 @@
       },
       "going": "Standard",
       "surface_summary": "Sand",
-      "visible": true
+      "visible": true,
+      "weather": "Sunny Intervals"
     },
     "races": [
       {
@@ -4880,7 +4900,8 @@
         "ride_count": 8,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -4906,7 +4927,8 @@
         "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -4932,7 +4954,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -4958,7 +4981,8 @@
         "ride_count": 9,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -4984,7 +5008,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5010,7 +5035,8 @@
         "ride_count": 11,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5036,7 +5062,8 @@
         "ride_count": 10,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5062,7 +5089,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       }
@@ -5093,7 +5121,8 @@
       },
       "going": "Standard",
       "surface_summary": "Sand",
-      "visible": true
+      "visible": true,
+      "weather": "Overcast"
     },
     "races": [
       {
@@ -5115,10 +5144,11 @@
         "distance": "1m 6f 36y",
         "date": "2026-10-09",
         "time": "16:23",
-        "ride_count": 15,
+        "ride_count": 14,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5144,7 +5174,8 @@
         "ride_count": 17,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5170,7 +5201,8 @@
         "ride_count": 17,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5196,7 +5228,8 @@
         "ride_count": 15,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5222,7 +5255,8 @@
         "ride_count": 13,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5248,7 +5282,8 @@
         "ride_count": 14,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5274,7 +5309,8 @@
         "ride_count": 7,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       },
@@ -5300,7 +5336,8 @@
         "ride_count": 16,
         "race_stage": "DORMANT",
         "has_video": false,
-        "going": "",
+        "going": "Standard",
+        "going_shortcode": "ST",
         "has_handicap": false,
         "hidden": false
       }

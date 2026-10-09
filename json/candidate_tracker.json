@@ -297,7 +297,10 @@
       "recordedAt": "2026-10-08T12:01:13.969Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/1"
+      "isp": "1/1",
+      "bsp": 2.06,
+      "pl": 1.007,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-08|Thurles|12:51",
@@ -311,7 +314,10 @@
       "recordedAt": "2026-10-08T12:41:18.066Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.64,
+      "pl": 1.558,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-08|Market Rasen|13:31",
@@ -325,7 +331,10 @@
       "recordedAt": "2026-10-08T13:21:06.284Z",
       "stake": 1,
       "result": "won",
-      "isp": "8/11"
+      "isp": "8/11",
+      "bsp": 1.88,
+      "pl": 0.836,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-08|Market Rasen|14:06",
@@ -371,7 +380,10 @@
       "recordedAt": "2026-10-08T14:40:57.049Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/10"
+      "isp": "11/10",
+      "bsp": 2.3,
+      "pl": 1.235,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-08|Thurles|15:43",
@@ -417,7 +429,10 @@
       "recordedAt": "2026-10-08T16:00:39.734Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/7"
+      "isp": "4/7",
+      "bsp": 1.60855645,
+      "pl": 0.578,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-08|Southwell|19:00",
@@ -438,10 +453,10 @@
   ],
   "stats": {
     "recorded": 27,
-    "settled": 22,
-    "won": 11,
-    "pl": 0.4,
-    "roi": 1.8
+    "settled": 27,
+    "won": 16,
+    "pl": 5.61,
+    "roi": 20.8
   },
-  "lastBackfill": 1791525688538
+  "lastBackfill": 1791536499936
 }
