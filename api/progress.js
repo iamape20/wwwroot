@@ -15,6 +15,27 @@ const CANDIDATE_STUDY_EDGE = 0.136;    // archive study for the candidate rule
 
 const load = f => { try { return json.load(f); } catch { return null; } };
 
+// A loser settles at -1 at once, but a winner waits for its Betfair SP
+// (published about 10:00 the next morning). Counting settled bets only
+// showed each day's losers without its winners until then, so the line
+// slid every afternoon and recovered next morning (2026-10-09). A winner
+// still waiting counts provisionally at its bookmaker SP, exactly as
+// js/betList.js effectivePl() does for /betlist.html; the BSP replaces it.
+function fracOdds(v) {
+    const s = String(v ?? "").trim().toLowerCase();
+    if (s === "evs" || s === "evens") return 1;
+    const m = s.match(/^(\d+)\/(\d+)$/);
+    return m ? Number(m[1]) / Number(m[2]) : null;
+}
+
+function effectivePl(b) {
+    if (b.pl != null) return b.pl;
+    const f = fracOdds(b.isp);
+    if (b.result !== "won" || f == null) return null;
+    const share = b.deadHeat > 1 ? 1 / b.deadHeat : 1;
+    return +((b.stake || 1) * (share * f - (1 - share))).toFixed(3);
+}
+
 function decimal(b) {
     if (b.bsp > 1) return b.bsp;
     const s = String(b.isp || b.priceAtOff || b.price || "");
@@ -33,9 +54,11 @@ function phi(z) {
 
 function summarise(bets, target, edges, startedAt) {
     const settled = bets
+        .map(b => ({ ...b, pl: effectivePl(b), provisional: b.pl == null }))
         .filter(b => b.pl != null && b.result !== "void")
         .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
     const n = settled.length;
+    const provisional = settled.filter(b => b.provisional).length;
     const pl = settled.reduce((s, b) => s + b.pl, 0);
     const won = settled.filter(b => b.result === "won").length;
     const mean = n ? pl / n : 0;
@@ -66,11 +89,11 @@ function summarise(bets, target, edges, startedAt) {
     let running = 0;
     const path = settled.map((b, i) => {
         running += b.pl;
-        return { n: i + 1, date: b.date, time: b.time, course: b.course, horse: b.horse, result: b.result, pl: b.pl, price: decimal(b), total: running };
+        return { n: i + 1, date: b.date, time: b.time, course: b.course, horse: b.horse, result: b.result, pl: b.pl, provisional: b.provisional, price: decimal(b), total: running };
     });
 
     return {
-        target, settled: n, pending: bets.filter(b => b.pl == null).length,
+        target, settled: n, provisional, pending: bets.filter(b => effectivePl(b) == null && b.result !== "void").length,
         won, strike: n ? won / n : null, breakEvenStrike: breakEven,
         pl, roi: n ? mean : null,
         range: half != null ? [mean - half, mean + half] : null,

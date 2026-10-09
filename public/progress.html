@@ -89,7 +89,7 @@ a { color: var(--series); }
     </details>
 
     <p class="muted">Paper test only: no money is staked. Profit/loss is settled at Betfair SP after 5% commission
-        (bookmaker SP until Betfair SP is published); void races are excluded. Ranges are 95% confidence.
+        (a winner counts at bookmaker SP, marked *, until Betfair SP is published the next morning); void races are excluded. Ranges are 95% confidence.
         See also the <a href="/betlist.html">bet list</a>.</p>
 </main>
 <script>
@@ -164,7 +164,7 @@ function drawChart(b, benchmarks) {
         const p = b.path[Math.min(Math.max(n, 1), b.path.length) - 1];
         $("cross").setAttribute("x1", x(p.n)); $("cross").setAttribute("x2", x(p.n)); $("cross").setAttribute("visibility", "visible");
         $("dot").setAttribute("cx", x(p.n)); $("dot").setAttribute("cy", y(p.total)); $("dot").setAttribute("visibility", "visible");
-        tip.innerHTML = `<b>Bet ${p.n}</b> · ${esc(p.date)} ${ukTime(p.date, p.time)} ${esc(p.course)}<br>${esc(p.horse)} – <span class="${p.result}">${esc(p.result)}</span> ${units(p.pl)}<br>Running total <b>${units(p.total)}</b>`;
+        tip.innerHTML = `<b>Bet ${p.n}</b> · ${esc(p.date)} ${ukTime(p.date, p.time)} ${esc(p.course)}<br>${esc(p.horse)} – <span class="${p.result}">${esc(p.result)}</span> ${units(p.pl)}${p.provisional ? " (bookmaker SP, provisional)" : ""}<br>Running total <b>${units(p.total)}</b>`;
         tip.style.display = "block";
         const px = x(p.n) * r.width / W, py = y(p.total) * r.height / H;
         tip.style.left = Math.min(px + 12, r.width - tip.offsetWidth - 4) + "px";
@@ -193,7 +193,7 @@ async function load() {
     $("banner").innerHTML = esc(verdict) + `<small>${b.settled} of ${b.target} bets settled, so too early to separate a real edge from luck. Paper phase: do not stake.</small>`;
     $("updated").textContent = "Updated " + new Date(d.generatedAt).toLocaleString("en-GB", { timeZone: "Europe/London" }) + " UK";
 
-    $("progressText").innerHTML = `<b>${b.settled}</b>&nbsp;of ${b.target} settled` + (b.pending ? ` · ${b.pending} awaiting result or Betfair SP` : "");
+    $("progressText").innerHTML = `<b>${b.settled}</b>&nbsp;of ${b.target} settled` + (b.provisional ? ` · ${b.provisional} winner${b.provisional > 1 ? "s" : ""} counted at bookmaker SP until Betfair SP arrives` : "") + (b.pending ? ` · ${b.pending} awaiting result` : "");
     $("progressBar").style.width = Math.min(100, 100 * b.settled / b.target) + "%";
     $("eta").textContent = b.eta ? `About ${b.perDay.toFixed(1)} bets a day: verdict expected around ${new Date(b.eta).toLocaleDateString("en-GB", { day: "numeric", month: "long" })}.` : "";
 
@@ -215,7 +215,7 @@ async function load() {
     const c = d.candidate;
     if (c) {
         $("candStats").innerHTML =
-            stat("Settled", `${c.settled} / ${c.target}`, c.pending ? `${c.pending} awaiting result or Betfair SP` : "") +
+            stat("Settled", `${c.settled} / ${c.target}`, [c.provisional ? `${c.provisional} at bookmaker SP until Betfair SP` : "", c.pending ? `${c.pending} awaiting result` : ""].filter(Boolean).join(" · ")) +
             stat("Winners", `${c.won} (${plain(c.strike)})`, `break-even: ${plain(c.breakEvenStrike)}`) +
             stat("Profit / loss", units(c.pl), `${pct(c.roi)} per bet`) +
             stat("Archive study", pct(d.benchmarks.candidateStudy), "must stay clearly positive");
@@ -231,7 +231,7 @@ async function load() {
 
     $("bets").innerHTML = `<tr><th>#</th><th>Date</th><th>Race (UK)</th><th>Horse</th><th class="num">Price</th><th>Result</th><th class="num">P/L</th><th class="num">Total</th></tr>` +
         b.path.slice().reverse().map(p => `<tr><td>${p.n}</td><td>${esc(p.date)}</td><td>${ukTime(p.date, p.time)} ${esc(p.course)}</td><td>${esc(p.horse)}</td>` +
-            `<td class="num">${p.price ? p.price.toFixed(2) : "–"}</td><td class="${p.result}">${esc(p.result)}</td><td class="num">${units(p.pl)}</td><td class="num">${units(p.total)}</td></tr>`).join("");
+            `<td class="num">${p.price ? p.price.toFixed(2) : "–"}</td><td class="${p.result}">${esc(p.result)}</td><td class="num">${units(p.pl)}${p.provisional ? "*" : ""}</td><td class="num">${units(p.total)}</td></tr>`).join("");
 }
 load();
 </script>
