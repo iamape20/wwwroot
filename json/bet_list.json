@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-09T14:01:05.779Z",
+  "generatedAt": "2026-10-09T14:21:40.328Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 33/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 35/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,12 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "York",
-      "off": "15:18",
-      "status": "POSSIBLE",
-      "revealAt": "15:03"
-    },
     {
       "course": "Kempton",
       "off": "16:05",
@@ -34,32 +28,67 @@
   ],
   "awaitingResult": [
     {
-      "course": "Newmarket",
-      "off": "13:15",
-      "horse": "FLANN SUNNA"
-    },
-    {
-      "course": "Chepstow",
-      "off": "13:22",
-      "horse": "COOLTOBECARELESS"
-    },
-    {
-      "course": "Downpatrick",
-      "off": "14:13",
-      "horse": "EURO AGENT"
-    },
-    {
-      "course": "Newmarket",
-      "off": "14:25",
-      "horse": "FLORA OF BERMUDA"
-    },
-    {
-      "course": "Newmarket",
-      "off": "14:57",
-      "horse": "MUSICAL TIMES"
+      "course": "York",
+      "off": "15:18",
+      "horse": "SHARADD"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-09",
+      "course": "Newmarket",
+      "off": "14:57",
+      "horse": "MUSICAL TIMES",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-09",
+      "course": "Newmarket",
+      "off": "14:25",
+      "horse": "FLORA OF BERMUDA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-09",
+      "course": "Downpatrick",
+      "off": "14:13",
+      "horse": "EURO AGENT",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-09",
+      "course": "Chepstow",
+      "off": "13:22",
+      "horse": "COOLTOBECARELESS",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-09",
+      "course": "Newmarket",
+      "off": "13:15",
+      "horse": "FLANN SUNNA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-08",
       "course": "Southwell",
@@ -169,65 +198,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-06",
-      "course": "Leicester",
-      "off": "14:06",
-      "horse": "WOODVALE",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.9231344,
-      "pl": 0.877,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-05",
-      "course": "Wolverhampton",
-      "off": "18:00",
-      "horse": "LADY BRANKSOME",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-05",
-      "course": "Killarney",
-      "off": "15:55",
-      "horse": "TOGETHER NOW",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-05",
-      "course": "Yarmouth",
-      "off": "15:35",
-      "horse": "ENDLESS QUEST",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.53959161,
-      "pl": 0.513,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-05",
-      "course": "Fairyhouse",
-      "off": "14:30",
-      "horse": "STATE PENSION",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.4,
-      "pl": 0.38,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-09T14:01:05.699Z",
+    "updatedAt": "2026-10-09T14:21:40.135Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -250,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 33,
-      "won": 18,
-      "pl": -1.67,
-      "roi": -5.1,
-      "provisional": 0
+      "bets": 38,
+      "won": 21,
+      "pl": -1.66,
+      "roi": -4.4,
+      "provisional": 3
     },
     "live": {
       "bets": 0,
