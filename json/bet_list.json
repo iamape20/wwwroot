@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T15:04:10.992Z",
+  "generatedAt": "2026-10-09T15:20:53.395Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 35/120 bets settled before the verdict.",
   "rules": [
@@ -15,13 +15,6 @@
   "today": [
     {
       "course": "Kempton",
-      "off": "16:05",
-      "status": "BET",
-      "horse": "BIDSTA",
-      "price": "4/11"
-    },
-    {
-      "course": "Kempton",
       "off": "17:45",
       "status": "POSSIBLE",
       "revealAt": "17:30"
@@ -29,6 +22,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-09",
+      "course": "Kempton",
+      "off": "16:05",
+      "horse": "BIDSTA",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-09",
       "course": "York",
@@ -182,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-06",
-      "course": "Galway",
-      "off": "17:15",
-      "horse": "WAY WITH WORDS",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-09T15:04:10.880Z",
+    "updatedAt": "2026-10-09T15:20:53.314Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 39,
-      "won": 22,
-      "pl": -1.21,
-      "roi": -3.1,
-      "provisional": 4
+      "bets": 40,
+      "won": 23,
+      "pl": -0.91,
+      "roi": -2.3,
+      "provisional": 5
     },
     "live": {
       "bets": 0,
