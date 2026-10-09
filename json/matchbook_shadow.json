@@ -889,27 +889,81 @@
       "marketVolume": 107497
     },
     "lastBeforeOff": {
-      "at": "2026-10-09T11:41:31.338Z",
+      "at": "2026-10-09T12:01:37.221Z",
       "eventId": 34541380900402080,
       "found": true,
       "withdrawn": false,
-      "bestBack": 3.75,
-      "available": 2.11,
+      "bestBack": 3.85,
+      "available": 16.55,
       "depth": [
         [
+          3.85,
+          16.55
+        ],
+        [
+          3.8,
+          8.57
+        ],
+        [
           3.75,
-          2.11
-        ],
-        [
-          3.7,
-          3.01
-        ],
-        [
-          3.65,
-          5.93
+          5.01
         ]
       ],
-      "marketVolume": 107497
+      "marketVolume": 108016
+    }
+  },
+  "BET|2026-10-09|Newmarket|12:15|FLANNSUNNA": {
+    "type": "BET",
+    "date": "2026-10-09",
+    "course": "Newmarket",
+    "time": "12:15",
+    "horse": "FLANN SUNNA",
+    "betId": "2026-10-09|Newmarket|12:15",
+    "atReveal": {
+      "at": "2026-10-09T12:01:37.216Z",
+      "eventId": 34541123495000080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 4.2,
+      "available": 105.79,
+      "depth": [
+        [
+          4.2,
+          105.79
+        ],
+        [
+          4.1,
+          227.89
+        ],
+        [
+          4,
+          1103.46
+        ]
+      ],
+      "marketVolume": 125065
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-09T12:01:37.216Z",
+      "eventId": 34541123495000080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 4.2,
+      "available": 105.79,
+      "depth": [
+        [
+          4.2,
+          105.79
+        ],
+        [
+          4.1,
+          227.89
+        ],
+        [
+          4,
+          1103.46
+        ]
+      ],
+      "marketVolume": 125065
     }
   }
 }
