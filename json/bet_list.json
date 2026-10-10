@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-10T15:01:00.069Z",
+  "generatedAt": "2026-10-10T15:10:49.715Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 46/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 47/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,14 +20,19 @@
       "revealAt": "17:20"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-10",
       "course": "York",
       "off": "15:57",
-      "horse": "IRON STONE LAD"
-    }
-  ],
-  "recent": [
+      "horse": "IRON STONE LAD",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-10",
       "course": "Chepstow",
@@ -181,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-08",
-      "course": "Southwell",
-      "off": "20:00",
-      "horse": "DORIGO",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-10T15:00:59.948Z",
+    "updatedAt": "2026-10-10T15:10:49.588Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,10 +212,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 47,
+      "bets": 48,
       "won": 24,
-      "pl": -5.81,
-      "roi": -12.4,
+      "pl": -6.81,
+      "roi": -14.2,
       "provisional": 1
     },
     "live": {
