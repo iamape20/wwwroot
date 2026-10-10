@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-10T13:21:09.264Z",
+  "generatedAt": "2026-10-10T13:41:10.761Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 43/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 44/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,23 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Fairyhouse",
-      "off": "14:33",
-      "status": "BET",
-      "horse": "STRAIGHT JOHN",
-      "price": "11/10"
-    },
-    {
       "course": "Chepstow",
       "off": "14:45",
-      "status": "POSSIBLE",
-      "revealAt": "14:30"
-    },
-    {
-      "course": "Newmarket",
-      "off": "15:00",
-      "status": "POSSIBLE",
-      "revealAt": "14:45"
+      "status": "BET",
+      "horse": "STICK TO THE BOARD",
+      "price": "4/6"
     },
     {
       "course": "Fairyhouse",
@@ -41,12 +29,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Hexham",
-      "off": "14:20",
-      "horse": "DARK TIDE RISING"
+      "course": "Fairyhouse",
+      "off": "14:33",
+      "horse": "STRAIGHT JOHN"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-10",
+      "course": "Hexham",
+      "off": "14:20",
+      "horse": "DARK TIDE RISING",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-10",
       "course": "Fairyhouse",
@@ -200,21 +199,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-08",
-      "course": "Bath",
-      "off": "15:15",
-      "horse": "BRILLIANT STAR",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.44431365,
-      "pl": 1.372,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-10T13:21:09.184Z",
+    "updatedAt": "2026-10-10T13:41:10.653Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -237,10 +225,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 44,
+      "bets": 45,
       "won": 24,
-      "pl": -2.81,
-      "roi": -6.4,
+      "pl": -3.81,
+      "roi": -8.5,
       "provisional": 1
     },
     "live": {

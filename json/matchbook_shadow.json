@@ -1374,27 +1374,81 @@
       "marketVolume": 95737
     },
     "lastBeforeOff": {
-      "at": "2026-10-10T13:21:12.794Z",
+      "at": "2026-10-10T13:31:11.998Z",
       "eventId": 34549894223001024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 2.46,
-      "available": 35.6,
+      "bestBack": 2.84,
+      "available": 1.4,
       "depth": [
         [
-          2.46,
-          35.6
+          2.84,
+          1.4
         ],
         [
-          2.44,
-          50.54
+          2.8,
+          3.3
         ],
         [
-          2.42,
-          59.23
+          2.78,
+          10.32
         ]
       ],
-      "marketVolume": 95737
+      "marketVolume": 125646
+    }
+  },
+  "BET|2026-10-10|Chepstow|13:45|STICKTOTHEBOARD": {
+    "type": "BET",
+    "date": "2026-10-10",
+    "course": "Chepstow",
+    "time": "13:45",
+    "horse": "STICK TO THE BOARD",
+    "betId": "2026-10-10|Chepstow|13:45",
+    "atReveal": {
+      "at": "2026-10-10T13:31:12.002Z",
+      "eventId": 34549778339301024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.8,
+      "available": 1039.89,
+      "depth": [
+        [
+          1.8,
+          1039.89
+        ],
+        [
+          1.79,
+          491.7
+        ],
+        [
+          1.78,
+          270.8
+        ]
+      ],
+      "marketVolume": 82079
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-10T13:41:12.648Z",
+      "eventId": 34549778339301024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.73,
+      "available": 108.17,
+      "depth": [
+        [
+          1.73,
+          108.17
+        ],
+        [
+          1.72,
+          756.32
+        ],
+        [
+          1.71,
+          1348.04
+        ]
+      ],
+      "marketVolume": 145045
     }
   }
 }
