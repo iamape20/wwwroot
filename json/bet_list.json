@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-10T13:01:34.697Z",
+  "generatedAt": "2026-10-10T13:21:09.264Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 42/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 43/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,16 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Hexham",
-      "off": "14:20",
-      "status": "POSSIBLE",
-      "revealAt": "14:05"
-    },
-    {
       "course": "Fairyhouse",
       "off": "14:33",
-      "status": "POSSIBLE",
-      "revealAt": "14:18"
+      "status": "BET",
+      "horse": "STRAIGHT JOHN",
+      "price": "11/10"
     },
     {
       "course": "Chepstow",
@@ -46,17 +41,34 @@
   ],
   "awaitingResult": [
     {
-      "course": "Newmarket",
-      "off": "13:50",
-      "horse": "DRUMBEAT"
-    },
-    {
-      "course": "Fairyhouse",
-      "off": "13:58",
-      "horse": "GLEN KILN"
+      "course": "Hexham",
+      "off": "14:20",
+      "horse": "DARK TIDE RISING"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-10",
+      "course": "Fairyhouse",
+      "off": "13:58",
+      "horse": "GLEN KILN",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-10",
+      "course": "Newmarket",
+      "off": "13:50",
+      "horse": "DRUMBEAT",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-10",
       "course": "Naas",
@@ -199,32 +211,10 @@
       "bsp": 2.44431365,
       "pl": 1.372,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-08",
-      "course": "Tramore",
-      "off": "14:10",
-      "horse": "LLEM'S",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-07",
-      "course": "Kempton",
-      "off": "17:30",
-      "horse": "TWELVE BARS",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.83264456,
-      "pl": 0.791,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-10T13:01:34.530Z",
+    "updatedAt": "2026-10-10T13:21:09.184Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -247,11 +237,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 42,
-      "won": 23,
-      "pl": -2.72,
-      "roi": -6.5,
-      "provisional": 0
+      "bets": 44,
+      "won": 24,
+      "pl": -2.81,
+      "roi": -6.4,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
