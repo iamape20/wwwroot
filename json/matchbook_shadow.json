@@ -1481,27 +1481,81 @@
       "marketVolume": 228998
     },
     "lastBeforeOff": {
-      "at": "2026-10-10T14:41:02.075Z",
+      "at": "2026-10-10T14:50:53.145Z",
       "eventId": 34549876573901080,
       "found": true,
       "withdrawn": false,
-      "bestBack": 2.36,
-      "available": 54.32,
+      "bestBack": 2.18,
+      "available": 24.79,
       "depth": [
         [
-          2.36,
-          54.32
+          2.18,
+          24.79
         ],
         [
-          2.34,
-          106.29
+          2.16,
+          270.33
         ],
         [
-          2.32,
-          194.95
+          2.14,
+          345.22
         ]
       ],
-      "marketVolume": 263901
+      "marketVolume": 304212
+    }
+  },
+  "BET|2026-10-10|York|14:57|IRONSTONELAD": {
+    "type": "BET",
+    "date": "2026-10-10",
+    "course": "York",
+    "time": "14:57",
+    "horse": "IRON STONE LAD",
+    "betId": "2026-10-10|York|14:57",
+    "atReveal": {
+      "at": "2026-10-10T14:50:53.141Z",
+      "eventId": 34549876573901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.18,
+      "available": 24.79,
+      "depth": [
+        [
+          2.18,
+          24.79
+        ],
+        [
+          2.16,
+          270.33
+        ],
+        [
+          2.14,
+          345.22
+        ]
+      ],
+      "marketVolume": 304212
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-10T14:50:53.141Z",
+      "eventId": 34549876573901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.18,
+      "available": 24.79,
+      "depth": [
+        [
+          2.18,
+          24.79
+        ],
+        [
+          2.16,
+          270.33
+        ],
+        [
+          2.14,
+          345.22
+        ]
+      ],
+      "marketVolume": 304212
     }
   }
 }
