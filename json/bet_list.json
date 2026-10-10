@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-10T12:41:22.973Z",
+  "generatedAt": "2026-10-10T13:01:34.697Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 41/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 42/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,29 +14,10 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Newmarket",
-      "off": "13:50",
-      "status": "BET",
-      "horse": "DRUMBEAT",
-      "price": "1/1"
-    },
-    {
-      "course": "Fairyhouse",
-      "off": "13:58",
-      "status": "POSSIBLE",
-      "revealAt": "13:43"
-    },
-    {
       "course": "Hexham",
       "off": "14:20",
       "status": "POSSIBLE",
       "revealAt": "14:05"
-    },
-    {
-      "course": "Newmarket",
-      "off": "14:25",
-      "status": "POSSIBLE",
-      "revealAt": "14:10"
     },
     {
       "course": "Fairyhouse",
@@ -65,12 +46,28 @@
   ],
   "awaitingResult": [
     {
-      "course": "Naas",
-      "off": "13:40",
-      "horse": "IVEAGH HOUSE"
+      "course": "Newmarket",
+      "off": "13:50",
+      "horse": "DRUMBEAT"
+    },
+    {
+      "course": "Fairyhouse",
+      "off": "13:58",
+      "horse": "GLEN KILN"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-10",
+      "course": "Naas",
+      "off": "13:40",
+      "horse": "IVEAGH HOUSE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-09",
       "course": "Kempton",
@@ -224,21 +221,10 @@
       "bsp": 1.83264456,
       "pl": 0.791,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-07",
-      "course": "Navan",
-      "off": "15:45",
-      "horse": "JESUS GREEN",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.41,
-      "pl": 0.389,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-10T12:41:22.810Z",
+    "updatedAt": "2026-10-10T13:01:34.530Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -261,10 +247,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 41,
+      "bets": 42,
       "won": 23,
-      "pl": -1.72,
-      "roi": -4.2,
+      "pl": -2.72,
+      "roi": -6.5,
       "provisional": 0
     },
     "live": {
