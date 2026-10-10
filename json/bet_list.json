@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T12:21:22.196Z",
+  "generatedAt": "2026-10-10T12:41:22.973Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 41/120 bets settled before the verdict.",
   "rules": [
@@ -14,16 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Naas",
-      "off": "13:40",
-      "status": "POSSIBLE",
-      "revealAt": "13:25"
-    },
-    {
       "course": "Newmarket",
       "off": "13:50",
-      "status": "POSSIBLE",
-      "revealAt": "13:35"
+      "status": "BET",
+      "horse": "DRUMBEAT",
+      "price": "1/1"
     },
     {
       "course": "Fairyhouse",
@@ -68,7 +63,13 @@
       "revealAt": "17:20"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Naas",
+      "off": "13:40",
+      "horse": "IVEAGH HOUSE"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-09",
@@ -237,7 +238,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-10T12:21:22.108Z",
+    "updatedAt": "2026-10-10T12:41:22.810Z",
     "claude": {
       "races": 38,
       "won": 7,
