@@ -1695,27 +1695,81 @@
       "marketVolume": 12293
     },
     "lastBeforeOff": {
-      "at": "2026-10-11T11:40:53.827Z",
+      "at": "2026-10-11T12:00:53.338Z",
       "eventId": 34558654120802024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.71,
-      "available": 1.89,
+      "bestBack": 1.7,
+      "available": 81.18,
       "depth": [
         [
-          1.71,
-          1.89
-        ],
-        [
           1.7,
-          5.97
+          81.18
         ],
         [
           1.69,
-          208.19
+          5.98
+        ],
+        [
+          1.68,
+          58.38
         ]
       ],
-      "marketVolume": 43434
+      "marketVolume": 43659
+    }
+  },
+  "BET|2026-10-11|Cork|12:02|WORLDOFTHEWAY": {
+    "type": "BET",
+    "date": "2026-10-11",
+    "course": "Cork",
+    "time": "12:02",
+    "horse": "WORLD OF THE WAY",
+    "betId": "2026-10-11|Cork|12:02",
+    "atReveal": {
+      "at": "2026-10-11T11:50:52.495Z",
+      "eventId": 34558654119300024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.51,
+      "available": 2.95,
+      "depth": [
+        [
+          1.51,
+          2.95
+        ],
+        [
+          1.5,
+          11.65
+        ],
+        [
+          1.49,
+          26.91
+        ]
+      ],
+      "marketVolume": 86791
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-11T12:00:53.334Z",
+      "eventId": 34558654119300024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.51,
+      "available": 43.84,
+      "depth": [
+        [
+          1.51,
+          43.84
+        ],
+        [
+          1.5,
+          219.82
+        ],
+        [
+          1.49,
+          272.22
+        ]
+      ],
+      "marketVolume": 108735
     }
   }
 }
