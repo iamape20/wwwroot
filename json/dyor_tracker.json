@@ -293,10 +293,14 @@
       "fav": {
         "horse": "MARTYMILL",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-11T13:40:36.099Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/6"
     },
     {
       "id": "2026-10-11|Naas|14:05",
@@ -312,10 +316,18 @@
       "fav": {
         "horse": "FAIYUM",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T13:50:41.417Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Goodwood|13:57",
@@ -331,10 +343,18 @@
       "fav": {
         "horse": "ZARAK CROWN",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T13:50:41.432Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Chepstow|14:12",
@@ -354,20 +374,58 @@
       },
       "recordedAt": "2026-10-11T14:00:37.428Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Cork|14:22",
+      "date": "2026-10-11",
+      "course": "Cork",
+      "time": "14:22",
+      "horse": "MINELLA EMPEROR",
+      "price": "7/4",
+      "runners": 3,
+      "liveHorse": "DAD SEZ",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DAD SEZ",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T14:10:39.066Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Goodwood|14:32",
+      "date": "2026-10-11",
+      "course": "Goodwood",
+      "time": "14:32",
+      "horse": "DREAM COMPOSER",
+      "price": "25/1",
+      "runners": 13,
+      "liveHorse": "DEEP HAVANA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DEEP HAVANA",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T14:20:35.536Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 15,
+    "recorded": 17,
     "pick": {
-      "settled": 6,
+      "settled": 8,
       "won": 0,
-      "pl": -6,
+      "pl": -8,
       "roi": -100
     },
     "favourite": {
-      "settled": 6,
+      "settled": 8,
       "won": 0,
-      "pl": -6,
+      "pl": -8,
       "roi": -100
     },
     "agree": {
@@ -377,9 +435,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 4,
+      "settled": 6,
       "won": 0,
-      "pl": -4,
+      "pl": -6,
       "roi": -100
     }
   },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:00:35.396Z",
+  "generatedAt": "2026-10-11T14:20:33.164Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 50/120 bets settled before the verdict.",
   "rules": [
@@ -32,14 +32,19 @@
       "revealAt": "16:52"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-11",
       "course": "Cork",
       "off": "14:47",
-      "horse": "MARTYMILL"
-    }
-  ],
-  "recent": [
+      "horse": "MARTYMILL",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-11",
       "course": "Naas",
@@ -193,21 +198,10 @@
       "bsp": 1.55201678,
       "pl": 0.524,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "Newmarket",
-      "off": "14:57",
-      "horse": "MUSICAL TIMES",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.49,
-      "pl": 0.465,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T14:00:35.287Z",
+    "updatedAt": "2026-10-11T14:20:33.071Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 52,
-      "won": 26,
-      "pl": -7.76,
-      "roi": -14.9,
-      "provisional": 2
+      "bets": 53,
+      "won": 27,
+      "pl": -6.93,
+      "roi": -13.1,
+      "provisional": 3
     },
     "live": {
       "bets": 0,
