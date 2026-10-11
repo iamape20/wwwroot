@@ -243,10 +243,16 @@
       "fav": {
         "horse": "DAWNMORE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T13:20:47.330Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/2"
     },
     {
       "id": "2026-10-11|Chepstow|13:37",
@@ -262,10 +268,16 @@
       "fav": {
         "horse": "LION ROSE SIVOLA",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T13:30:41.967Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-10-11|Cork|13:47",
@@ -285,10 +297,67 @@
       },
       "recordedAt": "2026-10-11T13:40:36.099Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Naas|14:05",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "14:05",
+      "horse": "DROP DEAD GORGEOUS",
+      "price": "6/1",
+      "runners": 16,
+      "liveHorse": "FAIYUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FAIYUM",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T13:50:41.417Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Goodwood|13:57",
+      "date": "2026-10-11",
+      "course": "Goodwood",
+      "time": "13:57",
+      "horse": "WISE AND WONDERFUL",
+      "price": "9/2",
+      "runners": 8,
+      "liveHorse": "ZARAK CROWN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZARAK CROWN",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T13:50:41.432Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Chepstow|14:12",
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "time": "14:12",
+      "horse": "WEST ORCHARD",
+      "price": "17/2",
+      "runners": 12,
+      "liveHorse": "HARBOUR LIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HARBOUR LIGHT",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T14:00:37.428Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 12,
+    "recorded": 15,
     "pick": {
       "settled": 6,
       "won": 0,
@@ -296,9 +365,9 @@
       "roi": -100
     },
     "favourite": {
-      "settled": 4,
+      "settled": 6,
       "won": 0,
-      "pl": -4,
+      "pl": -6,
       "roi": -100
     },
     "agree": {
