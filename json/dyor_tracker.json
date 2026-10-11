@@ -526,10 +526,18 @@
       "fav": {
         "horse": "PUTAPOUNDINTHEJAR",
         "price": "11/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T15:00:37.409Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Goodwood|15:07",
@@ -570,10 +578,18 @@
       "fav": {
         "horse": "WELSH CHARGER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T15:10:26.494Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Cork|15:32",
@@ -593,20 +609,58 @@
       },
       "recordedAt": "2026-10-11T15:20:26.816Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Goodwood|15:42",
+      "date": "2026-10-11",
+      "course": "Goodwood",
+      "time": "15:42",
+      "horse": "CERULEAN BAY",
+      "price": "9/4",
+      "runners": 13,
+      "liveHorse": "CERULEAN BAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CERULEAN BAY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T15:30:23.662Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Naas|15:50",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "15:50",
+      "horse": "KILLYCLOGHER ROSE",
+      "price": "10/1",
+      "runners": 12,
+      "liveHorse": "PURE GRANITE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PURE GRANITE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T15:40:24.779Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 24,
+    "recorded": 26,
     "pick": {
-      "settled": 14,
+      "settled": 16,
       "won": 0,
-      "pl": -14,
+      "pl": -16,
       "roi": -100
     },
     "favourite": {
-      "settled": 12,
+      "settled": 14,
       "won": 0,
-      "pl": -12,
+      "pl": -14,
       "roi": -100
     },
     "agree": {
@@ -616,11 +670,11 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 11,
+      "settled": 13,
       "won": 0,
-      "pl": -11,
+      "pl": -13,
       "roi": -100
     }
   },
-  "lastBackfill": 1791721861490
+  "lastBackfill": 1791733224795
 }
