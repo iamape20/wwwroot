@@ -2707,7 +2707,9 @@ async function loadMarketMoves() {
         const r = await fetch("/api/moves");
         if (!r.ok) return;
         const d = await r.json();
-        const nrAll = d.nonRunners || [], shortAll = d.shorteners || [], driftAll = d.drifters || [];
+        // Drop rows for races that have gone off since the feed was built (card times are UTC).
+        const stillToRun = x => !d.date || !x || !x.time || Date.parse(d.date + "T" + x.time + ":00Z") > Date.now();
+        const nrAll = (d.nonRunners || []).filter(stillToRun), shortAll = (d.shorteners || []).filter(stillToRun), driftAll = (d.drifters || []).filter(stillToRun);
         // Keep the strip short: the biggest few moves only (the API sends them largest first).
         const nr = nrAll.slice(0, 8), short = shortAll.slice(0, 5), drift = driftAll.slice(0, 4);
         const more = (all, shown) => all.length > shown.length ? '<span class="market-more">+' + (all.length - shown.length) + ' more</span>' : "";
