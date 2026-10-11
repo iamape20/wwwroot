@@ -512,6 +512,16 @@ module.exports = async (req, res) => {
                  *   ourPickPosition
                  *   actualTopThree
                  */
+                // Every finisher with starting price, and non-finishers with the reason
+                // (PulledUp / Fell / ...), for the race-card finishing order (2026-10-11).
+                const finishers = placings
+                    .filter(p => Number(p.position) >= 1)
+                    .sort((x, y) => Number(x.position) - Number(y.position))
+                    .map(p => ({ position: Number(p.position), name: p.name, odds: p.odds ?? null }));
+                const nonFinishers = placings
+                    .filter(p => !(Number(p.position) >= 1) && p.casualtyReason)
+                    .map(p => ({ name: p.name, reason: p.casualtyReason }));
+
                 // Top four with starting prices, for the race-card result banner (2026-10-11).
                 const actualTop = placings
                     .filter(p => Number(p.position) >= 1 && Number(p.position) <= 4)
@@ -536,7 +546,11 @@ module.exports = async (req, res) => {
 
                     actualTopThree,
 
-                    actualTop
+                    actualTop,
+
+                    finishers,
+
+                    nonFinishers
 
                 });
 

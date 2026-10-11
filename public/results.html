@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results - Elite Power Ratings</title>
+<link rel="icon" href="images/crest.jpg" type="image/jpeg">
+<script>
+/* Same theme logic as index.html: saved choice, else the system setting. */
+(function () {
+    var t = null;
+    try { t = localStorage.getItem("epr-theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = (window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+<style>
+:root {
+    --bg: #07090d; --card: #0d121a; --card2: #111823; --text: #f7f8fa; --muted: #94a0b2; --line: rgba(255,255,255,.1);
+    --gold: #d4af37; --green: #2ecc71; --red: #ef4444; --silver: #c0c7d1; --bronze: #c98a52;
+}
+:root[data-theme="light"] {
+    --bg: #f6f7f9; --card: #ffffff; --card2: #f1f3f6; --text: #16181d; --muted: #5d6470; --line: #e3e6ea;
+    --gold: #9a7b12; --green: #11743b; --red: #b3261e;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 16px; }
+a { color: var(--gold); }
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+h1 { font-size: 1.4rem; margin: 4px 0; }
+.muted { color: var(--muted); font-size: .88rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0; }
+.days { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.days th, .days td { text-align: left; padding: 6px 6px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.days tr.pick { cursor: pointer; }
+.days tr.pick:hover td { background: var(--card2); }
+.days tr.active td { background: var(--card2); font-weight: 700; }
+.tablewrap { overflow-x: auto; }
+.summary { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; }
+.summary b { font-size: 1.2rem; }
+.race { border-top: 1px solid var(--line); padding: 10px 0; }
+.race:first-child { border-top: 0; }
+.race-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.race-time { font-weight: 800; }
+.race-title { color: var(--muted); font-size: .85rem; }
+.pickline { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 4px; }
+.pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: .75rem; font-weight: 800; white-space: nowrap; }
+.pill.won { background: rgba(46,204,113,.18); color: var(--green); }
+.pill.placed { background: rgba(212,175,55,.18); color: var(--gold); }
+.pill.unplaced { background: rgba(239,68,68,.15); color: var(--red); }
+.pill.void, .pill.unknown { background: rgba(148,160,178,.18); color: var(--muted); }
+details { margin-top: 4px; }
+summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
+.order { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 2px 18px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); font-size: .88rem; }
+.order li.ours { font-weight: 800; }
+.pos { display: inline-block; min-width: 2.2em; font-weight: 800; }
+.pos.p1 { color: var(--gold); } .pos.p2 { color: var(--silver); } .pos.p3 { color: var(--bronze); }
+.sp { color: var(--muted); }
+@media (max-width: 520px) { main { padding: 10px; } .days th:nth-child(5), .days td:nth-child(5) { display: none; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+    <div>
+        <h1>Results</h1>
+        <div class="muted">Every race on our card, our published pick and how it finished. Times are UK time.</div>
+    </div>
+    <a href="/">&larr; Back to the cards</a>
+</header>
+
+<div class="card tablewrap">
+    <table class="days" id="days"><thead><tr><th>Day</th><th>Races</th><th>Our pick won</th><th>Placed</th><th>Win rate</th></tr></thead><tbody></tbody></table>
+    <div class="muted" style="margin-top:6px">"Placed" uses each-way place terms for the field size (for example 3 places in a 10-runner race, 2 in a 6-runner race). Non-runners are left out. Each race uses the pick exactly as it stood at the off.</div>
+</div>
+
+<div class="card tablewrap" id="courseCard" style="display:none">
+    <h2 style="font-size:1.05rem;margin:0 0 6px">By course (all days shown above)</h2>
+    <table class="days" id="courses"><thead><tr><th>Course</th><th>Races</th><th>Won</th><th>Win rate</th><th>Placed</th></tr></thead><tbody></tbody></table>
+    <div class="muted" style="margin-top:6px" id="courseNote"></div>
+</div>
+
+<div class="card" id="dayCard" style="display:none">
+    <div class="summary" id="daySummary"></div>
+    <div id="races"></div>
+</div>
+<div class="muted" id="msg">Loading results...</div>
+</main>
+
+<script>
+(function () {
+    var UK = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit" });
+    var DAY = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+    function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+    function ord(n) { var s = ["th", "st", "nd", "rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+    function ukTime(date, hhmm) { return UK.format(new Date(date + "T" + hhmm + ":00Z")); }
+    function pct(a, b) { return b ? (100 * a / b).toFixed(1) + "%" : "-"; }
+    function key(s) { return String(s || "").toUpperCase().replace(/[^A-Z0-9]/g, ""); }
+    function get(url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+
+    var daysBody = document.querySelector("#days tbody"), dayCard = document.getElementById("dayCard"), msg = document.getElementById("msg");
+    var current = null;
+
+    function showDay(date) {
+        current = date;
+        [].forEach.call(daysBody.querySelectorAll("tr"), function (tr) { tr.classList.toggle("active", tr.dataset.date === date); });
+        dayCard.style.display = "none"; msg.textContent = "Loading " + date + "...";
+        get("/api/results?date=" + date).then(function (d) {
+            if (current !== date) return;
+            var day = d.day, s = day.summary;
+            document.getElementById("daySummary").innerHTML =
+                "<span><b>" + esc(DAY.format(new Date(day.date + "T12:00:00Z"))) + "</b></span>" +
+                "<span>" + s.picked + " races with a pick</span>" +
+                "<span style='color:var(--green)'>Our pick won <b>" + s.won + "</b> (" + pct(s.won, s.picked) + ")</span>" +
+                "<span style='color:var(--gold)'>placed <b>" + s.placed + "</b> (" + pct(s.placed, s.picked) + ")</span>";
+            document.getElementById("races").innerHTML = day.races.map(function (r) {
+                var label = r.outcome === "won" ? "Won" : r.outcome === "placed" ? "Placed " + ord(r.ourPickPosition) : r.outcome === "unplaced" ? (r.ourPickPosition ? "Finished " + ord(r.ourPickPosition) : (r.ourPickReason ? "Did not finish" : "Unplaced")) : r.outcome === "void" ? "Non-runner" : "Result incomplete";
+                var order = (r.finishers || []).map(function (p) {
+                    var ours = key(p.name) === key(r.ourPick);
+                    return "<li class='" + (ours ? "ours" : "") + "'><span class='pos p" + p.position + "'>" + ord(p.position) + "</span>" + esc(p.name) + (p.odds ? " <span class='sp'>" + esc(p.odds) + "</span>" : "") + (ours ? " &larr; our pick" : "") + "</li>";
+                }).join("") + (r.nonFinishers || []).map(function (p) {
+                    var ours = key(p.name) === key(r.ourPick);
+                    return "<li class='" + (ours ? "ours" : "") + "'><span class='pos'>-</span>" + esc(p.name) + " <span class='sp'>" + esc(p.reason) + "</span>" + (ours ? " &larr; our pick" : "") + "</li>";
+                }).join("");
+                return "<div class='race'>" +
+                    "<div class='race-head'><span class='race-time'>" + esc(ukTime(day.date, r.time)) + "</span><span>" + esc(r.course) + "</span><span class='race-title'>" + esc(r.title || "") + "</span></div>" +
+                    "<div class='pickline'><span>Our pick: <b>" + esc(r.ourPick) + "</b></span><span class='pill " + esc(r.outcome || "unknown") + "'>" + esc(label) + "</span>" +
+                    (r.winner ? "<span class='muted'>Winner: " + esc(r.winner) + (r.winnerOdds ? " " + esc(r.winnerOdds) : "") + "</span>" : "") + "</div>" +
+                    (order ? "<details><summary>Full finishing order (" + (r.finishers || []).length + " finishers)</summary><ul class='order'>" + order + "</ul></details>" : "") +
+                    "</div>";
+            }).join("");
+            dayCard.style.display = ""; msg.textContent = "";
+        }).catch(function () { msg.textContent = "Could not load that day's results."; });
+    }
+
+    get("/api/results").then(function (d) {
+        if (!d.days || !d.days.length) { msg.textContent = "No results yet."; return; }
+        daysBody.innerHTML = d.days.map(function (x) {
+            var s = x.summary;
+            return "<tr class='pick' data-date='" + x.date + "'><td>" + esc(DAY.format(new Date(x.date + "T12:00:00Z"))) + "</td><td>" + s.picked + "</td><td>" + s.won + "</td><td>" + s.placed + "</td><td>" + pct(s.won, s.picked) + "</td></tr>";
+        }).join("");
+        [].forEach.call(daysBody.querySelectorAll("tr"), function (tr) { tr.addEventListener("click", function () { showDay(tr.dataset.date); }); });
+        var cs = d.courses || [], cb = document.querySelector("#courses tbody");
+        if (cs.length) {
+            function row(c) { return "<tr><td>" + esc(c.course) + "</td><td>" + c.picked + "</td><td>" + c.won + "</td><td>" + pct(c.won, c.picked) + "</td><td>" + pct(c.placed, c.picked) + "</td></tr>"; }
+            var big = cs.filter(function (c) { return c.picked >= 15; }), small = cs.filter(function (c) { return c.picked < 15; });
+            cb.innerHTML = big.map(row).join("") + (small.length ? "<tr><td colspan='5'><details><summary>" + small.length + " courses with fewer than 15 races</summary><table class='days'><tbody>" + small.map(row).join("") + "</tbody></table></details></td></tr>" : "");
+            document.getElementById("courseNote").textContent = "Courses with fewer than 15 races are tucked away because that is too few to read anything into. Even the bigger courses are a small sample over a fortnight, so treat differences between courses as noise unless they persist.";
+            document.getElementById("courseCard").style.display = "";
+        }
+        var want = (location.hash || "").replace("#", "");
+        showDay(d.days.some(function (x) { return x.date === want; }) ? want : d.days[0].date);
+    }).catch(function () { msg.textContent = "Results are not available right now."; });
+})();
+</script>
+</body>
+</html>

@@ -1096,7 +1096,9 @@ button {
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='180'><text x='-20' y='110' font-family='Arial, sans-serif' font-size='30' font-weight='700' letter-spacing='2' fill='rgba(239,136,190,0.30)' transform='rotate(-28 130 90)'>VOID BET</text></svg>");
+    /* Quieter than the original (11 Oct 2026): fainter and spaced wider so
+       the runners stay readable on a race the ratings can't separate. */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='300'><text x='20' y='170' font-family='Arial, sans-serif' font-size='24' font-weight='700' letter-spacing='3' fill='rgba(239,136,190,0.12)' transform='rotate(-28 210 150)'>VOID BET</text></svg>");
     background-repeat: repeat;
 }
 
@@ -2595,3 +2597,128 @@ button {
 .runner-finish-1 { background: var(--epr-gold); color: #1a1a1a; }
 .runner-finish-2 { background: #c0c7d1; color: #1a1a1a; }
 .runner-finish-3 { background: #c98a52; color: #1a1a1a; }
+
+
+/* Re-sort button inside the result banner (2026-10-11). */
+.race-result-sort {
+    padding: 3px 10px;
+    border: 1px solid var(--epr-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--epr-muted);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.race-result-sort:hover { color: var(--epr-text); border-color: var(--epr-gold); }
+
+/* A runner that did not finish: PU / F / UR ... */
+.runner-finish-nf { background: rgba(220,38,38,.16); color: var(--epr-red); }
+
+/* Header link to the results page. */
+.topbar-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.topbar-link {
+    align-self: center;
+    padding: 4px 12px;
+    border: 1px solid var(--epr-border);
+    border-radius: 999px;
+    color: var(--epr-text);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.topbar-link:hover { border-color: var(--epr-gold); color: var(--epr-gold); }
+
+/* Market movers and non-runners strip (2026-10-11). */
+.market-strip {
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--epr-border);
+    border-radius: var(--epr-radius);
+    background: var(--epr-surface-2);
+    font-size: 12px;
+    color: var(--epr-text);
+}
+.market-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 3px 0; }
+.market-label {
+    min-width: 92px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+.market-label-nr { color: var(--epr-red); }
+.market-label-in { color: var(--epr-green); }
+.market-label-out { color: var(--epr-gold); }
+.market-chip {
+    padding: 2px 9px;
+    border: 1px solid var(--epr-border);
+    border-radius: 999px;
+    white-space: nowrap;
+}
+.market-chip i { font-style: normal; color: var(--epr-muted); }
+.market-chip-nr { text-decoration: line-through; text-decoration-color: rgba(220,38,38,.55); }
+.market-note { margin-top: 6px; font-size: 10px; color: var(--epr-muted); }
+
+
+/* Shareable race link + market favourite badge (2026-10-11). */
+.race-share {
+    margin-left: 12px;
+    padding: 2px 10px;
+    border: 1px solid var(--epr-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--epr-muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.race-share:hover { color: var(--epr-text); border-color: var(--epr-gold); }
+
+.runner-fav-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 3px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--epr-border);
+    background: rgba(var(--epr-overlay-rgb), .08);
+    color: var(--epr-text);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+
+/* Card at a glance (2026-10-11). */
+.glance {
+    margin: 10px 0;
+    border: 1px solid var(--epr-border);
+    border-radius: 10px;
+    background: var(--epr-card);
+    padding: 8px 12px;
+}
+.glance > summary { cursor: pointer; font-weight: 700; color: var(--epr-text); font-size: 13px; }
+.glance-wrap { overflow-x: auto; margin-top: 8px; }
+.glance-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.glance-table th, .glance-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--epr-border); white-space: nowrap; }
+.glance-table th { color: var(--epr-muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.glance-row { cursor: pointer; }
+.glance-row:hover td { background: rgba(var(--epr-overlay-rgb), .06); }
+.glance-off { opacity: .45; }
+.glance-odds { color: var(--epr-muted); font-size: 12px; }
+.glance-yes { color: var(--epr-gold); font-weight: 800; font-size: 11px; }
+.glance-no { color: var(--epr-muted); font-size: 11px; }
+@media (max-width: 520px) {
+    .glance { padding: 8px 8px; }
+    .glance-table { font-size: 12px; }
+    .glance-table th, .glance-table td { padding: 6px 4px; }
+    .glance-odds { font-size: 11px; }
+}

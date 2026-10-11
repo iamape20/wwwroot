@@ -40,12 +40,12 @@
          browser's module cache treats a different query string as a
          different module and busting the entry point alone does not
          bust what it imports. -->
-    <link rel="stylesheet" href="css/app.css?v=20261011a">
+    <link rel="stylesheet" href="css/app.css?v=20261011e">
 	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
 
     <script src="js/clock.js?v=20260930b" defer></script>
     <script src="js/theme.js?v=20260925" defer></script>
-    <script type="module" src="js/app.js?v=20261011b"></script>
+    <script type="module" src="js/app.js?v=20261011e"></script>
 
 </head>
 
@@ -70,7 +70,11 @@
 	<div id="meetings" class="header-meetings"></div>
 
 	<div class="topbar-right">
-		<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">🌙</button>
+		<div class="topbar-actions">
+			<a href="results.html" class="topbar-link" title="Results of every race on our card">Results</a>
+			<a href="formguide.html" class="topbar-link" title="Why each featured pick rates, and the risks">Form guide</a>
+			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">🌙</button>
+		</div>
 		<div id="live-day" class="topbar-day"></div>
 		<div id="live-clock" class="topbar-clock"></div>
 		<div id="next-race-countdown" class="topbar-countdown"></div>
@@ -113,6 +117,10 @@
 
         </div>
     </section>
+
+    <div id="marketStrip" class="market-strip" style="display:none;"></div>
+
+    <details id="glanceBox" class="glance" style="display:none;"><summary id="glanceSummary">Card at a glance</summary><div id="glanceBody"></div></details>
 
     <div id="todaysResultsStrip" class="results-strip" style="display:none;"></div>
 

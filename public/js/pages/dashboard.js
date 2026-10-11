@@ -100,7 +100,7 @@ function renderDailyDouble(dashboard) {
                     ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
                 </div>
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
-                <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(+${escapeHtml(p.margin)} clear)</span></div>
+                <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span></div>
             </div>
         </div>
     `).join("");
@@ -900,8 +900,24 @@ function resultPlaces(detail) {
     return names.map((name, i) => ({ position: i + 1, name, odds: null }));
 }
 
+// Every finisher (position + starting price) when the API sent the full field,
+// else just the top four / top three.
+function resultFinishers(detail) {
+    if (Array.isArray(detail.finishers) && detail.finishers.length) return detail.finishers;
+    return resultPlaces(detail);
+}
+
+const NON_FINISHER_CODES = {
+    pulledup: "PU", fell: "F", unseated: "UR", unseatedrider: "UR", brought: "BD", broughtdown: "BD",
+    refused: "REF", ranout: "RO", slippedup: "SU", disqualified: "DSQ", carriedout: "CO", virtualrace: "VR"
+};
+function nonFinisherCode(reason) {
+    const k = String(reason || "").toLowerCase().replace(/[^a-z]/g, "");
+    return NON_FINISHER_CODES[k] || (String(reason || "").slice(0, 3).toUpperCase() || "NF");
+}
+
 function renderResultBanner(detail) {
-    const places = resultPlaces(detail);
+    const places = resultPlaces(detail).slice(0, 4);
     if (!places.length) return null;
     const pick = detail.outcome === "won"
         ? `Our pick ${escapeHtml(detail.ourPick)} won`
@@ -914,6 +930,30 @@ function renderResultBanner(detail) {
         `<span class="race-result-label">Result</span>` +
         places.map(p => `<span class="race-result-place"><b>${ordinal(p.position)}</b> ${escapeHtml(p.name)}${p.odds ? ` <i>${escapeHtml(p.odds)}</i>` : ""}</span>`).join("") +
         `<span class="race-result-pick ${escapeHtml(detail.outcome || "unplaced")}">${pick}</span>`;
+    // Optional re-sort of the runner rows into finishing order (non-finishers last).
+    const all = resultFinishers(detail);
+    if (all.length > 1) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "race-result-sort";
+        btn.textContent = "Show in finishing order";
+        btn.dataset.mode = "ratings";
+        btn.addEventListener("click", () => {
+            const cont = document.getElementById("analysis");
+            if (!cont) return;
+            const toFinish = btn.dataset.mode === "ratings";
+            const pos = new Map(all.map(p => [resultKey(p.name), Number(p.position)]));
+            const cards = [...cont.querySelectorAll(".runner-card:not(.runner-card-nonrunner)")];
+            cards.sort((a, b) => toFinish
+                ? (pos.get(a.dataset.horse) ?? 999) - (pos.get(b.dataset.horse) ?? 999) || Number(a.dataset.idx) - Number(b.dataset.idx)
+                : Number(a.dataset.idx) - Number(b.dataset.idx));
+            const ref = cont.querySelector(".runner-card-nonrunner");
+            cards.forEach(c => cont.insertBefore(c, ref));
+            btn.dataset.mode = toFinish ? "finish" : "ratings";
+            btn.textContent = toFinish ? "Show in rating order" : "Show in finishing order";
+        });
+        box.appendChild(btn);
+    }
     return box;
 }
 
@@ -1384,10 +1424,23 @@ async function loadRace(
                 raceSignature(response)
         };
 
-        document.getElementById(
-            "raceTitle"
-        ).textContent =
-            `${response.meeting.name} ${raceTime} - ${response.race.title}`;
+        const raceTitleEl = document.getElementById("raceTitle");
+        raceTitleEl.textContent = `${response.meeting.name} ${raceTime} - ${response.race.title}`;
+
+        // Shareable link: the address bar follows the race on screen.
+        const thisHash = raceHash(response.meeting.name, raceTime);
+        try { history.replaceState(null, "", thisHash); } catch { /* sandboxed preview */ }
+        const shareBtn = document.createElement("button");
+        shareBtn.type = "button";
+        shareBtn.className = "race-share";
+        shareBtn.textContent = "Copy link";
+        shareBtn.addEventListener("click", async () => {
+            const url = location.origin + location.pathname + thisHash;
+            try { await navigator.clipboard.writeText(url); shareBtn.textContent = "Link copied"; }
+            catch { shareBtn.textContent = url; }
+            setTimeout(() => { shareBtn.textContent = "Copy link"; }, 2200);
+        });
+        raceTitleEl.appendChild(shareBtn);
 
         const allRunners =
             [...response.race.runners];
@@ -1451,7 +1504,7 @@ async function loadRace(
 		) {
 
 			selectionStatus = {
-				label: "MODERATE SEPARATION",
+				label: "MODERATE LEAD",
 				className:
 					"selection-caution"
 			};
@@ -1462,7 +1515,7 @@ async function loadRace(
 		) {
 
 			selectionStatus = {
-				label: "OPEN FIELD",
+				label: "NO CLEAR TOP PICK",
 				className:
 					"selection-void"
 			};
@@ -1472,11 +1525,11 @@ async function loadRace(
             selectionStatus
                 ? `<span class="race-info-dot">•</span>` +
                   `<span class="race-info-item ${selectionStatus.className}" ` +
-                  `title="Selection status based on the measured separation of the leading rating">` +
+                  `title="${selectionStatus.className === 'selection-safe' ? 'Our top rating is well clear of the rest of the field.' : selectionStatus.className === 'selection-caution' ? 'Our top rating has a modest lead - less certain than a clear top pick.' : 'The ratings cannot separate the leading runners, so we treat this race as open and do not suggest a bet.'}">` +
                   `${selectionStatus.label}` +
                   `${
                       marginTier.margin > 0
-                          ? ` (+${marginTier.margin.toFixed(1)} clear)`
+                          ? ` · ${marginTier.margin.toFixed(1)} pts ahead of 2nd`
                           : ""
                   }` +
                   `</span>`
@@ -1537,12 +1590,17 @@ async function loadRace(
         // Result of the race, if it has finished (see getResultDetails).
         const resultDetail = await findResultDetail(response.meeting.name, response.race.time);
         window.currentRaceContext.hasResult = !!resultDetail;
-        const resultPlacesList = resultDetail ? resultPlaces(resultDetail) : [];
+        const resultPlacesList = resultDetail ? resultFinishers(resultDetail) : [];
+        const nonFinishersList = (resultDetail && Array.isArray(resultDetail.nonFinishers)) ? resultDetail.nonFinishers : [];
         const finishPill = name => {
             if (!resultDetail) return "";
             const p = resultPlacesList.find(x => resultKey(x.name) === resultKey(name));
             if (p) {
                 return `<span class="runner-finish-pill runner-finish-${p.position <= 3 ? p.position : "x"}" title="Finished ${ordinal(p.position)}${p.odds ? " at " + escapeHtml(p.odds) : ""}">${ordinal(p.position)}${p.odds ? " &middot; " + escapeHtml(p.odds) : ""}</span>`;
+            }
+            const nf = nonFinishersList.find(x => resultKey(x.name) === resultKey(name));
+            if (nf) {
+                return `<span class="runner-finish-pill runner-finish-nf" title="Did not finish: ${escapeHtml(nf.reason || "")}">${escapeHtml(nonFinisherCode(nf.reason))}</span>`;
             }
             if (resultKey(resultDetail.ourPick) === resultKey(name) && resultDetail.ourPickPosition) {
                 return `<span class="runner-finish-pill runner-finish-x" title="Finished ${ordinal(resultDetail.ourPickPosition)}">${ordinal(resultDetail.ourPickPosition)}</span>`;
@@ -1611,6 +1669,15 @@ async function loadRace(
             );
         }
 
+        // Shortest price in the market (joint favourites share the badge).
+        let favValue = Infinity;
+        runners.forEach(r => {
+            const v = parseFractionalOddsLocal(r.current_odds);
+            if (v != null && v < favValue) favValue = v;
+        });
+        const favCount = runners.filter(r => parseFractionalOddsLocal(r.current_odds) === favValue).length;
+        const isFavourite = r => Number.isFinite(favValue) && parseFractionalOddsLocal(r.current_odds) === favValue;
+
         const runnerFragment =
             document.createDocumentFragment();
 
@@ -1633,6 +1700,8 @@ async function loadRace(
 
                 card.className =
                     "runner-card";
+                card.dataset.horse = resultKey(runner.name);
+                card.dataset.idx = String(index);
 
                 const rating =
                     runner.elite.rating;
@@ -1714,6 +1783,8 @@ async function loadRace(
                                             ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
                                             : ""
                                     }
+
+                                    ${isFavourite(runner) ? `<span class="runner-fav-badge" title="Shortest price in the market">${favCount > 1 ? "Joint fav" : "Fav"}</span>` : ""}
 
                                     ${finishPill(runner.name)}
 
@@ -2049,6 +2120,9 @@ async function loadRaces(
         container.innerHTML = "";
 
         let firstCard = null;
+        let linkCard = null;
+        const wantTime = window.__deepLinkTime || null;
+        window.__deepLinkTime = null;
 
         response.races.forEach(
             (race, index) => {
@@ -2131,28 +2205,39 @@ async function loadRaces(
                     };
                 }
 
+                if (wantTime && toLocalTimeString(race.time).replace(":", "") === wantTime) {
+                    linkCard = { card, race };
+                }
+
                 container.appendChild(
                     card
                 );
             }
         );
 
+        const startCard = linkCard || firstCard;
+
         if (
-            firstCard &&
+            startCard &&
             autoSelectFirst
         ) {
 
-            firstCard.card.classList.add(
+            startCard.card.classList.add(
                 "active"
             );
 
             loadRace(
                 meetingId,
-                firstCard.race.index,
+                startCard.race.index,
                 toLocalTimeString(
-                    firstCard.race.time
+                    startCard.race.time
                 )
             );
+
+            if (linkCard) {
+                setTimeout(() => document.getElementById("analysisSection")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" }), 600);
+            }
         }
 
     } catch (err) {
@@ -2367,6 +2452,12 @@ export async function loadDashboard() {
             300000
         );
 
+        loadMarketMoves();
+        setInterval(loadMarketMoves, 300000);
+
+        loadGlance();
+        setInterval(loadGlance, 300000);
+
         startLiveRefresh();
 
     } catch (err) {
@@ -2520,6 +2611,102 @@ function renderYesterdayResults(dashboard) {
         <div class="results-strip-recent">${detail}</div>
     `;
 
+}
+
+// ---------------------------------------------------------------------------
+// Market movers and today's non-runners (2026-10-11). /api/moves is rebuilt every
+// odds refresh from the bookmaker price history: the runners whose price has moved
+// most since the first live price of the day, and every withdrawal on the card.
+// It reports what the market did; it is not a tip.
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// Card at a glance (2026-10-11): every race today, our pick against the market
+// favourite, on one screen. Click a row to open that race.
+// ---------------------------------------------------------------------------
+async function loadGlance() {
+    const box = document.getElementById("glanceBox");
+    const body = document.getElementById("glanceBody");
+    if (!box || !body) return;
+    try {
+        const r = await fetch("/api/glance");
+        if (!r.ok) return;
+        const d = await r.json();
+        const races = d.races || [];
+        if (!races.length) { box.style.display = "none"; return; }
+        const now = Date.now();
+        const agree = races.filter(x => x.agree).length;
+        document.getElementById("glanceSummary").textContent =
+            "Card at a glance - " + races.length + " races, our pick is also the market favourite in " + agree;
+        const rows = races.map(x => {
+            const off = now >= Date.parse(d.date + "T" + x.time + ":00Z");
+            const t = toLocalTimeString(x.time);
+            const hash = raceHash(x.course, t);
+            const favCell = x.agree ? "<span class='glance-yes' title='Our pick is the market favourite'>Same</span>" : x.fav ? escapeHtml(x.fav) + " <span class='glance-odds'>" + escapeHtml(x.favOdds) + "</span>" + (x.jointFav ? " <i>(joint)</i>" : "") : "-";
+            return "<tr class='glance-row" + (off ? " glance-off" : "") + "' data-hash='" + escapeHtml(hash) + "'>" +
+                "<td>" + escapeHtml(t) + "</td><td>" + escapeHtml(x.course) + "</td>" +
+                "<td><b>" + escapeHtml(x.pick) + "</b> <span class='glance-odds'>" + escapeHtml(x.pickOdds || "") + "</span></td>" +
+                "<td>" + favCell + "</td></tr>";
+        }).join("");
+        body.innerHTML = "<div class='glance-wrap'><table class='glance-table'><thead><tr><th>Time</th><th>Course</th><th>Our pick</th><th>Favourite</th></tr></thead><tbody>" +
+            rows + "</tbody></table></div><div class='market-note'>Faded rows have already run. Click a row to open that race.</div>";
+        body.querySelectorAll("tr.glance-row").forEach(tr => tr.addEventListener("click", () => {
+            location.hash = tr.dataset.hash;
+            location.reload();
+        }));
+        box.style.display = "";
+    } catch (err) {
+        console.warn("Card at a glance unavailable:", err);
+    }
+}
+
+async function loadMarketMoves() {
+    const el = document.getElementById("marketStrip");
+    if (!el) return;
+    try {
+        const r = await fetch("/api/moves");
+        if (!r.ok) return;
+        const d = await r.json();
+        const nr = d.nonRunners || [], short = d.shorteners || [], drift = d.drifters || [];
+        if (!nr.length && !short.length && !drift.length) {
+            el.style.display = "none";
+            el.innerHTML = "";
+            return;
+        }
+        const when = x => escapeHtml(toLocalTimeString(x.time));
+        const move = x => '<span class="market-chip"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i> ' +
+            escapeHtml(x.from) + ' &rarr; ' + escapeHtml(x.to) + '</span>';
+        const rows = [];
+        if (nr.length) {
+            rows.push('<div class="market-row"><span class="market-label market-label-nr">Non-runners</span>' +
+                nr.map(x => '<span class="market-chip market-chip-nr"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i></span>').join("") + '</div>');
+        }
+        if (short.length) {
+            rows.push('<div class="market-row"><span class="market-label market-label-in">Shortening</span>' + short.map(move).join("") + '</div>');
+        }
+        if (drift.length) {
+            rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(move).join("") + '</div>');
+        }
+        el.innerHTML = rows.join("") +
+            '<div class="market-note">Bookmaker price moves since the first live price today (races still to run). What the market did, not a tip.</div>';
+        el.style.display = "";
+    } catch (err) {
+        console.warn("Market moves unavailable:", err);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Shareable race links (2026-10-11): #naas-1320 opens that race (UK time). The
+// address bar follows the race being viewed, so any race can be copied and sent.
+// ---------------------------------------------------------------------------
+function slugOf(s) {
+    return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+function raceHash(course, displayTime) {
+    return "#" + slugOf(course) + "-" + String(displayTime).replace(":", "");
+}
+function readDeepLink() {
+    const m = String(location.hash || "").match(/^#([a-z0-9-]+)-(\d{4})$/);
+    return m ? { slug: m[1], time: m[2] } : null;
 }
 
 async function loadTodaysResults() {
@@ -2823,8 +3010,14 @@ async function loadMeetings(autoSelectFirst = false) {
 
 			// First meeting that actually has races (2026-10-03) - an
 			// abandoned meeting first in the list used to open an empty page.
+			const link = readDeepLink();
+			const linked = link
+				? response.meetings.find(m => Number(m.raceCount) > 0 && slugOf(m.name) === link.slug)
+				: null;
+			window.__deepLinkTime = linked ? link.time : null;
+
 			const first =
-				response.meetings.find(m => Number(m.raceCount) > 0);
+				linked || response.meetings.find(m => Number(m.raceCount) > 0);
 
 			const firstCard = first
 				? container.querySelector(`.meeting-card[data-meeting-id="${first.id}"]`)
