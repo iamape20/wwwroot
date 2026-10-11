@@ -2730,8 +2730,16 @@ async function loadMarketMoves() {
         if (drift.length) {
             rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(move).join("") + more(driftAll, drift) + '</div>');
         }
-        el.innerHTML = rows.join("") +
-            '<div class="market-note">Bookmaker price moves since the first live price today (races still to run). What the market did, not a tip.</div>';
+        // Collapsible: open on wide screens, closed on phones so the race stays near the top.
+        // A refresh keeps whatever the visitor chose.
+        const prev = el.querySelector("details");
+        const open = prev ? prev.open : (window.matchMedia && window.matchMedia("(min-width: 760px)").matches);
+        const parts = [];
+        if (nrAll.length) parts.push(nrAll.length + (nrAll.length === 1 ? " non-runner" : " non-runners"));
+        const nMoves = shortAll.length + driftAll.length;
+        if (nMoves) parts.push(nMoves + (nMoves === 1 ? " price move" : " price moves"));
+        el.innerHTML = '<details class="market-details"' + (open ? " open" : "") + '><summary>Market watch &middot; ' + parts.join(" &middot; ") + '</summary>' + rows.join("") +
+            '<div class="market-note">Bookmaker price moves since the first live price today (races still to run). What the market did, not a tip.</div></details>';
         el.style.display = "";
     } catch (err) {
         console.warn("Market moves unavailable:", err);

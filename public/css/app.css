@@ -2744,3 +2744,6 @@ button {
 .pick-summary-note b { color: var(--epr-text); }
 
 .market-more { font-size: 11px; color: var(--epr-muted); align-self: center; }
+
+.market-details > summary { cursor: pointer; font-weight: 700; font-size: 12px; color: var(--epr-text); list-style-position: inside; }
+.market-details[open] > summary { margin-bottom: 6px; }
