@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-11T16:20:14.349Z",
+  "generatedAt": "2026-10-11T16:40:10.772Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 52/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 53/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-11",
       "course": "Cork",
       "off": "17:07",
-      "horse": "PASSENGER"
-    }
-  ],
-  "recent": [
+      "horse": "PASSENGER",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-11",
       "course": "Chepstow",
@@ -174,21 +179,10 @@
       "bsp": 1.98054638,
       "pl": 0.932,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Naas",
-      "off": "13:40",
-      "horse": "IVEAGH HOUSE",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T16:20:14.239Z",
+    "updatedAt": "2026-10-11T16:40:10.641Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 56,
+      "bets": 57,
       "won": 28,
-      "pl": -8.2,
-      "roi": -14.6,
+      "pl": -9.2,
+      "roi": -16.1,
       "provisional": 4
     },
     "live": {
