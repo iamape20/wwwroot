@@ -512,6 +512,12 @@ module.exports = async (req, res) => {
                  *   ourPickPosition
                  *   actualTopThree
                  */
+                // Top four with starting prices, for the race-card result banner (2026-10-11).
+                const actualTop = placings
+                    .filter(p => Number(p.position) >= 1 && Number(p.position) <= 4)
+                    .sort((a, b) => Number(a.position) - Number(b.position))
+                    .map(p => ({ position: Number(p.position), name: p.name, odds: p.odds ?? null }));
+
                 tally.details.push({
 
                     course: courseName,
@@ -528,7 +534,9 @@ module.exports = async (req, res) => {
                     actualWinner:
                         winner?.name || null,
 
-                    actualTopThree
+                    actualTopThree,
+
+                    actualTop
 
                 });
 

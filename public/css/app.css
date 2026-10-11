@@ -2537,3 +2537,61 @@ button {
 .claude-view-verdict { font-weight: 700; font-size: 0.82rem; white-space: nowrap; }
 .claude-agrees .claude-view-verdict { color: #2e9e5b; }
 .claude-differs .claude-view-verdict { color: #c77700; }
+
+
+/* Race result on the race card (2026-10-11): the banner above the runners and
+   a finishing-position pill on each runner that placed. Theme variables only,
+   so it follows the light/dark toggle. */
+.race-result-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--epr-border);
+    border-left: 3px solid var(--epr-gold);
+    border-radius: var(--epr-radius);
+    background: var(--epr-surface-2);
+    font-size: 13px;
+    color: var(--epr-text);
+}
+.race-result-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--epr-gold);
+}
+.race-result-place b { font-weight: 800; margin-right: 2px; }
+.race-result-place i { font-style: normal; color: var(--epr-muted); margin-left: 2px; }
+.race-result-pick {
+    margin-left: auto;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.race-result-pick.won { background: rgba(46,204,113,.18); color: var(--epr-green); }
+.race-result-pick.placed { background: rgba(212,175,55,.18); color: var(--epr-gold); }
+.race-result-pick.unplaced { background: rgba(220,38,38,.14); color: var(--epr-red); }
+
+.runner-finish-pill {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin: 3px 4px 0 0;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    line-height: 1.2;
+    white-space: nowrap;
+    background: rgba(var(--epr-overlay-rgb), .1);
+    color: var(--epr-text);
+}
+.runner-finish-1 { background: var(--epr-gold); color: #1a1a1a; }
+.runner-finish-2 { background: #c0c7d1; color: #1a1a1a; }
+.runner-finish-3 { background: #c98a52; color: #1a1a1a; }

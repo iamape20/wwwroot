@@ -854,6 +854,69 @@ function getLondonNowSeconds() {
     );
 }
 
+// ---------------------------------------------------------------------------
+// Race results on the race card (2026-10-11). /api/checkResults already scores
+// every finished race against our pick; its details carry the winner and the
+// top four with starting prices. One fetch is shared (45 s) by every race
+// click and the live refresh. A race with no result yet simply shows nothing.
+// ---------------------------------------------------------------------------
+let resultDetailsCache = { at: 0, promise: null };
+
+function getResultDetails() {
+    if (resultDetailsCache.promise && Date.now() - resultDetailsCache.at < 45000) {
+        return resultDetailsCache.promise;
+    }
+    resultDetailsCache = {
+        at: Date.now(),
+        promise: fetch("/api/checkResults")
+            .then(r => (r.ok ? r.json() : null))
+            .then(d => (d && d.success && Array.isArray(d.details) ? d.details : []))
+            .catch(() => [])
+    };
+    return resultDetailsCache.promise;
+}
+
+function resultKey(s) {
+    return String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+async function findResultDetail(course, time) {
+    const details = await getResultDetails();
+    return details.find(d => resultKey(d.course) === resultKey(course) && d.time === time) || null;
+}
+
+function ordinal(n) {
+    const v = Number(n);
+    if (!Number.isFinite(v)) return "";
+    const s = ["th", "st", "nd", "rd"], m = v % 100;
+    return v + (s[(m - 20) % 10] || s[m] || s[0]);
+}
+
+// Top finishers for the banner and the row pills. Older cached results have
+// only names (actualTopThree); newer ones carry position and starting price.
+function resultPlaces(detail) {
+    if (Array.isArray(detail.actualTop) && detail.actualTop.length) return detail.actualTop;
+    const names = detail.actualTopThree?.length ? detail.actualTopThree : (detail.actualWinner ? [detail.actualWinner] : []);
+    return names.map((name, i) => ({ position: i + 1, name, odds: null }));
+}
+
+function renderResultBanner(detail) {
+    const places = resultPlaces(detail);
+    if (!places.length) return null;
+    const pick = detail.outcome === "won"
+        ? `Our pick ${escapeHtml(detail.ourPick)} won`
+        : detail.outcome === "placed"
+            ? `Our pick ${escapeHtml(detail.ourPick)} placed (${ordinal(detail.ourPickPosition)})`
+            : `Our pick ${escapeHtml(detail.ourPick)} ${detail.ourPickPosition ? "finished " + ordinal(detail.ourPickPosition) : "did not place"}`;
+    const box = document.createElement("div");
+    box.className = "race-result-banner";
+    box.innerHTML =
+        `<span class="race-result-label">Result</span>` +
+        places.map(p => `<span class="race-result-place"><b>${ordinal(p.position)}</b> ${escapeHtml(p.name)}${p.odds ? ` <i>${escapeHtml(p.odds)}</i>` : ""}</span>`).join("") +
+        `<span class="race-result-pick ${escapeHtml(detail.outcome || "unplaced")}">${pick}</span>`;
+    return box;
+}
+
 function renderCandidateBoard(dashboard) {
 
     const board =
@@ -1435,13 +1498,11 @@ async function loadRace(
         document.getElementById(
             "raceInfoBanner"
         ).innerHTML = `
-            <span class="race-info-item">
-                Class ${escapeHtml(
-                    response.race.class ?? "-"
-                )}
-            </span>
-
-            <span class="race-info-dot">•</span>
+            ${
+                (response.race.class != null && !/^(n.a|-|null|undefined|)$/i.test(String(response.race.class).trim()))
+                    ? `<span class="race-info-item">Class ${escapeHtml(response.race.class)}</span><span class="race-info-dot">•</span>`
+                    : ""
+            }
 
             <span class="race-info-item">
                 ${escapeHtml(
@@ -1472,6 +1533,27 @@ async function loadRace(
         `;
 
         container.innerHTML = "";
+
+        // Result of the race, if it has finished (see getResultDetails).
+        const resultDetail = await findResultDetail(response.meeting.name, response.race.time);
+        window.currentRaceContext.hasResult = !!resultDetail;
+        const resultPlacesList = resultDetail ? resultPlaces(resultDetail) : [];
+        const finishPill = name => {
+            if (!resultDetail) return "";
+            const p = resultPlacesList.find(x => resultKey(x.name) === resultKey(name));
+            if (p) {
+                return `<span class="runner-finish-pill runner-finish-${p.position <= 3 ? p.position : "x"}" title="Finished ${ordinal(p.position)}${p.odds ? " at " + escapeHtml(p.odds) : ""}">${ordinal(p.position)}${p.odds ? " &middot; " + escapeHtml(p.odds) : ""}</span>`;
+            }
+            if (resultKey(resultDetail.ourPick) === resultKey(name) && resultDetail.ourPickPosition) {
+                return `<span class="runner-finish-pill runner-finish-x" title="Finished ${ordinal(resultDetail.ourPickPosition)}">${ordinal(resultDetail.ourPickPosition)}</span>`;
+            }
+            return "";
+        };
+        if (resultDetail) {
+            const banner = renderResultBanner(resultDetail);
+            if (banner) container.appendChild(banner);
+        }
+
 
         // Claude's independent view box and runner badge removed from the
         // page at the user's request (2026-10-03). js/claudePicks.mjs still
@@ -1632,6 +1714,8 @@ async function loadRace(
                                             ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
                                             : ""
                                     }
+
+                                    ${finishPill(runner.name)}
 
                                     ${buildPriceBadge(
                                         runner.elite.checklistBreakdown
@@ -1988,11 +2072,11 @@ async function loadRaces(
                     </span>
 
                     <span class="race-card-meta">
-                        Class
-                        ${escapeHtml(
-                            race.class
-                        )}
-                        •
+                        ${
+                            (race.class != null && !/^(n.a|-|null|undefined|)$/i.test(String(race.class).trim()))
+                                ? `Class ${escapeHtml(race.class)} •`
+                                : ""
+                        }
                         ${escapeHtml(
                             race.distance
                         )}
@@ -2336,6 +2420,15 @@ async function refreshLiveData() {
         const ctx = window.currentRaceContext;
 
         if (ctx?.meetingId != null && ctx.raceIndex != null) {
+
+            // A result that has just appeared (or gone) for the open race: redraw.
+            const hasResultNow = !!(await findResultDetail(ctx.courseName, ctx.raceTime));
+            if (hasResultNow !== !!ctx.hasResult && window.currentRaceContext === ctx) {
+                const scrollY0 = window.scrollY;
+                await loadRace(ctx.meetingId, ctx.raceIndex, ctx.displayTime, { silent: true });
+                window.scrollTo(0, scrollY0);
+                return;
+            }
 
             const race = await getRace(ctx.meetingId, ctx.raceIndex);
 
