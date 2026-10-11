@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-11T16:00:16.069Z",
+  "generatedAt": "2026-10-11T16:20:14.349Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 51/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 52/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -12,23 +12,26 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
+  "today": [],
+  "awaitingResult": [
     {
       "course": "Cork",
       "off": "17:07",
-      "status": "BET",
-      "horse": "PASSENGER",
-      "price": "2/5"
-    }
-  ],
-  "awaitingResult": [
-    {
-      "course": "Chepstow",
-      "off": "16:57",
-      "horse": "OLD COAST ROAD"
+      "horse": "PASSENGER"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "off": "16:57",
+      "horse": "OLD COAST ROAD",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-11",
       "course": "Goodwood",
@@ -182,21 +185,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "Kempton",
-      "off": "17:45",
-      "horse": "NEWS",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T16:00:15.982Z",
+    "updatedAt": "2026-10-11T16:20:14.239Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,10 +211,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 55,
+      "bets": 56,
       "won": 28,
-      "pl": -7.2,
-      "roi": -13.1,
+      "pl": -8.2,
+      "roi": -14.6,
       "provisional": 4
     },
     "live": {

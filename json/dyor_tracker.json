@@ -659,10 +659,16 @@
       "fav": {
         "horse": "PURE GRANITE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/2"
       },
       "recordedAt": "2026-10-11T15:40:24.779Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Chepstow|15:57",
@@ -678,10 +684,16 @@
       "fav": {
         "horse": "OLD COAST ROAD",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T15:50:18.768Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/2"
     },
     {
       "id": "2026-10-11|Cork|16:07",
@@ -701,20 +713,58 @@
       },
       "recordedAt": "2026-10-11T16:00:18.168Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Naas|16:25",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "16:25",
+      "horse": "SPECKLED MEADOW",
+      "price": "12/1",
+      "runners": 11,
+      "liveHorse": "NAVY WATERS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NAVY WATERS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T16:10:18.127Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Goodwood|16:17",
+      "date": "2026-10-11",
+      "course": "Goodwood",
+      "time": "16:17",
+      "horse": "ROOM FOURTEEN",
+      "price": "9/4",
+      "runners": 11,
+      "liveHorse": "ROOM FOURTEEN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ROOM FOURTEEN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T16:10:18.143Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 28,
+    "recorded": 30,
     "pick": {
-      "settled": 18,
+      "settled": 19,
       "won": 0,
-      "pl": -18,
+      "pl": -19,
       "roi": -100
     },
     "favourite": {
-      "settled": 16,
+      "settled": 17,
       "won": 0,
-      "pl": -16,
+      "pl": -17,
       "roi": -100
     },
     "agree": {
@@ -724,9 +774,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 14,
+      "settled": 15,
       "won": 0,
-      "pl": -14,
+      "pl": -15,
       "roi": -100
     }
   },
