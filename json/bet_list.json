@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:01:00.940Z",
+  "generatedAt": "2026-10-11T13:20:43.282Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 50/120 bets settled before the verdict.",
   "rules": [
@@ -44,14 +44,19 @@
       "revealAt": "16:52"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-11",
       "course": "Naas",
       "off": "13:56",
-      "horse": "BENGAL TIGER"
-    }
-  ],
-  "recent": [
+      "horse": "BENGAL TIGER",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-11",
       "course": "Cork",
@@ -205,21 +210,10 @@
       "bsp": 1.49,
       "pl": 0.465,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "Newmarket",
-      "off": "14:25",
-      "horse": "FLORA OF BERMUDA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T13:01:00.756Z",
+    "updatedAt": "2026-10-11T13:20:43.173Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -242,11 +236,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 51,
-      "won": 25,
-      "pl": -7.98,
-      "roi": -15.7,
-      "provisional": 1
+      "bets": 52,
+      "won": 26,
+      "pl": -7.76,
+      "roi": -14.9,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
