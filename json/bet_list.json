@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:40:29.119Z",
+  "generatedAt": "2026-10-11T15:00:34.812Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 50/120 bets settled before the verdict.",
   "rules": [
@@ -14,16 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Cork",
-      "off": "15:57",
-      "status": "POSSIBLE",
-      "revealAt": "15:42"
-    },
-    {
       "course": "Goodwood",
       "off": "16:07",
-      "status": "POSSIBLE",
-      "revealAt": "15:52"
+      "status": "BET",
+      "horse": "ROYAL ACCLAMATION",
+      "price": "4/6"
     },
     {
       "course": "Cork",
@@ -32,7 +27,13 @@
       "revealAt": "16:52"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Cork",
+      "off": "15:57",
+      "horse": "MOYLUSSA"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-11",
@@ -201,7 +202,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T14:40:29.008Z",
+    "updatedAt": "2026-10-11T15:00:34.696Z",
     "claude": {
       "races": 38,
       "won": 7,
