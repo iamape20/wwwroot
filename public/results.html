@@ -75,6 +75,12 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
     <div class="muted" style="margin-top:6px">"Placed" uses each-way place terms for the field size (for example 3 places in a 10-runner race, 2 in a 6-runner race). Non-runners are left out. Each race uses the pick exactly as it stood at the off.</div>
 </div>
 
+<div class="card tablewrap" id="tierCard" style="display:none">
+    <h2 style="font-size:1.05rem;margin:0 0 6px">By confidence tier</h2>
+    <table class="days" id="tiers"><thead><tr><th>Tier</th><th>Races (14 days)</th><th>Won</th><th>Win rate</th><th>Placed</th><th>Long run: races</th><th>Win rate</th></tr></thead><tbody></tbody></table>
+    <div class="muted" style="margin-top:6px" id="tierNote"></div>
+</div>
+
 <div class="card tablewrap" id="courseCard" style="display:none">
     <h2 style="font-size:1.05rem;margin:0 0 6px">By course (all days shown above)</h2>
     <table class="days" id="courses"><thead><tr><th>Course</th><th>Races</th><th>Won</th><th>Win rate</th><th>Placed</th></tr></thead><tbody></tbody></table>
@@ -125,7 +131,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
                 }).join("");
                 return "<div class='race'>" +
                     "<div class='race-head'><span class='race-time'>" + esc(ukTime(day.date, r.time)) + "</span><span>" + esc(r.course) + "</span><span class='race-title'>" + esc(r.title || "") + "</span></div>" +
-                    "<div class='pickline'><span>Our pick: <b>" + esc(r.ourPick) + "</b></span><span class='pill " + esc(r.outcome || "unknown") + "'>" + esc(label) + "</span>" +
+                    "<div class='pickline'><span>Our pick: <b>" + esc(r.ourPick) + "</b></span>" + (r.tier ? "<span class='muted'>" + esc(r.tier) + "</span>" : "") + "<span class='pill " + esc(r.outcome || "unknown") + "'>" + esc(label) + "</span>" +
                     (r.winner ? "<span class='muted'>Winner: " + esc(r.winner) + (r.winnerOdds ? " " + esc(r.winnerOdds) : "") + "</span>" : "") + "</div>" +
                     (order ? "<details><summary>Full finishing order (" + (r.finishers || []).length + " finishers)</summary><ul class='order'>" + order + "</ul></details>" : "") +
                     "</div>";
@@ -141,6 +147,16 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
             return "<tr class='pick' data-date='" + x.date + "'><td>" + esc(DAY.format(new Date(x.date + "T12:00:00Z"))) + "</td><td>" + s.picked + "</td><td>" + s.won + "</td><td>" + s.placed + "</td><td>" + pct(s.won, s.picked) + "</td></tr>";
         }).join("");
         [].forEach.call(daysBody.querySelectorAll("tr"), function (tr) { tr.addEventListener("click", function () { showDay(tr.dataset.date); }); });
+        var tb = document.querySelector("#tiers tbody"), tiers = d.tiers || {}, lr = d.longRun && d.longRun.tiers;
+        var tierRows = ["Strong", "Moderate", "Open"].map(function (t) {
+            var x = tiers[t] || { picked: 0, won: 0, placed: 0 }, l = lr && lr[t];
+            return "<tr><td><b>" + t + "</b></td><td>" + x.picked + "</td><td>" + x.won + "</td><td>" + pct(x.won, x.picked) + "</td><td>" + pct(x.placed, x.picked) + "</td><td>" + (l ? l.races : "-") + "</td><td>" + (l ? pct(l.wins, l.races) : "-") + "</td></tr>";
+        }).join("");
+        if (tierRows) {
+            tb.innerHTML = tierRows;
+            document.getElementById("tierNote").textContent = "Strong means our top rating is well clear of the field, Moderate a modest lead, Open no clear lead. The last 14 days hold very few Strong races, so the long run" + (d.longRun ? " (" + d.longRun.days + " days since " + d.longRun.from + ")" : "") + " is the fairer read. A higher win rate in the stronger tiers is what the ratings add. This table shows win rates only - it says nothing about profit at bookmaker prices, and winners at short prices can still lose money.";
+            document.getElementById("tierCard").style.display = "";
+        }
         var cs = d.courses || [], cb = document.querySelector("#courses tbody");
         if (cs.length) {
             function row(c) { return "<tr><td>" + esc(c.course) + "</td><td>" + c.picked + "</td><td>" + c.won + "</td><td>" + pct(c.won, c.picked) + "</td><td>" + pct(c.placed, c.picked) + "</td></tr>"; }

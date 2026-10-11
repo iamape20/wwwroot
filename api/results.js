@@ -29,12 +29,26 @@ module.exports = (req, res) => {
                 if (r.outcome === "won" || r.outcome === "placed") c.placed++;
             }
         }
+        // Confidence-tier record over the same window, plus the long run from the nightly track record.
+        const tiers = { Strong: { picked: 0, won: 0, placed: 0 }, Moderate: { picked: 0, won: 0, placed: 0 }, Open: { picked: 0, won: 0, placed: 0 } };
+        for (const d of feed.days || []) {
+            for (const r of d.races || []) {
+                if (r.outcome !== "won" && r.outcome !== "placed" && r.outcome !== "unplaced") continue;
+                const t = tiers[r.tier];
+                if (!t) continue;
+                t.picked++;
+                if (r.outcome === "won") t.won++;
+                if (r.outcome === "won" || r.outcome === "placed") t.placed++;
+            }
+        }
         const courses = Object.values(byCourse).sort((a, b) => b.picked - a.picked || a.course.localeCompare(b.course));
         return res.json({
             success: true,
             generatedAt: feed.generatedAt,
             days: (feed.days || []).map(d => ({ date: d.date, summary: d.summary })),
-            courses
+            courses,
+            tiers,
+            longRun: feed.longRun || null
         });
     }
 
