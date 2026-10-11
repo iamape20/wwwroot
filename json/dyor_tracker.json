@@ -16,14 +16,58 @@
       "fav": {
         "horse": "WORLD OF THE WAY",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T11:50:53.053Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "8/1"
+    },
+    {
+      "id": "2026-10-11|Naas|12:20",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "12:20",
+      "horse": "FILM SET",
+      "price": "3/1",
+      "runners": 13,
+      "liveHorse": "FILM SET",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FILM SET",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T12:10:49.089Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Chepstow|12:27",
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "time": "12:27",
+      "horse": "PRINCESS DAY",
+      "price": "4/5",
+      "runners": 7,
+      "liveHorse": "PRINCESS DAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PRINCESS DAY",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T12:20:55.679Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1,
+    "recorded": 3,
     "pick": {
       "settled": 0,
       "won": 0,
@@ -31,10 +75,10 @@
       "roi": null
     },
     "favourite": {
-      "settled": 0,
+      "settled": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "agree": {
       "settled": 0,
