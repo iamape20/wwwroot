@@ -2588,6 +2588,16 @@ async function loadTodaysResults() {
                 .slice(-5)
                 .reverse();
 
+        // Races on today's card, for "12 of 51 races run". A nicety: if the
+        // call fails the strip just says "12 races run".
+        let totalRaces = 0;
+        try {
+            const m = await getMeetings();
+            if (m?.success) {
+                totalRaces = m.meetings.reduce((s, x) => s + (Number(x.raceCount) || 0), 0);
+            }
+        } catch { /* keep 0 */ }
+
  let todayBlockEl = document.getElementById("todayResultsBlock");
 if (!todayBlockEl) {
     todayBlockEl = document.createElement("div");
@@ -2600,22 +2610,23 @@ todayBlockEl.innerHTML = `
             <div class="results-strip-summary">
 
                 <span class="results-strip-label">
-                    Today's Results (Live)
+                    Day so far (live)
                 </span>
 
                 <span class="results-strip-stat">
-                    ${data.racesChecked}
-                    races
+                    ${totalRaces >= data.racesChecked
+                        ? `${data.racesChecked} of ${totalRaces} races run`
+                        : `${data.racesChecked} races run`}
                 </span>
 
-                <span class="results-strip-stat results-strip-win">
-                    ${data.topPickWins}
-                    won (${winRate}%)
+                <span class="results-strip-stat results-strip-win" title="Races where our published pick won">
+                    Our pick won ${data.topPickWins}
+                    (${winRate}%)
                 </span>
 
-                <span class="results-strip-stat results-strip-place">
-                    ${data.topPickPlaces}
-                    placed (${placeRate}%)
+                <span class="results-strip-stat results-strip-place" title="Won or placed, using each-way place terms for the field size">
+                    placed ${data.topPickPlaces}
+                    (${placeRate}%)
                 </span>
 
                 ${
@@ -2627,12 +2638,12 @@ todayBlockEl.innerHTML = `
                                 ${data.yesterday.racesChecked} races
                             </span>
                             <span class="results-strip-stat results-strip-win">
-                                ${data.yesterday.topPickWins}
-                                won (${(data.yesterday.topPickWins / data.yesterday.racesChecked * 100).toFixed(1)}%)
+                                Our pick won ${data.yesterday.topPickWins}
+                                (${(data.yesterday.topPickWins / data.yesterday.racesChecked * 100).toFixed(1)}%)
                             </span>
                             <span class="results-strip-stat results-strip-place">
-                                ${data.yesterday.topPickPlaces}
-                                placed (${(data.yesterday.topPickPlaces / data.yesterday.racesChecked * 100).toFixed(1)}%)
+                                placed ${data.yesterday.topPickPlaces}
+                                (${(data.yesterday.topPickPlaces / data.yesterday.racesChecked * 100).toFixed(1)}%)
                             </span>
                         `
                         : ""
@@ -2666,9 +2677,13 @@ todayBlockEl.innerHTML = `
                                                 ${escapeHtml(
                                                     d.ourPick
                                                 )}
-                                                (${escapeHtml(
-                                                    d.outcome
-                                                )})
+                                                ${
+                                                    d.outcome === "won"
+                                                        ? "won"
+                                                        : d.ourPickPosition
+                                                            ? escapeHtml(ordinal(d.ourPickPosition))
+                                                            : `(${escapeHtml(d.outcome)})`
+                                                }
 
                                                 ${
                                                     d.outcome !==
@@ -2679,7 +2694,10 @@ todayBlockEl.innerHTML = `
                                                             Winner:
                                                             ${escapeHtml(
                                                                 d.actualWinner
-                                                            )}
+                                                            )}${(() => {
+                                                                const w = resultPlaces(d).find(p => Number(p.position) === 1);
+                                                                return w && w.odds ? " " + escapeHtml(w.odds) : "";
+                                                            })()}
                                                           `
                                                         : ""
                                                 }
