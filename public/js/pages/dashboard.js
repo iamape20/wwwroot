@@ -1617,6 +1617,38 @@ async function loadRace(
         // page at the user's request (2026-10-03). js/claudePicks.mjs still
         // runs and records its picks; the API still sends race.claudeView.
 
+        // At-a-glance summary of the pick before the long write-up.
+        {
+            const pickRunner = runners.find(r => r.isOurPick) || null;
+            if (pickRunner) {
+                let favV = Infinity, favR = null, favN = 0;
+                runners.forEach(r => {
+                    const v = parseFractionalOddsLocal(r.current_odds);
+                    if (v == null) return;
+                    if (v < favV) { favV = v; favR = r; favN = 1; } else if (v === favV) favN++;
+                });
+                const topRated = runners[0];
+                const rankOfPick = runners.indexOf(pickRunner) + 1;
+                const agree = favR && favN === 1 && favR === pickRunner;
+                const bits = [];
+                bits.push(agree
+                    ? "Also the market favourite."
+                    : favR ? `Market favourite: <b>${escapeHtml(favR.name)}</b> ${escapeHtml(favR.current_odds || "")}${favN > 1 ? " (joint)" : ""}.` : "");
+                if (rankOfPick > 1 && topRated) bits.push(`Top-rated on our numbers: <b>${escapeHtml(topRated.name)}</b> (rating ${escapeHtml(topRated.elite.rating)}), our pick ranks #${rankOfPick} on rating - the market price decides the pick.`);
+                else bits.push(`Top-rated on our numbers (rating ${escapeHtml(pickRunner.elite.rating)}).`);
+                const tierText = selectionStatus
+                    ? selectionStatus.label + (marginTier.margin > 0 ? ` · ${marginTier.margin.toFixed(1)} pts ahead of 2nd` : "")
+                    : "";
+                const box = document.createElement("div");
+                box.className = "pick-summary" + (selectionStatus ? " pick-summary--" + selectionStatus.className.replace("selection-", "") : "");
+                box.innerHTML =
+                    `<div class="pick-summary-main"><span class="pick-summary-label">Our pick</span> <b class="pick-summary-name">${escapeHtml(pickRunner.name)}</b> <span class="pick-summary-odds">${escapeHtml(pickRunner.current_odds || "")}</span></div>` +
+                    (tierText ? `<div class="pick-summary-tier">${escapeHtml(tierText)}${selectionStatus.className === "selection-void" ? " - no bet suggested" : ""}</div>` : "") +
+                    `<div class="pick-summary-note">${bits.filter(Boolean).join(" ")}</div>`;
+                container.appendChild(box);
+            }
+        }
+
         if (
             response.race.verdict ||
             response.race.bettingForecast
@@ -1681,15 +1713,24 @@ async function loadRace(
         const runnerFragment =
             document.createDocumentFragment();
 
-        runners.forEach(
+        // Our published pick is listed first (the market-override rule can make it
+        // a lower-rated runner); the medals still follow the rating rank.
+        const ratingRank = new Map(runners.map((r, i) => [r, i]));
+        const pickAt = runners.findIndex(r => r.isOurPick);
+        const displayRunners = pickAt > 0
+            ? [runners[pickAt], ...runners.filter((_, i) => i !== pickAt)]
+            : runners;
+
+        displayRunners.forEach(
             (runner, index) => {
 
+                const rankIdx = ratingRank.get(runner);
                 const medal =
-                    index === 0
+                    rankIdx === 0
                         ? "🥇"
-                        : index === 1
+                        : rankIdx === 1
                             ? "🥈"
-                            : index === 2
+                            : rankIdx === 2
                                 ? "🥉"
                                 : "";
 
@@ -2666,7 +2707,10 @@ async function loadMarketMoves() {
         const r = await fetch("/api/moves");
         if (!r.ok) return;
         const d = await r.json();
-        const nr = d.nonRunners || [], short = d.shorteners || [], drift = d.drifters || [];
+        const nrAll = d.nonRunners || [], shortAll = d.shorteners || [], driftAll = d.drifters || [];
+        // Keep the strip short: the biggest few moves only (the API sends them largest first).
+        const nr = nrAll.slice(0, 8), short = shortAll.slice(0, 5), drift = driftAll.slice(0, 4);
+        const more = (all, shown) => all.length > shown.length ? '<span class="market-more">+' + (all.length - shown.length) + ' more</span>' : "";
         if (!nr.length && !short.length && !drift.length) {
             el.style.display = "none";
             el.innerHTML = "";
@@ -2678,13 +2722,13 @@ async function loadMarketMoves() {
         const rows = [];
         if (nr.length) {
             rows.push('<div class="market-row"><span class="market-label market-label-nr">Non-runners</span>' +
-                nr.map(x => '<span class="market-chip market-chip-nr"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i></span>').join("") + '</div>');
+                nr.map(x => '<span class="market-chip market-chip-nr"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i></span>').join("") + more(nrAll, nr) + '</div>');
         }
         if (short.length) {
-            rows.push('<div class="market-row"><span class="market-label market-label-in">Shortening</span>' + short.map(move).join("") + '</div>');
+            rows.push('<div class="market-row"><span class="market-label market-label-in">Shortening</span>' + short.map(move).join("") + more(shortAll, short) + '</div>');
         }
         if (drift.length) {
-            rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(move).join("") + '</div>');
+            rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(move).join("") + more(driftAll, drift) + '</div>');
         }
         el.innerHTML = rows.join("") +
             '<div class="market-note">Bookmaker price moves since the first live price today (races still to run). What the market did, not a tip.</div>';

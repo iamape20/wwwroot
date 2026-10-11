@@ -2722,3 +2722,25 @@ button {
     .glance-table th, .glance-table td { padding: 6px 4px; }
     .glance-odds { font-size: 11px; }
 }
+
+
+/* Pick summary at the top of a race (2026-10-11). */
+.pick-summary {
+    margin: 10px 0;
+    padding: 10px 14px;
+    border: 1px solid var(--epr-border);
+    border-left: 3px solid var(--epr-gold);
+    border-radius: 8px;
+    background: rgba(var(--epr-overlay-rgb), .04);
+}
+.pick-summary-main { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.pick-summary-label { font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--epr-gold); }
+.pick-summary-name { font-size: 18px; color: var(--epr-text); }
+.pick-summary-odds { color: var(--epr-muted); font-weight: 700; }
+.pick-summary-tier { margin-top: 2px; font-size: 12px; font-weight: 700; color: var(--epr-muted); }
+.pick-summary--safe { border-left-color: #2ecc71; }
+.pick-summary--void { border-left-color: var(--epr-border); }
+.pick-summary-note { margin-top: 4px; font-size: 12.5px; color: var(--epr-muted); line-height: 1.4; }
+.pick-summary-note b { color: var(--epr-text); }
+
+.market-more { font-size: 11px; color: var(--epr-muted); align-self: center; }
