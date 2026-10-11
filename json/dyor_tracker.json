@@ -632,10 +632,18 @@
       "fav": {
         "horse": "CERULEAN BAY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T15:30:23.662Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Naas|15:50",
@@ -674,26 +682,45 @@
       },
       "recordedAt": "2026-10-11T15:50:18.768Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Cork|16:07",
+      "date": "2026-10-11",
+      "course": "Cork",
+      "time": "16:07",
+      "horse": "ROKANAKO",
+      "price": "10/3",
+      "runners": 7,
+      "liveHorse": "PASSENGER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PASSENGER",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T16:00:18.168Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 27,
+    "recorded": 28,
     "pick": {
-      "settled": 17,
+      "settled": 18,
       "won": 0,
-      "pl": -17,
+      "pl": -18,
       "roi": -100
     },
     "favourite": {
-      "settled": 15,
+      "settled": 16,
       "won": 0,
-      "pl": -15,
+      "pl": -16,
       "roi": -100
     },
     "agree": {
-      "settled": 3,
+      "settled": 4,
       "won": 0,
-      "pl": -3,
+      "pl": -4,
       "roi": -100
     },
     "disagree": {
