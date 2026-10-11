@@ -1695,27 +1695,27 @@
       "marketVolume": 12293
     },
     "lastBeforeOff": {
-      "at": "2026-10-11T12:20:55.364Z",
+      "at": "2026-10-11T12:40:50.204Z",
       "eventId": 34558654120802024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.7,
-      "available": 43.6,
+      "bestBack": 1.66,
+      "available": 4.4,
       "depth": [
         [
-          1.7,
-          43.6
+          1.66,
+          4.4
         ],
         [
-          1.69,
-          5.98
+          1.65,
+          8.38
         ],
         [
-          1.68,
-          58.95
+          1.64,
+          3.99
         ]
       ],
-      "marketVolume": 43857
+      "marketVolume": 44245
     }
   },
   "BET|2026-10-11|Cork|12:02|WORLDOFTHEWAY": {
@@ -1770,6 +1770,60 @@
         ]
       ],
       "marketVolume": 108735
+    }
+  },
+  "BET|2026-10-11|Cork|12:37|ATOMICCITY": {
+    "type": "BET",
+    "date": "2026-10-11",
+    "course": "Cork",
+    "time": "12:37",
+    "horse": "ATOMIC CITY",
+    "betId": "2026-10-11|Cork|12:37",
+    "atReveal": {
+      "at": "2026-10-11T12:31:01.120Z",
+      "eventId": 34558654119602024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.1,
+      "available": 90.21,
+      "depth": [
+        [
+          2.1,
+          90.21
+        ],
+        [
+          2.08,
+          367.63
+        ],
+        [
+          2.06,
+          140.85
+        ]
+      ],
+      "marketVolume": 90160
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-11T12:31:01.120Z",
+      "eventId": 34558654119602024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.1,
+      "available": 90.21,
+      "depth": [
+        [
+          2.1,
+          90.21
+        ],
+        [
+          2.08,
+          367.63
+        ],
+        [
+          2.06,
+          140.85
+        ]
+      ],
+      "marketVolume": 90160
     }
   }
 }
