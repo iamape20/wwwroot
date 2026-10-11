@@ -2717,18 +2717,18 @@ async function loadMarketMoves() {
             return;
         }
         const when = x => escapeHtml(toLocalTimeString(x.time));
-        const move = x => '<span class="market-chip"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i> ' +
-            escapeHtml(x.from) + ' &rarr; ' + escapeHtml(x.to) + '</span>';
+        const move = (x, dir) => '<span class="market-chip market-chip-' + dir + '"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i> ' +
+            '<span class="market-price">' + (dir === "in" ? "&#9660; " : "&#9650; ") + escapeHtml(x.from) + ' &rarr; ' + escapeHtml(x.to) + '</span></span>';
         const rows = [];
         if (nr.length) {
             rows.push('<div class="market-row"><span class="market-label market-label-nr">Non-runners</span>' +
                 nr.map(x => '<span class="market-chip market-chip-nr"><b>' + escapeHtml(x.horse) + '</b> <i>' + escapeHtml(x.course) + ' ' + when(x) + '</i></span>').join("") + more(nrAll, nr) + '</div>');
         }
         if (short.length) {
-            rows.push('<div class="market-row"><span class="market-label market-label-in">Shortening</span>' + short.map(move).join("") + more(shortAll, short) + '</div>');
+            rows.push('<div class="market-row"><span class="market-label market-label-in">Shortening</span>' + short.map(x => move(x, "in")).join("") + more(shortAll, short) + '</div>');
         }
         if (drift.length) {
-            rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(move).join("") + more(driftAll, drift) + '</div>');
+            rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(x => move(x, "out")).join("") + more(driftAll, drift) + '</div>');
         }
         // Collapsible: open on wide screens, closed on phones so the race stays near the top.
         // A refresh keeps whatever the visitor chose.
@@ -2737,7 +2737,8 @@ async function loadMarketMoves() {
         const parts = [];
         if (nrAll.length) parts.push(nrAll.length + (nrAll.length === 1 ? " non-runner" : " non-runners"));
         const nMoves = shortAll.length + driftAll.length;
-        if (nMoves) parts.push(nMoves + (nMoves === 1 ? " price move" : " price moves"));
+        if (shortAll.length) parts.push('<span class="market-count-in">&#9660; ' + shortAll.length + ' shortening</span>');
+        if (driftAll.length) parts.push('<span class="market-count-out">&#9650; ' + driftAll.length + ' drifting</span>');
         el.innerHTML = '<details class="market-details"' + (open ? " open" : "") + '><summary>Market watch &middot; ' + parts.join(" &middot; ") + '</summary>' + rows.join("") +
             '<div class="market-note">Bookmaker price moves since the first live price today (races still to run). What the market did, not a tip.</div></details>';
         el.style.display = "";
