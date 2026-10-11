@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-11T15:00:34.812Z",
+  "generatedAt": "2026-10-11T15:20:25.357Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 50/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 51/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,27 +14,36 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Goodwood",
-      "off": "16:07",
-      "status": "BET",
-      "horse": "ROYAL ACCLAMATION",
-      "price": "4/6"
-    },
-    {
       "course": "Cork",
       "off": "17:07",
       "status": "POSSIBLE",
       "revealAt": "16:52"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-11",
+      "course": "Goodwood",
+      "off": "16:07",
+      "horse": "ROYAL ACCLAMATION",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-11",
       "course": "Cork",
       "off": "15:57",
-      "horse": "MOYLUSSA"
-    }
-  ],
-  "recent": [
+      "horse": "MOYLUSSA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-11",
       "course": "Cork",
@@ -177,32 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "Kempton",
-      "off": "16:05",
-      "horse": "BIDSTA",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.38,
-      "pl": 0.361,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "York",
-      "off": "15:18",
-      "horse": "SHARADD",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.55201678,
-      "pl": 0.524,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T15:00:34.696Z",
+    "updatedAt": "2026-10-11T15:20:25.272Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -225,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 53,
-      "won": 27,
-      "pl": -6.93,
+      "bets": 55,
+      "won": 28,
+      "pl": -7.2,
       "roi": -13.1,
-      "provisional": 3
+      "provisional": 4
     },
     "live": {
       "bets": 0,
