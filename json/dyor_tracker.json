@@ -193,10 +193,16 @@
       "fav": {
         "horse": "LET HIM B",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-11T13:01:04.847Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Goodwood|13:22",
@@ -212,10 +218,16 @@
       "fav": {
         "horse": "BRYNMAIR GOLD",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-11T13:10:51.822Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Naas|13:30",
@@ -235,14 +247,52 @@
       },
       "recordedAt": "2026-10-11T13:20:47.330Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Chepstow|13:37",
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "time": "13:37",
+      "horse": "MWABANI",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "LION ROSE SIVOLA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LION ROSE SIVOLA",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T13:30:41.967Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Cork|13:47",
+      "date": "2026-10-11",
+      "course": "Cork",
+      "time": "13:47",
+      "horse": "MARTYMILL",
+      "price": "1/1",
+      "runners": 7,
+      "liveHorse": "MARTYMILL",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MARTYMILL",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T13:40:36.099Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 10,
+    "recorded": 12,
     "pick": {
-      "settled": 4,
+      "settled": 6,
       "won": 0,
-      "pl": -4,
+      "pl": -6,
       "roi": -100
     },
     "favourite": {
@@ -258,9 +308,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 2,
+      "settled": 4,
       "won": 0,
-      "pl": -2,
+      "pl": -4,
       "roi": -100
     }
   },
