@@ -370,10 +370,16 @@
       "fav": {
         "horse": "HARBOUR LIGHT",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-11T14:00:37.428Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Cork|14:22",
@@ -412,14 +418,33 @@
       },
       "recordedAt": "2026-10-11T14:20:35.536Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Naas|14:40",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "14:40",
+      "horse": "BESET",
+      "price": "1/1",
+      "runners": 14,
+      "liveHorse": "BESET",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BESET",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T14:30:32.688Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 17,
+    "recorded": 18,
     "pick": {
-      "settled": 8,
+      "settled": 9,
       "won": 0,
-      "pl": -8,
+      "pl": -9,
       "roi": -100
     },
     "favourite": {
@@ -435,9 +460,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 6,
+      "settled": 7,
       "won": 0,
-      "pl": -6,
+      "pl": -7,
       "roi": -100
     }
   },
