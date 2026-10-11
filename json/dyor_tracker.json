@@ -95,10 +95,14 @@
       "fav": {
         "horse": "ATOMIC CITY",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-10-11T12:31:01.466Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/5"
     },
     {
       "id": "2026-10-11|Goodwood|12:47",
@@ -118,10 +122,67 @@
       },
       "recordedAt": "2026-10-11T12:40:50.614Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Naas|12:56",
+      "date": "2026-10-11",
+      "course": "Naas",
+      "time": "12:56",
+      "horse": "BENGAL TIGER",
+      "price": "2/9",
+      "runners": 7,
+      "liveHorse": "BENGAL TIGER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BENGAL TIGER",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T12:50:53.047Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Chepstow|13:02",
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "time": "13:02",
+      "horse": "KATES CHOICE",
+      "price": "9/1",
+      "runners": 13,
+      "liveHorse": "UGO BINGO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "UGO BINGO",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T12:50:53.064Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-11|Cork|13:12",
+      "date": "2026-10-11",
+      "course": "Cork",
+      "time": "13:12",
+      "horse": "BOOLA TIMES",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "LET HIM B",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LET HIM B",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T13:01:04.847Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 5,
+    "recorded": 8,
     "pick": {
       "settled": 2,
       "won": 0,

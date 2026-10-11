@@ -1695,27 +1695,27 @@
       "marketVolume": 12293
     },
     "lastBeforeOff": {
-      "at": "2026-10-11T12:40:50.204Z",
+      "at": "2026-10-11T13:01:04.019Z",
       "eventId": 34558654120802024,
       "found": true,
       "withdrawn": false,
       "bestBack": 1.66,
-      "available": 4.4,
+      "available": 1.7,
       "depth": [
         [
           1.66,
-          4.4
+          1.7
         ],
         [
           1.65,
-          8.38
+          17.83
         ],
         [
           1.64,
-          3.99
+          7.01
         ]
       ],
-      "marketVolume": 44245
+      "marketVolume": 44504
     }
   },
   "BET|2026-10-11|Cork|12:02|WORLDOFTHEWAY": {
@@ -1824,6 +1824,60 @@
         ]
       ],
       "marketVolume": 90160
+    }
+  },
+  "BET|2026-10-11|Naas|12:56|BENGALTIGER": {
+    "type": "BET",
+    "date": "2026-10-11",
+    "course": "Naas",
+    "time": "12:56",
+    "horse": "BENGAL TIGER",
+    "betId": "2026-10-11|Naas|12:56",
+    "atReveal": {
+      "at": "2026-10-11T12:50:52.614Z",
+      "eventId": 34558654480901024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.25,
+      "available": 170.75,
+      "depth": [
+        [
+          1.25,
+          170.75
+        ],
+        [
+          1.24,
+          236.06
+        ],
+        [
+          1.23,
+          808.22
+        ]
+      ],
+      "marketVolume": 52068
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-11T12:50:52.614Z",
+      "eventId": 34558654480901024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.25,
+      "available": 170.75,
+      "depth": [
+        [
+          1.25,
+          170.75
+        ],
+        [
+          1.24,
+          236.06
+        ],
+        [
+          1.23,
+          808.22
+        ]
+      ],
+      "marketVolume": 52068
     }
   }
 }

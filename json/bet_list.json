@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T12:40:48.310Z",
+  "generatedAt": "2026-10-11T13:01:00.940Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 50/120 bets settled before the verdict.",
   "rules": [
@@ -13,12 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Naas",
-      "off": "13:56",
-      "status": "POSSIBLE",
-      "revealAt": "13:41"
-    },
     {
       "course": "Cork",
       "off": "14:47",
@@ -52,12 +46,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Cork",
-      "off": "13:37",
-      "horse": "ATOMIC CITY"
+      "course": "Naas",
+      "off": "13:56",
+      "horse": "BENGAL TIGER"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-11",
+      "course": "Cork",
+      "off": "13:37",
+      "horse": "ATOMIC CITY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-11",
       "course": "Cork",
@@ -211,21 +216,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-09",
-      "course": "Downpatrick",
-      "off": "14:13",
-      "horse": "EURO AGENT",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.63243932,
-      "pl": 0.601,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-11T12:40:48.217Z",
+    "updatedAt": "2026-10-11T13:01:00.756Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -248,11 +242,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 50,
-      "won": 24,
-      "pl": -8.78,
-      "roi": -17.6,
-      "provisional": 0
+      "bets": 51,
+      "won": 25,
+      "pl": -7.98,
+      "roi": -15.7,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
