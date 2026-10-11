@@ -806,7 +806,11 @@
       "rating": 66.3,
       "runners": 3,
       "recordedAt": "2026-10-11T14:10:38.863Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/13",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-11|Naas|14:40",
@@ -823,10 +827,10 @@
   ],
   "stats": {
     "recorded": 50,
-    "settled": 47,
+    "settled": 48,
     "won": 28,
-    "pl": 9.6,
-    "roi": 20.4
+    "pl": 8.6,
+    "roi": 17.9
   },
   "lastBackfill": 1791724845431
 }

@@ -395,10 +395,16 @@
       "fav": {
         "horse": "DAD SEZ",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-11T14:10:39.066Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-10-11|Goodwood|14:32",
@@ -437,10 +443,29 @@
       },
       "recordedAt": "2026-10-11T14:30:32.688Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-11|Chepstow|14:47",
+      "date": "2026-10-11",
+      "course": "Chepstow",
+      "time": "14:47",
+      "horse": "KING OF THE LAKE",
+      "price": "10/1",
+      "runners": 10,
+      "liveHorse": "JURY'S IN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JURY'S IN",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-11T14:40:30.615Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 18,
+    "recorded": 19,
     "pick": {
       "settled": 9,
       "won": 0,
@@ -448,9 +473,9 @@
       "roi": -100
     },
     "favourite": {
-      "settled": 8,
+      "settled": 9,
       "won": 0,
-      "pl": -8,
+      "pl": -9,
       "roi": -100
     },
     "agree": {
