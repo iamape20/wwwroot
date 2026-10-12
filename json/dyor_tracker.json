@@ -1311,10 +1311,18 @@
       "fav": {
         "horse": "DANDY MAGIC",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T14:40:53.331Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Yarmouth|14:54",
@@ -1330,10 +1338,18 @@
       "fav": {
         "horse": "KOFFEE AND KALE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T14:40:53.346Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "85/40",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Roscommon|15:00",
@@ -1349,10 +1365,16 @@
       "fav": {
         "horse": "MINELLA ROCKETT",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T14:50:54.519Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-12|Kempton|15:12",
@@ -1387,25 +1409,107 @@
       "fav": {
         "horse": "KYKOROCK",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-12T15:01:17.765Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-12|Musselburgh|15:17",
+      "date": "2026-10-12",
+      "course": "Musselburgh",
+      "time": "15:17",
+      "horse": "MONHAMMER",
+      "price": "9/2",
+      "runners": 11,
+      "liveHorse": "KELPIE GREY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KELPIE GREY",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:11:28.827Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Yarmouth|15:24",
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "time": "15:24",
+      "horse": "RAFFLES ANGEL",
+      "price": "11/2",
+      "runners": 13,
+      "liveHorse": "METHGAL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "METHGAL",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:11:28.852Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Newcastle|15:28",
+      "date": "2026-10-12",
+      "course": "Newcastle",
+      "time": "15:28",
+      "horse": "ELLA BEACH",
+      "price": "4/1",
+      "runners": 7,
+      "liveHorse": "TROPBIEN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TROPBIEN",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:20:50.547Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Roscommon|15:30",
+      "date": "2026-10-12",
+      "course": "Roscommon",
+      "time": "15:30",
+      "horse": "ADEL",
+      "price": "14/1",
+      "runners": 16,
+      "liveHorse": "LAUDERDALE KING",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LAUDERDALE KING",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:20:50.577Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 53,
+    "recorded": 57,
     "pick": {
-      "settled": 45,
+      "settled": 48,
       "won": 8,
-      "pl": -2.02,
-      "roi": -4.5
+      "pl": -5.02,
+      "roi": -10.5
     },
     "favourite": {
-      "settled": 41,
+      "settled": 44,
       "won": 10,
-      "pl": -12.8,
-      "roi": -31.2
+      "pl": -15.8,
+      "roi": -35.9
     },
     "agree": {
       "settled": 11,
@@ -1414,10 +1518,10 @@
       "roi": -54.7
     },
     "disagree": {
-      "settled": 34,
+      "settled": 37,
       "won": 5,
-      "pl": 3.99,
-      "roi": 11.7
+      "pl": 0.99,
+      "roi": 2.7
     }
   },
   "lastBackfill": 1791810682459
