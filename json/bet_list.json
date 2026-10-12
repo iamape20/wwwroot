@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T17:00:27.717Z",
+  "generatedAt": "2026-10-12T17:20:27.840Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-12",
       "course": "Kempton",
       "off": "17:45",
-      "horse": "WADOODA"
-    }
-  ],
-  "recent": [
+      "horse": "WADOODA",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-12",
       "course": "Kempton",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Chepstow",
-      "off": "14:45",
-      "horse": "STICK TO THE BOARD",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T17:00:27.594Z",
+    "updatedAt": "2026-10-12T17:20:27.753Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 61,
-      "won": 32,
-      "pl": -4.93,
-      "roi": -8.1,
-      "provisional": 4
+      "bets": 62,
+      "won": 33,
+      "pl": -4.32,
+      "roi": -7,
+      "provisional": 5
     },
     "live": {
       "bets": 0,
