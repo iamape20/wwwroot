@@ -999,10 +999,14 @@
       "fav": {
         "horse": "VEGASMILE",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/4"
       },
       "recordedAt": "2026-10-12T13:11:22.443Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/4"
     },
     {
       "id": "2026-10-12|Yarmouth|13:24",
@@ -1018,10 +1022,18 @@
       "fav": {
         "horse": "DEIRA MOON",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T13:11:22.458Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Roscommon|13:30",
@@ -1037,37 +1049,102 @@
       "fav": {
         "horse": "MONOCLE ROCKET",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T13:21:20.758Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-12|Worcester|13:37",
+      "date": "2026-10-12",
+      "course": "Worcester",
+      "time": "13:37",
+      "horse": "GALEFORCECHOPPER",
+      "price": "50/1",
+      "runners": 9,
+      "liveHorse": "AWAY FOR THE NIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AWAY FOR THE NIGHT",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:31:14.966Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Musselburgh|13:47",
+      "date": "2026-10-12",
+      "course": "Musselburgh",
+      "time": "13:47",
+      "horse": "AMANTHA",
+      "price": "17/2",
+      "runners": 9,
+      "liveHorse": "DONNA BEAUTY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DONNA BEAUTY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:41:06.916Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Yarmouth|13:54",
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "time": "13:54",
+      "horse": "WILLOW WOOD",
+      "price": "10/1",
+      "runners": 12,
+      "liveHorse": "ASTRACORNUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ASTRACORNUS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:41:06.933Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 39,
+    "recorded": 42,
     "pick": {
-      "settled": 34,
+      "settled": 36,
       "won": 8,
-      "pl": 8.98,
-      "roi": 26.4
+      "pl": 6.98,
+      "roi": 19.4
     },
     "favourite": {
-      "settled": 34,
+      "settled": 36,
       "won": 10,
-      "pl": -5.8,
-      "roi": -17.1
+      "pl": -7.8,
+      "roi": -21.7
     },
     "agree": {
-      "settled": 8,
+      "settled": 9,
       "won": 3,
-      "pl": -3.02,
-      "roi": -37.7
+      "pl": -4.02,
+      "roi": -44.6
     },
     "disagree": {
-      "settled": 26,
+      "settled": 27,
       "won": 5,
-      "pl": 11.99,
-      "roi": 46.1
+      "pl": 10.99,
+      "roi": 40.7
     }
   },
   "lastBackfill": 1791810682459

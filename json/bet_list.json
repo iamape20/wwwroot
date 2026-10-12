@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T13:21:15.034Z",
+  "generatedAt": "2026-10-12T13:41:05.001Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -38,14 +38,19 @@
       "revealAt": "17:30"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-12",
       "course": "Musselburgh",
       "off": "14:17",
-      "horse": "VEGASMILE"
-    }
-  ],
-  "recent": [
+      "horse": "VEGASMILE",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-12",
       "course": "Yarmouth",
@@ -199,21 +204,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Fairyhouse",
-      "off": "13:58",
-      "horse": "GLEN KILN",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T13:21:14.943Z",
+    "updatedAt": "2026-10-12T13:41:04.897Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,11 +230,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 58,
-      "won": 29,
-      "pl": -7.63,
-      "roi": -13.2,
-      "provisional": 1
+      "bets": 59,
+      "won": 30,
+      "pl": -7.38,
+      "roi": -12.5,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
