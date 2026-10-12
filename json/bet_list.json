@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T14:01:01.202Z",
+  "generatedAt": "2026-10-12T14:20:54.656Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -14,23 +14,10 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Worcester",
-      "off": "15:07",
-      "status": "BET",
-      "horse": "POTTERS CHARM",
-      "price": "1/5"
-    },
-    {
       "course": "Kempton",
       "off": "16:12",
       "status": "POSSIBLE",
       "revealAt": "15:57"
-    },
-    {
-      "course": "Newcastle",
-      "off": "16:28",
-      "status": "POSSIBLE",
-      "revealAt": "16:13"
     },
     {
       "course": "Kempton",
@@ -39,7 +26,13 @@
       "revealAt": "17:30"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Worcester",
+      "off": "15:07",
+      "horse": "POTTERS CHARM"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-12",
@@ -208,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T14:01:01.035Z",
+    "updatedAt": "2026-10-12T14:20:54.571Z",
     "claude": {
       "races": 38,
       "won": 7,
