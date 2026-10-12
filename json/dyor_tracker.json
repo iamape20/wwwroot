@@ -1979,10 +1979,18 @@
       "fav": {
         "horse": "HAVANA RUM",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T18:50:19.504Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Kempton|19:15",
@@ -2002,21 +2010,40 @@
       },
       "recordedAt": "2026-10-12T19:00:18.854Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Newcastle|19:30",
+      "date": "2026-10-12",
+      "course": "Newcastle",
+      "time": "19:30",
+      "horse": "MOUNT RUAPEHU",
+      "price": "10/3",
+      "runners": 12,
+      "liveHorse": "MOUNT RUAPEHU",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MOUNT RUAPEHU",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T19:20:16.856Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 76,
+    "recorded": 77,
     "pick": {
-      "settled": 63,
+      "settled": 64,
       "won": 8,
-      "pl": -20.02,
-      "roi": -31.8
+      "pl": -21.02,
+      "roi": -32.9
     },
     "favourite": {
-      "settled": 58,
+      "settled": 59,
       "won": 10,
-      "pl": -29.8,
-      "roi": -51.4
+      "pl": -30.8,
+      "roi": -52.2
     },
     "agree": {
       "settled": 14,
@@ -2025,10 +2052,10 @@
       "roi": -64.4
     },
     "disagree": {
-      "settled": 49,
+      "settled": 50,
       "won": 5,
-      "pl": -11.01,
-      "roi": -22.5
+      "pl": -12.01,
+      "roi": -24
     }
   },
   "lastBackfill": 1791822036449
