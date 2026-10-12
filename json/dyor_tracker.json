@@ -1802,10 +1802,14 @@
       "fav": {
         "horse": "RHYTHM OF MY HEART",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/11"
       },
       "recordedAt": "2026-10-12T17:00:29.890Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/11"
     },
     {
       "id": "2026-10-12|Newcastle|17:30",
@@ -1825,10 +1829,29 @@
       },
       "recordedAt": "2026-10-12T17:20:29.840Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|17:45",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "17:45",
+      "horse": "RACINGBREAKS RYDER",
+      "price": "14/1",
+      "runners": 14,
+      "liveHorse": "ORGAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ORGAN",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T17:30:24.080Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 69,
+    "recorded": 70,
     "pick": {
       "settled": 59,
       "won": 8,
