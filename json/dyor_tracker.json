@@ -1517,10 +1517,18 @@
       "fav": {
         "horse": "LAUDERDALE KING",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:20:50.577Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Kempton|15:45",
@@ -1536,10 +1544,18 @@
       "fav": {
         "horse": "TREDEGAR SQUARE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:30:49.251Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Worcester|15:37",
@@ -1555,10 +1571,16 @@
       "fav": {
         "horse": "BIG CADILLAC",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-12T15:30:49.264Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Musselburgh|15:50",
@@ -1597,33 +1619,90 @@
       },
       "recordedAt": "2026-10-12T15:40:41.503Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Newcastle|16:00",
+      "date": "2026-10-12",
+      "course": "Newcastle",
+      "time": "16:00",
+      "horse": "SECOND FIDDLE",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "MARIA DA SILVA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MARIA DA SILVA",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:50:39.772Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|16:15",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "16:15",
+      "horse": "ONE OF THE BOYS",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "RAVISHING",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RAVISHING",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T16:00:35.089Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Roscommon|16:07",
+      "date": "2026-10-12",
+      "course": "Roscommon",
+      "time": "16:07",
+      "horse": "INVER BAY",
+      "price": "9/2",
+      "runners": 16,
+      "liveHorse": "ROYAL BELIEF",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROYAL BELIEF",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T16:00:35.103Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 61,
+    "recorded": 64,
     "pick": {
-      "settled": 51,
+      "settled": 54,
       "won": 8,
-      "pl": -8.02,
-      "roi": -15.7
+      "pl": -11.02,
+      "roi": -20.4
     },
     "favourite": {
-      "settled": 46,
+      "settled": 48,
       "won": 10,
-      "pl": -17.8,
-      "roi": -38.7
+      "pl": -19.8,
+      "roi": -41.3
     },
     "agree": {
-      "settled": 11,
+      "settled": 12,
       "won": 3,
-      "pl": -6.02,
-      "roi": -54.7
+      "pl": -7.02,
+      "roi": -58.5
     },
     "disagree": {
-      "settled": 40,
+      "settled": 42,
       "won": 5,
-      "pl": -2.01,
-      "roi": -5
+      "pl": -4.01,
+      "roi": -9.5
     }
   },
   "lastBackfill": 1791810682459
