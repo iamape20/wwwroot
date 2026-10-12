@@ -873,7 +873,11 @@
       "rating": 72.5,
       "runners": 9,
       "recordedAt": "2026-10-12T12:36:10.535Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Worcester|12:37",
@@ -885,7 +889,11 @@
       "rating": 71,
       "runners": 9,
       "recordedAt": "2026-10-12T12:36:10.681Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Yarmouth|12:54",
@@ -902,10 +910,10 @@
   ],
   "stats": {
     "recorded": 55,
-    "settled": 52,
+    "settled": 54,
     "won": 29,
-    "pl": 5.87,
-    "roi": 11.3
+    "pl": 3.87,
+    "roi": 7.2
   },
   "lastBackfill": 1791795695090
 }

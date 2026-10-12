@@ -871,10 +871,17 @@
       "fav": {
         "horse": "MOTAWAARED",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T12:36:11.271Z",
-      "stake": 1
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "non_runner"
     },
     {
       "id": "2026-10-12|Worcester|12:37",
@@ -890,10 +897,16 @@
       "fav": {
         "horse": "ONEHUNDREDNEIGHTY",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T12:36:11.306Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     },
     {
       "id": "2026-10-12|Yarmouth|12:54",
@@ -913,10 +926,48 @@
       },
       "recordedAt": "2026-10-12T12:41:19.834Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Roscommon|13:00",
+      "date": "2026-10-12",
+      "course": "Roscommon",
+      "time": "13:00",
+      "horse": "SAVE THE SIXES",
+      "price": "11/2",
+      "runners": 14,
+      "liveHorse": "CONTRARY TO LAW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CONTRARY TO LAW",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T12:51:33.739Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Worcester|13:07",
+      "date": "2026-10-12",
+      "course": "Worcester",
+      "time": "13:07",
+      "horse": "BALLYNAHEER",
+      "price": "10/1",
+      "runners": 9,
+      "liveHorse": "SONYOURASTAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SONYOURASTAR",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:01:42.054Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 34,
+    "recorded": 36,
     "pick": {
       "settled": 31,
       "won": 8,
@@ -924,10 +975,10 @@
       "roi": 38.6
     },
     "favourite": {
-      "settled": 31,
+      "settled": 33,
       "won": 10,
-      "pl": -2.8,
-      "roi": -9
+      "pl": -4.8,
+      "roi": -14.5
     },
     "agree": {
       "settled": 8,
