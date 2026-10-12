@@ -2031,31 +2031,39 @@
       "fav": {
         "horse": "MOUNT RUAPEHU",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T19:20:16.856Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 77,
     "pick": {
-      "settled": 64,
+      "settled": 65,
       "won": 8,
-      "pl": -21.02,
-      "roi": -32.9
+      "pl": -22.02,
+      "roi": -33.9
     },
     "favourite": {
-      "settled": 59,
+      "settled": 60,
       "won": 10,
-      "pl": -30.8,
-      "roi": -52.2
+      "pl": -31.8,
+      "roi": -53
     },
     "agree": {
-      "settled": 14,
+      "settled": 15,
       "won": 3,
-      "pl": -9.02,
-      "roi": -64.4
+      "pl": -10.02,
+      "roi": -66.8
     },
     "disagree": {
       "settled": 50,
