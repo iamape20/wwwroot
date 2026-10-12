@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T15:20:48.974Z",
+  "generatedAt": "2026-10-12T15:40:39.538Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -20,14 +20,19 @@
       "revealAt": "17:30"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-12",
       "course": "Kempton",
       "off": "16:12",
-      "horse": "SHOWCASING GLORY"
-    }
-  ],
-  "recent": [
+      "horse": "SHOWCASING GLORY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-12",
       "course": "Worcester",
@@ -181,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Fairyhouse",
-      "off": "14:33",
-      "horse": "STRAIGHT JOHN",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T15:20:48.892Z",
+    "updatedAt": "2026-10-12T15:40:39.455Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 60,
-      "won": 31,
-      "pl": -7.18,
-      "roi": -12,
-      "provisional": 3
+      "bets": 61,
+      "won": 32,
+      "pl": -4.93,
+      "roi": -8.1,
+      "provisional": 4
     },
     "live": {
       "bets": 0,

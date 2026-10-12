@@ -1390,10 +1390,14 @@
       "fav": {
         "horse": "SHOWCASING GLORY",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-12T15:01:17.724Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-10-12|Worcester|15:07",
@@ -1434,10 +1438,18 @@
       "fav": {
         "horse": "KELPIE GREY",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:11:28.827Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Yarmouth|15:24",
@@ -1453,10 +1465,18 @@
       "fav": {
         "horse": "METHGAL",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:11:28.852Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Newcastle|15:28",
@@ -1472,10 +1492,16 @@
       "fav": {
         "horse": "TROPBIEN",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-12T15:20:50.547Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Roscommon|15:30",
@@ -1495,21 +1521,97 @@
       },
       "recordedAt": "2026-10-12T15:20:50.577Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|15:45",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "15:45",
+      "horse": "TREDEGAR SQUARE",
+      "price": "6/4",
+      "runners": 11,
+      "liveHorse": "TREDEGAR SQUARE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TREDEGAR SQUARE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:30:49.251Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Worcester|15:37",
+      "date": "2026-10-12",
+      "course": "Worcester",
+      "time": "15:37",
+      "horse": "JIAIR MADRIK",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "BIG CADILLAC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BIG CADILLAC",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:30:49.264Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Musselburgh|15:50",
+      "date": "2026-10-12",
+      "course": "Musselburgh",
+      "time": "15:50",
+      "horse": "SIMPLE STAR",
+      "price": "15/2",
+      "runners": 8,
+      "liveHorse": "ALPINE SIERRA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALPINE SIERRA",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:40:41.475Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Yarmouth|15:55",
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "time": "15:55",
+      "horse": "HEER'S SADIE",
+      "price": "25/1",
+      "runners": 12,
+      "liveHorse": "POTTERS PRINCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POTTERS PRINCE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:40:41.503Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 57,
+    "recorded": 61,
     "pick": {
-      "settled": 48,
+      "settled": 51,
       "won": 8,
-      "pl": -5.02,
-      "roi": -10.5
+      "pl": -8.02,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 44,
+      "settled": 46,
       "won": 10,
-      "pl": -15.8,
-      "roi": -35.9
+      "pl": -17.8,
+      "roi": -38.7
     },
     "agree": {
       "settled": 11,
@@ -1518,10 +1620,10 @@
       "roi": -54.7
     },
     "disagree": {
-      "settled": 37,
+      "settled": 40,
       "won": 5,
-      "pl": 0.99,
-      "roi": 2.7
+      "pl": -2.01,
+      "roi": -5
     }
   },
   "lastBackfill": 1791810682459
