@@ -844,25 +844,90 @@
       "fav": {
         "horse": "RESURGENCE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T12:21:36.053Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-12|Musselburgh|12:47",
+      "date": "2026-10-12",
+      "course": "Musselburgh",
+      "time": "12:47",
+      "horse": "EPHRON",
+      "price": "8/1",
+      "runners": 9,
+      "liveHorse": "MOTAWAARED",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MOTAWAARED",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T12:36:11.271Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Worcester|12:37",
+      "date": "2026-10-12",
+      "course": "Worcester",
+      "time": "12:37",
+      "horse": "NOBLE RECALL",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "ONEHUNDREDNEIGHTY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ONEHUNDREDNEIGHTY",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T12:36:11.306Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Yarmouth|12:54",
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "time": "12:54",
+      "horse": "OLYMPIACOS",
+      "price": "11/1",
+      "runners": 7,
+      "liveHorse": "BORN THIS WAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BORN THIS WAY",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T12:41:19.834Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 31,
+    "recorded": 34,
     "pick": {
-      "settled": 30,
+      "settled": 31,
       "won": 8,
-      "pl": 12.98,
-      "roi": 43.3
+      "pl": 11.98,
+      "roi": 38.6
     },
     "favourite": {
-      "settled": 30,
+      "settled": 31,
       "won": 10,
-      "pl": -1.8,
-      "roi": -6
+      "pl": -2.8,
+      "roi": -9
     },
     "agree": {
       "settled": 8,
@@ -871,10 +936,10 @@
       "roi": -37.7
     },
     "disagree": {
-      "settled": 22,
+      "settled": 23,
       "won": 5,
-      "pl": 15.99,
-      "roi": 72.7
+      "pl": 14.99,
+      "roi": 65.2
     }
   },
   "lastBackfill": 1791795697527
