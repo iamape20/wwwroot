@@ -1596,10 +1596,18 @@
       "fav": {
         "horse": "ALPINE SIERRA",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:40:41.475Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Yarmouth|15:55",
@@ -1615,10 +1623,16 @@
       "fav": {
         "horse": "POTTERS PRINCE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-12T15:40:41.503Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Newcastle|16:00",
@@ -1634,10 +1648,18 @@
       "fav": {
         "horse": "MARIA DA SILVA",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T15:50:39.772Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Kempton|16:15",
@@ -1672,25 +1694,50 @@
       "fav": {
         "horse": "ROYAL BELIEF",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T16:00:35.103Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
+    },
+    {
+      "id": "2026-10-12|Newcastle|16:30",
+      "date": "2026-10-12",
+      "course": "Newcastle",
+      "time": "16:30",
+      "horse": "GREAT BALLS O'FIRE",
+      "price": "1/1",
+      "runners": 10,
+      "liveHorse": "GREAT BALLS O'FIRE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GREAT BALLS O'FIRE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T16:20:36.436Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 64,
+    "recorded": 65,
     "pick": {
-      "settled": 54,
+      "settled": 57,
       "won": 8,
-      "pl": -11.02,
-      "roi": -20.4
+      "pl": -14.02,
+      "roi": -24.6
     },
     "favourite": {
-      "settled": 48,
+      "settled": 51,
       "won": 10,
-      "pl": -19.8,
-      "roi": -41.3
+      "pl": -22.8,
+      "roi": -44.7
     },
     "agree": {
       "settled": 12,
@@ -1699,11 +1746,11 @@
       "roi": -58.5
     },
     "disagree": {
-      "settled": 42,
+      "settled": 45,
       "won": 5,
-      "pl": -4.01,
-      "roi": -9.5
+      "pl": -7.01,
+      "roi": -15.6
     }
   },
-  "lastBackfill": 1791810682459
+  "lastBackfill": 1791822036449
 }
