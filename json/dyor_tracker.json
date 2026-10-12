@@ -1725,10 +1725,18 @@
       "fav": {
         "horse": "GREAT BALLS O'FIRE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T16:20:36.436Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Kempton|16:45",
@@ -1748,27 +1756,65 @@
       },
       "recordedAt": "2026-10-12T16:30:35.731Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Newcastle|17:00",
+      "date": "2026-10-12",
+      "course": "Newcastle",
+      "time": "17:00",
+      "horse": "SIOUXPERB",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "STARBURSTER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STARBURSTER",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T16:50:30.459Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|17:15",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "17:15",
+      "horse": "RHYTHM OF MY HEART",
+      "price": "2/9",
+      "runners": 10,
+      "liveHorse": "RHYTHM OF MY HEART",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "RHYTHM OF MY HEART",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T17:00:29.890Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 66,
+    "recorded": 68,
     "pick": {
-      "settled": 57,
+      "settled": 58,
       "won": 8,
-      "pl": -14.02,
-      "roi": -24.6
+      "pl": -15.02,
+      "roi": -25.9
     },
     "favourite": {
-      "settled": 52,
+      "settled": 53,
       "won": 10,
-      "pl": -23.8,
-      "roi": -45.8
+      "pl": -24.8,
+      "roi": -46.8
     },
     "agree": {
-      "settled": 12,
+      "settled": 13,
       "won": 3,
-      "pl": -7.02,
-      "roi": -58.5
+      "pl": -8.02,
+      "roi": -61.7
     },
     "disagree": {
       "settled": 45,
