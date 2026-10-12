@@ -1675,10 +1675,16 @@
       "fav": {
         "horse": "RAVISHING",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T16:00:35.089Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     },
     {
       "id": "2026-10-12|Roscommon|16:07",
@@ -1723,10 +1729,29 @@
       },
       "recordedAt": "2026-10-12T16:20:36.436Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|16:45",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "16:45",
+      "horse": "FAN ME",
+      "price": "17/2",
+      "runners": 9,
+      "liveHorse": "WADOODA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WADOODA",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T16:30:35.731Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 65,
+    "recorded": 66,
     "pick": {
       "settled": 57,
       "won": 8,
@@ -1734,10 +1759,10 @@
       "roi": -24.6
     },
     "favourite": {
-      "settled": 51,
+      "settled": 52,
       "won": 10,
-      "pl": -22.8,
-      "roi": -44.7
+      "pl": -23.8,
+      "roi": -45.8
     },
     "agree": {
       "settled": 12,
