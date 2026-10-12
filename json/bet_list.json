@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T13:01:38.989Z",
+  "generatedAt": "2026-10-12T13:21:15.034Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -13,12 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Musselburgh",
-      "off": "14:17",
-      "status": "POSSIBLE",
-      "revealAt": "14:02"
-    },
     {
       "course": "Worcester",
       "off": "15:07",
@@ -46,12 +40,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Yarmouth",
-      "off": "13:54",
-      "horse": "BORN THIS WAY"
+      "course": "Musselburgh",
+      "off": "14:17",
+      "horse": "VEGASMILE"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "off": "13:54",
+      "horse": "BORN THIS WAY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-11",
       "course": "Cork",
@@ -205,21 +210,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Newmarket",
-      "off": "13:50",
-      "horse": "DRUMBEAT",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.98054638,
-      "pl": 0.932,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T13:01:38.850Z",
+    "updatedAt": "2026-10-12T13:21:14.943Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -242,11 +236,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 57,
-      "won": 28,
-      "pl": -9.01,
-      "roi": -15.8,
-      "provisional": 0
+      "bets": 58,
+      "won": 29,
+      "pl": -7.63,
+      "roi": -13.2,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

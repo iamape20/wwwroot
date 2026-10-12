@@ -922,10 +922,16 @@
       "fav": {
         "horse": "BORN THIS WAY",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-12T12:41:19.834Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Roscommon|13:00",
@@ -941,10 +947,16 @@
       "fav": {
         "horse": "CONTRARY TO LAW",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-10-12T12:51:33.739Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Worcester|13:07",
@@ -960,25 +972,90 @@
       "fav": {
         "horse": "SONYOURASTAR",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-12T13:01:42.054Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-12|Musselburgh|13:17",
+      "date": "2026-10-12",
+      "course": "Musselburgh",
+      "time": "13:17",
+      "horse": "VEGASMILE",
+      "price": "2/7",
+      "runners": 4,
+      "liveHorse": "VEGASMILE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "VEGASMILE",
+        "price": "2/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:11:22.443Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Yarmouth|13:24",
+      "date": "2026-10-12",
+      "course": "Yarmouth",
+      "time": "13:24",
+      "horse": "DEIRA MOON",
+      "price": "7/4",
+      "runners": 10,
+      "liveHorse": "DEIRA MOON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DEIRA MOON",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:11:22.458Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Roscommon|13:30",
+      "date": "2026-10-12",
+      "course": "Roscommon",
+      "time": "13:30",
+      "horse": "ALEX BELARDO",
+      "price": "7/1",
+      "runners": 14,
+      "liveHorse": "MONOCLE ROCKET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MONOCLE ROCKET",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T13:21:20.758Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 36,
+    "recorded": 39,
     "pick": {
-      "settled": 31,
+      "settled": 34,
       "won": 8,
-      "pl": 11.98,
-      "roi": 38.6
+      "pl": 8.98,
+      "roi": 26.4
     },
     "favourite": {
-      "settled": 33,
+      "settled": 34,
       "won": 10,
-      "pl": -4.8,
-      "roi": -14.5
+      "pl": -5.8,
+      "roi": -17.1
     },
     "agree": {
       "settled": 8,
@@ -987,11 +1064,11 @@
       "roi": -37.7
     },
     "disagree": {
-      "settled": 23,
+      "settled": 26,
       "won": 5,
-      "pl": 14.99,
-      "roi": 65.2
+      "pl": 11.99,
+      "roi": 46.1
     }
   },
-  "lastBackfill": 1791795697527
+  "lastBackfill": 1791810682459
 }
