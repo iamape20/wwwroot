@@ -1286,10 +1286,16 @@
       "fav": {
         "horse": "MIGHTY FLEUR",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-12T14:30:58.146Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-12|Musselburgh|14:47",
@@ -1328,15 +1334,72 @@
       },
       "recordedAt": "2026-10-12T14:40:53.346Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-12|Roscommon|15:00",
+      "date": "2026-10-12",
+      "course": "Roscommon",
+      "time": "15:00",
+      "horse": "RYEFIELD DASHER",
+      "price": "3/1",
+      "runners": 5,
+      "liveHorse": "MINELLA ROCKETT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MINELLA ROCKETT",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T14:50:54.519Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Kempton|15:12",
+      "date": "2026-10-12",
+      "course": "Kempton",
+      "time": "15:12",
+      "horse": "SHOWCASING GLORY",
+      "price": "7/4",
+      "runners": 12,
+      "liveHorse": "SHOWCASING GLORY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SHOWCASING GLORY",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:01:17.724Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-12|Worcester|15:07",
+      "date": "2026-10-12",
+      "course": "Worcester",
+      "time": "15:07",
+      "horse": "SIAM PARK",
+      "price": "10/3",
+      "runners": 6,
+      "liveHorse": "KYKOROCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KYKOROCK",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-12T15:01:17.765Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 50,
+    "recorded": 53,
     "pick": {
-      "settled": 44,
+      "settled": 45,
       "won": 8,
-      "pl": -1.02,
-      "roi": -2.3
+      "pl": -2.02,
+      "roi": -4.5
     },
     "favourite": {
       "settled": 41,
@@ -1351,10 +1414,10 @@
       "roi": -54.7
     },
     "disagree": {
-      "settled": 33,
+      "settled": 34,
       "won": 5,
-      "pl": 4.99,
-      "roi": 15.1
+      "pl": 3.99,
+      "roi": 11.7
     }
   },
   "lastBackfill": 1791810682459
