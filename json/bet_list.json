@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T14:20:54.656Z",
+  "generatedAt": "2026-10-12T14:40:51.785Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -26,14 +26,19 @@
       "revealAt": "17:30"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-12",
       "course": "Worcester",
       "off": "15:07",
-      "horse": "POTTERS CHARM"
-    }
-  ],
-  "recent": [
+      "horse": "POTTERS CHARM",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-12",
       "course": "Musselburgh",
@@ -187,21 +192,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Hexham",
-      "off": "14:20",
-      "horse": "DARK TIDE RISING",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T14:20:54.571Z",
+    "updatedAt": "2026-10-12T14:40:51.704Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,11 +218,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 59,
-      "won": 30,
-      "pl": -7.38,
-      "roi": -12.5,
-      "provisional": 2
+      "bets": 60,
+      "won": 31,
+      "pl": -7.18,
+      "roi": -12,
+      "provisional": 3
     },
     "live": {
       "bets": 0,
