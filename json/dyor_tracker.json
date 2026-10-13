@@ -2161,10 +2161,16 @@
       "fav": {
         "horse": "DANNY POWER",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T12:21:06.496Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-10-13|Hereford|12:45",
@@ -2180,10 +2186,18 @@
       "fav": {
         "horse": "MISS DENVER",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T12:31:24.375Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Leicester|12:54",
@@ -2203,27 +2217,65 @@
       },
       "recordedAt": "2026-10-13T12:41:01.453Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|13:00",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "13:00",
+      "horse": "LIMERICK LEADER",
+      "price": "5/4",
+      "runners": 3,
+      "liveHorse": "AXEL BLEUE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AXEL BLEUE",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T12:51:02.459Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Punchestown|13:10",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "13:10",
+      "horse": "SILLY MONGOOSE",
+      "price": "13/2",
+      "runners": 11,
+      "liveHorse": "BUILD A BRIDGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BUILD A BRIDGE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T13:01:22.451Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 81,
+    "recorded": 83,
     "pick": {
-      "settled": 75,
+      "settled": 76,
       "won": 18,
-      "pl": 15.07,
-      "roi": 20.1
+      "pl": 14.07,
+      "roi": 18.5
     },
     "favourite": {
-      "settled": 77,
+      "settled": 79,
       "won": 26,
-      "pl": -1.82,
-      "roi": -2.4
+      "pl": -3.82,
+      "roi": -4.8
     },
     "agree": {
-      "settled": 19,
+      "settled": 20,
       "won": 7,
-      "pl": -6.17,
-      "roi": -32.5
+      "pl": -7.17,
+      "roi": -35.9
     },
     "disagree": {
       "settled": 56,
@@ -2232,5 +2284,5 @@
       "roi": 37.9
     }
   },
-  "lastBackfill": 1791882082243
+  "lastBackfill": 1791895862483
 }

@@ -1056,7 +1056,11 @@
       "rating": 69.3,
       "runners": 9,
       "recordedAt": "2026-10-13T12:21:06.186Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Hereford|12:45",
@@ -1068,15 +1072,19 @@
       "rating": 69.8,
       "runners": 5,
       "recordedAt": "2026-10-13T12:31:24.182Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 65,
-    "settled": 63,
+    "settled": 65,
     "won": 36,
-    "pl": 9.32,
-    "roi": 14.8
+    "pl": 7.32,
+    "roi": 11.3
   },
   "lastBackfill": 1791882079914
 }
