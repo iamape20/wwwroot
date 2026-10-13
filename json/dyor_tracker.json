@@ -2925,10 +2925,16 @@
       "fav": {
         "horse": "EASTERN WHISPER",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-13T16:30:25.194Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Wolverhampton|17:00",
@@ -2944,25 +2950,50 @@
       "fav": {
         "horse": "BELLA ANGELINA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T16:50:21.410Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
+    },
+    {
+      "id": "2026-10-13|Wolverhampton|17:30",
+      "date": "2026-10-13",
+      "course": "Wolverhampton",
+      "time": "17:30",
+      "horse": "AL WIDYAN",
+      "price": "4/6",
+      "runners": 9,
+      "liveHorse": "AL WIDYAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AL WIDYAN",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T17:20:20.257Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 110,
+    "recorded": 111,
     "pick": {
-      "settled": 96,
+      "settled": 97,
       "won": 18,
-      "pl": -5.93,
-      "roi": -6.2
+      "pl": -6.93,
+      "roi": -7.1
     },
     "favourite": {
-      "settled": 93,
+      "settled": 94,
       "won": 26,
-      "pl": -17.82,
-      "roi": -19.2
+      "pl": -18.82,
+      "roi": -20
     },
     "agree": {
       "settled": 23,
@@ -2971,10 +3002,10 @@
       "roi": -44.2
     },
     "disagree": {
-      "settled": 73,
+      "settled": 74,
       "won": 11,
-      "pl": 4.24,
-      "roi": 5.8
+      "pl": 3.24,
+      "roi": 4.4
     }
   },
   "lastBackfill": 1791907235955
