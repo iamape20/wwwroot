@@ -3002,19 +3002,44 @@
       "fav": {
         "horse": "ZACHARY HICKES",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-13T17:50:20.719Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-13|Wolverhampton|18:30",
+      "date": "2026-10-13",
+      "course": "Wolverhampton",
+      "time": "18:30",
+      "horse": "ON KEY",
+      "price": "15/2",
+      "runners": 12,
+      "liveHorse": "FAR TOO FIZZY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FAR TOO FIZZY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T18:20:18.626Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 112,
+    "recorded": 113,
     "pick": {
-      "settled": 98,
+      "settled": 99,
       "won": 18,
-      "pl": -7.93,
-      "roi": -8.1
+      "pl": -8.93,
+      "roi": -9
     },
     "favourite": {
       "settled": 95,
@@ -3029,10 +3054,10 @@
       "roi": -46.5
     },
     "disagree": {
-      "settled": 74,
+      "settled": 75,
       "won": 11,
-      "pl": 3.24,
-      "roi": 4.4
+      "pl": 2.24,
+      "roi": 3
     }
   },
   "lastBackfill": 1791907235955
