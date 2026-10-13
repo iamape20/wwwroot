@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T21:00:17.799Z",
+  "generatedAt": "2026-10-13T06:00:54.428Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 57/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,26 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Leicester",
+      "off": "14:29",
+      "status": "POSSIBLE",
+      "revealAt": "14:14"
+    },
+    {
+      "course": "Hereford",
+      "off": "16:38",
+      "status": "POSSIBLE",
+      "revealAt": "16:23"
+    },
+    {
+      "course": "Wolverhampton",
+      "off": "18:00",
+      "status": "POSSIBLE",
+      "revealAt": "17:45"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -182,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-12T21:00:17.708Z",
+    "updatedAt": "2026-10-13T06:00:54.338Z",
     "claude": {
       "races": 38,
       "won": 7,
