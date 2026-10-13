@@ -2565,10 +2565,14 @@
       "fav": {
         "horse": "PAT O'S ROCK",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-13T14:40:45.063Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-10-13|Hereford|15:05",
@@ -2584,10 +2588,18 @@
       "fav": {
         "horse": "MIRACLES DO HAPPEN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T14:50:47.238Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Leicester|15:14",
@@ -2607,27 +2619,84 @@
       },
       "recordedAt": "2026-10-13T15:00:50.566Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|15:20",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "15:20",
+      "horse": "L'AMANDINE",
+      "price": "1/4",
+      "runners": 4,
+      "liveHorse": "L'AMANDINE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "L'AMANDINE",
+        "price": "1/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:10:37.097Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Wolverhampton|15:25",
+      "date": "2026-10-13",
+      "course": "Wolverhampton",
+      "time": "15:25",
+      "horse": "SANDITON",
+      "price": "7/2",
+      "runners": 9,
+      "liveHorse": "MIDNIGHT'S DREAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MIDNIGHT'S DREAM",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:10:37.112Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Punchestown|15:30",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "15:30",
+      "horse": "MAXICOURT",
+      "price": "9/2",
+      "runners": 15,
+      "liveHorse": "ANOTHER CHALLENGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANOTHER CHALLENGE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:20:40.835Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 97,
+    "recorded": 100,
     "pick": {
-      "settled": 85,
+      "settled": 86,
       "won": 18,
-      "pl": 5.07,
-      "roi": 6
+      "pl": 4.07,
+      "roi": 4.7
     },
     "favourite": {
-      "settled": 85,
+      "settled": 86,
       "won": 26,
-      "pl": -9.82,
-      "roi": -11.6
+      "pl": -10.82,
+      "roi": -12.6
     },
     "agree": {
-      "settled": 20,
+      "settled": 21,
       "won": 7,
-      "pl": -7.17,
-      "roi": -35.9
+      "pl": -8.17,
+      "roi": -38.9
     },
     "disagree": {
       "settled": 65,
