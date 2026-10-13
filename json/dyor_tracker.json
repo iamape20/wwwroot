@@ -2769,10 +2769,16 @@
       "fav": {
         "horse": "FLIGHT CONTROL",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T15:40:31.689Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "28/1"
     },
     {
       "id": "2026-10-13|Wolverhampton|16:00",
@@ -2815,10 +2821,18 @@
       "fav": {
         "horse": "SOLDIER SAINT",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T16:00:35.942Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Southwell|16:23",
@@ -2834,10 +2848,16 @@
       "fav": {
         "horse": "LUMINARIES",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-13T16:10:27.812Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Leicester|16:17",
@@ -2853,10 +2873,18 @@
       "fav": {
         "horse": "SOMETHINGINTHEAIR",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T16:10:27.827Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Wolverhampton|16:30",
@@ -2872,25 +2900,50 @@
       "fav": {
         "horse": "ROYAL COUNTY GLORY",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-10-13T16:20:26.452Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-13|Punchestown|16:40",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "16:40",
+      "horse": "BACK IN FAVOUR",
+      "price": "11/2",
+      "runners": 14,
+      "liveHorse": "EASTERN WHISPER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EASTERN WHISPER",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T16:30:25.194Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 108,
+    "recorded": 109,
     "pick": {
-      "settled": 92,
+      "settled": 96,
       "won": 18,
-      "pl": -1.93,
-      "roi": -2.1
+      "pl": -5.93,
+      "roi": -6.2
     },
     "favourite": {
-      "settled": 90,
+      "settled": 93,
       "won": 26,
-      "pl": -14.82,
-      "roi": -16.5
+      "pl": -17.82,
+      "roi": -19.2
     },
     "agree": {
       "settled": 23,
@@ -2899,10 +2952,10 @@
       "roi": -44.2
     },
     "disagree": {
-      "settled": 69,
+      "settled": 73,
       "won": 11,
-      "pl": 8.24,
-      "roi": 11.9
+      "pl": 4.24,
+      "roi": 5.8
     }
   },
   "lastBackfill": 1791907235955
