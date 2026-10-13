@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:50:45.472Z",
+  "generatedAt": "2026-10-13T15:00:48.355Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 62/120 bets settled before the verdict.",
   "rules": [
@@ -20,14 +20,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-13",
       "course": "Southwell",
       "off": "15:45",
-      "horse": "MASTERIUS"
-    }
-  ],
-  "recent": [
+      "horse": "MASTERIUS",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-12",
       "course": "Kempton",
@@ -181,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "York",
-      "off": "15:57",
-      "horse": "IRON STONE LAD",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-13T14:50:45.389Z",
+    "updatedAt": "2026-10-13T15:00:48.130Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 62,
-      "won": 33,
-      "pl": -3.97,
-      "roi": -6.4,
-      "provisional": 0
+      "bets": 63,
+      "won": 34,
+      "pl": -3.43,
+      "roi": -5.4,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

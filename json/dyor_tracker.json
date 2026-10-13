@@ -2515,10 +2515,14 @@
       "fav": {
         "horse": "MASTERIUS",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/15"
       },
       "recordedAt": "2026-10-13T14:30:47.145Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/15"
     },
     {
       "id": "2026-10-13|Leicester|14:39",
@@ -2584,10 +2588,29 @@
       },
       "recordedAt": "2026-10-13T14:50:47.238Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|15:14",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "15:14",
+      "horse": "UP THE JAZZ",
+      "price": "15/2",
+      "runners": 9,
+      "liveHorse": "OVIEDO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OVIEDO",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:00:50.566Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 96,
+    "recorded": 97,
     "pick": {
       "settled": 85,
       "won": 18,
