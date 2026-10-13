@@ -2975,31 +2975,58 @@
       "fav": {
         "horse": "AL WIDYAN",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T17:20:20.257Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-13|Wolverhampton|18:00",
+      "date": "2026-10-13",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "horse": "INAPPROPRIATE",
+      "price": "12/1",
+      "runners": 7,
+      "liveHorse": "ZACHARY HICKES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZACHARY HICKES",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T17:50:20.719Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 111,
+    "recorded": 112,
     "pick": {
-      "settled": 97,
+      "settled": 98,
       "won": 18,
-      "pl": -6.93,
-      "roi": -7.1
+      "pl": -7.93,
+      "roi": -8.1
     },
     "favourite": {
-      "settled": 94,
+      "settled": 95,
       "won": 26,
-      "pl": -18.82,
-      "roi": -20
+      "pl": -19.82,
+      "roi": -20.9
     },
     "agree": {
-      "settled": 23,
+      "settled": 24,
       "won": 7,
-      "pl": -10.17,
-      "roi": -44.2
+      "pl": -11.17,
+      "roi": -46.5
     },
     "disagree": {
       "settled": 74,

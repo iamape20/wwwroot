@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-13T17:40:16.403Z",
+  "generatedAt": "2026-10-13T18:00:14.495Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 62/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 63/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-13",
       "course": "Wolverhampton",
       "off": "18:30",
-      "horse": "AL WIDYAN"
-    }
-  ],
-  "recent": [
+      "horse": "AL WIDYAN",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-13",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-10",
-      "course": "Fairyhouse",
-      "off": "17:35",
-      "horse": "GAELIC SEER",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-13T17:40:16.326Z",
+    "updatedAt": "2026-10-13T18:00:14.415Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 63,
+      "bets": 64,
       "won": 34,
-      "pl": -3.43,
-      "roi": -5.4,
+      "pl": -4.43,
+      "roi": -6.9,
       "provisional": 1
     },
     "live": {
