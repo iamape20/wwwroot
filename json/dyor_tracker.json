@@ -3027,19 +3027,25 @@
       "fav": {
         "horse": "FAR TOO FIZZY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-10-13T18:20:18.626Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 113,
     "pick": {
-      "settled": 99,
+      "settled": 100,
       "won": 18,
-      "pl": -8.93,
-      "roi": -9
+      "pl": -9.93,
+      "roi": -9.9
     },
     "favourite": {
       "settled": 95,
@@ -3054,10 +3060,10 @@
       "roi": -46.5
     },
     "disagree": {
-      "settled": 75,
+      "settled": 76,
       "won": 11,
-      "pl": 2.24,
-      "roi": 3
+      "pl": 1.24,
+      "roi": 1.6
     }
   },
   "lastBackfill": 1791907235955
