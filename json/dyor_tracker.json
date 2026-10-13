@@ -2386,10 +2386,18 @@
       "fav": {
         "horse": "CARRHILL",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T13:40:57.380Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Leicester|14:04",
@@ -2405,10 +2413,16 @@
       "fav": {
         "horse": "NEW YEAR'S EVE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-13T13:50:53.496Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Southwell|14:10",
@@ -2428,21 +2442,59 @@
       },
       "recordedAt": "2026-10-13T14:00:52.220Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Punchestown|14:20",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "14:20",
+      "horse": "ACCUSTOMED",
+      "price": "7/1",
+      "runners": 18,
+      "liveHorse": "LIVE TO LAUGH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LIVE TO LAUGH",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:10:50.442Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Hereford|14:30",
+      "date": "2026-10-13",
+      "course": "Hereford",
+      "time": "14:30",
+      "horse": "DONNIE AZOFF",
+      "price": "10/3",
+      "runners": 8,
+      "liveHorse": "SIXTY PLUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SIXTY PLUS",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:20:52.365Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 90,
+    "recorded": 92,
     "pick": {
-      "settled": 80,
+      "settled": 82,
       "won": 18,
-      "pl": 10.07,
-      "roi": 12.6
+      "pl": 8.07,
+      "roi": 9.8
     },
     "favourite": {
-      "settled": 81,
+      "settled": 82,
       "won": 26,
-      "pl": -5.82,
-      "roi": -7.2
+      "pl": -6.82,
+      "roi": -8.3
     },
     "agree": {
       "settled": 20,
@@ -2451,10 +2503,10 @@
       "roi": -35.9
     },
     "disagree": {
-      "settled": 60,
+      "settled": 62,
       "won": 11,
-      "pl": 17.24,
-      "roi": 28.7
+      "pl": 15.24,
+      "roi": 24.6
     }
   },
   "lastBackfill": 1791895862483
