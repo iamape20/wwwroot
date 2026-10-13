@@ -1186,7 +1186,11 @@
       "rating": 65.4,
       "runners": 4,
       "recordedAt": "2026-10-13T15:30:38.734Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Southwell|15:52",
@@ -1203,10 +1207,10 @@
   ],
   "stats": {
     "recorded": 74,
-    "settled": 65,
+    "settled": 66,
     "won": 36,
-    "pl": 7.32,
-    "roi": 11.3
+    "pl": 6.32,
+    "roi": 9.6
   },
   "lastBackfill": 1791899451441
 }
