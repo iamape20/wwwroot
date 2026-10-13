@@ -2742,10 +2742,18 @@
       "fav": {
         "horse": "WINSTON'S OATH",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T15:40:31.674Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/6",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Leicester|15:47",
@@ -2780,10 +2788,18 @@
       "fav": {
         "horse": "HOMME DE FER",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T15:50:32.012Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Punchestown|16:07",
@@ -2803,33 +2819,71 @@
       },
       "recordedAt": "2026-10-13T16:00:35.942Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|16:23",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "16:23",
+      "horse": "EAST EAGLE",
+      "price": "5/1",
+      "runners": 6,
+      "liveHorse": "LUMINARIES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LUMINARIES",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T16:10:27.812Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|16:17",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "16:17",
+      "horse": "RICARDO PHILLIPS",
+      "price": "7/2",
+      "runners": 14,
+      "liveHorse": "SOMETHINGINTHEAIR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOMETHINGINTHEAIR",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T16:10:27.827Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 105,
+    "recorded": 107,
     "pick": {
-      "settled": 90,
+      "settled": 92,
       "won": 18,
-      "pl": 0.07,
-      "roi": 0.1
+      "pl": -1.93,
+      "roi": -2.1
     },
     "favourite": {
-      "settled": 88,
+      "settled": 90,
       "won": 26,
-      "pl": -12.82,
-      "roi": -14.6
+      "pl": -14.82,
+      "roi": -16.5
     },
     "agree": {
-      "settled": 22,
+      "settled": 23,
       "won": 7,
-      "pl": -9.17,
-      "roi": -41.7
+      "pl": -10.17,
+      "roi": -44.2
     },
     "disagree": {
-      "settled": 68,
+      "settled": 69,
       "won": 11,
-      "pl": 9.24,
-      "roi": 13.6
+      "pl": 8.24,
+      "roi": 11.9
     }
   },
   "lastBackfill": 1791907235955
