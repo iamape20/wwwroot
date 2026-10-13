@@ -3052,14 +3052,37 @@
       "fav": {
         "horse": "COXY'S STAR",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-13T18:50:18.673Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
+    },
+    {
+      "id": "2026-10-13|Wolverhampton|19:30",
+      "date": "2026-10-13",
+      "course": "Wolverhampton",
+      "time": "19:30",
+      "horse": "MIDNIGHT MEDIA",
+      "price": "1/1",
+      "runners": 11,
+      "liveHorse": "MIDNIGHT MEDIA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MIDNIGHT MEDIA",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T19:20:15.090Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 114,
+    "recorded": 115,
     "pick": {
       "settled": 100,
       "won": 18,
@@ -3085,5 +3108,5 @@
       "roi": 1.6
     }
   },
-  "lastBackfill": 1791907235955
+  "lastBackfill": 1791918615029
 }
