@@ -1088,7 +1088,9 @@
       "rating": 81,
       "runners": 4,
       "recordedAt": "2026-10-13T13:11:04.408Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-13|Southwell|13:35",
@@ -1101,10 +1103,22 @@
       "runners": 4,
       "recordedAt": "2026-10-13T13:20:56.021Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Punchestown|13:45",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "13:45",
+      "horse": "SAMUI",
+      "price": "11/8",
+      "rating": 64.8,
+      "runners": 5,
+      "recordedAt": "2026-10-13T13:30:57.657Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 67,
+    "recorded": 68,
     "settled": 65,
     "won": 36,
     "pl": 7.32,
