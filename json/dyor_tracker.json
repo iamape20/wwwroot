@@ -2313,10 +2313,14 @@
       "fav": {
         "horse": "FOUR SPRINGS",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-13T13:20:56.387Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-10-13|Leicester|13:29",
@@ -2359,10 +2363,14 @@
       "fav": {
         "horse": "SAMUI",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-13T13:30:57.858Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-10-13|Hereford|13:55",
@@ -2382,10 +2390,48 @@
       },
       "recordedAt": "2026-10-13T13:40:57.380Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|14:04",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "14:04",
+      "horse": "BERYOZKA",
+      "price": "16/1",
+      "runners": 7,
+      "liveHorse": "NEW YEAR'S EVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NEW YEAR'S EVE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T13:50:53.496Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|14:10",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "14:10",
+      "horse": "PALAMON",
+      "price": "10/3",
+      "runners": 4,
+      "liveHorse": "DREAM DIAMOND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DREAM DIAMOND",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:00:52.220Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 88,
+    "recorded": 90,
     "pick": {
       "settled": 80,
       "won": 18,
