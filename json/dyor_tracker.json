@@ -2438,10 +2438,16 @@
       "fav": {
         "horse": "DREAM DIAMOND",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T14:00:52.220Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-10-13|Punchestown|14:20",
@@ -2480,10 +2486,67 @@
       },
       "recordedAt": "2026-10-13T14:20:52.365Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|14:45",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "14:45",
+      "horse": "MASTERIUS",
+      "price": "1/2",
+      "runners": 4,
+      "liveHorse": "MASTERIUS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MASTERIUS",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:30:47.145Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|14:39",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "14:39",
+      "horse": "DASHING DICK",
+      "price": "4/1",
+      "runners": 18,
+      "liveHorse": "THAT'S RANDOM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THAT'S RANDOM",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:30:47.175Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Punchestown|14:55",
+      "date": "2026-10-13",
+      "course": "Punchestown",
+      "time": "14:55",
+      "horse": "PAT O'S ROCK",
+      "price": "11/8",
+      "runners": 13,
+      "liveHorse": "PAT O'S ROCK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PAT O'S ROCK",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:40:45.063Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 92,
+    "recorded": 95,
     "pick": {
       "settled": 82,
       "won": 18,
@@ -2491,10 +2554,10 @@
       "roi": 9.8
     },
     "favourite": {
-      "settled": 82,
+      "settled": 83,
       "won": 26,
-      "pl": -6.82,
-      "roi": -8.3
+      "pl": -7.82,
+      "roi": -9.4
     },
     "agree": {
       "settled": 20,
