@@ -2136,10 +2136,16 @@
       "fav": {
         "horse": "MULVANEY'S RETURN",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T12:11:09.338Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     },
     {
       "id": "2026-10-13|Punchestown|12:35",
@@ -2159,10 +2165,48 @@
       },
       "recordedAt": "2026-10-13T12:21:06.496Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Hereford|12:45",
+      "date": "2026-10-13",
+      "course": "Hereford",
+      "time": "12:45",
+      "horse": "MISS DENVER",
+      "price": "4/7",
+      "runners": 5,
+      "liveHorse": "MISS DENVER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MISS DENVER",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T12:31:24.375Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|12:54",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "12:54",
+      "horse": "LADY FOXTROT",
+      "price": "4/1",
+      "runners": 12,
+      "liveHorse": "ATLANTIC GRACE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ATLANTIC GRACE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T12:41:01.453Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 79,
+    "recorded": 81,
     "pick": {
       "settled": 75,
       "won": 18,
@@ -2170,10 +2214,10 @@
       "roi": 20.1
     },
     "favourite": {
-      "settled": 76,
+      "settled": 77,
       "won": 26,
-      "pl": -0.82,
-      "roi": -1.1
+      "pl": -1.82,
+      "roi": -2.4
     },
     "agree": {
       "settled": 19,
