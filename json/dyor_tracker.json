@@ -2615,10 +2615,18 @@
       "fav": {
         "horse": "OVIEDO",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T15:00:50.566Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Southwell|15:20",
@@ -2634,10 +2642,14 @@
       "fav": {
         "horse": "L'AMANDINE",
         "price": "1/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/4"
       },
       "recordedAt": "2026-10-13T15:10:37.097Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/4"
     },
     {
       "id": "2026-10-13|Wolverhampton|15:25",
@@ -2653,10 +2665,16 @@
       "fav": {
         "horse": "MIDNIGHT'S DREAM",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-13T15:10:37.112Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Punchestown|15:30",
@@ -2676,21 +2694,78 @@
       },
       "recordedAt": "2026-10-13T15:20:40.835Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Hereford|15:38",
+      "date": "2026-10-13",
+      "course": "Hereford",
+      "time": "15:38",
+      "horse": "LUCY GLITTERS",
+      "price": "5/4",
+      "runners": 4,
+      "liveHorse": "LUCY GLITTERS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LUCY GLITTERS",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:30:38.935Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|15:52",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "15:52",
+      "horse": "WINSTON'S OATH",
+      "price": "8/11",
+      "runners": 11,
+      "liveHorse": "WINSTON'S OATH",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WINSTON'S OATH",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:40:31.674Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Leicester|15:47",
+      "date": "2026-10-13",
+      "course": "Leicester",
+      "time": "15:47",
+      "horse": "FORESEEN",
+      "price": "35/1",
+      "runners": 17,
+      "liveHorse": "FLIGHT CONTROL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FLIGHT CONTROL",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T15:40:31.689Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 100,
+    "recorded": 103,
     "pick": {
-      "settled": 86,
+      "settled": 88,
       "won": 18,
-      "pl": 4.07,
-      "roi": 4.7
+      "pl": 2.07,
+      "roi": 2.3
     },
     "favourite": {
-      "settled": 86,
+      "settled": 87,
       "won": 26,
-      "pl": -10.82,
-      "roi": -12.6
+      "pl": -11.82,
+      "roi": -13.6
     },
     "agree": {
       "settled": 21,
@@ -2699,10 +2774,10 @@
       "roi": -38.9
     },
     "disagree": {
-      "settled": 65,
+      "settled": 67,
       "won": 11,
-      "pl": 12.24,
-      "roi": 18.8
+      "pl": 10.24,
+      "roi": 15.3
     }
   },
   "lastBackfill": 1791895862483

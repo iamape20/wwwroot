@@ -1158,7 +1158,9 @@
       "rating": 72.7,
       "runners": 4,
       "recordedAt": "2026-10-13T15:10:36.873Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/4"
     },
     {
       "id": "2026-10-13|Punchestown|15:30",
@@ -1171,10 +1173,34 @@
       "runners": 15,
       "recordedAt": "2026-10-13T15:20:40.609Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Hereford|15:38",
+      "date": "2026-10-13",
+      "course": "Hereford",
+      "time": "15:38",
+      "horse": "LUCY GLITTERS",
+      "price": "5/4",
+      "rating": 65.4,
+      "runners": 4,
+      "recordedAt": "2026-10-13T15:30:38.734Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-13|Southwell|15:52",
+      "date": "2026-10-13",
+      "course": "Southwell",
+      "time": "15:52",
+      "horse": "WINSTON'S OATH",
+      "price": "8/11",
+      "rating": 64.8,
+      "runners": 11,
+      "recordedAt": "2026-10-13T15:40:31.455Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 72,
+    "recorded": 74,
     "settled": 65,
     "won": 36,
     "pl": 7.32,
