@@ -2463,10 +2463,16 @@
       "fav": {
         "horse": "LIVE TO LAUGH",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-13T14:10:50.442Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Hereford|14:30",
@@ -2482,10 +2488,18 @@
       "fav": {
         "horse": "SIXTY PLUS",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T14:20:52.365Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Southwell|14:45",
@@ -2520,10 +2534,18 @@
       "fav": {
         "horse": "THAT'S RANDOM",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-13T14:30:47.175Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-13|Punchestown|14:55",
@@ -2543,21 +2565,40 @@
       },
       "recordedAt": "2026-10-13T14:40:45.063Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-13|Hereford|15:05",
+      "date": "2026-10-13",
+      "course": "Hereford",
+      "time": "15:05",
+      "horse": "MIRACLES DO HAPPEN",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "MIRACLES DO HAPPEN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MIRACLES DO HAPPEN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-13T14:50:47.238Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 95,
+    "recorded": 96,
     "pick": {
-      "settled": 82,
+      "settled": 85,
       "won": 18,
-      "pl": 8.07,
-      "roi": 9.8
+      "pl": 5.07,
+      "roi": 6
     },
     "favourite": {
-      "settled": 83,
+      "settled": 85,
       "won": 26,
-      "pl": -7.82,
-      "roi": -9.4
+      "pl": -9.82,
+      "roi": -11.6
     },
     "agree": {
       "settled": 20,
@@ -2566,10 +2607,10 @@
       "roi": -35.9
     },
     "disagree": {
-      "settled": 62,
+      "settled": 65,
       "won": 11,
-      "pl": 15.24,
-      "roi": 24.6
+      "pl": 12.24,
+      "roi": 18.8
     }
   },
   "lastBackfill": 1791895862483

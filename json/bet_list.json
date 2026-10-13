@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:40:42.976Z",
+  "generatedAt": "2026-10-13T14:50:45.472Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 62/120 bets settled before the verdict.",
   "rules": [
@@ -14,20 +14,19 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Southwell",
-      "off": "15:45",
-      "status": "BET",
-      "horse": "MASTERIUS",
-      "price": "1/2"
-    },
-    {
       "course": "Wolverhampton",
       "off": "18:30",
       "status": "POSSIBLE",
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Southwell",
+      "off": "15:45",
+      "horse": "MASTERIUS"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-12",
@@ -196,7 +195,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-13T14:40:42.891Z",
+    "updatedAt": "2026-10-13T14:50:45.389Z",
     "claude": {
       "races": 38,
       "won": 7,
