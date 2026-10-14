@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T13:01:11.545Z",
+  "generatedAt": "2026-10-14T13:21:01.701Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 64/120 bets settled before the verdict.",
   "rules": [
@@ -32,14 +32,19 @@
       "revealAt": "16:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-14",
       "course": "Wetherby",
       "off": "14:00",
-      "horse": "MAGNETUDE"
-    }
-  ],
-  "recent": [
+      "horse": "MAGNETUDE",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-13",
       "course": "Wolverhampton",
@@ -193,21 +198,10 @@
       "bsp": 1.89120305,
       "pl": 0.847,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Cork",
-      "off": "13:02",
-      "horse": "WORLD OF THE WAY",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-14T13:01:11.440Z",
+    "updatedAt": "2026-10-14T13:21:01.588Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 64,
-      "won": 34,
-      "pl": -4.43,
-      "roi": -6.9,
-      "provisional": 0
+      "bets": 65,
+      "won": 35,
+      "pl": -4.03,
+      "roi": -6.2,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

@@ -3269,10 +3269,16 @@
       "fav": {
         "horse": "LONE WARRIOR",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T12:41:04.952Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-14|Wetherby|13:00",
@@ -3288,10 +3294,14 @@
       "fav": {
         "horse": "MAGNETUDE",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/5"
       },
       "recordedAt": "2026-10-14T12:50:59.427Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/5"
     },
     {
       "id": "2026-10-14|Punchestown|13:10",
@@ -3311,10 +3321,67 @@
       },
       "recordedAt": "2026-10-14T13:01:13.409Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|13:20",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "13:20",
+      "horse": "WANDERING EGO",
+      "price": "5/1",
+      "runners": 5,
+      "liveHorse": "SINNATRA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SINNATRA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T13:11:00.809Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Wetherby|13:35",
+      "date": "2026-10-14",
+      "course": "Wetherby",
+      "time": "13:35",
+      "horse": "REBEL TRIBESMAN",
+      "price": "13/8",
+      "runners": 5,
+      "liveHorse": "REBEL TRIBESMAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "REBEL TRIBESMAN",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T13:21:03.360Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Nottingham|13:29",
+      "date": "2026-10-14",
+      "course": "Nottingham",
+      "time": "13:29",
+      "horse": "SHARED ODYSSEY",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "FULCRUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FULCRUM",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T13:21:03.379Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 121,
+    "recorded": 124,
     "pick": {
       "settled": 116,
       "won": 31,
@@ -3322,10 +3389,10 @@
       "roi": 39.2
     },
     "favourite": {
-      "settled": 114,
+      "settled": 115,
       "won": 45,
-      "pl": 18.79,
-      "roi": 16.5
+      "pl": 17.79,
+      "roi": 15.5
     },
     "agree": {
       "settled": 32,
