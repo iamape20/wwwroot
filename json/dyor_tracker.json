@@ -3194,10 +3194,16 @@
       "fav": {
         "horse": "ENRICHED",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-14T12:11:15.105Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Punchestown|12:35",
@@ -3217,15 +3223,53 @@
       },
       "recordedAt": "2026-10-14T12:21:11.520Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|12:45",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "12:45",
+      "horse": "ROI DU ROUME",
+      "price": "7/2",
+      "runners": 10,
+      "liveHorse": "TELL THE TALE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TELL THE TALE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T12:31:09.479Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Nottingham|12:54",
+      "date": "2026-10-14",
+      "course": "Nottingham",
+      "time": "12:54",
+      "horse": "ADAMLYI",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "LONE WARRIOR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LONE WARRIOR",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T12:41:04.952Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 117,
+    "recorded": 119,
     "pick": {
-      "settled": 113,
+      "settled": 114,
       "won": 31,
-      "pl": 48.44,
-      "roi": 42.9
+      "pl": 47.44,
+      "roi": 41.6
     },
     "favourite": {
       "settled": 114,
@@ -3240,11 +3284,11 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 81,
+      "settled": 82,
       "won": 16,
-      "pl": 48.63,
-      "roi": 60
+      "pl": 47.63,
+      "roi": 58.1
     }
   },
-  "lastBackfill": 1791968485069
+  "lastBackfill": 1791981664964
 }
