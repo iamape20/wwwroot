@@ -4088,19 +4088,44 @@
       "fav": {
         "horse": "FAST TRACK HARRY",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-14T18:20:17.675Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-14|Kempton|19:00",
+      "date": "2026-10-14",
+      "course": "Kempton",
+      "time": "19:00",
+      "horse": "LONDONER",
+      "price": "3/1",
+      "runners": 13,
+      "liveHorse": "LONDONER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LONDONER",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T18:50:17.838Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 151,
+    "recorded": 152,
     "pick": {
-      "settled": 139,
+      "settled": 140,
       "won": 31,
-      "pl": 22.44,
-      "roi": 16.1
+      "pl": 21.44,
+      "roi": 15.3
     },
     "favourite": {
       "settled": 132,
@@ -4115,11 +4140,11 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 107,
+      "settled": 108,
       "won": 16,
-      "pl": 22.63,
-      "roi": 21.2
+      "pl": 21.63,
+      "roi": 20
     }
   },
-  "lastBackfill": 1791993032275
+  "lastBackfill": 1792004412636
 }
