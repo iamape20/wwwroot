@@ -3492,10 +3492,18 @@
       "fav": {
         "horse": "CAPTAIN COOL",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T14:01:04.484Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Punchestown|14:20",
@@ -3534,21 +3542,78 @@
       },
       "recordedAt": "2026-10-14T14:20:51.173Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Wetherby|14:45",
+      "date": "2026-10-14",
+      "course": "Wetherby",
+      "time": "14:45",
+      "horse": "BREIZH RIVER",
+      "price": "7/4",
+      "runners": 4,
+      "liveHorse": "JOSH THE BOSS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JOSH THE BOSS",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:30:55.376Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Nottingham|14:39",
+      "date": "2026-10-14",
+      "course": "Nottingham",
+      "time": "14:39",
+      "horse": "ZIMMERMAN",
+      "price": "22/1",
+      "runners": 10,
+      "liveHorse": "BELIEVITANDUCAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BELIEVITANDUCAN",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:30:55.395Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Punchestown|14:55",
+      "date": "2026-10-14",
+      "course": "Punchestown",
+      "time": "14:55",
+      "horse": "VITORIO PIEL",
+      "price": "3/1",
+      "runners": 4,
+      "liveHorse": "BUNTING",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BUNTING",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:40:46.946Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 130,
+    "recorded": 133,
     "pick": {
-      "settled": 120,
+      "settled": 121,
       "won": 31,
-      "pl": 41.44,
-      "roi": 34.5
+      "pl": 40.44,
+      "roi": 33.4
     },
     "favourite": {
-      "settled": 118,
+      "settled": 119,
       "won": 45,
-      "pl": 14.79,
-      "roi": 12.5
+      "pl": 13.79,
+      "roi": 11.6
     },
     "agree": {
       "settled": 32,
@@ -3557,10 +3622,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 88,
+      "settled": 89,
       "won": 16,
-      "pl": 41.63,
-      "roi": 47.3
+      "pl": 40.63,
+      "roi": 45.7
     }
   },
   "lastBackfill": 1791981664964
