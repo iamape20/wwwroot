@@ -2611,27 +2611,81 @@
       "marketVolume": 86
     },
     "lastBeforeOff": {
-      "at": "2026-10-14T12:41:04.597Z",
+      "at": "2026-10-14T12:50:59.076Z",
       "eventId": 34584274988701024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.61,
-      "available": 125.58,
+      "bestBack": 1.57,
+      "available": 33.08,
       "depth": [
         [
-          1.61,
-          125.58
+          1.57,
+          33.08
         ],
         [
-          1.6,
-          212.7
+          1.56,
+          278.93
         ],
         [
-          1.59,
-          233.76
+          1.55,
+          670.71
         ]
       ],
-      "marketVolume": 37001
+      "marketVolume": 53206
+    }
+  },
+  "BET|2026-10-14|Wetherby|13:00|MAGNETUDE": {
+    "type": "BET",
+    "date": "2026-10-14",
+    "course": "Wetherby",
+    "time": "13:00",
+    "horse": "MAGNETUDE",
+    "betId": "2026-10-14|Wetherby|13:00",
+    "atReveal": {
+      "at": "2026-10-14T12:50:59.071Z",
+      "eventId": 34584274988701024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.57,
+      "available": 33.08,
+      "depth": [
+        [
+          1.57,
+          33.08
+        ],
+        [
+          1.56,
+          278.93
+        ],
+        [
+          1.55,
+          670.71
+        ]
+      ],
+      "marketVolume": 53206
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-14T12:50:59.071Z",
+      "eventId": 34584274988701024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.57,
+      "available": 33.08,
+      "depth": [
+        [
+          1.57,
+          33.08
+        ],
+        [
+          1.56,
+          278.93
+        ],
+        [
+          1.55,
+          670.71
+        ]
+      ],
+      "marketVolume": 53206
     }
   }
 }
