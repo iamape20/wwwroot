@@ -3442,10 +3442,18 @@
       "fav": {
         "horse": "GUARD YOUR DREAMS",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T13:40:52.809Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Nottingham|14:04",
@@ -3461,10 +3469,14 @@
       "fav": {
         "horse": "KNIGHTS CHARGE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-14T13:50:56.648Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/6"
     },
     {
       "id": "2026-10-14|Wetherby|14:10",
@@ -3484,21 +3496,59 @@
       },
       "recordedAt": "2026-10-14T14:01:04.484Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Punchestown|14:20",
+      "date": "2026-10-14",
+      "course": "Punchestown",
+      "time": "14:20",
+      "horse": "AVALO",
+      "price": "9/2",
+      "runners": 13,
+      "liveHorse": "WONDERFUL EVERYDAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WONDERFUL EVERYDAY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:10:51.656Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|14:30",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "14:30",
+      "horse": "TAMARIND BAY",
+      "price": "13/2",
+      "runners": 4,
+      "liveHorse": "TUTTI QUANTI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TUTTI QUANTI",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:20:51.173Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 128,
+    "recorded": 130,
     "pick": {
-      "settled": 119,
+      "settled": 120,
       "won": 31,
-      "pl": 42.44,
-      "roi": 35.7
+      "pl": 41.44,
+      "roi": 34.5
     },
     "favourite": {
-      "settled": 117,
+      "settled": 118,
       "won": 45,
-      "pl": 15.79,
-      "roi": 13.5
+      "pl": 14.79,
+      "roi": 12.5
     },
     "agree": {
       "settled": 32,
@@ -3507,10 +3557,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 87,
+      "settled": 88,
       "won": 16,
-      "pl": 42.63,
-      "roi": 49
+      "pl": 41.63,
+      "roi": 47.3
     }
   },
   "lastBackfill": 1791981664964
