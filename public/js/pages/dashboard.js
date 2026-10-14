@@ -189,10 +189,13 @@ function renderNapCallout(nap) {
         return;
     }
 
+    // Market-override pick: the stored gap is the rating leader's lead, not this horse's.
     const gapText =
-        typeof nap.gap === "number" && nap.gap > 0
-            ? ` \u2022 +${nap.gap.toFixed(1)} clear`
-            : "";
+        nap.modelTop && nap.modelTop.name
+            ? ` \u2022 market pick; model prefers ${escapeHtml(nap.modelTop.name)} (${nap.modelTop.rating})`
+            : typeof nap.gap === "number" && nap.gap > 0
+                ? ` \u2022 +${nap.gap.toFixed(1)} clear`
+                : "";
 
     const timeText =
         nap.time ? toLocalTimeString(nap.time) : "-";
