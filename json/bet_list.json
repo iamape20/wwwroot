@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-14T15:00:44.591Z",
+  "generatedAt": "2026-10-14T15:20:36.046Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 65/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 66/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -16,18 +16,24 @@
     {
       "course": "Punchestown",
       "off": "16:30",
-      "status": "POSSIBLE",
-      "revealAt": "16:15"
+      "status": "BET",
+      "horse": "GORGEOUS TOM",
+      "price": "1/2"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-14",
       "course": "Punchestown",
       "off": "15:55",
-      "horse": "BUNTING"
-    }
-  ],
-  "recent": [
+      "horse": "BUNTING",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-14",
       "course": "Ffos Las",
@@ -181,21 +187,10 @@
       "bsp": 1.90717943,
       "pl": 0.862,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Naas",
-      "off": "13:56",
-      "horse": "BENGAL TIGER",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.29,
-      "pl": 0.276,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-14T15:00:44.486Z",
+    "updatedAt": "2026-10-14T15:20:35.973Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,10 +213,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 66,
+      "bets": 67,
       "won": 35,
-      "pl": -5.03,
-      "roi": -7.6,
+      "pl": -6.03,
+      "roi": -9,
       "provisional": 1
     },
     "live": {
