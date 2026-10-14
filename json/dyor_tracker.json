@@ -3519,10 +3519,18 @@
       "fav": {
         "horse": "WONDERFUL EVERYDAY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T14:10:51.656Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Ffos Las|14:30",
@@ -3538,10 +3546,18 @@
       "fav": {
         "horse": "TUTTI QUANTI",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T14:20:51.173Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Wetherby|14:45",
@@ -3576,10 +3592,18 @@
       "fav": {
         "horse": "BELIEVITANDUCAN",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T14:30:55.395Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Punchestown|14:55",
@@ -3599,21 +3623,59 @@
       },
       "recordedAt": "2026-10-14T14:40:46.946Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|15:05",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "15:05",
+      "horse": "ETALON",
+      "price": "6/1",
+      "runners": 6,
+      "liveHorse": "BEN SOLO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BEN SOLO",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T14:50:47.048Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Nottingham|15:14",
+      "date": "2026-10-14",
+      "course": "Nottingham",
+      "time": "15:14",
+      "horse": "GUNALT WAVELENGTH",
+      "price": "9/1",
+      "runners": 10,
+      "liveHorse": "MAYAADA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAYAADA",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T15:00:46.444Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 133,
+    "recorded": 135,
     "pick": {
-      "settled": 121,
+      "settled": 124,
       "won": 31,
-      "pl": 40.44,
-      "roi": 33.4
+      "pl": 37.44,
+      "roi": 30.2
     },
     "favourite": {
-      "settled": 119,
+      "settled": 122,
       "won": 45,
-      "pl": 13.79,
-      "roi": 11.6
+      "pl": 10.79,
+      "roi": 8.8
     },
     "agree": {
       "settled": 32,
@@ -3622,10 +3684,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 89,
+      "settled": 92,
       "won": 16,
-      "pl": 40.63,
-      "roi": 45.7
+      "pl": 37.63,
+      "roi": 40.9
     }
   },
   "lastBackfill": 1791981664964
