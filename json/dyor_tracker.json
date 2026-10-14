@@ -3807,10 +3807,16 @@
       "fav": {
         "horse": "CENTURION'S SISTER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-14T15:40:35.189Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Nottingham|15:47",
@@ -3853,10 +3859,18 @@
       "fav": {
         "horse": "NOBLE PRINCE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T15:50:32.263Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Punchestown|16:07",
@@ -3895,21 +3909,59 @@
       },
       "recordedAt": "2026-10-14T16:00:28.900Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Nottingham|16:22",
+      "date": "2026-10-14",
+      "course": "Nottingham",
+      "time": "16:22",
+      "horse": "RAMBUSO CREEK",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "LEGENDSOFTHELAND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LEGENDSOFTHELAND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T16:10:28.869Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Kempton|16:30",
+      "date": "2026-10-14",
+      "course": "Kempton",
+      "time": "16:30",
+      "horse": "GUNFIGHTER",
+      "price": "10/11",
+      "runners": 10,
+      "liveHorse": "GUNFIGHTER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GUNFIGHTER",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T16:20:30.870Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 144,
+    "recorded": 146,
     "pick": {
-      "settled": 132,
+      "settled": 134,
       "won": 31,
-      "pl": 29.44,
-      "roi": 22.3
+      "pl": 27.44,
+      "roi": 20.5
     },
     "favourite": {
-      "settled": 127,
+      "settled": 128,
       "won": 45,
-      "pl": 5.79,
-      "roi": 4.6
+      "pl": 4.79,
+      "roi": 3.7
     },
     "agree": {
       "settled": 32,
@@ -3918,10 +3970,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 100,
+      "settled": 102,
       "won": 16,
-      "pl": 29.63,
-      "roi": 29.6
+      "pl": 27.63,
+      "roi": 27.1
     }
   },
   "lastBackfill": 1791993032275
