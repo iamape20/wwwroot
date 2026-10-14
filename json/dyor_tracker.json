@@ -3961,10 +3961,14 @@
       "fav": {
         "horse": "GUNFIGHTER",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-14T16:20:30.870Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-10-14|Punchestown|16:40",
@@ -3984,10 +3988,29 @@
       },
       "recordedAt": "2026-10-14T16:30:24.417Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Kempton|17:00",
+      "date": "2026-10-14",
+      "course": "Kempton",
+      "time": "17:00",
+      "horse": "KITARO KICH",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "MERTOUN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MERTOUN",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T16:50:21.841Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 147,
+    "recorded": 148,
     "pick": {
       "settled": 135,
       "won": 31,
