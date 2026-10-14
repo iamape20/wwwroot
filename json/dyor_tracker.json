@@ -3317,10 +3317,16 @@
       "fav": {
         "horse": "APACHE PEAK",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T13:01:13.409Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/5"
     },
     {
       "id": "2026-10-14|Ffos Las|13:20",
@@ -3336,10 +3342,16 @@
       "fav": {
         "horse": "SINNATRA",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-14T13:11:00.809Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Wetherby|13:35",
@@ -3374,25 +3386,71 @@
       "fav": {
         "horse": "FULCRUM",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T13:21:03.379Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-14|Punchestown|13:45",
+      "date": "2026-10-14",
+      "course": "Punchestown",
+      "time": "13:45",
+      "horse": "ASTELIA",
+      "price": "15/8",
+      "runners": 5,
+      "liveHorse": "THE DOTSKI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE DOTSKI",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T13:31:06.336Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|13:55",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "13:55",
+      "horse": "NOCTE VOLATUS",
+      "price": "9/1",
+      "runners": 8,
+      "liveHorse": "GUARD YOUR DREAMS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GUARD YOUR DREAMS",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T13:40:52.809Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 124,
+    "recorded": 126,
     "pick": {
-      "settled": 116,
+      "settled": 118,
       "won": 31,
-      "pl": 45.44,
-      "roi": 39.2
+      "pl": 43.44,
+      "roi": 36.8
     },
     "favourite": {
-      "settled": 115,
+      "settled": 117,
       "won": 45,
-      "pl": 17.79,
-      "roi": 15.5
+      "pl": 15.79,
+      "roi": 13.5
     },
     "agree": {
       "settled": 32,
@@ -3401,10 +3459,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 84,
+      "settled": 86,
       "won": 16,
-      "pl": 45.63,
-      "roi": 54.3
+      "pl": 43.63,
+      "roi": 50.7
     }
   },
   "lastBackfill": 1791981664964
