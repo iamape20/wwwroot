@@ -4061,25 +4061,52 @@
       "fav": {
         "horse": "CHALK MOUNTAIN",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T17:50:17.795Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-14|Kempton|18:30",
+      "date": "2026-10-14",
+      "course": "Kempton",
+      "time": "18:30",
+      "horse": "BINTARYANA",
+      "price": "13/2",
+      "runners": 11,
+      "liveHorse": "FAST TRACK HARRY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FAST TRACK HARRY",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T18:20:17.675Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 150,
+    "recorded": 151,
     "pick": {
-      "settled": 138,
+      "settled": 139,
       "won": 31,
-      "pl": 23.44,
-      "roi": 17
+      "pl": 22.44,
+      "roi": 16.1
     },
     "favourite": {
-      "settled": 131,
+      "settled": 132,
       "won": 45,
-      "pl": 1.79,
-      "roi": 1.4
+      "pl": 0.79,
+      "roi": 0.6
     },
     "agree": {
       "settled": 32,
@@ -4088,10 +4115,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 106,
+      "settled": 107,
       "won": 16,
-      "pl": 23.63,
-      "roi": 22.3
+      "pl": 22.63,
+      "roi": 21.2
     }
   },
   "lastBackfill": 1791993032275
