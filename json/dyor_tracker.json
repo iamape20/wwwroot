@@ -3680,10 +3680,16 @@
       "fav": {
         "horse": "MAYAADA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-14T15:00:46.444Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Wetherby|15:20",
@@ -3741,15 +3747,34 @@
       },
       "recordedAt": "2026-10-14T15:20:37.929Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Ffos Las|15:38",
+      "date": "2026-10-14",
+      "course": "Ffos Las",
+      "time": "15:38",
+      "horse": "CREBILLY",
+      "price": "3/1",
+      "runners": 8,
+      "liveHorse": "IL EST FRANCAIS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IL EST FRANCAIS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T15:30:37.809Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 138,
+    "recorded": 139,
     "pick": {
-      "settled": 126,
+      "settled": 127,
       "won": 31,
-      "pl": 35.44,
-      "roi": 28.1
+      "pl": 34.44,
+      "roi": 27.1
     },
     "favourite": {
       "settled": 125,
@@ -3764,10 +3789,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 94,
+      "settled": 95,
       "won": 16,
-      "pl": 35.63,
-      "roi": 37.9
+      "pl": 34.63,
+      "roi": 36.5
     }
   },
   "lastBackfill": 1791981664964
