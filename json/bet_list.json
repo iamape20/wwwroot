@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T15:40:33.938Z",
+  "generatedAt": "2026-10-14T16:00:27.629Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 66/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-14",
       "course": "Punchestown",
       "off": "16:30",
-      "horse": "GORGEOUS TOM"
-    }
-  ],
-  "recent": [
+      "horse": "GORGEOUS TOM",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-14",
       "course": "Punchestown",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Cork",
-      "off": "14:47",
-      "horse": "MARTYMILL",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.90717943,
-      "pl": 0.862,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-14T15:40:33.860Z",
+    "updatedAt": "2026-10-14T16:00:27.540Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 67,
-      "won": 35,
-      "pl": -6.03,
-      "roi": -9,
-      "provisional": 1
+      "bets": 68,
+      "won": 36,
+      "pl": -5.37,
+      "roi": -7.9,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
