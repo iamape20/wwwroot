@@ -4140,10 +4140,16 @@
       "fav": {
         "horse": "THUNDER GODDESS",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T19:20:16.548Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     }
   ],
   "stats": {
@@ -4155,10 +4161,10 @@
       "roi": 14.5
     },
     "favourite": {
-      "settled": 133,
+      "settled": 134,
       "won": 45,
-      "pl": -0.21,
-      "roi": -0.2
+      "pl": -1.21,
+      "roi": -0.9
     },
     "agree": {
       "settled": 33,
