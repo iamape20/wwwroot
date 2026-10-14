@@ -3886,10 +3886,16 @@
       "fav": {
         "horse": "AUREA FORTUNA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T16:00:28.886Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
     },
     {
       "id": "2026-10-14|Ffos Las|16:13",
@@ -3905,10 +3911,16 @@
       "fav": {
         "horse": "GINGERBRED",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-14T16:00:28.900Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-14|Nottingham|16:22",
@@ -3924,10 +3936,16 @@
       "fav": {
         "horse": "LEGENDSOFTHELAND",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-14T16:10:28.869Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-14|Kempton|16:30",
@@ -3947,21 +3965,40 @@
       },
       "recordedAt": "2026-10-14T16:20:30.870Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-14|Punchestown|16:40",
+      "date": "2026-10-14",
+      "course": "Punchestown",
+      "time": "16:40",
+      "horse": "HILLY FILLY",
+      "price": "11/2",
+      "runners": 11,
+      "liveHorse": "FRISCO LAD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FRISCO LAD",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-14T16:30:24.417Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 146,
+    "recorded": 147,
     "pick": {
-      "settled": 134,
+      "settled": 135,
       "won": 31,
-      "pl": 27.44,
-      "roi": 20.5
+      "pl": 26.44,
+      "roi": 19.6
     },
     "favourite": {
-      "settled": 128,
+      "settled": 130,
       "won": 45,
-      "pl": 4.79,
-      "roi": 3.7
+      "pl": 2.79,
+      "roi": 2.1
     },
     "agree": {
       "settled": 32,
@@ -3970,10 +4007,10 @@
       "roi": -0.6
     },
     "disagree": {
-      "settled": 102,
+      "settled": 103,
       "won": 16,
-      "pl": 27.63,
-      "roi": 27.1
+      "pl": 26.63,
+      "roi": 25.9
     }
   },
   "lastBackfill": 1791993032275
