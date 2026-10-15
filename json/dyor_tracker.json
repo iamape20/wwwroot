@@ -5234,25 +5234,52 @@
       "fav": {
         "horse": "MRS BLUE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T18:50:19.843Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-15|Southwell|19:30",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "NORFLONDONFOREVER",
+      "price": "1/1",
+      "runners": 7,
+      "liveHorse": "NORFLONDONFOREVER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "NORFLONDONFOREVER",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T19:20:23.294Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 192,
+    "recorded": 193,
     "pick": {
-      "settled": 182,
+      "settled": 183,
       "won": 40,
-      "pl": 8.89,
-      "roi": 4.9
+      "pl": 7.89,
+      "roi": 4.3
     },
     "favourite": {
-      "settled": 177,
+      "settled": 178,
       "won": 63,
-      "pl": 5.35,
-      "roi": 3
+      "pl": 4.35,
+      "roi": 2.4
     },
     "agree": {
       "settled": 41,
@@ -5261,11 +5288,11 @@
       "roi": -0.3
     },
     "disagree": {
-      "settled": 141,
+      "settled": 142,
       "won": 21,
-      "pl": 8.99,
-      "roi": 6.4
+      "pl": 7.99,
+      "roi": 5.6
     }
   },
-  "lastBackfill": 1792080035032
+  "lastBackfill": 1792091435494
 }
