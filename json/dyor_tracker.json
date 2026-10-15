@@ -4506,10 +4506,16 @@
       "fav": {
         "horse": "THUNDER ROCK",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-15T13:20:58.183Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|13:40",
@@ -4525,10 +4531,18 @@
       "fav": {
         "horse": "REECE'S CALL",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T13:30:54.521Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|13:47",
@@ -4544,10 +4558,18 @@
       "fav": {
         "horse": "SUIR MONAD",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T13:40:54.106Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|13:54",
@@ -4567,21 +4589,59 @@
       },
       "recordedAt": "2026-10-15T13:40:54.119Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Perth|14:05",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "14:05",
+      "horse": "MAGNOLIA",
+      "price": "9/4",
+      "runners": 9,
+      "liveHorse": "TAP TAP SHAMIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TAP TAP SHAMIE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:50:54.186Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|14:15",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "14:15",
+      "horse": "DREAM OF ITHACA",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "SHIFRA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHIFRA",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T14:01:00.471Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 167,
+    "recorded": 169,
     "pick": {
-      "settled": 159,
+      "settled": 162,
       "won": 40,
-      "pl": 31.89,
-      "roi": 20.1
+      "pl": 28.89,
+      "roi": 17.8
     },
     "favourite": {
-      "settled": 158,
+      "settled": 160,
       "won": 63,
-      "pl": 24.35,
-      "roi": 15.4
+      "pl": 22.35,
+      "roi": 14
     },
     "agree": {
       "settled": 38,
@@ -4590,10 +4650,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 121,
+      "settled": 124,
       "won": 21,
-      "pl": 28.99,
-      "roi": 24
+      "pl": 25.99,
+      "roi": 21
     }
   },
   "lastBackfill": 1792068677364
