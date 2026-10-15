@@ -4953,10 +4953,18 @@
       "fav": {
         "horse": "VELVET OUTLAW",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:40:35.660Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|15:55",
@@ -4972,10 +4980,18 @@
       "fav": {
         "horse": "BERNING HOT",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:40:35.682Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Southwell|16:00",
@@ -4991,10 +5007,18 @@
       "fav": {
         "horse": "JUNGLE RULER",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:50:34.575Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|16:07",
@@ -5010,10 +5034,18 @@
       "fav": {
         "horse": "SHE'S ON THE BALL",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T16:00:35.017Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|16:14",
@@ -5033,33 +5065,71 @@
       },
       "recordedAt": "2026-10-15T16:00:35.030Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|16:25",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "16:25",
+      "horse": "BATED BREEZE",
+      "price": "4/1",
+      "runners": 9,
+      "liveHorse": "HARRY MOLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HARRY MOLE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T16:10:32.278Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Southwell|16:30",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "16:30",
+      "horse": "GROVE STREET",
+      "price": "2/5",
+      "runners": 10,
+      "liveHorse": "GROVE STREET",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GROVE STREET",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T16:20:30.259Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 185,
+    "recorded": 187,
     "pick": {
-      "settled": 173,
+      "settled": 177,
       "won": 40,
-      "pl": 17.89,
-      "roi": 10.3
+      "pl": 13.89,
+      "roi": 7.8
     },
     "favourite": {
-      "settled": 172,
+      "settled": 176,
       "won": 63,
-      "pl": 10.35,
-      "roi": 6
+      "pl": 6.35,
+      "roi": 3.6
     },
     "agree": {
-      "settled": 39,
+      "settled": 41,
       "won": 19,
-      "pl": 1.9,
-      "roi": 4.9
+      "pl": -0.1,
+      "roi": -0.3
     },
     "disagree": {
-      "settled": 134,
+      "settled": 136,
       "won": 21,
-      "pl": 15.99,
-      "roi": 11.9
+      "pl": 13.99,
+      "roi": 10.3
     }
   },
   "lastBackfill": 1792080035032
