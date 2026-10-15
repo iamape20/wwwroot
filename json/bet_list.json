@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T14:20:50.499Z",
+  "generatedAt": "2026-10-15T14:40:43.931Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 71/120 bets settled before the verdict.",
   "rules": [
@@ -14,20 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Curragh",
-      "off": "15:22",
-      "status": "BET",
-      "horse": "ALMAZANN",
-      "price": "11/8"
-    },
-    {
-      "course": "Fontwell",
-      "off": "15:29",
-      "status": "BET",
-      "horse": "EMERALD QUEST",
-      "price": "8/11"
-    },
-    {
       "course": "Southwell",
       "off": "17:30",
       "status": "POSSIBLE",
@@ -40,8 +26,25 @@
       "revealAt": "18:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Fontwell",
+      "off": "15:29",
+      "horse": "EMERALD QUEST"
+    }
+  ],
   "recent": [
+    {
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "off": "15:22",
+      "horse": "ALMAZANN",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-15",
       "course": "Curragh",
@@ -195,21 +198,10 @@
       "bsp": 1.24785324,
       "pl": 0.235,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-12",
-      "course": "Musselburgh",
-      "off": "14:17",
-      "horse": "VEGASMILE",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.26,
-      "pl": 0.247,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T14:20:50.425Z",
+    "updatedAt": "2026-10-15T14:40:43.827Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -232,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 73,
-      "won": 38,
-      "pl": -7.57,
-      "roi": -10.4,
-      "provisional": 2
+      "bets": 74,
+      "won": 39,
+      "pl": -6.2,
+      "roi": -8.4,
+      "provisional": 3
     },
     "live": {
       "bets": 0,

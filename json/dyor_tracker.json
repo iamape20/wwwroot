@@ -4637,10 +4637,18 @@
       "fav": {
         "horse": "SHIFRA",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T14:01:00.471Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|14:22",
@@ -4656,10 +4664,16 @@
       "fav": {
         "horse": "ALMAZANN",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-15T14:10:46.554Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|14:29",
@@ -4679,21 +4693,59 @@
       },
       "recordedAt": "2026-10-15T14:20:52.545Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Perth|14:40",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "14:40",
+      "horse": "TANKING ALONG",
+      "price": "5/1",
+      "runners": 8,
+      "liveHorse": "ORDEROFTHEDAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ORDEROFTHEDAY",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T14:30:52.437Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|14:50",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "14:50",
+      "horse": "CELEBRATING ETHEL",
+      "price": "10/1",
+      "runners": 11,
+      "liveHorse": "DEEP SLEEP",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DEEP SLEEP",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T14:40:46.655Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 171,
+    "recorded": 173,
     "pick": {
-      "settled": 164,
+      "settled": 166,
       "won": 40,
-      "pl": 26.89,
-      "roi": 16.4
+      "pl": 24.89,
+      "roi": 15
     },
     "favourite": {
-      "settled": 161,
+      "settled": 162,
       "won": 63,
-      "pl": 21.35,
-      "roi": 13.3
+      "pl": 20.35,
+      "roi": 12.6
     },
     "agree": {
       "settled": 38,
@@ -4702,10 +4754,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 126,
+      "settled": 128,
       "won": 21,
-      "pl": 23.99,
-      "roi": 19
+      "pl": 21.99,
+      "roi": 17.2
     }
   },
   "lastBackfill": 1792068677364
