@@ -1091,8 +1091,9 @@
       "revealedAt": "2026-10-14T12:50:57.508Z",
       "result": "won",
       "isp": "2/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.44,
+      "pl": 0.418,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-14|Ffos Las|14:30",
@@ -1141,12 +1142,13 @@
       "revealedAt": "2026-10-14T15:20:36.046Z",
       "result": "won",
       "isp": "4/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.76,
+      "pl": 0.722,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792044072223
+  "lastBackfill": 1792054885111
 }
