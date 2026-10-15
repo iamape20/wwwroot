@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T12:21:24.009Z",
+  "generatedAt": "2026-10-15T12:41:10.888Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 70/120 bets settled before the verdict.",
   "rules": [
@@ -13,13 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Perth",
-      "off": "13:25",
-      "status": "BET",
-      "horse": "KABRAL DU MATHAN",
-      "price": "1/5"
-    },
     {
       "course": "Brighton",
       "off": "14:05",
@@ -53,6 +46,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-15",
+      "course": "Perth",
+      "off": "13:25",
+      "horse": "KABRAL DU MATHAN",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-15",
       "course": "Curragh",
@@ -206,21 +210,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Chepstow",
-      "off": "16:57",
-      "horse": "OLD COAST ROAD",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T12:21:23.826Z",
+    "updatedAt": "2026-10-15T12:41:10.758Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -243,11 +236,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 70,
-      "won": 36,
-      "pl": -7.29,
-      "roi": -10.4,
-      "provisional": 0
+      "bets": 71,
+      "won": 37,
+      "pl": -7.07,
+      "roi": -10,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
