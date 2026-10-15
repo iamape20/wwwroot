@@ -5184,19 +5184,44 @@
       "fav": {
         "horse": "LOVELY DARK ANGEL",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-15T17:50:20.467Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-15|Southwell|18:30",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "HUNKY DORY",
+      "price": "20/1",
+      "runners": 9,
+      "liveHorse": "YORDAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "YORDAN",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T18:20:22.733Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 190,
+    "recorded": 191,
     "pick": {
-      "settled": 180,
+      "settled": 181,
       "won": 40,
-      "pl": 10.89,
-      "roi": 6.1
+      "pl": 9.89,
+      "roi": 5.5
     },
     "favourite": {
       "settled": 177,
@@ -5211,10 +5236,10 @@
       "roi": -0.3
     },
     "disagree": {
-      "settled": 139,
+      "settled": 140,
       "won": 21,
-      "pl": 10.99,
-      "roi": 7.9
+      "pl": 9.99,
+      "roi": 7.1
     }
   },
   "lastBackfill": 1792080035032
