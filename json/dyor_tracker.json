@@ -4246,10 +4246,18 @@
       "fav": {
         "horse": "EASTERN FIRE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T11:41:20.895Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|12:02",
@@ -4265,25 +4273,71 @@
       "fav": {
         "horse": "CHAMPION BASMA",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T11:51:18.132Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-15|Perth|12:25",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "12:25",
+      "horse": "HOLD THE SERVE",
+      "price": "4/1",
+      "runners": 4,
+      "liveHorse": "KABRAL DU MATHAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KABRAL DU MATHAN",
+        "price": "1/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T12:11:24.341Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|12:32",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "12:32",
+      "horse": "ROMAN SPRING",
+      "price": "11/2",
+      "runners": 10,
+      "liveHorse": "VALADERO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VALADERO",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T12:21:28.316Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 155,
+    "recorded": 157,
     "pick": {
-      "settled": 150,
+      "settled": 152,
       "won": 40,
-      "pl": 40.89,
-      "roi": 27.3
+      "pl": 38.89,
+      "roi": 25.6
     },
     "favourite": {
-      "settled": 152,
+      "settled": 154,
       "won": 63,
-      "pl": 30.35,
-      "roi": 20
+      "pl": 28.35,
+      "roi": 18.4
     },
     "agree": {
       "settled": 37,
@@ -4292,10 +4346,10 @@
       "roi": 10.5
     },
     "disagree": {
-      "settled": 113,
+      "settled": 115,
       "won": 21,
-      "pl": 36.99,
-      "roi": 32.7
+      "pl": 34.99,
+      "roi": 30.4
     }
   },
   "lastBackfill": 1792054894682

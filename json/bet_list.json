@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-15T12:01:16.969Z",
+  "generatedAt": "2026-10-15T12:21:24.009Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 68/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 70/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Curragh",
-      "off": "13:02",
-      "status": "BET",
-      "horse": "CHAMPION BASMA",
-      "price": "11/8"
-    },
-    {
       "course": "Perth",
       "off": "13:25",
-      "status": "POSSIBLE",
-      "revealAt": "13:10"
+      "status": "BET",
+      "horse": "KABRAL DU MATHAN",
+      "price": "1/5"
     },
     {
       "course": "Brighton",
@@ -57,14 +51,30 @@
       "revealAt": "18:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "off": "13:02",
+      "horse": "CHAMPION BASMA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-15",
       "course": "Perth",
       "off": "12:55",
-      "horse": "EASTERN FIRE"
-    }
-  ],
-  "recent": [
+      "horse": "EASTERN FIRE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-14",
       "course": "Punchestown",
@@ -207,32 +217,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Goodwood",
-      "off": "16:07",
-      "horse": "ROYAL ACCLAMATION",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.83115535,
-      "pl": 0.79,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Cork",
-      "off": "15:57",
-      "horse": "MOYLUSSA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T12:01:16.781Z",
+    "updatedAt": "2026-10-15T12:21:23.826Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -255,10 +243,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 68,
+      "bets": 70,
       "won": 36,
-      "pl": -5.29,
-      "roi": -7.8,
+      "pl": -7.29,
+      "roi": -10.4,
       "provisional": 0
     },
     "live": {
