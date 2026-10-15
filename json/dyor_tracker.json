@@ -4872,10 +4872,18 @@
       "fav": {
         "horse": "JORDAN BREEZE",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:20:43.508Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Southwell|15:30",
@@ -4891,10 +4899,18 @@
       "fav": {
         "horse": "OXFORD CIRCUS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:20:43.522Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|15:39",
@@ -4910,10 +4926,18 @@
       "fav": {
         "horse": "CHIEF SUNDAY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:30:42.350Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Perth|15:50",
@@ -4952,34 +4976,91 @@
       },
       "recordedAt": "2026-10-15T15:40:35.682Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Southwell|16:00",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "16:00",
+      "horse": "JUNGLE RULER",
+      "price": "11/4",
+      "runners": 11,
+      "liveHorse": "JUNGLE RULER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JUNGLE RULER",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:50:34.575Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Curragh|16:07",
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "time": "16:07",
+      "horse": "LOINGSEOIR",
+      "price": "12/1",
+      "runners": 20,
+      "liveHorse": "SHE'S ON THE BALL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHE'S ON THE BALL",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T16:00:35.017Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Fontwell|16:14",
+      "date": "2026-10-15",
+      "course": "Fontwell",
+      "time": "16:14",
+      "horse": "ATREIDES",
+      "price": "9/2",
+      "runners": 6,
+      "liveHorse": "BALLYMOREEN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYMOREEN",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T16:00:35.030Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 182,
+    "recorded": 185,
     "pick": {
-      "settled": 170,
+      "settled": 173,
       "won": 40,
-      "pl": 20.89,
-      "roi": 12.3
+      "pl": 17.89,
+      "roi": 10.3
     },
     "favourite": {
-      "settled": 169,
+      "settled": 172,
       "won": 63,
-      "pl": 13.35,
-      "roi": 7.9
+      "pl": 10.35,
+      "roi": 6
     },
     "agree": {
-      "settled": 38,
+      "settled": 39,
       "won": 19,
-      "pl": 2.9,
-      "roi": 7.6
+      "pl": 1.9,
+      "roi": 4.9
     },
     "disagree": {
-      "settled": 132,
+      "settled": 134,
       "won": 21,
-      "pl": 17.99,
-      "roi": 13.6
+      "pl": 15.99,
+      "roi": 11.9
     }
   },
-  "lastBackfill": 1792068677364
+  "lastBackfill": 1792080035032
 }
