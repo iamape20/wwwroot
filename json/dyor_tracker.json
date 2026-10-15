@@ -5136,14 +5136,37 @@
       "fav": {
         "horse": "MIDNIGHT'S DREAM",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-15T16:50:23.165Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
+    },
+    {
+      "id": "2026-10-15|Southwell|17:30",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "17:30",
+      "horse": "MICKEY MONGOOSE",
+      "price": "7/1",
+      "runners": 11,
+      "liveHorse": "DISTILLATE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DISTILLATE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T17:20:22.436Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 188,
+    "recorded": 189,
     "pick": {
       "settled": 179,
       "won": 40,
