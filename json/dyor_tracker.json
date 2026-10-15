@@ -4714,10 +4714,16 @@
       "fav": {
         "horse": "ORDEROFTHEDAY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T14:30:52.437Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     },
     {
       "id": "2026-10-15|Brighton|14:50",
@@ -4775,10 +4781,29 @@
       },
       "recordedAt": "2026-10-15T14:50:53.259Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Perth|15:15",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "15:15",
+      "horse": "FOLLOW CHARLIE",
+      "price": "7/2",
+      "runners": 7,
+      "liveHorse": "KADO SACREE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KADO SACREE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:00:50.723Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 175,
+    "recorded": 176,
     "pick": {
       "settled": 166,
       "won": 40,
@@ -4786,10 +4811,10 @@
       "roi": 15
     },
     "favourite": {
-      "settled": 163,
+      "settled": 164,
       "won": 63,
-      "pl": 19.35,
-      "roi": 11.9
+      "pl": 18.35,
+      "roi": 11.2
     },
     "agree": {
       "settled": 38,
