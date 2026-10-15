@@ -4454,10 +4454,18 @@
       "fav": {
         "horse": "LUNAR EMPRESS",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T13:01:32.082Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|13:19",
@@ -4473,10 +4481,16 @@
       "fav": {
         "horse": "DOUBLE POWERFUL",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/11"
       },
       "recordedAt": "2026-10-15T13:11:00.478Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Perth|13:30",
@@ -4496,33 +4510,90 @@
       },
       "recordedAt": "2026-10-15T13:20:58.183Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|13:40",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "13:40",
+      "horse": "ANNA BELARDO",
+      "price": "33/1",
+      "runners": 12,
+      "liveHorse": "REECE'S CALL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "REECE'S CALL",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:30:54.521Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Curragh|13:47",
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "time": "13:47",
+      "horse": "LADY ARWEN",
+      "price": "8/1",
+      "runners": 19,
+      "liveHorse": "SUIR MONAD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SUIR MONAD",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:40:54.106Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Fontwell|13:54",
+      "date": "2026-10-15",
+      "course": "Fontwell",
+      "time": "13:54",
+      "horse": "NIGHTFLYER",
+      "price": "15/8",
+      "runners": 7,
+      "liveHorse": "FEROCIMO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FEROCIMO",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:40:54.119Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 164,
+    "recorded": 167,
     "pick": {
-      "settled": 157,
+      "settled": 159,
       "won": 40,
-      "pl": 33.89,
-      "roi": 21.6
+      "pl": 31.89,
+      "roi": 20.1
     },
     "favourite": {
-      "settled": 157,
+      "settled": 158,
       "won": 63,
-      "pl": 25.35,
-      "roi": 16.1
+      "pl": 24.35,
+      "roi": 15.4
     },
     "agree": {
-      "settled": 37,
+      "settled": 38,
       "won": 19,
-      "pl": 3.9,
-      "roi": 10.5
+      "pl": 2.9,
+      "roi": 7.6
     },
     "disagree": {
-      "settled": 120,
+      "settled": 121,
       "won": 21,
-      "pl": 29.99,
-      "roi": 25
+      "pl": 28.99,
+      "roi": 24
     }
   },
   "lastBackfill": 1792068677364

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-15T13:20:56.127Z",
+  "generatedAt": "2026-10-15T13:40:51.955Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 70/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 71/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "18:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-15",
       "course": "Curragh",
       "off": "14:12",
-      "horse": "LUNAR EMPRESS"
-    }
-  ],
-  "recent": [
+      "horse": "LUNAR EMPRESS",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-15",
       "course": "Brighton",
@@ -193,21 +198,10 @@
       "bsp": 1.26,
       "pl": 0.247,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-12",
-      "course": "Yarmouth",
-      "off": "13:54",
-      "horse": "BORN THIS WAY",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.64279637,
-      "pl": 1.561,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T13:20:56.044Z",
+    "updatedAt": "2026-10-15T13:40:51.885Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 72,
+      "bets": 73,
       "won": 38,
-      "pl": -6.57,
-      "roi": -9.1,
+      "pl": -7.57,
+      "roi": -10.4,
       "provisional": 2
     },
     "live": {
