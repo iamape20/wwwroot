@@ -2880,27 +2880,27 @@
       "marketVolume": 8686
     },
     "lastBeforeOff": {
-      "at": "2026-10-15T12:41:13.374Z",
+      "at": "2026-10-15T13:01:31.345Z",
       "eventId": 34592993295402080,
       "found": true,
       "withdrawn": false,
       "bestBack": 2.38,
-      "available": 2.11,
+      "available": 10.59,
       "depth": [
         [
           2.38,
-          2.11
+          10.59
         ],
         [
           2.36,
-          16.74
+          24.09
         ],
         [
           2.34,
-          18.13
+          19.82
         ]
       ],
-      "marketVolume": 43657
+      "marketVolume": 43724
     }
   },
   "NAP|2026-10-15|Curragh|14:22|ALMAZANN": {
@@ -3116,6 +3116,114 @@
         ]
       ],
       "marketVolume": 66798
+    }
+  },
+  "BET|2026-10-15|Brighton|13:05|MYBOOBOO": {
+    "type": "BET",
+    "date": "2026-10-15",
+    "course": "Brighton",
+    "time": "13:05",
+    "horse": "MY BOO BOO",
+    "betId": "2026-10-15|Brighton|13:05",
+    "atReveal": {
+      "at": "2026-10-15T12:51:16.749Z",
+      "eventId": 34592941867802080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.66,
+      "available": 23.76,
+      "depth": [
+        [
+          1.66,
+          23.76
+        ],
+        [
+          1.65,
+          74.91
+        ],
+        [
+          1.64,
+          139.77
+        ]
+      ],
+      "marketVolume": 82150
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-15T13:01:31.342Z",
+      "eventId": 34592941867802080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.63,
+      "available": 193.1,
+      "depth": [
+        [
+          1.63,
+          193.1
+        ],
+        [
+          1.62,
+          876.69
+        ],
+        [
+          1.61,
+          845.46
+        ]
+      ],
+      "marketVolume": 100810
+    }
+  },
+  "BET|2026-10-15|Curragh|13:12|LUNAREMPRESS": {
+    "type": "BET",
+    "date": "2026-10-15",
+    "course": "Curragh",
+    "time": "13:12",
+    "horse": "LUNAR EMPRESS",
+    "betId": "2026-10-15|Curragh|13:12",
+    "atReveal": {
+      "at": "2026-10-15T13:01:31.345Z",
+      "eventId": 34593094513101024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 4.88,
+      "depth": [
+        [
+          2.12,
+          4.88
+        ],
+        [
+          2.1,
+          33.7
+        ],
+        [
+          2.08,
+          81.25
+        ]
+      ],
+      "marketVolume": 72718
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-15T13:01:31.345Z",
+      "eventId": 34593094513101024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 4.88,
+      "depth": [
+        [
+          2.12,
+          4.88
+        ],
+        [
+          2.1,
+          33.7
+        ],
+        [
+          2.08,
+          81.25
+        ]
+      ],
+      "marketVolume": 72718
     }
   }
 }
