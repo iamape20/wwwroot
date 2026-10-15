@@ -4739,10 +4739,18 @@
       "fav": {
         "horse": "DEEP SLEEP",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T14:40:46.655Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|14:57",
@@ -4800,21 +4808,40 @@
       },
       "recordedAt": "2026-10-15T15:00:50.723Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|15:25",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "15:25",
+      "horse": "PLAY ME",
+      "price": "15/2",
+      "runners": 14,
+      "liveHorse": "SOUTH KENSINGTON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOUTH KENSINGTON",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:10:43.022Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 176,
+    "recorded": 177,
     "pick": {
-      "settled": 166,
+      "settled": 167,
       "won": 40,
-      "pl": 24.89,
-      "roi": 15
+      "pl": 23.89,
+      "roi": 14.3
     },
     "favourite": {
-      "settled": 164,
+      "settled": 165,
       "won": 63,
-      "pl": 18.35,
-      "roi": 11.2
+      "pl": 17.35,
+      "roi": 10.5
     },
     "agree": {
       "settled": 38,
@@ -4823,10 +4850,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 128,
+      "settled": 129,
       "won": 21,
-      "pl": 21.99,
-      "roi": 17.2
+      "pl": 20.99,
+      "roi": 16.3
     }
   },
   "lastBackfill": 1792068677364
