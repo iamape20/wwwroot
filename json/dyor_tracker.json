@@ -4818,10 +4818,18 @@
       "fav": {
         "horse": "KADO SACREE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:00:50.723Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|15:25",
@@ -4837,10 +4845,18 @@
       "fav": {
         "horse": "SOUTH KENSINGTON",
         "price": "5/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T15:10:43.022Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|15:32",
@@ -4879,21 +4895,78 @@
       },
       "recordedAt": "2026-10-15T15:20:43.522Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Fontwell|15:39",
+      "date": "2026-10-15",
+      "course": "Fontwell",
+      "time": "15:39",
+      "horse": "LORD OF THE GLANCE",
+      "price": "4/1",
+      "runners": 9,
+      "liveHorse": "CHIEF SUNDAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHIEF SUNDAY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:30:42.350Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Perth|15:50",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "15:50",
+      "horse": "COCKLE BAY WHARF",
+      "price": "16/1",
+      "runners": 4,
+      "liveHorse": "VELVET OUTLAW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VELVET OUTLAW",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:40:35.660Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Brighton|15:55",
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "time": "15:55",
+      "horse": "BERNING HOT",
+      "price": "10/3",
+      "runners": 13,
+      "liveHorse": "BERNING HOT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BERNING HOT",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:40:35.682Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 179,
+    "recorded": 182,
     "pick": {
-      "settled": 168,
+      "settled": 170,
       "won": 40,
-      "pl": 22.89,
-      "roi": 13.6
+      "pl": 20.89,
+      "roi": 12.3
     },
     "favourite": {
-      "settled": 167,
+      "settled": 169,
       "won": 63,
-      "pl": 15.35,
-      "roi": 9.2
+      "pl": 13.35,
+      "roi": 7.9
     },
     "agree": {
       "settled": 38,
@@ -4902,10 +4975,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 130,
+      "settled": 132,
       "won": 21,
-      "pl": 19.99,
-      "roi": 15.4
+      "pl": 17.99,
+      "roi": 13.6
     }
   },
   "lastBackfill": 1792068677364
