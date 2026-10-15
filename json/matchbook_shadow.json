@@ -2880,27 +2880,27 @@
       "marketVolume": 8686
     },
     "lastBeforeOff": {
-      "at": "2026-10-15T14:01:00.075Z",
+      "at": "2026-10-15T14:20:52.156Z",
       "eventId": 34592993295402080,
       "found": true,
       "withdrawn": false,
       "bestBack": 2.44,
-      "available": 1.73,
+      "available": 21,
       "depth": [
         [
           2.44,
-          1.73
+          21
         ],
         [
           2.42,
-          21.69
+          28.15
         ],
         [
           2.4,
-          13.5
+          12.8
         ]
       ],
-      "marketVolume": 45110
+      "marketVolume": 45109
     }
   },
   "NAP|2026-10-15|Curragh|14:22|ALMAZANN": {
@@ -3224,6 +3224,114 @@
         ]
       ],
       "marketVolume": 101704
+    }
+  },
+  "BET|2026-10-15|Curragh|14:22|ALMAZANN": {
+    "type": "BET",
+    "date": "2026-10-15",
+    "course": "Curragh",
+    "time": "14:22",
+    "horse": "ALMAZANN",
+    "betId": "2026-10-15|Curragh|14:22",
+    "atReveal": {
+      "at": "2026-10-15T14:10:46.127Z",
+      "eventId": 34593094513501024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.66,
+      "available": 11.65,
+      "depth": [
+        [
+          2.66,
+          11.65
+        ],
+        [
+          2.64,
+          37.86
+        ],
+        [
+          2.62,
+          68.07
+        ]
+      ],
+      "marketVolume": 82311
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-15T14:20:52.151Z",
+      "eventId": 34593094513501024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.34,
+      "available": 14.31,
+      "depth": [
+        [
+          2.34,
+          14.31
+        ],
+        [
+          2.32,
+          38.4
+        ],
+        [
+          2.3,
+          109.99
+        ]
+      ],
+      "marketVolume": 150167
+    }
+  },
+  "BET|2026-10-15|Fontwell|14:29|EMERALDQUEST": {
+    "type": "BET",
+    "date": "2026-10-15",
+    "course": "Fontwell",
+    "time": "14:29",
+    "horse": "EMERALD QUEST",
+    "betId": "2026-10-15|Fontwell|14:29",
+    "atReveal": {
+      "at": "2026-10-15T14:20:52.156Z",
+      "eventId": 34592941586901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.82,
+      "available": 28.88,
+      "depth": [
+        [
+          1.82,
+          28.88
+        ],
+        [
+          1.81,
+          206.19
+        ],
+        [
+          1.8,
+          226.47
+        ]
+      ],
+      "marketVolume": 42818
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-15T14:20:52.156Z",
+      "eventId": 34592941586901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.82,
+      "available": 28.88,
+      "depth": [
+        [
+          1.82,
+          28.88
+        ],
+        [
+          1.81,
+          206.19
+        ],
+        [
+          1.8,
+          226.47
+        ]
+      ],
+      "marketVolume": 42818
     }
   }
 }

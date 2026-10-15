@@ -4585,10 +4585,16 @@
       "fav": {
         "horse": "FEROCIMO",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-15T13:40:54.119Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Perth|14:05",
@@ -4604,10 +4610,18 @@
       "fav": {
         "horse": "TAP TAP SHAMIE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T13:50:54.186Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|14:15",
@@ -4627,21 +4641,59 @@
       },
       "recordedAt": "2026-10-15T14:01:00.471Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Curragh|14:22",
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "time": "14:22",
+      "horse": "PIERRE GROSSE",
+      "price": "4/1",
+      "runners": 12,
+      "liveHorse": "ALMAZANN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALMAZANN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T14:10:46.554Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Fontwell|14:29",
+      "date": "2026-10-15",
+      "course": "Fontwell",
+      "time": "14:29",
+      "horse": "KATIOS QUEEN",
+      "price": "7/4",
+      "runners": 6,
+      "liveHorse": "EMERALD QUEST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EMERALD QUEST",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T14:20:52.545Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 169,
+    "recorded": 171,
     "pick": {
-      "settled": 162,
+      "settled": 164,
       "won": 40,
-      "pl": 28.89,
-      "roi": 17.8
+      "pl": 26.89,
+      "roi": 16.4
     },
     "favourite": {
-      "settled": 160,
+      "settled": 161,
       "won": 63,
-      "pl": 22.35,
-      "roi": 14
+      "pl": 21.35,
+      "roi": 13.3
     },
     "agree": {
       "settled": 38,
@@ -4650,10 +4702,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 124,
+      "settled": 126,
       "won": 21,
-      "pl": 25.99,
-      "roi": 21
+      "pl": 23.99,
+      "roi": 19
     }
   },
   "lastBackfill": 1792068677364
