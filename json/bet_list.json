@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-15T14:40:43.931Z",
+  "generatedAt": "2026-10-15T14:50:50.361Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 71/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 72/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -26,14 +26,19 @@
       "revealAt": "18:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-15",
       "course": "Fontwell",
       "off": "15:29",
-      "horse": "EMERALD QUEST"
-    }
-  ],
-  "recent": [
+      "horse": "EMERALD QUEST",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-15",
       "course": "Curragh",
@@ -187,21 +192,10 @@
       "bsp": 3.46366073,
       "pl": 2.34,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-12",
-      "course": "Worcester",
-      "off": "15:07",
-      "horse": "POTTERS CHARM",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.24785324,
-      "pl": 0.235,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T14:40:43.827Z",
+    "updatedAt": "2026-10-15T14:50:50.259Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,10 +218,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 74,
+      "bets": 75,
       "won": 39,
-      "pl": -6.2,
-      "roi": -8.4,
+      "pl": -7.2,
+      "roi": -9.6,
       "provisional": 3
     },
     "live": {
