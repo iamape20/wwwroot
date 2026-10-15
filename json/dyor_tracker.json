@@ -5061,10 +5061,16 @@
       "fav": {
         "horse": "BALLYMOREEN",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-10-15T16:00:35.030Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|16:25",
@@ -5080,10 +5086,18 @@
       "fav": {
         "horse": "HARRY MOLE",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T16:10:32.278Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Southwell|16:30",
@@ -5108,16 +5122,16 @@
   "stats": {
     "recorded": 187,
     "pick": {
-      "settled": 177,
+      "settled": 179,
       "won": 40,
-      "pl": 13.89,
-      "roi": 7.8
+      "pl": 11.89,
+      "roi": 6.6
     },
     "favourite": {
-      "settled": 176,
+      "settled": 177,
       "won": 63,
-      "pl": 6.35,
-      "roi": 3.6
+      "pl": 5.35,
+      "roi": 3
     },
     "agree": {
       "settled": 41,
@@ -5126,10 +5140,10 @@
       "roi": -0.3
     },
     "disagree": {
-      "settled": 136,
+      "settled": 138,
       "won": 21,
-      "pl": 13.99,
-      "roi": 10.3
+      "pl": 11.99,
+      "roi": 8.7
     }
   },
   "lastBackfill": 1792080035032
