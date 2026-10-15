@@ -4402,10 +4402,18 @@
       "fav": {
         "horse": "OLD HABITS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T12:41:14.013Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Brighton|13:05",
@@ -4421,10 +4429,16 @@
       "fav": {
         "horse": "MY BOO BOO",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-10-15T12:51:17.338Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Curragh|13:12",
@@ -4444,21 +4458,59 @@
       },
       "recordedAt": "2026-10-15T13:01:32.082Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Fontwell|13:19",
+      "date": "2026-10-15",
+      "course": "Fontwell",
+      "time": "13:19",
+      "horse": "INCA DE LAFAYETTE",
+      "price": "5/2",
+      "runners": 4,
+      "liveHorse": "DOUBLE POWERFUL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DOUBLE POWERFUL",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:11:00.478Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Perth|13:30",
+      "date": "2026-10-15",
+      "course": "Perth",
+      "time": "13:30",
+      "horse": "I WISH YOU",
+      "price": "11/4",
+      "runners": 6,
+      "liveHorse": "THUNDER ROCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THUNDER ROCK",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T13:20:58.183Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 162,
+    "recorded": 164,
     "pick": {
-      "settled": 155,
+      "settled": 157,
       "won": 40,
-      "pl": 35.89,
-      "roi": 23.2
+      "pl": 33.89,
+      "roi": 21.6
     },
     "favourite": {
-      "settled": 156,
+      "settled": 157,
       "won": 63,
-      "pl": 26.35,
-      "roi": 16.9
+      "pl": 25.35,
+      "roi": 16.1
     },
     "agree": {
       "settled": 37,
@@ -4467,10 +4519,10 @@
       "roi": 10.5
     },
     "disagree": {
-      "settled": 118,
+      "settled": 120,
       "won": 21,
-      "pl": 31.99,
-      "roi": 27.1
+      "pl": 29.99,
+      "roi": 25
     }
   },
   "lastBackfill": 1792068677364

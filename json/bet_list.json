@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:01:27.915Z",
+  "generatedAt": "2026-10-15T13:20:56.127Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 70/120 bets settled before the verdict.",
   "rules": [
@@ -13,20 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Brighton",
-      "off": "14:05",
-      "status": "BET",
-      "horse": "MY BOO BOO",
-      "price": "8/13"
-    },
-    {
-      "course": "Curragh",
-      "off": "14:12",
-      "status": "BET",
-      "horse": "LUNAR EMPRESS",
-      "price": "6/5"
-    },
     {
       "course": "Curragh",
       "off": "15:22",
@@ -46,8 +32,25 @@
       "revealAt": "18:45"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Curragh",
+      "off": "14:12",
+      "horse": "LUNAR EMPRESS"
+    }
+  ],
   "recent": [
+    {
+      "date": "2026-10-15",
+      "course": "Brighton",
+      "off": "14:05",
+      "horse": "MY BOO BOO",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-15",
       "course": "Perth",
@@ -201,21 +204,10 @@
       "bsp": 2.64279637,
       "pl": 1.561,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-11",
-      "course": "Cork",
-      "off": "17:07",
-      "horse": "PASSENGER",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T13:01:27.736Z",
+    "updatedAt": "2026-10-15T13:20:56.044Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -238,11 +230,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 71,
-      "won": 37,
-      "pl": -7.07,
-      "roi": -10,
-      "provisional": 1
+      "bets": 72,
+      "won": 38,
+      "pl": -6.57,
+      "roi": -9.1,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
