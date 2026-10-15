@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T16:40:24.456Z",
+  "generatedAt": "2026-10-15T17:00:20.084Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 72/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-15",
       "course": "Southwell",
       "off": "17:30",
-      "horse": "GROVE STREET"
-    }
-  ],
-  "recent": [
+      "horse": "GROVE STREET",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-15",
       "course": "Fontwell",
@@ -174,21 +179,10 @@
       "bsp": 1.69515198,
       "pl": 0.66,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-12",
-      "course": "Kempton",
-      "off": "16:12",
-      "horse": "SHOWCASING GLORY",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 3.46366073,
-      "pl": 2.34,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-15T16:40:24.348Z",
+    "updatedAt": "2026-10-15T17:00:19.972Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 75,
-      "won": 39,
-      "pl": -7.2,
-      "roi": -9.6,
-      "provisional": 3
+      "bets": 76,
+      "won": 40,
+      "pl": -6.8,
+      "roi": -8.9,
+      "provisional": 4
     },
     "live": {
       "bets": 0,
