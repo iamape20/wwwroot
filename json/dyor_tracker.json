@@ -4766,10 +4766,18 @@
       "fav": {
         "horse": "GRANN'S BOY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T14:50:53.246Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-15|Fontwell|15:04",
@@ -4785,10 +4793,16 @@
       "fav": {
         "horse": "ROI DU RISK",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-15T14:50:53.259Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/1"
     },
     {
       "id": "2026-10-15|Perth|15:15",
@@ -4827,21 +4841,59 @@
       },
       "recordedAt": "2026-10-15T15:10:43.022Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-15|Curragh|15:32",
+      "date": "2026-10-15",
+      "course": "Curragh",
+      "time": "15:32",
+      "horse": "JORDAN BREEZE",
+      "price": "9/2",
+      "runners": 17,
+      "liveHorse": "JORDAN BREEZE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JORDAN BREEZE",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:20:43.508Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-15|Southwell|15:30",
+      "date": "2026-10-15",
+      "course": "Southwell",
+      "time": "15:30",
+      "horse": "PRIDE EYE",
+      "price": "11/2",
+      "runners": 14,
+      "liveHorse": "OXFORD CIRCUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OXFORD CIRCUS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-15T15:20:43.522Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 177,
+    "recorded": 179,
     "pick": {
-      "settled": 167,
+      "settled": 168,
       "won": 40,
-      "pl": 23.89,
-      "roi": 14.3
+      "pl": 22.89,
+      "roi": 13.6
     },
     "favourite": {
-      "settled": 165,
+      "settled": 167,
       "won": 63,
-      "pl": 17.35,
-      "roi": 10.5
+      "pl": 15.35,
+      "roi": 9.2
     },
     "agree": {
       "settled": 38,
@@ -4850,10 +4902,10 @@
       "roi": 7.6
     },
     "disagree": {
-      "settled": 129,
+      "settled": 130,
       "won": 21,
-      "pl": 20.99,
-      "roi": 16.3
+      "pl": 19.99,
+      "roi": 15.4
     }
   },
   "lastBackfill": 1792068677364
