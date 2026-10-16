@@ -5524,10 +5524,18 @@
       "fav": {
         "horse": "GETAWHISKY",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T13:31:12.878Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Haydock|13:52",
@@ -5547,21 +5555,59 @@
       },
       "recordedAt": "2026-10-16T13:41:19.291Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Redcar|14:02",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "14:02",
+      "horse": "CAVAN LADY",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "LION OF PERSIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LION OF PERSIA",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T13:51:11.522Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Uttoxeter|14:12",
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "time": "14:12",
+      "horse": "MISS MAVERICK",
+      "price": "2/1",
+      "runners": 6,
+      "liveHorse": "SERVICE MINIMUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SERVICE MINIMUM",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T14:01:06.771Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 202,
+    "recorded": 204,
     "pick": {
-      "settled": 195,
+      "settled": 196,
       "won": 47,
-      "pl": 27.43,
-      "roi": 14.1
+      "pl": 26.43,
+      "roi": 13.5
     },
     "favourite": {
-      "settled": 195,
+      "settled": 196,
       "won": 77,
-      "pl": 20.57,
-      "roi": 10.5
+      "pl": 19.57,
+      "roi": 10
     },
     "agree": {
       "settled": 45,
@@ -5570,10 +5616,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 150,
+      "settled": 151,
       "won": 25,
-      "pl": 25.37,
-      "roi": 16.9
+      "pl": 24.37,
+      "roi": 16.1
     }
   },
   "lastBackfill": 1792155118314
