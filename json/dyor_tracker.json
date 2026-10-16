@@ -5603,10 +5603,18 @@
       "fav": {
         "horse": "SERVICE MINIMUM",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T14:01:06.771Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Haydock|14:27",
@@ -5622,25 +5630,69 @@
       "fav": {
         "horse": "RESEMBLANCE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T14:21:02.271Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
+    },
+    {
+      "id": "2026-10-16|Redcar|14:37",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "14:37",
+      "horse": "SERGEANT MAYER",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "HANNEY GIRL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HANNEY GIRL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T14:31:04.658Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Uttoxeter|14:47",
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "time": "14:47",
+      "horse": "MISTER CESSNA",
+      "price": "9/2",
+      "runners": 5,
+      "liveHorse": "RULA BULA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RULA BULA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T14:41:00.348Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 205,
+    "recorded": 207,
     "pick": {
-      "settled": 197,
+      "settled": 198,
       "won": 47,
-      "pl": 25.43,
-      "roi": 12.9
+      "pl": 24.43,
+      "roi": 12.3
     },
     "favourite": {
-      "settled": 198,
+      "settled": 200,
       "won": 77,
-      "pl": 17.57,
-      "roi": 8.9
+      "pl": 15.57,
+      "roi": 7.8
     },
     "agree": {
       "settled": 45,
@@ -5649,10 +5701,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 152,
+      "settled": 153,
       "won": 25,
-      "pl": 23.37,
-      "roi": 15.4
+      "pl": 22.37,
+      "roi": 14.6
     }
   },
   "lastBackfill": 1792155118314
