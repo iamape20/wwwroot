@@ -5759,10 +5759,18 @@
       "fav": {
         "horse": "INGLEBY ARCHIE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:01:11.139Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Uttoxeter|15:22",
@@ -5778,25 +5786,109 @@
       "fav": {
         "horse": "UHTRED RAGNARSON",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:13:32.839Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Haydock|15:37",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "15:37",
+      "horse": "EYE OF DUBAI",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "CITY CAPTAIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CITY CAPTAIN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:30:51.716Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|15:43",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "15:43",
+      "horse": "KRISSY",
+      "price": "20/1",
+      "runners": 11,
+      "liveHorse": "WANDERLUST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WANDERLUST",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:30:51.737Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Uttoxeter|15:53",
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "time": "15:53",
+      "horse": "CRYSTAL CONNEMARA",
+      "price": "14/1",
+      "runners": 7,
+      "liveHorse": "MADAM SPEAKER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MADAM SPEAKER",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:40:51.783Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Redcar|15:48",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "15:48",
+      "horse": "KISS ME MY LOVE",
+      "price": "7/2",
+      "runners": 18,
+      "liveHorse": "KISS ME MY LOVE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KISS ME MY LOVE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:40:51.808Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 211,
+    "recorded": 215,
     "pick": {
-      "settled": 201,
+      "settled": 203,
       "won": 47,
-      "pl": 21.43,
-      "roi": 10.7
+      "pl": 19.43,
+      "roi": 9.6
     },
     "favourite": {
-      "settled": 203,
+      "settled": 205,
       "won": 77,
-      "pl": 12.57,
-      "roi": 6.2
+      "pl": 10.57,
+      "roi": 5.2
     },
     "agree": {
       "settled": 45,
@@ -5805,10 +5897,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 156,
+      "settled": 158,
       "won": 25,
-      "pl": 19.37,
-      "roi": 12.4
+      "pl": 17.37,
+      "roi": 11
     }
   },
   "lastBackfill": 1792155118314
