@@ -5347,10 +5347,14 @@
       "fav": {
         "horse": "EXTRAGALACTIC",
         "price": "3/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/9"
       },
       "recordedAt": "2026-10-16T12:11:25.317Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/9"
     },
     {
       "id": "2026-10-16|Uttoxeter|12:27",
@@ -5366,19 +5370,63 @@
       "fav": {
         "horse": "LUNAR TRIX",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-16T12:21:34.041Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Haydock|12:42",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "12:42",
+      "horse": "ARTHURIAN",
+      "price": "2/7",
+      "runners": 6,
+      "liveHorse": "ARTHURIAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ARTHURIAN",
+        "price": "2/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T12:31:38.239Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Redcar|12:52",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "12:52",
+      "horse": "MY GIRL DEE MO",
+      "price": "8/13",
+      "runners": 10,
+      "liveHorse": "MY GIRL DEE MO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MY GIRL DEE MO",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T12:41:33.687Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 195,
+    "recorded": 197,
     "pick": {
-      "settled": 190,
+      "settled": 191,
       "won": 47,
-      "pl": 32.43,
-      "roi": 17.1
+      "pl": 31.43,
+      "roi": 16.5
     },
     "favourite": {
       "settled": 192,
@@ -5393,10 +5441,10 @@
       "roi": 6.9
     },
     "disagree": {
-      "settled": 146,
+      "settled": 147,
       "won": 25,
-      "pl": 29.37,
-      "roi": 20.1
+      "pl": 28.37,
+      "roi": 19.3
     }
   },
   "lastBackfill": 1792141294350
