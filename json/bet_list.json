@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:41:25.802Z",
+  "generatedAt": "2026-10-16T13:01:32.813Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 76/120 bets settled before the verdict.",
   "rules": [
@@ -13,20 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Haydock",
-      "off": "13:42",
-      "status": "BET",
-      "horse": "ARTHURIAN",
-      "price": "2/7"
-    },
-    {
-      "course": "Redcar",
-      "off": "13:52",
-      "status": "BET",
-      "horse": "MY GIRL DEE MO",
-      "price": "8/13"
-    },
     {
       "course": "Uttoxeter",
       "off": "16:53",
@@ -46,8 +32,25 @@
       "revealAt": "17:00"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Redcar",
+      "off": "13:52",
+      "horse": "MY GIRL DEE MO"
+    }
+  ],
   "recent": [
+    {
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "off": "13:42",
+      "horse": "ARTHURIAN",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-16",
       "course": "Redcar",
@@ -201,21 +204,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-13",
-      "course": "Southwell",
-      "off": "15:45",
-      "horse": "MASTERIUS",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.56,
-      "pl": 0.532,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-16T12:41:25.583Z",
+    "updatedAt": "2026-10-16T13:01:32.588Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -238,11 +230,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 77,
-      "won": 41,
-      "pl": -6.41,
-      "roi": -8.3,
-      "provisional": 1
+      "bets": 78,
+      "won": 42,
+      "pl": -6.12,
+      "roi": -7.9,
+      "provisional": 2
     },
     "live": {
       "bets": 0,

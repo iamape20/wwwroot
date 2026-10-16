@@ -5395,10 +5395,14 @@
       "fav": {
         "horse": "ARTHURIAN",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/7"
       },
       "recordedAt": "2026-10-16T12:31:38.239Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/7"
     },
     {
       "id": "2026-10-16|Redcar|12:52",
@@ -5418,10 +5422,29 @@
       },
       "recordedAt": "2026-10-16T12:41:33.687Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Uttoxeter|13:02",
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "time": "13:02",
+      "horse": "FERN HILL",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "BACK IT UP",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BACK IT UP",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T12:51:58.279Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 197,
+    "recorded": 198,
     "pick": {
       "settled": 191,
       "won": 47,
@@ -5447,5 +5470,5 @@
       "roi": 19.3
     }
   },
-  "lastBackfill": 1792141294350
+  "lastBackfill": 1792155118314
 }
