@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-16T16:00:42.413Z",
+  "generatedAt": "2026-10-16T16:20:47.002Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 77/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 78/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -12,28 +12,37 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
+  "today": [],
+  "awaitingResult": [
     {
       "course": "Newcastle",
       "off": "17:15",
-      "status": "BET",
-      "horse": "QILA",
-      "price": "5/6"
-    }
-  ],
-  "awaitingResult": [
-    {
-      "course": "Uttoxeter",
-      "off": "16:53",
-      "horse": "MADAM SPEAKER"
-    },
-    {
-      "course": "Dundalk",
-      "off": "17:00",
-      "horse": "TYSON FURY"
+      "horse": "QILA"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "off": "17:00",
+      "horse": "TYSON FURY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "off": "16:53",
+      "horse": "MADAM SPEAKER",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-16",
       "course": "Redcar",
@@ -176,32 +185,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-14",
-      "course": "Ffos Las",
-      "off": "15:30",
-      "horse": "TUTTI QUANTI",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-14",
-      "course": "Wetherby",
-      "off": "14:00",
-      "horse": "MAGNETUDE",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.44,
-      "pl": 0.418,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-16T16:00:42.321Z",
+    "updatedAt": "2026-10-16T16:20:46.919Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,11 +211,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 79,
-      "won": 42,
-      "pl": -7.12,
-      "roi": -9,
-      "provisional": 2
+      "bets": 81,
+      "won": 43,
+      "pl": -5.87,
+      "roi": -7.3,
+      "provisional": 3
     },
     "live": {
       "bets": 0,

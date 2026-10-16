@@ -5867,10 +5867,18 @@
       "fav": {
         "horse": "MADAM SPEAKER",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:40:51.783Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Redcar|15:48",
@@ -5886,10 +5894,18 @@
       "fav": {
         "horse": "KISS ME MY LOVE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:40:51.808Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Dundalk|16:00",
@@ -5905,10 +5921,14 @@
       "fav": {
         "horse": "TYSON FURY",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-16T15:50:50.924Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-10-16|Haydock|16:07",
@@ -5924,10 +5944,16 @@
       "fav": {
         "horse": "IRISH NECTAR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-16T16:00:49.301Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Newcastle|16:15",
@@ -5947,33 +5973,71 @@
       },
       "recordedAt": "2026-10-16T16:00:49.319Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Redcar|16:23",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "16:23",
+      "horse": "JAM LASS",
+      "price": "9/2",
+      "runners": 14,
+      "liveHorse": "SWEET KISS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SWEET KISS",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:10:46.956Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Dundalk|16:30",
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "time": "16:30",
+      "horse": "EMIZA",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "FIREWALKER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FIREWALKER",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:20:48.811Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 218,
+    "recorded": 220,
     "pick": {
-      "settled": 205,
+      "settled": 208,
       "won": 47,
-      "pl": 17.43,
-      "roi": 8.5
+      "pl": 14.43,
+      "roi": 6.9
     },
     "favourite": {
-      "settled": 207,
+      "settled": 209,
       "won": 77,
-      "pl": 8.57,
-      "roi": 4.1
+      "pl": 6.57,
+      "roi": 3.1
     },
     "agree": {
-      "settled": 45,
+      "settled": 46,
       "won": 22,
-      "pl": 2.05,
-      "roi": 4.6
+      "pl": 1.05,
+      "roi": 2.3
     },
     "disagree": {
-      "settled": 160,
+      "settled": 162,
       "won": 25,
-      "pl": 15.37,
-      "roi": 9.6
+      "pl": 13.37,
+      "roi": 8.3
     }
   },
   "lastBackfill": 1792166449321
