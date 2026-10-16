@@ -75,7 +75,7 @@ function renderDailyDouble(dashboard) {
         box.innerHTML = `
             <div class="daily-double-panel">
                 <div class="daily-double-header">⭐ Daily Double</div>
-                <div class="daily-double-empty-text">No qualifying Strong picks today — an honest zero, not padded with a weaker race.</div>
+                <div class="daily-double-empty-text">No Strong or Moderate picks today — an honest zero, not padded with a weaker race.</div>
             </div>
         `;
         return;
