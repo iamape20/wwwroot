@@ -5813,10 +5813,18 @@
       "fav": {
         "horse": "CITY CAPTAIN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:30:51.716Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Newcastle|15:43",
@@ -5832,10 +5840,18 @@
       "fav": {
         "horse": "WANDERLUST",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T15:30:51.737Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Uttoxeter|15:53",
@@ -5874,21 +5890,78 @@
       },
       "recordedAt": "2026-10-16T15:40:51.808Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Dundalk|16:00",
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "time": "16:00",
+      "horse": "TYSON FURY",
+      "price": "6/4",
+      "runners": 13,
+      "liveHorse": "TYSON FURY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TYSON FURY",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:50:50.924Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Haydock|16:07",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "16:07",
+      "horse": "STIRRUP CUP",
+      "price": "7/1",
+      "runners": 14,
+      "liveHorse": "IRISH NECTAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IRISH NECTAR",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:00:49.301Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|16:15",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "16:15",
+      "horse": "CELTIC ARROW",
+      "price": "17/2",
+      "runners": 6,
+      "liveHorse": "QILA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "QILA",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:00:49.319Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 215,
+    "recorded": 218,
     "pick": {
-      "settled": 203,
+      "settled": 205,
       "won": 47,
-      "pl": 19.43,
-      "roi": 9.6
+      "pl": 17.43,
+      "roi": 8.5
     },
     "favourite": {
-      "settled": 205,
+      "settled": 207,
       "won": 77,
-      "pl": 10.57,
-      "roi": 5.2
+      "pl": 8.57,
+      "roi": 4.1
     },
     "agree": {
       "settled": 45,
@@ -5897,11 +5970,11 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 158,
+      "settled": 160,
       "won": 25,
-      "pl": 17.37,
-      "roi": 11
+      "pl": 15.37,
+      "roi": 9.6
     }
   },
-  "lastBackfill": 1792155118314
+  "lastBackfill": 1792166449321
 }

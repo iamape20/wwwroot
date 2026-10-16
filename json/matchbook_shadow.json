@@ -3687,27 +3687,135 @@
       "marketVolume": 100903
     },
     "lastBeforeOff": {
-      "at": "2026-10-16T15:40:51.197Z",
+      "at": "2026-10-16T15:50:50.456Z",
       "eventId": 34601674463802024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.52,
-      "available": 23.31,
+      "bestBack": 1.53,
+      "available": 17.32,
       "depth": [
         [
+          1.53,
+          17.32
+        ],
+        [
           1.52,
-          23.31
+          258.81
         ],
         [
           1.51,
-          486.39
-        ],
-        [
-          1.5,
-          965.9
+          715.93
         ]
       ],
-      "marketVolume": 100903
+      "marketVolume": 135791
+    }
+  },
+  "BET|2026-10-16|Dundalk|16:00|TYSONFURY": {
+    "type": "BET",
+    "date": "2026-10-16",
+    "course": "Dundalk",
+    "time": "16:00",
+    "horse": "TYSON FURY",
+    "betId": "2026-10-16|Dundalk|16:00",
+    "atReveal": {
+      "at": "2026-10-16T15:50:50.459Z",
+      "eventId": 34601705320600024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 3.5,
+      "available": 6.65,
+      "depth": [
+        [
+          3.5,
+          6.65
+        ],
+        [
+          3.45,
+          59.45
+        ],
+        [
+          3.4,
+          84.94
+        ]
+      ],
+      "marketVolume": 90040
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-16T15:50:50.459Z",
+      "eventId": 34601705320600024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 3.5,
+      "available": 6.65,
+      "depth": [
+        [
+          3.5,
+          6.65
+        ],
+        [
+          3.45,
+          59.45
+        ],
+        [
+          3.4,
+          84.94
+        ]
+      ],
+      "marketVolume": 90040
+    }
+  },
+  "BET|2026-10-16|Newcastle|16:15|QILA": {
+    "type": "BET",
+    "date": "2026-10-16",
+    "course": "Newcastle",
+    "time": "16:15",
+    "horse": "QILA",
+    "betId": "2026-10-16|Newcastle|16:15",
+    "atReveal": {
+      "at": "2026-10-16T16:00:46.671Z",
+      "eventId": 34601678909501024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 65.5,
+      "depth": [
+        [
+          2.12,
+          65.5
+        ],
+        [
+          2.1,
+          43.08
+        ],
+        [
+          2.08,
+          54.36
+        ]
+      ],
+      "marketVolume": 108368
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-16T16:00:46.671Z",
+      "eventId": 34601678909501024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 65.5,
+      "depth": [
+        [
+          2.12,
+          65.5
+        ],
+        [
+          2.1,
+          43.08
+        ],
+        [
+          2.08,
+          54.36
+        ]
+      ],
+      "marketVolume": 108368
     }
   }
 }
