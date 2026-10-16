@@ -6364,31 +6364,39 @@
       "fav": {
         "horse": "QUATRE BRAS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T19:20:23.198Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 233,
     "pick": {
-      "settled": 223,
+      "settled": 224,
       "won": 47,
-      "pl": -0.57,
-      "roi": -0.3
+      "pl": -1.57,
+      "roi": -0.7
     },
     "favourite": {
-      "settled": 219,
+      "settled": 220,
       "won": 77,
-      "pl": -3.43,
-      "roi": -1.6
+      "pl": -4.43,
+      "roi": -2
     },
     "agree": {
-      "settled": 49,
+      "settled": 50,
       "won": 22,
-      "pl": -1.95,
-      "roi": -4
+      "pl": -2.95,
+      "roi": -5.9
     },
     "disagree": {
       "settled": 174,
