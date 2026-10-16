@@ -6071,10 +6071,16 @@
       "fav": {
         "horse": "KALEIDO",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-16T16:30:38.258Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Dundalk|17:00",
@@ -6090,10 +6096,18 @@
       "fav": {
         "horse": "THIS THAT",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T16:50:36.537Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Newcastle|17:15",
@@ -6113,21 +6127,40 @@
       },
       "recordedAt": "2026-10-16T17:00:35.560Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Dundalk|17:30",
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "time": "17:30",
+      "horse": "UNA MATATA",
+      "price": "4/1",
+      "runners": 14,
+      "liveHorse": "GO OUT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO OUT",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T17:20:45.098Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 224,
+    "recorded": 225,
     "pick": {
-      "settled": 212,
+      "settled": 214,
       "won": 47,
-      "pl": 10.43,
-      "roi": 4.9
+      "pl": 8.43,
+      "roi": 3.9
     },
     "favourite": {
-      "settled": 210,
+      "settled": 211,
       "won": 77,
-      "pl": 5.57,
-      "roi": 2.7
+      "pl": 4.57,
+      "roi": 2.2
     },
     "agree": {
       "settled": 47,
@@ -6136,10 +6169,10 @@
       "roi": 0.1
     },
     "disagree": {
-      "settled": 165,
+      "settled": 167,
       "won": 25,
-      "pl": 10.37,
-      "roi": 6.3
+      "pl": 8.37,
+      "roi": 5
     }
   },
   "lastBackfill": 1792166449321
