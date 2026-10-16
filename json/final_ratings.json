@@ -30,7 +30,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "6/4",
+            "current_odds": "8/13",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -240,13 +240,13 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 1",
-                  "Odds 6/4",
+                  "Odds 8/13",
                   "Current favourite"
                 ],
                 "metrics": {
                   "rank": 1,
-                  "odds": "6/4",
-                  "decimal_odds": 2.5,
+                  "odds": "8/13",
+                  "decimal_odds": 1.6153846153846154,
                   "favourite": true,
                   "runners_with_prices": 11
                 }
@@ -263,7 +263,7 @@
                 }
               }
             },
-            "checklist_rating": 72.2,
+            "checklist_rating": 67.2,
             "checklist_breakdown": {
               "class": {
                 "points": 1.5,
@@ -374,9 +374,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "8/13 → 8/13 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -408,11 +408,333 @@
               "weightAdvantage": -1,
               "combined": null
             },
-            "checklist_points": "9.75/13.5",
+            "checklist_points": "9.75/14.5",
             "checklist_earned_points": 9.75,
             "stat_rating": 19.03,
-            "meta_rating": 26.5,
+            "meta_rating": 26.48,
             "trainer_trend": "flat"
+          },
+          {
+            "name": "LUNAR TRIX",
+            "id": 1221288,
+            "formsummary": "1-",
+            "official_no": 9,
+            "draw": "",
+            "weight": "10-13",
+            "age": 4,
+            "foaled": "2022-04-17",
+            "sex": "g",
+            "trainer": "S Edmunds",
+            "trainer_id": 275,
+            "jockey": "Charlie Hammond",
+            "jockey_id": 750,
+            "jockey_claim": 0,
+            "current_class": "4",
+            "ride_status": "RUNNER",
+            "current_odds": "4/1",
+            "historical_odds": [],
+            "race_history_stats": [
+              {
+                "type": "Distance",
+                "value": "1"
+              }
+            ],
+            "horse_lifetime_stats": [],
+            "medication": [],
+            "insights": [],
+            "past_results": [],
+            "is_unexposed": true,
+            "silk_url": "https://www.sportinglife.com/images/silks/20261016utt132709.png",
+            "headgear": [],
+            "race_course": "Uttoxeter",
+            "race_going": "Good",
+            "race_distance": "1m 7f 168y",
+            "race_time": "12:27",
+            "race_class": "4",
+            "race_id": 943754,
+            "non_runner": false,
+            "historical_runs": 0,
+            "days_since_run": null,
+            "last_run_date_used": null,
+            "history": null,
+            "form": {
+              "raw": "1-",
+              "runs": 1,
+              "wins": 1,
+              "places": 0,
+              "strikeRate": 100,
+              "placeRate": 100,
+              "nonFinishers": 0,
+              "lastRun": 1,
+              "trend": "Stable",
+              "momentum": 100,
+              "consistency": 50,
+              "positions": [
+                1
+              ]
+            },
+            "horse_profile": {
+              "running_style": "UNKNOWN",
+              "running_style_confidence": 0,
+              "style_scores": {
+                "LEADER": 0,
+                "PROMINENT": 0,
+                "MIDFIELD": 0,
+                "HELD_UP": 0,
+                "UNKNOWN": 0
+              },
+              "style_distribution": {
+                "LEADER": 0,
+                "PROMINENT": 0,
+                "MIDFIELD": 0,
+                "HELD_UP": 0
+              },
+              "sample_size": 0
+            },
+            "v2_score": 64,
+            "power_rating": 64,
+            "confidence": 25,
+            "confidence_grade": "CAUTIOUS",
+            "rating_breakdown": {
+              "form": {
+                "score": 77,
+                "weight": 0.3,
+                "weighted": 23.1
+              },
+              "context": {
+                "score": 10,
+                "weight": 0.15,
+                "weighted": 1.5
+              },
+              "market": {
+                "score": 92,
+                "weight": 0.2,
+                "weighted": 18.4
+              },
+              "verdict": {
+                "score": 60,
+                "weight": 0.35,
+                "weighted": 21
+              }
+            },
+            "engine_details": {
+              "form": {
+                "engine": "form",
+                "score": 77,
+                "confidence": "Low",
+                "reasons": [
+                  "Recent form: 1-"
+                ],
+                "metrics": {
+                  "runs": 1,
+                  "wins": 1,
+                  "places": 0,
+                  "strikeRate": 100,
+                  "placeRate": 100,
+                  "trend": "Stable",
+                  "momentum": 100,
+                  "consistency": 50,
+                  "nonFinishers": 0
+                }
+              },
+              "context": {
+                "engine": "context",
+                "score": 10,
+                "confidence": "Low",
+                "reasons": [
+                  "Trainer hot form: 6/12 placed last 14 days",
+                  "Debutant with 24% strike-rate jockey"
+                ],
+                "metrics": {
+                  "averageOR": 0,
+                  "wins": 0,
+                  "places": 0,
+                  "averageFinish": 0,
+                  "trainerFormPoints": 7,
+                  "jockeyOnDebutantPoints": 3,
+                  "jockeyWonOutsiderPoints": 0
+                }
+              },
+              "market": {
+                "engine": "market",
+                "score": 92,
+                "confidence": "High",
+                "reasons": [
+                  "Market Rank 2",
+                  "Odds 4/1"
+                ],
+                "metrics": {
+                  "rank": 2,
+                  "odds": "4/1",
+                  "decimal_odds": 5,
+                  "favourite": false,
+                  "runners_with_prices": 11
+                }
+              },
+              "verdict": {
+                "engine": "verdict",
+                "score": 60,
+                "confidence": "Medium",
+                "reasons": [
+                  "Mentioned in analyst verdict"
+                ],
+                "metrics": {
+                  "mentioned": true
+                }
+              }
+            },
+            "checklist_rating": 50,
+            "checklist_breakdown": {
+              "class": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No class data available"
+              },
+              "classChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "tripChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "recentForm": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No previous runs on record"
+              },
+              "speed": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No official rating available for comparison"
+              },
+              "classDropRatingEdge": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No official rating available for comparison"
+              },
+              "draw": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "fitness": {
+                "points": 0,
+                "max": 1,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "firstTimeAids": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockey": {
+                "points": 0,
+                "max": 1,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "jockeyForm": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "6 of 11 rides placed in the last 14 days"
+              },
+              "trainer": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "6 of 12 runners placed in the last 14 days"
+              },
+              "weightChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "trainerCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyTrainerCombo": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "20.9% with this jockey (43 runs) vs 18% overall for this trainer"
+              },
+              "jockeyOnDebutant": {
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "24% overall strike rate (at or above the 10% threshold)"
+              },
+              "marketMove": {
+                "points": 0,
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "4/1 → 4/1 (4 snapshots)"
+              },
+              "winningMark": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "runningStyle": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Not enough classifiable running commentary"
+              },
+              "beatenFavourite": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              }
+            },
+            "rated_weight_advantage": {
+              "runnerOR": null,
+              "medianOR": 79.5,
+              "declaredWeight": 153,
+              "jockeyClaim": 0,
+              "effectiveWeight": 153,
+              "medianEffectiveWeight": 153,
+              "orAdvantage": null,
+              "weightAdvantage": 0,
+              "combined": null
+            },
+            "checklist_points": "4/8",
+            "checklist_earned_points": 4,
+            "stat_rating": 23.65,
+            "meta_rating": 18.78,
+            "trainer_trend": "cold"
           },
           {
             "name": "SHAH",
@@ -431,7 +753,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "7/1",
+            "current_odds": "6/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -558,12 +880,12 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 3",
-                  "Odds 7/1"
+                  "Odds 6/1"
                 ],
                 "metrics": {
                   "rank": 3,
-                  "odds": "7/1",
-                  "decimal_odds": 8,
+                  "odds": "6/1",
+                  "decimal_odds": 7,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -580,7 +902,7 @@
                 }
               }
             },
-            "checklist_rating": 57.1,
+            "checklist_rating": 50,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -692,9 +1014,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "6/1 → 6/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -727,332 +1049,10 @@
               "weightAdvantage": -1,
               "combined": null
             },
-            "checklist_points": "4/7",
+            "checklist_points": "4/8",
             "checklist_earned_points": 4,
             "stat_rating": 18.67,
-            "meta_rating": 18.17,
-            "trainer_trend": "cold"
-          },
-          {
-            "name": "LUNAR TRIX",
-            "id": 1221288,
-            "formsummary": "1-",
-            "official_no": 9,
-            "draw": "",
-            "weight": "10-13",
-            "age": 4,
-            "foaled": "2022-04-17",
-            "sex": "g",
-            "trainer": "S Edmunds",
-            "trainer_id": 275,
-            "jockey": "Charlie Hammond",
-            "jockey_id": 750,
-            "jockey_claim": 0,
-            "current_class": "4",
-            "ride_status": "RUNNER",
-            "current_odds": "7/1",
-            "historical_odds": [],
-            "race_history_stats": [
-              {
-                "type": "Distance",
-                "value": "1"
-              }
-            ],
-            "horse_lifetime_stats": [],
-            "medication": [],
-            "insights": [],
-            "past_results": [],
-            "is_unexposed": true,
-            "silk_url": "https://www.sportinglife.com/images/silks/20261016utt132709.png",
-            "headgear": [],
-            "race_course": "Uttoxeter",
-            "race_going": "Good",
-            "race_distance": "1m 7f 168y",
-            "race_time": "12:27",
-            "race_class": "4",
-            "race_id": 943754,
-            "non_runner": false,
-            "historical_runs": 0,
-            "days_since_run": null,
-            "last_run_date_used": null,
-            "history": null,
-            "form": {
-              "raw": "1-",
-              "runs": 1,
-              "wins": 1,
-              "places": 0,
-              "strikeRate": 100,
-              "placeRate": 100,
-              "nonFinishers": 0,
-              "lastRun": 1,
-              "trend": "Stable",
-              "momentum": 100,
-              "consistency": 50,
-              "positions": [
-                1
-              ]
-            },
-            "horse_profile": {
-              "running_style": "UNKNOWN",
-              "running_style_confidence": 0,
-              "style_scores": {
-                "LEADER": 0,
-                "PROMINENT": 0,
-                "MIDFIELD": 0,
-                "HELD_UP": 0,
-                "UNKNOWN": 0
-              },
-              "style_distribution": {
-                "LEADER": 0,
-                "PROMINENT": 0,
-                "MIDFIELD": 0,
-                "HELD_UP": 0
-              },
-              "sample_size": 0
-            },
-            "v2_score": 62.8,
-            "power_rating": 62.8,
-            "confidence": 25,
-            "confidence_grade": "CAUTIOUS",
-            "rating_breakdown": {
-              "form": {
-                "score": 77,
-                "weight": 0.3,
-                "weighted": 23.1
-              },
-              "context": {
-                "score": 10,
-                "weight": 0.15,
-                "weighted": 1.5
-              },
-              "market": {
-                "score": 86,
-                "weight": 0.2,
-                "weighted": 17.2
-              },
-              "verdict": {
-                "score": 60,
-                "weight": 0.35,
-                "weighted": 21
-              }
-            },
-            "engine_details": {
-              "form": {
-                "engine": "form",
-                "score": 77,
-                "confidence": "Low",
-                "reasons": [
-                  "Recent form: 1-"
-                ],
-                "metrics": {
-                  "runs": 1,
-                  "wins": 1,
-                  "places": 0,
-                  "strikeRate": 100,
-                  "placeRate": 100,
-                  "trend": "Stable",
-                  "momentum": 100,
-                  "consistency": 50,
-                  "nonFinishers": 0
-                }
-              },
-              "context": {
-                "engine": "context",
-                "score": 10,
-                "confidence": "Low",
-                "reasons": [
-                  "Trainer hot form: 6/12 placed last 14 days",
-                  "Debutant with 24% strike-rate jockey"
-                ],
-                "metrics": {
-                  "averageOR": 0,
-                  "wins": 0,
-                  "places": 0,
-                  "averageFinish": 0,
-                  "trainerFormPoints": 7,
-                  "jockeyOnDebutantPoints": 3,
-                  "jockeyWonOutsiderPoints": 0
-                }
-              },
-              "market": {
-                "engine": "market",
-                "score": 86,
-                "confidence": "High",
-                "reasons": [
-                  "Market Rank 3",
-                  "Odds 7/1"
-                ],
-                "metrics": {
-                  "rank": 3,
-                  "odds": "7/1",
-                  "decimal_odds": 8,
-                  "favourite": false,
-                  "runners_with_prices": 11
-                }
-              },
-              "verdict": {
-                "engine": "verdict",
-                "score": 60,
-                "confidence": "Medium",
-                "reasons": [
-                  "Mentioned in analyst verdict"
-                ],
-                "metrics": {
-                  "mentioned": true
-                }
-              }
-            },
-            "checklist_rating": 57.1,
-            "checklist_breakdown": {
-              "class": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No class data available"
-              },
-              "classChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "tripChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "recentForm": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No previous runs on record"
-              },
-              "speed": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No official rating available for comparison"
-              },
-              "classDropRatingEdge": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No official rating available for comparison"
-              },
-              "draw": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "fitness": {
-                "points": 0,
-                "max": 1,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "firstTimeAids": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockey": {
-                "points": 0,
-                "max": 1,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "jockeyForm": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "6 of 11 rides placed in the last 14 days"
-              },
-              "trainer": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "6 of 12 runners placed in the last 14 days"
-              },
-              "weightChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "trainerCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyTrainerCombo": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "20.9% with this jockey (43 runs) vs 18% overall for this trainer"
-              },
-              "jockeyOnDebutant": {
-                "points": 1,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "24% overall strike rate (at or above the 10% threshold)"
-              },
-              "marketMove": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "winningMark": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "runningStyle": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Not enough classifiable running commentary"
-              },
-              "beatenFavourite": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              }
-            },
-            "rated_weight_advantage": {
-              "runnerOR": null,
-              "medianOR": 79.5,
-              "declaredWeight": 153,
-              "jockeyClaim": 0,
-              "effectiveWeight": 153,
-              "medianEffectiveWeight": 153,
-              "orAdvantage": null,
-              "weightAdvantage": 0,
-              "combined": null
-            },
-            "checklist_points": "4/7",
-            "checklist_earned_points": 4,
-            "stat_rating": 23.65,
-            "meta_rating": 14.17,
+            "meta_rating": 16.2,
             "trainer_trend": "cold"
           },
           {
@@ -1072,7 +1072,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "11/2",
+            "current_odds": "7/1",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -1688,8 +1688,8 @@
               },
               "sample_size": 16
             },
-            "v2_score": 61,
-            "power_rating": 61,
+            "v2_score": 58.6,
+            "power_rating": 58.6,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -1704,9 +1704,9 @@
                 "weighted": 11.25
               },
               "market": {
-                "score": 92,
+                "score": 80,
                 "weight": 0.2,
-                "weighted": 18.4
+                "weighted": 16
               },
               "verdict": {
                 "score": 40,
@@ -1758,16 +1758,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 92,
-                "confidence": "High",
+                "score": 80,
+                "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 2",
-                  "Odds 11/2"
+                  "Market Rank 4",
+                  "Odds 7/1"
                 ],
                 "metrics": {
-                  "rank": 2,
-                  "odds": "11/2",
-                  "decimal_odds": 6.5,
+                  "rank": 4,
+                  "odds": "7/1",
+                  "decimal_odds": 8,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -1782,7 +1782,7 @@
                 }
               }
             },
-            "checklist_rating": 56.7,
+            "checklist_rating": 53.4,
             "checklist_breakdown": {
               "class": {
                 "points": 1.5,
@@ -1891,9 +1891,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "7/1 → 7/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -1926,10 +1926,10 @@
               "weightAdvantage": -1,
               "combined": 19.5
             },
-            "checklist_points": "9.35/16.5",
+            "checklist_points": "9.35/17.5",
             "checklist_earned_points": 9.35,
             "stat_rating": 14.85,
-            "meta_rating": 16.6,
+            "meta_rating": 14.04,
             "trainer_trend": "flat"
           },
           {
@@ -1949,7 +1949,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "15/2",
+            "current_odds": "10/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -2046,8 +2046,8 @@
               },
               "sample_size": 1
             },
-            "v2_score": 53,
-            "power_rating": 53,
+            "v2_score": 51.8,
+            "power_rating": 51.8,
             "confidence": 28,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -2062,9 +2062,9 @@
                 "weighted": 4.05
               },
               "market": {
-                "score": 74,
+                "score": 68,
                 "weight": 0.2,
-                "weighted": 14.8
+                "weighted": 13.6
               },
               "verdict": {
                 "score": 40,
@@ -2115,16 +2115,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 74,
+                "score": 68,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 5",
-                  "Odds 15/2"
+                  "Market Rank 6",
+                  "Odds 10/1"
                 ],
                 "metrics": {
-                  "rank": 5,
-                  "odds": "15/2",
-                  "decimal_odds": 8.5,
+                  "rank": 6,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -2139,7 +2139,7 @@
                 }
               }
             },
-            "checklist_rating": 57,
+            "checklist_rating": 52.4,
             "checklist_breakdown": {
               "class": {
                 "points": 1.5,
@@ -2251,9 +2251,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "10/1 → 10/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -2286,10 +2286,10 @@
               "weightAdvantage": -1,
               "combined": null
             },
-            "checklist_points": "6.55/11.5",
+            "checklist_points": "6.55/12.5",
             "checklist_earned_points": 6.55,
             "stat_rating": 19.88,
-            "meta_rating": 10.49,
+            "meta_rating": 9.63,
             "trainer_trend": "flat"
           },
           {
@@ -2309,7 +2309,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "16/1",
+            "current_odds": "40/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -2433,12 +2433,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 8",
-                  "Odds 16/1"
+                  "Odds 40/1"
                 ],
                 "metrics": {
                   "rank": 8,
-                  "odds": "16/1",
-                  "decimal_odds": 17,
+                  "odds": "40/1",
+                  "decimal_odds": 41,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -2453,7 +2453,7 @@
                 }
               }
             },
-            "checklist_rating": 28.6,
+            "checklist_rating": 25,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -2565,9 +2565,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "40/1 → 40/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -2600,10 +2600,10 @@
               "weightAdvantage": 7,
               "combined": null
             },
-            "checklist_points": "2/7",
+            "checklist_points": "2/8",
             "checklist_earned_points": 2,
             "stat_rating": 24.44,
-            "meta_rating": 5.61,
+            "meta_rating": 5.64,
             "trainer_trend": null
           },
           {
@@ -2623,7 +2623,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "8/1",
+            "current_odds": "9/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -2676,8 +2676,8 @@
               },
               "sample_size": 0
             },
-            "v2_score": 39.6,
-            "power_rating": 39.6,
+            "v2_score": 40.8,
+            "power_rating": 40.8,
             "confidence": 20,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -2692,9 +2692,9 @@
                 "weighted": 1.5
               },
               "market": {
-                "score": 68,
+                "score": 74,
                 "weight": 0.2,
-                "weighted": 13.6
+                "weighted": 14.8
               },
               "verdict": {
                 "score": 40,
@@ -2742,16 +2742,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 68,
+                "score": 74,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 6",
-                  "Odds 8/1"
+                  "Market Rank 5",
+                  "Odds 9/1"
                 ],
                 "metrics": {
-                  "rank": 6,
-                  "odds": "8/1",
-                  "decimal_odds": 9,
+                  "rank": 5,
+                  "odds": "9/1",
+                  "decimal_odds": 10,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -2766,7 +2766,7 @@
                 }
               }
             },
-            "checklist_rating": 57.1,
+            "checklist_rating": 50,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -2878,9 +2878,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "9/1 → 9/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -2913,10 +2913,10 @@
               "weightAdvantage": 0,
               "combined": null
             },
-            "checklist_points": "4/7",
+            "checklist_points": "4/8",
             "checklist_earned_points": 4,
             "stat_rating": 9.2,
-            "meta_rating": 8.36,
+            "meta_rating": 9.13,
             "trainer_trend": "flat"
           },
           {
@@ -2936,7 +2936,7 @@
             "jockey_claim": 7,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "14/1",
+            "current_odds": "25/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -3062,12 +3062,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 7",
-                  "Odds 14/1"
+                  "Odds 25/1"
                 ],
                 "metrics": {
                   "rank": 7,
-                  "odds": "14/1",
-                  "decimal_odds": 15,
+                  "odds": "25/1",
+                  "decimal_odds": 26,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -3082,7 +3082,7 @@
                 }
               }
             },
-            "checklist_rating": 50,
+            "checklist_rating": 42.9,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -3195,9 +3195,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "25/1 → 25/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -3230,10 +3230,10 @@
               "weightAdvantage": 7,
               "combined": null
             },
-            "checklist_points": "3/6",
+            "checklist_points": "3/7",
             "checklist_earned_points": 3,
             "stat_rating": 10,
-            "meta_rating": 5.88,
+            "meta_rating": 5.89,
             "trainer_trend": "flat"
           },
           {
@@ -3253,7 +3253,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "20/1",
+            "current_odds": "66/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -3496,12 +3496,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 9",
-                  "Odds 20/1"
+                  "Odds 66/1"
                 ],
                 "metrics": {
                   "rank": 9,
-                  "odds": "20/1",
-                  "decimal_odds": 21,
+                  "odds": "66/1",
+                  "decimal_odds": 67,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -3516,7 +3516,7 @@
                 }
               }
             },
-            "checklist_rating": 61.8,
+            "checklist_rating": 55.3,
             "checklist_breakdown": {
               "class": {
                 "points": 1,
@@ -3629,9 +3629,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "66/1 → 66/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -3664,7 +3664,7 @@
               "weightAdvantage": 0,
               "combined": null
             },
-            "checklist_points": "5.25/8.5",
+            "checklist_points": "5.25/9.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 8.61,
             "meta_rating": 4.88,
@@ -3687,7 +3687,7 @@
             "jockey_claim": 0,
             "current_class": "4",
             "ride_status": "RUNNER",
-            "current_odds": "66/1",
+            "current_odds": "150/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -4002,13 +4002,13 @@
                 "score": 45,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 10",
-                  "Odds 66/1"
+                  "Market Rank 11",
+                  "Odds 150/1"
                 ],
                 "metrics": {
-                  "rank": 10,
-                  "odds": "66/1",
-                  "decimal_odds": 67,
+                  "rank": 11,
+                  "odds": "150/1",
+                  "decimal_odds": 151,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -4023,7 +4023,7 @@
                 }
               }
             },
-            "checklist_rating": 12.9,
+            "checklist_rating": 12.1,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -4133,9 +4133,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "150/1 → 150/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -4168,10 +4168,10 @@
               "weightAdvantage": -1,
               "combined": -21.5
             },
-            "checklist_points": "2/15.5",
+            "checklist_points": "2/16.5",
             "checklist_earned_points": 2,
             "stat_rating": 4.92,
-            "meta_rating": 2.81,
+            "meta_rating": 2.38,
             "trainer_trend": "flat"
           },
           {
@@ -4356,11 +4356,11 @@
                 "score": 45,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 11",
+                  "Market Rank 10",
                   "Odds 100/1"
                 ],
                 "metrics": {
-                  "rank": 11,
+                  "rank": 10,
                   "odds": "100/1",
                   "decimal_odds": 101,
                   "favourite": false,
@@ -4377,7 +4377,7 @@
                 }
               }
             },
-            "checklist_rating": 17.4,
+            "checklist_rating": 16,
             "checklist_breakdown": {
               "class": {
                 "points": 0,
@@ -4489,9 +4489,9 @@
               },
               "marketMove": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "Steady",
+                "evidence": "100/1 → 100/1 (4 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -4524,10 +4524,10 @@
               "weightAdvantage": 7,
               "combined": null
             },
-            "checklist_points": "2/11.5",
+            "checklist_points": "2/12.5",
             "checklist_earned_points": 2,
             "stat_rating": 5.14,
-            "meta_rating": 2.32,
+            "meta_rating": 2.75,
             "trainer_trend": null
           }
         ],
@@ -5560,7 +5560,7 @@
             "checklist_points": "12.4/16.5",
             "checklist_earned_points": 12.4,
             "stat_rating": 13.12,
-            "meta_rating": 24.5,
+            "meta_rating": 24.44,
             "trainer_trend": "flat"
           },
           {
@@ -7085,7 +7085,7 @@
             "checklist_points": "8.6/15.5",
             "checklist_earned_points": 8.6,
             "stat_rating": 13.75,
-            "meta_rating": 20.3,
+            "meta_rating": 20.29,
             "trainer_trend": null
           },
           {
@@ -8377,7 +8377,7 @@
             "checklist_points": "7.75/14.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 12.08,
-            "meta_rating": 6.86,
+            "meta_rating": 6.84,
             "trainer_trend": "flat"
           },
           {
@@ -9636,7 +9636,7 @@
             "checklist_points": "8.5/18.5",
             "checklist_earned_points": 8.5,
             "stat_rating": 14.63,
-            "meta_rating": 7.06,
+            "meta_rating": 7.1,
             "trainer_trend": "flat"
           },
           {
@@ -10449,7 +10449,7 @@
             "checklist_points": "10.05/16.5",
             "checklist_earned_points": 10.05,
             "stat_rating": 14.31,
-            "meta_rating": 10.22,
+            "meta_rating": 10.26,
             "trainer_trend": null
           },
           {
@@ -11365,7 +11365,7 @@
             "checklist_points": "6/12.5",
             "checklist_earned_points": 6,
             "stat_rating": 13.17,
-            "meta_rating": 3.19,
+            "meta_rating": 3.21,
             "trainer_trend": "flat"
           },
           {
@@ -12991,7 +12991,7 @@
             "checklist_points": "6.2/13.5",
             "checklist_earned_points": 6.2,
             "stat_rating": 12.28,
-            "meta_rating": 8.01,
+            "meta_rating": 8,
             "trainer_trend": "hot"
           }
         ],
@@ -13719,7 +13719,7 @@
             "checklist_points": "7.65/12.5",
             "checklist_earned_points": 7.65,
             "stat_rating": 11.85,
-            "meta_rating": 21.52,
+            "meta_rating": 21.44,
             "trainer_trend": "flat"
           },
           {
@@ -14395,7 +14395,7 @@
             "checklist_points": "8.65/13.5",
             "checklist_earned_points": 8.65,
             "stat_rating": 14.91,
-            "meta_rating": 19.23,
+            "meta_rating": 19.27,
             "trainer_trend": "flat"
           },
           {
@@ -14898,7 +14898,7 @@
             "checklist_points": "5.75/13.5",
             "checklist_earned_points": 5.75,
             "stat_rating": 13.36,
-            "meta_rating": 4.78,
+            "meta_rating": 4.8,
             "trainer_trend": "hot"
           },
           {
@@ -15545,7 +15545,7 @@
             "checklist_points": "6.75/12.5",
             "checklist_earned_points": 6.75,
             "stat_rating": 13.35,
-            "meta_rating": 2.92,
+            "meta_rating": 2.93,
             "trainer_trend": "flat"
           },
           {
@@ -16154,7 +16154,7 @@
             "checklist_points": "7.9/14.5",
             "checklist_earned_points": 7.9,
             "stat_rating": 7.29,
-            "meta_rating": 6.05,
+            "meta_rating": 6.04,
             "trainer_trend": "flat"
           }
         ],
@@ -17016,7 +17016,7 @@
             "checklist_points": "13.3/17.5",
             "checklist_earned_points": 13.3,
             "stat_rating": 13.54,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "flat"
           },
           {
@@ -17488,7 +17488,7 @@
             "checklist_points": "8/15.5",
             "checklist_earned_points": 8,
             "stat_rating": 12.28,
-            "meta_rating": 16.21,
+            "meta_rating": 16.2,
             "trainer_trend": "hot"
           },
           {
@@ -18569,7 +18569,7 @@
             "checklist_points": "11.3/16.5",
             "checklist_earned_points": 11.3,
             "stat_rating": 12.86,
-            "meta_rating": 11.56,
+            "meta_rating": 11.59,
             "trainer_trend": "flat"
           },
           {
@@ -19589,7 +19589,7 @@
             "checklist_points": "8.1/17.5",
             "checklist_earned_points": 8.1,
             "stat_rating": 8.72,
-            "meta_rating": 6.42,
+            "meta_rating": 6.41,
             "trainer_trend": "flat"
           },
           {
@@ -22650,7 +22650,7 @@
             "checklist_points": "9.25/16.5",
             "checklist_earned_points": 9.25,
             "stat_rating": 13.97,
-            "meta_rating": 25.01,
+            "meta_rating": 25.04,
             "trainer_trend": "flat"
           },
           {
@@ -24209,7 +24209,7 @@
             "checklist_points": "5.65/13.5",
             "checklist_earned_points": 5.65,
             "stat_rating": 7.24,
-            "meta_rating": 11.87,
+            "meta_rating": 11.81,
             "trainer_trend": "flat"
           },
           {
@@ -25670,7 +25670,7 @@
             "checklist_points": "11.65/16.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 12.7,
-            "meta_rating": 8.59,
+            "meta_rating": 8.62,
             "trainer_trend": "flat"
           },
           {
@@ -26206,7 +26206,7 @@
             "checklist_points": "6.05/12.5",
             "checklist_earned_points": 6.05,
             "stat_rating": 11.57,
-            "meta_rating": 4.12,
+            "meta_rating": 4.13,
             "trainer_trend": null
           }
         ],
@@ -26758,7 +26758,7 @@
             "checklist_points": "7.95/18.5",
             "checklist_earned_points": 7.95,
             "stat_rating": 7.41,
-            "meta_rating": 17.24,
+            "meta_rating": 17.19,
             "trainer_trend": null
           },
           {
@@ -27274,7 +27274,7 @@
             "checklist_points": "10.65/15.5",
             "checklist_earned_points": 10.65,
             "stat_rating": 16.54,
-            "meta_rating": 16.48,
+            "meta_rating": 16.51,
             "trainer_trend": "hot"
           },
           {
@@ -28060,7 +28060,7 @@
             "checklist_points": "9.45/17.5",
             "checklist_earned_points": 9.45,
             "stat_rating": 13.5,
-            "meta_rating": 15.82,
+            "meta_rating": 15.83,
             "trainer_trend": "flat"
           },
           {
@@ -28533,7 +28533,7 @@
             "checklist_points": "8.75/13.5",
             "checklist_earned_points": 8.75,
             "stat_rating": 18.71,
-            "meta_rating": 18.78,
+            "meta_rating": 18.83,
             "trainer_trend": null
           },
           {
@@ -29586,7 +29586,7 @@
             "checklist_points": "10.2/17.25",
             "checklist_earned_points": 10.2,
             "stat_rating": 9.99,
-            "meta_rating": 8.65,
+            "meta_rating": 8.66,
             "trainer_trend": "flat"
           },
           {
@@ -30184,7 +30184,7 @@
             "checklist_points": "10.25/12.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 10.65,
-            "meta_rating": 7.4,
+            "meta_rating": 7.43,
             "trainer_trend": "flat"
           },
           {
@@ -30646,7 +30646,7 @@
             "checklist_points": "3.25/13.5",
             "checklist_earned_points": 3.25,
             "stat_rating": 3.74,
-            "meta_rating": 6.85,
+            "meta_rating": 6.83,
             "trainer_trend": "flat"
           },
           {
@@ -31217,7 +31217,7 @@
             "checklist_points": "4.85/15.5",
             "checklist_earned_points": 4.85,
             "stat_rating": 6.06,
-            "meta_rating": 3.89,
+            "meta_rating": 3.88,
             "trainer_trend": "cold"
           },
           {
@@ -31892,7 +31892,7 @@
             "checklist_points": "10.55/15.5",
             "checklist_earned_points": 10.55,
             "stat_rating": 8.72,
-            "meta_rating": 3.21,
+            "meta_rating": 3.22,
             "trainer_trend": "hot"
           },
           {
@@ -32600,7 +32600,7 @@
             "checklist_points": "6.25/15.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 6.84,
-            "meta_rating": 2.93,
+            "meta_rating": 2.94,
             "trainer_trend": "hot"
           }
         ],
@@ -33013,7 +33013,7 @@
             "checklist_points": "4.65/11.5",
             "checklist_earned_points": 4.65,
             "stat_rating": 21.3,
-            "meta_rating": 25.58,
+            "meta_rating": 25.61,
             "trainer_trend": null
           },
           {
@@ -33405,7 +33405,7 @@
             "checklist_points": "4.65/12.5",
             "checklist_earned_points": 4.65,
             "stat_rating": 19.39,
-            "meta_rating": 8.43,
+            "meta_rating": 8.46,
             "trainer_trend": "flat"
           },
           {
@@ -34157,7 +34157,7 @@
             "checklist_points": "3.25/11.5",
             "checklist_earned_points": 3.25,
             "stat_rating": 3.97,
-            "meta_rating": 7.39,
+            "meta_rating": 7.37,
             "trainer_trend": "hot"
           },
           {
@@ -34471,7 +34471,7 @@
             "checklist_points": "3/6",
             "checklist_earned_points": 3,
             "stat_rating": 9.2,
-            "meta_rating": 14.88,
+            "meta_rating": 14.9,
             "trainer_trend": "flat"
           },
           {
@@ -35228,7 +35228,7 @@
             "jockey_claim": 0,
             "current_class": "3",
             "ride_status": "RUNNER",
-            "current_odds": "1/1",
+            "current_odds": "1/3",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -35507,13 +35507,13 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 1",
-                  "Odds 1/1",
+                  "Odds 1/3",
                   "Current favourite"
                 ],
                 "metrics": {
                   "rank": 1,
-                  "odds": "1/1",
-                  "decimal_odds": 2,
+                  "odds": "1/3",
+                  "decimal_odds": 1.3333333333333333,
                   "favourite": true,
                   "runners_with_prices": 6
                 }
@@ -35679,7 +35679,7 @@
             "checklist_points": "12.4/17.5",
             "checklist_earned_points": 12.4,
             "stat_rating": 19.03,
-            "meta_rating": 25.35,
+            "meta_rating": 25.38,
             "trainer_trend": "flat"
           },
           {
@@ -36044,7 +36044,7 @@
             "checklist_points": "9.8/13.5",
             "checklist_earned_points": 9.8,
             "stat_rating": 19.03,
-            "meta_rating": 18.4,
+            "meta_rating": 18.42,
             "trainer_trend": "flat"
           },
           {
@@ -36064,7 +36064,7 @@
             "jockey_claim": 0,
             "current_class": "3",
             "ride_status": "RUNNER",
-            "current_odds": "9/2",
+            "current_odds": "10/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -36117,8 +36117,8 @@
               },
               "sample_size": 0
             },
-            "v2_score": 50.2,
-            "power_rating": 50.2,
+            "v2_score": 49,
+            "power_rating": 49,
             "confidence": 34,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -36133,9 +36133,9 @@
                 "weighted": 1.5
               },
               "market": {
-                "score": 86,
+                "score": 80,
                 "weight": 0.2,
-                "weighted": 17.2
+                "weighted": 16
               },
               "verdict": {
                 "score": 60,
@@ -36183,16 +36183,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 86,
-                "confidence": "High",
+                "score": 80,
+                "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 3",
-                  "Odds 9/2"
+                  "Market Rank 4",
+                  "Odds 10/1"
                 ],
                 "metrics": {
-                  "rank": 3,
-                  "odds": "9/2",
-                  "decimal_odds": 5.5,
+                  "rank": 4,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
                   "favourite": false,
                   "runners_with_prices": 6
                 }
@@ -36359,7 +36359,7 @@
             "checklist_points": "4/7",
             "checklist_earned_points": 4,
             "stat_rating": 9.2,
-            "meta_rating": 10.67,
+            "meta_rating": 7.82,
             "trainer_trend": "hot"
           },
           {
@@ -36379,7 +36379,7 @@
             "jockey_claim": 0,
             "current_class": "3",
             "ride_status": "RUNNER",
-            "current_odds": "11/2",
+            "current_odds": "8/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -36432,8 +36432,8 @@
               },
               "sample_size": 0
             },
-            "v2_score": 41.5,
-            "power_rating": 41.5,
+            "v2_score": 42.8,
+            "power_rating": 42.8,
             "confidence": 34,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -36448,9 +36448,9 @@
                 "weighted": 1.05
               },
               "market": {
-                "score": 80,
+                "score": 86,
                 "weight": 0.2,
-                "weighted": 16
+                "weighted": 17.2
               },
               "verdict": {
                 "score": 40,
@@ -36497,16 +36497,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 80,
-                "confidence": "Medium",
+                "score": 86,
+                "confidence": "High",
                 "reasons": [
-                  "Market Rank 4",
-                  "Odds 11/2"
+                  "Market Rank 3",
+                  "Odds 8/1"
                 ],
                 "metrics": {
-                  "rank": 4,
-                  "odds": "11/2",
-                  "decimal_odds": 6.5,
+                  "rank": 3,
+                  "odds": "8/1",
+                  "decimal_odds": 9,
                   "favourite": false,
                   "runners_with_prices": 6
                 }
@@ -36672,7 +36672,7 @@
             "checklist_points": "3/6",
             "checklist_earned_points": 3,
             "stat_rating": 9.2,
-            "meta_rating": 6.53,
+            "meta_rating": 8.96,
             "trainer_trend": "flat"
           },
           {
@@ -36692,7 +36692,7 @@
             "jockey_claim": 0,
             "current_class": "3",
             "ride_status": "RUNNER",
-            "current_odds": "50/1",
+            "current_odds": "100/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -36900,12 +36900,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 6",
-                  "Odds 50/1"
+                  "Odds 100/1"
                 ],
                 "metrics": {
                   "rank": 6,
-                  "odds": "50/1",
-                  "decimal_odds": 51,
+                  "odds": "100/1",
+                  "decimal_odds": 101,
                   "favourite": false,
                   "runners_with_prices": 6
                 }
@@ -37090,7 +37090,7 @@
             "jockey_claim": 0,
             "current_class": "3",
             "ride_status": "RUNNER",
-            "current_odds": "33/1",
+            "current_odds": "66/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -37257,12 +37257,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 5",
-                  "Odds 33/1"
+                  "Odds 66/1"
                 ],
                 "metrics": {
                   "rank": 5,
-                  "odds": "33/1",
-                  "decimal_odds": 34,
+                  "odds": "66/1",
+                  "decimal_odds": 67,
                   "favourite": false,
                   "runners_with_prices": 6
                 }
@@ -37426,7 +37426,7 @@
             "checklist_points": "4/12.5",
             "checklist_earned_points": 4,
             "stat_rating": 5.15,
-            "meta_rating": 3.12,
+            "meta_rating": 3.11,
             "trainer_trend": "cold"
           }
         ],
@@ -38010,7 +38010,7 @@
             "checklist_points": "10/16.5",
             "checklist_earned_points": 10,
             "stat_rating": 13.27,
-            "meta_rating": 23.18,
+            "meta_rating": 23.2,
             "trainer_trend": "flat"
           },
           {
@@ -40054,7 +40054,7 @@
             "checklist_points": "12.65/18.5",
             "checklist_earned_points": 12.65,
             "stat_rating": 17.5,
-            "meta_rating": 17.11,
+            "meta_rating": 17.16,
             "trainer_trend": "cold"
           },
           {
@@ -40931,7 +40931,7 @@
             "checklist_points": "8.25/17.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 8.94,
-            "meta_rating": 18.92,
+            "meta_rating": 18.88,
             "trainer_trend": "hot"
           },
           {
@@ -41537,7 +41537,7 @@
             "checklist_points": "10.55/18.5",
             "checklist_earned_points": 10.55,
             "stat_rating": 12.2,
-            "meta_rating": 6.62,
+            "meta_rating": 6.64,
             "trainer_trend": "flat"
           },
           {
@@ -42176,7 +42176,7 @@
             "checklist_points": "7.25/16.5",
             "checklist_earned_points": 7.25,
             "stat_rating": 8.92,
-            "meta_rating": 12.46,
+            "meta_rating": 12.44,
             "trainer_trend": "hot"
           },
           {
@@ -44209,7 +44209,7 @@
             "checklist_points": "6.25/16.5",
             "checklist_earned_points": 6.25,
             "stat_rating": 10.66,
-            "meta_rating": 3.81,
+            "meta_rating": 3.82,
             "trainer_trend": "hot"
           },
           {
@@ -45947,7 +45947,7 @@
             "checklist_points": "8.25/16.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 8.95,
-            "meta_rating": 6.15,
+            "meta_rating": 6.17,
             "trainer_trend": "flat"
           },
           {
@@ -47166,7 +47166,7 @@
             "checklist_points": "7.55/17.5",
             "checklist_earned_points": 7.55,
             "stat_rating": 8.47,
-            "meta_rating": 5.83,
+            "meta_rating": 5.82,
             "trainer_trend": "cold"
           },
           {
@@ -47901,7 +47901,7 @@
             "checklist_points": "5/16.5",
             "checklist_earned_points": 5,
             "stat_rating": 7.24,
-            "meta_rating": 6,
+            "meta_rating": 5.99,
             "trainer_trend": "hot"
           },
           {
@@ -49503,7 +49503,7 @@
             "checklist_points": "10.05/18.5",
             "checklist_earned_points": 10.05,
             "stat_rating": 17.15,
-            "meta_rating": 22.33,
+            "meta_rating": 22.35,
             "trainer_trend": "hot"
           },
           {
@@ -50119,7 +50119,7 @@
             "checklist_points": "11.05/18.5",
             "checklist_earned_points": 11.05,
             "stat_rating": 22.01,
-            "meta_rating": 18.72,
+            "meta_rating": 18.76,
             "trainer_trend": "flat"
           },
           {
@@ -52158,7 +52158,7 @@
             "checklist_points": "12.65/16.5",
             "checklist_earned_points": 12.65,
             "stat_rating": 12.4,
-            "meta_rating": 20.54,
+            "meta_rating": 20.56,
             "trainer_trend": "flat"
           },
           {
@@ -53723,7 +53723,7 @@
             "checklist_points": "6.25/16.5",
             "checklist_earned_points": 6.25,
             "stat_rating": 5.25,
-            "meta_rating": 6.11,
+            "meta_rating": 6.09,
             "trainer_trend": "flat"
           },
           {
@@ -54664,7 +54664,7 @@
             "checklist_points": "7.05/16.5",
             "checklist_earned_points": 7.05,
             "stat_rating": 9.68,
-            "meta_rating": 4.37,
+            "meta_rating": 4.38,
             "trainer_trend": "hot"
           },
           {
@@ -56388,7 +56388,7 @@
             "checklist_points": "9.35/16.5",
             "checklist_earned_points": 9.35,
             "stat_rating": 5.71,
-            "meta_rating": 5.41,
+            "meta_rating": 5.4,
             "trainer_trend": "flat"
           },
           {
@@ -57129,7 +57129,7 @@
             "checklist_points": "7.25/16.5",
             "checklist_earned_points": 7.25,
             "stat_rating": 10.75,
-            "meta_rating": 9.71,
+            "meta_rating": 9.72,
             "trainer_trend": "flat"
           },
           {
@@ -59709,7 +59709,7 @@
             "checklist_points": "7.25/17.5",
             "checklist_earned_points": 7.25,
             "stat_rating": 9.75,
-            "meta_rating": 6.59,
+            "meta_rating": 6.6,
             "trainer_trend": "flat"
           },
           {
@@ -61134,7 +61134,7 @@
             "checklist_points": "5.25/16.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 6.14,
-            "meta_rating": 2.25,
+            "meta_rating": 2.26,
             "trainer_trend": "hot"
           }
         ],
@@ -61614,7 +61614,7 @@
             "checklist_points": "14/17.5",
             "checklist_earned_points": 14,
             "stat_rating": 10.9,
-            "meta_rating": 26.33,
+            "meta_rating": 26.27,
             "trainer_trend": "hot"
           },
           {
@@ -62043,7 +62043,7 @@
             "checklist_points": "12.85/17.5",
             "checklist_earned_points": 12.85,
             "stat_rating": 16.07,
-            "meta_rating": 19.88,
+            "meta_rating": 19.92,
             "trainer_trend": "cold"
           },
           {
@@ -62574,7 +62574,7 @@
             "checklist_points": "9.15/16.5",
             "checklist_earned_points": 9.15,
             "stat_rating": 14.37,
-            "meta_rating": 9.08,
+            "meta_rating": 9.11,
             "trainer_trend": "flat"
           },
           {
@@ -63002,7 +63002,7 @@
             "checklist_points": "5.1/12.5",
             "checklist_earned_points": 5.1,
             "stat_rating": 5.77,
-            "meta_rating": 9.11,
+            "meta_rating": 9.07,
             "trainer_trend": "flat"
           },
           {
@@ -63537,7 +63537,7 @@
             "checklist_points": "13/17.5",
             "checklist_earned_points": 13,
             "stat_rating": 9.45,
-            "meta_rating": 13.77,
+            "meta_rating": 13.75,
             "trainer_trend": "flat"
           },
           {
@@ -63964,7 +63964,7 @@
             "checklist_points": "8.85/14.5",
             "checklist_earned_points": 8.85,
             "stat_rating": 13.01,
-            "meta_rating": 6.43,
+            "meta_rating": 6.45,
             "trainer_trend": "cold"
           },
           {
@@ -65147,7 +65147,7 @@
             "checklist_points": "9.85/15.5",
             "checklist_earned_points": 9.85,
             "stat_rating": 11.21,
-            "meta_rating": 4.67,
+            "meta_rating": 4.69,
             "trainer_trend": "hot"
           },
           {
@@ -66073,7 +66073,7 @@
             "checklist_points": "13.8/18.5",
             "checklist_earned_points": 13.8,
             "stat_rating": 23.91,
-            "meta_rating": 24.44,
+            "meta_rating": 24.48,
             "trainer_trend": "flat"
           },
           {
@@ -66537,7 +66537,7 @@
             "checklist_points": "13.4/17.5",
             "checklist_earned_points": 13.4,
             "stat_rating": 20.11,
-            "meta_rating": 14.06,
+            "meta_rating": 14.07,
             "trainer_trend": "flat"
           },
           {
@@ -66851,7 +66851,7 @@
             "checklist_points": "3/8",
             "checklist_earned_points": 3,
             "stat_rating": 9.2,
-            "meta_rating": 4.79,
+            "meta_rating": 4.77,
             "trainer_trend": "flat"
           },
           {
@@ -67216,7 +67216,7 @@
             "checklist_points": "7.8/12.5",
             "checklist_earned_points": 7.8,
             "stat_rating": 19.36,
-            "meta_rating": 2.55,
+            "meta_rating": 2.56,
             "trainer_trend": "flat"
           }
         ],
@@ -68179,7 +68179,7 @@
             "checklist_points": "13/17.5",
             "checklist_earned_points": 13,
             "stat_rating": 19.93,
-            "meta_rating": 26.68,
+            "meta_rating": 26.7,
             "trainer_trend": "hot"
           },
           {
@@ -68888,7 +68888,7 @@
             "checklist_points": "10.65/17.5",
             "checklist_earned_points": 10.65,
             "stat_rating": 19.67,
-            "meta_rating": 16.81,
+            "meta_rating": 16.84,
             "trainer_trend": "cold"
           },
           {
@@ -70447,7 +70447,7 @@
             "checklist_points": "11.65/19.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 24.01,
-            "meta_rating": 17.67,
+            "meta_rating": 17.71,
             "trainer_trend": "cold"
           },
           {
@@ -71870,7 +71870,7 @@
             "checklist_points": "12.65/18.5",
             "checklist_earned_points": 12.65,
             "stat_rating": 9.36,
-            "meta_rating": 20.73,
+            "meta_rating": 20.69,
             "trainer_trend": "cold"
           },
           {
@@ -73699,7 +73699,7 @@
             "checklist_points": "11.65/18.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 13.1,
-            "meta_rating": 12.04,
+            "meta_rating": 12.06,
             "trainer_trend": "flat"
           },
           {
@@ -74854,7 +74854,7 @@
             "checklist_points": "12.55/18.5",
             "checklist_earned_points": 12.55,
             "stat_rating": 9.12,
-            "meta_rating": 13.06,
+            "meta_rating": 13.04,
             "trainer_trend": "hot"
           },
           {
@@ -76454,7 +76454,7 @@
             "checklist_points": "8.35/18.5",
             "checklist_earned_points": 8.35,
             "stat_rating": 10.87,
-            "meta_rating": 6.57,
+            "meta_rating": 6.59,
             "trainer_trend": null
           },
           {
@@ -77432,7 +77432,7 @@
             "checklist_points": "9.2/18.5",
             "checklist_earned_points": 9.2,
             "stat_rating": 10.06,
-            "meta_rating": 7.61,
+            "meta_rating": 7.62,
             "trainer_trend": "cold"
           },
           {
@@ -78615,7 +78615,7 @@
             "checklist_points": "12.55/18.5",
             "checklist_earned_points": 12.55,
             "stat_rating": 6.86,
-            "meta_rating": 9.18,
+            "meta_rating": 9.16,
             "trainer_trend": "cold"
           },
           {
@@ -80748,7 +80748,7 @@
             "checklist_points": "8.25/18.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 6.63,
-            "meta_rating": 4.44,
+            "meta_rating": 4.43,
             "trainer_trend": "flat"
           },
           {
@@ -82786,7 +82786,7 @@
             "checklist_points": "8/17.5",
             "checklist_earned_points": 8,
             "stat_rating": 8.82,
-            "meta_rating": 3.59,
+            "meta_rating": 3.6,
             "trainer_trend": "hot"
           },
           {
@@ -84748,7 +84748,7 @@
             "checklist_points": "8.25/17.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 10.11,
-            "meta_rating": 3.85,
+            "meta_rating": 3.86,
             "trainer_trend": "hot"
           }
         ],
@@ -86120,7 +86120,7 @@
             "checklist_points": "14.25/17.5",
             "checklist_earned_points": 14.25,
             "stat_rating": 15.11,
-            "meta_rating": 26.2,
+            "meta_rating": 26.24,
             "trainer_trend": "cold"
           },
           {
@@ -87651,7 +87651,7 @@
             "checklist_points": "14.25/16.5",
             "checklist_earned_points": 14.25,
             "stat_rating": 14.14,
-            "meta_rating": 23.22,
+            "meta_rating": 23.23,
             "trainer_trend": "flat"
           },
           {
@@ -88328,7 +88328,7 @@
             "checklist_points": "8/18.5",
             "checklist_earned_points": 8,
             "stat_rating": 15.08,
-            "meta_rating": 12.82,
+            "meta_rating": 12.85,
             "trainer_trend": "cold"
           },
           {
@@ -92396,7 +92396,7 @@
             "checklist_points": "14.65/18.5",
             "checklist_earned_points": 14.65,
             "stat_rating": 12.8,
-            "meta_rating": 17.68,
+            "meta_rating": 17.7,
             "trainer_trend": "hot"
           },
           {
@@ -94697,7 +94697,7 @@
             "checklist_points": "12.45/18.5",
             "checklist_earned_points": 12.45,
             "stat_rating": 11.05,
-            "meta_rating": 8.66,
+            "meta_rating": 8.68,
             "trainer_trend": "hot"
           },
           {
@@ -96023,7 +96023,7 @@
             "checklist_points": "9/17.5",
             "checklist_earned_points": 9,
             "stat_rating": 4.37,
-            "meta_rating": 5.01,
+            "meta_rating": 5,
             "trainer_trend": "cold"
           },
           {
@@ -96906,7 +96906,7 @@
             "checklist_points": "10.75/17.5",
             "checklist_earned_points": 10.75,
             "stat_rating": 8.63,
-            "meta_rating": 9.48,
+            "meta_rating": 9.49,
             "trainer_trend": "hot"
           },
           {
@@ -103848,7 +103848,7 @@
             "checklist_points": "6.25/16.5",
             "checklist_earned_points": 6.25,
             "stat_rating": 7.33,
-            "meta_rating": 2.33,
+            "meta_rating": 2.34,
             "trainer_trend": "hot"
           }
         ],
@@ -104675,7 +104675,7 @@
             "checklist_points": "10.5/16.5",
             "checklist_earned_points": 10.5,
             "stat_rating": 12.73,
-            "meta_rating": 22.35,
+            "meta_rating": 22.26,
             "trainer_trend": null
           },
           {
@@ -105245,7 +105245,7 @@
             "checklist_points": "10.75/16.5",
             "checklist_earned_points": 10.75,
             "stat_rating": 15.39,
-            "meta_rating": 20.31,
+            "meta_rating": 20.3,
             "trainer_trend": "flat"
           },
           {
@@ -105742,7 +105742,7 @@
             "checklist_points": "10.55/17.5",
             "checklist_earned_points": 10.55,
             "stat_rating": 14.82,
-            "meta_rating": 10.67,
+            "meta_rating": 10.66,
             "trainer_trend": "flat"
           },
           {
@@ -106175,7 +106175,7 @@
             "checklist_points": "5.45/13.5",
             "checklist_earned_points": 5.45,
             "stat_rating": 9.13,
-            "meta_rating": 5.95,
+            "meta_rating": 5.93,
             "trainer_trend": "flat"
           },
           {
@@ -106637,7 +106637,7 @@
             "checklist_points": "7.75/16.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 15.55,
-            "meta_rating": 4.24,
+            "meta_rating": 4.27,
             "trainer_trend": "flat"
           },
           {
@@ -107042,7 +107042,7 @@
             "checklist_points": "6.25/15.5",
             "checklist_earned_points": 6.25,
             "stat_rating": 15.51,
-            "meta_rating": 2.31,
+            "meta_rating": 2.33,
             "trainer_trend": "cold"
           }
         ],
@@ -107739,7 +107739,7 @@
             "checklist_points": "10.25/17.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 12.01,
-            "meta_rating": 22.89,
+            "meta_rating": 22.87,
             "trainer_trend": "cold"
           },
           {
@@ -109064,7 +109064,7 @@
             "checklist_points": "15/17.5",
             "checklist_earned_points": 15,
             "stat_rating": 16.74,
-            "meta_rating": 23.81,
+            "meta_rating": 23.85,
             "trainer_trend": "hot"
           },
           {
@@ -109697,7 +109697,7 @@
             "checklist_points": "10.25/17.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 14.19,
-            "meta_rating": 17.65,
+            "meta_rating": 17.68,
             "trainer_trend": "flat"
           },
           {
@@ -111736,7 +111736,7 @@
             "checklist_points": "10.45/17.5",
             "checklist_earned_points": 10.45,
             "stat_rating": 12.54,
-            "meta_rating": 15.1,
+            "meta_rating": 15.13,
             "trainer_trend": "flat"
           },
           {
@@ -114449,7 +114449,7 @@
             "checklist_points": "14/19.25",
             "checklist_earned_points": 14,
             "stat_rating": 12.4,
-            "meta_rating": 12.22,
+            "meta_rating": 12.24,
             "trainer_trend": "hot"
           },
           {
@@ -119459,7 +119459,7 @@
             "checklist_points": "6.9/16.25",
             "checklist_earned_points": 6.9,
             "stat_rating": 9.66,
-            "meta_rating": 4.03,
+            "meta_rating": 4.04,
             "trainer_trend": null
           },
           {
@@ -119954,7 +119954,7 @@
             "checklist_points": "7.45/15.5",
             "checklist_earned_points": 7.45,
             "stat_rating": 6.43,
-            "meta_rating": 6.44,
+            "meta_rating": 6.43,
             "trainer_trend": "hot"
           },
           {
@@ -122913,7 +122913,7 @@
             "checklist_points": "10.25/16.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 17.55,
-            "meta_rating": 17.36,
+            "meta_rating": 17.4,
             "trainer_trend": "cold"
           },
           {
@@ -124370,7 +124370,7 @@
             "checklist_points": "10.6/16.5",
             "checklist_earned_points": 10.6,
             "stat_rating": 17.48,
-            "meta_rating": 20,
+            "meta_rating": 20.03,
             "trainer_trend": "cold"
           },
           {
@@ -125004,7 +125004,7 @@
             "checklist_points": "12.4/17.5",
             "checklist_earned_points": 12.4,
             "stat_rating": 15.17,
-            "meta_rating": 15.06,
+            "meta_rating": 15.07,
             "trainer_trend": "cold"
           },
           {
@@ -125677,7 +125677,7 @@
             "checklist_points": "11.95/17.5",
             "checklist_earned_points": 11.95,
             "stat_rating": 15.15,
-            "meta_rating": 11.84,
+            "meta_rating": 11.85,
             "trainer_trend": "flat"
           },
           {
@@ -127506,7 +127506,7 @@
             "checklist_points": "10/17.5",
             "checklist_earned_points": 10,
             "stat_rating": 9.39,
-            "meta_rating": 5.7,
+            "meta_rating": 5.71,
             "trainer_trend": "hot"
           },
           {
@@ -129340,7 +129340,7 @@
             "checklist_points": "7.75/17.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 7.38,
-            "meta_rating": 3.43,
+            "meta_rating": 3.42,
             "trainer_trend": "flat"
           },
           {
@@ -129910,7 +129910,7 @@
             "checklist_points": "7.75/16.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 9.93,
-            "meta_rating": 4.01,
+            "meta_rating": 4.02,
             "trainer_trend": "flat"
           },
           {
@@ -131788,7 +131788,7 @@
             "checklist_points": "11.4/17.5",
             "checklist_earned_points": 11.4,
             "stat_rating": 17,
-            "meta_rating": 25.35,
+            "meta_rating": 25.38,
             "trainer_trend": "flat"
           },
           {
@@ -132391,7 +132391,7 @@
             "checklist_points": "11.8/19.5",
             "checklist_earned_points": 11.8,
             "stat_rating": 11.53,
-            "meta_rating": 12.17,
+            "meta_rating": 12.19,
             "trainer_trend": "flat"
           },
           {
@@ -133143,7 +133143,7 @@
             "checklist_points": "3.6/13.5",
             "checklist_earned_points": 3.6,
             "stat_rating": 7.68,
-            "meta_rating": 4.37,
+            "meta_rating": 4.38,
             "trainer_trend": null
           },
           {
@@ -133747,7 +133747,7 @@
             "checklist_points": "8.25/17.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 7.6,
-            "meta_rating": 5.68,
+            "meta_rating": 5.67,
             "trainer_trend": "cold"
           },
           {
@@ -136226,7 +136226,7 @@
             "checklist_points": "11.8/18.5",
             "checklist_earned_points": 11.8,
             "stat_rating": 14.6,
-            "meta_rating": 19.23,
+            "meta_rating": 19.27,
             "trainer_trend": "flat"
           },
           {
@@ -137726,7 +137726,7 @@
             "checklist_points": "8.3/16.5",
             "checklist_earned_points": 8.3,
             "stat_rating": 6.09,
-            "meta_rating": 8.29,
+            "meta_rating": 8.28,
             "trainer_trend": "flat"
           },
           {
@@ -139644,7 +139644,7 @@
             "checklist_points": "6.9/16.5",
             "checklist_earned_points": 6.9,
             "stat_rating": 6.43,
-            "meta_rating": 2.49,
+            "meta_rating": 2.5,
             "trainer_trend": "cold"
           }
         ],
@@ -140273,7 +140273,7 @@
             "checklist_points": "14/17.5",
             "checklist_earned_points": 14,
             "stat_rating": 19.35,
-            "meta_rating": 25.96,
+            "meta_rating": 26,
             "trainer_trend": "flat"
           },
           {
@@ -142250,7 +142250,7 @@
             "checklist_points": "14/16.5",
             "checklist_earned_points": 14,
             "stat_rating": 14.61,
-            "meta_rating": 18.77,
+            "meta_rating": 18.8,
             "trainer_trend": "cold"
           },
           {
@@ -143343,7 +143343,7 @@
             "checklist_points": "11/17.5",
             "checklist_earned_points": 11,
             "stat_rating": 9.3,
-            "meta_rating": 18.5,
+            "meta_rating": 18.48,
             "trainer_trend": "flat"
           },
           {
@@ -144398,7 +144398,7 @@
             "checklist_points": "5/16.5",
             "checklist_earned_points": 5,
             "stat_rating": 4.57,
-            "meta_rating": 5.89,
+            "meta_rating": 5.87,
             "trainer_trend": "hot"
           },
           {
@@ -145478,7 +145478,7 @@
             "checklist_points": "8.5/17.5",
             "checklist_earned_points": 8.5,
             "stat_rating": 7.03,
-            "meta_rating": 10.92,
+            "meta_rating": 10.9,
             "trainer_trend": "flat"
           },
           {
@@ -146281,7 +146281,7 @@
             "checklist_points": "7.75/17.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 7.64,
-            "meta_rating": 6.99,
+            "meta_rating": 7,
             "trainer_trend": "flat"
           },
           {
@@ -147029,7 +147029,7 @@
             "checklist_points": "8.8/16.5",
             "checklist_earned_points": 8.8,
             "stat_rating": 9.85,
-            "meta_rating": 8.47,
+            "meta_rating": 8.49,
             "trainer_trend": "flat"
           },
           {
@@ -147495,7 +147495,7 @@
             "checklist_points": "11/17.5",
             "checklist_earned_points": 11,
             "stat_rating": 13.36,
-            "meta_rating": 4.2,
+            "meta_rating": 4.22,
             "trainer_trend": "flat"
           },
           {
@@ -150787,7 +150787,7 @@
             "checklist_points": "15.25/17.5",
             "checklist_earned_points": 15.25,
             "stat_rating": 25.42,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "cold"
           },
           {
@@ -151699,7 +151699,7 @@
             "checklist_points": "8.75/18.5",
             "checklist_earned_points": 8.75,
             "stat_rating": 10.31,
-            "meta_rating": 10.1,
+            "meta_rating": 10.13,
             "trainer_trend": "flat"
           },
           {
@@ -153738,7 +153738,7 @@
             "checklist_points": "7.8/19.5",
             "checklist_earned_points": 7.8,
             "stat_rating": 7.37,
-            "meta_rating": 13.74,
+            "meta_rating": 13.7,
             "trainer_trend": "cold"
           },
           {
@@ -154818,7 +154818,7 @@
             "checklist_points": "11.1/18.5",
             "checklist_earned_points": 11.1,
             "stat_rating": 9.22,
-            "meta_rating": 18.77,
+            "meta_rating": 18.76,
             "trainer_trend": "cold"
           },
           {
@@ -157666,7 +157666,7 @@
             "checklist_points": "9.35/18.5",
             "checklist_earned_points": 9.35,
             "stat_rating": 6.09,
-            "meta_rating": 11.22,
+            "meta_rating": 11.18,
             "trainer_trend": "cold"
           },
           {
@@ -158914,7 +158914,7 @@
             "checklist_points": "10.25/20.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 9.45,
-            "meta_rating": 5.6,
+            "meta_rating": 5.63,
             "trainer_trend": "hot"
           },
           {
@@ -159517,7 +159517,7 @@
             "checklist_points": "7.8/18.5",
             "checklist_earned_points": 7.8,
             "stat_rating": 9.36,
-            "meta_rating": 5.76,
+            "meta_rating": 5.78,
             "trainer_trend": "hot"
           },
           {
@@ -160630,7 +160630,7 @@
             "checklist_points": "10.5/20.5",
             "checklist_earned_points": 10.5,
             "stat_rating": 8.21,
-            "meta_rating": 3.76,
+            "meta_rating": 3.77,
             "trainer_trend": "flat"
           },
           {
@@ -164097,7 +164097,7 @@
             "checklist_points": "8/19.5",
             "checklist_earned_points": 8,
             "stat_rating": 8.64,
-            "meta_rating": 24.91,
+            "meta_rating": 24.92,
             "trainer_trend": "hot"
           },
           {
@@ -164906,7 +164906,7 @@
             "checklist_points": "10.45/18.5",
             "checklist_earned_points": 10.45,
             "stat_rating": 9.11,
-            "meta_rating": 21.36,
+            "meta_rating": 21.41,
             "trainer_trend": "hot"
           },
           {
@@ -165709,7 +165709,7 @@
             "checklist_points": "7/17.5",
             "checklist_earned_points": 7,
             "stat_rating": 7.9,
-            "meta_rating": 12.35,
+            "meta_rating": 12.37,
             "trainer_trend": "flat"
           },
           {
@@ -167738,7 +167738,7 @@
             "checklist_points": "9/19.5",
             "checklist_earned_points": 9,
             "stat_rating": 6.59,
-            "meta_rating": 10.25,
+            "meta_rating": 10.26,
             "trainer_trend": "cold"
           },
           {
@@ -168759,7 +168759,7 @@
             "checklist_points": "7/18.5",
             "checklist_earned_points": 7,
             "stat_rating": 4.93,
-            "meta_rating": 12.23,
+            "meta_rating": 12.21,
             "trainer_trend": "cold"
           },
           {
@@ -171328,7 +171328,7 @@
             "checklist_points": "5.25/19.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 4.54,
-            "meta_rating": 4.86,
+            "meta_rating": 4.85,
             "trainer_trend": "hot"
           },
           {
@@ -173717,7 +173717,7 @@
             "checklist_points": "5/17.5",
             "checklist_earned_points": 5,
             "stat_rating": 5.22,
-            "meta_rating": 2.38,
+            "meta_rating": 2.39,
             "trainer_trend": null
           }
         ],
@@ -174515,7 +174515,7 @@
             "checklist_points": "11.65/16.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 18.04,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "cold"
           },
           {
@@ -175461,7 +175461,7 @@
             "checklist_points": "7.5/17.5",
             "checklist_earned_points": 7.5,
             "stat_rating": 10.76,
-            "meta_rating": 19.79,
+            "meta_rating": 19.82,
             "trainer_trend": "cold"
           },
           {
@@ -178169,7 +178169,7 @@
             "checklist_points": "7/16.5",
             "checklist_earned_points": 7,
             "stat_rating": 4.81,
-            "meta_rating": 7.06,
+            "meta_rating": 7.04,
             "trainer_trend": "flat"
           },
           {
@@ -179214,7 +179214,7 @@
             "checklist_points": "6.25/18.5",
             "checklist_earned_points": 6.25,
             "stat_rating": 6.89,
-            "meta_rating": 7.52,
+            "meta_rating": 7.54,
             "trainer_trend": null
           },
           {
@@ -180022,7 +180022,7 @@
             "checklist_points": "4.5/16.5",
             "checklist_earned_points": 4.5,
             "stat_rating": 4.28,
-            "meta_rating": 4.14,
+            "meta_rating": 4.13,
             "trainer_trend": null
           },
           {
@@ -180983,7 +180983,7 @@
             "checklist_points": "6/18.5",
             "checklist_earned_points": 6,
             "stat_rating": 5.79,
-            "meta_rating": 3.05,
+            "meta_rating": 3.06,
             "trainer_trend": "flat"
           }
         ],
@@ -181776,7 +181776,7 @@
             "checklist_points": "13.4/19.5",
             "checklist_earned_points": 13.4,
             "stat_rating": 7.27,
-            "meta_rating": 25.71,
+            "meta_rating": 25.68,
             "trainer_trend": "cold"
           },
           {
@@ -183231,7 +183231,7 @@
             "checklist_points": "11.4/18.5",
             "checklist_earned_points": 11.4,
             "stat_rating": 10.08,
-            "meta_rating": 15.88,
+            "meta_rating": 15.9,
             "trainer_trend": "hot"
           },
           {
@@ -185201,7 +185201,7 @@
             "checklist_points": "13.05/18.5",
             "checklist_earned_points": 13.05,
             "stat_rating": 13.15,
-            "meta_rating": 13.91,
+            "meta_rating": 13.96,
             "trainer_trend": "cold"
           },
           {
@@ -185902,7 +185902,7 @@
             "checklist_points": "6.85/16.5",
             "checklist_earned_points": 6.85,
             "stat_rating": 5.98,
-            "meta_rating": 8.51,
+            "meta_rating": 8.5,
             "trainer_trend": "cold"
           },
           {
@@ -187826,7 +187826,7 @@
             "checklist_points": "10.5/17.5",
             "checklist_earned_points": 10.5,
             "stat_rating": 11.36,
-            "meta_rating": 7.76,
+            "meta_rating": 7.8,
             "trainer_trend": "flat"
           },
           {
@@ -188390,7 +188390,7 @@
             "checklist_points": "8.1/17.5",
             "checklist_earned_points": 8.1,
             "stat_rating": 5.88,
-            "meta_rating": 12.02,
+            "meta_rating": 12,
             "trainer_trend": "flat"
           },
           {
@@ -188960,7 +188960,7 @@
             "checklist_points": "9/17.5",
             "checklist_earned_points": 9,
             "stat_rating": 7.15,
-            "meta_rating": 5.38,
+            "meta_rating": 5.39,
             "trainer_trend": "hot"
           },
           {
@@ -190686,7 +190686,7 @@
             "checklist_points": "7.75/17.5",
             "checklist_earned_points": 7.75,
             "stat_rating": 5.15,
-            "meta_rating": 3.35,
+            "meta_rating": 3.34,
             "trainer_trend": null
           },
           {
@@ -193388,7 +193388,7 @@
             "checklist_points": "6/17.5",
             "checklist_earned_points": 6,
             "stat_rating": 5.31,
-            "meta_rating": 2.33,
+            "meta_rating": 2.34,
             "trainer_trend": "hot"
           }
         ],
@@ -193813,7 +193813,7 @@
             "checklist_points": "10.4/14.5",
             "checklist_earned_points": 10.4,
             "stat_rating": 24.25,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "flat"
           },
           {
@@ -194173,7 +194173,7 @@
             "checklist_points": "7.8/12.5",
             "checklist_earned_points": 7.8,
             "stat_rating": 19.87,
-            "meta_rating": 21.16,
+            "meta_rating": 21.18,
             "trainer_trend": "flat"
           },
           {
@@ -194566,7 +194566,7 @@
             "checklist_points": "4.6/13.5",
             "checklist_earned_points": 4.6,
             "stat_rating": 7.45,
-            "meta_rating": 14.76,
+            "meta_rating": 14.75,
             "trainer_trend": "cold"
           },
           {
@@ -194958,7 +194958,7 @@
             "checklist_points": "5.6/12.5",
             "checklist_earned_points": 5.6,
             "stat_rating": 8.22,
-            "meta_rating": 5.31,
+            "meta_rating": 5.32,
             "trainer_trend": "cold"
           },
           {
@@ -195349,7 +195349,7 @@
             "checklist_points": "5.25/13.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 4.86,
-            "meta_rating": 11.27,
+            "meta_rating": 11.24,
             "trainer_trend": "flat"
           },
           {
@@ -195661,7 +195661,7 @@
             "checklist_points": "4/8",
             "checklist_earned_points": 4,
             "stat_rating": 9.2,
-            "meta_rating": 9.78,
+            "meta_rating": 9.81,
             "trainer_trend": "cold"
           },
           {
@@ -196051,7 +196051,7 @@
             "checklist_points": "3/13.5",
             "checklist_earned_points": 3,
             "stat_rating": 5.58,
-            "meta_rating": 4.06,
+            "meta_rating": 4.07,
             "trainer_trend": null
           },
           {
@@ -196800,7 +196800,7 @@
             "checklist_points": "4/12.5",
             "checklist_earned_points": 4,
             "stat_rating": 4.1,
-            "meta_rating": 5.6,
+            "meta_rating": 5.59,
             "trainer_trend": "hot"
           },
           {
@@ -197156,7 +197156,7 @@
             "checklist_points": "3.25/12.5",
             "checklist_earned_points": 3.25,
             "stat_rating": 4.29,
-            "meta_rating": 4.22,
+            "meta_rating": 4.21,
             "trainer_trend": "hot"
           }
         ],
@@ -197569,7 +197569,7 @@
             "checklist_points": "10.65/13.5",
             "checklist_earned_points": 10.65,
             "stat_rating": 23.12,
-            "meta_rating": 25.25,
+            "meta_rating": 25.27,
             "trainer_trend": "flat"
           },
           {
@@ -197964,7 +197964,7 @@
             "checklist_points": "9.65/13.5",
             "checklist_earned_points": 9.65,
             "stat_rating": 24.76,
-            "meta_rating": 22.48,
+            "meta_rating": 22.52,
             "trainer_trend": "cold"
           },
           {
@@ -198323,7 +198323,7 @@
             "checklist_points": "5.25/12.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 6.43,
-            "meta_rating": 14.64,
+            "meta_rating": 14.6,
             "trainer_trend": "hot"
           },
           {
@@ -198716,7 +198716,7 @@
             "checklist_points": "7.8/12.5",
             "checklist_earned_points": 7.8,
             "stat_rating": 11.84,
-            "meta_rating": 12.71,
+            "meta_rating": 12.74,
             "trainer_trend": "flat"
           },
           {
@@ -199421,7 +199421,7 @@
             "checklist_points": "3/7",
             "checklist_earned_points": 3,
             "stat_rating": 9.2,
-            "meta_rating": 7.6,
+            "meta_rating": 7.62,
             "trainer_trend": "cold"
           },
           {
@@ -199733,7 +199733,7 @@
             "checklist_points": "5/8",
             "checklist_earned_points": 5,
             "stat_rating": 9.2,
-            "meta_rating": 5.34,
+            "meta_rating": 5.36,
             "trainer_trend": "cold"
           },
           {
@@ -200124,7 +200124,7 @@
             "checklist_points": "5.6/13.5",
             "checklist_earned_points": 5.6,
             "stat_rating": 5.8,
-            "meta_rating": 7.23,
+            "meta_rating": 7.22,
             "trainer_trend": "cold"
           },
           {
@@ -200879,7 +200879,7 @@
             "checklist_points": "3.5/12.5",
             "checklist_earned_points": 3.5,
             "stat_rating": 4.23,
-            "meta_rating": 2.8,
+            "meta_rating": 2.79,
             "trainer_trend": "cold"
           }
         ],
@@ -201257,7 +201257,7 @@
             "checklist_points": "9.4/12.5",
             "checklist_earned_points": 9.4,
             "stat_rating": 23.77,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "flat"
           },
           {
@@ -201650,7 +201650,7 @@
             "checklist_points": "8/13.5",
             "checklist_earned_points": 8,
             "stat_rating": 12.76,
-            "meta_rating": 17.7,
+            "meta_rating": 17.69,
             "trainer_trend": "flat"
           },
           {
@@ -202044,7 +202044,7 @@
             "checklist_points": "6.8/11.5",
             "checklist_earned_points": 6.8,
             "stat_rating": 14.88,
-            "meta_rating": 12.08,
+            "meta_rating": 12.11,
             "trainer_trend": "hot"
           },
           {
@@ -202358,7 +202358,7 @@
             "checklist_points": "4/6",
             "checklist_earned_points": 4,
             "stat_rating": 9.2,
-            "meta_rating": 9.34,
+            "meta_rating": 9.35,
             "trainer_trend": "flat"
           },
           {
@@ -202715,7 +202715,7 @@
             "checklist_points": "3/11.5",
             "checklist_earned_points": 3,
             "stat_rating": 5.75,
-            "meta_rating": 4.82,
+            "meta_rating": 4.81,
             "trainer_trend": "flat"
           },
           {
@@ -203071,7 +203071,7 @@
             "checklist_points": "5/12.5",
             "checklist_earned_points": 5,
             "stat_rating": 6.33,
-            "meta_rating": 2.83,
+            "meta_rating": 2.84,
             "trainer_trend": "flat"
           },
           {
@@ -203428,7 +203428,7 @@
             "checklist_points": "4/11.5",
             "checklist_earned_points": 4,
             "stat_rating": 4.07,
-            "meta_rating": 3.13,
+            "meta_rating": 3.12,
             "trainer_trend": "cold"
           }
         ],
@@ -203908,7 +203908,7 @@
             "checklist_points": "10.8/16.5",
             "checklist_earned_points": 10.8,
             "stat_rating": 14.37,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "flat"
           },
           {
@@ -204336,7 +204336,7 @@
             "checklist_points": "8.4/13.5",
             "checklist_earned_points": 8.4,
             "stat_rating": 9.29,
-            "meta_rating": 20.52,
+            "meta_rating": 20.55,
             "trainer_trend": "cold"
           },
           {
@@ -204763,7 +204763,7 @@
             "checklist_points": "4.45/13.5",
             "checklist_earned_points": 4.45,
             "stat_rating": 8.26,
-            "meta_rating": 7.7,
+            "meta_rating": 7.72,
             "trainer_trend": null
           },
           {
@@ -205326,7 +205326,7 @@
             "checklist_points": "9.45/17.5",
             "checklist_earned_points": 9.45,
             "stat_rating": 8.7,
-            "meta_rating": 13.85,
+            "meta_rating": 13.87,
             "trainer_trend": "hot"
           },
           {
@@ -206317,7 +206317,7 @@
             "checklist_points": "9.85/16.5",
             "checklist_earned_points": 9.85,
             "stat_rating": 7.41,
-            "meta_rating": 8.4,
+            "meta_rating": 8.39,
             "trainer_trend": "hot"
           },
           {
@@ -209452,7 +209452,7 @@
             "checklist_points": "12.05/17.5",
             "checklist_earned_points": 12.05,
             "stat_rating": 16.53,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "cold"
           },
           {
@@ -210267,7 +210267,7 @@
             "checklist_points": "11.05/17.5",
             "checklist_earned_points": 11.05,
             "stat_rating": 9.44,
-            "meta_rating": 20.92,
+            "meta_rating": 20.89,
             "trainer_trend": "cold"
           },
           {
@@ -211253,7 +211253,7 @@
             "checklist_points": "7.85/17.5",
             "checklist_earned_points": 7.85,
             "stat_rating": 12.53,
-            "meta_rating": 6.36,
+            "meta_rating": 6.39,
             "trainer_trend": "cold"
           },
           {
@@ -212577,7 +212577,7 @@
             "checklist_points": "10.35/18.5",
             "checklist_earned_points": 10.35,
             "stat_rating": 6.04,
-            "meta_rating": 14.68,
+            "meta_rating": 14.63,
             "trainer_trend": null
           },
           {
@@ -213383,7 +213383,7 @@
             "checklist_points": "11.35/18.5",
             "checklist_earned_points": 11.35,
             "stat_rating": 9.54,
-            "meta_rating": 10.4,
+            "meta_rating": 10.41,
             "trainer_trend": "hot"
           },
           {
@@ -214768,7 +214768,7 @@
             "checklist_points": "7.85/17.5",
             "checklist_earned_points": 7.85,
             "stat_rating": 5.99,
-            "meta_rating": 5.56,
+            "meta_rating": 5.55,
             "trainer_trend": "flat"
           },
           {
@@ -216016,7 +216016,7 @@
             "checklist_points": "8.3/18.5",
             "checklist_earned_points": 8.3,
             "stat_rating": 6.49,
-            "meta_rating": 9.24,
+            "meta_rating": 9.23,
             "trainer_trend": "flat"
           },
           {
@@ -218624,7 +218624,7 @@
             "checklist_points": "9.5/18.5",
             "checklist_earned_points": 9.5,
             "stat_rating": 5.87,
-            "meta_rating": 3.51,
+            "meta_rating": 3.5,
             "trainer_trend": "flat"
           },
           {
@@ -219188,7 +219188,7 @@
             "checklist_points": "6.75/16.5",
             "checklist_earned_points": 6.75,
             "stat_rating": 10.38,
-            "meta_rating": 2.4,
+            "meta_rating": 2.42,
             "trainer_trend": "flat"
           }
         ],
@@ -221245,7 +221245,7 @@
             "checklist_points": "11.65/16.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 14.35,
-            "meta_rating": 24.04,
+            "meta_rating": 24.06,
             "trainer_trend": "hot"
           },
           {
@@ -222803,7 +222803,7 @@
             "checklist_points": "14.4/16.5",
             "checklist_earned_points": 14.4,
             "stat_rating": 14.97,
-            "meta_rating": 24.05,
+            "meta_rating": 24.09,
             "trainer_trend": "flat"
           },
           {
@@ -224099,7 +224099,7 @@
             "checklist_points": "9.55/16.5",
             "checklist_earned_points": 9.55,
             "stat_rating": 13.07,
-            "meta_rating": 16.97,
+            "meta_rating": 16.99,
             "trainer_trend": "cold"
           },
           {
@@ -225557,7 +225557,7 @@
             "checklist_points": "11.7/17.5",
             "checklist_earned_points": 11.7,
             "stat_rating": 9.87,
-            "meta_rating": 17.73,
+            "meta_rating": 17.72,
             "trainer_trend": null
           },
           {
@@ -227589,7 +227589,7 @@
             "checklist_points": "6.45/16.5",
             "checklist_earned_points": 6.45,
             "stat_rating": 11.19,
-            "meta_rating": 8.6,
+            "meta_rating": 8.62,
             "trainer_trend": "flat"
           },
           {
@@ -229626,7 +229626,7 @@
             "checklist_points": "7.65/16.5",
             "checklist_earned_points": 7.65,
             "stat_rating": 10.19,
-            "meta_rating": 10.07,
+            "meta_rating": 10.09,
             "trainer_trend": "cold"
           },
           {
@@ -231250,7 +231250,7 @@
             "checklist_points": "8/16.5",
             "checklist_earned_points": 8,
             "stat_rating": 7.6,
-            "meta_rating": 11.02,
+            "meta_rating": 11,
             "trainer_trend": "cold"
           },
           {
@@ -231854,7 +231854,7 @@
             "checklist_points": "7.45/16.5",
             "checklist_earned_points": 7.45,
             "stat_rating": 9.78,
-            "meta_rating": 6.59,
+            "meta_rating": 6.6,
             "trainer_trend": "hot"
           },
           {
@@ -235080,7 +235080,7 @@
             "checklist_points": "4/15.5",
             "checklist_earned_points": 4,
             "stat_rating": 4.75,
-            "meta_rating": 3.38,
+            "meta_rating": 3.37,
             "trainer_trend": "hot"
           },
           {
@@ -235541,7 +235541,7 @@
             "checklist_points": "7/15.5",
             "checklist_earned_points": 7,
             "stat_rating": 8.65,
-            "meta_rating": 4.2,
+            "meta_rating": 4.21,
             "trainer_trend": "hot"
           },
           {
@@ -238649,7 +238649,7 @@
             "checklist_points": "13/16.5",
             "checklist_earned_points": 13,
             "stat_rating": 10.45,
-            "meta_rating": 25.43,
+            "meta_rating": 25.41,
             "trainer_trend": "hot"
           },
           {
@@ -240041,7 +240041,7 @@
             "checklist_points": "10.2/17.5",
             "checklist_earned_points": 10.2,
             "stat_rating": 15.51,
-            "meta_rating": 20.12,
+            "meta_rating": 20.15,
             "trainer_trend": "hot"
           },
           {
@@ -241537,7 +241537,7 @@
             "checklist_points": "13/16.5",
             "checklist_earned_points": 13,
             "stat_rating": 8.75,
-            "meta_rating": 23.29,
+            "meta_rating": 23.27,
             "trainer_trend": "cold"
           },
           {
@@ -242926,7 +242926,7 @@
             "checklist_points": "10.25/16.5",
             "checklist_earned_points": 10.25,
             "stat_rating": 8.69,
-            "meta_rating": 16.57,
+            "meta_rating": 16.55,
             "trainer_trend": "cold"
           },
           {
@@ -243742,7 +243742,7 @@
             "checklist_points": "13.45/19.5",
             "checklist_earned_points": 13.45,
             "stat_rating": 12.49,
-            "meta_rating": 15.83,
+            "meta_rating": 15.87,
             "trainer_trend": null
           },
           {
@@ -244552,7 +244552,7 @@
             "checklist_points": "8.35/15.5",
             "checklist_earned_points": 8.35,
             "stat_rating": 11.2,
-            "meta_rating": 11.25,
+            "meta_rating": 11.27,
             "trainer_trend": "flat"
           },
           {
@@ -245902,7 +245902,7 @@
             "checklist_points": "11.65/17.5",
             "checklist_earned_points": 11.65,
             "stat_rating": 11.22,
-            "meta_rating": 17.1,
+            "meta_rating": 17.12,
             "trainer_trend": "hot"
           },
           {
@@ -246580,7 +246580,7 @@
             "checklist_points": "9.2/15.5",
             "checklist_earned_points": 9.2,
             "stat_rating": 7.2,
-            "meta_rating": 11.69,
+            "meta_rating": 11.67,
             "trainer_trend": "cold"
           },
           {
@@ -247041,7 +247041,7 @@
             "checklist_points": "9.25/15.5",
             "checklist_earned_points": 9.25,
             "stat_rating": 11.82,
-            "meta_rating": 8.36,
+            "meta_rating": 8.39,
             "trainer_trend": "cold"
           },
           {
@@ -247877,7 +247877,7 @@
             "checklist_points": "5.25/15.5",
             "checklist_earned_points": 5.25,
             "stat_rating": 5.76,
-            "meta_rating": 5.93,
+            "meta_rating": 5.92,
             "trainer_trend": "flat"
           },
           {
@@ -249035,7 +249035,7 @@
             "checklist_points": "10.45/16.5",
             "checklist_earned_points": 10.45,
             "stat_rating": 8.57,
-            "meta_rating": 6.24,
+            "meta_rating": 6.26,
             "trainer_trend": "flat"
           },
           {
@@ -250148,7 +250148,7 @@
             "checklist_points": "10/16.5",
             "checklist_earned_points": 10,
             "stat_rating": 9.94,
-            "meta_rating": 8.33,
+            "meta_rating": 8.35,
             "trainer_trend": "cold"
           },
           {
@@ -251569,7 +251569,7 @@
             "checklist_points": "7.55/15.5",
             "checklist_earned_points": 7.55,
             "stat_rating": 8.38,
-            "meta_rating": 3.23,
+            "meta_rating": 3.24,
             "trainer_trend": "flat"
           },
           {
@@ -252376,7 +252376,7 @@
             "checklist_points": "7.55/17.5",
             "checklist_earned_points": 7.55,
             "stat_rating": 6.57,
-            "meta_rating": 4.29,
+            "meta_rating": 4.3,
             "trainer_trend": null
           },
           {
@@ -253319,7 +253319,7 @@
             "checklist_points": "7/16.5",
             "checklist_earned_points": 7,
             "stat_rating": 6.08,
-            "meta_rating": 6.93,
+            "meta_rating": 6.91,
             "trainer_trend": "hot"
           },
           {
@@ -259714,7 +259714,7 @@
             "checklist_points": "14/16.5",
             "checklist_earned_points": 14,
             "stat_rating": 11.88,
-            "meta_rating": 25.71,
+            "meta_rating": 25.73,
             "trainer_trend": "hot"
           },
           {
@@ -260836,7 +260836,7 @@
             "checklist_points": "9.05/16.5",
             "checklist_earned_points": 9.05,
             "stat_rating": 15.25,
-            "meta_rating": 17.63,
+            "meta_rating": 17.67,
             "trainer_trend": "cold"
           },
           {
@@ -261506,7 +261506,7 @@
             "checklist_points": "10.4/15.5",
             "checklist_earned_points": 10.4,
             "stat_rating": 8.65,
-            "meta_rating": 21.1,
+            "meta_rating": 21.06,
             "trainer_trend": "hot"
           },
           {
@@ -261942,7 +261942,7 @@
             "checklist_points": "4.25/12.5",
             "checklist_earned_points": 4.25,
             "stat_rating": 8.1,
-            "meta_rating": 7.96,
+            "meta_rating": 7.94,
             "trainer_trend": "hot"
           },
           {
@@ -263701,7 +263701,7 @@
             "checklist_points": "9.85/16.5",
             "checklist_earned_points": 9.85,
             "stat_rating": 11.45,
-            "meta_rating": 11.02,
+            "meta_rating": 11.05,
             "trainer_trend": "hot"
           },
           {
@@ -264372,7 +264372,7 @@
             "checklist_points": "8.25/16.5",
             "checklist_earned_points": 8.25,
             "stat_rating": 8.54,
-            "meta_rating": 14.88,
+            "meta_rating": 14.85,
             "trainer_trend": "flat"
           },
           {
@@ -266884,7 +266884,7 @@
             "checklist_points": "8/16.5",
             "checklist_earned_points": 8,
             "stat_rating": 8.26,
-            "meta_rating": 9.12,
+            "meta_rating": 9.11,
             "trainer_trend": "flat"
           },
           {
@@ -268578,7 +268578,7 @@
             "checklist_points": "7/15.5",
             "checklist_earned_points": 7,
             "stat_rating": 9.97,
-            "meta_rating": 3.19,
+            "meta_rating": 3.2,
             "trainer_trend": null
           },
           {
@@ -272655,7 +272655,7 @@
             "checklist_points": "12.45/16.5",
             "checklist_earned_points": 12.45,
             "stat_rating": 11,
-            "meta_rating": 4.76,
+            "meta_rating": 4.78,
             "trainer_trend": "cold"
           },
           {
@@ -273294,7 +273294,7 @@
             "checklist_points": "9.05/15.5",
             "checklist_earned_points": 9.05,
             "stat_rating": 8.94,
-            "meta_rating": 6.03,
+            "meta_rating": 6.05,
             "trainer_trend": "cold"
           },
           {
@@ -277659,7 +277659,7 @@
             "checklist_points": "7.2/11",
             "checklist_earned_points": 7.2,
             "stat_rating": 5.56,
-            "meta_rating": 26.33,
+            "meta_rating": 26.27,
             "trainer_trend": "flat"
           },
           {
@@ -278749,7 +278749,7 @@
             "checklist_points": "5.8/12",
             "checklist_earned_points": 5.8,
             "stat_rating": 7.07,
-            "meta_rating": 19.6,
+            "meta_rating": 19.61,
             "trainer_trend": "flat"
           },
           {
@@ -280216,7 +280216,7 @@
             "checklist_points": "3.25/13.25",
             "checklist_earned_points": 3.25,
             "stat_rating": 4.76,
-            "meta_rating": 8.51,
+            "meta_rating": 8.49,
             "trainer_trend": null
           },
           {
@@ -282259,7 +282259,7 @@
             "checklist_points": "4/13.25",
             "checklist_earned_points": 4,
             "stat_rating": 9.35,
-            "meta_rating": 14.79,
+            "meta_rating": 14.83,
             "trainer_trend": "flat"
           },
           {
@@ -282656,7 +282656,7 @@
             "checklist_points": "3.85/10.25",
             "checklist_earned_points": 3.85,
             "stat_rating": 5.77,
-            "meta_rating": 17.66,
+            "meta_rating": 17.65,
             "trainer_trend": "flat"
           },
           {
@@ -284393,7 +284393,7 @@
             "checklist_points": "7.25/14.25",
             "checklist_earned_points": 7.25,
             "stat_rating": 4.86,
-            "meta_rating": 11.3,
+            "meta_rating": 11.28,
             "trainer_trend": "flat"
           },
           {
@@ -284959,7 +284959,7 @@
             "checklist_points": "6/12.25",
             "checklist_earned_points": 6,
             "stat_rating": 8.02,
-            "meta_rating": 13.46,
+            "meta_rating": 13.49,
             "trainer_trend": "hot"
           },
           {
@@ -285541,7 +285541,7 @@
             "checklist_points": "7.8/13.25",
             "checklist_earned_points": 7.8,
             "stat_rating": 9.61,
-            "meta_rating": 12.22,
+            "meta_rating": 12.27,
             "trainer_trend": "flat"
           },
           {
@@ -287580,7 +287580,7 @@
             "checklist_points": "5.2/13.25",
             "checklist_earned_points": 5.2,
             "stat_rating": 5.66,
-            "meta_rating": 5.22,
+            "meta_rating": 5.23,
             "trainer_trend": null
           },
           {
@@ -289511,7 +289511,7 @@
             "checklist_points": "3/13.25",
             "checklist_earned_points": 3,
             "stat_rating": 4.43,
-            "meta_rating": 3.24,
+            "meta_rating": 3.23,
             "trainer_trend": null
           },
           {
@@ -290699,7 +290699,7 @@
             "checklist_points": "2/13.25",
             "checklist_earned_points": 2,
             "stat_rating": 4.96,
-            "meta_rating": 4.36,
+            "meta_rating": 4.37,
             "trainer_trend": "cold"
           },
           {
@@ -292091,7 +292091,7 @@
             "checklist_points": "5.25/13.25",
             "checklist_earned_points": 5.25,
             "stat_rating": 6.81,
-            "meta_rating": 7.45,
+            "meta_rating": 7.47,
             "trainer_trend": "hot"
           },
           {
@@ -293104,7 +293104,7 @@
             "checklist_points": "3/12.25",
             "checklist_earned_points": 3,
             "stat_rating": 5.04,
-            "meta_rating": 2.62,
+            "meta_rating": 2.63,
             "trainer_trend": null
           },
           {
@@ -294010,7 +294010,7 @@
             "checklist_points": "5/13",
             "checklist_earned_points": 5,
             "stat_rating": 4.47,
-            "meta_rating": 5.04,
+            "meta_rating": 5.03,
             "trainer_trend": "flat"
           },
           {
@@ -294654,7 +294654,7 @@
             "checklist_points": "3/12.25",
             "checklist_earned_points": 3,
             "stat_rating": 4.9,
-            "meta_rating": 3.09,
+            "meta_rating": 3.1,
             "trainer_trend": "flat"
           }
         ],
@@ -295521,7 +295521,7 @@
             "checklist_points": "5/11.25",
             "checklist_earned_points": 5,
             "stat_rating": 6.53,
-            "meta_rating": 21.99,
+            "meta_rating": 21.9,
             "trainer_trend": "flat"
           },
           {
@@ -295990,7 +295990,7 @@
             "checklist_points": "9.4/13.25",
             "checklist_earned_points": 9.4,
             "stat_rating": 11.33,
-            "meta_rating": 21.27,
+            "meta_rating": 21.3,
             "trainer_trend": "flat"
           },
           {
@@ -296389,7 +296389,7 @@
             "checklist_points": "5.8/9.25",
             "checklist_earned_points": 5.8,
             "stat_rating": 12.7,
-            "meta_rating": 15.58,
+            "meta_rating": 15.63,
             "trainer_trend": "hot"
           },
           {
@@ -297359,7 +297359,7 @@
             "checklist_points": "7/14.25",
             "checklist_earned_points": 7,
             "stat_rating": 11.15,
-            "meta_rating": 8.45,
+            "meta_rating": 8.47,
             "trainer_trend": "hot"
           },
           {
@@ -297787,7 +297787,7 @@
             "checklist_points": "4/9.25",
             "checklist_earned_points": 4,
             "stat_rating": 10.08,
-            "meta_rating": 5.87,
+            "meta_rating": 5.89,
             "trainer_trend": "flat"
           },
           {
@@ -298107,7 +298107,7 @@
             "checklist_points": "3/6",
             "checklist_earned_points": 3,
             "stat_rating": 9.2,
-            "meta_rating": 5,
+            "meta_rating": 5.01,
             "trainer_trend": "flat"
           },
           {
@@ -298860,7 +298860,7 @@
             "checklist_points": "3/9.25",
             "checklist_earned_points": 3,
             "stat_rating": 4.67,
-            "meta_rating": 2.88,
+            "meta_rating": 2.87,
             "trainer_trend": "hot"
           }
         ],
@@ -299311,7 +299311,7 @@
             "checklist_points": "6.8/10.25",
             "checklist_earned_points": 6.8,
             "stat_rating": 9.23,
-            "meta_rating": 22.67,
+            "meta_rating": 22.7,
             "trainer_trend": "flat"
           },
           {
@@ -299773,7 +299773,7 @@
             "checklist_points": "11/14.25",
             "checklist_earned_points": 11,
             "stat_rating": 7.88,
-            "meta_rating": 21.92,
+            "meta_rating": 21.89,
             "trainer_trend": "cold"
           },
           {
@@ -300340,7 +300340,7 @@
             "checklist_points": "7/13.25",
             "checklist_earned_points": 7,
             "stat_rating": 7.46,
-            "meta_rating": 13.68,
+            "meta_rating": 13.67,
             "trainer_trend": "flat"
           },
           {
@@ -300775,7 +300775,7 @@
             "checklist_points": "3.85/9.25",
             "checklist_earned_points": 3.85,
             "stat_rating": 7.45,
-            "meta_rating": 8.41,
+            "meta_rating": 8.4,
             "trainer_trend": "flat"
           },
           {
@@ -301705,7 +301705,7 @@
             "checklist_points": "5/11.25",
             "checklist_earned_points": 5,
             "stat_rating": 12.31,
-            "meta_rating": 13.69,
+            "meta_rating": 13.73,
             "trainer_trend": "cold"
           },
           {
@@ -302201,7 +302201,7 @@
             "checklist_points": "7.45/12.25",
             "checklist_earned_points": 7.45,
             "stat_rating": 11.01,
-            "meta_rating": 9.99,
+            "meta_rating": 10.03,
             "trainer_trend": null
           },
           {
@@ -302662,7 +302662,7 @@
             "checklist_points": "7.45/12.25",
             "checklist_earned_points": 7.45,
             "stat_rating": 6.08,
-            "meta_rating": 12.3,
+            "meta_rating": 12.26,
             "trainer_trend": "hot"
           },
           {
@@ -303123,7 +303123,7 @@
             "checklist_points": "4.85/11.25",
             "checklist_earned_points": 4.85,
             "stat_rating": 9.09,
-            "meta_rating": 5.35,
+            "meta_rating": 5.38,
             "trainer_trend": null
           },
           {
@@ -303548,7 +303548,7 @@
             "checklist_points": "3/10.25",
             "checklist_earned_points": 3,
             "stat_rating": 6.53,
-            "meta_rating": 7.21,
+            "meta_rating": 7.2,
             "trainer_trend": "cold"
           },
           {
@@ -305929,7 +305929,7 @@
             "checklist_points": "4/10.25",
             "checklist_earned_points": 4,
             "stat_rating": 8.25,
-            "meta_rating": 4.36,
+            "meta_rating": 4.37,
             "trainer_trend": "flat"
           }
         ],
@@ -306553,7 +306553,7 @@
             "checklist_points": "7.4/13.25",
             "checklist_earned_points": 7.4,
             "stat_rating": 9.24,
-            "meta_rating": 26.69,
+            "meta_rating": 26.72,
             "trainer_trend": null
           },
           {
@@ -307879,7 +307879,7 @@
             "checklist_points": "6.6/13.25",
             "checklist_earned_points": 6.6,
             "stat_rating": 11.18,
-            "meta_rating": 16.4,
+            "meta_rating": 16.45,
             "trainer_trend": "hot"
           },
           {
@@ -308766,7 +308766,7 @@
             "checklist_points": "6.25/13.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 5.59,
-            "meta_rating": 19.9,
+            "meta_rating": 19.87,
             "trainer_trend": "cold"
           },
           {
@@ -309925,7 +309925,7 @@
             "checklist_points": "2/13.25",
             "checklist_earned_points": 2,
             "stat_rating": 7.23,
-            "meta_rating": 13.44,
+            "meta_rating": 13.45,
             "trainer_trend": null
           },
           {
@@ -310390,7 +310390,7 @@
             "checklist_points": "4.25/13.25",
             "checklist_earned_points": 4.25,
             "stat_rating": 5.61,
-            "meta_rating": 18.85,
+            "meta_rating": 18.82,
             "trainer_trend": "cold"
           },
           {
@@ -312431,7 +312431,7 @@
             "checklist_points": "3/13.25",
             "checklist_earned_points": 3,
             "stat_rating": 4.52,
-            "meta_rating": 11.98,
+            "meta_rating": 11.93,
             "trainer_trend": null
           },
           {
@@ -313344,7 +313344,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 6.54,
-            "meta_rating": 11.96,
+            "meta_rating": 11.98,
             "trainer_trend": "hot"
           },
           {
@@ -313874,7 +313874,7 @@
             "checklist_points": "7/13.25",
             "checklist_earned_points": 7,
             "stat_rating": 4.8,
-            "meta_rating": 9.94,
+            "meta_rating": 9.92,
             "trainer_trend": "hot"
           },
           {
@@ -315363,7 +315363,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 5.81,
-            "meta_rating": 7.37,
+            "meta_rating": 7.39,
             "trainer_trend": "hot"
           },
           {
@@ -315858,7 +315858,7 @@
             "checklist_points": "3.25/12.25",
             "checklist_earned_points": 3.25,
             "stat_rating": 4.84,
-            "meta_rating": 3.71,
+            "meta_rating": 3.72,
             "trainer_trend": "flat"
           },
           {
@@ -318630,7 +318630,7 @@
             "checklist_points": "5.25/12.25",
             "checklist_earned_points": 5.25,
             "stat_rating": 7.51,
-            "meta_rating": 8.09,
+            "meta_rating": 8.13,
             "trainer_trend": "flat"
           },
           {
@@ -321052,7 +321052,7 @@
             "checklist_points": "5.25/13.25",
             "checklist_earned_points": 5.25,
             "stat_rating": 5.69,
-            "meta_rating": 5.61,
+            "meta_rating": 5.63,
             "trainer_trend": "flat"
           }
         ],
@@ -321718,7 +321718,7 @@
             "checklist_points": "9.8/12.25",
             "checklist_earned_points": 9.8,
             "stat_rating": 16.34,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "hot"
           },
           {
@@ -322590,7 +322590,7 @@
             "checklist_points": "7.45/13.25",
             "checklist_earned_points": 7.45,
             "stat_rating": 8.75,
-            "meta_rating": 20.46,
+            "meta_rating": 20.48,
             "trainer_trend": "cold"
           },
           {
@@ -323304,7 +323304,7 @@
             "checklist_points": "7.25/13.25",
             "checklist_earned_points": 7.25,
             "stat_rating": 9.79,
-            "meta_rating": 17.7,
+            "meta_rating": 17.74,
             "trainer_trend": "hot"
           },
           {
@@ -323909,7 +323909,7 @@
             "checklist_points": "7.8/12.25",
             "checklist_earned_points": 7.8,
             "stat_rating": 6.06,
-            "meta_rating": 21.57,
+            "meta_rating": 21.56,
             "trainer_trend": null
           },
           {
@@ -324622,7 +324622,7 @@
             "checklist_points": "7.2/13.25",
             "checklist_earned_points": 7.2,
             "stat_rating": 7.57,
-            "meta_rating": 14.58,
+            "meta_rating": 14.6,
             "trainer_trend": "hot"
           },
           {
@@ -325396,7 +325396,7 @@
             "checklist_points": "8.25/14.25",
             "checklist_earned_points": 8.25,
             "stat_rating": 5.07,
-            "meta_rating": 12,
+            "meta_rating": 11.97,
             "trainer_trend": "hot"
           },
           {
@@ -326172,7 +326172,7 @@
             "checklist_points": "5.25/11.25",
             "checklist_earned_points": 5.25,
             "stat_rating": 7.52,
-            "meta_rating": 11.71,
+            "meta_rating": 11.73,
             "trainer_trend": "flat"
           },
           {
@@ -328235,7 +328235,7 @@
             "checklist_points": "3.25/12.25",
             "checklist_earned_points": 3.25,
             "stat_rating": 4.81,
-            "meta_rating": 6.78,
+            "meta_rating": 6.77,
             "trainer_trend": "flat"
           },
           {
@@ -329418,7 +329418,7 @@
             "checklist_points": "7/13.25",
             "checklist_earned_points": 7,
             "stat_rating": 5.39,
-            "meta_rating": 8.53,
+            "meta_rating": 8.52,
             "trainer_trend": "cold"
           },
           {
@@ -332995,7 +332995,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 5.78,
-            "meta_rating": 5.64,
+            "meta_rating": 5.65,
             "trainer_trend": "cold"
           },
           {
@@ -334933,7 +334933,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 5.85,
-            "meta_rating": 3.42,
+            "meta_rating": 3.44,
             "trainer_trend": "hot"
           },
           {
@@ -335600,7 +335600,7 @@
             "checklist_points": "5/12.25",
             "checklist_earned_points": 5,
             "stat_rating": 6.06,
-            "meta_rating": 3.59,
+            "meta_rating": 3.61,
             "trainer_trend": "hot"
           }
         ],
@@ -336170,7 +336170,7 @@
             "checklist_points": "8.8/14.25",
             "checklist_earned_points": 8.8,
             "stat_rating": 13.3,
-            "meta_rating": 25.12,
+            "meta_rating": 25.15,
             "trainer_trend": "cold"
           },
           {
@@ -338216,7 +338216,7 @@
             "checklist_points": "10.4/14.25",
             "checklist_earned_points": 10.4,
             "stat_rating": 13.15,
-            "meta_rating": 23.98,
+            "meta_rating": 24.01,
             "trainer_trend": "hot"
           },
           {
@@ -339673,7 +339673,7 @@
             "checklist_points": "7.6/13.25",
             "checklist_earned_points": 7.6,
             "stat_rating": 6.13,
-            "meta_rating": 14.44,
+            "meta_rating": 14.4,
             "trainer_trend": "flat"
           },
           {
@@ -340245,7 +340245,7 @@
             "checklist_points": "7.25/14.25",
             "checklist_earned_points": 7.25,
             "stat_rating": 12.51,
-            "meta_rating": 14.34,
+            "meta_rating": 14.36,
             "trainer_trend": "cold"
           },
           {
@@ -342002,7 +342002,7 @@
             "checklist_points": "7/13.25",
             "checklist_earned_points": 7,
             "stat_rating": 7.9,
-            "meta_rating": 9.04,
+            "meta_rating": 9.05,
             "trainer_trend": "hot"
           },
           {
@@ -342841,7 +342841,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 5.53,
-            "meta_rating": 8.43,
+            "meta_rating": 8.4,
             "trainer_trend": "cold"
           },
           {
@@ -343819,7 +343819,7 @@
             "checklist_points": "6.25/13.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 9.85,
-            "meta_rating": 5.24,
+            "meta_rating": 5.26,
             "trainer_trend": "flat"
           },
           {
@@ -344394,7 +344394,7 @@
             "checklist_points": "6/13",
             "checklist_earned_points": 6,
             "stat_rating": 8.07,
-            "meta_rating": 6.29,
+            "meta_rating": 6.3,
             "trainer_trend": "hot"
           },
           {
@@ -345714,7 +345714,7 @@
             "checklist_points": "7.45/13.25",
             "checklist_earned_points": 7.45,
             "stat_rating": 7.77,
-            "meta_rating": 5.81,
+            "meta_rating": 5.82,
             "trainer_trend": "hot"
           },
           {
@@ -346762,7 +346762,7 @@
             "checklist_points": "6/13.25",
             "checklist_earned_points": 6,
             "stat_rating": 4.82,
-            "meta_rating": 3.58,
+            "meta_rating": 3.57,
             "trainer_trend": "flat"
           },
           {
@@ -347402,7 +347402,7 @@
             "checklist_points": "5/13.25",
             "checklist_earned_points": 5,
             "stat_rating": 6.64,
-            "meta_rating": 2.46,
+            "meta_rating": 2.47,
             "trainer_trend": "hot"
           },
           {
@@ -348803,7 +348803,7 @@
             "checklist_points": "10/13.25",
             "checklist_earned_points": 10,
             "stat_rating": 12.8,
-            "meta_rating": 26.74,
+            "meta_rating": 26.78,
             "trainer_trend": "flat"
           },
           {
@@ -349518,7 +349518,7 @@
             "checklist_points": "8.8/13.25",
             "checklist_earned_points": 8.8,
             "stat_rating": 8.58,
-            "meta_rating": 23.3,
+            "meta_rating": 23.29,
             "trainer_trend": "cold"
           },
           {
@@ -350979,7 +350979,7 @@
             "checklist_points": "6/14.25",
             "checklist_earned_points": 6,
             "stat_rating": 8.99,
-            "meta_rating": 14.22,
+            "meta_rating": 14.24,
             "trainer_trend": null
           },
           {
@@ -352208,7 +352208,7 @@
             "checklist_points": "5/13.25",
             "checklist_earned_points": 5,
             "stat_rating": 9.78,
-            "meta_rating": 15.92,
+            "meta_rating": 15.95,
             "trainer_trend": "cold"
           },
           {
@@ -354247,7 +354247,7 @@
             "checklist_points": "8.25/13.25",
             "checklist_earned_points": 8.25,
             "stat_rating": 9.18,
-            "meta_rating": 17.61,
+            "meta_rating": 17.64,
             "trainer_trend": "hot"
           },
           {
@@ -356219,7 +356219,7 @@
             "checklist_points": "7/12.25",
             "checklist_earned_points": 7,
             "stat_rating": 5.84,
-            "meta_rating": 13.65,
+            "meta_rating": 13.63,
             "trainer_trend": "flat"
           },
           {
@@ -357607,7 +357607,7 @@
             "checklist_points": "7/14.25",
             "checklist_earned_points": 7,
             "stat_rating": 7.83,
-            "meta_rating": 10.19,
+            "meta_rating": 10.2,
             "trainer_trend": "hot"
           },
           {
@@ -358588,7 +358588,7 @@
             "checklist_points": "6.25/13.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 8.92,
-            "meta_rating": 8.77,
+            "meta_rating": 8.8,
             "trainer_trend": "flat"
           },
           {
@@ -360384,7 +360384,7 @@
             "checklist_points": "7.25/13.25",
             "checklist_earned_points": 7.25,
             "stat_rating": 5.26,
-            "meta_rating": 10.89,
+            "meta_rating": 10.86,
             "trainer_trend": null
           },
           {
@@ -360950,7 +360950,7 @@
             "checklist_points": "5.25/12.25",
             "checklist_earned_points": 5.25,
             "stat_rating": 4.8,
-            "meta_rating": 6.1,
+            "meta_rating": 6.08,
             "trainer_trend": "cold"
           },
           {
@@ -362166,7 +362166,7 @@
             "checklist_points": "6.25/14.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 7.1,
-            "meta_rating": 5.5,
+            "meta_rating": 5.51,
             "trainer_trend": "cold"
           },
           {
@@ -363583,7 +363583,7 @@
             "checklist_points": "3.25/11.25",
             "checklist_earned_points": 3.25,
             "stat_rating": 7.59,
-            "meta_rating": 5.3,
+            "meta_rating": 5.31,
             "trainer_trend": "hot"
           },
           {
@@ -364010,7 +364010,7 @@
             "checklist_points": "3.85/8.25",
             "checklist_earned_points": 3.85,
             "stat_rating": 7.46,
-            "meta_rating": 4.71,
+            "meta_rating": 4.72,
             "trainer_trend": "cold"
           },
           {
@@ -366096,7 +366096,7 @@
             "checklist_points": "4.25/13.25",
             "checklist_earned_points": 4.25,
             "stat_rating": 6.4,
-            "meta_rating": 2.32,
+            "meta_rating": 2.33,
             "trainer_trend": null
           }
         ],
@@ -367639,7 +367639,7 @@
             "checklist_points": "10.4/13.25",
             "checklist_earned_points": 10.4,
             "stat_rating": 12.73,
-            "meta_rating": 26.5,
+            "meta_rating": 26.48,
             "trainer_trend": "cold"
           },
           {
@@ -368079,7 +368079,7 @@
             "checklist_points": "10.65/14.25",
             "checklist_earned_points": 10.65,
             "stat_rating": 21.45,
-            "meta_rating": 18.98,
+            "meta_rating": 19.02,
             "trainer_trend": "flat"
           },
           {
@@ -368514,7 +368514,7 @@
             "checklist_points": "6.25/9.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 14.96,
-            "meta_rating": 20,
+            "meta_rating": 20.03,
             "trainer_trend": "cold"
           },
           {
@@ -370551,7 +370551,7 @@
             "checklist_points": "8.2/13.25",
             "checklist_earned_points": 8.2,
             "stat_rating": 8.02,
-            "meta_rating": 13.57,
+            "meta_rating": 13.55,
             "trainer_trend": "flat"
           },
           {
@@ -371190,7 +371190,7 @@
             "checklist_points": "6.25/13.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 13.36,
-            "meta_rating": 6.95,
+            "meta_rating": 6.97,
             "trainer_trend": "cold"
           },
           {
@@ -373399,7 +373399,7 @@
             "checklist_points": "6.25/14.25",
             "checklist_earned_points": 6.25,
             "stat_rating": 5.28,
-            "meta_rating": 4.01,
+            "meta_rating": 4,
             "trainer_trend": "flat"
           },
           {
@@ -374002,7 +374002,7 @@
             "checklist_points": "6/11.25",
             "checklist_earned_points": 6,
             "stat_rating": 12.42,
-            "meta_rating": 7.7,
+            "meta_rating": 7.72,
             "trainer_trend": "flat"
           },
           {
