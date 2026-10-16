@@ -5969,10 +5969,16 @@
       "fav": {
         "horse": "QILA",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-16T16:00:49.319Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Redcar|16:23",
@@ -5988,10 +5994,16 @@
       "fav": {
         "horse": "SWEET KISS",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-10-16T16:10:46.956Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Dundalk|16:30",
@@ -6007,19 +6019,63 @@
       "fav": {
         "horse": "FIREWALKER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-16T16:20:48.811Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Haydock|16:37",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "16:37",
+      "horse": "YAA MIN",
+      "price": "13/8",
+      "runners": 5,
+      "liveHorse": "YAA MIN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "YAA MIN",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:30:38.242Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|16:45",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "16:45",
+      "horse": "PRIAPOS",
+      "price": "13/2",
+      "runners": 5,
+      "liveHorse": "KALEIDO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KALEIDO",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T16:30:38.258Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 220,
+    "recorded": 222,
     "pick": {
-      "settled": 208,
+      "settled": 211,
       "won": 47,
-      "pl": 14.43,
-      "roi": 6.9
+      "pl": 11.43,
+      "roi": 5.4
     },
     "favourite": {
       "settled": 209,
@@ -6034,10 +6090,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 162,
+      "settled": 165,
       "won": 25,
-      "pl": 13.37,
-      "roi": 8.3
+      "pl": 10.37,
+      "roi": 6.3
     }
   },
   "lastBackfill": 1792166449321

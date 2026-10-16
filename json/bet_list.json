@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T16:20:47.002Z",
+  "generatedAt": "2026-10-16T16:40:36.606Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 78/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-16",
       "course": "Newcastle",
       "off": "17:15",
-      "horse": "QILA"
-    }
-  ],
-  "recent": [
+      "horse": "QILA",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-16",
       "course": "Dundalk",
@@ -174,21 +179,10 @@
       "bsp": 1.76,
       "pl": 0.722,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-14",
-      "course": "Punchestown",
-      "off": "15:55",
-      "horse": "BUNTING",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-16T16:20:46.919Z",
+    "updatedAt": "2026-10-16T16:40:36.495Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 81,
-      "won": 43,
-      "pl": -5.87,
-      "roi": -7.3,
-      "provisional": 3
+      "bets": 82,
+      "won": 44,
+      "pl": -4.25,
+      "roi": -5.2,
+      "provisional": 4
     },
     "live": {
       "bets": 0,
