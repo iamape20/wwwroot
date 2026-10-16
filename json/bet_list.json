@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:01:21.903Z",
+  "generatedAt": "2026-10-16T12:21:27.248Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 76/120 bets settled before the verdict.",
   "rules": [
@@ -13,12 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Redcar",
-      "off": "13:20",
-      "status": "POSSIBLE",
-      "revealAt": "13:05"
-    },
     {
       "course": "Haydock",
       "off": "13:42",
@@ -50,7 +44,13 @@
       "revealAt": "17:00"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Redcar",
+      "off": "13:20",
+      "horse": "EXTRAGALACTIC"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-15",
@@ -219,7 +219,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-16T12:01:21.724Z",
+    "updatedAt": "2026-10-16T12:21:27.012Z",
     "claude": {
       "races": 38,
       "won": 7,
