@@ -6231,10 +6231,18 @@
       "fav": {
         "horse": "COULSTY EXCHANGE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T18:00:29.246Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Dundalk|18:30",
@@ -6254,21 +6262,40 @@
       },
       "recordedAt": "2026-10-16T18:20:30.117Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|18:45",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "18:45",
+      "horse": "LANARRA",
+      "price": "6/4",
+      "runners": 8,
+      "liveHorse": "LANARRA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LANARRA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T18:30:26.482Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 229,
+    "recorded": 230,
     "pick": {
-      "settled": 218,
+      "settled": 219,
       "won": 47,
-      "pl": 4.43,
-      "roi": 2
+      "pl": 3.43,
+      "roi": 1.6
     },
     "favourite": {
-      "settled": 215,
+      "settled": 216,
       "won": 77,
-      "pl": 0.57,
-      "roi": 0.3
+      "pl": -0.43,
+      "roi": -0.2
     },
     "agree": {
       "settled": 48,
@@ -6277,10 +6304,10 @@
       "roi": -2
     },
     "disagree": {
-      "settled": 170,
+      "settled": 171,
       "won": 25,
-      "pl": 5.37,
-      "roi": 3.2
+      "pl": 4.37,
+      "roi": 2.6
     }
   },
   "lastBackfill": 1792166449321
