@@ -6150,10 +6150,18 @@
       "fav": {
         "horse": "GO OUT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T17:20:45.098Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Newcastle|17:45",
@@ -6169,25 +6177,71 @@
       "fav": {
         "horse": "SPORTS COACH",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T17:30:33.204Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Dundalk|18:00",
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "time": "18:00",
+      "horse": "LADY LANDHORT",
+      "price": "9/1",
+      "runners": 14,
+      "liveHorse": "POLANCO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POLANCO",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T17:50:36.160Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|18:15",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "18:15",
+      "horse": "TRAIS FLUORS",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "COULSTY EXCHANGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COULSTY EXCHANGE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T18:00:29.246Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 226,
+    "recorded": 228,
     "pick": {
-      "settled": 215,
+      "settled": 217,
       "won": 47,
-      "pl": 7.43,
-      "roi": 3.5
+      "pl": 5.43,
+      "roi": 2.5
     },
     "favourite": {
-      "settled": 212,
+      "settled": 214,
       "won": 77,
-      "pl": 3.57,
-      "roi": 1.7
+      "pl": 1.57,
+      "roi": 0.7
     },
     "agree": {
       "settled": 48,
@@ -6196,10 +6250,10 @@
       "roi": -2
     },
     "disagree": {
-      "settled": 167,
+      "settled": 169,
       "won": 25,
-      "pl": 8.37,
-      "roi": 5
+      "pl": 6.37,
+      "roi": 3.8
     }
   },
   "lastBackfill": 1792166449321
