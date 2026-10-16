@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-16T13:01:32.813Z",
+  "generatedAt": "2026-10-16T13:21:18.699Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 76/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 77/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "17:00"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-16",
       "course": "Redcar",
       "off": "13:52",
-      "horse": "MY GIRL DEE MO"
-    }
-  ],
-  "recent": [
+      "horse": "MY GIRL DEE MO",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-16",
       "course": "Haydock",
@@ -193,21 +198,10 @@
       "bsp": 1.44,
       "pl": 0.418,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-13",
-      "course": "Wolverhampton",
-      "off": "18:30",
-      "horse": "AL WIDYAN",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-16T13:01:32.588Z",
+    "updatedAt": "2026-10-16T13:21:18.608Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 78,
+      "bets": 79,
       "won": 42,
-      "pl": -6.12,
-      "roi": -7.9,
+      "pl": -7.12,
+      "roi": -9,
       "provisional": 2
     },
     "live": {
