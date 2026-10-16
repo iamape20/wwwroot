@@ -5655,10 +5655,16 @@
       "fav": {
         "horse": "HANNEY GIRL",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T14:31:04.658Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-10-16|Uttoxeter|14:47",
@@ -5674,25 +5680,90 @@
       "fav": {
         "horse": "RULA BULA",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T14:41:00.348Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Haydock|15:02",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "15:02",
+      "horse": "ASHEYRA",
+      "price": "7/4",
+      "runners": 3,
+      "liveHorse": "FAITH IN FLORENCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FAITH IN FLORENCE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T14:50:59.973Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|15:08",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "15:08",
+      "horse": "JUJUBELLA",
+      "price": "10/3",
+      "runners": 12,
+      "liveHorse": "SAXOPHONIST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAXOPHONIST",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:01:11.106Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Redcar|15:12",
+      "date": "2026-10-16",
+      "course": "Redcar",
+      "time": "15:12",
+      "horse": "MR COOL",
+      "price": "5/1",
+      "runners": 12,
+      "liveHorse": "INGLEBY ARCHIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INGLEBY ARCHIE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T15:01:11.139Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 207,
+    "recorded": 210,
     "pick": {
-      "settled": 198,
+      "settled": 199,
       "won": 47,
-      "pl": 24.43,
-      "roi": 12.3
+      "pl": 23.43,
+      "roi": 11.8
     },
     "favourite": {
-      "settled": 200,
+      "settled": 202,
       "won": 77,
-      "pl": 15.57,
-      "roi": 7.8
+      "pl": 13.57,
+      "roi": 6.7
     },
     "agree": {
       "settled": 45,
@@ -5701,10 +5772,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 153,
+      "settled": 154,
       "won": 25,
-      "pl": 22.37,
-      "roi": 14.6
+      "pl": 21.37,
+      "roi": 13.9
     }
   },
   "lastBackfill": 1792155118314
