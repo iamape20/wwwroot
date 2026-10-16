@@ -5472,10 +5472,18 @@
       "fav": {
         "horse": "DESPERATE DAN",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T13:11:27.999Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Redcar|13:27",
@@ -5491,25 +5499,69 @@
       "fav": {
         "horse": "TRAPPED GODDESS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-16T13:21:20.920Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Uttoxeter|13:37",
+      "date": "2026-10-16",
+      "course": "Uttoxeter",
+      "time": "13:37",
+      "horse": "LADY TADITA",
+      "price": "2/1",
+      "runners": 3,
+      "liveHorse": "GETAWHISKY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GETAWHISKY",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T13:31:12.878Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Haydock|13:52",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "13:52",
+      "horse": "THE RESDEV SCHOLAR",
+      "price": "11/1",
+      "runners": 10,
+      "liveHorse": "LIR SPECIALE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LIR SPECIALE",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T13:41:19.291Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 200,
+    "recorded": 202,
     "pick": {
-      "settled": 193,
+      "settled": 195,
       "won": 47,
-      "pl": 29.43,
-      "roi": 15.2
+      "pl": 27.43,
+      "roi": 14.1
     },
     "favourite": {
-      "settled": 194,
+      "settled": 195,
       "won": 77,
-      "pl": 21.57,
-      "roi": 11.1
+      "pl": 20.57,
+      "roi": 10.5
     },
     "agree": {
       "settled": 45,
@@ -5518,10 +5570,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 148,
+      "settled": 150,
       "won": 25,
-      "pl": 27.37,
-      "roi": 18.5
+      "pl": 25.37,
+      "roi": 16.9
     }
   },
   "lastBackfill": 1792155118314
