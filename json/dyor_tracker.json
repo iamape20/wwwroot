@@ -6337,10 +6337,18 @@
       "fav": {
         "horse": "KEEP THE GOLD",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T19:00:26.155Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Dundalk|19:30",
@@ -6365,16 +6373,16 @@
   "stats": {
     "recorded": 233,
     "pick": {
-      "settled": 222,
+      "settled": 223,
       "won": 47,
-      "pl": 0.43,
-      "roi": 0.2
+      "pl": -0.57,
+      "roi": -0.3
     },
     "favourite": {
-      "settled": 218,
+      "settled": 219,
       "won": 77,
-      "pl": -2.43,
-      "roi": -1.1
+      "pl": -3.43,
+      "roi": -1.6
     },
     "agree": {
       "settled": 49,
@@ -6383,10 +6391,10 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 173,
+      "settled": 174,
       "won": 25,
-      "pl": 2.37,
-      "roi": 1.4
+      "pl": 1.37,
+      "roi": 0.8
     }
   },
   "lastBackfill": 1792177829144
