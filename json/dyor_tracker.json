@@ -6258,10 +6258,16 @@
       "fav": {
         "horse": "OCEAN'S BREATH",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-16T18:20:30.117Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Newcastle|18:45",
@@ -6277,37 +6283,83 @@
       "fav": {
         "horse": "LANARRA",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T18:30:26.482Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-16|Dundalk|19:00",
+      "date": "2026-10-16",
+      "course": "Dundalk",
+      "time": "19:00",
+      "horse": "EASTERN PEACE",
+      "price": "4/1",
+      "runners": 14,
+      "liveHorse": "TRIBAL MOON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRIBAL MOON",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T18:50:29.094Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-16|Newcastle|19:15",
+      "date": "2026-10-16",
+      "course": "Newcastle",
+      "time": "19:15",
+      "horse": "POCKLEY",
+      "price": "16/1",
+      "runners": 10,
+      "liveHorse": "KEEP THE GOLD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KEEP THE GOLD",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T19:00:26.155Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 230,
+    "recorded": 232,
     "pick": {
-      "settled": 219,
+      "settled": 221,
       "won": 47,
-      "pl": 3.43,
-      "roi": 1.6
+      "pl": 1.43,
+      "roi": 0.6
     },
     "favourite": {
-      "settled": 216,
+      "settled": 217,
       "won": 77,
-      "pl": -0.43,
-      "roi": -0.2
+      "pl": -1.43,
+      "roi": -0.7
     },
     "agree": {
-      "settled": 48,
+      "settled": 49,
       "won": 22,
-      "pl": -0.95,
-      "roi": -2
+      "pl": -1.95,
+      "roi": -4
     },
     "disagree": {
-      "settled": 171,
+      "settled": 172,
       "won": 25,
-      "pl": 4.37,
-      "roi": 2.6
+      "pl": 3.37,
+      "roi": 2
     }
   },
   "lastBackfill": 1792166449321
