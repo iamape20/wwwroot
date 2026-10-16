@@ -1193,8 +1193,9 @@
       "revealedAt": "2026-10-15T12:11:20.069Z",
       "result": "won",
       "isp": "2/9",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.24,
+      "pl": 0.228,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-15|Brighton|13:05",
@@ -1209,8 +1210,9 @@
       "revealedAt": "2026-10-15T12:51:11.829Z",
       "result": "won",
       "isp": "1/2",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.58227608,
+      "pl": 0.553,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-15|Curragh|13:12",
@@ -1242,8 +1244,9 @@
       "revealedAt": "2026-10-15T14:10:44.132Z",
       "result": "won",
       "isp": "11/8",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.52,
+      "pl": 1.444,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-15|Fontwell|14:29",
@@ -1275,12 +1278,13 @@
       "revealedAt": "2026-10-15T16:20:25.705Z",
       "result": "won",
       "isp": "2/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.45985066,
+      "pl": 0.437,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792130477631
+  "lastBackfill": 1792141284888
 }
