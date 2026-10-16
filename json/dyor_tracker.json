@@ -5551,10 +5551,18 @@
       "fav": {
         "horse": "LIR SPECIALE",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T13:41:19.291Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-16|Redcar|14:02",
@@ -5570,10 +5578,16 @@
       "fav": {
         "horse": "LION OF PERSIA",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-16T13:51:11.522Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/2"
     },
     {
       "id": "2026-10-16|Uttoxeter|14:12",
@@ -5593,21 +5607,40 @@
       },
       "recordedAt": "2026-10-16T14:01:06.771Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-16|Haydock|14:27",
+      "date": "2026-10-16",
+      "course": "Haydock",
+      "time": "14:27",
+      "horse": "CRAZY CUBANA",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "RESEMBLANCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RESEMBLANCE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-16T14:21:02.271Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 204,
+    "recorded": 205,
     "pick": {
-      "settled": 196,
+      "settled": 197,
       "won": 47,
-      "pl": 26.43,
-      "roi": 13.5
+      "pl": 25.43,
+      "roi": 12.9
     },
     "favourite": {
-      "settled": 196,
+      "settled": 198,
       "won": 77,
-      "pl": 19.57,
-      "roi": 10
+      "pl": 17.57,
+      "roi": 8.9
     },
     "agree": {
       "settled": 45,
@@ -5616,10 +5649,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 151,
+      "settled": 152,
       "won": 25,
-      "pl": 24.37,
-      "roi": 16.1
+      "pl": 23.37,
+      "roi": 15.4
     }
   },
   "lastBackfill": 1792155118314
