@@ -7881,14 +7881,39 @@
       "fav": {
         "horse": "KING CHERRY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T17:50:23.334Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
+    },
+    {
+      "id": "2026-10-17|Southwell|18:30",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "INGLEWOOD",
+      "price": "7/2",
+      "runners": 12,
+      "liveHorse": "OXBRIDGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OXBRIDGE",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T18:20:22.718Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 290,
+    "recorded": 291,
     "pick": {
       "settled": 272,
       "won": 53,
@@ -7896,10 +7921,10 @@
       "roi": -7.3
     },
     "favourite": {
-      "settled": 264,
+      "settled": 265,
       "won": 89,
-      "pl": -15.12,
-      "roi": -5.7
+      "pl": -16.12,
+      "roi": -6.1
     },
     "agree": {
       "settled": 61,
