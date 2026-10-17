@@ -6705,10 +6705,14 @@
       "fav": {
         "horse": "GALWAY REEL",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/11"
       },
       "recordedAt": "2026-10-17T12:41:36.502Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/11"
     },
     {
       "id": "2026-10-17|Ascot|13:05",
@@ -6785,10 +6789,67 @@
       },
       "recordedAt": "2026-10-17T13:01:54.087Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|13:17",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "13:17",
+      "horse": "PLAYFUL FOX",
+      "price": "6/4",
+      "runners": 5,
+      "liveHorse": "PLAYFUL FOX",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PLAYFUL FOX",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:11:34.210Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Market Rasen|13:25",
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "time": "13:25",
+      "horse": "FRINGILL DIKE",
+      "price": "15/8",
+      "runners": 5,
+      "liveHorse": "FRINGILL DIKE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FRINGILL DIKE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:11:34.239Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|13:20",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "13:20",
+      "horse": "MILLSTREAM LADY",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "WORLD OF FORTUNES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WORLD OF FORTUNES",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:11:34.241Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 248,
+    "recorded": 251,
     "pick": {
       "settled": 239,
       "won": 53,
