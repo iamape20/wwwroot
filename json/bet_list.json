@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T17:20:20.239Z",
+  "generatedAt": "2026-10-17T17:40:22.576Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 87/120 bets settled before the verdict.",
   "rules": [
@@ -12,17 +12,20 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
-    {
-      "course": "Southwell",
-      "off": "18:30",
-      "status": "BET",
-      "horse": "FULLY STOCKED",
-      "price": "5/4"
-    }
-  ],
+  "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "off": "18:30",
+      "horse": "FULLY STOCKED",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-17",
       "course": "Market Rasen",
@@ -176,21 +179,10 @@
       "bsp": 1.45985066,
       "pl": 0.437,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Fontwell",
-      "off": "15:29",
-      "horse": "EMERALD QUEST",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T17:20:20.155Z",
+    "updatedAt": "2026-10-17T17:40:22.494Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -213,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 89,
-      "won": 46,
-      "pl": -6.75,
-      "roi": -7.6,
-      "provisional": 2
+      "bets": 90,
+      "won": 47,
+      "pl": -5.84,
+      "roi": -6.5,
+      "provisional": 3
     },
     "live": {
       "bets": 0,
