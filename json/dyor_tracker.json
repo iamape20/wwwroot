@@ -7594,10 +7594,18 @@
       "fav": {
         "horse": "BLACKIJO DAGROSTIS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:40:39.379Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Leopardstown|15:50",
@@ -7613,10 +7621,18 @@
       "fav": {
         "horse": "DRIVE ON THERE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:40:39.418Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Market Rasen|16:05",
@@ -7651,10 +7667,18 @@
       "fav": {
         "horse": "WID",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:50:32.755Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Catterick|16:15",
@@ -7693,21 +7717,59 @@
       },
       "recordedAt": "2026-10-17T16:00:38.534Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Stratford|16:25",
+      "date": "2026-10-17",
+      "course": "Stratford",
+      "time": "16:25",
+      "horse": "MOJO EGO",
+      "price": "11/2",
+      "runners": 7,
+      "liveHorse": "ASHDOWN FOREST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ASHDOWN FOREST",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T16:10:36.144Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|16:20",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "16:20",
+      "horse": "BANKS OF THE BOYNE",
+      "price": "15/2",
+      "runners": 7,
+      "liveHorse": "CITY OF GOLD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CITY OF GOLD",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T16:10:36.157Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 284,
+    "recorded": 286,
     "pick": {
-      "settled": 262,
+      "settled": 265,
       "won": 53,
-      "pl": -9.91,
-      "roi": -3.8
+      "pl": -12.91,
+      "roi": -4.9
     },
     "favourite": {
-      "settled": 257,
+      "settled": 260,
       "won": 89,
-      "pl": -8.12,
-      "roi": -3.2
+      "pl": -11.12,
+      "roi": -4.3
     },
     "agree": {
       "settled": 60,
@@ -7716,10 +7778,10 @@
       "roi": -10.7
     },
     "disagree": {
-      "settled": 202,
+      "settled": 205,
       "won": 28,
-      "pl": -3.49,
-      "roi": -1.7
+      "pl": -6.49,
+      "roi": -3.2
     }
   },
   "lastBackfill": 1792251639419
