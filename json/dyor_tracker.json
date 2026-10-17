@@ -6445,10 +6445,18 @@
       "fav": {
         "horse": "ARAPAHO GOLD",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T11:41:59.606Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Newton Abbot|12:05",
@@ -6464,10 +6472,16 @@
       "fav": {
         "horse": "TRIGG",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-10-17T11:51:52.523Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Catterick|12:00",
@@ -6483,10 +6497,18 @@
       "fav": {
         "horse": "QUEENS BANDIT",
         "price": "1/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T11:51:52.549Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Market Rasen|12:15",
@@ -6525,33 +6547,71 @@
       },
       "recordedAt": "2026-10-17T12:02:06.399Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Ascot|12:30",
+      "date": "2026-10-17",
+      "course": "Ascot",
+      "time": "12:30",
+      "horse": "CABALLO DE MAR",
+      "price": "5/1",
+      "runners": 10,
+      "liveHorse": "HIGHWAYMAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HIGHWAYMAN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:22:32.414Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Catterick|12:35",
+      "date": "2026-10-17",
+      "course": "Catterick",
+      "time": "12:35",
+      "horse": "STONEACRE JOE",
+      "price": "25/1",
+      "runners": 7,
+      "liveHorse": "INKBERROW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INKBERROW",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:22:32.444Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 238,
+    "recorded": 240,
     "pick": {
-      "settled": 230,
+      "settled": 233,
       "won": 53,
-      "pl": 22.09,
-      "roi": 9.6
+      "pl": 19.09,
+      "roi": 8.2
     },
     "favourite": {
-      "settled": 232,
+      "settled": 234,
       "won": 89,
-      "pl": 16.88,
-      "roi": 7.3
+      "pl": 14.88,
+      "roi": 6.4
     },
     "agree": {
-      "settled": 53,
+      "settled": 54,
       "won": 25,
-      "pl": 0.58,
-      "roi": 1.1
+      "pl": -0.42,
+      "roi": -0.8
     },
     "disagree": {
-      "settled": 177,
+      "settled": 179,
       "won": 28,
-      "pl": 21.51,
-      "roi": 12.2
+      "pl": 19.51,
+      "roi": 10.9
     }
   },
   "lastBackfill": 1792227746275
