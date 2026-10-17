@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:10:56.821Z",
+  "generatedAt": "2026-10-17T15:20:49.377Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 84/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Leopardstown",
-      "off": "16:15",
-      "status": "BET",
-      "horse": "TREAN",
-      "price": "5/6"
-    },
-    {
       "course": "Newton Abbot",
       "off": "16:43",
       "status": "POSSIBLE",
@@ -33,7 +26,13 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Leopardstown",
+      "off": "16:15",
+      "horse": "TREAN"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-17",
@@ -202,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T15:10:56.341Z",
+    "updatedAt": "2026-10-17T15:20:49.289Z",
     "claude": {
       "races": 38,
       "won": 7,
