@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T13:11:31.368Z",
+  "generatedAt": "2026-10-17T13:21:16.700Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 83/120 bets settled before the verdict.",
   "rules": [
@@ -38,14 +38,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-17",
       "course": "Ascot",
       "off": "14:05",
-      "horse": "ALMERAQ"
-    }
-  ],
-  "recent": [
+      "horse": "ALMERAQ",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-17",
       "course": "Catterick",
@@ -199,21 +204,10 @@
       "bsp": 1.24,
       "pl": 0.228,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Curragh",
-      "off": "13:02",
-      "horse": "CHAMPION BASMA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T13:11:31.273Z",
+    "updatedAt": "2026-10-17T13:21:16.590Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,11 +230,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 84,
-      "won": 45,
-      "pl": -3.85,
-      "roi": -4.6,
-      "provisional": 1
+      "bets": 85,
+      "won": 46,
+      "pl": -2.75,
+      "roi": -3.2,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
