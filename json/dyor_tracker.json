@@ -7103,10 +7103,18 @@
       "fav": {
         "horse": "GSTAAD",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T14:11:29.917Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Catterick|14:25",
@@ -7122,10 +7130,16 @@
       "fav": {
         "horse": "BRIGHTON BOY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-17T14:11:29.937Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Stratford|14:34",
@@ -7164,33 +7178,90 @@
       },
       "recordedAt": "2026-10-17T14:21:07.277Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|14:37",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "14:37",
+      "horse": "EL CAPITAINE",
+      "price": "4/1",
+      "runners": 4,
+      "liveHorse": "COUNTRY MILE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COUNTRY MILE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:31:04.078Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Market Rasen|14:45",
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "time": "14:45",
+      "horse": "BALLYGEARY",
+      "price": "5/2",
+      "runners": 6,
+      "liveHorse": "SAINT POLO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAINT POLO",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:31:04.107Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|14:40",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "14:40",
+      "horse": "SNOWING",
+      "price": "5/4",
+      "runners": 13,
+      "liveHorse": "SNOWING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SNOWING",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:31:04.108Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 263,
+    "recorded": 266,
     "pick": {
-      "settled": 248,
+      "settled": 250,
       "won": 53,
-      "pl": 4.09,
-      "roi": 1.6
+      "pl": 2.09,
+      "roi": 0.8
     },
     "favourite": {
-      "settled": 244,
+      "settled": 245,
       "won": 89,
-      "pl": 4.88,
-      "roi": 2
+      "pl": 3.88,
+      "roi": 1.6
     },
     "agree": {
-      "settled": 56,
+      "settled": 57,
       "won": 25,
-      "pl": -2.42,
-      "roi": -4.3
+      "pl": -3.42,
+      "roi": -6
     },
     "disagree": {
-      "settled": 192,
+      "settled": 193,
       "won": 28,
-      "pl": 6.51,
-      "roi": 3.4
+      "pl": 5.51,
+      "roi": 2.9
     }
   },
   "lastBackfill": 1792240308219
