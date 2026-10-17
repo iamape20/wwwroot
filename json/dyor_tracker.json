@@ -7702,10 +7702,16 @@
       "fav": {
         "horse": "GENTLE WARRIOR",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-17T16:00:38.521Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Limerick|16:10",
@@ -7721,10 +7727,18 @@
       "fav": {
         "horse": "DINNER DANCE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T16:00:38.534Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Stratford|16:25",
@@ -7787,28 +7801,28 @@
   "stats": {
     "recorded": 287,
     "pick": {
-      "settled": 266,
+      "settled": 268,
       "won": 53,
-      "pl": -13.91,
-      "roi": -5.2
+      "pl": -15.91,
+      "roi": -5.9
     },
     "favourite": {
-      "settled": 261,
+      "settled": 262,
       "won": 89,
-      "pl": -12.12,
-      "roi": -4.6
+      "pl": -13.12,
+      "roi": -5
     },
     "agree": {
-      "settled": 60,
+      "settled": 61,
       "won": 25,
-      "pl": -6.42,
-      "roi": -10.7
+      "pl": -7.42,
+      "roi": -12.2
     },
     "disagree": {
-      "settled": 206,
+      "settled": 207,
       "won": 28,
-      "pl": -7.49,
-      "roi": -3.6
+      "pl": -8.49,
+      "roi": -4.1
     }
   },
   "lastBackfill": 1792251639419
