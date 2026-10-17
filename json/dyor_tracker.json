@@ -7648,10 +7648,18 @@
       "fav": {
         "horse": "LAST OF MY KIND",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:50:32.741Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Southwell|16:00",
@@ -7755,21 +7763,40 @@
       },
       "recordedAt": "2026-10-17T16:10:36.157Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Southwell|16:30",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "16:30",
+      "horse": "KING OF YORK",
+      "price": "17/2",
+      "runners": 9,
+      "liveHorse": "SPLIT ELEVENS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SPLIT ELEVENS",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T16:20:28.346Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 286,
+    "recorded": 287,
     "pick": {
-      "settled": 265,
+      "settled": 266,
       "won": 53,
-      "pl": -12.91,
-      "roi": -4.9
+      "pl": -13.91,
+      "roi": -5.2
     },
     "favourite": {
-      "settled": 260,
+      "settled": 261,
       "won": 89,
-      "pl": -11.12,
-      "roi": -4.3
+      "pl": -12.12,
+      "roi": -4.6
     },
     "agree": {
       "settled": 60,
@@ -7778,10 +7805,10 @@
       "roi": -10.7
     },
     "disagree": {
-      "settled": 205,
+      "settled": 206,
       "won": 28,
-      "pl": -6.49,
-      "roi": -3.2
+      "pl": -7.49,
+      "roi": -3.6
     }
   },
   "lastBackfill": 1792251639419

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-17T16:10:31.132Z",
+  "generatedAt": "2026-10-17T16:20:26.720Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 86/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 87/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-17",
       "course": "Market Rasen",
       "off": "17:05",
-      "horse": "LAST OF MY KIND"
-    }
-  ],
-  "recent": [
+      "horse": "LAST OF MY KIND",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-17",
       "course": "Newton Abbot",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Curragh",
-      "off": "15:22",
-      "horse": "ALMAZANN",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.52,
-      "pl": 1.444,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T16:10:31.042Z",
+    "updatedAt": "2026-10-17T16:20:26.637Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 88,
+      "bets": 89,
       "won": 46,
-      "pl": -5.75,
-      "roi": -6.5,
+      "pl": -6.75,
+      "roi": -7.6,
       "provisional": 2
     },
     "live": {
