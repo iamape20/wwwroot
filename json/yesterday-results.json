@@ -1,32 +1,71 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "strong": [],
   "moderate": [
     {
-      "horse": "ALMAZANN",
-      "course": "Curragh",
-      "time": "14:22",
-      "rating": "69.5",
-      "margin": "12.1",
-      "marginValue": 12.100000000000001,
-      "confidence": 73,
-      "meetingId": "121962",
-      "raceIndex": 4,
+      "horse": "EXTRAGALACTIC",
+      "course": "Redcar",
+      "time": "12:20",
+      "rating": "68.5",
+      "margin": "11.0",
+      "marginValue": 11,
+      "confidence": 57,
+      "meetingId": "122010",
+      "raceIndex": 0,
       "outcome": "won"
     },
     {
-      "horse": "LOVELY DARK ANGEL",
-      "course": "Southwell",
-      "time": "18:00",
-      "rating": "58.7",
-      "margin": "8.8",
-      "marginValue": 8.800000000000004,
-      "confidence": 54,
-      "meetingId": "121990",
-      "raceIndex": 5,
+      "horse": "ARTHURIAN",
+      "course": "Haydock",
+      "time": "12:42",
+      "rating": "71.5",
+      "margin": "12.9",
+      "marginValue": 12.899999999999999,
+      "confidence": 77,
+      "meetingId": "122008",
+      "raceIndex": 0,
+      "outcome": "won"
+    },
+    {
+      "horse": "MADAM SPEAKER",
+      "course": "Uttoxeter",
+      "time": "15:53",
+      "rating": "66.7",
+      "margin": "13.0",
+      "marginValue": 13,
+      "confidence": 71,
+      "meetingId": "122007",
+      "raceIndex": 6,
+      "outcome": "lost"
+    }
+  ],
+  "dailyDouble": [
+    {
+      "horse": "MADAM SPEAKER",
+      "course": "Uttoxeter",
+      "time": "15:53",
+      "rating": "66.7",
+      "margin": "13.0",
+      "marginValue": 13,
+      "confidence": 71,
+      "meetingId": "122007",
+      "raceIndex": 6,
+      "tier": "Moderate",
+      "outcome": "lost"
+    },
+    {
+      "horse": "ARTHURIAN",
+      "course": "Haydock",
+      "time": "12:42",
+      "rating": "71.5",
+      "margin": "12.9",
+      "marginValue": 12.899999999999999,
+      "confidence": 77,
+      "meetingId": "122008",
+      "raceIndex": 0,
+      "tier": "Moderate",
       "outcome": "won"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "pickMode": "double"
 }
