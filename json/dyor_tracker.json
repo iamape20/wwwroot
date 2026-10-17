@@ -7931,25 +7931,52 @@
       "fav": {
         "horse": "SATYRESS",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T18:50:21.563Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-17|Southwell|19:30",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "EMMA'S LETTER",
+      "price": "10/3",
+      "runners": 6,
+      "liveHorse": "THANKFULLY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THANKFULLY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T19:20:24.163Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 292,
+    "recorded": 293,
     "pick": {
-      "settled": 273,
+      "settled": 274,
       "won": 53,
-      "pl": -20.91,
-      "roi": -7.7
+      "pl": -21.91,
+      "roi": -8
     },
     "favourite": {
-      "settled": 265,
+      "settled": 266,
       "won": 89,
-      "pl": -16.12,
-      "roi": -6.1
+      "pl": -17.12,
+      "roi": -6.4
     },
     "agree": {
       "settled": 61,
@@ -7958,10 +7985,10 @@
       "roi": -12.2
     },
     "disagree": {
-      "settled": 212,
+      "settled": 213,
       "won": 28,
-      "pl": -13.49,
-      "roi": -6.4
+      "pl": -14.49,
+      "roi": -6.8
     }
   },
   "lastBackfill": 1792263021589
