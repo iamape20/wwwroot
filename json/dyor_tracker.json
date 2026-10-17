@@ -7831,25 +7831,52 @@
       "fav": {
         "horse": "ENCORE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T16:50:25.024Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-17|Southwell|17:30",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "17:30",
+      "horse": "FULLY STOCKED",
+      "price": "5/4",
+      "runners": 11,
+      "liveHorse": "FULLY STOCKED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FULLY STOCKED",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T17:20:22.535Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 288,
+    "recorded": 289,
     "pick": {
-      "settled": 271,
+      "settled": 272,
       "won": 53,
-      "pl": -18.91,
-      "roi": -7
+      "pl": -19.91,
+      "roi": -7.3
     },
     "favourite": {
-      "settled": 263,
+      "settled": 264,
       "won": 89,
-      "pl": -14.12,
-      "roi": -5.4
+      "pl": -15.12,
+      "roi": -5.7
     },
     "agree": {
       "settled": 61,
@@ -7858,10 +7885,10 @@
       "roi": -12.2
     },
     "disagree": {
-      "settled": 210,
+      "settled": 211,
       "won": 28,
-      "pl": -11.49,
-      "roi": -5.5
+      "pl": -12.49,
+      "roi": -5.9
     }
   },
   "lastBackfill": 1792251639419
