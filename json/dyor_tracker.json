@@ -6524,10 +6524,18 @@
       "fav": {
         "horse": "IVOR BEAR",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T12:02:06.365Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Limerick|12:10",
@@ -6543,10 +6551,18 @@
       "fav": {
         "horse": "MARCO DU SEUIL",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T12:02:06.399Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Ascot|12:30",
@@ -6585,21 +6601,97 @@
       },
       "recordedAt": "2026-10-17T12:22:32.444Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|12:42",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "12:42",
+      "horse": "ARCTIC VOYAGE",
+      "price": "11/2",
+      "runners": 7,
+      "liveHorse": "MISTERDOC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MISTERDOC",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:31:48.167Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Stratford|12:39",
+      "date": "2026-10-17",
+      "course": "Stratford",
+      "time": "12:39",
+      "horse": "KATARCICE",
+      "price": "2/1",
+      "runners": 7,
+      "liveHorse": "KATARCICE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KATARCICE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:31:48.214Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|12:45",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "12:45",
+      "horse": "YOUKNOWTHECODE",
+      "price": "6/1",
+      "runners": 18,
+      "liveHorse": "JENNYFROMTHEBLOCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JENNYFROMTHEBLOCK",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:31:48.218Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Market Rasen|12:50",
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "time": "12:50",
+      "horse": "GALWAY REEL",
+      "price": "4/6",
+      "runners": 8,
+      "liveHorse": "GALWAY REEL",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GALWAY REEL",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T12:41:36.502Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 240,
+    "recorded": 244,
     "pick": {
-      "settled": 233,
+      "settled": 235,
       "won": 53,
-      "pl": 19.09,
-      "roi": 8.2
+      "pl": 17.09,
+      "roi": 7.3
     },
     "favourite": {
-      "settled": 234,
+      "settled": 236,
       "won": 89,
-      "pl": 14.88,
-      "roi": 6.4
+      "pl": 12.88,
+      "roi": 5.5
     },
     "agree": {
       "settled": 54,
@@ -6608,11 +6700,11 @@
       "roi": -0.8
     },
     "disagree": {
-      "settled": 179,
+      "settled": 181,
       "won": 28,
-      "pl": 19.51,
-      "roi": 10.9
+      "pl": 17.51,
+      "roi": 9.7
     }
   },
-  "lastBackfill": 1792227746275
+  "lastBackfill": 1792240308219
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-17T12:22:26.357Z",
+  "generatedAt": "2026-10-17T12:41:32.453Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 82/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 83/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,13 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Catterick",
-      "off": "13:35",
-      "status": "BET",
-      "horse": "INKBERROW",
-      "price": "8/13"
-    },
     {
       "course": "Ascot",
       "off": "14:05",
@@ -53,12 +46,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Market Rasen",
-      "off": "13:15",
-      "horse": "IVOR BEAR"
+      "course": "Catterick",
+      "off": "13:35",
+      "horse": "INKBERROW"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "off": "13:15",
+      "horse": "IVOR BEAR",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-16",
       "course": "Newcastle",
@@ -212,21 +216,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-14",
-      "course": "Punchestown",
-      "off": "16:30",
-      "horse": "GORGEOUS TOM",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.76,
-      "pl": 0.722,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T12:22:26.102Z",
+    "updatedAt": "2026-10-17T12:41:32.282Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -249,10 +242,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 82,
+      "bets": 83,
       "won": 44,
-      "pl": -3.18,
-      "roi": -3.9,
+      "pl": -4.18,
+      "roi": -5,
       "provisional": 0
     },
     "live": {
