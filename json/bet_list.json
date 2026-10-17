@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T13:21:16.700Z",
+  "generatedAt": "2026-10-17T13:41:18.054Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 83/120 bets settled before the verdict.",
   "rules": [
@@ -13,12 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Ascot",
-      "off": "14:40",
-      "status": "POSSIBLE",
-      "revealAt": "14:25"
-    },
     {
       "course": "Leopardstown",
       "off": "16:15",
@@ -38,7 +32,13 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Ascot",
+      "off": "14:40",
+      "horse": "KALPANA"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-17",
@@ -207,7 +207,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T13:21:16.590Z",
+    "updatedAt": "2026-10-17T13:41:17.952Z",
     "claude": {
       "races": 38,
       "won": 7,

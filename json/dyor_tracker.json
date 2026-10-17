@@ -6801,10 +6801,16 @@
       "fav": {
         "horse": "SENATOR",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-17T13:01:54.087Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Newton Abbot|13:17",
@@ -6820,10 +6826,14 @@
       "fav": {
         "horse": "PLAYFUL FOX",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-17T13:11:34.210Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-10-17|Market Rasen|13:25",
@@ -6839,10 +6849,14 @@
       "fav": {
         "horse": "FRINGILL DIKE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-17T13:11:34.239Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "15/8"
     },
     {
       "id": "2026-10-17|Limerick|13:20",
@@ -6858,10 +6872,18 @@
       "fav": {
         "horse": "WORLD OF FORTUNES",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T13:11:34.241Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Leopardstown|13:32",
@@ -6881,21 +6903,116 @@
       },
       "recordedAt": "2026-10-17T13:21:19.614Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Ascot|13:40",
+      "date": "2026-10-17",
+      "course": "Ascot",
+      "time": "13:40",
+      "horse": "KALPANA",
+      "price": "11/10",
+      "runners": 12,
+      "liveHorse": "KALPANA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KALPANA",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:31:24.054Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Catterick|13:45",
+      "date": "2026-10-17",
+      "course": "Catterick",
+      "time": "13:45",
+      "horse": "WOODSTOCK",
+      "price": "9/4",
+      "runners": 10,
+      "liveHorse": "WOODSTOCK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WOODSTOCK",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:31:24.069Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|13:52",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "13:52",
+      "horse": "BEORMA",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "NORMAN FLETCHER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NORMAN FLETCHER",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:41:19.951Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Stratford|13:49",
+      "date": "2026-10-17",
+      "course": "Stratford",
+      "time": "13:49",
+      "horse": "GRANNY HAWKINS",
+      "price": "11/1",
+      "runners": 6,
+      "liveHorse": "WATAMU",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WATAMU",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:41:19.965Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|13:55",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "13:55",
+      "horse": "EMERALD ENIGMA",
+      "price": "15/8",
+      "runners": 6,
+      "liveHorse": "DALLAS STAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DALLAS STAR",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:41:19.967Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 252,
+    "recorded": 257,
     "pick": {
-      "settled": 240,
+      "settled": 242,
       "won": 53,
-      "pl": 12.09,
-      "roi": 5
+      "pl": 10.09,
+      "roi": 4.2
     },
     "favourite": {
-      "settled": 239,
+      "settled": 240,
       "won": 89,
-      "pl": 9.88,
-      "roi": 4.1
+      "pl": 8.88,
+      "roi": 3.7
     },
     "agree": {
       "settled": 54,
@@ -6904,10 +7021,10 @@
       "roi": -0.8
     },
     "disagree": {
-      "settled": 186,
+      "settled": 188,
       "won": 28,
-      "pl": 12.51,
-      "roi": 6.7
+      "pl": 10.51,
+      "roi": 5.6
     }
   },
   "lastBackfill": 1792240308219
