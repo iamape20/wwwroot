@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-17T13:41:18.054Z",
+  "generatedAt": "2026-10-17T14:02:01.949Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 83/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 84/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-17",
       "course": "Ascot",
       "off": "14:40",
-      "horse": "KALPANA"
-    }
-  ],
-  "recent": [
+      "horse": "KALPANA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-17",
       "course": "Ascot",
@@ -193,21 +198,10 @@
       "bsp": 1.58227608,
       "pl": 0.553,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Perth",
-      "off": "13:25",
-      "horse": "KABRAL DU MATHAN",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.24,
-      "pl": 0.228,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T13:41:17.952Z",
+    "updatedAt": "2026-10-17T14:02:01.714Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 85,
+      "bets": 86,
       "won": 46,
-      "pl": -2.75,
-      "roi": -3.2,
+      "pl": -3.75,
+      "roi": -4.4,
       "provisional": 2
     },
     "live": {

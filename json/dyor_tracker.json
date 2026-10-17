@@ -6899,10 +6899,18 @@
       "fav": {
         "horse": "MOUNT MERU",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T13:21:19.614Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Ascot|13:40",
@@ -6918,10 +6926,18 @@
       "fav": {
         "horse": "KALPANA",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T13:31:24.054Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Catterick|13:45",
@@ -6937,10 +6953,14 @@
       "fav": {
         "horse": "WOODSTOCK",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-17T13:31:24.069Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-10-17|Newton Abbot|13:52",
@@ -6998,27 +7018,65 @@
       },
       "recordedAt": "2026-10-17T13:41:19.967Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Market Rasen|14:00",
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "time": "14:00",
+      "horse": "THE EGYPTIAN GINGE",
+      "price": "10/11",
+      "runners": 5,
+      "liveHorse": "THE EGYPTIAN GINGE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THE EGYPTIAN GINGE",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T13:51:07.500Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|14:07",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "14:07",
+      "horse": "LEADLIGHT",
+      "price": "8/1",
+      "runners": 6,
+      "liveHorse": "WALL STREET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WALL STREET",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:02:08.527Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 257,
+    "recorded": 259,
     "pick": {
-      "settled": 242,
+      "settled": 244,
       "won": 53,
-      "pl": 10.09,
-      "roi": 4.2
+      "pl": 8.09,
+      "roi": 3.3
     },
     "favourite": {
-      "settled": 240,
+      "settled": 242,
       "won": 89,
-      "pl": 8.88,
-      "roi": 3.7
+      "pl": 6.88,
+      "roi": 2.8
     },
     "agree": {
-      "settled": 54,
+      "settled": 56,
       "won": 25,
-      "pl": -0.42,
-      "roi": -0.8
+      "pl": -2.42,
+      "roi": -4.3
     },
     "disagree": {
       "settled": 188,

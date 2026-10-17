@@ -1823,7 +1823,11 @@
       "rating": 78,
       "runners": 12,
       "recordedAt": "2026-10-17T13:31:23.793Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Stratford|13:49",
@@ -1836,14 +1840,38 @@
       "runners": 6,
       "recordedAt": "2026-10-17T13:41:19.673Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Market Rasen|14:00",
+      "date": "2026-10-17",
+      "course": "Market Rasen",
+      "time": "14:00",
+      "horse": "THE EGYPTIAN GINGE",
+      "price": "10/11",
+      "rating": 80.3,
+      "runners": 5,
+      "recordedAt": "2026-10-17T13:51:07.219Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|14:07",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "14:07",
+      "horse": "WALL STREET",
+      "price": "2/5",
+      "rating": 69.7,
+      "runners": 6,
+      "recordedAt": "2026-10-17T14:02:07.882Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 112,
-    "settled": 106,
+    "recorded": 114,
+    "settled": 107,
     "won": 59,
-    "pl": 16.72,
-    "roi": 15.8
+    "pl": 15.72,
+    "roi": 14.7
   },
   "lastBackfill": 1792242111468
 }
