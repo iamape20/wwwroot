@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:41:32.453Z",
+  "generatedAt": "2026-10-17T13:01:43.978Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 83/120 bets settled before the verdict.",
   "rules": [
@@ -16,8 +16,9 @@
     {
       "course": "Ascot",
       "off": "14:05",
-      "status": "POSSIBLE",
-      "revealAt": "13:50"
+      "status": "BET",
+      "horse": "ALMERAQ",
+      "price": "5/4"
     },
     {
       "course": "Ascot",
@@ -44,14 +45,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-17",
       "course": "Catterick",
       "off": "13:35",
-      "horse": "INKBERROW"
-    }
-  ],
-  "recent": [
+      "horse": "INKBERROW",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-17",
       "course": "Market Rasen",
@@ -205,21 +211,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Perth",
-      "off": "12:55",
-      "horse": "EASTERN FIRE",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T12:41:32.282Z",
+    "updatedAt": "2026-10-17T13:01:43.763Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -242,11 +237,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 83,
-      "won": 44,
-      "pl": -4.18,
-      "roi": -5,
-      "provisional": 0
+      "bets": 84,
+      "won": 45,
+      "pl": -3.85,
+      "roi": -4.6,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
