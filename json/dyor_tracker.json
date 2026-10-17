@@ -7754,10 +7754,16 @@
       "fav": {
         "horse": "ASHDOWN FOREST",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-17T16:10:36.144Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Leopardstown|16:20",
@@ -7773,10 +7779,16 @@
       "fav": {
         "horse": "CITY OF GOLD",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-17T16:10:36.157Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Southwell|16:30",
@@ -7792,25 +7804,52 @@
       "fav": {
         "horse": "SPLIT ELEVENS",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T16:20:28.346Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-17|Southwell|17:00",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "17:00",
+      "horse": "KING SHARJA",
+      "price": "18/1",
+      "runners": 9,
+      "liveHorse": "ENCORE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ENCORE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T16:50:25.024Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 287,
+    "recorded": 288,
     "pick": {
-      "settled": 268,
+      "settled": 271,
       "won": 53,
-      "pl": -15.91,
-      "roi": -5.9
+      "pl": -18.91,
+      "roi": -7
     },
     "favourite": {
-      "settled": 262,
+      "settled": 263,
       "won": 89,
-      "pl": -13.12,
-      "roi": -5
+      "pl": -14.12,
+      "roi": -5.4
     },
     "agree": {
       "settled": 61,
@@ -7819,10 +7858,10 @@
       "roi": -12.2
     },
     "disagree": {
-      "settled": 207,
+      "settled": 210,
       "won": 28,
-      "pl": -8.49,
-      "roi": -4.1
+      "pl": -11.49,
+      "roi": -5.5
     }
   },
   "lastBackfill": 1792251639419
