@@ -6976,10 +6976,18 @@
       "fav": {
         "horse": "NORMAN FLETCHER",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T13:41:19.951Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Stratford|13:49",
@@ -6995,10 +7003,16 @@
       "fav": {
         "horse": "WATAMU",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-17T13:41:19.965Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Limerick|13:55",
@@ -7014,10 +7028,18 @@
       "fav": {
         "horse": "DALLAS STAR",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T13:41:19.967Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Market Rasen|14:00",
@@ -7033,10 +7055,14 @@
       "fav": {
         "horse": "THE EGYPTIAN GINGE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-17T13:51:07.500Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-10-17|Leopardstown|14:07",
@@ -7052,25 +7078,107 @@
       "fav": {
         "horse": "WALL STREET",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-10-17T14:02:08.527Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-17|Ascot|14:20",
+      "date": "2026-10-17",
+      "course": "Ascot",
+      "time": "14:20",
+      "horse": "GSTAAD",
+      "price": "5/2",
+      "runners": 11,
+      "liveHorse": "GSTAAD",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GSTAAD",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:11:29.917Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Catterick|14:25",
+      "date": "2026-10-17",
+      "course": "Catterick",
+      "time": "14:25",
+      "horse": "EAGLE BAY",
+      "price": "17/2",
+      "runners": 10,
+      "liveHorse": "BRIGHTON BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BRIGHTON BOY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:11:29.937Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Stratford|14:34",
+      "date": "2026-10-17",
+      "course": "Stratford",
+      "time": "14:34",
+      "horse": "GONE IN SIXTY",
+      "price": "15/8",
+      "runners": 7,
+      "liveHorse": "GONE IN SIXTY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GONE IN SIXTY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:21:07.262Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|14:30",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "14:30",
+      "horse": "CUMBERLAND RIVER",
+      "price": "50/1",
+      "runners": 15,
+      "liveHorse": "GLIN ROAD BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GLIN ROAD BOY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:21:07.277Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 259,
+    "recorded": 263,
     "pick": {
-      "settled": 244,
+      "settled": 248,
       "won": 53,
-      "pl": 8.09,
-      "roi": 3.3
+      "pl": 4.09,
+      "roi": 1.6
     },
     "favourite": {
-      "settled": 242,
+      "settled": 244,
       "won": 89,
-      "pl": 6.88,
-      "roi": 2.8
+      "pl": 4.88,
+      "roi": 2
     },
     "agree": {
       "settled": 56,
@@ -7079,10 +7187,10 @@
       "roi": -4.3
     },
     "disagree": {
-      "settled": 188,
+      "settled": 192,
       "won": 28,
-      "pl": 10.51,
-      "roi": 5.6
+      "pl": 6.51,
+      "roi": 3.4
     }
   },
   "lastBackfill": 1792240308219
