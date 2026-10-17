@@ -7334,10 +7334,18 @@
       "fav": {
         "horse": "FLASHY BOY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:01:27.261Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Catterick|15:10",
@@ -7418,10 +7426,18 @@
       "fav": {
         "horse": "LADY DAPPLE ROSE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:11:07.454Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Southwell|15:23",
@@ -7460,33 +7476,90 @@
       },
       "recordedAt": "2026-10-17T15:20:51.317Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|15:43",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "15:43",
+      "horse": "HAVANOTHERGUINNESS",
+      "price": "11/8",
+      "runners": 7,
+      "liveHorse": "HAVANOTHERGUINNESS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HAVANOTHERGUINNESS",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:30:48.050Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Catterick|15:45",
+      "date": "2026-10-17",
+      "course": "Catterick",
+      "time": "15:45",
+      "horse": "LEXINGTON BLITZ",
+      "price": "6/1",
+      "runners": 12,
+      "liveHorse": "BAKER BLUE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BAKER BLUE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:30:48.067Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|15:40",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "15:40",
+      "horse": "RUN FOR THE BORDER",
+      "price": "8/1",
+      "runners": 18,
+      "liveHorse": "LOI DES JEUX",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LOI DES JEUX",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:30:48.070Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 275,
+    "recorded": 278,
     "pick": {
-      "settled": 256,
+      "settled": 258,
       "won": 53,
-      "pl": -3.91,
-      "roi": -1.5
+      "pl": -5.91,
+      "roi": -2.3
     },
     "favourite": {
-      "settled": 250,
+      "settled": 252,
       "won": 89,
-      "pl": -1.12,
-      "roi": -0.4
+      "pl": -3.12,
+      "roi": -1.2
     },
     "agree": {
-      "settled": 58,
+      "settled": 59,
       "won": 25,
-      "pl": -4.42,
-      "roi": -7.6
+      "pl": -5.42,
+      "roi": -9.2
     },
     "disagree": {
-      "settled": 198,
+      "settled": 199,
       "won": 28,
-      "pl": 0.51,
-      "roi": 0.3
+      "pl": -0.49,
+      "roi": -0.2
     }
   },
   "lastBackfill": 1792240308219
