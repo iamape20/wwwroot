@@ -1881,7 +1881,11 @@
       "rating": 80.3,
       "runners": 4,
       "recordedAt": "2026-10-17T14:31:03.810Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Leopardstown|14:40",
@@ -1893,15 +1897,29 @@
       "rating": 62,
       "runners": 13,
       "recordedAt": "2026-10-17T14:31:03.839Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
+    },
+    {
+      "id": "2026-10-17|Leopardstown|15:15",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "15:15",
+      "horse": "TREAN",
+      "price": "5/6",
+      "rating": 70.7,
+      "runners": 6,
+      "recordedAt": "2026-10-17T15:01:26.691Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 116,
-    "settled": 107,
+    "recorded": 117,
+    "settled": 108,
     "won": 59,
-    "pl": 15.72,
-    "roi": 14.7
+    "pl": 14.72,
+    "roi": 13.6
   },
   "lastBackfill": 1792242111468
 }

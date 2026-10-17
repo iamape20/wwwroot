@@ -7155,10 +7155,18 @@
       "fav": {
         "horse": "GONE IN SIXTY",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T14:21:07.262Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Limerick|14:30",
@@ -7174,10 +7182,18 @@
       "fav": {
         "horse": "GLIN ROAD BOY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T14:21:07.277Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "50/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Newton Abbot|14:37",
@@ -7193,10 +7209,16 @@
       "fav": {
         "horse": "COUNTRY MILE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T14:31:04.078Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     },
     {
       "id": "2026-10-17|Market Rasen|14:45",
@@ -7212,10 +7234,16 @@
       "fav": {
         "horse": "SAINT POLO",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-17T14:31:04.107Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Leopardstown|14:40",
@@ -7231,37 +7259,136 @@
       "fav": {
         "horse": "SNOWING",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-17T14:31:04.108Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
+    },
+    {
+      "id": "2026-10-17|Ascot|15:00",
+      "date": "2026-10-17",
+      "course": "Ascot",
+      "time": "15:00",
+      "horse": "ALMAQAM",
+      "price": "12/1",
+      "runners": 6,
+      "liveHorse": "OMBUDSMAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OMBUDSMAN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:51:01.235Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Limerick|15:05",
+      "date": "2026-10-17",
+      "course": "Limerick",
+      "time": "15:05",
+      "horse": "DALMATIC",
+      "price": "9/1",
+      "runners": 16,
+      "liveHorse": "AT THE WINGS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AT THE WINGS",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T14:51:01.256Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Newton Abbot|15:07",
+      "date": "2026-10-17",
+      "course": "Newton Abbot",
+      "time": "15:07",
+      "horse": "FLASHY BOY",
+      "price": "5/2",
+      "runners": 5,
+      "liveHorse": "FLASHY BOY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FLASHY BOY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:01:27.261Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Catterick|15:10",
+      "date": "2026-10-17",
+      "course": "Catterick",
+      "time": "15:10",
+      "horse": "CLASSY CLARETS",
+      "price": "9/1",
+      "runners": 9,
+      "liveHorse": "VINCE LE PRINCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VINCE LE PRINCE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:01:27.294Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|15:15",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "15:15",
+      "horse": "KING OF CLOUGHAN",
+      "price": "7/2",
+      "runners": 6,
+      "liveHorse": "TREAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TREAN",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:01:27.295Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 266,
+    "recorded": 271,
     "pick": {
-      "settled": 250,
+      "settled": 253,
       "won": 53,
-      "pl": 2.09,
-      "roi": 0.8
+      "pl": -0.91,
+      "roi": -0.4
     },
     "favourite": {
-      "settled": 245,
+      "settled": 248,
       "won": 89,
-      "pl": 3.88,
-      "roi": 1.6
+      "pl": 0.88,
+      "roi": 0.4
     },
     "agree": {
-      "settled": 57,
+      "settled": 58,
       "won": 25,
-      "pl": -3.42,
-      "roi": -6
+      "pl": -4.42,
+      "roi": -7.6
     },
     "disagree": {
-      "settled": 193,
+      "settled": 195,
       "won": 28,
-      "pl": 5.51,
-      "roi": 2.9
+      "pl": 3.51,
+      "roi": 1.8
     }
   },
   "lastBackfill": 1792240308219
