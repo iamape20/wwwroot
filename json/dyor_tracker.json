@@ -7906,19 +7906,44 @@
       "fav": {
         "horse": "OXBRIDGE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-10-17T18:20:22.718Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-17|Southwell|19:00",
+      "date": "2026-10-17",
+      "course": "Southwell",
+      "time": "19:00",
+      "horse": "BELLE AMIE",
+      "price": "7/2",
+      "runners": 6,
+      "liveHorse": "SATYRESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SATYRESS",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T18:50:21.563Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 291,
+    "recorded": 292,
     "pick": {
-      "settled": 272,
+      "settled": 273,
       "won": 53,
-      "pl": -19.91,
-      "roi": -7.3
+      "pl": -20.91,
+      "roi": -7.7
     },
     "favourite": {
       "settled": 265,
@@ -7933,11 +7958,11 @@
       "roi": -12.2
     },
     "disagree": {
-      "settled": 211,
+      "settled": 212,
       "won": 28,
-      "pl": -12.49,
-      "roi": -5.9
+      "pl": -13.49,
+      "roi": -6.4
     }
   },
-  "lastBackfill": 1792251639419
+  "lastBackfill": 1792263021589
 }
