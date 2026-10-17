@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-17T15:30:45.811Z",
+  "generatedAt": "2026-10-17T15:40:37.056Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 84/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 85/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -27,14 +27,19 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-17",
       "course": "Leopardstown",
       "off": "16:15",
-      "horse": "TREAN"
-    }
-  ],
-  "recent": [
+      "horse": "TREAN",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-17",
       "course": "Ascot",
@@ -188,21 +193,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Brighton",
-      "off": "14:05",
-      "horse": "MY BOO BOO",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.58227608,
-      "pl": 0.553,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-17T15:30:45.727Z",
+    "updatedAt": "2026-10-17T15:40:36.943Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -225,10 +219,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 86,
+      "bets": 87,
       "won": 46,
-      "pl": -3.75,
-      "roi": -4.4,
+      "pl": -4.75,
+      "roi": -5.5,
       "provisional": 2
     },
     "live": {

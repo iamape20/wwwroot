@@ -7388,10 +7388,18 @@
       "fav": {
         "horse": "TREAN",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:01:27.295Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-17|Market Rasen|15:25",
@@ -7407,10 +7415,14 @@
       "fav": {
         "horse": "CAP RICOCHET",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-17T15:11:07.401Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-10-17|Stratford|15:18",
@@ -7453,10 +7465,16 @@
       "fav": {
         "horse": "PORTMAN BLUE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-17T15:11:07.459Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
     },
     {
       "id": "2026-10-17|Ascot|15:35",
@@ -7533,21 +7551,59 @@
       },
       "recordedAt": "2026-10-17T15:30:48.070Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-17|Stratford|15:55",
+      "date": "2026-10-17",
+      "course": "Stratford",
+      "time": "15:55",
+      "horse": "MOST WANTED",
+      "price": "6/1",
+      "runners": 4,
+      "liveHorse": "BLACKIJO DAGROSTIS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLACKIJO DAGROSTIS",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:40:39.379Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-17|Leopardstown|15:50",
+      "date": "2026-10-17",
+      "course": "Leopardstown",
+      "time": "15:50",
+      "horse": "FIRST WATCH",
+      "price": "7/1",
+      "runners": 12,
+      "liveHorse": "DRIVE ON THERE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DRIVE ON THERE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-17T15:40:39.418Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 278,
+    "recorded": 280,
     "pick": {
-      "settled": 258,
+      "settled": 259,
       "won": 53,
-      "pl": -5.91,
-      "roi": -2.3
+      "pl": -6.91,
+      "roi": -2.7
     },
     "favourite": {
-      "settled": 252,
+      "settled": 254,
       "won": 89,
-      "pl": -3.12,
-      "roi": -1.2
+      "pl": -5.12,
+      "roi": -2
     },
     "agree": {
       "settled": 59,
@@ -7556,11 +7612,11 @@
       "roi": -9.2
     },
     "disagree": {
-      "settled": 199,
+      "settled": 200,
       "won": 28,
-      "pl": -0.49,
-      "roi": -0.2
+      "pl": -1.49,
+      "roi": -0.7
     }
   },
-  "lastBackfill": 1792240308219
+  "lastBackfill": 1792251639419
 }
