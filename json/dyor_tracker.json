@@ -7958,19 +7958,25 @@
       "fav": {
         "horse": "THANKFULLY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-17T19:20:24.163Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 293,
     "pick": {
-      "settled": 274,
+      "settled": 275,
       "won": 53,
-      "pl": -21.91,
-      "roi": -8
+      "pl": -22.91,
+      "roi": -8.3
     },
     "favourite": {
       "settled": 266,
@@ -7985,10 +7991,10 @@
       "roi": -12.2
     },
     "disagree": {
-      "settled": 213,
+      "settled": 214,
       "won": 28,
-      "pl": -14.49,
-      "roi": -6.8
+      "pl": -15.49,
+      "roi": -7.2
     }
   },
   "lastBackfill": 1792263021589
