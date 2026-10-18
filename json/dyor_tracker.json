@@ -8156,10 +8156,18 @@
       "fav": {
         "horse": "SUNATIA",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T13:00:42.206Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/6",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|13:20",
@@ -8175,10 +8183,18 @@
       "fav": {
         "horse": "STAY HOPEFUL",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T13:10:38.510Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Limerick|13:30",
@@ -8198,33 +8214,71 @@
       },
       "recordedAt": "2026-10-18T13:20:35.047Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|13:42",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "13:42",
+      "horse": "ZODIAC BEAR",
+      "price": "16/1",
+      "runners": 7,
+      "liveHorse": "FAIYUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FAIYUM",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T13:30:36.401Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Sedgefield|13:50",
+      "date": "2026-10-18",
+      "course": "Sedgefield",
+      "time": "13:50",
+      "horse": "HAY MAX",
+      "price": "6/1",
+      "runners": 8,
+      "liveHorse": "CAN'T RESIST IT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CAN'T RESIST IT",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T13:40:38.338Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 298,
+    "recorded": 300,
     "pick": {
-      "settled": 290,
+      "settled": 292,
       "won": 68,
-      "pl": 21.41,
-      "roi": 7.4
+      "pl": 19.41,
+      "roi": 6.6
     },
     "favourite": {
-      "settled": 294,
+      "settled": 296,
       "won": 115,
-      "pl": 22.91,
-      "roi": 7.8
+      "pl": 20.91,
+      "roi": 7.1
     },
     "agree": {
-      "settled": 72,
+      "settled": 73,
       "won": 36,
-      "pl": 8.8,
-      "roi": 12.2
+      "pl": 7.8,
+      "roi": 10.7
     },
     "disagree": {
-      "settled": 218,
+      "settled": 219,
       "won": 32,
-      "pl": 12.61,
-      "roi": 5.8
+      "pl": 11.61,
+      "roi": 5.3
     }
   },
   "lastBackfill": 1792329635123

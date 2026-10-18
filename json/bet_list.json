@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T13:20:33.076Z",
+  "generatedAt": "2026-10-18T13:40:37.218Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 90/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 91/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Limerick",
-      "off": "14:30",
-      "status": "BET",
-      "horse": "GLOBAL SUBMISSION",
-      "price": "10/11"
-    },
-    {
       "course": "Leopardstown",
       "off": "15:42",
       "status": "POSSIBLE",
@@ -29,12 +22,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Leopardstown",
-      "off": "14:12",
-      "horse": "SUNATIA"
+      "course": "Limerick",
+      "off": "14:30",
+      "horse": "GLOBAL SUBMISSION"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "off": "14:12",
+      "horse": "SUNATIA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-17",
       "course": "Southwell",
@@ -188,21 +192,10 @@
       "bsp": 1.33110097,
       "pl": 0.315,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-15",
-      "course": "Southwell",
-      "off": "17:30",
-      "horse": "GROVE STREET",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.45985066,
-      "pl": 0.437,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-18T13:20:32.990Z",
+    "updatedAt": "2026-10-18T13:40:37.123Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -225,10 +218,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 90,
+      "bets": 91,
       "won": 47,
-      "pl": -5.56,
-      "roi": -6.2,
+      "pl": -6.56,
+      "roi": -7.2,
       "provisional": 0
     },
     "live": {
