@@ -2016,7 +2016,11 @@
       "rating": 69,
       "runners": 7,
       "recordedAt": "2026-10-18T12:50:43.281Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/7",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|13:12",
@@ -2029,14 +2033,26 @@
       "runners": 15,
       "recordedAt": "2026-10-18T13:00:41.935Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|13:30",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "13:30",
+      "horse": "GLOBAL SUBMISSION",
+      "price": "10/11",
+      "rating": 66.5,
+      "runners": 11,
+      "recordedAt": "2026-10-18T13:20:34.652Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 123,
-    "settled": 121,
+    "recorded": 124,
+    "settled": 122,
     "won": 68,
-    "pl": 19.26,
-    "roi": 15.9
+    "pl": 18.26,
+    "roi": 15
   },
   "lastBackfill": 1792314051651
 }

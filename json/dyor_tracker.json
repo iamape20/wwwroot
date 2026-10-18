@@ -8106,10 +8106,16 @@
       "fav": {
         "horse": "EDELAK",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T12:40:39.776Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-18|Limerick|13:00",
@@ -8125,10 +8131,16 @@
       "fav": {
         "horse": "BRICKFIELD BELLE",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T12:50:43.606Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-10-18|Leopardstown|13:12",
@@ -8148,10 +8160,48 @@
       },
       "recordedAt": "2026-10-18T13:00:42.206Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Sedgefield|13:20",
+      "date": "2026-10-18",
+      "course": "Sedgefield",
+      "time": "13:20",
+      "horse": "PATH OF STARS",
+      "price": "11/2",
+      "runners": 7,
+      "liveHorse": "STAY HOPEFUL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STAY HOPEFUL",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T13:10:38.510Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|13:30",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "13:30",
+      "horse": "APPROVAL",
+      "price": "11/4",
+      "runners": 11,
+      "liveHorse": "GLOBAL SUBMISSION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GLOBAL SUBMISSION",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T13:20:35.047Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 296,
+    "recorded": 298,
     "pick": {
       "settled": 290,
       "won": 68,
@@ -8159,10 +8209,10 @@
       "roi": 7.4
     },
     "favourite": {
-      "settled": 292,
+      "settled": 294,
       "won": 115,
-      "pl": 24.91,
-      "roi": 8.5
+      "pl": 22.91,
+      "roi": 7.8
     },
     "agree": {
       "settled": 72,
@@ -8177,5 +8227,5 @@
       "roi": 5.8
     }
   },
-  "lastBackfill": 1792314053818
+  "lastBackfill": 1792329635123
 }

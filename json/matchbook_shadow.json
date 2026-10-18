@@ -4387,27 +4387,81 @@
       "marketVolume": 48516
     },
     "lastBeforeOff": {
-      "at": "2026-10-18T13:00:41.739Z",
+      "at": "2026-10-18T13:10:38.217Z",
       "eventId": 34619060950500024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 2.14,
-      "available": 13.31,
+      "bestBack": 1.99,
+      "available": 35.82,
       "depth": [
         [
-          2.14,
-          13.31
+          1.99,
+          35.82
         ],
         [
-          2.12,
-          63.47
+          1.98,
+          99.29
         ],
         [
-          2.1,
-          94.76
+          1.97,
+          67.73
         ]
       ],
-      "marketVolume": 48516
+      "marketVolume": 84885
+    }
+  },
+  "BET|2026-10-18|Limerick|13:30|GLOBALSUBMISSION": {
+    "type": "BET",
+    "date": "2026-10-18",
+    "course": "Limerick",
+    "time": "13:30",
+    "horse": "GLOBAL SUBMISSION",
+    "betId": "2026-10-18|Limerick|13:30",
+    "atReveal": {
+      "at": "2026-10-18T13:20:34.487Z",
+      "eventId": 34619010555802100,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.28,
+      "available": 2.46,
+      "depth": [
+        [
+          2.28,
+          2.46
+        ],
+        [
+          2.26,
+          26.76
+        ],
+        [
+          2.24,
+          106.09
+        ]
+      ],
+      "marketVolume": 72251
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-18T13:20:34.487Z",
+      "eventId": 34619010555802100,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.28,
+      "available": 2.46,
+      "depth": [
+        [
+          2.28,
+          2.46
+        ],
+        [
+          2.26,
+          26.76
+        ],
+        [
+          2.24,
+          106.09
+        ]
+      ],
+      "marketVolume": 72251
     }
   }
 }
