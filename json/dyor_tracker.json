@@ -8530,10 +8530,16 @@
       "fav": {
         "horse": "MINERS BRIDGE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-18T15:20:19.743Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|15:42",
@@ -8549,10 +8555,18 @@
       "fav": {
         "horse": "SKY CAPTAIN",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T15:30:17.691Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|15:50",
@@ -8572,21 +8586,59 @@
       },
       "recordedAt": "2026-10-18T15:40:18.335Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|16:00",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "16:00",
+      "horse": "ECHOING SILENCE",
+      "price": "5/2",
+      "runners": 4,
+      "liveHorse": "ECHOING SILENCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ECHOING SILENCE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:50:15.963Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|16:12",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "16:12",
+      "horse": "BELLA COLOMBIA",
+      "price": "33/1",
+      "runners": 14,
+      "liveHorse": "ZARAAHMANDO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZARAAHMANDO",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T16:00:12.423Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 312,
+    "recorded": 314,
     "pick": {
-      "settled": 303,
+      "settled": 305,
       "won": 68,
-      "pl": 8.41,
-      "roi": 2.8
+      "pl": 6.41,
+      "roi": 2.1
     },
     "favourite": {
-      "settled": 307,
+      "settled": 308,
       "won": 115,
-      "pl": 9.91,
-      "roi": 3.2
+      "pl": 8.91,
+      "roi": 2.9
     },
     "agree": {
       "settled": 74,
@@ -8595,10 +8647,10 @@
       "roi": 9.2
     },
     "disagree": {
-      "settled": 229,
+      "settled": 231,
       "won": 32,
-      "pl": 1.61,
-      "roi": 0.7
+      "pl": -0.39,
+      "roi": -0.2
     }
   },
   "lastBackfill": 1792329635123
