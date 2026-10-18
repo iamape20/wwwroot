@@ -8422,10 +8422,18 @@
       "fav": {
         "horse": "ZAMOND",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T14:40:26.396Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Limerick|15:00",
@@ -8441,10 +8449,18 @@
       "fav": {
         "horse": "ANYWAY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T14:50:22.688Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|15:12",
@@ -8464,21 +8480,59 @@
       },
       "recordedAt": "2026-10-18T15:00:30.051Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Sedgefield|15:20",
+      "date": "2026-10-18",
+      "course": "Sedgefield",
+      "time": "15:20",
+      "horse": "KLITSCHKO",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "DOUBLE DIGITS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DOUBLE DIGITS",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:10:35.716Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|15:30",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "15:30",
+      "horse": "GAELIC DES CHASTYS",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "MINERS BRIDGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MINERS BRIDGE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:20:19.743Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 308,
+    "recorded": 310,
     "pick": {
-      "settled": 299,
+      "settled": 301,
       "won": 68,
-      "pl": 12.41,
-      "roi": 4.1
+      "pl": 10.41,
+      "roi": 3.5
     },
     "favourite": {
-      "settled": 303,
+      "settled": 305,
       "won": 115,
-      "pl": 13.91,
-      "roi": 4.6
+      "pl": 11.91,
+      "roi": 3.9
     },
     "agree": {
       "settled": 74,
@@ -8487,10 +8541,10 @@
       "roi": 9.2
     },
     "disagree": {
-      "settled": 225,
+      "settled": 227,
       "won": 32,
-      "pl": 5.61,
-      "roi": 2.5
+      "pl": 3.61,
+      "roi": 1.6
     }
   },
   "lastBackfill": 1792329635123
