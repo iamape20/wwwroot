@@ -2392,12 +2392,18 @@ export async function loadDashboard() {
 
 		const hero = best;
 
+		// A race link (#course-HHMM, from a glance-row click or a shared link)
+		// wins over the Best Opportunity - opening the hero race first used to
+		// overwrite the hash and land on the wrong race (2026-10-18).
+		const deepLink = readDeepLink();
+
         renderNapCallout(nap);
 
         applyBestOpportunityBadge(hero);
 
         if (
             hero &&
+            !deepLink &&
             hero.meetingId != null &&
             hero.raceIndex != null
         ) {
@@ -2487,7 +2493,7 @@ export async function loadDashboard() {
         }
 
 
-        await loadMeetings(!hero);
+        await loadMeetings(!hero || !!deepLink);
 		
         loadTodaysResults();
 
