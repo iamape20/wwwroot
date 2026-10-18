@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:40:24.727Z",
+  "generatedAt": "2026-10-18T15:00:28.473Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 92/120 bets settled before the verdict.",
   "rules": [
@@ -12,17 +12,20 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
-    {
-      "course": "Leopardstown",
-      "off": "15:42",
-      "status": "BET",
-      "horse": "COME WHAT MAY",
-      "price": "8/11"
-    }
-  ],
+  "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "off": "15:42",
+      "horse": "COME WHAT MAY",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-18",
       "course": "Limerick",
@@ -176,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Haydock",
-      "off": "13:42",
-      "horse": "ARTHURIAN",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.37795075,
-      "pl": 0.359,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-18T14:40:24.654Z",
+    "updatedAt": "2026-10-18T15:00:28.384Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -213,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 92,
-      "won": 47,
-      "pl": -7.56,
-      "roi": -8.2,
-      "provisional": 0
+      "bets": 93,
+      "won": 48,
+      "pl": -6.9,
+      "roi": -7.4,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

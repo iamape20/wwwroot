@@ -8370,10 +8370,18 @@
       "fav": {
         "horse": "DUCE BIGALOW",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T14:20:26.320Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|14:42",
@@ -8389,10 +8397,16 @@
       "fav": {
         "horse": "COME WHAT MAY",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-10-18T14:30:26.566Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|14:50",
@@ -8412,33 +8426,71 @@
       },
       "recordedAt": "2026-10-18T14:40:26.396Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|15:00",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "15:00",
+      "horse": "FRENCH DYNAMITE",
+      "price": "10/1",
+      "runners": 11,
+      "liveHorse": "ANYWAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANYWAY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T14:50:22.688Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|15:12",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "15:12",
+      "horse": "DARK VIPER",
+      "price": "8/1",
+      "runners": 15,
+      "liveHorse": "REST YOUR MIND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "REST YOUR MIND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:00:30.051Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 306,
+    "recorded": 308,
     "pick": {
-      "settled": 297,
+      "settled": 299,
       "won": 68,
-      "pl": 14.41,
-      "roi": 4.9
+      "pl": 12.41,
+      "roi": 4.1
     },
     "favourite": {
-      "settled": 302,
+      "settled": 303,
       "won": 115,
-      "pl": 14.91,
-      "roi": 4.9
+      "pl": 13.91,
+      "roi": 4.6
     },
     "agree": {
-      "settled": 73,
+      "settled": 74,
       "won": 36,
-      "pl": 7.8,
-      "roi": 10.7
+      "pl": 6.8,
+      "roi": 9.2
     },
     "disagree": {
-      "settled": 224,
+      "settled": 225,
       "won": 32,
-      "pl": 6.61,
-      "roi": 3
+      "pl": 5.61,
+      "roi": 2.5
     }
   },
   "lastBackfill": 1792329635123
