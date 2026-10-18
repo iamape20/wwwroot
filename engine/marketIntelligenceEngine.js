@@ -149,6 +149,13 @@ function marketOdds(runner) {
         const text =
             String(value).trim();
 
+        // Evens (1/1) -> 2.0 decimal. Without this, "Evens" fell through to
+        // the decimal parse below as Number("") = 0 and was rejected, so an
+        // even-money favourite was invisible here (2026-10-18).
+        if (/^(evens|evs)$/i.test(text)) {
+            return 2;
+        }
+
         // ------------------------------------------------------------
         // Fractional odds
         //
