@@ -8316,10 +8316,18 @@
       "fav": {
         "horse": "PLAYIN COOL",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T14:00:32.481Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|14:20",
@@ -8335,10 +8343,18 @@
       "fav": {
         "horse": "DEXPERTS OPINION",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T14:10:28.370Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Limerick|14:30",
@@ -8358,21 +8374,59 @@
       },
       "recordedAt": "2026-10-18T14:20:26.320Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|14:42",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "14:42",
+      "horse": "COWARDOFTHECOUNTY",
+      "price": "11/1",
+      "runners": 9,
+      "liveHorse": "COME WHAT MAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COME WHAT MAY",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T14:30:26.566Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Sedgefield|14:50",
+      "date": "2026-10-18",
+      "course": "Sedgefield",
+      "time": "14:50",
+      "horse": "CADILLAC RANCH",
+      "price": "10/3",
+      "runners": 8,
+      "liveHorse": "ZAMOND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZAMOND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T14:40:26.396Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 304,
+    "recorded": 306,
     "pick": {
-      "settled": 295,
+      "settled": 297,
       "won": 68,
-      "pl": 16.41,
-      "roi": 5.6
+      "pl": 14.41,
+      "roi": 4.9
     },
     "favourite": {
-      "settled": 300,
+      "settled": 302,
       "won": 115,
-      "pl": 16.91,
-      "roi": 5.6
+      "pl": 14.91,
+      "roi": 4.9
     },
     "agree": {
       "settled": 73,
@@ -8381,10 +8435,10 @@
       "roi": 10.7
     },
     "disagree": {
-      "settled": 222,
+      "settled": 224,
       "won": 32,
-      "pl": 8.61,
-      "roi": 3.9
+      "pl": 6.61,
+      "roi": 3
     }
   },
   "lastBackfill": 1792329635123
