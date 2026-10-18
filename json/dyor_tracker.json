@@ -8210,10 +8210,18 @@
       "fav": {
         "horse": "GLOBAL SUBMISSION",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T13:20:35.047Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|13:42",
@@ -8229,10 +8237,18 @@
       "fav": {
         "horse": "FAIYUM",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T13:30:36.401Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|13:50",
@@ -8252,21 +8268,59 @@
       },
       "recordedAt": "2026-10-18T13:40:38.338Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Limerick|14:00",
+      "date": "2026-10-18",
+      "course": "Limerick",
+      "time": "14:00",
+      "horse": "CROWSATEDAPPLETART",
+      "price": "15/2",
+      "runners": 14,
+      "liveHorse": "HUMBLE BRAG",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HUMBLE BRAG",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T13:50:31.371Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|14:12",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "14:12",
+      "horse": "JOHNNY SODA",
+      "price": "12/1",
+      "runners": 16,
+      "liveHorse": "PLAYIN COOL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PLAYIN COOL",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T14:00:32.481Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 300,
+    "recorded": 302,
     "pick": {
-      "settled": 292,
+      "settled": 294,
       "won": 68,
-      "pl": 19.41,
-      "roi": 6.6
+      "pl": 17.41,
+      "roi": 5.9
     },
     "favourite": {
-      "settled": 296,
+      "settled": 298,
       "won": 115,
-      "pl": 20.91,
-      "roi": 7.1
+      "pl": 18.91,
+      "roi": 6.3
     },
     "agree": {
       "settled": 73,
@@ -8275,10 +8329,10 @@
       "roi": 10.7
     },
     "disagree": {
-      "settled": 219,
+      "settled": 221,
       "won": 32,
-      "pl": 11.61,
-      "roi": 5.3
+      "pl": 9.61,
+      "roi": 4.3
     }
   },
   "lastBackfill": 1792329635123

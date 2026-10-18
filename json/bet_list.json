@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T13:40:37.218Z",
+  "generatedAt": "2026-10-18T14:00:31.395Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 91/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 92/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,14 +20,19 @@
       "revealAt": "15:27"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-18",
       "course": "Limerick",
       "off": "14:30",
-      "horse": "GLOBAL SUBMISSION"
-    }
-  ],
-  "recent": [
+      "horse": "GLOBAL SUBMISSION",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-18",
       "course": "Leopardstown",
@@ -181,21 +186,10 @@
       "bsp": 1.37795075,
       "pl": 0.359,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Redcar",
-      "off": "13:20",
-      "horse": "EXTRAGALACTIC",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.33110097,
-      "pl": 0.315,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-18T13:40:37.123Z",
+    "updatedAt": "2026-10-18T14:00:31.325Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,10 +212,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 91,
+      "bets": 92,
       "won": 47,
-      "pl": -6.56,
-      "roi": -7.2,
+      "pl": -7.56,
+      "roi": -8.2,
       "provisional": 0
     },
     "live": {
