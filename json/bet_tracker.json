@@ -1414,8 +1414,9 @@
       "revealedAt": "2026-10-17T12:22:26.357Z",
       "result": "won",
       "isp": "1/3",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.38442173,
+      "pl": 0.365,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-17|Ascot|13:05",
@@ -1430,8 +1431,9 @@
       "revealedAt": "2026-10-17T12:51:32.808Z",
       "result": "won",
       "isp": "11/10",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.4,
+      "pl": 1.33,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-17|Ascot|13:40",
@@ -1514,12 +1516,13 @@
       "revealedAt": "2026-10-17T17:20:20.239Z",
       "result": "won",
       "isp": "10/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.97,
+      "pl": 0.921,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792303236238
+  "lastBackfill": 1792314046741
 }
