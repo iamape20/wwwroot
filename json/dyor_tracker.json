@@ -8582,10 +8582,18 @@
       "fav": {
         "horse": "GOING ON",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T15:40:18.335Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Limerick|16:00",
@@ -8601,10 +8609,18 @@
       "fav": {
         "horse": "ECHOING SILENCE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T15:50:15.963Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/9",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Leopardstown|16:12",
@@ -8629,22 +8645,22 @@
   "stats": {
     "recorded": 314,
     "pick": {
-      "settled": 305,
+      "settled": 307,
       "won": 68,
-      "pl": 6.41,
-      "roi": 2.1
+      "pl": 4.41,
+      "roi": 1.4
     },
     "favourite": {
-      "settled": 308,
+      "settled": 310,
       "won": 115,
-      "pl": 8.91,
-      "roi": 2.9
+      "pl": 6.91,
+      "roi": 2.2
     },
     "agree": {
-      "settled": 74,
+      "settled": 76,
       "won": 36,
-      "pl": 6.8,
-      "roi": 9.2
+      "pl": 4.8,
+      "roi": 6.3
     },
     "disagree": {
       "settled": 231,
