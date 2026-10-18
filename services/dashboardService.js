@@ -214,6 +214,25 @@ function isWithdrawnPick(ratings, entry) {
         String(r.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase());
 }
 
+// The Daily Double is locked at 09:00 (provisional before that), but prices
+// keep moving, so a leg's race can drop to Open (VOID BET on the race page)
+// and the NAP can be withdrawn. Found 2026-10-18: the overnight Daily Single
+// showed EDELAK as "NAP · Moderate" while the NAP box said NO QUALIFIED NAP
+// and the race page said VOID BET. Report the race's tier now, and whether
+// the leg is still the live NAP, so the page can say so.
+function legNow(ratings, nap, entry) {
+    const meeting = Object.values(ratings || {}).find(m =>
+        String(m?.name || "").toUpperCase() === String(entry?.course || "").toUpperCase());
+    const race = meeting?.races?.find(r => r.time === entry?.time);
+    const nowTier = race?.runners?.length
+        ? (classifyRace(race.runners, race.display_title)?.tier || "Open")
+        : null;
+    const napNow = !!(nap?.active &&
+        String(nap.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase() &&
+        String(nap.meeting || "").toUpperCase() === String(entry?.course || "").toUpperCase());
+    return { nowTier, napNow };
+}
+
 function makeCandidate(
     meetingId,
     meeting,
@@ -840,7 +859,8 @@ for (
 
 			(dailyDoubleData?.dailyDouble || []).map(e => ({
 				...e,
-				nonRunner: isWithdrawnPick(ratings, e)
+				nonRunner: isWithdrawnPick(ratings, e),
+				...legNow(ratings, nap, e)
 			})),
 
 			dailyDoublePickMode:

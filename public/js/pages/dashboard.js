@@ -96,8 +96,9 @@ function renderDailyDouble(dashboard) {
             <div class="daily-double-body">
                 <div class="daily-double-horse">
                     ${escapeHtml(p.horse)}
-                    <span class="daily-double-tier">${p.nap ? "NAP &middot; " : ""}${escapeHtml(p.tier)}</span>
+                    <span class="daily-double-tier">${p.nap && p.napNow !== false ? "NAP &middot; " : ""}${escapeHtml(p.tier)}</span>
                     ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
+                    ${!p.nonRunner && p.nowTier === "Open" ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Prices have moved since this list was set - the race page now shows no clear top pick">Now VOID BET - no bet suggested</span>` : ""}
                 </div>
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span></div>
