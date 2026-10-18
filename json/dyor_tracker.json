@@ -8476,10 +8476,18 @@
       "fav": {
         "horse": "REST YOUR MIND",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T15:00:30.051Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Sedgefield|15:20",
@@ -8495,10 +8503,18 @@
       "fav": {
         "horse": "DOUBLE DIGITS",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-18T15:10:35.716Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-18|Limerick|15:30",
@@ -8518,21 +8534,59 @@
       },
       "recordedAt": "2026-10-18T15:20:19.743Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-18|Leopardstown|15:42",
+      "date": "2026-10-18",
+      "course": "Leopardstown",
+      "time": "15:42",
+      "horse": "HANDANI",
+      "price": "11/2",
+      "runners": 15,
+      "liveHorse": "SKY CAPTAIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SKY CAPTAIN",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:30:17.691Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-18|Sedgefield|15:50",
+      "date": "2026-10-18",
+      "course": "Sedgefield",
+      "time": "15:50",
+      "horse": "GOING ON",
+      "price": "5/4",
+      "runners": 5,
+      "liveHorse": "GOING ON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GOING ON",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-18T15:40:18.335Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 310,
+    "recorded": 312,
     "pick": {
-      "settled": 301,
+      "settled": 303,
       "won": 68,
-      "pl": 10.41,
-      "roi": 3.5
+      "pl": 8.41,
+      "roi": 2.8
     },
     "favourite": {
-      "settled": 305,
+      "settled": 307,
       "won": 115,
-      "pl": 11.91,
-      "roi": 3.9
+      "pl": 9.91,
+      "roi": 3.2
     },
     "agree": {
       "settled": 74,
@@ -8541,10 +8595,10 @@
       "roi": 9.2
     },
     "disagree": {
-      "settled": 227,
+      "settled": 229,
       "won": 32,
-      "pl": 3.61,
-      "roi": 1.6
+      "pl": 1.61,
+      "roi": 0.7
     }
   },
   "lastBackfill": 1792329635123
