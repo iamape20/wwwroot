@@ -88,11 +88,13 @@ async function fetchRaceData(meetingId, date, courseName, raceIndex) {
     if (!race) return null;
 
     const odds = {};
+    const declared = [];
 
     for (const runner of race.runners || []) {
         const s = runner.selection || runner;
         const name = s.horse?.name;
         const currentOdds = s.betting?.current_odds;
+        if (name) declared.push(name.toUpperCase());
         if (name && currentOdds) odds[name.toUpperCase()] = currentOdds;
     }
 
@@ -102,7 +104,10 @@ async function fetchRaceData(meetingId, date, courseName, raceIndex) {
     const live = await fetchLiveOdds(date, courseName, race.race_summary);
     let liveCount = 0;
     if (live) {
-        for (const name of Object.keys(odds)) {
+        // Every declared runner, not just those with a forecast price - found
+        // 2026-10-18: 8 Irish runners with no forecast were never priced all
+        // day although bookmakers quoted them (AT THE WINGS 8/1).
+        for (const name of declared) {
             // Declared runners only - the racecard's rides can still list
             // a withdrawn horse.
             if (live[name]) { odds[name] = live[name]; liveCount++; }
