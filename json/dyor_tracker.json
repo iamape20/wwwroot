@@ -9187,10 +9187,18 @@
       "fav": {
         "horse": "STORMY WINTER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T15:01:05.773Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Gowran Park|15:10",
@@ -9206,10 +9214,18 @@
       "fav": {
         "horse": "TARIFF",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T15:01:05.800Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Pontefract|15:25",
@@ -9225,10 +9241,16 @@
       "fav": {
         "horse": "BNAIDER",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-10-19T15:10:50.599Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Bath|15:20",
@@ -9244,10 +9266,16 @@
       "fav": {
         "horse": "ELECTRIFARHH",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-10-19T15:10:50.613Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Plumpton|15:30",
@@ -9267,21 +9295,97 @@
       },
       "recordedAt": "2026-10-19T15:20:51.446Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Wolverhampton|15:45",
+      "date": "2026-10-19",
+      "course": "Wolverhampton",
+      "time": "15:45",
+      "horse": "PRINTING MONEY",
+      "price": "11/10",
+      "runners": 12,
+      "liveHorse": "PRINTING MONEY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PRINTING MONEY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:30:57.453Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Gowran Park|15:40",
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "time": "15:40",
+      "horse": "FLEUR DE PROVENCE",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "SHANALA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHANALA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:30:57.466Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|15:55",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "15:55",
+      "horse": "CALL TO ACTION",
+      "price": "7/2",
+      "runners": 9,
+      "liveHorse": "ANOTHER BAAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANOTHER BAAR",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:40:45.431Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|15:50",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "15:50",
+      "horse": "SPIRIT LEAD ME",
+      "price": "5/2",
+      "runners": 14,
+      "liveHorse": "SPIRIT LEAD ME",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SPIRIT LEAD ME",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:40:45.445Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 339,
+    "recorded": 343,
     "pick": {
-      "settled": 323,
+      "settled": 327,
       "won": 71,
-      "pl": 1.65,
-      "roi": 0.5
+      "pl": -2.35,
+      "roi": -0.7
     },
     "favourite": {
-      "settled": 325,
+      "settled": 327,
       "won": 118,
-      "pl": 2.53,
-      "roi": 0.8
+      "pl": 0.53,
+      "roi": 0.2
     },
     "agree": {
       "settled": 78,
@@ -9290,10 +9394,10 @@
       "roi": 3.6
     },
     "disagree": {
-      "settled": 245,
+      "settled": 249,
       "won": 35,
-      "pl": -1.15,
-      "roi": -0.5
+      "pl": -5.15,
+      "roi": -2.1
     }
   },
   "lastBackfill": 1792415490153
