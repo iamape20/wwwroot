@@ -8779,10 +8779,18 @@
       "fav": {
         "horse": "SUNRISE ANGEL",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:01:56.240Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Pontefract|13:23",
@@ -8798,10 +8806,18 @@
       "fav": {
         "horse": "APHRA BEHN",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:11:30.129Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Bath|13:17",
@@ -8817,10 +8833,18 @@
       "fav": {
         "horse": "CHIEF MINISTER",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:11:30.151Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Plumpton|13:30",
@@ -8840,33 +8864,90 @@
       },
       "recordedAt": "2026-10-19T13:21:36.109Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Gowran Park|13:40",
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "time": "13:40",
+      "horse": "WO WO NEVER",
+      "price": "9/4",
+      "runners": 14,
+      "liveHorse": "WO WO NEVER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WO WO NEVER",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:31:22.931Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|13:53",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "13:53",
+      "horse": "KING HIGH",
+      "price": "7/2",
+      "runners": 8,
+      "liveHorse": "SILVERELLA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SILVERELLA",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:41:28.580Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|13:47",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "13:47",
+      "horse": "SAFARI DREAM",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "SILVER WRAITH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SILVER WRAITH",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:41:28.606Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 322,
+    "recorded": 325,
     "pick": {
-      "settled": 313,
+      "settled": 316,
       "won": 71,
-      "pl": 11.65,
-      "roi": 3.7
+      "pl": 8.65,
+      "roi": 2.7
     },
     "favourite": {
-      "settled": 315,
+      "settled": 318,
       "won": 118,
-      "pl": 12.53,
-      "roi": 4
+      "pl": 9.53,
+      "roi": 3
     },
     "agree": {
-      "settled": 76,
+      "settled": 77,
       "won": 36,
-      "pl": 4.8,
-      "roi": 6.3
+      "pl": 3.8,
+      "roi": 4.9
     },
     "disagree": {
-      "settled": 237,
+      "settled": 239,
       "won": 35,
-      "pl": 6.85,
-      "roi": 2.9
+      "pl": 4.85,
+      "roi": 2
     }
   },
   "lastBackfill": 1792415490153
