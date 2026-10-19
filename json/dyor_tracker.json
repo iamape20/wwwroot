@@ -8702,10 +8702,18 @@
       "fav": {
         "horse": "GREEN STAR",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T12:41:26.845Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Bath|12:47",
@@ -8721,10 +8729,18 @@
       "fav": {
         "horse": "LILYKOY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T12:41:26.866Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Plumpton|13:00",
@@ -8740,10 +8756,14 @@
       "fav": {
         "horse": "BASS HUNTER",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/4"
       },
       "recordedAt": "2026-10-19T12:51:28.698Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/4"
     },
     {
       "id": "2026-10-19|Gowran Park|13:10",
@@ -8763,21 +8783,78 @@
       },
       "recordedAt": "2026-10-19T13:01:56.240Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|13:23",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "13:23",
+      "horse": "APHRA BEHN",
+      "price": "9/4",
+      "runners": 11,
+      "liveHorse": "APHRA BEHN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "APHRA BEHN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:11:30.129Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|13:17",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "13:17",
+      "horse": "DREAMS GALORE",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "CHIEF MINISTER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHIEF MINISTER",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:11:30.151Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Plumpton|13:30",
+      "date": "2026-10-19",
+      "course": "Plumpton",
+      "time": "13:30",
+      "horse": "ELIZA DOLITTLE",
+      "price": "15/2",
+      "runners": 7,
+      "liveHorse": "GONE COUNTRY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GONE COUNTRY",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:21:36.109Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 319,
+    "recorded": 322,
     "pick": {
-      "settled": 311,
+      "settled": 313,
       "won": 71,
-      "pl": 13.65,
-      "roi": 4.4
+      "pl": 11.65,
+      "roi": 3.7
     },
     "favourite": {
-      "settled": 313,
+      "settled": 315,
       "won": 118,
-      "pl": 14.53,
-      "roi": 4.6
+      "pl": 12.53,
+      "roi": 4
     },
     "agree": {
       "settled": 76,
@@ -8786,11 +8863,11 @@
       "roi": 6.3
     },
     "disagree": {
-      "settled": 235,
+      "settled": 237,
       "won": 35,
-      "pl": 8.85,
-      "roi": 3.8
+      "pl": 6.85,
+      "roi": 2.9
     }
   },
-  "lastBackfill": 1792400528023
+  "lastBackfill": 1792415490153
 }

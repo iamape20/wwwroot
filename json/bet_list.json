@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T13:01:51.250Z",
+  "generatedAt": "2026-10-19T13:21:32.290Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 93/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 94/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -38,14 +38,19 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-19",
       "course": "Pontefract",
       "off": "13:53",
-      "horse": "GREEN STAR"
-    }
-  ],
-  "recent": [
+      "horse": "GREEN STAR",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-18",
       "course": "Leopardstown",
@@ -199,21 +204,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Redcar",
-      "off": "13:52",
-      "horse": "MY GIRL DEE MO",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-19T13:01:51.050Z",
+    "updatedAt": "2026-10-19T13:21:32.163Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,10 +230,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 93,
+      "bets": 94,
       "won": 48,
-      "pl": -6.88,
-      "roi": -7.4,
+      "pl": -7.88,
+      "roi": -8.4,
       "provisional": 0
     },
     "live": {
