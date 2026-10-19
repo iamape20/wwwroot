@@ -8860,10 +8860,16 @@
       "fav": {
         "horse": "GONE COUNTRY",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-19T13:21:36.109Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Gowran Park|13:40",
@@ -8879,10 +8885,18 @@
       "fav": {
         "horse": "WO WO NEVER",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:31:22.931Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Pontefract|13:53",
@@ -8917,37 +8931,83 @@
       "fav": {
         "horse": "SILVER WRAITH",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:41:28.606Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-19|Plumpton|14:00",
+      "date": "2026-10-19",
+      "course": "Plumpton",
+      "time": "14:00",
+      "horse": "EXPERT ANALYSIS",
+      "price": "3/1",
+      "runners": 4,
+      "liveHorse": "GOLLY GOSH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GOLLY GOSH",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:51:11.695Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Gowran Park|14:10",
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "time": "14:10",
+      "horse": "CHURCHILL BOND",
+      "price": "1/2",
+      "runners": 15,
+      "liveHorse": "CHURCHILL BOND",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CHURCHILL BOND",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:01:06.194Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 325,
+    "recorded": 327,
     "pick": {
-      "settled": 316,
+      "settled": 319,
       "won": 71,
-      "pl": 8.65,
-      "roi": 2.7
+      "pl": 5.65,
+      "roi": 1.8
     },
     "favourite": {
-      "settled": 318,
+      "settled": 320,
       "won": 118,
-      "pl": 9.53,
-      "roi": 3
+      "pl": 7.53,
+      "roi": 2.4
     },
     "agree": {
-      "settled": 77,
+      "settled": 78,
       "won": 36,
-      "pl": 3.8,
-      "roi": 4.9
+      "pl": 2.8,
+      "roi": 3.6
     },
     "disagree": {
-      "settled": 239,
+      "settled": 241,
       "won": 35,
-      "pl": 4.85,
-      "roi": 2
+      "pl": 2.85,
+      "roi": 1.2
     }
   },
   "lastBackfill": 1792415490153
