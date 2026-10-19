@@ -9672,31 +9672,77 @@
       "fav": {
         "horse": "A LOTT OF KANE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T17:30:38.119Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-19|Southwell|18:00",
+      "date": "2026-10-19",
+      "course": "Southwell",
+      "time": "18:00",
+      "horse": "PALADIN",
+      "price": "20/1",
+      "runners": 11,
+      "liveHorse": "BEARISH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BEARISH",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T17:50:29.429Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Wolverhampton|18:15",
+      "date": "2026-10-19",
+      "course": "Wolverhampton",
+      "time": "18:15",
+      "horse": "LITTLE MISS INDIA",
+      "price": "18/1",
+      "runners": 10,
+      "liveHorse": "ALBERTINI STAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALBERTINI STAR",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T18:00:23.634Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 354,
+    "recorded": 356,
     "pick": {
-      "settled": 336,
+      "settled": 337,
       "won": 71,
-      "pl": -11.35,
-      "roi": -3.4
+      "pl": -12.35,
+      "roi": -3.7
     },
     "favourite": {
-      "settled": 336,
+      "settled": 337,
       "won": 118,
-      "pl": -8.47,
-      "roi": -2.5
+      "pl": -9.47,
+      "roi": -2.8
     },
     "agree": {
-      "settled": 79,
+      "settled": 80,
       "won": 36,
-      "pl": 1.8,
-      "roi": 2.3
+      "pl": 0.8,
+      "roi": 1
     },
     "disagree": {
       "settled": 257,
