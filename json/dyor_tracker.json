@@ -9108,10 +9108,18 @@
       "fav": {
         "horse": "MAXIDENT",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T14:41:03.294Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Bath|14:47",
@@ -9154,10 +9162,16 @@
       "fav": {
         "horse": "PALAMON",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T14:50:55.826Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-19|Wolverhampton|15:15",
@@ -9196,21 +9210,78 @@
       },
       "recordedAt": "2026-10-19T15:01:05.800Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|15:25",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "15:25",
+      "horse": "PER CONTRA",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "BNAIDER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BNAIDER",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:10:50.599Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|15:20",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "15:20",
+      "horse": "SIGNCASTLE CITY",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "ELECTRIFARHH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ELECTRIFARHH",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:10:50.613Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Plumpton|15:30",
+      "date": "2026-10-19",
+      "course": "Plumpton",
+      "time": "15:30",
+      "horse": "EZ TIGER",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "LATIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LATIN",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T15:20:51.446Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 336,
+    "recorded": 339,
     "pick": {
-      "settled": 322,
+      "settled": 323,
       "won": 71,
-      "pl": 2.65,
-      "roi": 0.8
+      "pl": 1.65,
+      "roi": 0.5
     },
     "favourite": {
-      "settled": 323,
+      "settled": 325,
       "won": 118,
-      "pl": 4.53,
-      "roi": 1.4
+      "pl": 2.53,
+      "roi": 0.8
     },
     "agree": {
       "settled": 78,
@@ -9219,10 +9290,10 @@
       "roi": 3.6
     },
     "disagree": {
-      "settled": 244,
+      "settled": 245,
       "won": 35,
-      "pl": -0.15,
-      "roi": -0.1
+      "pl": -1.15,
+      "roi": -0.5
     }
   },
   "lastBackfill": 1792415490153
