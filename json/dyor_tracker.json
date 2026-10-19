@@ -9780,19 +9780,63 @@
       "fav": {
         "horse": "LETHIMFLY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/1"
       },
       "recordedAt": "2026-10-19T18:30:24.132Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-19|Southwell|19:00",
+      "date": "2026-10-19",
+      "course": "Southwell",
+      "time": "19:00",
+      "horse": "JOULANY",
+      "price": "10/3",
+      "runners": 5,
+      "liveHorse": "I'M THE ONE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I'M THE ONE",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T18:50:19.105Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Wolverhampton|19:15",
+      "date": "2026-10-19",
+      "course": "Wolverhampton",
+      "time": "19:15",
+      "horse": "SUNLIT SEA",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "GOT THE BOOTY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GOT THE BOOTY",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T19:00:21.901Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 358,
+    "recorded": 360,
     "pick": {
-      "settled": 340,
+      "settled": 341,
       "won": 71,
-      "pl": -15.35,
-      "roi": -4.5
+      "pl": -16.35,
+      "roi": -4.8
     },
     "favourite": {
       "settled": 340,
@@ -9807,10 +9851,10 @@
       "roi": 1
     },
     "disagree": {
-      "settled": 260,
+      "settled": 261,
       "won": 35,
-      "pl": -16.15,
-      "roi": -6.2
+      "pl": -17.15,
+      "roi": -6.6
     }
   },
   "lastBackfill": 1792426837684
