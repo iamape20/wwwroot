@@ -1,7 +1,33 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "strong": [],
-  "moderate": [],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "moderate": [
+    {
+      "horse": "AL QAYED",
+      "course": "Bath",
+      "time": "14:17",
+      "rating": "70.3",
+      "margin": "14.1",
+      "marginValue": 14.099999999999994,
+      "confidence": 60,
+      "meetingId": "122063",
+      "raceIndex": 3
+    }
+  ],
+  "dailyDouble": [
+    {
+      "horse": "AL QAYED",
+      "course": "Bath",
+      "time": "14:17",
+      "rating": "70.3",
+      "margin": "14.1",
+      "marginValue": 14.1,
+      "confidence": 60,
+      "meetingId": "122063",
+      "raceIndex": 3,
+      "tier": "Moderate",
+      "nap": true
+    }
+  ],
+  "pickMode": "single"
 }
