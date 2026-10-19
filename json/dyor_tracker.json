@@ -8679,10 +8679,14 @@
       "fav": {
         "horse": "LITTLEPACER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-19T12:31:33.331Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-10-19|Pontefract|12:53",
@@ -8721,10 +8725,48 @@
       },
       "recordedAt": "2026-10-19T12:41:26.866Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Plumpton|13:00",
+      "date": "2026-10-19",
+      "course": "Plumpton",
+      "time": "13:00",
+      "horse": "BASS HUNTER",
+      "price": "2/9",
+      "runners": 5,
+      "liveHorse": "BASS HUNTER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BASS HUNTER",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T12:51:28.698Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Gowran Park|13:10",
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "time": "13:10",
+      "horse": "CISTERNA",
+      "price": "7/1",
+      "runners": 13,
+      "liveHorse": "SUNRISE ANGEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SUNRISE ANGEL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T13:01:56.240Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 317,
+    "recorded": 319,
     "pick": {
       "settled": 311,
       "won": 71,
