@@ -8115,7 +8115,10 @@
       "recordedAt": "2026-10-18T12:40:39.776Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/11"
+      "isp": "10/11",
+      "bsp": 2.04185437,
+      "pl": 0.99,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-18|Limerick|13:00",
@@ -8140,7 +8143,10 @@
       "recordedAt": "2026-10-18T12:50:43.606Z",
       "stake": 1,
       "result": "won",
-      "isp": "13/8"
+      "isp": "13/8",
+      "bsp": 2.73532304,
+      "pl": 1.649,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-18|Leopardstown|13:12",
@@ -8273,7 +8279,10 @@
       "recordedAt": "2026-10-18T13:40:38.338Z",
       "stake": 1,
       "result": "won",
-      "isp": "13/2"
+      "isp": "13/2",
+      "bsp": 9,
+      "pl": 7.6,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-18|Limerick|14:00",
@@ -8399,7 +8408,10 @@
         "price": "8/11",
         "stake": 1,
         "result": "won",
-        "isp": "4/6"
+        "isp": "4/6",
+        "bsp": 1.72,
+        "pl": 0.684,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-10-18T14:30:26.566Z",
       "stake": 1,
@@ -8532,7 +8544,10 @@
         "price": "11/4",
         "stake": 1,
         "result": "won",
-        "isp": "11/4"
+        "isp": "11/4",
+        "bsp": 4,
+        "pl": 2.85,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-10-18T15:20:19.743Z",
       "stake": 1,
@@ -8638,7 +8653,10 @@
         "price": "7/2",
         "stake": 1,
         "result": "won",
-        "isp": "7/2"
+        "isp": "7/2",
+        "bsp": 5.3,
+        "pl": 4.085,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-10-18T16:00:12.423Z",
       "stake": 1,
@@ -8651,16 +8669,16 @@
   "stats": {
     "recorded": 314,
     "pick": {
-      "settled": 308,
-      "won": 68,
-      "pl": 3.41,
-      "roi": 1.1
+      "settled": 311,
+      "won": 71,
+      "pl": 13.65,
+      "roi": 4.4
     },
     "favourite": {
-      "settled": 310,
-      "won": 115,
-      "pl": 6.91,
-      "roi": 2.2
+      "settled": 313,
+      "won": 118,
+      "pl": 14.53,
+      "roi": 4.6
     },
     "agree": {
       "settled": 76,
@@ -8669,11 +8687,11 @@
       "roi": 6.3
     },
     "disagree": {
-      "settled": 232,
-      "won": 32,
-      "pl": -1.39,
-      "roi": -0.6
+      "settled": 235,
+      "won": 35,
+      "pl": 8.85,
+      "roi": 3.8
     }
   },
-  "lastBackfill": 1792389690907
+  "lastBackfill": 1792400528023
 }
