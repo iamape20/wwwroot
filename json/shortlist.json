@@ -3,12 +3,23 @@
   "strong": [],
   "moderate": [
     {
+      "horse": "CHURCHILL BOND",
+      "course": "Gowran Park",
+      "time": "14:10",
+      "rating": "62.6",
+      "margin": "14.1",
+      "marginValue": 14.100000000000001,
+      "confidence": 70,
+      "meetingId": "122081",
+      "raceIndex": 3
+    },
+    {
       "horse": "AL QAYED",
       "course": "Bath",
       "time": "14:17",
       "rating": "70.3",
-      "margin": "14.1",
-      "marginValue": 14.099999999999994,
+      "margin": "11.7",
+      "marginValue": 11.699999999999996,
       "confidence": 60,
       "meetingId": "122063",
       "raceIndex": 3
@@ -16,18 +27,30 @@
   ],
   "dailyDouble": [
     {
+      "horse": "CHURCHILL BOND",
+      "course": "Gowran Park",
+      "time": "14:10",
+      "rating": "62.6",
+      "margin": "14.1",
+      "marginValue": 14.1,
+      "confidence": 70,
+      "meetingId": "122081",
+      "raceIndex": 3,
+      "tier": "Moderate",
+      "nap": true
+    },
+    {
       "horse": "AL QAYED",
       "course": "Bath",
       "time": "14:17",
       "rating": "70.3",
-      "margin": "14.1",
-      "marginValue": 14.1,
+      "margin": "11.7",
+      "marginValue": 11.699999999999996,
       "confidence": 60,
       "meetingId": "122063",
       "raceIndex": 3,
-      "tier": "Moderate",
-      "nap": true
+      "tier": "Moderate"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
