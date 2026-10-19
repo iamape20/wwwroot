@@ -8989,10 +8989,14 @@
       "fav": {
         "horse": "CHURCHILL BOND",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-10-19T14:01:06.194Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/7"
     },
     {
       "id": "2026-10-19|Pontefract|14:23",
@@ -9027,10 +9031,14 @@
       "fav": {
         "horse": "AL QAYED",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-10-19T14:11:01.972Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/13"
     },
     {
       "id": "2026-10-19|Plumpton|14:30",
@@ -9050,10 +9058,29 @@
       },
       "recordedAt": "2026-10-19T14:21:03.589Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Gowran Park|14:40",
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "time": "14:40",
+      "horse": "REAL PETITE",
+      "price": "5/1",
+      "runners": 16,
+      "liveHorse": "STRIKEPOINT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STRIKEPOINT",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:31:00.790Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 330,
+    "recorded": 331,
     "pick": {
       "settled": 320,
       "won": 71,

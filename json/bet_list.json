@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T14:21:02.051Z",
+  "generatedAt": "2026-10-19T14:30:59.203Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 94/120 bets settled before the verdict.",
   "rules": [
@@ -26,19 +26,30 @@
       "revealAt": "19:45"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
-      "course": "Gowran Park",
-      "off": "15:10",
-      "horse": "CHURCHILL BOND"
-    },
-    {
+      "date": "2026-10-19",
       "course": "Bath",
       "off": "15:17",
-      "horse": "AL QAYED"
-    }
-  ],
-  "recent": [
+      "horse": "AL QAYED",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-19",
+      "course": "Gowran Park",
+      "off": "15:10",
+      "horse": "CHURCHILL BOND",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-19",
       "course": "Pontefract",
@@ -181,32 +192,10 @@
       "bsp": 3.03080271,
       "pl": 1.929,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Dundalk",
-      "off": "17:00",
-      "horse": "TYSON FURY",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 4,
-      "pl": 2.85,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Uttoxeter",
-      "off": "16:53",
-      "horse": "MADAM SPEAKER",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-19T14:21:01.960Z",
+    "updatedAt": "2026-10-19T14:30:59.122Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -229,11 +218,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 94,
-      "won": 48,
-      "pl": -7.88,
-      "roi": -8.4,
-      "provisional": 0
+      "bets": 96,
+      "won": 50,
+      "pl": -6.69,
+      "roi": -7,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
