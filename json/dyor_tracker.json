@@ -9368,10 +9368,16 @@
       "fav": {
         "horse": "ANOTHER BAAR",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T15:40:45.431Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
     },
     {
       "id": "2026-10-19|Bath|15:50",
@@ -9410,10 +9416,16 @@
       "fav": {
         "horse": "DISTILLATE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-19T15:50:42.533Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Plumpton|16:05",
@@ -9429,10 +9441,14 @@
       "fav": {
         "horse": "MILD MAGIC",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-10-19T15:50:42.546Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/5"
     },
     {
       "id": "2026-10-19|Wolverhampton|16:15",
@@ -9471,21 +9487,59 @@
       },
       "recordedAt": "2026-10-19T16:00:42.143Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|16:22",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "16:22",
+      "horse": "BLUE HERO",
+      "price": "17/2",
+      "runners": 14,
+      "liveHorse": "FREEDOM BAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FREEDOM BAY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T16:10:36.372Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Southwell|16:30",
+      "date": "2026-10-19",
+      "course": "Southwell",
+      "time": "16:30",
+      "horse": "FIVE YEARS",
+      "price": "10/1",
+      "runners": 14,
+      "liveHorse": "LANCASTER TOWER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LANCASTER TOWER",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T16:20:37.672Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 347,
+    "recorded": 349,
     "pick": {
-      "settled": 329,
+      "settled": 330,
       "won": 71,
-      "pl": -4.35,
-      "roi": -1.3
+      "pl": -5.35,
+      "roi": -1.6
     },
     "favourite": {
-      "settled": 329,
+      "settled": 330,
       "won": 118,
-      "pl": -1.47,
-      "roi": -0.4
+      "pl": -2.47,
+      "roi": -0.7
     },
     "agree": {
       "settled": 79,
@@ -9494,11 +9548,11 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 250,
+      "settled": 251,
       "won": 35,
-      "pl": -6.15,
-      "roi": -2.5
+      "pl": -7.15,
+      "roi": -2.8
     }
   },
-  "lastBackfill": 1792415490153
+  "lastBackfill": 1792426837684
 }
