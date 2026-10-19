@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T16:20:35.567Z",
+  "generatedAt": "2026-10-19T16:40:31.740Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 94/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 95/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -15,13 +15,6 @@
   "today": [
     {
       "course": "Southwell",
-      "off": "17:30",
-      "status": "BET",
-      "horse": "LANCASTER TOWER",
-      "price": "4/9"
-    },
-    {
-      "course": "Southwell",
       "off": "20:00",
       "status": "POSSIBLE",
       "revealAt": "19:45"
@@ -29,6 +22,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-19",
+      "course": "Southwell",
+      "off": "17:30",
+      "horse": "LANCASTER TOWER",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-19",
       "course": "Bath",
@@ -182,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-16",
-      "course": "Newcastle",
-      "off": "17:15",
-      "horse": "QILA",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 3.03080271,
-      "pl": 1.929,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-19T16:20:35.443Z",
+    "updatedAt": "2026-10-19T16:40:31.658Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,10 +212,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 96,
+      "bets": 97,
       "won": 50,
-      "pl": -6.69,
-      "roi": -7,
+      "pl": -7.69,
+      "roi": -7.9,
       "provisional": 2
     },
     "live": {

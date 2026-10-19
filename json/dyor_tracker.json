@@ -9464,10 +9464,18 @@
       "fav": {
         "horse": "POWDER MONKEY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T16:00:42.130Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Gowran Park|16:10",
@@ -9483,10 +9491,14 @@
       "fav": {
         "horse": "LORD AUS",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-19T16:00:42.143Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-10-19|Bath|16:22",
@@ -9502,10 +9514,18 @@
       "fav": {
         "horse": "FREEDOM BAY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T16:10:36.372Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Southwell|16:30",
@@ -9521,25 +9541,52 @@
       "fav": {
         "horse": "LANCASTER TOWER",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T16:20:37.672Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-19|Wolverhampton|16:45",
+      "date": "2026-10-19",
+      "course": "Wolverhampton",
+      "time": "16:45",
+      "horse": "AL ZANATI",
+      "price": "2/1",
+      "runners": 6,
+      "liveHorse": "MEYDAAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MEYDAAN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T16:30:36.211Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 349,
+    "recorded": 350,
     "pick": {
-      "settled": 330,
+      "settled": 333,
       "won": 71,
-      "pl": -5.35,
-      "roi": -1.6
+      "pl": -8.35,
+      "roi": -2.5
     },
     "favourite": {
-      "settled": 330,
+      "settled": 333,
       "won": 118,
-      "pl": -2.47,
-      "roi": -0.7
+      "pl": -5.47,
+      "roi": -1.6
     },
     "agree": {
       "settled": 79,
@@ -9548,10 +9595,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 251,
+      "settled": 254,
       "won": 35,
-      "pl": -7.15,
-      "roi": -2.8
+      "pl": -10.15,
+      "roi": -4
     }
   },
   "lastBackfill": 1792426837684
