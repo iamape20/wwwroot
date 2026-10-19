@@ -2173,7 +2173,11 @@
       "rating": 70.8,
       "runners": 5,
       "recordedAt": "2026-10-19T18:50:18.848Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Southwell|19:30",
@@ -2185,15 +2189,17 @@
       "rating": 63.6,
       "runners": 9,
       "recordedAt": "2026-10-19T19:20:15.892Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     }
   ],
   "stats": {
     "recorded": 133,
-    "settled": 129,
+    "settled": 130,
     "won": 69,
-    "pl": 12.95,
-    "roi": 10
+    "pl": 11.95,
+    "roi": 9.2
   },
   "lastBackfill": 1792432227120
 }

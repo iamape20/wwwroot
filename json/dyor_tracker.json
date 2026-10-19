@@ -9805,10 +9805,18 @@
       "fav": {
         "horse": "I'M THE ONE",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T18:50:19.105Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Wolverhampton|19:15",
@@ -9824,10 +9832,18 @@
       "fav": {
         "horse": "GOT THE BOOTY",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T19:00:21.901Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Southwell|19:30",
@@ -9843,25 +9859,29 @@
       "fav": {
         "horse": "SPEC OF LIGHT",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-19T19:20:16.153Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     }
   ],
   "stats": {
     "recorded": 361,
     "pick": {
-      "settled": 341,
+      "settled": 343,
       "won": 71,
-      "pl": -16.35,
-      "roi": -4.8
+      "pl": -18.35,
+      "roi": -5.4
     },
     "favourite": {
-      "settled": 340,
+      "settled": 342,
       "won": 118,
-      "pl": -12.47,
-      "roi": -3.7
+      "pl": -14.47,
+      "roi": -4.2
     },
     "agree": {
       "settled": 80,
@@ -9870,11 +9890,11 @@
       "roi": 1
     },
     "disagree": {
-      "settled": 261,
+      "settled": 263,
       "won": 35,
-      "pl": -17.15,
-      "roi": -6.6
+      "pl": -19.15,
+      "roi": -7.3
     }
   },
-  "lastBackfill": 1792426837684
+  "lastBackfill": 1792438214345
 }

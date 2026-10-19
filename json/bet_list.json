@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T19:20:14.635Z",
+  "generatedAt": "2026-10-19T19:40:11.499Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 95/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 96/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-19",
       "course": "Southwell",
       "off": "20:00",
-      "horse": "I'M THE ONE"
-    }
-  ],
-  "recent": [
+      "horse": "I'M THE ONE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-19",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": 1.38442173,
       "pl": 0.365,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Market Rasen",
-      "off": "13:15",
-      "horse": "IVOR BEAR",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-19T19:20:14.554Z",
+    "updatedAt": "2026-10-19T19:40:11.413Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 97,
+      "bets": 98,
       "won": 50,
-      "pl": -7.69,
-      "roi": -7.9,
+      "pl": -8.69,
+      "roi": -8.9,
       "provisional": 2
     },
     "live": {
