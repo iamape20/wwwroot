@@ -9595,10 +9595,14 @@
       "fav": {
         "horse": "MASSIMO BLUE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-10-19T16:50:35.372Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-10-19|Wolverhampton|17:15",
@@ -9618,10 +9622,29 @@
       },
       "recordedAt": "2026-10-19T17:00:29.611Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Southwell|17:30",
+      "date": "2026-10-19",
+      "course": "Southwell",
+      "time": "17:30",
+      "horse": "BAHIA BONITA",
+      "price": "16/1",
+      "runners": 13,
+      "liveHorse": "LADY HENSHAW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LADY HENSHAW",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T17:20:27.728Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 352,
+    "recorded": 353,
     "pick": {
       "settled": 334,
       "won": 71,
