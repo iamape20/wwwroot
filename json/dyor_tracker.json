@@ -9012,10 +9012,16 @@
       "fav": {
         "horse": "DANDY MAGIC",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-19T14:11:01.960Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Bath|14:17",
@@ -9077,15 +9083,53 @@
       },
       "recordedAt": "2026-10-19T14:31:00.790Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|14:53",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "14:53",
+      "horse": "IN THE BREEZE",
+      "price": "6/1",
+      "runners": 9,
+      "liveHorse": "MAXIDENT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAXIDENT",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:41:03.294Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|14:47",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "14:47",
+      "horse": "ABSOLUTE DIAMOND",
+      "price": "50/1",
+      "runners": 13,
+      "liveHorse": "GIVE HAND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GIVE HAND",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:41:03.309Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 331,
+    "recorded": 333,
     "pick": {
-      "settled": 320,
+      "settled": 321,
       "won": 71,
-      "pl": 4.65,
-      "roi": 1.5
+      "pl": 3.65,
+      "roi": 1.1
     },
     "favourite": {
       "settled": 321,
@@ -9100,10 +9144,10 @@
       "roi": 3.6
     },
     "disagree": {
-      "settled": 242,
+      "settled": 243,
       "won": 35,
-      "pl": 1.85,
-      "roi": 0.8
+      "pl": 0.85,
+      "roi": 0.3
     }
   },
   "lastBackfill": 1792415490153
