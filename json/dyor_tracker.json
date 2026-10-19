@@ -8912,10 +8912,16 @@
       "fav": {
         "horse": "SILVERELLA",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-19T13:41:28.580Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/1"
     },
     {
       "id": "2026-10-19|Bath|13:47",
@@ -8958,10 +8964,16 @@
       "fav": {
         "horse": "GOLLY GOSH",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-10-19T13:51:11.695Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-19|Gowran Park|14:10",
@@ -8981,21 +8993,78 @@
       },
       "recordedAt": "2026-10-19T14:01:06.194Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-19|Pontefract|14:23",
+      "date": "2026-10-19",
+      "course": "Pontefract",
+      "time": "14:23",
+      "horse": "BEAUJOLAIS NOUVEAU",
+      "price": "9/1",
+      "runners": 10,
+      "liveHorse": "DANDY MAGIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DANDY MAGIC",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:11:01.960Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Bath|14:17",
+      "date": "2026-10-19",
+      "course": "Bath",
+      "time": "14:17",
+      "horse": "AL QAYED",
+      "price": "8/15",
+      "runners": 11,
+      "liveHorse": "AL QAYED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AL QAYED",
+        "price": "8/15",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:11:01.972Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-19|Plumpton|14:30",
+      "date": "2026-10-19",
+      "course": "Plumpton",
+      "time": "14:30",
+      "horse": "NAP HAND",
+      "price": "7/4",
+      "runners": 5,
+      "liveHorse": "NAP HAND",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "NAP HAND",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-19T14:21:03.589Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 327,
+    "recorded": 330,
     "pick": {
-      "settled": 319,
+      "settled": 320,
       "won": 71,
-      "pl": 5.65,
-      "roi": 1.8
+      "pl": 4.65,
+      "roi": 1.5
     },
     "favourite": {
-      "settled": 320,
+      "settled": 321,
       "won": 118,
-      "pl": 7.53,
-      "roi": 2.4
+      "pl": 6.53,
+      "roi": 2
     },
     "agree": {
       "settled": 78,
@@ -9004,10 +9073,10 @@
       "roi": 3.6
     },
     "disagree": {
-      "settled": 241,
+      "settled": 242,
       "won": 35,
-      "pl": 2.85,
-      "roi": 1.2
+      "pl": 1.85,
+      "roi": 0.8
     }
   },
   "lastBackfill": 1792415490153
