@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T21:00:15.042Z",
+  "generatedAt": "2026-10-20T06:00:59.632Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 96/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,26 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Curragh",
+      "off": "13:25",
+      "status": "POSSIBLE",
+      "revealAt": "13:10"
+    },
+    {
+      "course": "Curragh",
+      "off": "14:25",
+      "status": "POSSIBLE",
+      "revealAt": "14:10"
+    },
+    {
+      "course": "Newcastle",
+      "off": "16:22",
+      "status": "POSSIBLE",
+      "revealAt": "16:07"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -182,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-19T21:00:14.931Z",
+    "updatedAt": "2026-10-20T06:00:59.534Z",
     "claude": {
       "races": 38,
       "won": 7,
