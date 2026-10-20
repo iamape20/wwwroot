@@ -10295,10 +10295,18 @@
       "fav": {
         "horse": "SIRIUS",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T14:20:38.569Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Hexham|14:42",
@@ -10314,37 +10322,83 @@
       "fav": {
         "horse": "CODED WELDER",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T14:30:39.576Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-20|Yarmouth|15:03",
+      "date": "2026-10-20",
+      "course": "Yarmouth",
+      "time": "15:03",
+      "horse": "FIORELLA PRINCESS",
+      "price": "11/2",
+      "runners": 8,
+      "liveHorse": "KINETIC FORCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KINETIC FORCE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T14:50:37.284Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Curragh|15:10",
+      "date": "2026-10-20",
+      "course": "Curragh",
+      "time": "15:10",
+      "horse": "ANVIKA",
+      "price": "8/1",
+      "runners": 24,
+      "liveHorse": "KHORMOR SYD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KHORMOR SYD",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T15:00:43.952Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 375,
+    "recorded": 377,
     "pick": {
-      "settled": 368,
+      "settled": 370,
       "won": 86,
-      "pl": 8.17,
-      "roi": 2.2
+      "pl": 6.17,
+      "roi": 1.7
     },
     "favourite": {
-      "settled": 369,
+      "settled": 371,
       "won": 136,
-      "pl": 12.8,
-      "roi": 3.5
+      "pl": 10.8,
+      "roi": 2.9
     },
     "agree": {
-      "settled": 91,
+      "settled": 92,
       "won": 46,
-      "pl": 14.34,
-      "roi": 15.8
+      "pl": 13.34,
+      "roi": 14.5
     },
     "disagree": {
-      "settled": 277,
+      "settled": 278,
       "won": 40,
-      "pl": -6.17,
-      "roi": -2.2
+      "pl": -7.17,
+      "roi": -2.6
     }
   },
   "lastBackfill": 1792500658137
