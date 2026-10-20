@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:20:29.021Z",
+  "generatedAt": "2026-10-20T15:40:29.135Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 99/120 bets settled before the verdict.",
   "rules": [
@@ -12,17 +12,20 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [
-    {
-      "course": "Newcastle",
-      "off": "16:22",
-      "status": "BET",
-      "horse": "SEA LA ROMA",
-      "price": "1/2"
-    }
-  ],
+  "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "off": "16:22",
+      "horse": "SEA LA ROMA",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-20",
       "course": "Curragh",
@@ -176,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Ascot",
-      "off": "14:40",
-      "horse": "KALPANA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-20T15:20:28.947Z",
+    "updatedAt": "2026-10-20T15:40:29.057Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -213,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 100,
-      "won": 51,
-      "pl": -9.25,
-      "roi": -9.3,
-      "provisional": 1
+      "bets": 101,
+      "won": 52,
+      "pl": -8.75,
+      "roi": -8.7,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
