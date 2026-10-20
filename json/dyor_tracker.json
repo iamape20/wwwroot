@@ -10663,14 +10663,37 @@
       "fav": {
         "horse": "NORTHERN VIOLA",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-20T17:50:19.595Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
+    },
+    {
+      "id": "2026-10-20|Newcastle|18:30",
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "time": "18:30",
+      "horse": "GOLDEN HAVANA",
+      "price": "33/1",
+      "runners": 13,
+      "liveHorse": "ASHEN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ASHEN",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T18:20:20.473Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 388,
+    "recorded": 389,
     "pick": {
       "settled": 381,
       "won": 86,
