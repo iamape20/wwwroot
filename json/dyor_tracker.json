@@ -10349,10 +10349,18 @@
       "fav": {
         "horse": "KINETIC FORCE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T14:50:37.284Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Curragh|15:10",
@@ -10372,21 +10380,59 @@
       },
       "recordedAt": "2026-10-20T15:00:43.952Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-20|Hexham|15:17",
+      "date": "2026-10-20",
+      "course": "Hexham",
+      "time": "15:17",
+      "horse": "ROYAL INFANTRY",
+      "price": "4/9",
+      "runners": 3,
+      "liveHorse": "ROYAL INFANTRY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ROYAL INFANTRY",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T15:10:34.092Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Newcastle|15:22",
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "time": "15:22",
+      "horse": "EMPRESS JINGU",
+      "price": "3/1",
+      "runners": 3,
+      "liveHorse": "SEA LA ROMA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SEA LA ROMA",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T15:10:34.119Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 377,
+    "recorded": 379,
     "pick": {
-      "settled": 370,
+      "settled": 371,
       "won": 86,
-      "pl": 6.17,
-      "roi": 1.7
+      "pl": 5.17,
+      "roi": 1.4
     },
     "favourite": {
-      "settled": 371,
+      "settled": 372,
       "won": 136,
-      "pl": 10.8,
-      "roi": 2.9
+      "pl": 9.8,
+      "roi": 2.6
     },
     "agree": {
       "settled": 92,
@@ -10395,10 +10441,10 @@
       "roi": 14.5
     },
     "disagree": {
-      "settled": 278,
+      "settled": 279,
       "won": 40,
-      "pl": -7.17,
-      "roi": -2.6
+      "pl": -8.17,
+      "roi": -2.9
     }
   },
   "lastBackfill": 1792500658137

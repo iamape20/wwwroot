@@ -4924,27 +4924,27 @@
       "marketVolume": 6621
     },
     "lastBeforeOff": {
-      "at": "2026-10-20T15:00:43.337Z",
+      "at": "2026-10-20T15:10:33.704Z",
       "eventId": 34636162601202024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.54,
-      "available": 37.7,
+      "bestBack": 1.53,
+      "available": 98.45,
       "depth": [
         [
-          1.54,
-          37.7
-        ],
-        [
           1.53,
-          262.34
+          98.45
         ],
         [
           1.52,
-          290.68
+          378.79
+        ],
+        [
+          1.51,
+          361.95
         ]
       ],
-      "marketVolume": 55338
+      "marketVolume": 61023
     }
   },
   "BET|2026-10-20|Yarmouth|12:50|CLOAKOFPOWER": {
@@ -5053,6 +5053,60 @@
         ]
       ],
       "marketVolume": 66077
+    }
+  },
+  "BET|2026-10-20|Newcastle|15:22|SEALAROMA": {
+    "type": "BET",
+    "date": "2026-10-20",
+    "course": "Newcastle",
+    "time": "15:22",
+    "horse": "SEA LA ROMA",
+    "betId": "2026-10-20|Newcastle|15:22",
+    "atReveal": {
+      "at": "2026-10-20T15:10:33.699Z",
+      "eventId": 34636188960200024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.54,
+      "available": 51.48,
+      "depth": [
+        [
+          1.54,
+          51.48
+        ],
+        [
+          1.53,
+          100.37
+        ],
+        [
+          1.52,
+          182.55
+        ]
+      ],
+      "marketVolume": 55047
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-20T15:20:30.376Z",
+      "eventId": 34636188960200024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.52,
+      "available": 78.03,
+      "depth": [
+        [
+          1.52,
+          78.03
+        ],
+        [
+          1.51,
+          176.34
+        ],
+        [
+          1.5,
+          537.27
+        ]
+      ],
+      "marketVolume": 74947
     }
   }
 }
