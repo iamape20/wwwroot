@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T12:40:58.374Z",
+  "generatedAt": "2026-10-20T12:50:54.735Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 98/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Yarmouth",
-      "off": "13:50",
-      "status": "BET",
-      "horse": "CLOAK OF POWER",
-      "price": "11/10"
-    },
-    {
       "course": "Curragh",
       "off": "14:25",
       "status": "POSSIBLE",
@@ -33,7 +26,13 @@
       "revealAt": "16:07"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Yarmouth",
+      "off": "13:50",
+      "horse": "CLOAK OF POWER"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-19",
@@ -202,7 +201,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-20T12:40:58.279Z",
+    "updatedAt": "2026-10-20T12:50:54.587Z",
     "claude": {
       "races": 38,
       "won": 7,
