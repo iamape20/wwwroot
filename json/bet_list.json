@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-20T12:50:54.735Z",
+  "generatedAt": "2026-10-20T13:01:06.547Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 98/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 99/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -26,14 +26,19 @@
       "revealAt": "16:07"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-20",
       "course": "Yarmouth",
       "off": "13:50",
-      "horse": "CLOAK OF POWER"
-    }
-  ],
-  "recent": [
+      "horse": "CLOAK OF POWER",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-19",
       "course": "Southwell",
@@ -187,21 +192,10 @@
       "bsp": 2.4,
       "pl": 1.33,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Catterick",
-      "off": "13:35",
-      "horse": "INKBERROW",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.38442173,
-      "pl": 0.365,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-20T12:50:54.587Z",
+    "updatedAt": "2026-10-20T13:01:06.359Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,10 +218,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 98,
+      "bets": 99,
       "won": 50,
-      "pl": -8.45,
-      "roi": -8.6,
+      "pl": -9.45,
+      "roi": -9.5,
       "provisional": 0
     },
     "live": {

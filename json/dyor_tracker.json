@@ -10033,10 +10033,18 @@
       "fav": {
         "horse": "CLOAK OF POWER",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T12:41:00.941Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Curragh|12:55",
@@ -10080,16 +10088,16 @@
   "stats": {
     "recorded": 366,
     "pick": {
-      "settled": 359,
+      "settled": 360,
       "won": 86,
-      "pl": 17.17,
-      "roi": 4.8
+      "pl": 16.17,
+      "roi": 4.5
     },
     "favourite": {
-      "settled": 362,
+      "settled": 363,
       "won": 136,
-      "pl": 19.8,
-      "roi": 5.5
+      "pl": 18.8,
+      "roi": 5.2
     },
     "agree": {
       "settled": 90,
@@ -10098,10 +10106,10 @@
       "roi": 17
     },
     "disagree": {
-      "settled": 269,
+      "settled": 270,
       "won": 40,
-      "pl": 1.83,
-      "roi": 0.7
+      "pl": 0.83,
+      "roi": 0.3
     }
   },
   "lastBackfill": 1792500658137
