@@ -10112,10 +10112,18 @@
       "fav": {
         "horse": "OLIAKU",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T13:10:56.128Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "85/40",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Curragh|13:25",
@@ -10131,10 +10139,16 @@
       "fav": {
         "horse": "TOGETHER NOW",
         "price": "1/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/5"
       },
       "recordedAt": "2026-10-20T13:10:56.169Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Hexham|13:32",
@@ -10154,21 +10168,40 @@
       },
       "recordedAt": "2026-10-20T13:20:50.189Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-20|Yarmouth|13:53",
+      "date": "2026-10-20",
+      "course": "Yarmouth",
+      "time": "13:53",
+      "horse": "GOLDEN MUSE",
+      "price": "9/1",
+      "runners": 8,
+      "liveHorse": "QUEEN OF SCOTLAND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "QUEEN OF SCOTLAND",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T13:40:48.261Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 369,
+    "recorded": 370,
     "pick": {
-      "settled": 362,
+      "settled": 364,
       "won": 86,
-      "pl": 14.17,
-      "roi": 3.9
+      "pl": 12.17,
+      "roi": 3.3
     },
     "favourite": {
-      "settled": 364,
+      "settled": 365,
       "won": 136,
-      "pl": 17.8,
-      "roi": 4.9
+      "pl": 16.8,
+      "roi": 4.6
     },
     "agree": {
       "settled": 91,
@@ -10177,10 +10210,10 @@
       "roi": 15.8
     },
     "disagree": {
-      "settled": 271,
+      "settled": 273,
       "won": 40,
-      "pl": -0.17,
-      "roi": -0.1
+      "pl": -2.17,
+      "roi": -0.8
     }
   },
   "lastBackfill": 1792500658137

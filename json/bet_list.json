@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T13:20:48.201Z",
+  "generatedAt": "2026-10-20T13:40:45.984Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 99/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Curragh",
-      "off": "14:25",
-      "status": "BET",
-      "horse": "TOGETHER NOW",
-      "price": "1/5"
-    },
-    {
       "course": "Newcastle",
       "off": "16:22",
       "status": "POSSIBLE",
@@ -29,6 +22,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-20",
+      "course": "Curragh",
+      "off": "14:25",
+      "horse": "TOGETHER NOW",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-20",
       "course": "Yarmouth",
@@ -182,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Ascot",
-      "off": "14:05",
-      "horse": "ALMERAQ",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.4,
-      "pl": 1.33,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-20T13:20:48.117Z",
+    "updatedAt": "2026-10-20T13:40:45.891Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 99,
-      "won": 50,
-      "pl": -9.45,
-      "roi": -9.5,
-      "provisional": 0
+      "bets": 100,
+      "won": 51,
+      "pl": -9.25,
+      "roi": -9.3,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
