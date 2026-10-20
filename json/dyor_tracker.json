@@ -10451,10 +10451,16 @@
       "fav": {
         "horse": "WODAO",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-20T15:30:32.362Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Curragh|15:45",
@@ -10470,10 +10476,16 @@
       "fav": {
         "horse": "TARIFF",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-10-20T15:30:32.378Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Hexham|15:50",
@@ -10493,15 +10505,53 @@
       },
       "recordedAt": "2026-10-20T15:40:30.545Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-20|Newcastle|15:57",
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "time": "15:57",
+      "horse": "ERNST BLOFELD",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "OURSIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OURSIN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T15:50:29.929Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Yarmouth|16:08",
+      "date": "2026-10-20",
+      "course": "Yarmouth",
+      "time": "16:08",
+      "horse": "CALL TIME",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "KOFFEE AND KALE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KOFFEE AND KALE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T16:00:24.393Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 382,
+    "recorded": 384,
     "pick": {
-      "settled": 373,
+      "settled": 375,
       "won": 86,
-      "pl": 3.17,
-      "roi": 0.8
+      "pl": 1.17,
+      "roi": 0.3
     },
     "favourite": {
       "settled": 373,
@@ -10516,11 +10566,11 @@
       "roi": 14.5
     },
     "disagree": {
-      "settled": 281,
+      "settled": 283,
       "won": 40,
-      "pl": -10.17,
-      "roi": -3.6
+      "pl": -12.17,
+      "roi": -4.3
     }
   },
-  "lastBackfill": 1792500658137
+  "lastBackfill": 1792512024405
 }
