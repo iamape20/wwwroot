@@ -224,8 +224,15 @@ function legNow(ratings, nap, entry) {
     const meeting = Object.values(ratings || {}).find(m =>
         String(m?.name || "").toUpperCase() === String(entry?.course || "").toUpperCase());
     const race = meeting?.races?.find(r => r.time === entry?.time);
-    const nowTier = race?.runners?.length
-        ? (classifyRace(race.runners, race.display_title)?.tier || "Open")
+    // Rating order, as the race page's VOID BET watermark uses (dashboard.js
+    // sorts by elite.rating = power_rating) - in override order a favourite
+    // promoted above a higher-rated horse gives a negative margin, so the
+    // leg read "Now VOID BET" while the race page showed it Moderate (daily
+    // code review 2026-10-19).
+    const byRating = (race?.runners || []).slice()
+        .sort((a, b) => Number(b?.power_rating) - Number(a?.power_rating));
+    const nowTier = byRating.length
+        ? (classifyRace(byRating, race.display_title)?.tier || "Open")
         : null;
     const napNow = !!(nap?.active &&
         String(nap.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase() &&
