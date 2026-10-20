@@ -2099,7 +2099,10 @@
       "recordedAt": "2026-10-19T14:01:05.941Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/7"
+      "isp": "4/7",
+      "bsp": 1.75,
+      "pl": 0.712,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-19|Bath|14:17",
@@ -2113,7 +2116,10 @@
       "recordedAt": "2026-10-19T14:11:01.694Z",
       "stake": 1,
       "result": "won",
-      "isp": "8/13"
+      "isp": "8/13",
+      "bsp": 1.75,
+      "pl": 0.712,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-19|Pontefract|14:53",
@@ -2191,15 +2197,18 @@
       "recordedAt": "2026-10-19T19:20:15.892Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/4"
+      "isp": "5/4",
+      "bsp": 2.42319156,
+      "pl": 1.352,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 133,
-    "settled": 130,
-    "won": 69,
-    "pl": 11.95,
-    "roi": 9.2
+    "settled": 133,
+    "won": 72,
+    "pl": 14.72,
+    "roi": 11.1
   },
-  "lastBackfill": 1792476065275
+  "lastBackfill": 1792486867309
 }

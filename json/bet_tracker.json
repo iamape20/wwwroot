@@ -1601,8 +1601,9 @@
       "revealedAt": "2026-10-19T14:01:04.171Z",
       "result": "won",
       "isp": "4/7",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.75,
+      "pl": 0.712,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-19|Bath|14:17",
@@ -1617,8 +1618,9 @@
       "revealedAt": "2026-10-19T14:10:59.912Z",
       "result": "won",
       "isp": "8/13",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.75,
+      "pl": 0.712,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-19|Southwell|16:30",
@@ -1658,5 +1660,5 @@
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792476060071
+  "lastBackfill": 1792486861100
 }
