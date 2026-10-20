@@ -228,8 +228,10 @@ function legNow(ratings, nap, entry) {
     // sorts by elite.rating = power_rating) - in override order a favourite
     // promoted above a higher-rated horse gives a negative margin, so the
     // leg read "Now VOID BET" while the race page showed it Moderate (daily
-    // code review 2026-10-19).
-    const byRating = (race?.runners || []).slice()
+    // code review 2026-10-19). Declared runners only, as the race page and
+    // every other classifyRace caller - a withdrawn top-rated horse used to
+    // set the margin (2026-10-20).
+    const byRating = (race?.runners || []).filter(r => r && r.non_runner !== true)
         .sort((a, b) => Number(b?.power_rating) - Number(a?.power_rating));
     const nowTier = byRating.length
         ? (classifyRace(byRating, race.display_title)?.tier || "Open")
