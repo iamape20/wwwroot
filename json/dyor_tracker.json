@@ -10189,10 +10189,16 @@
       "fav": {
         "horse": "QUEEN OF SCOTLAND",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T13:40:48.261Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
     },
     {
       "id": "2026-10-20|Curragh|14:00",
@@ -10208,10 +10214,18 @@
       "fav": {
         "horse": "MAIRE RUA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T13:50:51.832Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Hexham|14:07",
@@ -10231,21 +10245,59 @@
       },
       "recordedAt": "2026-10-20T14:00:47.954Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-20|Yarmouth|14:28",
+      "date": "2026-10-20",
+      "course": "Yarmouth",
+      "time": "14:28",
+      "horse": "DIVOT",
+      "price": "9/1",
+      "runners": 15,
+      "liveHorse": "POTTERS PRINCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POTTERS PRINCE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T14:20:38.554Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Curragh|14:35",
+      "date": "2026-10-20",
+      "course": "Curragh",
+      "time": "14:35",
+      "horse": "SIRIUS",
+      "price": "7/4",
+      "runners": 8,
+      "liveHorse": "SIRIUS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SIRIUS",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T14:20:38.569Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 372,
+    "recorded": 374,
     "pick": {
-      "settled": 365,
+      "settled": 366,
       "won": 86,
-      "pl": 11.17,
-      "roi": 3.1
+      "pl": 10.17,
+      "roi": 2.8
     },
     "favourite": {
-      "settled": 365,
+      "settled": 367,
       "won": 136,
-      "pl": 16.8,
-      "roi": 4.6
+      "pl": 14.8,
+      "roi": 4
     },
     "agree": {
       "settled": 91,
@@ -10254,10 +10306,10 @@
       "roi": 15.8
     },
     "disagree": {
-      "settled": 274,
+      "settled": 275,
       "won": 40,
-      "pl": -3.17,
-      "roi": -1.2
+      "pl": -4.17,
+      "roi": -1.5
     }
   },
   "lastBackfill": 1792500658137
