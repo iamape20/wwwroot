@@ -4924,27 +4924,27 @@
       "marketVolume": 6621
     },
     "lastBeforeOff": {
-      "at": "2026-10-20T13:01:09.619Z",
+      "at": "2026-10-20T13:20:49.817Z",
       "eventId": 34636162601202024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.49,
+      "bestBack": 1.47,
       "available": 2.11,
       "depth": [
         [
-          1.49,
+          1.47,
           2.11
         ],
         [
-          1.48,
-          77.71
+          1.46,
+          5.01
         ],
         [
-          1.47,
-          120.55
+          1.45,
+          70.81
         ]
       ],
-      "marketVolume": 34857
+      "marketVolume": 37019
     }
   },
   "BET|2026-10-20|Yarmouth|12:50|CLOAKOFPOWER": {
@@ -4999,6 +4999,60 @@
         ]
       ],
       "marketVolume": 106628
+    }
+  },
+  "BET|2026-10-20|Curragh|13:25|TOGETHERNOW": {
+    "type": "BET",
+    "date": "2026-10-20",
+    "course": "Curragh",
+    "time": "13:25",
+    "horse": "TOGETHER NOW",
+    "betId": "2026-10-20|Curragh|13:25",
+    "atReveal": {
+      "at": "2026-10-20T13:10:55.546Z",
+      "eventId": 34636071278202100,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.24,
+      "available": 93.34,
+      "depth": [
+        [
+          1.24,
+          93.34
+        ],
+        [
+          1.23,
+          585.96
+        ],
+        [
+          1.22,
+          624.39
+        ]
+      ],
+      "marketVolume": 62765
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-20T13:20:49.814Z",
+      "eventId": 34636071278202100,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.23,
+      "available": 322.48,
+      "depth": [
+        [
+          1.23,
+          322.48
+        ],
+        [
+          1.22,
+          878.89
+        ],
+        [
+          1.21,
+          1292.93
+        ]
+      ],
+      "marketVolume": 66077
     }
   }
 }

@@ -10060,10 +10060,16 @@
       "fav": {
         "horse": "NOUVEL ESPOIR",
         "price": "11/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/1"
       },
       "recordedAt": "2026-10-20T12:41:00.961Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Hexham|13:01",
@@ -10079,37 +10085,102 @@
       "fav": {
         "horse": "BIGLESISBACK",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T12:50:58.115Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-20|Yarmouth|13:20",
+      "date": "2026-10-20",
+      "course": "Yarmouth",
+      "time": "13:20",
+      "horse": "MARCH OF TIME",
+      "price": "7/4",
+      "runners": 6,
+      "liveHorse": "OLIAKU",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OLIAKU",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T13:10:56.128Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Curragh|13:25",
+      "date": "2026-10-20",
+      "course": "Curragh",
+      "time": "13:25",
+      "horse": "I HOPE YOU DANCE",
+      "price": "12/1",
+      "runners": 7,
+      "liveHorse": "TOGETHER NOW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TOGETHER NOW",
+        "price": "1/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T13:10:56.169Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Hexham|13:32",
+      "date": "2026-10-20",
+      "course": "Hexham",
+      "time": "13:32",
+      "horse": "SNAPAUDACIAHEROS",
+      "price": "6/1",
+      "runners": 10,
+      "liveHorse": "LITTLETOWN LAD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LITTLETOWN LAD",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T13:20:50.189Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 366,
+    "recorded": 369,
     "pick": {
-      "settled": 360,
+      "settled": 362,
       "won": 86,
-      "pl": 16.17,
-      "roi": 4.5
+      "pl": 14.17,
+      "roi": 3.9
     },
     "favourite": {
-      "settled": 363,
+      "settled": 364,
       "won": 136,
-      "pl": 18.8,
-      "roi": 5.2
+      "pl": 17.8,
+      "roi": 4.9
     },
     "agree": {
-      "settled": 90,
+      "settled": 91,
       "won": 46,
-      "pl": 15.34,
-      "roi": 17
+      "pl": 14.34,
+      "roi": 15.8
     },
     "disagree": {
-      "settled": 270,
+      "settled": 271,
       "won": 40,
-      "pl": 0.83,
-      "roi": 0.3
+      "pl": -0.17,
+      "roi": -0.1
     }
   },
   "lastBackfill": 1792500658137
