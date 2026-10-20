@@ -10738,25 +10738,33 @@
       "fav": {
         "horse": "HECTIC",
         "price": "5/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T19:20:13.516Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 391,
     "pick": {
-      "settled": 383,
+      "settled": 384,
       "won": 86,
-      "pl": -6.83,
-      "roi": -1.8
+      "pl": -7.83,
+      "roi": -2
     },
     "favourite": {
-      "settled": 380,
+      "settled": 381,
       "won": 136,
-      "pl": 1.8,
-      "roi": 0.5
+      "pl": 0.8,
+      "roi": 0.2
     },
     "agree": {
       "settled": 94,
@@ -10765,10 +10773,10 @@
       "roi": 12.1
     },
     "disagree": {
-      "settled": 289,
+      "settled": 290,
       "won": 40,
-      "pl": -18.17,
-      "roi": -6.3
+      "pl": -19.17,
+      "roi": -6.6
     }
   },
   "lastBackfill": 1792523418782
