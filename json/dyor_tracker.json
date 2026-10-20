@@ -10164,10 +10164,16 @@
       "fav": {
         "horse": "LITTLETOWN LAD",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-20T13:20:50.189Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Yarmouth|13:53",
@@ -10187,15 +10193,53 @@
       },
       "recordedAt": "2026-10-20T13:40:48.261Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-20|Curragh|14:00",
+      "date": "2026-10-20",
+      "course": "Curragh",
+      "time": "14:00",
+      "horse": "ADMIRED BEAUTY",
+      "price": "33/1",
+      "runners": 11,
+      "liveHorse": "MAIRE RUA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAIRE RUA",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T13:50:51.832Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-20|Hexham|14:07",
+      "date": "2026-10-20",
+      "course": "Hexham",
+      "time": "14:07",
+      "horse": "CONQUER THE BREEZE",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "CODGER'S ROCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CODGER'S ROCK",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T14:00:47.954Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 370,
+    "recorded": 372,
     "pick": {
-      "settled": 364,
+      "settled": 365,
       "won": 86,
-      "pl": 12.17,
-      "roi": 3.3
+      "pl": 11.17,
+      "roi": 3.1
     },
     "favourite": {
       "settled": 365,
@@ -10210,10 +10254,10 @@
       "roi": 15.8
     },
     "disagree": {
-      "settled": 273,
+      "settled": 274,
       "won": 40,
-      "pl": -2.17,
-      "roi": -0.8
+      "pl": -3.17,
+      "roi": -1.2
     }
   },
   "lastBackfill": 1792500658137
