@@ -10713,19 +10713,44 @@
       "fav": {
         "horse": "ELLIE'S DE VEGA",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-20T18:50:15.685Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-20|Newcastle|19:30",
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "time": "19:30",
+      "horse": "WOOLRIDGE",
+      "price": "7/1",
+      "runners": 12,
+      "liveHorse": "HECTIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HECTIC",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T19:20:13.516Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 390,
+    "recorded": 391,
     "pick": {
-      "settled": 382,
+      "settled": 383,
       "won": 86,
-      "pl": -5.83,
-      "roi": -1.5
+      "pl": -6.83,
+      "roi": -1.8
     },
     "favourite": {
       "settled": 380,
@@ -10740,11 +10765,11 @@
       "roi": 12.1
     },
     "disagree": {
-      "settled": 288,
+      "settled": 289,
       "won": 40,
-      "pl": -17.17,
-      "roi": -6
+      "pl": -18.17,
+      "roi": -6.3
     }
   },
-  "lastBackfill": 1792512024405
+  "lastBackfill": 1792523418782
 }
