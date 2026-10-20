@@ -10609,25 +10609,52 @@
       "fav": {
         "horse": "BOUBYAN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T16:50:21.543Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-20|Newcastle|17:30",
+      "date": "2026-10-20",
+      "course": "Newcastle",
+      "time": "17:30",
+      "horse": "SECOND FIDDLE",
+      "price": "3/1",
+      "runners": 12,
+      "liveHorse": "SECOND FIDDLE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SECOND FIDDLE",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-20T17:20:22.859Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 386,
+    "recorded": 387,
     "pick": {
-      "settled": 379,
+      "settled": 380,
       "won": 86,
-      "pl": -2.83,
-      "roi": -0.7
+      "pl": -3.83,
+      "roi": -1
     },
     "favourite": {
-      "settled": 377,
+      "settled": 378,
       "won": 136,
-      "pl": 4.8,
-      "roi": 1.3
+      "pl": 3.8,
+      "roi": 1
     },
     "agree": {
       "settled": 93,
@@ -10636,10 +10663,10 @@
       "roi": 13.3
     },
     "disagree": {
-      "settled": 286,
+      "settled": 287,
       "won": 40,
-      "pl": -15.17,
-      "roi": -5.3
+      "pl": -16.17,
+      "roi": -5.6
     }
   },
   "lastBackfill": 1792512024405
