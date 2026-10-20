@@ -10582,25 +10582,33 @@
       "fav": {
         "horse": "NEWSREADER",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T16:20:22.863Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 385,
     "pick": {
-      "settled": 378,
+      "settled": 379,
       "won": 86,
-      "pl": -1.83,
-      "roi": -0.5
+      "pl": -2.83,
+      "roi": -0.7
     },
     "favourite": {
-      "settled": 376,
+      "settled": 377,
       "won": 136,
-      "pl": 5.8,
-      "roi": 1.5
+      "pl": 4.8,
+      "roi": 1.3
     },
     "agree": {
       "settled": 93,
@@ -10609,10 +10617,10 @@
       "roi": 13.3
     },
     "disagree": {
-      "settled": 285,
+      "settled": 286,
       "won": 40,
-      "pl": -14.17,
-      "roi": -5
+      "pl": -15.17,
+      "roi": -5.3
     }
   },
   "lastBackfill": 1792512024405
