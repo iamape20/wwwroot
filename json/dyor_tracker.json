@@ -10241,10 +10241,18 @@
       "fav": {
         "horse": "CODGER'S ROCK",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T14:00:47.954Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Yarmouth|14:28",
@@ -10260,10 +10268,18 @@
       "fav": {
         "horse": "POTTERS PRINCE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-20T14:20:38.554Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-20|Curragh|14:35",
@@ -10307,16 +10323,16 @@
   "stats": {
     "recorded": 375,
     "pick": {
-      "settled": 366,
+      "settled": 368,
       "won": 86,
-      "pl": 10.17,
-      "roi": 2.8
+      "pl": 8.17,
+      "roi": 2.2
     },
     "favourite": {
-      "settled": 367,
+      "settled": 369,
       "won": 136,
-      "pl": 14.8,
-      "roi": 4
+      "pl": 12.8,
+      "roi": 3.5
     },
     "agree": {
       "settled": 91,
@@ -10325,10 +10341,10 @@
       "roi": 15.8
     },
     "disagree": {
-      "settled": 275,
+      "settled": 277,
       "won": 40,
-      "pl": -4.17,
-      "roi": -1.5
+      "pl": -6.17,
+      "roi": -2.2
     }
   },
   "lastBackfill": 1792500658137
