@@ -11322,10 +11322,18 @@
       "fav": {
         "horse": "LUNA CELESTE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T15:00:57.983Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Fontwell|15:17",
@@ -11341,10 +11349,18 @@
       "fav": {
         "horse": "DARING PLAN",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T15:10:37.332Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|15:27",
@@ -11360,10 +11376,16 @@
       "fav": {
         "horse": "TEOFIL",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-10-21T15:20:40.066Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|15:35",
@@ -11383,33 +11405,71 @@
       },
       "recordedAt": "2026-10-21T15:20:40.079Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|15:45",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "15:45",
+      "horse": "MUQARRABIN",
+      "price": "4/7",
+      "runners": 5,
+      "liveHorse": "MUQARRABIN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MUQARRABIN",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:30:35.481Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Fontwell|15:50",
+      "date": "2026-10-21",
+      "course": "Fontwell",
+      "time": "15:50",
+      "horse": "COUNTY CHAMPS",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "I LOVE YOU SIVOLA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I LOVE YOU SIVOLA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:40:35.605Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 415,
+    "recorded": 417,
     "pick": {
-      "settled": 403,
+      "settled": 406,
       "won": 90,
-      "pl": -10.97,
-      "roi": -2.7
+      "pl": -13.97,
+      "roi": -3.4
     },
     "favourite": {
-      "settled": 404,
+      "settled": 406,
       "won": 145,
-      "pl": 8.39,
-      "roi": 2.1
+      "pl": 6.39,
+      "roi": 1.6
     },
     "agree": {
-      "settled": 101,
+      "settled": 103,
       "won": 48,
-      "pl": 8.63,
-      "roi": 8.5
+      "pl": 6.63,
+      "roi": 6.4
     },
     "disagree": {
-      "settled": 302,
+      "settled": 303,
       "won": 42,
-      "pl": -19.6,
-      "roi": -6.5
+      "pl": -20.6,
+      "roi": -6.8
     }
   },
   "lastBackfill": 1792587691081

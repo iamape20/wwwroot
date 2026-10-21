@@ -5139,27 +5139,27 @@
       "marketVolume": 55
     },
     "lastBeforeOff": {
-      "at": "2026-10-21T15:20:39.697Z",
+      "at": "2026-10-21T15:40:35.232Z",
       "eventId": 34644854286802080,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.62,
-      "available": 44.05,
+      "bestBack": 1.94,
+      "available": 44.62,
       "depth": [
         [
-          1.62,
-          44.05
+          1.94,
+          44.62
         ],
         [
-          1.61,
-          148.23
+          1.93,
+          42.28
         ],
         [
-          1.6,
-          190.96
+          1.92,
+          55.77
         ]
       ],
-      "marketVolume": 70050
+      "marketVolume": 126627
     }
   },
   "BET|2026-10-21|Navan|12:02|MISSMONAKEEBA": {
@@ -5430,6 +5430,60 @@
         ]
       ],
       "marketVolume": 96978
+    }
+  },
+  "BET|2026-10-21|Newmarket|15:45|MUQARRABIN": {
+    "type": "BET",
+    "date": "2026-10-21",
+    "course": "Newmarket",
+    "time": "15:45",
+    "horse": "MUQARRABIN",
+    "betId": "2026-10-21|Newmarket|15:45",
+    "atReveal": {
+      "at": "2026-10-21T15:30:35.119Z",
+      "eventId": 34644854286802080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.69,
+      "available": 70.51,
+      "depth": [
+        [
+          1.69,
+          70.51
+        ],
+        [
+          1.68,
+          146.63
+        ],
+        [
+          1.67,
+          140.86
+        ]
+      ],
+      "marketVolume": 72335
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-21T15:40:35.229Z",
+      "eventId": 34644854286802080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.94,
+      "available": 44.62,
+      "depth": [
+        [
+          1.94,
+          44.62
+        ],
+        [
+          1.93,
+          42.28
+        ],
+        [
+          1.92,
+          55.77
+        ]
+      ],
+      "marketVolume": 126627
     }
   }
 }
