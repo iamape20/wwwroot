@@ -11605,25 +11605,52 @@
       "fav": {
         "horse": "LADY'S GRACE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T16:50:24.706Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-21|Kempton|17:30",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "17:30",
+      "horse": "SAKOWIN",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "SAKOWIN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SAKOWIN",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T17:20:23.940Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 423,
+    "recorded": 424,
     "pick": {
-      "settled": 411,
+      "settled": 412,
       "won": 90,
-      "pl": -18.97,
-      "roi": -4.6
+      "pl": -19.97,
+      "roi": -4.8
     },
     "favourite": {
-      "settled": 411,
+      "settled": 412,
       "won": 145,
-      "pl": 1.39,
-      "roi": 0.3
+      "pl": 0.39,
+      "roi": 0.1
     },
     "agree": {
       "settled": 105,
@@ -11632,10 +11659,10 @@
       "roi": 4.4
     },
     "disagree": {
-      "settled": 306,
+      "settled": 307,
       "won": 42,
-      "pl": -23.6,
-      "roi": -7.7
+      "pl": -24.6,
+      "roi": -8
     }
   },
   "lastBackfill": 1792599026405
