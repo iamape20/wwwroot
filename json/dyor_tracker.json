@@ -11659,25 +11659,52 @@
       "fav": {
         "horse": "LEVEL LOOK",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T17:50:27.076Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-21|Kempton|18:30",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "18:30",
+      "horse": "SERENITY DREAM",
+      "price": "6/1",
+      "runners": 12,
+      "liveHorse": "CARAGIO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CARAGIO",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T18:20:22.581Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 425,
+    "recorded": 426,
     "pick": {
-      "settled": 413,
+      "settled": 414,
       "won": 90,
-      "pl": -20.97,
-      "roi": -5.1
+      "pl": -21.97,
+      "roi": -5.3
     },
     "favourite": {
-      "settled": 413,
+      "settled": 414,
       "won": 145,
-      "pl": -0.61,
-      "roi": -0.1
+      "pl": -1.61,
+      "roi": -0.4
     },
     "agree": {
       "settled": 106,
@@ -11686,10 +11713,10 @@
       "roi": 3.4
     },
     "disagree": {
-      "settled": 307,
+      "settled": 308,
       "won": 42,
-      "pl": -24.6,
-      "roi": -8
+      "pl": -25.6,
+      "roi": -8.3
     }
   },
   "lastBackfill": 1792599026405
