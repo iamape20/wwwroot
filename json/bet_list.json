@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T15:40:33.597Z",
+  "generatedAt": "2026-10-21T16:00:35.570Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 106/120 bets settled before the verdict.",
   "rules": [
@@ -14,13 +14,6 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Newmarket",
-      "off": "16:45",
-      "status": "BET",
-      "horse": "MUQARRABIN",
-      "price": "4/7"
-    },
-    {
       "course": "Kempton",
       "off": "17:30",
       "status": "POSSIBLE",
@@ -29,6 +22,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "off": "16:45",
+      "horse": "MUQARRABIN",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-21",
       "course": "Newmarket",
@@ -182,21 +186,10 @@
       "bsp": 1.72,
       "pl": 0.684,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-18",
-      "course": "Limerick",
-      "off": "14:30",
-      "horse": "GLOBAL SUBMISSION",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T15:40:33.484Z",
+    "updatedAt": "2026-10-21T16:00:35.485Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -219,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 106,
-      "won": 52,
-      "pl": -13.66,
-      "roi": -12.9,
-      "provisional": 0
+      "bets": 107,
+      "won": 53,
+      "pl": -12.82,
+      "roi": -12,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

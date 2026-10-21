@@ -11401,10 +11401,18 @@
       "fav": {
         "horse": "ROE AND CO",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T15:20:40.079Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Newmarket|15:45",
@@ -11420,10 +11428,14 @@
       "fav": {
         "horse": "MUQARRABIN",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-21T15:30:35.481Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/6"
     },
     {
       "id": "2026-10-21|Fontwell|15:50",
@@ -11443,27 +11455,84 @@
       },
       "recordedAt": "2026-10-21T15:40:35.605Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|16:04",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "16:04",
+      "horse": "CHARLIE BROW'N",
+      "price": "17/2",
+      "runners": 23,
+      "liveHorse": "JAZZY ROCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JAZZY ROCK",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:50:33.619Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Kempton|15:58",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "15:58",
+      "horse": "WOOTTON KING",
+      "price": "2/9",
+      "runners": 5,
+      "liveHorse": "WOOTTON KING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WOOTTON KING",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:50:33.632Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|16:10",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "16:10",
+      "horse": "GETAWAY WITH YOU",
+      "price": "9/1",
+      "runners": 8,
+      "liveHorse": "DOCTEUR ROMEO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DOCTEUR ROMEO",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T16:00:37.233Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 417,
+    "recorded": 420,
     "pick": {
-      "settled": 406,
+      "settled": 407,
       "won": 90,
-      "pl": -13.97,
-      "roi": -3.4
+      "pl": -14.97,
+      "roi": -3.7
     },
     "favourite": {
-      "settled": 406,
+      "settled": 407,
       "won": 145,
-      "pl": 6.39,
-      "roi": 1.6
+      "pl": 5.39,
+      "roi": 1.3
     },
     "agree": {
-      "settled": 103,
+      "settled": 104,
       "won": 48,
-      "pl": 6.63,
-      "roi": 6.4
+      "pl": 5.63,
+      "roi": 5.4
     },
     "disagree": {
       "settled": 303,
