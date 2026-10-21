@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T08:41:06.526Z",
+  "generatedAt": "2026-10-21T09:01:27.105Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 99/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 101/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -33,6 +33,12 @@
     },
     {
       "course": "Newmarket",
+      "off": "15:00",
+      "status": "POSSIBLE",
+      "revealAt": "14:45"
+    },
+    {
+      "course": "Newmarket",
       "off": "16:45",
       "status": "POSSIBLE",
       "revealAt": "16:30"
@@ -53,9 +59,9 @@
       "horse": "SEA LA ROMA",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.58426669,
+      "pl": 0.555,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-20",
@@ -64,9 +70,9 @@
       "horse": "TOGETHER NOW",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.25729779,
+      "pl": 0.244,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-20",
@@ -213,7 +219,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T08:41:06.371Z",
+    "updatedAt": "2026-10-21T09:01:26.852Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -238,9 +244,9 @@
     "paper": {
       "bets": 101,
       "won": 52,
-      "pl": -8.75,
-      "roi": -8.7,
-      "provisional": 2
+      "pl": -8.66,
+      "roi": -8.6,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
