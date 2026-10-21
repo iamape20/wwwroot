@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T16:40:23.333Z",
+  "generatedAt": "2026-10-21T17:00:16.575Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 106/120 bets settled before the verdict.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-21",
       "course": "Kempton",
       "off": "17:30",
-      "horse": "DADDY STAR"
-    }
-  ],
-  "recent": [
+      "horse": "DADDY STAR",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-21",
       "course": "Newmarket",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-18",
-      "course": "Leopardstown",
-      "off": "15:42",
-      "horse": "COME WHAT MAY",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.72,
-      "pl": 0.684,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T16:40:23.254Z",
+    "updatedAt": "2026-10-21T17:00:16.491Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,11 +205,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 107,
-      "won": 53,
-      "pl": -12.82,
-      "roi": -12,
-      "provisional": 1
+      "bets": 108,
+      "won": 54,
+      "pl": -12.29,
+      "roi": -11.4,
+      "provisional": 2
     },
     "live": {
       "bets": 0,
