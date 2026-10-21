@@ -10910,10 +10910,18 @@
       "fav": {
         "horse": "GRINANBEARIT",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T12:41:06.250Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/13",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Fontwell|12:57",
@@ -10929,10 +10937,16 @@
       "fav": {
         "horse": "TREAD CAREFULLY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-21T12:51:07.468Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|13:07",
@@ -10948,10 +10962,18 @@
       "fav": {
         "horse": "AEDHMAR",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:01:31.048Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|13:15",
@@ -10971,33 +10993,71 @@
       },
       "recordedAt": "2026-10-21T13:01:31.077Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|13:25",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "13:25",
+      "horse": "ALTIUS",
+      "price": "8/11",
+      "runners": 5,
+      "liveHorse": "ALTIUS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ALTIUS",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:11:03.509Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Fontwell|13:32",
+      "date": "2026-10-21",
+      "course": "Fontwell",
+      "time": "13:32",
+      "horse": "EVERYONESACRITIC",
+      "price": "17/2",
+      "runners": 5,
+      "liveHorse": "CHATTY GIRL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHATTY GIRL",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:21:02.807Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 399,
+    "recorded": 401,
     "pick": {
-      "settled": 392,
+      "settled": 395,
       "won": 90,
-      "pl": 0.03,
-      "roi": 0
+      "pl": -2.97,
+      "roi": -0.8
     },
     "favourite": {
-      "settled": 393,
+      "settled": 395,
       "won": 145,
-      "pl": 19.39,
-      "roi": 4.9
+      "pl": 17.39,
+      "roi": 4.4
     },
     "agree": {
-      "settled": 97,
+      "settled": 99,
       "won": 48,
-      "pl": 12.63,
-      "roi": 13
+      "pl": 10.63,
+      "roi": 10.7
     },
     "disagree": {
-      "settled": 295,
+      "settled": 296,
       "won": 42,
-      "pl": -12.6,
-      "roi": -4.3
+      "pl": -13.6,
+      "roi": -4.6
     }
   },
   "lastBackfill": 1792587691081

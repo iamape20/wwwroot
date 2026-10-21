@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T13:01:26.975Z",
+  "generatedAt": "2026-10-21T13:20:59.904Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 102/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 104/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Navan",
-      "off": "14:07",
-      "status": "BET",
-      "horse": "AEDHMAR",
-      "price": "1/1"
-    },
-    {
       "course": "Newmarket",
       "off": "14:25",
-      "status": "POSSIBLE",
-      "revealAt": "14:10"
+      "status": "BET",
+      "horse": "ALTIUS",
+      "price": "8/11"
     },
     {
       "course": "Newmarket",
@@ -45,14 +39,30 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-21",
+      "course": "Navan",
+      "off": "14:07",
+      "horse": "AEDHMAR",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-21",
       "course": "Newmarket",
       "off": "13:50",
-      "horse": "GRINANBEARIT"
-    }
-  ],
-  "recent": [
+      "horse": "GRINANBEARIT",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-21",
       "course": "Navan",
@@ -195,32 +205,10 @@
       "bsp": 1.97,
       "pl": 0.921,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Market Rasen",
-      "off": "17:05",
-      "horse": "LAST OF MY KIND",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Newton Abbot",
-      "off": "16:43",
-      "horse": "HAVANOTHERGUINNESS",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T13:01:26.778Z",
+    "updatedAt": "2026-10-21T13:20:59.758Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -243,10 +231,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 102,
+      "bets": 104,
       "won": 52,
-      "pl": -9.66,
-      "roi": -9.5,
+      "pl": -11.66,
+      "roi": -11.2,
       "provisional": 0
     },
     "live": {

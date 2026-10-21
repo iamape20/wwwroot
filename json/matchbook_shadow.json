@@ -5139,27 +5139,27 @@
       "marketVolume": 55
     },
     "lastBeforeOff": {
-      "at": "2026-10-21T13:01:30.305Z",
+      "at": "2026-10-21T13:21:02.249Z",
       "eventId": 34644854286802080,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.68,
-      "available": 7.41,
+      "bestBack": 1.69,
+      "available": 1.07,
       "depth": [
         [
+          1.69,
+          1.07
+        ],
+        [
           1.68,
-          7.41
+          30.94
         ],
         [
           1.67,
-          33.64
-        ],
-        [
-          1.66,
-          241.96
+          41.31
         ]
       ],
-      "marketVolume": 61026
+      "marketVolume": 62024
     }
   },
   "BET|2026-10-21|Navan|12:02|MISSMONAKEEBA": {
@@ -5322,6 +5322,60 @@
         ]
       ],
       "marketVolume": 78711
+    }
+  },
+  "BET|2026-10-21|Newmarket|13:25|ALTIUS": {
+    "type": "BET",
+    "date": "2026-10-21",
+    "course": "Newmarket",
+    "time": "13:25",
+    "horse": "ALTIUS",
+    "betId": "2026-10-21|Newmarket|13:25",
+    "atReveal": {
+      "at": "2026-10-21T13:11:02.963Z",
+      "eventId": 34644854285901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.83,
+      "available": 213.68,
+      "depth": [
+        [
+          1.83,
+          213.68
+        ],
+        [
+          1.82,
+          149.89
+        ],
+        [
+          1.81,
+          361.28
+        ]
+      ],
+      "marketVolume": 115773
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-21T13:21:02.246Z",
+      "eventId": 34644854285901080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.74,
+      "available": 111.31,
+      "depth": [
+        [
+          1.74,
+          111.31
+        ],
+        [
+          1.73,
+          709.41
+        ],
+        [
+          1.72,
+          1464.73
+        ]
+      ],
+      "marketVolume": 171187
     }
   }
 }
