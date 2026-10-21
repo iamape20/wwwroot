@@ -11711,25 +11711,52 @@
       "fav": {
         "horse": "LADY MARIKO",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T18:50:29.866Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-21|Kempton|19:30",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "19:30",
+      "horse": "DARK MANDATE",
+      "price": "7/2",
+      "runners": 10,
+      "liveHorse": "DARK MANDATE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DARK MANDATE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T19:20:19.779Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 427,
+    "recorded": 428,
     "pick": {
-      "settled": 415,
+      "settled": 416,
       "won": 90,
-      "pl": -22.97,
-      "roi": -5.5
+      "pl": -23.97,
+      "roi": -5.8
     },
     "favourite": {
-      "settled": 414,
+      "settled": 415,
       "won": 145,
-      "pl": -1.61,
-      "roi": -0.4
+      "pl": -2.61,
+      "roi": -0.6
     },
     "agree": {
       "settled": 106,
@@ -11738,11 +11765,11 @@
       "roi": 3.4
     },
     "disagree": {
-      "settled": 309,
+      "settled": 310,
       "won": 42,
-      "pl": -26.6,
-      "roi": -8.6
+      "pl": -27.6,
+      "roi": -8.9
     }
   },
-  "lastBackfill": 1792599026405
+  "lastBackfill": 1792610419793
 }
