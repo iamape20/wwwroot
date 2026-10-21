@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:20:59.904Z",
+  "generatedAt": "2026-10-21T13:30:49.143Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 104/120 bets settled before the verdict.",
   "rules": [
@@ -13,13 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Newmarket",
-      "off": "14:25",
-      "status": "BET",
-      "horse": "ALTIUS",
-      "price": "8/11"
-    },
     {
       "course": "Newmarket",
       "off": "15:00",
@@ -39,7 +32,13 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Newmarket",
+      "off": "14:25",
+      "horse": "ALTIUS"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-21",
@@ -208,7 +207,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T13:20:59.758Z",
+    "updatedAt": "2026-10-21T13:30:49.067Z",
     "claude": {
       "races": 38,
       "won": 7,

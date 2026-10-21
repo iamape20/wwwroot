@@ -10989,10 +10989,18 @@
       "fav": {
         "horse": "MAXI TWIST",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:01:31.077Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Newmarket|13:25",
@@ -11031,21 +11039,40 @@
       },
       "recordedAt": "2026-10-21T13:21:02.807Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|13:42",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "13:42",
+      "horse": "DREAMINTHEJUNGLE",
+      "price": "9/4",
+      "runners": 10,
+      "liveHorse": "GRANDE CUVEE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GRANDE CUVEE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:30:51.114Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 401,
+    "recorded": 402,
     "pick": {
-      "settled": 395,
+      "settled": 396,
       "won": 90,
-      "pl": -2.97,
-      "roi": -0.8
+      "pl": -3.97,
+      "roi": -1
     },
     "favourite": {
-      "settled": 395,
+      "settled": 396,
       "won": 145,
-      "pl": 17.39,
-      "roi": 4.4
+      "pl": 16.39,
+      "roi": 4.1
     },
     "agree": {
       "settled": 99,
@@ -11054,10 +11081,10 @@
       "roi": 10.7
     },
     "disagree": {
-      "settled": 296,
+      "settled": 297,
       "won": 42,
-      "pl": -13.6,
-      "roi": -4.6
+      "pl": -14.6,
+      "roi": -4.9
     }
   },
   "lastBackfill": 1792587691081
