@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T12:41:03.153Z",
+  "generatedAt": "2026-10-21T13:01:26.975Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 102/120 bets settled before the verdict.",
   "rules": [
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Newmarket",
-      "off": "13:50",
-      "status": "BET",
-      "horse": "GRINANBEARIT",
-      "price": "4/7"
-    },
-    {
       "course": "Navan",
       "off": "14:07",
-      "status": "POSSIBLE",
-      "revealAt": "13:52"
+      "status": "BET",
+      "horse": "AEDHMAR",
+      "price": "1/1"
     },
     {
       "course": "Newmarket",
@@ -51,7 +45,13 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Newmarket",
+      "off": "13:50",
+      "horse": "GRINANBEARIT"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-21",
@@ -220,7 +220,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T12:41:02.998Z",
+    "updatedAt": "2026-10-21T13:01:26.778Z",
     "claude": {
       "races": 38,
       "won": 7,

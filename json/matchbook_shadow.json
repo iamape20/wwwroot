@@ -5139,27 +5139,27 @@
       "marketVolume": 55
     },
     "lastBeforeOff": {
-      "at": "2026-10-21T12:41:05.647Z",
+      "at": "2026-10-21T13:01:30.305Z",
       "eventId": 34644854286802080,
       "found": true,
       "withdrawn": false,
       "bestBack": 1.68,
-      "available": 9.13,
+      "available": 7.41,
       "depth": [
         [
           1.68,
-          9.13
+          7.41
         ],
         [
           1.67,
-          16.37
+          33.64
         ],
         [
           1.66,
-          51.45
+          241.96
         ]
       ],
-      "marketVolume": 55846
+      "marketVolume": 61026
     }
   },
   "BET|2026-10-21|Navan|12:02|MISSMONAKEEBA": {
@@ -5268,6 +5268,60 @@
         ]
       ],
       "marketVolume": 84634
+    }
+  },
+  "BET|2026-10-21|Navan|13:07|AEDHMAR": {
+    "type": "BET",
+    "date": "2026-10-21",
+    "course": "Navan",
+    "time": "13:07",
+    "horse": "AEDHMAR",
+    "betId": "2026-10-21|Navan|13:07",
+    "atReveal": {
+      "at": "2026-10-21T13:01:30.301Z",
+      "eventId": 34644858311501080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.18,
+      "available": 109.94,
+      "depth": [
+        [
+          2.18,
+          109.94
+        ],
+        [
+          2.16,
+          288.89
+        ],
+        [
+          2.14,
+          234.72
+        ]
+      ],
+      "marketVolume": 78711
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-21T13:01:30.301Z",
+      "eventId": 34644858311501080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.18,
+      "available": 109.94,
+      "depth": [
+        [
+          2.18,
+          109.94
+        ],
+        [
+          2.16,
+          288.89
+        ],
+        [
+          2.14,
+          234.72
+        ]
+      ],
+      "marketVolume": 78711
     }
   }
 }

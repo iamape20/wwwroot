@@ -10858,10 +10858,16 @@
       "fav": {
         "horse": "COINCIDENTAL GLORY",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/2"
       },
       "recordedAt": "2026-10-21T12:21:09.787Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|12:40",
@@ -10877,10 +10883,18 @@
       "fav": {
         "horse": "SCORPIO RISING",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T12:31:11.476Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Newmarket|12:50",
@@ -10900,34 +10914,91 @@
       },
       "recordedAt": "2026-10-21T12:41:06.250Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Fontwell|12:57",
+      "date": "2026-10-21",
+      "course": "Fontwell",
+      "time": "12:57",
+      "horse": "BEN CRUACHAN",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "TREAD CAREFULLY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TREAD CAREFULLY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T12:51:07.468Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|13:07",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "13:07",
+      "horse": "AEDHMAR",
+      "price": "1/1",
+      "runners": 10,
+      "liveHorse": "AEDHMAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AEDHMAR",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:01:31.048Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|13:15",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "13:15",
+      "horse": "TIDE IS TURNING",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "MAXI TWIST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAXI TWIST",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:01:31.077Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 396,
+    "recorded": 399,
     "pick": {
-      "settled": 390,
+      "settled": 392,
       "won": 90,
-      "pl": 2.03,
-      "roi": 0.5
+      "pl": 0.03,
+      "roi": 0
     },
     "favourite": {
-      "settled": 392,
+      "settled": 393,
       "won": 145,
-      "pl": 20.39,
-      "roi": 5.2
+      "pl": 19.39,
+      "roi": 4.9
     },
     "agree": {
-      "settled": 96,
+      "settled": 97,
       "won": 48,
-      "pl": 13.63,
-      "roi": 14.2
+      "pl": 12.63,
+      "roi": 13
     },
     "disagree": {
-      "settled": 294,
+      "settled": 295,
       "won": 42,
-      "pl": -11.6,
-      "roi": -3.9
+      "pl": -12.6,
+      "roi": -4.3
     }
   },
-  "lastBackfill": 1792573297161
+  "lastBackfill": 1792587691081
 }
