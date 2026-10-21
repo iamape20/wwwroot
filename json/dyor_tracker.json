@@ -11097,10 +11097,16 @@
       "fav": {
         "horse": "BOOMBOX",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:40:53.242Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-10-21|Newmarket|14:00",
@@ -11116,10 +11122,16 @@
       "fav": {
         "horse": "FUTURE ROLE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:50:55.074Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-21|Fontwell|14:07",
@@ -11139,10 +11151,67 @@
       },
       "recordedAt": "2026-10-21T14:00:47.768Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|14:17",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "14:17",
+      "horse": "HAPPY HENRY",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "GERRIT'S GEM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GERRIT'S GEM",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T14:10:46.720Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|14:25",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "14:25",
+      "horse": "LUNE BRILLANTE",
+      "price": "15/8",
+      "runners": 10,
+      "liveHorse": "SAPPHOS WORD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAPPHOS WORD",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T14:10:46.734Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|14:35",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "14:35",
+      "horse": "LOTS ROAD",
+      "price": "6/5",
+      "runners": 6,
+      "liveHorse": "LOTS ROAD",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LOTS ROAD",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T14:20:44.673Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 405,
+    "recorded": 408,
     "pick": {
       "settled": 399,
       "won": 90,
@@ -11150,10 +11219,10 @@
       "roi": -1.7
     },
     "favourite": {
-      "settled": 399,
+      "settled": 401,
       "won": 145,
-      "pl": 13.39,
-      "roi": 3.4
+      "pl": 11.39,
+      "roi": 2.8
     },
     "agree": {
       "settled": 100,

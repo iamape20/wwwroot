@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T14:00:45.823Z",
+  "generatedAt": "2026-10-21T14:20:42.743Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 105/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 106/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -26,14 +26,19 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-21",
       "course": "Newmarket",
       "off": "15:00",
-      "horse": "FUTURE ROLE"
-    }
-  ],
-  "recent": [
+      "horse": "FUTURE ROLE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-21",
       "course": "Newmarket",
@@ -187,21 +192,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-18",
-      "course": "Leopardstown",
-      "off": "14:12",
-      "horse": "SUNATIA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T14:00:45.721Z",
+    "updatedAt": "2026-10-21T14:20:42.655Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,10 +218,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 105,
+      "bets": 106,
       "won": 52,
-      "pl": -12.66,
-      "roi": -12.1,
+      "pl": -13.66,
+      "roi": -12.9,
       "provisional": 0
     },
     "live": {
