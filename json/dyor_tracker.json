@@ -10831,10 +10831,18 @@
       "fav": {
         "horse": "KELIJOE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T12:01:10.957Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|12:32",
@@ -10854,21 +10862,59 @@
       },
       "recordedAt": "2026-10-21T12:21:09.787Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|12:40",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "12:40",
+      "horse": "SCORPIO RISING",
+      "price": "13/8",
+      "runners": 6,
+      "liveHorse": "SCORPIO RISING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SCORPIO RISING",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T12:31:11.476Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|12:50",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "12:50",
+      "horse": "GRINANBEARIT",
+      "price": "4/7",
+      "runners": 8,
+      "liveHorse": "GRINANBEARIT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GRINANBEARIT",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T12:41:06.250Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 394,
+    "recorded": 396,
     "pick": {
-      "settled": 389,
+      "settled": 390,
       "won": 90,
-      "pl": 3.03,
-      "roi": 0.8
+      "pl": 2.03,
+      "roi": 0.5
     },
     "favourite": {
-      "settled": 391,
+      "settled": 392,
       "won": 145,
-      "pl": 21.39,
-      "roi": 5.5
+      "pl": 20.39,
+      "roi": 5.2
     },
     "agree": {
       "settled": 96,
@@ -10877,10 +10923,10 @@
       "roi": 14.2
     },
     "disagree": {
-      "settled": 293,
+      "settled": 294,
       "won": 42,
-      "pl": -10.6,
-      "roi": -3.6
+      "pl": -11.6,
+      "roi": -3.9
     }
   },
   "lastBackfill": 1792573297161
