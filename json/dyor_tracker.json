@@ -10804,10 +10804,18 @@
       "fav": {
         "horse": "MISS MONA KEEBA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T11:51:10.821Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|12:10",
@@ -10827,21 +10835,40 @@
       },
       "recordedAt": "2026-10-21T12:01:10.957Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|12:32",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "12:32",
+      "horse": "ALNOFOOR",
+      "price": "6/1",
+      "runners": 21,
+      "liveHorse": "COINCIDENTAL GLORY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COINCIDENTAL GLORY",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T12:21:09.787Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 393,
+    "recorded": 394,
     "pick": {
-      "settled": 388,
+      "settled": 389,
       "won": 90,
-      "pl": 4.03,
-      "roi": 1
+      "pl": 3.03,
+      "roi": 0.8
     },
     "favourite": {
-      "settled": 390,
+      "settled": 391,
       "won": 145,
-      "pl": 22.39,
-      "roi": 5.7
+      "pl": 21.39,
+      "roi": 5.5
     },
     "agree": {
       "settled": 96,
@@ -10850,10 +10877,10 @@
       "roi": 14.2
     },
     "disagree": {
-      "settled": 292,
+      "settled": 293,
       "won": 42,
-      "pl": -9.6,
-      "roi": -3.3
+      "pl": -10.6,
+      "roi": -3.6
     }
   },
   "lastBackfill": 1792573297161

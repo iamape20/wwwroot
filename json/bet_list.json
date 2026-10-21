@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T12:01:07.934Z",
+  "generatedAt": "2026-10-21T12:21:06.595Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 101/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 102/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,13 +13,6 @@
   ],
   "morningMissing": false,
   "today": [
-    {
-      "course": "Navan",
-      "off": "13:02",
-      "status": "BET",
-      "horse": "MISS MONA KEEBA",
-      "price": "10/11"
-    },
     {
       "course": "Newmarket",
       "off": "13:50",
@@ -59,6 +52,17 @@
   ],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-21",
+      "course": "Navan",
+      "off": "13:02",
+      "horse": "MISS MONA KEEBA",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-20",
       "course": "Newcastle",
@@ -212,21 +216,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Leopardstown",
-      "off": "16:15",
-      "horse": "TREAN",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T12:01:07.784Z",
+    "updatedAt": "2026-10-21T12:21:06.449Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -249,10 +242,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 101,
+      "bets": 102,
       "won": 52,
-      "pl": -8.66,
-      "roi": -8.6,
+      "pl": -9.66,
+      "roi": -9.5,
       "provisional": 0
     },
     "live": {
