@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T13:30:49.143Z",
+  "generatedAt": "2026-10-21T13:40:51.475Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 104/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 105/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -32,14 +32,19 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-21",
       "course": "Newmarket",
       "off": "14:25",
-      "horse": "ALTIUS"
-    }
-  ],
-  "recent": [
+      "horse": "ALTIUS",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-21",
       "course": "Navan",
@@ -193,21 +198,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-17",
-      "course": "Southwell",
-      "off": "18:30",
-      "horse": "FULLY STOCKED",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.97,
-      "pl": 0.921,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-21T13:30:49.067Z",
+    "updatedAt": "2026-10-21T13:40:51.374Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -230,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 104,
+      "bets": 105,
       "won": 52,
-      "pl": -11.66,
-      "roi": -11.2,
+      "pl": -12.66,
+      "roi": -12.1,
       "provisional": 0
     },
     "live": {
