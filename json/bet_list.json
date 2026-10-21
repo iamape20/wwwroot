@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T21:00:13.031Z",
+  "generatedAt": "2026-10-21T06:01:04.678Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 99/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,32 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Newmarket",
+      "off": "13:50",
+      "status": "POSSIBLE",
+      "revealAt": "13:35"
+    },
+    {
+      "course": "Newmarket",
+      "off": "14:25",
+      "status": "POSSIBLE",
+      "revealAt": "14:10"
+    },
+    {
+      "course": "Newmarket",
+      "off": "16:45",
+      "status": "POSSIBLE",
+      "revealAt": "16:30"
+    },
+    {
+      "course": "Kempton",
+      "off": "17:30",
+      "status": "POSSIBLE",
+      "revealAt": "17:15"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -182,7 +207,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-20T21:00:12.914Z",
+    "updatedAt": "2026-10-21T06:01:04.598Z",
     "claude": {
       "races": 38,
       "won": 7,
