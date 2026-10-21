@@ -11451,10 +11451,16 @@
       "fav": {
         "horse": "I LOVE YOU SIVOLA",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-21T15:40:35.605Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|16:04",
@@ -11470,10 +11476,16 @@
       "fav": {
         "horse": "JAZZY ROCK",
         "price": "5/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T15:50:33.619Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/1"
     },
     {
       "id": "2026-10-21|Kempton|15:58",
@@ -11489,10 +11501,18 @@
       "fav": {
         "horse": "WOOTTON KING",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "30/100",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T15:50:33.632Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "30/100",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|16:10",
@@ -11512,34 +11532,72 @@
       },
       "recordedAt": "2026-10-21T16:00:37.233Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|16:20",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "16:20",
+      "horse": "WEEKEND ROAR",
+      "price": "22/1",
+      "runners": 13,
+      "liveHorse": "CILICIAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CILICIAN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T16:10:26.392Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Kempton|16:30",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "16:30",
+      "horse": "DADDY STAR",
+      "price": "2/5",
+      "runners": 8,
+      "liveHorse": "DADDY STAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DADDY STAR",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T16:20:24.623Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 420,
+    "recorded": 422,
     "pick": {
-      "settled": 407,
+      "settled": 409,
       "won": 90,
-      "pl": -14.97,
-      "roi": -3.7
+      "pl": -16.97,
+      "roi": -4.1
     },
     "favourite": {
-      "settled": 407,
+      "settled": 409,
       "won": 145,
-      "pl": 5.39,
-      "roi": 1.3
+      "pl": 3.39,
+      "roi": 0.8
     },
     "agree": {
-      "settled": 104,
+      "settled": 105,
       "won": 48,
-      "pl": 5.63,
-      "roi": 5.4
+      "pl": 4.63,
+      "roi": 4.4
     },
     "disagree": {
-      "settled": 303,
+      "settled": 304,
       "won": 42,
-      "pl": -20.6,
-      "roi": -6.8
+      "pl": -21.6,
+      "roi": -7.1
     }
   },
-  "lastBackfill": 1792587691081
+  "lastBackfill": 1792599026405
 }
