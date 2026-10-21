@@ -11632,31 +11632,58 @@
       "fav": {
         "horse": "SAKOWIN",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T17:20:23.940Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-21|Kempton|18:00",
+      "date": "2026-10-21",
+      "course": "Kempton",
+      "time": "18:00",
+      "horse": "BRASIL POWER",
+      "price": "20/1",
+      "runners": 14,
+      "liveHorse": "LEVEL LOOK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LEVEL LOOK",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T17:50:27.076Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 424,
+    "recorded": 425,
     "pick": {
-      "settled": 412,
+      "settled": 413,
       "won": 90,
-      "pl": -19.97,
-      "roi": -4.8
+      "pl": -20.97,
+      "roi": -5.1
     },
     "favourite": {
-      "settled": 412,
+      "settled": 413,
       "won": 145,
-      "pl": 0.39,
-      "roi": 0.1
+      "pl": -0.61,
+      "roi": -0.1
     },
     "agree": {
-      "settled": 105,
+      "settled": 106,
       "won": 48,
-      "pl": 4.63,
-      "roi": 4.4
+      "pl": 3.63,
+      "roi": 3.4
     },
     "disagree": {
       "settled": 307,
