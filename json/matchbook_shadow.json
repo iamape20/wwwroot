@@ -5139,27 +5139,27 @@
       "marketVolume": 55
     },
     "lastBeforeOff": {
-      "at": "2026-10-21T13:40:52.896Z",
+      "at": "2026-10-21T14:00:47.422Z",
       "eventId": 34644854286802080,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.68,
-      "available": 8.03,
+      "bestBack": 1.69,
+      "available": 2.31,
       "depth": [
         [
+          1.69,
+          2.31
+        ],
+        [
           1.68,
-          8.03
+          54.38
         ],
         [
           1.67,
-          49.49
-        ],
-        [
-          1.66,
-          60.44
+          61.59
         ]
       ],
-      "marketVolume": 62065
+      "marketVolume": 62642
     }
   },
   "BET|2026-10-21|Navan|12:02|MISSMONAKEEBA": {
@@ -5376,6 +5376,60 @@
         ]
       ],
       "marketVolume": 171187
+    }
+  },
+  "BET|2026-10-21|Newmarket|14:00|FUTUREROLE": {
+    "type": "BET",
+    "date": "2026-10-21",
+    "course": "Newmarket",
+    "time": "14:00",
+    "horse": "FUTURE ROLE",
+    "betId": "2026-10-21|Newmarket|14:00",
+    "atReveal": {
+      "at": "2026-10-21T13:50:54.742Z",
+      "eventId": 34644854286102080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.88,
+      "available": 15.07,
+      "depth": [
+        [
+          2.88,
+          15.07
+        ],
+        [
+          2.86,
+          87.46
+        ],
+        [
+          2.84,
+          119.52
+        ]
+      ],
+      "marketVolume": 96978
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-21T13:50:54.742Z",
+      "eventId": 34644854286102080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.88,
+      "available": 15.07,
+      "depth": [
+        [
+          2.88,
+          15.07
+        ],
+        [
+          2.86,
+          87.46
+        ],
+        [
+          2.84,
+          119.52
+        ]
+      ],
+      "marketVolume": 96978
     }
   }
 }

@@ -11043,10 +11043,18 @@
       "fav": {
         "horse": "CHATTY GIRL",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:21:02.807Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|13:42",
@@ -11062,10 +11070,18 @@
       "fav": {
         "horse": "GRANDE CUVEE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T13:30:51.114Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|13:50",
@@ -11085,21 +11101,59 @@
       },
       "recordedAt": "2026-10-21T13:40:53.242Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|14:00",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "14:00",
+      "horse": "NIGHT OF GOLD",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "FUTURE ROLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FUTURE ROLE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T13:50:55.074Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Fontwell|14:07",
+      "date": "2026-10-21",
+      "course": "Fontwell",
+      "time": "14:07",
+      "horse": "INION TIOGAIR",
+      "price": "7/2",
+      "runners": 6,
+      "liveHorse": "DIAMOND WHITE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DIAMOND WHITE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T14:00:47.768Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 403,
+    "recorded": 405,
     "pick": {
-      "settled": 397,
+      "settled": 399,
       "won": 90,
-      "pl": -4.97,
-      "roi": -1.3
+      "pl": -6.97,
+      "roi": -1.7
     },
     "favourite": {
-      "settled": 397,
+      "settled": 399,
       "won": 145,
-      "pl": 15.39,
-      "roi": 3.9
+      "pl": 13.39,
+      "roi": 3.4
     },
     "agree": {
       "settled": 100,
@@ -11108,10 +11162,10 @@
       "roi": 9.6
     },
     "disagree": {
-      "settled": 297,
+      "settled": 299,
       "won": 42,
-      "pl": -14.6,
-      "roi": -4.9
+      "pl": -16.6,
+      "roi": -5.6
     }
   },
   "lastBackfill": 1792587691081
