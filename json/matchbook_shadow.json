@@ -5139,27 +5139,81 @@
       "marketVolume": 55
     },
     "lastBeforeOff": {
-      "at": "2026-10-21T11:41:11.266Z",
+      "at": "2026-10-21T12:01:10.441Z",
       "eventId": 34644854286802080,
       "found": true,
       "withdrawn": false,
       "bestBack": 1.7,
-      "available": 23.6,
+      "available": 8.67,
       "depth": [
         [
           1.7,
-          23.6
+          8.67
         ],
         [
           1.69,
-          1.1
+          5.11
         ],
         [
           1.68,
-          18.96
+          11.23
         ]
       ],
-      "marketVolume": 46900
+      "marketVolume": 48262
+    }
+  },
+  "BET|2026-10-21|Navan|12:02|MISSMONAKEEBA": {
+    "type": "BET",
+    "date": "2026-10-21",
+    "course": "Navan",
+    "time": "12:02",
+    "horse": "MISS MONA KEEBA",
+    "betId": "2026-10-21|Navan|12:02",
+    "atReveal": {
+      "at": "2026-10-21T11:51:10.258Z",
+      "eventId": 34644858310200080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.06,
+      "available": 61.31,
+      "depth": [
+        [
+          2.06,
+          61.31
+        ],
+        [
+          2.04,
+          99.06
+        ],
+        [
+          2.02,
+          155.42
+        ]
+      ],
+      "marketVolume": 51758
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-21T12:01:10.437Z",
+      "eventId": 34644858310200080,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 20.6,
+      "depth": [
+        [
+          2.12,
+          20.6
+        ],
+        [
+          2.1,
+          85.61
+        ],
+        [
+          2.08,
+          128.06
+        ]
+      ],
+      "marketVolume": 89736
     }
   }
 }
