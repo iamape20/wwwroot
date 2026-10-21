@@ -11224,10 +11224,14 @@
       "fav": {
         "horse": "LOTS ROAD",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-10-21T14:20:44.673Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/5"
     },
     {
       "id": "2026-10-21|Fontwell|14:42",
@@ -11243,10 +11247,16 @@
       "fav": {
         "horse": "GRAND CONQUEROR",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-21T14:30:51.839Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Navan|14:52",
@@ -11266,15 +11276,53 @@
       },
       "recordedAt": "2026-10-21T14:40:49.390Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|15:00",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "15:00",
+      "horse": "LEAUMEC DE MEE",
+      "price": "9/4",
+      "runners": 7,
+      "liveHorse": "LEAUMEC DE MEE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LEAUMEC DE MEE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T14:50:47.533Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Newmarket|15:10",
+      "date": "2026-10-21",
+      "course": "Newmarket",
+      "time": "15:10",
+      "horse": "LUNA CELESTE",
+      "price": "2/1",
+      "runners": 5,
+      "liveHorse": "LUNA CELESTE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LUNA CELESTE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:00:57.983Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 410,
+    "recorded": 412,
     "pick": {
-      "settled": 401,
+      "settled": 402,
       "won": 90,
-      "pl": -8.97,
-      "roi": -2.2
+      "pl": -9.97,
+      "roi": -2.5
     },
     "favourite": {
       "settled": 403,
@@ -11289,10 +11337,10 @@
       "roi": 9.6
     },
     "disagree": {
-      "settled": 301,
+      "settled": 302,
       "won": 42,
-      "pl": -18.6,
-      "roi": -6.2
+      "pl": -19.6,
+      "roi": -6.5
     }
   },
   "lastBackfill": 1792587691081
