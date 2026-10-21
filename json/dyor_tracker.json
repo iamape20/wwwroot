@@ -11272,10 +11272,18 @@
       "fav": {
         "horse": "NAUTIC STAR",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-21T14:40:49.390Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-21|Worcester|15:00",
@@ -11291,10 +11299,14 @@
       "fav": {
         "horse": "LEAUMEC DE MEE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-21T14:50:47.533Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-21|Newmarket|15:10",
@@ -11314,27 +11326,84 @@
       },
       "recordedAt": "2026-10-21T15:00:57.983Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-21|Fontwell|15:17",
+      "date": "2026-10-21",
+      "course": "Fontwell",
+      "time": "15:17",
+      "horse": "DARING PLAN",
+      "price": "11/8",
+      "runners": 8,
+      "liveHorse": "DARING PLAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DARING PLAN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:10:37.332Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Navan|15:27",
+      "date": "2026-10-21",
+      "course": "Navan",
+      "time": "15:27",
+      "horse": "POSSUM",
+      "price": "5/2",
+      "runners": 12,
+      "liveHorse": "TEOFIL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TEOFIL",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:20:40.066Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-21|Worcester|15:35",
+      "date": "2026-10-21",
+      "course": "Worcester",
+      "time": "15:35",
+      "horse": "ROE AND CO",
+      "price": "11/4",
+      "runners": 10,
+      "liveHorse": "ROE AND CO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ROE AND CO",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-21T15:20:40.079Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 412,
+    "recorded": 415,
     "pick": {
-      "settled": 402,
+      "settled": 403,
       "won": 90,
-      "pl": -9.97,
-      "roi": -2.5
+      "pl": -10.97,
+      "roi": -2.7
     },
     "favourite": {
-      "settled": 403,
+      "settled": 404,
       "won": 145,
-      "pl": 9.39,
-      "roi": 2.3
+      "pl": 8.39,
+      "roi": 2.1
     },
     "agree": {
-      "settled": 100,
+      "settled": 101,
       "won": 48,
-      "pl": 9.63,
-      "roi": 9.6
+      "pl": 8.63,
+      "roi": 8.5
     },
     "disagree": {
       "settled": 302,
