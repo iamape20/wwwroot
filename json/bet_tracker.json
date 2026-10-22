@@ -1805,8 +1805,9 @@
       "revealedAt": "2026-10-21T15:30:33.496Z",
       "result": "won",
       "isp": "5/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.00554324,
+      "pl": 0.955,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-21|Kempton|16:30",
@@ -1821,12 +1822,13 @@
       "revealedAt": "2026-10-21T16:20:22.625Z",
       "result": "won",
       "isp": "8/15",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.81,
+      "pl": 0.769,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": null,
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792648871309
+  "lastBackfill": 1792659679960
 }

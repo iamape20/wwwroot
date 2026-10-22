@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-22T08:41:11.057Z",
+  "generatedAt": "2026-10-22T09:01:18.901Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 106/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 108/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -59,9 +59,9 @@
       "horse": "DADDY STAR",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.81,
+      "pl": 0.769,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-21",
@@ -70,9 +70,9 @@
       "horse": "MUQARRABIN",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.00554324,
+      "pl": 0.955,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-21",
@@ -219,7 +219,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-22T08:41:10.904Z",
+    "updatedAt": "2026-10-22T09:01:18.727Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -244,9 +244,9 @@
     "paper": {
       "bets": 108,
       "won": 54,
-      "pl": -12.29,
-      "roi": -11.4,
-      "provisional": 2
+      "pl": -11.93,
+      "roi": -11,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
