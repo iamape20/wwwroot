@@ -12186,10 +12186,18 @@
       "fav": {
         "horse": "U S MARSHALL",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:51:00.815Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|14:11",
@@ -12228,21 +12236,40 @@
       },
       "recordedAt": "2026-10-22T14:10:51.413Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|14:30",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "14:30",
+      "horse": "ARANTES NASCIMENTO",
+      "price": "11/2",
+      "runners": 12,
+      "liveHorse": "ICE CUBE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ICE CUBE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:20:51.738Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 445,
+    "recorded": 446,
     "pick": {
-      "settled": 436,
+      "settled": 437,
       "won": 98,
-      "pl": -13.05,
-      "roi": -3
+      "pl": -14.05,
+      "roi": -3.2
     },
     "favourite": {
-      "settled": 437,
+      "settled": 438,
       "won": 156,
-      "pl": 10.2,
-      "roi": 2.3
+      "pl": 9.2,
+      "roi": 2.1
     },
     "agree": {
       "settled": 113,
@@ -12251,10 +12278,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 323,
+      "settled": 324,
       "won": 46,
-      "pl": -19.34,
-      "roi": -6
+      "pl": -20.34,
+      "roi": -6.3
     }
   },
   "lastBackfill": 1792671672786
