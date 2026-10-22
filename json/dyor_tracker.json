@@ -12760,19 +12760,44 @@
       "fav": {
         "horse": "SILESIA",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-10-22T17:50:23.364Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-22|Southwell|18:30",
+      "date": "2026-10-22",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "FOR EVER HOPEFULL",
+      "price": "22/1",
+      "runners": 8,
+      "liveHorse": "POINTED",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POINTED",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T18:20:21.718Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 465,
+    "recorded": 466,
     "pick": {
-      "settled": 454,
+      "settled": 455,
       "won": 98,
-      "pl": -31.05,
-      "roi": -6.8
+      "pl": -32.05,
+      "roi": -7
     },
     "favourite": {
       "settled": 452,
@@ -12787,10 +12812,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 340,
+      "settled": 341,
       "won": 46,
-      "pl": -36.34,
-      "roi": -10.7
+      "pl": -37.34,
+      "roi": -10.9
     }
   },
   "lastBackfill": 1792683036375
