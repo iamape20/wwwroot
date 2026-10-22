@@ -12028,10 +12028,18 @@
       "fav": {
         "horse": "KELLY'S COSMOS",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:01:24.345Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Newmarket|13:20",
@@ -12047,10 +12055,18 @@
       "fav": {
         "horse": "KAMAWAY",
         "price": "5/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:11:01.898Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|13:36",
@@ -12089,21 +12105,59 @@
       },
       "recordedAt": "2026-10-22T13:21:05.585Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|13:46",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "13:46",
+      "horse": "WEAPONIZED",
+      "price": "11/1",
+      "runners": 13,
+      "liveHorse": "RED ACRES GEORGIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RED ACRES GEORGIE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:31:00.202Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|13:55",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "13:55",
+      "horse": "PHANTOM WATCH",
+      "price": "11/1",
+      "runners": 9,
+      "liveHorse": "GREAT BLASKET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GREAT BLASKET",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:40:52.497Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 440,
+    "recorded": 442,
     "pick": {
-      "settled": 431,
+      "settled": 433,
       "won": 98,
-      "pl": -8.05,
-      "roi": -1.9
+      "pl": -10.05,
+      "roi": -2.3
     },
     "favourite": {
-      "settled": 432,
+      "settled": 434,
       "won": 156,
-      "pl": 15.2,
-      "roi": 3.5
+      "pl": 13.2,
+      "roi": 3
     },
     "agree": {
       "settled": 113,
@@ -12112,10 +12166,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 318,
+      "settled": 320,
       "won": 46,
-      "pl": -14.34,
-      "roi": -4.5
+      "pl": -16.34,
+      "roi": -5.1
     }
   },
   "lastBackfill": 1792671672786
