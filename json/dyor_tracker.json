@@ -11822,10 +11822,14 @@
       "fav": {
         "horse": "FAIRY PARK",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/7"
       },
       "recordedAt": "2026-10-22T11:41:20.684Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/7"
     },
     {
       "id": "2026-10-22|Newmarket|12:10",
@@ -11845,10 +11849,67 @@
       },
       "recordedAt": "2026-10-22T12:01:41.284Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|12:26",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "12:26",
+      "horse": "QUICKKICK",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "MOURNE CRYSTAL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MOURNE CRYSTAL",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:11:17.936Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|12:17",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "12:17",
+      "horse": "DILRISK",
+      "price": "9/2",
+      "runners": 13,
+      "liveHorse": "PUSH THE LIMIT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PUSH THE LIMIT",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:11:17.959Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|12:35",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "12:35",
+      "horse": "WORLD AS ONE",
+      "price": "2/1",
+      "runners": 12,
+      "liveHorse": "DETROIT MAVERICK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DETROIT MAVERICK",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:21:12.763Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 430,
+    "recorded": 433,
     "pick": {
       "settled": 425,
       "won": 98,
@@ -11874,5 +11935,5 @@
       "roi": -3.3
     }
   },
-  "lastBackfill": 1792659688881
+  "lastBackfill": 1792671672786
 }

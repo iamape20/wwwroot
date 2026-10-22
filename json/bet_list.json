@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T12:01:38.476Z",
+  "generatedAt": "2026-10-22T12:21:07.637Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 108/120 bets settled before the verdict.",
   "rules": [
@@ -14,16 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Carlisle",
-      "off": "13:17",
-      "status": "POSSIBLE",
-      "revealAt": "13:02"
-    },
-    {
       "course": "Ffos Las",
       "off": "13:26",
-      "status": "POSSIBLE",
-      "revealAt": "13:11"
+      "status": "BET",
+      "horse": "MOURNE CRYSTAL",
+      "price": "4/5"
     },
     {
       "course": "Carlisle",
@@ -40,12 +35,23 @@
   ],
   "awaitingResult": [
     {
-      "course": "Ffos Las",
-      "off": "12:51",
-      "horse": "FAIRY PARK"
+      "course": "Carlisle",
+      "off": "13:17",
+      "horse": "PUSH THE LIMIT"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "off": "12:51",
+      "horse": "FAIRY PARK",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-21",
       "course": "Kempton",
@@ -199,21 +205,10 @@
       "bsp": 1.75,
       "pl": 0.712,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-19",
-      "course": "Pontefract",
-      "off": "13:53",
-      "horse": "GREEN STAR",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-22T12:01:38.345Z",
+    "updatedAt": "2026-10-22T12:21:07.541Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,11 +231,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 108,
-      "won": 54,
-      "pl": -11.93,
-      "roi": -11,
-      "provisional": 0
+      "bets": 109,
+      "won": 55,
+      "pl": -11.65,
+      "roi": -10.7,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
