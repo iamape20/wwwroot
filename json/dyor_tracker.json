@@ -11924,10 +11924,18 @@
       "fav": {
         "horse": "DETROIT MAVERICK",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T12:21:12.763Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Newmarket|12:45",
@@ -11966,21 +11974,40 @@
       },
       "recordedAt": "2026-10-22T12:41:10.949Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|13:01",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "13:01",
+      "horse": "THE WALK",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "THE WALK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THE WALK",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:51:20.988Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 435,
+    "recorded": 436,
     "pick": {
-      "settled": 428,
+      "settled": 429,
       "won": 98,
-      "pl": -5.05,
-      "roi": -1.2
+      "pl": -6.05,
+      "roi": -1.4
     },
     "favourite": {
-      "settled": 429,
+      "settled": 430,
       "won": 156,
-      "pl": 18.2,
-      "roi": 4.2
+      "pl": 17.2,
+      "roi": 4
     },
     "agree": {
       "settled": 111,
@@ -11989,10 +12016,10 @@
       "roi": 7.5
     },
     "disagree": {
-      "settled": 317,
+      "settled": 318,
       "won": 46,
-      "pl": -13.34,
-      "roi": -4.2
+      "pl": -14.34,
+      "roi": -4.5
     }
   },
   "lastBackfill": 1792671672786
