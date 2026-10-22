@@ -12213,10 +12213,18 @@
       "fav": {
         "horse": "WILLOW TIDE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:00:53.811Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Clonmel|14:21",
@@ -12232,10 +12240,18 @@
       "fav": {
         "horse": "PRIVATE POLICY",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:10:51.413Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Newmarket|14:30",
@@ -12255,21 +12271,59 @@
       },
       "recordedAt": "2026-10-22T14:20:51.738Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|14:37",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "14:37",
+      "horse": "DROP KICK",
+      "price": "5/1",
+      "runners": 13,
+      "liveHorse": "GETAWAY MASTER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GETAWAY MASTER",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:30:51.845Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|14:46",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "14:46",
+      "horse": "LEGENDARY LUKE",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "BOULTYDOOLIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BOULTYDOOLIN",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:40:44.531Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 446,
+    "recorded": 448,
     "pick": {
-      "settled": 437,
+      "settled": 439,
       "won": 98,
-      "pl": -14.05,
-      "roi": -3.2
+      "pl": -16.05,
+      "roi": -3.7
     },
     "favourite": {
-      "settled": 438,
+      "settled": 440,
       "won": 156,
-      "pl": 9.2,
-      "roi": 2.1
+      "pl": 7.2,
+      "roi": 1.6
     },
     "agree": {
       "settled": 113,
@@ -12278,10 +12332,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 324,
+      "settled": 326,
       "won": 46,
-      "pl": -20.34,
-      "roi": -6.3
+      "pl": -22.34,
+      "roi": -6.9
     }
   },
   "lastBackfill": 1792671672786
