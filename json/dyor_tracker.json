@@ -12681,25 +12681,52 @@
       "fav": {
         "horse": "CELESTIAS COMET",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T16:20:32.767Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-22|Southwell|17:00",
+      "date": "2026-10-22",
+      "course": "Southwell",
+      "time": "17:00",
+      "horse": "IMOLA",
+      "price": "18/1",
+      "runners": 10,
+      "liveHorse": "BOFA BEACH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BOFA BEACH",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T16:50:20.953Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 462,
+    "recorded": 463,
     "pick": {
-      "settled": 452,
+      "settled": 453,
       "won": 98,
-      "pl": -29.05,
-      "roi": -6.4
+      "pl": -30.05,
+      "roi": -6.6
     },
     "favourite": {
-      "settled": 450,
+      "settled": 451,
       "won": 156,
-      "pl": -2.8,
-      "roi": -0.6
+      "pl": -3.8,
+      "roi": -0.8
     },
     "agree": {
       "settled": 114,
@@ -12708,10 +12735,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 338,
+      "settled": 339,
       "won": 46,
-      "pl": -34.34,
-      "roi": -10.2
+      "pl": -35.34,
+      "roi": -10.4
     }
   },
   "lastBackfill": 1792683036375
