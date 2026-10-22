@@ -12321,10 +12321,18 @@
       "fav": {
         "horse": "BOULTYDOOLIN",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:40:44.531Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Clonmel|14:56",
@@ -12363,21 +12371,40 @@
       },
       "recordedAt": "2026-10-22T14:50:41.938Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|15:12",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "15:12",
+      "horse": "MIRABAD",
+      "price": "15/2",
+      "runners": 8,
+      "liveHorse": "WILFUL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WILFUL",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:00:52.480Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 450,
+    "recorded": 451,
     "pick": {
-      "settled": 441,
+      "settled": 442,
       "won": 98,
-      "pl": -18.05,
-      "roi": -4.1
+      "pl": -19.05,
+      "roi": -4.3
     },
     "favourite": {
-      "settled": 442,
+      "settled": 443,
       "won": 156,
-      "pl": 5.2,
-      "roi": 1.2
+      "pl": 4.2,
+      "roi": 0.9
     },
     "agree": {
       "settled": 113,
@@ -12386,10 +12413,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 328,
+      "settled": 329,
       "won": 46,
-      "pl": -24.34,
-      "roi": -7.4
+      "pl": -25.34,
+      "roi": -7.7
     }
   },
   "lastBackfill": 1792671672786
