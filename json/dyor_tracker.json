@@ -12450,10 +12450,18 @@
       "fav": {
         "horse": "CHARLIE LUCIANO",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T15:20:43.666Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Southwell|15:26",
@@ -12469,10 +12477,14 @@
       "fav": {
         "horse": "MIMIME",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-22T15:20:43.684Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-10-22|Newmarket|15:40",
@@ -12488,10 +12500,16 @@
       "fav": {
         "horse": "IRISH NECTAR",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T15:30:36.359Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
     },
     {
       "id": "2026-10-22|Carlisle|15:45",
@@ -12507,10 +12525,16 @@
       "fav": {
         "horse": "DEARKEITHANDKATY",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-22T15:30:36.373Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|15:53",
@@ -12530,21 +12554,78 @@
       },
       "recordedAt": "2026-10-22T15:40:31.560Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|16:05",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "16:05",
+      "horse": "MOUNT SHENSHAN",
+      "price": "9/4",
+      "runners": 15,
+      "liveHorse": "MOUNT SHENSHAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MOUNT SHENSHAN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:52:09.742Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Southwell|16:00",
+      "date": "2026-10-22",
+      "course": "Southwell",
+      "time": "16:00",
+      "horse": "BLUE TULIP",
+      "price": "10/3",
+      "runners": 12,
+      "liveHorse": "BLUE TULIP",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BLUE TULIP",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:52:09.758Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|16:15",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "16:15",
+      "horse": "ELOQUENCIA",
+      "price": "5/1",
+      "runners": 13,
+      "liveHorse": "ATMOSPHERE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ATMOSPHERE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T16:00:38.110Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 457,
+    "recorded": 460,
     "pick": {
-      "settled": 446,
+      "settled": 448,
       "won": 98,
-      "pl": -23.05,
-      "roi": -5.2
+      "pl": -25.05,
+      "roi": -5.6
     },
     "favourite": {
-      "settled": 444,
+      "settled": 446,
       "won": 156,
-      "pl": 3.2,
-      "roi": 0.7
+      "pl": 1.2,
+      "roi": 0.3
     },
     "agree": {
       "settled": 113,
@@ -12553,10 +12634,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 333,
+      "settled": 335,
       "won": 46,
-      "pl": -29.34,
-      "roi": -8.8
+      "pl": -31.34,
+      "roi": -9.4
     }
   },
   "lastBackfill": 1792683036375
