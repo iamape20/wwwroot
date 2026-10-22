@@ -12267,10 +12267,18 @@
       "fav": {
         "horse": "ICE CUBE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:20:51.738Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|14:37",
@@ -12286,10 +12294,18 @@
       "fav": {
         "horse": "GETAWAY MASTER",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:30:51.845Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|14:46",
@@ -12309,21 +12325,59 @@
       },
       "recordedAt": "2026-10-22T14:40:44.531Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|14:56",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "14:56",
+      "horse": "AD CAELUM",
+      "price": "13/2",
+      "runners": 5,
+      "liveHorse": "LA NOTE VERTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LA NOTE VERTE",
+        "price": "1/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:50:41.923Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|15:05",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "15:05",
+      "horse": "SIERRA SANDS",
+      "price": "8/1",
+      "runners": 12,
+      "liveHorse": "YES I'M MALI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "YES I'M MALI",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:50:41.938Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 448,
+    "recorded": 450,
     "pick": {
-      "settled": 439,
+      "settled": 441,
       "won": 98,
-      "pl": -16.05,
-      "roi": -3.7
+      "pl": -18.05,
+      "roi": -4.1
     },
     "favourite": {
-      "settled": 440,
+      "settled": 442,
       "won": 156,
-      "pl": 7.2,
-      "roi": 1.6
+      "pl": 5.2,
+      "roi": 1.2
     },
     "agree": {
       "settled": 113,
@@ -12332,10 +12386,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 326,
+      "settled": 328,
       "won": 46,
-      "pl": -22.34,
-      "roi": -6.9
+      "pl": -24.34,
+      "roi": -7.4
     }
   },
   "lastBackfill": 1792671672786
