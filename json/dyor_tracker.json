@@ -11845,10 +11845,16 @@
       "fav": {
         "horse": "SYDNEY CARTON",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-22T12:01:41.284Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|12:26",
@@ -11864,10 +11870,18 @@
       "fav": {
         "horse": "MOURNE CRYSTAL",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T12:11:17.936Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|12:17",
@@ -11883,10 +11897,18 @@
       "fav": {
         "horse": "PUSH THE LIMIT",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T12:11:17.959Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Clonmel|12:35",
@@ -11906,21 +11928,59 @@
       },
       "recordedAt": "2026-10-22T12:21:12.763Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|12:45",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "12:45",
+      "horse": "HAPPY LOVE",
+      "price": "7/4",
+      "runners": 9,
+      "liveHorse": "HAPPY LOVE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HAPPY LOVE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:31:13.109Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|12:52",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "12:52",
+      "horse": "CABALLO DE GUERRA",
+      "price": "2/1",
+      "runners": 7,
+      "liveHorse": "CABALLO DE GUERRA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CABALLO DE GUERRA",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T12:41:10.949Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 433,
+    "recorded": 435,
     "pick": {
-      "settled": 425,
+      "settled": 428,
       "won": 98,
-      "pl": -2.05,
-      "roi": -0.5
+      "pl": -5.05,
+      "roi": -1.2
     },
     "favourite": {
-      "settled": 427,
+      "settled": 429,
       "won": 156,
-      "pl": 20.2,
-      "roi": 4.7
+      "pl": 18.2,
+      "roi": 4.2
     },
     "agree": {
       "settled": 111,
@@ -11929,10 +11989,10 @@
       "roi": 7.5
     },
     "disagree": {
-      "settled": 314,
+      "settled": 317,
       "won": 46,
-      "pl": -10.34,
-      "roi": -3.3
+      "pl": -13.34,
+      "roi": -4.2
     }
   },
   "lastBackfill": 1792671672786
