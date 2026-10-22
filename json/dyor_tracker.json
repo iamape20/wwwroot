@@ -12132,10 +12132,18 @@
       "fav": {
         "horse": "RED ACRES GEORGIE",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:31:00.202Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Newmarket|13:55",
@@ -12151,10 +12159,18 @@
       "fav": {
         "horse": "GREAT BLASKET",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:40:52.497Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|14:02",
@@ -12193,21 +12209,40 @@
       },
       "recordedAt": "2026-10-22T14:00:53.811Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|14:21",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "14:21",
+      "horse": "BOBBY KIROVA",
+      "price": "4/1",
+      "runners": 13,
+      "liveHorse": "PRIVATE POLICY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRIVATE POLICY",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:10:51.413Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 444,
+    "recorded": 445,
     "pick": {
-      "settled": 434,
+      "settled": 436,
       "won": 98,
-      "pl": -11.05,
-      "roi": -2.5
+      "pl": -13.05,
+      "roi": -3
     },
     "favourite": {
-      "settled": 435,
+      "settled": 437,
       "won": 156,
-      "pl": 12.2,
-      "roi": 2.8
+      "pl": 10.2,
+      "roi": 2.3
     },
     "agree": {
       "settled": 113,
@@ -12216,10 +12251,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 321,
+      "settled": 323,
       "won": 46,
-      "pl": -17.34,
-      "roi": -5.4
+      "pl": -19.34,
+      "roi": -6
     }
   },
   "lastBackfill": 1792671672786
