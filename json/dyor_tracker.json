@@ -12101,10 +12101,14 @@
       "fav": {
         "horse": "BREIZH RIVER",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-22T13:21:05.585Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-10-22|Clonmel|13:46",
@@ -12143,10 +12147,29 @@
       },
       "recordedAt": "2026-10-22T13:40:52.497Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|14:02",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "14:02",
+      "horse": "COVENTRY",
+      "price": "6/1",
+      "runners": 13,
+      "liveHorse": "U S MARSHALL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "U S MARSHALL",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:51:00.815Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 442,
+    "recorded": 443,
     "pick": {
       "settled": 433,
       "won": 98,
