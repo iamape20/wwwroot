@@ -12839,10 +12839,16 @@
       "fav": {
         "horse": "KINIRO",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T19:20:17.912Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     }
   ],
   "stats": {
@@ -12854,10 +12860,10 @@
       "roi": -7.5
     },
     "favourite": {
-      "settled": 454,
+      "settled": 455,
       "won": 156,
-      "pl": -6.8,
-      "roi": -1.5
+      "pl": -7.8,
+      "roi": -1.7
     },
     "agree": {
       "settled": 114,
