@@ -79,7 +79,7 @@ function legNoBet(p) {
 function legNoBetReason(p) {
     const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
     return pickChanged
-        ? `Market has moved since 09:00 - the race page now picks ${p.nowPick} and there is no clear pick, so no bet.`
+        ? `Market has moved since 09:00 - the race page now picks ${p.nowPick}${p.nowTier === "Open" ? " and there is no clear pick" : ""}, so no bet on the Daily Double.`
         : "Market has moved since 09:00 - no clear pick in this race now, so no bet.";
 }
 
