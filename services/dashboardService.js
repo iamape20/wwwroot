@@ -236,10 +236,16 @@ function legNow(ratings, nap, entry) {
     const nowTier = byRating.length
         ? (classifyRace(byRating, race.display_title)?.tier || "Open")
         : null;
+    // The race page's "Our Pick" (raceService officialPickId: first declared
+    // runner in final order). Found 2026-10-22: the 09:00 Daily Single was
+    // HAPPY LOVE, the market then made IMPERIALISM favourite, so the race page
+    // said Our Pick IMPERIALISM (which won) with nothing on the home page
+    // saying the pick had changed.
+    const nowPick = race?.runners?.find(r => r && r.non_runner !== true)?.name || null;
     const napNow = !!(nap?.active &&
         String(nap.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase() &&
         String(nap.meeting || "").toUpperCase() === String(entry?.course || "").toUpperCase());
-    return { nowTier, napNow };
+    return { nowTier, napNow, nowPick };
 }
 
 function makeCandidate(
