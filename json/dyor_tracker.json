@@ -12348,10 +12348,16 @@
       "fav": {
         "horse": "LA NOTE VERTE",
         "price": "1/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/10"
       },
       "recordedAt": "2026-10-22T14:50:41.923Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Newmarket|15:05",
@@ -12367,10 +12373,18 @@
       "fav": {
         "horse": "YES I'M MALI",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T14:50:41.938Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|15:12",
@@ -12390,21 +12404,78 @@
       },
       "recordedAt": "2026-10-22T15:00:52.480Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|15:20",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "15:20",
+      "horse": "JACK'S JURY",
+      "price": "11/1",
+      "runners": 9,
+      "liveHorse": "GUSTAPOF",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GUSTAPOF",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:10:36.704Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Clonmel|15:30",
+      "date": "2026-10-22",
+      "course": "Clonmel",
+      "time": "15:30",
+      "horse": "WOODSTREAM LAD",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "CHARLIE LUCIANO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHARLIE LUCIANO",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:20:43.666Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Southwell|15:26",
+      "date": "2026-10-22",
+      "course": "Southwell",
+      "time": "15:26",
+      "horse": "MIMIME",
+      "price": "3/1",
+      "runners": 11,
+      "liveHorse": "MIMIME",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MIMIME",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T15:20:43.684Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 451,
+    "recorded": 454,
     "pick": {
-      "settled": 442,
+      "settled": 444,
       "won": 98,
-      "pl": -19.05,
-      "roi": -4.3
+      "pl": -21.05,
+      "roi": -4.7
     },
     "favourite": {
-      "settled": 443,
+      "settled": 444,
       "won": 156,
-      "pl": 4.2,
-      "roi": 0.9
+      "pl": 3.2,
+      "roi": 0.7
     },
     "agree": {
       "settled": 113,
@@ -12413,10 +12484,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 329,
+      "settled": 331,
       "won": 46,
-      "pl": -25.34,
-      "roi": -7.7
+      "pl": -27.34,
+      "roi": -8.3
     }
   },
   "lastBackfill": 1792671672786
