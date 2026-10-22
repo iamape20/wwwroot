@@ -80,7 +80,13 @@ function guide(res) {
         if (e) { seen.add(key); out.push(e); }
     };
     if (nap && nap.active) add("Today's NAP", nap);
-    (sl.dailyDouble || []).forEach(p => add("Daily double", p));
+    // A leg the market has moved away from is NO BET on the home page (2026-10-22).
+    const { legNow } = require("../services/dashboardService");
+    (sl.dailyDouble || []).forEach(p => {
+        const now = legNow(ratings, nap, p);
+        const noBet = (now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open";
+        add(noBet ? "Daily double - no bet (market moved)" : "Daily double", p);
+    });
     (sl.strong || []).forEach(p => add("Strong", p));
     (sl.moderate || []).forEach(p => add("Moderate", p));
     res.json({ success: true, date: (ratings && Object.values(ratings)[0] || {}).date || null, picks: out });

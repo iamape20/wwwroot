@@ -2678,10 +2678,14 @@ function renderYesterdayResults(dashboard) {
         return;
     }
 
-    const won = withOutcome.filter(p => p.outcome === "won").length;
-    const placed = withOutcome.filter(p => p.outcome === "won" || p.outcome === "placed").length;
+    // "void" = a leg shown as NO BET because the market moved away from it
+    // by the off (2026-10-22) - listed, but not counted as a bet.
+    const bets = withOutcome.filter(p => p.outcome !== "void");
+    const won = bets.filter(p => p.outcome === "won").length;
+    const placed = bets.filter(p => p.outcome === "won" || p.outcome === "placed").length;
 
     const detail = withOutcome.map(p => {
+        if (p.outcome === "void") return `– <s>${escapeHtml(p.horse)}</s> (no bet)`;
         const icon = p.outcome === "won" ? "\u2705" : p.outcome === "placed" ? "\u2713" : "\u2717";
         return `${icon} ${escapeHtml(p.horse)}`;
     }).join(" &nbsp;\u00b7&nbsp; ");
@@ -2693,8 +2697,8 @@ function renderYesterdayResults(dashboard) {
     block.innerHTML = `
         <div class="results-strip-summary">
             <span class="results-strip-label">${label}</span>
-            <span class="results-strip-stat results-strip-win">${won}/${withOutcome.length} won</span>
-            <span class="results-strip-stat results-strip-place">${placed}/${withOutcome.length} placed</span>
+            ${bets.length ? `<span class="results-strip-stat results-strip-win">${won}/${bets.length} won</span>
+            <span class="results-strip-stat results-strip-place">${placed}/${bets.length} placed</span>` : `<span class="results-strip-stat">no bet - void</span>`}
         </div>
         <div class="results-strip-recent">${detail}</div>
     `;

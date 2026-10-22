@@ -914,7 +914,10 @@ module.exports = {
     getDashboard,
 
     // exported for js/alignmentCheck.js
-    classifyRace
+    classifyRace,
+
+    // exported for api/glance.js (form guide labels a no-bet leg too)
+    legNow
 
 };
 
