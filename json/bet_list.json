@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-22T18:40:13.862Z",
+  "generatedAt": "2026-10-22T19:00:15.880Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 111/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 112/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-22",
       "course": "Southwell",
       "off": "19:30",
-      "horse": "POINTED"
-    }
-  ],
-  "recent": [
+      "horse": "POINTED",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-22",
       "course": "Carlisle",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-19",
-      "course": "Southwell",
-      "off": "20:00",
-      "horse": "I'M THE ONE",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-22T18:40:13.778Z",
+    "updatedAt": "2026-10-22T19:00:15.800Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -211,10 +205,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 112,
+      "bets": 113,
       "won": 55,
-      "pl": -14.65,
-      "roi": -13.1,
+      "pl": -15.65,
+      "roi": -13.8,
       "provisional": 1
     },
     "live": {
