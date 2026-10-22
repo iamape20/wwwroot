@@ -64,12 +64,32 @@ const CHECKLIST_SHORT = {
 };
 
 
+// A 09:00 leg the market has since moved away from (2026-10-22): the race
+// page's Our Pick is now another horse, or the race has dropped to Open (VOID
+// BET). Both pages then say "no bet" instead of the home page recommending
+// one horse while the race page picks another. Display only - the locked list
+// and its record are unchanged. Legs whose race went VOID by the off won
+// 6/19, -30% at BSP (Aug-Oct archive).
+function legNoBet(p) {
+    if (!p || p.nonRunner) return false;
+    const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
+    return Boolean(pickChanged || p.nowTier === "Open");
+}
+
+function legNoBetReason(p) {
+    const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
+    return pickChanged
+        ? `Market has moved since 09:00 - the race page now picks ${p.nowPick} and there is no clear pick, so no bet.`
+        : "Market has moved since 09:00 - no clear pick in this race now, so no bet.";
+}
+
 function renderDailyDouble(dashboard) {
 
     const box = document.getElementById("dailyDoubleBox");
     if (!box) return;
 
     const picks = Array.isArray(dashboard?.dailyDouble) ? dashboard.dailyDouble : [];
+    window.__dailyDouble = picks; // the race page says when its race holds a Daily Double leg
 
     if (!picks.length) {
         box.innerHTML = `
@@ -95,12 +115,12 @@ function renderDailyDouble(dashboard) {
             <div class="daily-double-rank">${i + 1}</div>
             <div class="daily-double-body">
                 <div class="daily-double-horse">
-                    ${escapeHtml(p.horse)}
+                    <span${legNoBet(p) ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(p.horse)}</span>
                     <span class="daily-double-tier">${p.nap && p.napNow !== false ? "NAP &middot; " : ""}${escapeHtml(p.tier)}</span>
                     ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
-                    ${!p.nonRunner && p.nowTier === "Open" ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Prices have moved since this list was set - the race page now shows no clear top pick">Now VOID BET - no bet suggested</span>` : ""}
+                    ${legNoBet(p) ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;">NO BET</span>` : ""}
                 </div>
-                ${!p.nonRunner && p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase() ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;" title="The Daily Double was set at 09:00; the market has since changed the race page's Our Pick">Market has moved: Our Pick on the race page is now ${escapeHtml(p.nowPick)}</div>` : ""}
+                ${legNoBet(p) ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">${escapeHtml(legNoBetReason(p))}</div>` : ""}
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span></div>
             </div>
@@ -1381,6 +1401,21 @@ function raceSignature(response) {
 // options.silent skips the "Loading race data..." placeholder and
 // options.prefetched reuses a getRace() response already in hand - both
 // used only by the background refreshLiveData() redraw.
+// One answer on both pages (2026-10-22): when this race holds a Daily Double
+// leg, say so here - including when the market has moved away from it.
+function ddLegNote(meetingId, raceIndex, pickRunner) {
+    const leg = (window.__dailyDouble || []).find(p =>
+        String(p.meetingId) === String(meetingId) && Number(p.raceIndex) === Number(raceIndex));
+    if (!leg || leg.nonRunner) return "";
+    const style = 'style="margin-top:6px;font-weight:600;"';
+    if (legNoBet(leg)) {
+        return `<div class="pick-summary-note" ${style}>The 09:00 Daily Double pick here was ${escapeHtml(leg.horse)}. ${escapeHtml(legNoBetReason(leg))}</div>`;
+    }
+    return String(leg.horse || "").toUpperCase() === String(pickRunner?.name || "").toUpperCase()
+        ? `<div class="pick-summary-note" ${style}>This is today's Daily Double pick (set at 09:00).</div>`
+        : "";
+}
+
 async function loadRace(
     meetingId,
     raceIndex,
@@ -1649,7 +1684,8 @@ async function loadRace(
                 box.innerHTML =
                     `<div class="pick-summary-main"><span class="pick-summary-label">Our pick</span> <b class="pick-summary-name">${escapeHtml(pickRunner.name)}</b> <span class="pick-summary-odds">${escapeHtml(pickRunner.current_odds || "")}</span></div>` +
                     (tierText ? `<div class="pick-summary-tier">${escapeHtml(tierText)}${selectionStatus.className === "selection-void" ? " - no bet suggested" : ""}</div>` : "") +
-                    `<div class="pick-summary-note">${bits.filter(Boolean).join(" ")}</div>`;
+                    `<div class="pick-summary-note">${bits.filter(Boolean).join(" ")}</div>` +
+                    ddLegNote(meetingId, raceIndex, pickRunner);
                 container.appendChild(box);
             }
         }
