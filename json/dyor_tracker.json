@@ -11951,10 +11951,18 @@
       "fav": {
         "horse": "HAPPY LOVE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T12:31:13.109Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|12:52",
@@ -11970,10 +11978,18 @@
       "fav": {
         "horse": "CABALLO DE GUERRA",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T12:41:10.949Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Ffos Las|13:01",
@@ -11989,10 +12005,14 @@
       "fav": {
         "horse": "THE WALK",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-22T12:51:20.988Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-10-22|Clonmel|13:10",
@@ -12012,27 +12032,84 @@
       },
       "recordedAt": "2026-10-22T13:01:24.345Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Newmarket|13:20",
+      "date": "2026-10-22",
+      "course": "Newmarket",
+      "time": "13:20",
+      "horse": "BEARIN UP",
+      "price": "7/1",
+      "runners": 15,
+      "liveHorse": "KAMAWAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KAMAWAY",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:11:01.898Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|13:36",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "13:36",
+      "horse": "LIBRE DE CHOEUR",
+      "price": "9/2",
+      "runners": 8,
+      "liveHorse": "EL GAVILAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EL GAVILAN",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:21:05.557Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-22|Carlisle|13:27",
+      "date": "2026-10-22",
+      "course": "Carlisle",
+      "time": "13:27",
+      "horse": "BREIZH RIVER",
+      "price": "13/8",
+      "runners": 5,
+      "liveHorse": "BREIZH RIVER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BREIZH RIVER",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T13:21:05.585Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 437,
+    "recorded": 440,
     "pick": {
-      "settled": 429,
+      "settled": 431,
       "won": 98,
-      "pl": -6.05,
-      "roi": -1.4
+      "pl": -8.05,
+      "roi": -1.9
     },
     "favourite": {
-      "settled": 430,
+      "settled": 432,
       "won": 156,
-      "pl": 17.2,
-      "roi": 4
+      "pl": 15.2,
+      "roi": 3.5
     },
     "agree": {
-      "settled": 111,
+      "settled": 113,
       "won": 52,
-      "pl": 8.29,
-      "roi": 7.5
+      "pl": 6.29,
+      "roi": 5.6
     },
     "disagree": {
       "settled": 318,
