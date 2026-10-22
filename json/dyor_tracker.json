@@ -12627,10 +12627,18 @@
       "fav": {
         "horse": "ATMOSPHERE",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T16:00:38.110Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|16:20",
@@ -12646,10 +12654,18 @@
       "fav": {
         "horse": "CRYSTAL SPECTRE",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T16:10:32.989Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Southwell|16:30",
@@ -12674,16 +12690,16 @@
   "stats": {
     "recorded": 462,
     "pick": {
-      "settled": 450,
+      "settled": 452,
       "won": 98,
-      "pl": -27.05,
-      "roi": -6
+      "pl": -29.05,
+      "roi": -6.4
     },
     "favourite": {
-      "settled": 448,
+      "settled": 450,
       "won": 156,
-      "pl": -0.8,
-      "roi": -0.2
+      "pl": -2.8,
+      "roi": -0.6
     },
     "agree": {
       "settled": 114,
@@ -12692,10 +12708,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 336,
+      "settled": 338,
       "won": 46,
-      "pl": -32.34,
-      "roi": -9.6
+      "pl": -34.34,
+      "roi": -10.2
     }
   },
   "lastBackfill": 1792683036375

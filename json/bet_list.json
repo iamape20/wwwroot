@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-22T16:20:31.029Z",
+  "generatedAt": "2026-10-22T16:40:20.408Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 110/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 111/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -20,14 +20,19 @@
       "revealAt": "19:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-22",
       "course": "Carlisle",
       "off": "17:20",
-      "horse": "CRYSTAL SPECTRE"
-    }
-  ],
-  "recent": [
+      "horse": "CRYSTAL SPECTRE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-22",
       "course": "Carlisle",
@@ -181,21 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-19",
-      "course": "Southwell",
-      "off": "17:30",
-      "horse": "LANCASTER TOWER",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-22T16:20:30.921Z",
+    "updatedAt": "2026-10-22T16:40:20.327Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -218,10 +212,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 111,
+      "bets": 112,
       "won": 55,
-      "pl": -13.65,
-      "roi": -12.3,
+      "pl": -14.65,
+      "roi": -13.1,
       "provisional": 1
     },
     "live": {
