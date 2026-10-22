@@ -12082,10 +12082,18 @@
       "fav": {
         "horse": "EL GAVILAN",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-22T13:21:05.557Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-22|Carlisle|13:27",
@@ -12166,21 +12174,40 @@
       },
       "recordedAt": "2026-10-22T13:51:00.815Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-22|Ffos Las|14:11",
+      "date": "2026-10-22",
+      "course": "Ffos Las",
+      "time": "14:11",
+      "horse": "MIGHTY RHYTHM",
+      "price": "28/1",
+      "runners": 6,
+      "liveHorse": "WILLOW TIDE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WILLOW TIDE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-22T14:00:53.811Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 443,
+    "recorded": 444,
     "pick": {
-      "settled": 433,
+      "settled": 434,
       "won": 98,
-      "pl": -10.05,
-      "roi": -2.3
+      "pl": -11.05,
+      "roi": -2.5
     },
     "favourite": {
-      "settled": 434,
+      "settled": 435,
       "won": 156,
-      "pl": 13.2,
-      "roi": 3
+      "pl": 12.2,
+      "roi": 2.8
     },
     "agree": {
       "settled": 113,
@@ -12189,10 +12216,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 320,
+      "settled": 321,
       "won": 46,
-      "pl": -16.34,
-      "roi": -5.1
+      "pl": -17.34,
+      "roi": -5.4
     }
   },
   "lastBackfill": 1792671672786
