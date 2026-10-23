@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T21:00:15.208Z",
+  "generatedAt": "2026-10-23T06:01:23.094Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 112/120 bets settled before the verdict.",
   "rules": [
@@ -12,7 +12,32 @@
     "LIVE phase stops automatically at -20 units."
   ],
   "morningMissing": false,
-  "today": [],
+  "today": [
+    {
+      "course": "Cheltenham",
+      "off": "13:50",
+      "status": "POSSIBLE",
+      "revealAt": "13:35"
+    },
+    {
+      "course": "Doncaster",
+      "off": "15:20",
+      "status": "POSSIBLE",
+      "revealAt": "15:05"
+    },
+    {
+      "course": "Cheltenham",
+      "off": "16:10",
+      "status": "POSSIBLE",
+      "revealAt": "15:55"
+    },
+    {
+      "course": "Wolverhampton",
+      "off": "17:30",
+      "status": "POSSIBLE",
+      "revealAt": "17:15"
+    }
+  ],
   "awaitingResult": [],
   "recent": [
     {
@@ -182,7 +207,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-22T21:00:15.129Z",
+    "updatedAt": "2026-10-23T06:01:22.967Z",
     "claude": {
       "races": 38,
       "won": 7,
