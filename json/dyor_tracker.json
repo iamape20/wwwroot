@@ -13910,10 +13910,16 @@
       "fav": {
         "horse": "R P MCMURPHY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-10-23T17:50:32.691Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "66/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Dundalk|18:15",
@@ -13933,15 +13939,34 @@
       },
       "recordedAt": "2026-10-23T18:00:33.195Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|18:30",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "18:30",
+      "horse": "HAUTELUCE",
+      "price": "3/1",
+      "runners": 12,
+      "liveHorse": "HAUTELUCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HAUTELUCE",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T18:20:28.803Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 508,
+    "recorded": 509,
     "pick": {
-      "settled": 491,
+      "settled": 492,
       "won": 105,
-      "pl": -35.43,
-      "roi": -7.2
+      "pl": -36.43,
+      "roi": -7.4
     },
     "favourite": {
       "settled": 492,
@@ -13956,10 +13981,10 @@
       "roi": 5.5
     },
     "disagree": {
-      "settled": 362,
+      "settled": 363,
       "won": 48,
-      "pl": -42.48,
-      "roi": -11.7
+      "pl": -43.48,
+      "roi": -12
     }
   },
   "lastBackfill": 1792771235718
