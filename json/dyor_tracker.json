@@ -14014,10 +14014,16 @@
       "fav": {
         "horse": "HILLTOP",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T18:50:32.818Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-10-23|Dundalk|19:15",
@@ -14037,10 +14043,29 @@
       },
       "recordedAt": "2026-10-23T19:00:24.613Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|19:30",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "19:30",
+      "horse": "CARAWAY",
+      "price": "3/1",
+      "runners": 5,
+      "liveHorse": "SAXOPHONIST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAXOPHONIST",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T19:20:31.510Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 512,
+    "recorded": 513,
     "pick": {
       "settled": 495,
       "won": 105,
@@ -14048,10 +14073,10 @@
       "roi": -8
     },
     "favourite": {
-      "settled": 494,
+      "settled": 495,
       "won": 167,
-      "pl": -12.42,
-      "roi": -2.5
+      "pl": -13.42,
+      "roi": -2.7
     },
     "agree": {
       "settled": 130,
@@ -14066,5 +14091,5 @@
       "roi": -12.5
     }
   },
-  "lastBackfill": 1792771235718
+  "lastBackfill": 1792782624703
 }
