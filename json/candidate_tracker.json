@@ -2635,7 +2635,9 @@
       "rating": 66.5,
       "runners": 11,
       "recordedAt": "2026-10-23T16:20:37.484Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-23|Wolverhampton|17:00",
@@ -2647,15 +2649,31 @@
       "rating": 56.6,
       "runners": 13,
       "recordedAt": "2026-10-23T16:50:33.984Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|17:30",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "17:30",
+      "horse": "METHGAL",
+      "price": "11/10",
+      "rating": 73,
+      "runners": 7,
+      "recordedAt": "2026-10-23T17:20:39.548Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 161,
-    "settled": 158,
+    "recorded": 162,
+    "settled": 159,
     "won": 81,
-    "pl": 5.27,
-    "roi": 3.3
+    "pl": 4.27,
+    "roi": 2.7
   },
   "lastBackfill": 1792771841812
 }
