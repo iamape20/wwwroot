@@ -13858,10 +13858,16 @@
       "fav": {
         "horse": "METHGAL",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T17:20:39.814Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-10-23|Dundalk|17:45",
@@ -13877,25 +13883,71 @@
       "fav": {
         "horse": "PREMIER VIEW",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T17:30:30.740Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|18:00",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "horse": "PORT NOIR",
+      "price": "40/1",
+      "runners": 10,
+      "liveHorse": "R P MCMURPHY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "R P MCMURPHY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T17:50:32.691Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Dundalk|18:15",
+      "date": "2026-10-23",
+      "course": "Dundalk",
+      "time": "18:15",
+      "horse": "FOCACCIA",
+      "price": "33/1",
+      "runners": 13,
+      "liveHorse": "WASHINGTON HEIGHTS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WASHINGTON HEIGHTS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T18:00:33.195Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 506,
+    "recorded": 508,
     "pick": {
-      "settled": 490,
+      "settled": 491,
       "won": 105,
-      "pl": -34.43,
-      "roi": -7
+      "pl": -35.43,
+      "roi": -7.2
     },
     "favourite": {
-      "settled": 490,
+      "settled": 492,
       "won": 167,
-      "pl": -8.42,
-      "roi": -1.7
+      "pl": -10.42,
+      "roi": -2.1
     },
     "agree": {
       "settled": 129,
@@ -13904,10 +13956,10 @@
       "roi": 5.5
     },
     "disagree": {
-      "settled": 361,
+      "settled": 362,
       "won": 48,
-      "pl": -41.48,
-      "roi": -11.5
+      "pl": -42.48,
+      "roi": -11.7
     }
   },
   "lastBackfill": 1792771235718
