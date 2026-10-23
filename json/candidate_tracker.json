@@ -2460,7 +2460,10 @@
       "recordedAt": "2026-10-22T14:50:41.697Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/10"
+      "isp": "1/10",
+      "bsp": 1.1367319,
+      "pl": 0.13,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-22|Newmarket|15:40",
@@ -2490,7 +2493,10 @@
       "recordedAt": "2026-10-22T15:30:36.162Z",
       "stake": 1,
       "result": "won",
-      "isp": "7/4"
+      "isp": "7/4",
+      "bsp": 2.82,
+      "pl": 1.729,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-22|Carlisle|16:20",
@@ -2520,7 +2526,10 @@
       "recordedAt": "2026-10-22T17:50:23.061Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/10"
+      "isp": "11/10",
+      "bsp": 2.10775403,
+      "pl": 1.052,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-22|Southwell|18:30",
@@ -2541,10 +2550,10 @@
   ],
   "stats": {
     "recorded": 154,
-    "settled": 151,
-    "won": 78,
-    "pl": 6.36,
-    "roi": 4.2
+    "settled": 154,
+    "won": 81,
+    "pl": 9.27,
+    "roi": 6
   },
-  "lastBackfill": 1792735288547
+  "lastBackfill": 1792746113995
 }
