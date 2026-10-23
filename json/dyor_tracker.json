@@ -13045,10 +13045,14 @@
       "fav": {
         "horse": "BOWENSONFIRE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-23T12:41:32.191Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-10-23|Sligo|13:00",
@@ -13064,10 +13068,18 @@
       "fav": {
         "horse": "PRALOGNAN",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T12:51:24.751Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Doncaster|13:10",
@@ -13087,21 +13099,84 @@
       },
       "recordedAt": "2026-10-23T13:01:39.234Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Newbury|13:17",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "13:17",
+      "horse": "ANYASI",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "ANYASI",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ANYASI",
+        "price": "5/2",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T13:11:19.222Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|13:25",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "13:25",
+      "horse": "LORIKO",
+      "price": "14/1",
+      "runners": 11,
+      "liveHorse": "THE HARDEST GEEZER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE HARDEST GEEZER",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T13:11:19.244Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Sligo|13:35",
+      "date": "2026-10-23",
+      "course": "Sligo",
+      "time": "13:35",
+      "horse": "BOWGATE STREET",
+      "price": "13/2",
+      "runners": 13,
+      "liveHorse": "ATLANTIC WONDER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ATLANTIC WONDER",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T13:21:21.354Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 476,
+    "recorded": 479,
     "pick": {
-      "settled": 467,
+      "settled": 468,
       "won": 105,
-      "pl": -11.43,
-      "roi": -2.4
+      "pl": -12.43,
+      "roi": -2.7
     },
     "favourite": {
-      "settled": 468,
+      "settled": 469,
       "won": 167,
-      "pl": 13.58,
-      "roi": 2.9
+      "pl": 12.58,
+      "roi": 2.7
     },
     "agree": {
       "settled": 120,
@@ -13110,10 +13185,10 @@
       "roi": 13.4
     },
     "disagree": {
-      "settled": 347,
+      "settled": 348,
       "won": 48,
-      "pl": -27.48,
-      "roi": -7.9
+      "pl": -28.48,
+      "roi": -8.2
     }
   },
   "lastBackfill": 1792759884775

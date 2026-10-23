@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T13:01:31.878Z",
+  "generatedAt": "2026-10-23T13:21:15.429Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 113/120 bets settled before the verdict.",
   "rules": [
@@ -30,22 +30,21 @@
       "off": "16:10",
       "status": "POSSIBLE",
       "revealAt": "15:55"
-    },
-    {
-      "course": "Wolverhampton",
-      "off": "17:30",
-      "status": "POSSIBLE",
-      "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-23",
       "course": "Cheltenham",
       "off": "13:50",
-      "horse": "BOWENSONFIRE"
-    }
-  ],
-  "recent": [
+      "horse": "BOWENSONFIRE",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-22",
       "course": "Southwell",
@@ -199,21 +198,10 @@
       "bsp": 1.25729779,
       "pl": 0.244,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-20",
-      "course": "Yarmouth",
-      "off": "13:50",
-      "horse": "CLOAK OF POWER",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-23T13:01:31.668Z",
+    "updatedAt": "2026-10-23T13:21:15.299Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,11 +224,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 113,
-      "won": 55,
-      "pl": -15.57,
-      "roi": -13.8,
-      "provisional": 0
+      "bets": 114,
+      "won": 56,
+      "pl": -14.57,
+      "roi": -12.8,
+      "provisional": 1
     },
     "live": {
       "bets": 0,
