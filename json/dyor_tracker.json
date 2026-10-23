@@ -13748,10 +13748,18 @@
       "fav": {
         "horse": "MAYAADA",
         "price": "5/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T16:20:37.764Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Dundalk|16:45",
@@ -13767,25 +13775,71 @@
       "fav": {
         "horse": "EICHAN SAN",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T16:30:45.254Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|17:00",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "17:00",
+      "horse": "FROM ME TO YOU",
+      "price": "10/3",
+      "runners": 13,
+      "liveHorse": "STONEY WOOD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STONEY WOOD",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T16:50:34.305Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Dundalk|17:15",
+      "date": "2026-10-23",
+      "course": "Dundalk",
+      "time": "17:15",
+      "horse": "INISHMOT PRINCE",
+      "price": "12/1",
+      "runners": 14,
+      "liveHorse": "BLUE ANTHEM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLUE ANTHEM",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T17:00:34.395Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 502,
+    "recorded": 504,
     "pick": {
-      "settled": 487,
+      "settled": 489,
       "won": 105,
-      "pl": -31.43,
-      "roi": -6.5
+      "pl": -33.43,
+      "roi": -6.8
     },
     "favourite": {
-      "settled": 486,
+      "settled": 488,
       "won": 167,
-      "pl": -4.42,
-      "roi": -0.9
+      "pl": -6.42,
+      "roi": -1.3
     },
     "agree": {
       "settled": 129,
@@ -13794,10 +13848,10 @@
       "roi": 5.5
     },
     "disagree": {
-      "settled": 358,
+      "settled": 360,
       "won": 48,
-      "pl": -38.48,
-      "roi": -10.7
+      "pl": -40.48,
+      "roi": -11.2
     }
   },
   "lastBackfill": 1792771235718
