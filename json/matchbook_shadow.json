@@ -5840,27 +5840,27 @@
       "marketVolume": 73
     },
     "lastBeforeOff": {
-      "at": "2026-10-23T13:41:13.113Z",
+      "at": "2026-10-23T14:01:06.298Z",
       "eventId": 34662081302602070,
       "found": true,
       "withdrawn": false,
       "bestBack": 1.63,
-      "available": 20.94,
+      "available": 9.38,
       "depth": [
         [
           1.63,
-          20.94
+          9.38
         ],
         [
           1.62,
-          48.76
+          10.13
         ],
         [
           1.61,
-          24.85
+          30.24
         ]
       ],
-      "marketVolume": 54642
+      "marketVolume": 54873
     }
   },
   "NAP|2026-10-23|Sligo|11:50|RONNIESRASCAL": {
@@ -5968,6 +5968,60 @@
         ]
       ],
       "marketVolume": 214523
+    }
+  },
+  "BET|2026-10-23|Cheltenham|14:00|COOLTOBECARELESS": {
+    "type": "BET",
+    "date": "2026-10-23",
+    "course": "Cheltenham",
+    "time": "14:00",
+    "horse": "COOLTOBECARELESS",
+    "betId": "2026-10-23|Cheltenham|14:00",
+    "atReveal": {
+      "at": "2026-10-23T13:51:05.515Z",
+      "eventId": 34662207775902024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2,
+      "available": 804.82,
+      "depth": [
+        [
+          2,
+          804.82
+        ],
+        [
+          1.99,
+          1299.08
+        ],
+        [
+          1.98,
+          1295.6
+        ]
+      ],
+      "marketVolume": 276699
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-23T13:51:05.515Z",
+      "eventId": 34662207775902024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2,
+      "available": 804.82,
+      "depth": [
+        [
+          2,
+          804.82
+        ],
+        [
+          1.99,
+          1299.08
+        ],
+        [
+          1.98,
+          1295.6
+        ]
+      ],
+      "marketVolume": 276699
     }
   }
 }

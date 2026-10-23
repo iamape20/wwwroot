@@ -13147,10 +13147,18 @@
       "fav": {
         "horse": "THE HARDEST GEEZER",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T13:11:19.244Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Sligo|13:35",
@@ -13166,10 +13174,18 @@
       "fav": {
         "horse": "ATLANTIC WONDER",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T13:21:21.354Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Doncaster|13:45",
@@ -13185,10 +13201,18 @@
       "fav": {
         "horse": "PALLADAS",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T13:31:20.244Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Newbury|13:52",
@@ -13214,21 +13238,59 @@
       "result": "void",
       "pl": 0,
       "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|14:00",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "14:00",
+      "horse": "MATIWO",
+      "price": "33/1",
+      "runners": 10,
+      "liveHorse": "COOLTOBECARELESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COOLTOBECARELESS",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T13:51:05.976Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Sligo|14:10",
+      "date": "2026-10-23",
+      "course": "Sligo",
+      "time": "14:10",
+      "horse": "GUNNERY SERGEANT",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "LA MULETA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LA MULETA",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T14:01:06.745Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 481,
+    "recorded": 483,
     "pick": {
-      "settled": 469,
+      "settled": 472,
       "won": 105,
-      "pl": -13.43,
-      "roi": -2.9
+      "pl": -16.43,
+      "roi": -3.5
     },
     "favourite": {
-      "settled": 470,
+      "settled": 473,
       "won": 167,
-      "pl": 11.58,
-      "roi": 2.5
+      "pl": 8.58,
+      "roi": 1.8
     },
     "agree": {
       "settled": 121,
@@ -13237,10 +13299,10 @@
       "roi": 12.4
     },
     "disagree": {
-      "settled": 348,
+      "settled": 351,
       "won": 48,
-      "pl": -28.48,
-      "roi": -8.2
+      "pl": -31.48,
+      "roi": -9
     }
   },
   "lastBackfill": 1792759884775
