@@ -13831,10 +13831,18 @@
       "fav": {
         "horse": "BLUE ANTHEM",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T17:00:34.395Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Wolverhampton|17:30",
@@ -13854,21 +13862,40 @@
       },
       "recordedAt": "2026-10-23T17:20:39.814Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Dundalk|17:45",
+      "date": "2026-10-23",
+      "course": "Dundalk",
+      "time": "17:45",
+      "horse": "BELLE ISLAND",
+      "price": "50/1",
+      "runners": 10,
+      "liveHorse": "PREMIER VIEW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PREMIER VIEW",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T17:30:30.740Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 505,
+    "recorded": 506,
     "pick": {
-      "settled": 489,
+      "settled": 490,
       "won": 105,
-      "pl": -33.43,
-      "roi": -6.8
+      "pl": -34.43,
+      "roi": -7
     },
     "favourite": {
-      "settled": 489,
+      "settled": 490,
       "won": 167,
-      "pl": -7.42,
-      "roi": -1.5
+      "pl": -8.42,
+      "roi": -1.7
     },
     "agree": {
       "settled": 129,
@@ -13877,10 +13904,10 @@
       "roi": 5.5
     },
     "disagree": {
-      "settled": 360,
+      "settled": 361,
       "won": 48,
-      "pl": -40.48,
-      "roi": -11.2
+      "pl": -41.48,
+      "roi": -11.5
     }
   },
   "lastBackfill": 1792771235718
