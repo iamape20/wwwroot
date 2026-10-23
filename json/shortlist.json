@@ -3,31 +3,54 @@
   "strong": [],
   "moderate": [
     {
-      "horse": "RONNIE'S RASCAL",
+      "horse": "DESERT ROMANCE",
+      "course": "Doncaster",
+      "time": "14:20",
+      "rating": "60.2",
+      "margin": "8.8",
+      "marginValue": 8.800000000000004,
+      "confidence": 62,
+      "meetingId": "122145",
+      "raceIndex": 3
+    },
+    {
+      "horse": "UNION STATION",
       "course": "Sligo",
-      "time": "11:50",
-      "rating": "68.3",
-      "margin": "17.3",
-      "marginValue": 17.299999999999997,
-      "confidence": 80,
+      "time": "15:20",
+      "rating": "63.3",
+      "margin": "9.3",
+      "marginValue": 9.299999999999997,
+      "confidence": 77,
       "meetingId": "122176",
-      "raceIndex": 0
+      "raceIndex": 6
     }
   ],
   "dailyDouble": [
     {
-      "horse": "RONNIE'S RASCAL",
+      "horse": "UNION STATION",
       "course": "Sligo",
-      "time": "11:50",
-      "rating": "68.3",
-      "margin": "17.3",
-      "marginValue": 17.3,
-      "confidence": 80,
+      "time": "15:20",
+      "rating": "63.3",
+      "margin": "9.3",
+      "marginValue": 9.3,
+      "confidence": 77,
       "meetingId": "122176",
-      "raceIndex": 0,
+      "raceIndex": 6,
       "tier": "Moderate",
       "nap": true
+    },
+    {
+      "horse": "DESERT ROMANCE",
+      "course": "Doncaster",
+      "time": "14:20",
+      "rating": "60.2",
+      "margin": "8.8",
+      "marginValue": 8.800000000000004,
+      "confidence": 62,
+      "meetingId": "122145",
+      "raceIndex": 3,
+      "tier": "Moderate"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
