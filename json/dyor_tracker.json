@@ -13095,10 +13095,18 @@
       "fav": {
         "horse": "FINE INTERVIEW",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T13:01:39.234Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Newbury|13:17",
@@ -13162,27 +13170,71 @@
       },
       "recordedAt": "2026-10-23T13:21:21.354Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Doncaster|13:45",
+      "date": "2026-10-23",
+      "course": "Doncaster",
+      "time": "13:45",
+      "horse": "INISHBEG",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "PALLADAS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PALLADAS",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T13:31:20.244Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Newbury|13:52",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "13:52",
+      "horse": "ASTABUEN",
+      "price": "9/4",
+      "runners": 15,
+      "liveHorse": "CARBINE COUNTRY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CARBINE COUNTRY",
+        "price": "13/8",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T13:41:13.622Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
     }
   ],
   "stats": {
-    "recorded": 479,
+    "recorded": 481,
     "pick": {
-      "settled": 468,
+      "settled": 469,
       "won": 105,
-      "pl": -12.43,
-      "roi": -2.7
+      "pl": -13.43,
+      "roi": -2.9
     },
     "favourite": {
-      "settled": 469,
+      "settled": 470,
       "won": 167,
-      "pl": 12.58,
-      "roi": 2.7
+      "pl": 11.58,
+      "roi": 2.5
     },
     "agree": {
-      "settled": 120,
+      "settled": 121,
       "won": 57,
-      "pl": 16.05,
-      "roi": 13.4
+      "pl": 15.05,
+      "roi": 12.4
     },
     "disagree": {
       "settled": 348,
