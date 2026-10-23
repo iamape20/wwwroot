@@ -13253,10 +13253,18 @@
       "fav": {
         "horse": "COOLTOBECARELESS",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T13:51:05.976Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Sligo|14:10",
@@ -13276,21 +13284,84 @@
       },
       "recordedAt": "2026-10-23T14:01:06.745Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Doncaster|14:20",
+      "date": "2026-10-23",
+      "course": "Doncaster",
+      "time": "14:20",
+      "horse": "DESERT ROMANCE",
+      "price": "4/5",
+      "runners": 8,
+      "liveHorse": "DESERT ROMANCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DESERT ROMANCE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T14:10:53.666Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Newbury|14:27",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "14:27",
+      "horse": "DARK SUPREMACY",
+      "price": "14/1",
+      "runners": 13,
+      "liveHorse": "NOBLE MARINER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOBLE MARINER",
+        "price": "5/2",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T14:20:57.632Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|14:35",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "14:35",
+      "horse": "CALICO",
+      "price": "11/4",
+      "runners": 8,
+      "liveHorse": "CALICO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CALICO",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T14:20:57.645Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 483,
+    "recorded": 486,
     "pick": {
-      "settled": 472,
+      "settled": 473,
       "won": 105,
-      "pl": -16.43,
-      "roi": -3.5
+      "pl": -17.43,
+      "roi": -3.7
     },
     "favourite": {
-      "settled": 473,
+      "settled": 474,
       "won": 167,
-      "pl": 8.58,
-      "roi": 1.8
+      "pl": 7.58,
+      "roi": 1.6
     },
     "agree": {
       "settled": 121,
@@ -13299,10 +13370,10 @@
       "roi": 12.4
     },
     "disagree": {
-      "settled": 351,
+      "settled": 352,
       "won": 48,
-      "pl": -31.48,
-      "roi": -9
+      "pl": -32.48,
+      "roi": -9.2
     }
   },
   "lastBackfill": 1792759884775

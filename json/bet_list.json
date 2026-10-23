@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-23T14:01:04.013Z",
+  "generatedAt": "2026-10-23T14:20:54.915Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 113/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 114/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,26 +14,37 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Doncaster",
-      "off": "15:20",
-      "status": "POSSIBLE",
-      "revealAt": "15:05"
-    },
-    {
       "course": "Cheltenham",
       "off": "16:10",
       "status": "POSSIBLE",
       "revealAt": "15:55"
+    },
+    {
+      "course": "Wolverhampton",
+      "off": "17:30",
+      "status": "POSSIBLE",
+      "revealAt": "17:15"
     }
   ],
   "awaitingResult": [
     {
-      "course": "Cheltenham",
-      "off": "15:00",
-      "horse": "COOLTOBECARELESS"
+      "course": "Doncaster",
+      "off": "15:20",
+      "horse": "DESERT ROMANCE"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "off": "15:00",
+      "horse": "COOLTOBECARELESS",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-23",
       "course": "Cheltenham",
@@ -187,21 +198,10 @@
       "bsp": 1.58426669,
       "pl": 0.555,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-20",
-      "course": "Curragh",
-      "off": "14:25",
-      "horse": "TOGETHER NOW",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.25729779,
-      "pl": 0.244,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-23T14:01:03.941Z",
+    "updatedAt": "2026-10-23T14:20:54.837Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,10 +224,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 114,
+      "bets": 115,
       "won": 56,
-      "pl": -14.57,
-      "roi": -12.8,
+      "pl": -15.57,
+      "roi": -13.5,
       "provisional": 1
     },
     "live": {
