@@ -13596,10 +13596,18 @@
       "fav": {
         "horse": "LITTLE LEDGEND",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:30:52.996Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Sligo|15:55",
@@ -13615,10 +13623,18 @@
       "fav": {
         "horse": "STRONG CONTENDER",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:40:43.683Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Wolverhampton|16:00",
@@ -13634,10 +13650,18 @@
       "fav": {
         "horse": "ERNIE'S VALENTINE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:50:44.843Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Doncaster|16:05",
@@ -13653,10 +13677,16 @@
       "fav": {
         "horse": "INTENSE VISION",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-23T15:50:44.857Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Dundalk|16:15",
@@ -13676,33 +13706,71 @@
       },
       "recordedAt": "2026-10-23T16:00:35.705Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|16:30",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "16:30",
+      "horse": "JAHAMI",
+      "price": "1/1",
+      "runners": 11,
+      "liveHorse": "JAHAMI",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JAHAMI",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T16:20:37.748Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Doncaster|16:35",
+      "date": "2026-10-23",
+      "course": "Doncaster",
+      "time": "16:35",
+      "horse": "KOKANEE",
+      "price": "9/1",
+      "runners": 18,
+      "liveHorse": "MAYAADA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAYAADA",
+        "price": "5/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T16:20:37.764Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 499,
+    "recorded": 501,
     "pick": {
-      "settled": 482,
+      "settled": 486,
       "won": 105,
-      "pl": -26.43,
-      "roi": -5.5
+      "pl": -30.43,
+      "roi": -6.3
     },
     "favourite": {
-      "settled": 482,
+      "settled": 485,
       "won": 167,
-      "pl": -0.42,
-      "roi": -0.1
+      "pl": -3.42,
+      "roi": -0.7
     },
     "agree": {
-      "settled": 127,
+      "settled": 129,
       "won": 57,
-      "pl": 9.05,
-      "roi": 7.1
+      "pl": 7.05,
+      "roi": 5.5
     },
     "disagree": {
-      "settled": 355,
+      "settled": 357,
       "won": 48,
-      "pl": -35.48,
-      "roi": -10
+      "pl": -37.48,
+      "roi": -10.5
     }
   },
   "lastBackfill": 1792771235718
