@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-23T14:20:54.915Z",
+  "generatedAt": "2026-10-23T14:30:56.807Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 114/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 115/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -26,14 +26,19 @@
       "revealAt": "17:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-23",
       "course": "Doncaster",
       "off": "15:20",
-      "horse": "DESERT ROMANCE"
-    }
-  ],
-  "recent": [
+      "horse": "DESERT ROMANCE",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-23",
       "course": "Cheltenham",
@@ -187,21 +192,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-20",
-      "course": "Newcastle",
-      "off": "16:22",
-      "horse": "SEA LA ROMA",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.58426669,
-      "pl": 0.555,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-23T14:20:54.837Z",
+    "updatedAt": "2026-10-23T14:30:56.727Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -224,10 +218,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 115,
+      "bets": 116,
       "won": 56,
-      "pl": -15.57,
-      "roi": -13.5,
+      "pl": -16.57,
+      "roi": -14.3,
       "provisional": 1
     },
     "live": {
