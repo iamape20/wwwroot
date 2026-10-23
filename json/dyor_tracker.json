@@ -12995,10 +12995,16 @@
       "fav": {
         "horse": "BULLETSNAP",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-23T12:21:24.772Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Newbury|12:42",
@@ -13043,15 +13049,53 @@
       },
       "recordedAt": "2026-10-23T12:41:32.191Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Sligo|13:00",
+      "date": "2026-10-23",
+      "course": "Sligo",
+      "time": "13:00",
+      "horse": "BELLA UNION",
+      "price": "10/1",
+      "runners": 12,
+      "liveHorse": "PRALOGNAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRALOGNAN",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T12:51:24.751Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Doncaster|13:10",
+      "date": "2026-10-23",
+      "course": "Doncaster",
+      "time": "13:10",
+      "horse": "FINE INTERVIEW",
+      "price": "7/2",
+      "runners": 15,
+      "liveHorse": "FINE INTERVIEW",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FINE INTERVIEW",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T13:01:39.234Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 474,
+    "recorded": 476,
     "pick": {
-      "settled": 466,
+      "settled": 467,
       "won": 105,
-      "pl": -10.43,
-      "roi": -2.2
+      "pl": -11.43,
+      "roi": -2.4
     },
     "favourite": {
       "settled": 468,
@@ -13066,11 +13110,11 @@
       "roi": 13.4
     },
     "disagree": {
-      "settled": 346,
+      "settled": 347,
       "won": 48,
-      "pl": -26.48,
-      "roi": -7.7
+      "pl": -27.48,
+      "roi": -7.9
     }
   },
-  "lastBackfill": 1792746117088
+  "lastBackfill": 1792759884775
 }
