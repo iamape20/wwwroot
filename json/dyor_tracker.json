@@ -13702,10 +13702,18 @@
       "fav": {
         "horse": "RIVER TRIEUX",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T16:00:35.705Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Wolverhampton|16:30",
@@ -13744,21 +13752,40 @@
       },
       "recordedAt": "2026-10-23T16:20:37.764Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Dundalk|16:45",
+      "date": "2026-10-23",
+      "course": "Dundalk",
+      "time": "16:45",
+      "horse": "COMFORT LINE",
+      "price": "25/1",
+      "runners": 14,
+      "liveHorse": "EICHAN SAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EICHAN SAN",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T16:30:45.254Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 501,
+    "recorded": 502,
     "pick": {
-      "settled": 486,
+      "settled": 487,
       "won": 105,
-      "pl": -30.43,
-      "roi": -6.3
+      "pl": -31.43,
+      "roi": -6.5
     },
     "favourite": {
-      "settled": 485,
+      "settled": 486,
       "won": 167,
-      "pl": -3.42,
-      "roi": -0.7
+      "pl": -4.42,
+      "roi": -0.9
     },
     "agree": {
       "settled": 129,
@@ -13767,10 +13794,10 @@
       "roi": 5.5
     },
     "disagree": {
-      "settled": 357,
+      "settled": 358,
       "won": 48,
-      "pl": -37.48,
-      "roi": -10.5
+      "pl": -38.48,
+      "roi": -10.7
     }
   },
   "lastBackfill": 1792771235718
