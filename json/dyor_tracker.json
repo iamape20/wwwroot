@@ -13463,10 +13463,18 @@
       "fav": {
         "horse": "MR HOLLYWOOD",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:01:07.128Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Wolverhampton|15:25",
@@ -13520,31 +13528,102 @@
       "fav": {
         "horse": "BIG HARRY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:20:47.258Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-23|Newbury|15:40",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "15:40",
+      "horse": "SHAFFRON",
+      "price": "10/3",
+      "runners": 8,
+      "liveHorse": "NOBLE GRACE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOBLE GRACE",
+        "price": "7/4",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T15:30:52.975Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|15:45",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "15:45",
+      "horse": "SNIPE",
+      "price": "18/1",
+      "runners": 11,
+      "liveHorse": "LITTLE LEDGEND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LITTLE LEDGEND",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T15:30:52.996Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Sligo|15:55",
+      "date": "2026-10-23",
+      "course": "Sligo",
+      "time": "15:55",
+      "horse": "STRONG CONTENDER",
+      "price": "5/2",
+      "runners": 9,
+      "liveHorse": "STRONG CONTENDER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "STRONG CONTENDER",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T15:40:43.683Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 493,
+    "recorded": 496,
     "pick": {
-      "settled": 478,
+      "settled": 480,
       "won": 105,
-      "pl": -22.43,
-      "roi": -4.7
+      "pl": -24.43,
+      "roi": -5.1
     },
     "favourite": {
-      "settled": 478,
+      "settled": 480,
       "won": 167,
-      "pl": 3.58,
-      "roi": 0.7
+      "pl": 1.58,
+      "roi": 0.3
     },
     "agree": {
-      "settled": 124,
+      "settled": 126,
       "won": 57,
-      "pl": 12.05,
-      "roi": 9.7
+      "pl": 10.05,
+      "roi": 8
     },
     "disagree": {
       "settled": 354,
