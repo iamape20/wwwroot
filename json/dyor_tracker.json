@@ -12945,10 +12945,16 @@
       "fav": {
         "horse": "SUNNY SOUTH WEST",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T12:01:30.742Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/1"
     },
     {
       "id": "2026-10-23|Sligo|12:25",
@@ -12964,10 +12970,16 @@
       "fav": {
         "horse": "SPEISIALTA",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-23T12:11:34.444Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Doncaster|12:35",
@@ -12987,21 +12999,65 @@
       },
       "recordedAt": "2026-10-23T12:21:24.772Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Newbury|12:42",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "12:42",
+      "horse": "SAX AVOIDANCE",
+      "price": "5/1",
+      "runners": 14,
+      "liveHorse": "AMMOONY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AMMOONY",
+        "price": "10/3",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T12:31:27.682Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|12:50",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "12:50",
+      "horse": "BOWENSONFIRE",
+      "price": "5/4",
+      "runners": 5,
+      "liveHorse": "BOWENSONFIRE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BOWENSONFIRE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T12:41:32.191Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 472,
+    "recorded": 474,
     "pick": {
-      "settled": 465,
+      "settled": 466,
       "won": 105,
-      "pl": -9.43,
-      "roi": -2
+      "pl": -10.43,
+      "roi": -2.2
     },
     "favourite": {
-      "settled": 467,
+      "settled": 468,
       "won": 167,
-      "pl": 14.58,
-      "roi": 3.1
+      "pl": 13.58,
+      "roi": 2.9
     },
     "agree": {
       "settled": 120,
@@ -13010,10 +13066,10 @@
       "roi": 13.4
     },
     "disagree": {
-      "settled": 345,
+      "settled": 346,
       "won": 48,
-      "pl": -25.48,
-      "roi": -7.4
+      "pl": -26.48,
+      "roi": -7.7
     }
   },
   "lastBackfill": 1792746117088

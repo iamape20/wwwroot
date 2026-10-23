@@ -5840,27 +5840,27 @@
       "marketVolume": 73
     },
     "lastBeforeOff": {
-      "at": "2026-10-23T12:21:24.121Z",
+      "at": "2026-10-23T12:41:31.598Z",
       "eventId": 34662081302602070,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.61,
-      "available": 33.95,
+      "bestBack": 1.62,
+      "available": 37.39,
       "depth": [
         [
+          1.62,
+          37.39
+        ],
+        [
           1.61,
-          33.95
+          122.64
         ],
         [
           1.6,
-          640.56
-        ],
-        [
-          1.59,
-          260.94
+          586.57
         ]
       ],
-      "marketVolume": 52778
+      "marketVolume": 53322
     }
   },
   "NAP|2026-10-23|Sligo|11:50|RONNIESRASCAL": {
@@ -5914,6 +5914,60 @@
         ]
       ],
       "marketVolume": 44128
+    }
+  },
+  "BET|2026-10-23|Cheltenham|12:50|BOWENSONFIRE": {
+    "type": "BET",
+    "date": "2026-10-23",
+    "course": "Cheltenham",
+    "time": "12:50",
+    "horse": "BOWENSONFIRE",
+    "betId": "2026-10-23|Cheltenham|12:50",
+    "atReveal": {
+      "at": "2026-10-23T12:41:31.591Z",
+      "eventId": 34662207775301024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.36,
+      "available": 246.14,
+      "depth": [
+        [
+          2.36,
+          246.14
+        ],
+        [
+          2.34,
+          157.08
+        ],
+        [
+          2.32,
+          698.27
+        ]
+      ],
+      "marketVolume": 214523
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-23T12:41:31.591Z",
+      "eventId": 34662207775301024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.36,
+      "available": 246.14,
+      "depth": [
+        [
+          2.36,
+          246.14
+        ],
+        [
+          2.34,
+          157.08
+        ],
+        [
+          2.32,
+          698.27
+        ]
+      ],
+      "marketVolume": 214523
     }
   }
 }
