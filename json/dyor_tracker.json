@@ -13490,10 +13490,18 @@
       "fav": {
         "horse": "BATTLE STANDARD",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:10:58.080Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Sligo|15:20",
@@ -13509,10 +13517,18 @@
       "fav": {
         "horse": "UNION STATION",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T15:10:58.092Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/6",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Doncaster|15:30",
@@ -13603,33 +13619,71 @@
       },
       "recordedAt": "2026-10-23T15:40:43.683Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Wolverhampton|16:00",
+      "date": "2026-10-23",
+      "course": "Wolverhampton",
+      "time": "16:00",
+      "horse": "ERNIE'S VALENTINE",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "ERNIE'S VALENTINE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ERNIE'S VALENTINE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T15:50:44.843Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-23|Doncaster|16:05",
+      "date": "2026-10-23",
+      "course": "Doncaster",
+      "time": "16:05",
+      "horse": "ANGEL GABRIEL",
+      "price": "3/1",
+      "runners": 11,
+      "liveHorse": "INTENSE VISION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INTENSE VISION",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T15:50:44.857Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 496,
+    "recorded": 498,
     "pick": {
-      "settled": 480,
+      "settled": 482,
       "won": 105,
-      "pl": -24.43,
-      "roi": -5.1
+      "pl": -26.43,
+      "roi": -5.5
     },
     "favourite": {
-      "settled": 480,
+      "settled": 482,
       "won": 167,
-      "pl": 1.58,
-      "roi": 0.3
+      "pl": -0.42,
+      "roi": -0.1
     },
     "agree": {
-      "settled": 126,
+      "settled": 127,
       "won": 57,
-      "pl": 10.05,
-      "roi": 8
+      "pl": 9.05,
+      "roi": 7.1
     },
     "disagree": {
-      "settled": 354,
+      "settled": 355,
       "won": 48,
-      "pl": -34.48,
-      "roi": -9.7
+      "pl": -35.48,
+      "roi": -10
     }
   },
   "lastBackfill": 1792759884775
