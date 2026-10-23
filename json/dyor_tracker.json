@@ -13359,10 +13359,18 @@
       "fav": {
         "horse": "CALICO",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-23T14:20:57.645Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-23|Sligo|14:45",
@@ -13401,27 +13409,71 @@
       },
       "recordedAt": "2026-10-23T14:41:03.469Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-23|Newbury|15:02",
+      "date": "2026-10-23",
+      "course": "Newbury",
+      "time": "15:02",
+      "horse": "BESIEGED",
+      "price": "11/2",
+      "runners": 12,
+      "liveHorse": "CLIFF DANGER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CLIFF DANGER",
+        "price": "5/2",
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "abandoned"
+      },
+      "recordedAt": "2026-10-23T14:50:55.325Z",
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
+    {
+      "id": "2026-10-23|Cheltenham|15:10",
+      "date": "2026-10-23",
+      "course": "Cheltenham",
+      "time": "15:10",
+      "horse": "MR HOLLYWOOD",
+      "price": "1/1",
+      "runners": 7,
+      "liveHorse": "MR HOLLYWOOD",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MR HOLLYWOOD",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-23T15:01:07.128Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 488,
+    "recorded": 490,
     "pick": {
-      "settled": 475,
+      "settled": 476,
       "won": 105,
-      "pl": -19.43,
-      "roi": -4.1
+      "pl": -20.43,
+      "roi": -4.3
     },
     "favourite": {
-      "settled": 476,
+      "settled": 477,
       "won": 167,
-      "pl": 5.58,
-      "roi": 1.2
+      "pl": 4.58,
+      "roi": 1
     },
     "agree": {
-      "settled": 122,
+      "settled": 123,
       "won": 57,
-      "pl": 14.05,
-      "roi": 11.5
+      "pl": 13.05,
+      "roi": 10.6
     },
     "disagree": {
       "settled": 353,
