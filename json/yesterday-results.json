@@ -1,36 +1,60 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "strong": [],
   "moderate": [
     {
-      "horse": "HAPPY LOVE",
-      "course": "Newmarket",
-      "time": "12:45",
-      "rating": "62.3",
-      "margin": "10.3",
-      "marginValue": 10.299999999999997,
-      "confidence": 54,
-      "meetingId": "122131",
-      "raceIndex": 1,
+      "horse": "DESERT ROMANCE",
+      "course": "Doncaster",
+      "time": "14:20",
+      "rating": "60.2",
+      "margin": "8.8",
+      "marginValue": 8.800000000000004,
+      "confidence": 62,
+      "meetingId": "122145",
+      "raceIndex": 3,
       "outcome": "placed"
+    },
+    {
+      "horse": "UNION STATION",
+      "course": "Sligo",
+      "time": "15:20",
+      "rating": "63.3",
+      "margin": "9.3",
+      "marginValue": 9.299999999999997,
+      "confidence": 77,
+      "meetingId": "122176",
+      "raceIndex": 6,
+      "outcome": "lost"
     }
   ],
   "dailyDouble": [
     {
-      "horse": "HAPPY LOVE",
-      "course": "Newmarket",
-      "time": "12:45",
-      "rating": "62.3",
-      "margin": "10.3",
-      "marginValue": 10.299999999999997,
-      "confidence": 54,
-      "meetingId": "122131",
-      "raceIndex": 1,
+      "horse": "UNION STATION",
+      "course": "Sligo",
+      "time": "15:20",
+      "rating": "63.3",
+      "margin": "9.3",
+      "marginValue": 9.3,
+      "confidence": 77,
+      "meetingId": "122176",
+      "raceIndex": 6,
       "tier": "Moderate",
-      "outcome": "void",
-      "voidReason": "No bet - market moved: race page picked IMPERIALISM at the off",
-      "resultIfBacked": "placed"
+      "nap": true,
+      "outcome": "lost"
+    },
+    {
+      "horse": "DESERT ROMANCE",
+      "course": "Doncaster",
+      "time": "14:20",
+      "rating": "60.2",
+      "margin": "8.8",
+      "marginValue": 8.800000000000004,
+      "confidence": 62,
+      "meetingId": "122145",
+      "raceIndex": 3,
+      "tier": "Moderate",
+      "outcome": "placed"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
