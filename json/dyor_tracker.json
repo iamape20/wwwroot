@@ -14839,25 +14839,52 @@
       "fav": {
         "horse": "KEV",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T17:50:23.558Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-24|Southwell|18:30",
+      "date": "2026-10-24",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "ANTHROPOLOGIST",
+      "price": "4/1",
+      "runners": 14,
+      "liveHorse": "ANTHROPOLOGIST",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ANTHROPOLOGIST",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T18:20:21.143Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 541,
+    "recorded": 542,
     "pick": {
-      "settled": 526,
+      "settled": 527,
       "won": 111,
-      "pl": -40.19,
-      "roi": -7.6
+      "pl": -41.19,
+      "roi": -7.8
     },
     "favourite": {
-      "settled": 523,
+      "settled": 524,
       "won": 176,
-      "pl": -13.74,
-      "roi": -2.6
+      "pl": -14.74,
+      "roi": -2.8
     },
     "agree": {
       "settled": 135,
@@ -14866,10 +14893,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 391,
+      "settled": 392,
       "won": 52,
-      "pl": -45.24,
-      "roi": -11.6
+      "pl": -46.24,
+      "roi": -11.8
     }
   },
   "lastBackfill": 1792855853569
