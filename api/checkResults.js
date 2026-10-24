@@ -86,12 +86,18 @@ async function fetchFullField(date, courseName, raceId, slug) {
             return null;
         }
 
+        // Starting price and casualty reason too, as js/a1results.js maps them:
+        // the race card's result banner, finish pills and PU/F pills read
+        // odds / casualtyReason, which this used to drop (always blank).
+        // Non-finishers have no finish_position, so keep them by reason.
         return race.rides
             .map(ride => ({
                 name: ride.horse?.name,
-                position: ride.finish_position
+                position: ride.finish_position,
+                odds: ride.betting?.current_odds || null,
+                casualtyReason: ride.casualty?.reason || null
             }))
-            .filter(p => p.name && p.position);
+            .filter(p => p.name && (p.position || p.casualtyReason));
 
     } catch {
 
@@ -162,7 +168,8 @@ async function fetchTodaysResults() {
                 // the main loop prefers a per-race detail fetch first.
                 topHorses: (r.top_horses || []).map(h => ({
                     name: h.name,
-                    position: h.position
+                    position: h.position,
+                    odds: h.odds || null
                 }))
             }));
 
