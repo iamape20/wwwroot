@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-24T12:40:57.870Z",
+  "generatedAt": "2026-10-24T13:01:17.836Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 116/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 118/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,17 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Cheltenham",
-      "off": "13:45",
-      "status": "BET",
-      "horse": "ROAD TO WEMBLEY",
-      "price": "5/4"
-    },
-    {
       "course": "Doncaster",
       "off": "14:05",
-      "status": "POSSIBLE",
-      "revealAt": "13:50"
+      "status": "BET",
+      "horse": "BENGAL TIGER",
+      "price": "1/1"
     },
     {
       "course": "Southwell",
@@ -35,17 +29,34 @@
   ],
   "awaitingResult": [
     {
-      "course": "Doncaster",
-      "off": "13:30",
-      "horse": "NOBLE EXHIBIT"
-    },
-    {
-      "course": "Kelso",
-      "off": "13:37",
-      "horse": "EAZY BREEZY"
+      "course": "Cheltenham",
+      "off": "13:45",
+      "horse": "ROAD TO WEMBLEY"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "off": "13:37",
+      "horse": "EAZY BREEZY",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "off": "13:30",
+      "horse": "NOBLE EXHIBIT",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-23",
       "course": "Doncaster",
@@ -188,32 +199,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Newmarket",
-      "off": "13:50",
-      "horse": "GRINANBEARIT",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Navan",
-      "off": "13:02",
-      "horse": "MISS MONA KEEBA",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-24T12:40:57.734Z",
+    "updatedAt": "2026-10-24T13:01:17.625Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -236,10 +225,10 @@
   },
   "stats": {
     "paper": {
-      "bets": 116,
+      "bets": 118,
       "won": 56,
-      "pl": -16.57,
-      "roi": -14.3,
+      "pl": -18.57,
+      "roi": -15.7,
       "provisional": 0
     },
     "live": {

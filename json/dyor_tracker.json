@@ -14186,10 +14186,18 @@
       "fav": {
         "horse": "NOBLE EXHIBIT",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T12:21:00.905Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|12:37",
@@ -14205,10 +14213,18 @@
       "fav": {
         "horse": "EAZY BREEZY",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T12:31:01.658Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Cheltenham|12:45",
@@ -14228,21 +14244,59 @@
       },
       "recordedAt": "2026-10-24T12:31:01.681Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Doncaster|13:05",
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "time": "13:05",
+      "horse": "ROGUE JEWEL",
+      "price": "22/1",
+      "runners": 7,
+      "liveHorse": "BENGAL TIGER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BENGAL TIGER",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T12:50:57.289Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|13:10",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "13:10",
+      "horse": "SUSPECTED",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "MALAYALAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MALAYALAM",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T13:01:22.559Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 518,
+    "recorded": 520,
     "pick": {
-      "settled": 504,
+      "settled": 506,
       "won": 111,
-      "pl": -18.19,
-      "roi": -3.6
+      "pl": -20.19,
+      "roi": -4
     },
     "favourite": {
-      "settled": 506,
+      "settled": 508,
       "won": 176,
-      "pl": 3.26,
-      "roi": 0.6
+      "pl": 1.26,
+      "roi": 0.2
     },
     "agree": {
       "settled": 132,
@@ -14251,10 +14305,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 372,
+      "settled": 374,
       "won": 52,
-      "pl": -26.24,
-      "roi": -7.1
+      "pl": -28.24,
+      "roi": -7.6
     }
   },
   "lastBackfill": 1792844460928
