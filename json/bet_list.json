@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T12:20:57.811Z",
+  "generatedAt": "2026-10-24T12:40:57.870Z",
   "phase": "PAPER",
   "phaseMessage": "PAPER PHASE - DO NOT STAKE. 116/120 bets settled before the verdict.",
   "rules": [
@@ -14,23 +14,11 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Doncaster",
-      "off": "13:30",
-      "status": "BET",
-      "horse": "NOBLE EXHIBIT",
-      "price": "6/5"
-    },
-    {
-      "course": "Kelso",
-      "off": "13:37",
-      "status": "POSSIBLE",
-      "revealAt": "13:22"
-    },
-    {
       "course": "Cheltenham",
       "off": "13:45",
-      "status": "POSSIBLE",
-      "revealAt": "13:30"
+      "status": "BET",
+      "horse": "ROAD TO WEMBLEY",
+      "price": "5/4"
     },
     {
       "course": "Doncaster",
@@ -45,7 +33,18 @@
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Doncaster",
+      "off": "13:30",
+      "horse": "NOBLE EXHIBIT"
+    },
+    {
+      "course": "Kelso",
+      "off": "13:37",
+      "horse": "EAZY BREEZY"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-23",
@@ -214,7 +213,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-24T12:20:57.645Z",
+    "updatedAt": "2026-10-24T12:40:57.734Z",
     "claude": {
       "races": 38,
       "won": 7,

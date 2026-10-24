@@ -14159,10 +14159,18 @@
       "fav": {
         "horse": "LISBANE PARK",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T12:01:14.928Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Doncaster|12:30",
@@ -14182,21 +14190,59 @@
       },
       "recordedAt": "2026-10-24T12:21:00.905Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|12:37",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "12:37",
+      "horse": "CAPE WARRIOR",
+      "price": "11/4",
+      "runners": 6,
+      "liveHorse": "EAZY BREEZY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EAZY BREEZY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T12:31:01.658Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Cheltenham|12:45",
+      "date": "2026-10-24",
+      "course": "Cheltenham",
+      "time": "12:45",
+      "horse": "KASHCHEI",
+      "price": "11/2",
+      "runners": 6,
+      "liveHorse": "ROAD TO WEMBLEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROAD TO WEMBLEY",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T12:31:01.681Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 516,
+    "recorded": 518,
     "pick": {
-      "settled": 503,
+      "settled": 504,
       "won": 111,
-      "pl": -17.19,
-      "roi": -3.4
+      "pl": -18.19,
+      "roi": -3.6
     },
     "favourite": {
-      "settled": 505,
+      "settled": 506,
       "won": 176,
-      "pl": 4.26,
-      "roi": 0.8
+      "pl": 3.26,
+      "roi": 0.6
     },
     "agree": {
       "settled": 132,
@@ -14205,10 +14251,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 371,
+      "settled": 372,
       "won": 52,
-      "pl": -25.24,
-      "roi": -6.8
+      "pl": -26.24,
+      "roi": -7.1
     }
   },
   "lastBackfill": 1792844460928
