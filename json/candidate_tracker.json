@@ -2559,7 +2559,10 @@
       "recordedAt": "2026-10-23T12:21:24.397Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.54920533,
+      "pl": 1.472,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-23|Doncaster|13:45",
@@ -2637,7 +2640,10 @@
       "recordedAt": "2026-10-23T16:20:37.484Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/11"
+      "isp": "10/11",
+      "bsp": 2.04891768,
+      "pl": 0.996,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-23|Wolverhampton|17:00",
@@ -2674,10 +2680,10 @@
   ],
   "stats": {
     "recorded": 162,
-    "settled": 160,
-    "won": 81,
-    "pl": 3.27,
-    "roi": 2
+    "settled": 162,
+    "won": 83,
+    "pl": 5.74,
+    "roi": 3.5
   },
-  "lastBackfill": 1792821681260
+  "lastBackfill": 1792833064975
 }
