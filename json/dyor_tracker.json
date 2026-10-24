@@ -14500,10 +14500,18 @@
       "fav": {
         "horse": "SHAFDAR",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T14:40:37.298Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|14:50",
@@ -14519,10 +14527,16 @@
       "fav": {
         "horse": "MYRETOWN",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-10-24T14:40:37.310Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Cheltenham|15:05",
@@ -14542,21 +14556,78 @@
       },
       "recordedAt": "2026-10-24T14:50:43.118Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|15:25",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "15:25",
+      "horse": "SMOKE TRAIL",
+      "price": "8/11",
+      "runners": 4,
+      "liveHorse": "SMOKE TRAIL",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SMOKE TRAIL",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T15:10:33.838Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Southwell|15:24",
+      "date": "2026-10-24",
+      "course": "Southwell",
+      "time": "15:24",
+      "horse": "BILL THE BULL",
+      "price": "6/4",
+      "runners": 4,
+      "liveHorse": "BILL THE BULL",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BILL THE BULL",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T15:10:33.865Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Doncaster|15:30",
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "time": "15:30",
+      "horse": "BEALE STREET",
+      "price": "12/1",
+      "runners": 13,
+      "liveHorse": "CROWN OFFICE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CROWN OFFICE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T15:20:36.426Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 530,
+    "recorded": 533,
     "pick": {
-      "settled": 515,
+      "settled": 517,
       "won": 111,
-      "pl": -29.19,
-      "roi": -5.7
+      "pl": -31.19,
+      "roi": -6
     },
     "favourite": {
-      "settled": 514,
+      "settled": 515,
       "won": 176,
-      "pl": -4.74,
-      "roi": -0.9
+      "pl": -5.74,
+      "roi": -1.1
     },
     "agree": {
       "settled": 132,
@@ -14565,10 +14636,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 383,
+      "settled": 385,
       "won": 52,
-      "pl": -37.24,
-      "roi": -9.7
+      "pl": -39.24,
+      "roi": -10.2
     }
   },
   "lastBackfill": 1792844460928
