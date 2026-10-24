@@ -14552,10 +14552,16 @@
       "fav": {
         "horse": "BUTCH CASSIDY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-24T14:50:43.118Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|15:25",
@@ -14590,10 +14596,18 @@
       "fav": {
         "horse": "BILL THE BULL",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T15:10:33.865Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Doncaster|15:30",
@@ -14613,34 +14627,72 @@
       },
       "recordedAt": "2026-10-24T15:20:36.426Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Cheltenham|15:40",
+      "date": "2026-10-24",
+      "course": "Cheltenham",
+      "time": "15:40",
+      "horse": "LITTLEBOBBYDAZZLER",
+      "price": "9/1",
+      "runners": 11,
+      "liveHorse": "BALLYCRYSTAL BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYCRYSTAL BOY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T15:30:53.532Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|15:55",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "15:55",
+      "horse": "LETS MINGLE",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "SUMMERGROUNDS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SUMMERGROUNDS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T15:40:42.442Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 533,
+    "recorded": 535,
     "pick": {
-      "settled": 517,
+      "settled": 519,
       "won": 111,
-      "pl": -31.19,
-      "roi": -6
+      "pl": -33.19,
+      "roi": -6.4
     },
     "favourite": {
-      "settled": 515,
+      "settled": 516,
       "won": 176,
-      "pl": -5.74,
-      "roi": -1.1
+      "pl": -6.74,
+      "roi": -1.3
     },
     "agree": {
-      "settled": 132,
+      "settled": 133,
       "won": 59,
-      "pl": 8.05,
-      "roi": 6.1
+      "pl": 7.05,
+      "roi": 5.3
     },
     "disagree": {
-      "settled": 385,
+      "settled": 386,
       "won": 52,
-      "pl": -39.24,
-      "roi": -10.2
+      "pl": -40.24,
+      "roi": -10.4
     }
   },
-  "lastBackfill": 1792844460928
+  "lastBackfill": 1792855853569
 }
