@@ -14136,10 +14136,14 @@
       "fav": {
         "horse": "AL SHABAB STORM",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-24T11:41:03.412Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-10-24|Cheltenham|12:10",
@@ -14159,10 +14163,29 @@
       },
       "recordedAt": "2026-10-24T12:01:14.928Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Doncaster|12:30",
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "time": "12:30",
+      "horse": "SERGEI DIAGHILEV",
+      "price": "15/2",
+      "runners": 7,
+      "liveHorse": "NOBLE EXHIBIT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOBLE EXHIBIT",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T12:21:00.905Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 515,
+    "recorded": 516,
     "pick": {
       "settled": 503,
       "won": 111,
@@ -14188,5 +14211,5 @@
       "roi": -6.8
     }
   },
-  "lastBackfill": 1792833067031
+  "lastBackfill": 1792844460928
 }
