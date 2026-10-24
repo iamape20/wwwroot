@@ -14423,10 +14423,16 @@
       "fav": {
         "horse": "ASHDOWN FOREST",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T14:00:43.551Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
     },
     {
       "id": "2026-10-24|Doncaster|14:19",
@@ -14442,10 +14448,18 @@
       "fav": {
         "horse": "LIR SPECIALE",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T14:10:46.815Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Cheltenham|14:30",
@@ -14465,21 +14479,59 @@
       },
       "recordedAt": "2026-10-24T14:20:40.303Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Doncaster|14:55",
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "time": "14:55",
+      "horse": "HAVE SECRET",
+      "price": "14/1",
+      "runners": 14,
+      "liveHorse": "SHAFDAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHAFDAR",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T14:40:37.298Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|14:50",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "14:50",
+      "horse": "MUMFORD'S MAGIC",
+      "price": "7/2",
+      "runners": 4,
+      "liveHorse": "MYRETOWN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MYRETOWN",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T14:40:37.310Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 527,
+    "recorded": 529,
     "pick": {
-      "settled": 513,
+      "settled": 514,
       "won": 111,
-      "pl": -27.19,
-      "roi": -5.3
+      "pl": -28.19,
+      "roi": -5.5
     },
     "favourite": {
-      "settled": 512,
+      "settled": 514,
       "won": 176,
-      "pl": -2.74,
-      "roi": -0.5
+      "pl": -4.74,
+      "roi": -0.9
     },
     "agree": {
       "settled": 132,
@@ -14488,10 +14540,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 381,
+      "settled": 382,
       "won": 52,
-      "pl": -35.24,
-      "roi": -9.2
+      "pl": -36.24,
+      "roi": -9.5
     }
   },
   "lastBackfill": 1792844460928
