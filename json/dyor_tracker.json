@@ -14475,10 +14475,16 @@
       "fav": {
         "horse": "NORTH SHORE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-24T14:20:40.303Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Doncaster|14:55",
@@ -14517,15 +14523,34 @@
       },
       "recordedAt": "2026-10-24T14:40:37.310Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Cheltenham|15:05",
+      "date": "2026-10-24",
+      "course": "Cheltenham",
+      "time": "15:05",
+      "horse": "TURNDLIGHTSDOWNLOW",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "BUTCH CASSIDY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BUTCH CASSIDY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T14:50:43.118Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 529,
+    "recorded": 530,
     "pick": {
-      "settled": 514,
+      "settled": 515,
       "won": 111,
-      "pl": -28.19,
-      "roi": -5.5
+      "pl": -29.19,
+      "roi": -5.7
     },
     "favourite": {
       "settled": 514,
@@ -14540,10 +14565,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 382,
+      "settled": 383,
       "won": 52,
-      "pl": -36.24,
-      "roi": -9.5
+      "pl": -37.24,
+      "roi": -9.7
     }
   },
   "lastBackfill": 1792844460928
