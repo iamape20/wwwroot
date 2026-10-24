@@ -14658,10 +14658,16 @@
       "fav": {
         "horse": "BALLYCRYSTAL BOY",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-10-24T15:30:53.532Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|15:55",
@@ -14677,10 +14683,16 @@
       "fav": {
         "horse": "SUMMERGROUNDS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T15:40:42.442Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
     },
     {
       "id": "2026-10-24|Doncaster|16:05",
@@ -14696,10 +14708,18 @@
       "fav": {
         "horse": "PROSPERITAS",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T15:50:40.790Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Southwell|16:00",
@@ -14715,37 +14735,64 @@
       "fav": {
         "horse": "BONA FORTUNA",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T15:50:40.819Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-24|Southwell|16:30",
+      "date": "2026-10-24",
+      "course": "Southwell",
+      "time": "16:30",
+      "horse": "HAVACHOC",
+      "price": "15/2",
+      "runners": 14,
+      "liveHorse": "WYVILL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WYVILL",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T16:20:33.124Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 537,
+    "recorded": 538,
     "pick": {
-      "settled": 521,
+      "settled": 524,
       "won": 111,
-      "pl": -35.19,
-      "roi": -6.8
+      "pl": -38.19,
+      "roi": -7.3
     },
     "favourite": {
-      "settled": 518,
+      "settled": 521,
       "won": 176,
-      "pl": -8.74,
-      "roi": -1.7
+      "pl": -11.74,
+      "roi": -2.3
     },
     "agree": {
-      "settled": 134,
+      "settled": 135,
       "won": 59,
-      "pl": 6.05,
-      "roi": 4.5
+      "pl": 5.05,
+      "roi": 3.7
     },
     "disagree": {
-      "settled": 387,
+      "settled": 389,
       "won": 52,
-      "pl": -41.24,
-      "roi": -10.7
+      "pl": -43.24,
+      "roi": -11.1
     }
   },
   "lastBackfill": 1792855853569
