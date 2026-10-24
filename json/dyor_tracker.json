@@ -14762,25 +14762,52 @@
       "fav": {
         "horse": "WYVILL",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T16:20:33.124Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-24|Southwell|17:00",
+      "date": "2026-10-24",
+      "course": "Southwell",
+      "time": "17:00",
+      "horse": "CHERTSEY",
+      "price": "50/1",
+      "runners": 10,
+      "liveHorse": "NATIONAL ANTHEM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NATIONAL ANTHEM",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T16:50:24.444Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 538,
+    "recorded": 539,
     "pick": {
-      "settled": 524,
+      "settled": 525,
       "won": 111,
-      "pl": -38.19,
-      "roi": -7.3
+      "pl": -39.19,
+      "roi": -7.5
     },
     "favourite": {
-      "settled": 521,
+      "settled": 522,
       "won": 176,
-      "pl": -11.74,
-      "roi": -2.3
+      "pl": -12.74,
+      "roi": -2.4
     },
     "agree": {
       "settled": 135,
@@ -14789,10 +14816,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 389,
+      "settled": 390,
       "won": 52,
-      "pl": -43.24,
-      "roi": -11.1
+      "pl": -44.24,
+      "roi": -11.3
     }
   },
   "lastBackfill": 1792855853569
