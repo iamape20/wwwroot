@@ -14889,25 +14889,52 @@
       "fav": {
         "horse": "FLICK OF AN EYE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T18:50:15.816Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-24|Southwell|19:30",
+      "date": "2026-10-24",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "PIPERSTOWN",
+      "price": "22/1",
+      "runners": 11,
+      "liveHorse": "MEHMAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MEHMAR",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T19:20:17.839Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 543,
+    "recorded": 544,
     "pick": {
-      "settled": 527,
+      "settled": 528,
       "won": 111,
-      "pl": -41.19,
-      "roi": -7.8
+      "pl": -42.19,
+      "roi": -8
     },
     "favourite": {
-      "settled": 524,
+      "settled": 525,
       "won": 176,
-      "pl": -14.74,
-      "roi": -2.8
+      "pl": -15.74,
+      "roi": -3
     },
     "agree": {
       "settled": 135,
@@ -14916,10 +14943,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 392,
+      "settled": 393,
       "won": 52,
-      "pl": -46.24,
-      "roi": -11.8
+      "pl": -47.24,
+      "roi": -12
     }
   },
   "lastBackfill": 1792867218681
