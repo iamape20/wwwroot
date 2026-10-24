@@ -14292,10 +14292,18 @@
       "fav": {
         "horse": "MALAYALAM",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T13:01:22.559Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Cheltenham|13:20",
@@ -14311,25 +14319,88 @@
       "fav": {
         "horse": "SEANIECON",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-24T13:10:52.306Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-24|Doncaster|13:40",
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "time": "13:40",
+      "horse": "SHADOW KING",
+      "price": "10/1",
+      "runners": 4,
+      "liveHorse": "NATIONAL HONOUR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NATIONAL HONOUR",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T13:30:58.860Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|13:44",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "13:44",
+      "horse": "BALLYFORT",
+      "price": "4/1",
+      "runners": 5,
+      "liveHorse": "ACHILLE DES ROCS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ACHILLE DES ROCS",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T13:30:58.898Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-24|Cheltenham|13:55",
+      "date": "2026-10-24",
+      "course": "Cheltenham",
+      "time": "13:55",
+      "horse": "DIAMOND DEALER",
+      "price": "4/1",
+      "runners": 9,
+      "liveHorse": "HERE COMES GEORGIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HERE COMES GEORGIE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T13:40:48.348Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 521,
+    "recorded": 524,
     "pick": {
-      "settled": 508,
+      "settled": 510,
       "won": 111,
-      "pl": -22.19,
-      "roi": -4.4
+      "pl": -24.19,
+      "roi": -4.7
     },
     "favourite": {
-      "settled": 509,
+      "settled": 510,
       "won": 176,
-      "pl": 0.26,
-      "roi": 0.1
+      "pl": -0.74,
+      "roi": -0.1
     },
     "agree": {
       "settled": 132,
@@ -14338,10 +14409,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 376,
+      "settled": 378,
       "won": 52,
-      "pl": -30.24,
-      "roi": -8
+      "pl": -32.24,
+      "roi": -8.5
     }
   },
   "lastBackfill": 1792844460928
