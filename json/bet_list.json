@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-24T13:01:17.836Z",
+  "generatedAt": "2026-10-24T13:20:52.913Z",
   "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 118/120 bets settled before the verdict.",
+  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 119/120 bets settled before the verdict.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
@@ -14,27 +14,36 @@
   "morningMissing": false,
   "today": [
     {
-      "course": "Doncaster",
-      "off": "14:05",
-      "status": "BET",
-      "horse": "BENGAL TIGER",
-      "price": "1/1"
-    },
-    {
       "course": "Southwell",
       "off": "18:30",
       "status": "POSSIBLE",
       "revealAt": "18:15"
     }
   ],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-24",
+      "course": "Doncaster",
+      "off": "14:05",
+      "horse": "BENGAL TIGER",
+      "phase": "PAPER",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-24",
       "course": "Cheltenham",
       "off": "13:45",
-      "horse": "ROAD TO WEMBLEY"
-    }
-  ],
-  "recent": [
+      "horse": "ROAD TO WEMBLEY",
+      "phase": "PAPER",
+      "result": "lost",
+      "bsp": null,
+      "pl": -1,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-24",
       "course": "Kelso",
@@ -177,32 +186,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Newmarket",
-      "off": "14:25",
-      "horse": "ALTIUS",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Navan",
-      "off": "14:07",
-      "horse": "AEDHMAR",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-24T13:01:17.625Z",
+    "updatedAt": "2026-10-24T13:20:52.778Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -225,11 +212,11 @@
   },
   "stats": {
     "paper": {
-      "bets": 118,
-      "won": 56,
-      "pl": -18.57,
-      "roi": -15.7,
-      "provisional": 0
+      "bets": 120,
+      "won": 57,
+      "pl": -18.66,
+      "roi": -15.6,
+      "provisional": 1
     },
     "live": {
       "bets": 0,

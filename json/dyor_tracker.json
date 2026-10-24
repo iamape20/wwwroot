@@ -14240,10 +14240,18 @@
       "fav": {
         "horse": "ROAD TO WEMBLEY",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T12:31:01.681Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Doncaster|13:05",
@@ -14259,10 +14267,16 @@
       "fav": {
         "horse": "BENGAL TIGER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-24T12:50:57.289Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|13:10",
@@ -14282,21 +14296,40 @@
       },
       "recordedAt": "2026-10-24T13:01:22.559Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Cheltenham|13:20",
+      "date": "2026-10-24",
+      "course": "Cheltenham",
+      "time": "13:20",
+      "horse": "DIVILABOTHER",
+      "price": "18/1",
+      "runners": 19,
+      "liveHorse": "SEANIECON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SEANIECON",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T13:10:52.306Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 520,
+    "recorded": 521,
     "pick": {
-      "settled": 506,
+      "settled": 508,
       "won": 111,
-      "pl": -20.19,
-      "roi": -4
+      "pl": -22.19,
+      "roi": -4.4
     },
     "favourite": {
-      "settled": 508,
+      "settled": 509,
       "won": 176,
-      "pl": 1.26,
-      "roi": 0.2
+      "pl": 0.26,
+      "roi": 0.1
     },
     "agree": {
       "settled": 132,
@@ -14305,10 +14338,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 374,
+      "settled": 376,
       "won": 52,
-      "pl": -28.24,
-      "roi": -7.6
+      "pl": -30.24,
+      "roi": -8
     }
   },
   "lastBackfill": 1792844460928

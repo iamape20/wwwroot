@@ -2719,7 +2719,11 @@
       "rating": 76.5,
       "runners": 6,
       "recordedAt": "2026-10-24T12:31:01.351Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Doncaster|13:05",
@@ -2731,15 +2735,17 @@
       "rating": 60,
       "runners": 7,
       "recordedAt": "2026-10-24T12:50:56.959Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     }
   ],
   "stats": {
     "recorded": 166,
-    "settled": 164,
+    "settled": 165,
     "won": 83,
-    "pl": 3.74,
-    "roi": 2.3
+    "pl": 2.74,
+    "roi": 1.7
   },
   "lastBackfill": 1792833064975
 }
