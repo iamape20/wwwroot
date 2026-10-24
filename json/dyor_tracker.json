@@ -14344,10 +14344,18 @@
       "fav": {
         "horse": "NATIONAL HONOUR",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T13:30:58.860Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Kelso|13:44",
@@ -14363,10 +14371,18 @@
       "fav": {
         "horse": "ACHILLE DES ROCS",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T13:30:58.898Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-24|Cheltenham|13:55",
@@ -14386,21 +14402,40 @@
       },
       "recordedAt": "2026-10-24T13:40:48.348Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-24|Kelso|14:14",
+      "date": "2026-10-24",
+      "course": "Kelso",
+      "time": "14:14",
+      "horse": "SCOTS POET",
+      "price": "11/2",
+      "runners": 6,
+      "liveHorse": "ASHDOWN FOREST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ASHDOWN FOREST",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-24T14:00:43.551Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 524,
+    "recorded": 525,
     "pick": {
-      "settled": 510,
+      "settled": 512,
       "won": 111,
-      "pl": -24.19,
-      "roi": -4.7
+      "pl": -26.19,
+      "roi": -5.1
     },
     "favourite": {
-      "settled": 510,
+      "settled": 512,
       "won": 176,
-      "pl": -0.74,
-      "roi": -0.1
+      "pl": -2.74,
+      "roi": -0.5
     },
     "agree": {
       "settled": 132,
@@ -14409,10 +14444,10 @@
       "roi": 6.1
     },
     "disagree": {
-      "settled": 378,
+      "settled": 380,
       "won": 52,
-      "pl": -32.24,
-      "roi": -8.5
+      "pl": -34.24,
+      "roi": -9
     }
   },
   "lastBackfill": 1792844460928
