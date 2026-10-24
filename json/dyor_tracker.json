@@ -14916,25 +14916,33 @@
       "fav": {
         "horse": "MEHMAR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-24T19:20:17.839Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 544,
     "pick": {
-      "settled": 528,
+      "settled": 529,
       "won": 111,
-      "pl": -42.19,
-      "roi": -8
+      "pl": -43.19,
+      "roi": -8.2
     },
     "favourite": {
-      "settled": 525,
+      "settled": 526,
       "won": 176,
-      "pl": -15.74,
-      "roi": -3
+      "pl": -16.74,
+      "roi": -3.2
     },
     "agree": {
       "settled": 135,
@@ -14943,10 +14951,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 393,
+      "settled": 394,
       "won": 52,
-      "pl": -47.24,
-      "roi": -12
+      "pl": -48.24,
+      "roi": -12.2
     }
   },
   "lastBackfill": 1792867218681
