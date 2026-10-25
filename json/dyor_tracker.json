@@ -15402,10 +15402,18 @@
       "fav": {
         "horse": "HUNTIN BOOTS",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T15:30:23.510Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|15:48",
@@ -15425,21 +15433,59 @@
       },
       "recordedAt": "2026-10-25T15:40:21.469Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|15:56",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "15:56",
+      "horse": "BULGADEN CASTLE",
+      "price": "5/6",
+      "runners": 12,
+      "liveHorse": "BULGADEN CASTLE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BULGADEN CASTLE",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T15:50:17.587Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Wexford|16:10",
+      "date": "2026-10-25",
+      "course": "Wexford",
+      "time": "16:10",
+      "horse": "BAYMOUNT",
+      "price": "9/4",
+      "runners": 7,
+      "liveHorse": "BAYMOUNT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BAYMOUNT",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T16:00:22.303Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 562,
+    "recorded": 564,
     "pick": {
-      "settled": 548,
+      "settled": 549,
       "won": 116,
-      "pl": -35.14,
-      "roi": -6.4
+      "pl": -36.14,
+      "roi": -6.6
     },
     "favourite": {
-      "settled": 545,
+      "settled": 546,
       "won": 186,
-      "pl": -2.16,
-      "roi": -0.4
+      "pl": -3.16,
+      "roi": -0.6
     },
     "agree": {
       "settled": 140,
@@ -15448,10 +15494,10 @@
       "roi": 8.3
     },
     "disagree": {
-      "settled": 408,
+      "settled": 409,
       "won": 54,
-      "pl": -46.82,
-      "roi": -11.5
+      "pl": -47.82,
+      "roi": -11.7
     }
   },
   "lastBackfill": 1792933246337
