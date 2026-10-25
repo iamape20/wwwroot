@@ -15011,10 +15011,18 @@
       "fav": {
         "horse": "CAHER ROES DEN",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T12:40:49.192Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|13:00",
@@ -15030,10 +15038,14 @@
       "fav": {
         "horse": "MOORE BRION",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-10-25T12:50:45.573Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/6"
     },
     {
       "id": "2026-10-25|Galway|13:07",
@@ -15053,21 +15065,59 @@
       },
       "recordedAt": "2026-10-25T13:00:46.319Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Wexford|13:25",
+      "date": "2026-10-25",
+      "course": "Wexford",
+      "time": "13:25",
+      "horse": "DUFFYS HODEY",
+      "price": "22/1",
+      "runners": 10,
+      "liveHorse": "WATCH THE WEATHER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WATCH THE WEATHER",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T13:10:42.528Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Market Rasen|13:35",
+      "date": "2026-10-25",
+      "course": "Market Rasen",
+      "time": "13:35",
+      "horse": "DON DANDY",
+      "price": "8/11",
+      "runners": 7,
+      "liveHorse": "DON DANDY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DON DANDY",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T13:20:46.066Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 548,
+    "recorded": 550,
     "pick": {
-      "settled": 534,
+      "settled": 535,
       "won": 116,
-      "pl": -21.14,
-      "roi": -4
+      "pl": -22.14,
+      "roi": -4.1
     },
     "favourite": {
-      "settled": 536,
+      "settled": 537,
       "won": 186,
-      "pl": 6.84,
-      "roi": 1.3
+      "pl": 5.84,
+      "roi": 1.1
     },
     "agree": {
       "settled": 138,
@@ -15076,10 +15126,10 @@
       "roi": 9.9
     },
     "disagree": {
-      "settled": 396,
+      "settled": 397,
       "won": 54,
-      "pl": -34.82,
-      "roi": -8.8
+      "pl": -35.82,
+      "roi": -9
     }
   },
   "lastBackfill": 1792933246337
