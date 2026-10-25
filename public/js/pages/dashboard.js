@@ -718,7 +718,7 @@ const ENGINE_LABELS = {
 // matching the order predictor.js actually scores them in.
 const ENGINE_ORDER = ["form", "context", "market", "verdict"];
 
-function buildEngineBreakdownPanel(engineDetails) {
+function buildEngineBreakdownPanel(engineDetails, starsPart = null) {
 
     if (!engineDetails) {
 
@@ -767,13 +767,30 @@ function buildEngineBreakdownPanel(engineDetails) {
             })
             .join("");
 
+    // Timeform stars (2026-10-25) are added on top of the four parts:
+    // 4 rating points per star above or below 3 (engine-v2/starsEngine.js).
+    const stars = Number(starsPart?.stars);
+    const hasStars = Number.isInteger(stars) && stars >= 1 && stars <= 5;
+    const points = Number(starsPart?.weighted) || 0;
+    const starsRow = hasStars
+        ? `<div class="engine-row">` +
+              `<span class="engine-label">Timeform stars</span>` +
+              `<span class="engine-score">${stars}/5</span>` +
+              `<span class="engine-confidence"></span>` +
+              `<span class="engine-reasons">${escapeHtml(points === 0 ? "No change to the rating (3 stars)" : `${points > 0 ? "+" : ""}${points} rating points`)}</span>` +
+          `</div>`
+        : "";
+
     return `
         <div class="engine-panel">
             <div class="engine-panel-note">
-                These four combine to set the ELITE rating shown above.
+                ${hasStars
+                    ? "These four, plus the Timeform stars, combine to set the ELITE rating shown above."
+                    : "These four combine to set the ELITE rating shown above."}
                 The checklist below only ever breaks an exact tie between two runners.
             </div>
             ${rows}
+            ${starsRow}
         </div>
     `;
 }
@@ -1982,7 +1999,8 @@ async function loadRace(
                     )}
 
                     ${buildEngineBreakdownPanel(
-                        runner.elite.engineDetails
+                        runner.elite.engineDetails,
+                        runner.elite.starsPart
                     )}
 
                 `;

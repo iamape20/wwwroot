@@ -212,7 +212,10 @@ async function getRace(meetingId, raceIndex) {
 						confidence: elite.confidence,
 						checklistBreakdown: liveBreakdown,
 						checklistPoints: livePoints,
-						engineDetails: elite.engine_details
+						engineDetails: elite.engine_details,
+						// Timeform stars part (2026-10-25): added to the rating
+						// outside the four engines, so it is not in engine_details.
+						starsPart: elite.rating_breakdown?.stars || null
 					}
 
 				};
