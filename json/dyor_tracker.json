@@ -15140,10 +15140,18 @@
       "fav": {
         "horse": "DEARG MOR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T13:30:45.941Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Wexford|14:00",
@@ -15159,10 +15167,18 @@
       "fav": {
         "horse": "NOON BLU DODVILLE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T13:50:42.960Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|14:10",
@@ -15182,21 +15198,59 @@
       },
       "recordedAt": "2026-10-25T14:00:50.079Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|14:17",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "14:17",
+      "horse": "LIGHT UP THE DARK",
+      "price": "4/9",
+      "runners": 8,
+      "liveHorse": "LIGHT UP THE DARK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LIGHT UP THE DARK",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T14:10:42.649Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Wexford|14:35",
+      "date": "2026-10-25",
+      "course": "Wexford",
+      "time": "14:35",
+      "horse": "FARNEY BRIDGE",
+      "price": "11/1",
+      "runners": 13,
+      "liveHorse": "SOUL ASYLUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOUL ASYLUM",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T14:20:38.609Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 553,
+    "recorded": 555,
     "pick": {
-      "settled": 538,
+      "settled": 540,
       "won": 116,
-      "pl": -25.14,
-      "roi": -4.7
+      "pl": -27.14,
+      "roi": -5
     },
     "favourite": {
-      "settled": 539,
+      "settled": 541,
       "won": 186,
-      "pl": 3.84,
-      "roi": 0.7
+      "pl": 1.84,
+      "roi": 0.3
     },
     "agree": {
       "settled": 139,
@@ -15205,10 +15259,10 @@
       "roi": 9.1
     },
     "disagree": {
-      "settled": 399,
+      "settled": 401,
       "won": 54,
-      "pl": -37.82,
-      "roi": -9.5
+      "pl": -39.82,
+      "roi": -9.9
     }
   },
   "lastBackfill": 1792933246337
