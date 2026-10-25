@@ -110,7 +110,10 @@ module.exports = (req, res) => {
     if (!tracker) return res.status(404).json({ success: false, error: "bet tracker not available" });
 
     const betList = summarise(
-        (tracker.bets || []).filter(b => b.phase !== "LIVE"),
+        // PAPER only: once STOPPED/PAUSED, betList.js keeps recording
+        // qualifiers with stake 0 and P/L 0 - not paper bets (25 Oct: 3 such
+        // made it 124 settled, 46.8% won, vs the verdict's 121).
+        (tracker.bets || []).filter(b => b.phase === "PAPER"),
         VERDICT_BETS,
         [["Backtest edge (+2.0%)", BACKTEST_EDGE], ["No edge (0%)", 0], ["Historical test (−4.8%)", HISTORY_EDGE]],
         tracker.startedAt
