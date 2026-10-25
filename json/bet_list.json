@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:40:13.668Z",
+  "generatedAt": "2026-10-25T17:00:09.104Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-25",
       "course": "Galway",
       "off": "16:30",
-      "horse": "MOSCOVITE"
-    }
-  ],
-  "recent": [
+      "horse": "MOSCOVITE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-25",
       "course": "Galway",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-22",
-      "course": "Ffos Las",
-      "off": "12:51",
-      "horse": "FAIRY PARK",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.38,
-      "pl": 0.361,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-25T16:40:13.576Z",
+    "updatedAt": "2026-10-25T17:00:09.031Z",
     "claude": {
       "races": 38,
       "won": 7,

@@ -15535,10 +15535,18 @@
       "fav": {
         "horse": "MOSCOVITE",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T16:20:17.090Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Wexford|16:40",
@@ -15554,25 +15562,31 @@
       "fav": {
         "horse": "SOCRATES SMILED",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-25T16:30:15.090Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 567,
     "pick": {
-      "settled": 553,
+      "settled": 555,
       "won": 116,
-      "pl": -40.14,
-      "roi": -7.3
+      "pl": -42.14,
+      "roi": -7.6
     },
     "favourite": {
-      "settled": 549,
+      "settled": 550,
       "won": 186,
-      "pl": -6.16,
-      "roi": -1.1
+      "pl": -7.16,
+      "roi": -1.3
     },
     "agree": {
       "settled": 142,
@@ -15581,10 +15595,10 @@
       "roi": 6.8
     },
     "disagree": {
-      "settled": 411,
+      "settled": 413,
       "won": 54,
-      "pl": -49.82,
-      "roi": -12.1
+      "pl": -51.82,
+      "roi": -12.5
     }
   },
   "lastBackfill": 1792944622546
