@@ -100,7 +100,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
     function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
     function ukTime(date, hhmm) { return UK.format(new Date(date + "T" + hhmm + ":00Z")); }
     function dot(p) { return "<span class='" + (p === 1 ? "w" : p <= 3 ? "p" : "") + "' title='Finished " + p + "'>" + p + "</span>"; }
-    var NAMES = { form: "Form", context: "Context", market: "Market", verdict: "Verdict" };
+    var NAMES = { form: "Form", context: "Context", market: "Market", verdict: "Verdict", stars: "Timeform stars" };
     fetch("/api/glance?view=guide").then(function (r) { return r.json(); }).then(function (d) {
         var msg = document.getElementById("msg");
         if (!d.picks || !d.picks.length) { msg.textContent = "No featured picks today. The model only features a race when its top rating is clearly ahead - an honest zero is better than a padded list."; return; }
@@ -118,7 +118,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
                     "<div class='good'><h3>Why it rates</h3><ul>" + (p.reasons || []).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>" +
                     "<div class='risk'><h3>What could go wrong</h3><ul>" + ((p.risks && p.risks.length) ? p.risks.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") : "<li>Nothing unusual flagged - but any horse can run below form.</li>") + "</ul></div>" +
                 "</div>" +
-                "<div class='bars'>" + (p.breakdown || []).map(function (b) { return "<div class='bar'><span>" + esc(NAMES[b.part] || b.part) + "</span><i><b style='width:" + Math.max(0, Math.min(100, b.score)) + "%'></b></i><span>" + b.score + "</span></div>"; }).join("") +
+                "<div class='bars'>" + (p.breakdown || []).map(function (b) { return "<div class='bar'><span>" + esc(NAMES[b.part] || b.part) + "</span><i><b style='width:" + Math.max(0, Math.min(100, b.score)) + "%'></b></i><span>" + (b.part === "stars" ? (b.score / 20) + "/5" : b.score) + "</span></div>"; }).join("") +
                     "<div class='pick-sub'>Rating " + esc(p.rating) + (p.checklist ? " &middot; checklist " + esc(p.checklist) : "") + "</div></div>" +
                 "</div>";
         }).join("");
