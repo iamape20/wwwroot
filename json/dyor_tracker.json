@@ -15061,10 +15061,16 @@
       "fav": {
         "horse": "ILLTAKEHIMMYSELF",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-10-25T13:00:46.319Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Wexford|13:25",
@@ -15080,10 +15086,18 @@
       "fav": {
         "horse": "WATCH THE WEATHER",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T13:10:42.528Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|13:35",
@@ -15103,21 +15117,40 @@
       },
       "recordedAt": "2026-10-25T13:20:46.066Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|13:42",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "13:42",
+      "horse": "SPRINGBOARD",
+      "price": "10/3",
+      "runners": 13,
+      "liveHorse": "DEARG MOR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DEARG MOR",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T13:30:45.941Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 550,
+    "recorded": 551,
     "pick": {
-      "settled": 535,
+      "settled": 537,
       "won": 116,
-      "pl": -22.14,
-      "roi": -4.1
+      "pl": -24.14,
+      "roi": -4.5
     },
     "favourite": {
-      "settled": 537,
+      "settled": 538,
       "won": 186,
-      "pl": 5.84,
-      "roi": 1.1
+      "pl": 4.84,
+      "roi": 0.9
     },
     "agree": {
       "settled": 138,
@@ -15126,10 +15159,10 @@
       "roi": 9.9
     },
     "disagree": {
-      "settled": 397,
+      "settled": 399,
       "won": 54,
-      "pl": -35.82,
-      "roi": -9
+      "pl": -37.82,
+      "roi": -9.5
     }
   },
   "lastBackfill": 1792933246337
