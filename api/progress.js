@@ -52,7 +52,7 @@ function phi(z) {
     return z > 0 ? 1 - p : p;
 }
 
-function summarise(bets, target, edges, startedAt) {
+function summarise(bets, target, edges, startedAt, commission = COMMISSION) {
     const settled = bets
         .map(b => ({ ...b, pl: effectivePl(b), provisional: b.pl == null }))
         .filter(b => b.pl != null && b.result !== "void")
@@ -67,7 +67,7 @@ function summarise(bets, target, edges, startedAt) {
 
     const prices = settled.map(decimal).filter(x => x > 1);
     const breakEven = prices.length
-        ? prices.reduce((s, p) => s + 1 / (1 + (p - 1) * (1 - COMMISSION)), 0) / prices.length
+        ? prices.reduce((s, p) => s + 1 / (1 + (p - 1) * (1 - commission)), 0) / prices.length
         : null;
 
     const remaining = Math.max(0, target - n);
@@ -127,6 +127,22 @@ module.exports = (req, res) => {
         cand.startedAt
     ) : null;
 
+    // NAP-only Matchbook paper test (2026-10-25, after the bet list failed):
+    // js/napMatchbookTest.js settles it (the site has no Betfair SP files) and
+    // writes each bet at the Matchbook price last seen before the off.
+    const napTest = load("nap_matchbook_test.json");
+    const napMatchbook = napTest ? {
+        ...summarise(
+            (napTest.bets || []).map(b => ({ ...b, bsp: b.price })),   // decimal() reads the price taken from .bsp
+            napTest.target || 200,
+            [["No edge (0%)", 0], ["Our top pick at Betfair SP (−1.8%)", -0.018]],
+            napTest.startedAt,
+            napTest.mbCommission ?? 0.02
+        ),
+        startedAt: napTest.startedAt, bspPl: napTest.bspPl, bspMissing: napTest.bspMissing,
+        noPrice: napTest.noPrice, voids: napTest.voids, waiting: napTest.pending, verdict: napTest.verdict
+    } : null;
+
     const shadow = load("matchbook_shadow.json") || {};
     const matchbook = {};
     for (const e of Object.values(shadow)) {
@@ -143,7 +159,7 @@ module.exports = (req, res) => {
         generatedAt: new Date().toISOString(),
         phase: tracker.phase,
         benchmarks: { backtest: BACKTEST_EDGE, history: HISTORY_EDGE, candidateStudy: CANDIDATE_STUDY_EDGE },
-        betList, candidate, matchbook
+        betList, candidate, napMatchbook, matchbook
     });
 
 };

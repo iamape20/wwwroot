@@ -56,6 +56,22 @@ a { color: var(--series); }
     <div id="banner" class="banner">Loading...</div>
     <p class="muted" id="updated"></p>
 
+    <h2>NAP at Matchbook prices: progress to the 200-bet verdict</h2>
+    <div class="card">
+        <div id="napText"></div>
+        <div class="progress"><div id="napBar" style="width:0"></div></div>
+        <div class="muted" id="napEta"></div>
+    </div>
+    <div class="stats" id="napStats"></div>
+    <div class="tablewrap"><table id="napScenarios"></table></div>
+    <p class="muted">One bet a day from 26 October: the NAP as it stood at the off, £1 to win at the Matchbook back price last
+        seen before the off, 2% commission. Also scored at Betfair SP (5% commission) as a check. It passes only if it is in
+        profit at both prices after 200 bets. No early verdict, and nothing is staked.</p>
+    <details>
+        <summary>Every settled NAP bet</summary>
+        <div class="tablewrap"><table id="napBets"></table></div>
+    </details>
+
     <h2>Bet list: progress to the 120-bet verdict</h2>
     <div class="card">
         <div class="row" id="progressText"></div>
@@ -190,7 +206,9 @@ async function load() {
     else if (b.pl >= 0) { verdict = "In profit, but below the backtest's pace"; cls = "ahead"; }
     else { verdict = "Behind: needs " + pct(b.neededToFinishLevel) + " per bet from here to finish level"; cls = "behind"; }
     $("banner").className = "banner " + cls;
-    $("banner").innerHTML = esc(verdict) + `<small>${b.settled} of ${b.target} bets settled, so too early to separate a real edge from luck. Paper phase: do not stake.</small>`;
+    $("banner").innerHTML = esc(verdict) + (b.settled >= b.target
+        ? `<small>The bet list lost ${units(b.pl)} (${pct(b.roi)} per bet) and has stopped. The NAP at Matchbook prices is the test running now. Do not stake.</small>`
+        : `<small>${b.settled} of ${b.target} bets settled, so too early to separate a real edge from luck. Paper phase: do not stake.</small>`);
     $("updated").textContent = "Updated " + new Date(d.generatedAt).toLocaleString("en-GB", { timeZone: "Europe/London" }) + " UK";
 
     $("progressText").innerHTML = `<b>${b.settled}</b>&nbsp;of ${b.target} settled` + (b.provisional ? ` · ${b.provisional} winner${b.provisional > 1 ? "s" : ""} counted at bookmaker SP until Betfair SP arrives` : "") + (b.pending ? ` · ${b.pending} awaiting result` : "");
@@ -220,6 +238,31 @@ async function load() {
             stat("Profit / loss", units(c.pl), `${pct(c.roi)} per bet`) +
             stat("Archive study", pct(d.benchmarks.candidateStudy), "must stay clearly positive");
         scenarioTable($("candScenarios"), c);
+    }
+
+    const n = d.napMatchbook;
+    if (n) {
+        const started = new Date(n.startedAt + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long" });
+        $("napText").innerHTML = n.verdict
+            ? `<b>Verdict: ${n.verdict === "PASS" ? "PASS - in profit at both Matchbook and Betfair SP" : "FAIL - not in profit at both prices"}</b>`
+            : `<b>${n.settled}</b>&nbsp;of ${n.target} settled since ${started}` +
+              (n.waiting ? ` · ${n.waiting} awaiting result` : "") + (n.noPrice ? ` · ${n.noPrice} with no Matchbook price (not counted)` : "");
+        $("napBar").style.width = Math.min(100, 100 * n.settled / n.target) + "%";
+        $("napEta").textContent = n.eta ? `About ${n.perDay.toFixed(1)} a day: verdict expected around ${new Date(n.eta).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`
+            : (n.settled ? "" : "The first bet is the NAP on " + started + ".");
+        $("napStats").innerHTML =
+            stat("Winners", n.settled ? `${n.won} (${plain(n.strike)})` : "–", n.breakEvenStrike != null ? `break-even at these prices: ${plain(n.breakEvenStrike)}` : "") +
+            stat("Matchbook P/L", units(n.pl), n.roi != null ? `${pct(n.roi)} per bet` : "level £1 stakes") +
+            stat("Betfair SP P/L", units(n.bspPl || 0), n.bspMissing ? `${n.bspMissing} winner awaiting Betfair SP` : "the check price") +
+            stat("Return per bet", pct(n.roi), n.range ? `95% range ${pct(n.range[0], 0)} to ${pct(n.range[1], 0)}` : "");
+        if (n.settled) scenarioTable($("napScenarios"), n);
+        $("napBets").innerHTML = n.path.length
+            ? `<tr><th>#</th><th>Date</th><th>Race (UK)</th><th>Horse</th><th class="num">Matchbook</th><th>Result</th><th class="num">P/L</th><th class="num">Total</th></tr>` +
+              n.path.slice().reverse().map(p => `<tr><td>${p.n}</td><td>${esc(p.date)}</td><td>${ukTime(p.date, p.time)} ${esc(p.course)}</td><td>${esc(p.horse)}</td>` +
+                `<td class="num">${p.price ? p.price.toFixed(2) : "–"}</td><td class="${p.result}">${esc(p.result)}</td><td class="num">${units(p.pl)}</td><td class="num">${units(p.total)}</td></tr>`).join("")
+            : `<tr><td class="muted">No NAP bets settled yet.</td></tr>`;
+    } else {
+        $("napText").textContent = "The NAP test data is not on the site yet - it appears after the next odds refresh.";
     }
 
     const mb = Object.entries(d.matchbook || {});
