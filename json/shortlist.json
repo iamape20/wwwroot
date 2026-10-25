@@ -1,32 +1,56 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "strong": [],
   "moderate": [
     {
-      "horse": "GEOMETRY",
-      "course": "Southwell",
-      "time": "17:30",
-      "rating": "68.3",
-      "margin": "16.9",
-      "marginValue": 16.9,
-      "confidence": 61,
-      "meetingId": "122173",
-      "raceIndex": 4
+      "horse": "DON DANDY",
+      "course": "Market Rasen",
+      "time": "13:35",
+      "rating": "75.7",
+      "margin": "12.2",
+      "marginValue": 12.200000000000003,
+      "confidence": 74,
+      "meetingId": "122174",
+      "raceIndex": 1
+    },
+    {
+      "horse": "LIRAKALI",
+      "course": "Wexford",
+      "time": "14:35",
+      "rating": "75.5",
+      "margin": "18.7",
+      "marginValue": 18.700000000000003,
+      "confidence": 68,
+      "meetingId": "122195",
+      "raceIndex": 3
     }
   ],
   "dailyDouble": [
     {
-      "horse": "GEOMETRY",
-      "course": "Southwell",
-      "time": "17:30",
-      "rating": "68.3",
-      "margin": "16.9",
-      "marginValue": 16.9,
-      "confidence": 61,
-      "meetingId": "122173",
-      "raceIndex": 4,
+      "horse": "DON DANDY",
+      "course": "Market Rasen",
+      "time": "13:35",
+      "rating": "75.7",
+      "margin": "12.2",
+      "marginValue": 12.2,
+      "confidence": 74,
+      "meetingId": "122174",
+      "raceIndex": 1,
+      "tier": "Moderate",
+      "nap": true
+    },
+    {
+      "horse": "LIRAKALI",
+      "course": "Wexford",
+      "time": "14:35",
+      "rating": "75.5",
+      "margin": "18.7",
+      "marginValue": 18.700000000000003,
+      "confidence": 68,
+      "meetingId": "122195",
+      "raceIndex": 3,
       "tier": "Moderate"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
