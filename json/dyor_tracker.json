@@ -14988,10 +14988,14 @@
       "fav": {
         "horse": "CHART TOPPER",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-25T12:20:46.383Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-25|Wexford|12:50",
@@ -15011,10 +15015,48 @@
       },
       "recordedAt": "2026-10-25T12:40:49.192Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Market Rasen|13:00",
+      "date": "2026-10-25",
+      "course": "Market Rasen",
+      "time": "13:00",
+      "horse": "MOORE BRION",
+      "price": "8/13",
+      "runners": 11,
+      "liveHorse": "MOORE BRION",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MOORE BRION",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T12:50:45.573Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|13:07",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "13:07",
+      "horse": "ONLY FOR OUR MAN",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "ILLTAKEHIMMYSELF",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ILLTAKEHIMMYSELF",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T13:00:46.319Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 546,
+    "recorded": 548,
     "pick": {
       "settled": 534,
       "won": 116,
@@ -15040,5 +15082,5 @@
       "roi": -8.8
     }
   },
-  "lastBackfill": 1792911679630
+  "lastBackfill": 1792933246337
 }
