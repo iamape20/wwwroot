@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-24T21:00:13.747Z",
-  "phase": "PAPER",
-  "phaseMessage": "PAPER PHASE - DO NOT STAKE. 119/120 bets settled before the verdict.",
+  "generatedAt": "2026-10-25T07:01:12.863Z",
+  "phase": "STOPPED",
+  "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
     "Back the favourite ONLY in races listed here - nothing else.",
     "Not a handicap; 2nd favourite at least 1.5x the favourite's price; trainer not in cold form; still the morning favourite.",
-    "The horse is shown 15 minutes before the off - bet then, not earlier.",
+    "The horse is shown in the last 15 minutes before the off - bet then, not earlier.",
     "Bet on the Betfair exchange (Betfair SP or the price just before the off).",
     "Stake is always 1 unit. Never more after a win, never more to chase a loss.",
     "PAPER phase: do not stake until 120 bets have settled and the verdict says LIVE.",
@@ -22,9 +22,9 @@
       "horse": "GEOMETRY",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.07832065,
+      "pl": 1.024,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-24",
@@ -33,9 +33,9 @@
       "horse": "BENGAL TIGER",
       "phase": "PAPER",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.14,
+      "pl": 1.083,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-10-24",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-24T21:00:13.638Z",
+    "updatedAt": "2026-10-25T07:01:12.778Z",
     "claude": {
       "races": 38,
       "won": 7,
@@ -207,9 +207,9 @@
     "paper": {
       "bets": 121,
       "won": 58,
-      "pl": -17.75,
-      "roi": -14.7,
-      "provisional": 2
+      "pl": -17.46,
+      "roi": -14.4,
+      "provisional": 0
     },
     "live": {
       "bets": 0,
@@ -218,7 +218,13 @@
       "roi": null,
       "provisional": 0
     },
-    "verdict": null,
+    "verdict": {
+      "at": "2026-10-25T07:01:12.863Z",
+      "bets": 121,
+      "pl": -17.46,
+      "roi": -14.4,
+      "outcome": "STOPPED"
+    },
     "trackerStarted": "2026-10-02T13:51:24.265Z",
     "backtest": "Backtest (Aug-Sep 2026): 180 bets, 55.6% winners, +2.0% at Betfair SP after 5% commission"
   }

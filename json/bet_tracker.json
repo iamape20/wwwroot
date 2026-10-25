@@ -1,6 +1,6 @@
 {
   "startedAt": 1790949084265,
-  "phase": "PAPER",
+  "phase": "STOPPED",
   "bets": [
     {
       "id": "2026-10-02|Ascot|14:35",
@@ -2026,8 +2026,9 @@
       "revealedAt": "2026-10-24T12:50:54.378Z",
       "result": "won",
       "isp": "10/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.14,
+      "pl": 1.083,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-24|Southwell|17:30",
@@ -2042,12 +2043,19 @@
       "revealedAt": "2026-10-24T17:20:24.502Z",
       "result": "won",
       "isp": "10/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.07832065,
+      "pl": 1.024,
+      "settledAt": "betfair_sp"
     }
   ],
-  "verdict": null,
+  "verdict": {
+    "at": "2026-10-25T07:01:12.863Z",
+    "bets": 121,
+    "pl": -17.46,
+    "roi": -14.4,
+    "outcome": "STOPPED"
+  },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792871415760
+  "lastBackfill": 1792911673154
 }
