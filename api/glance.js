@@ -81,10 +81,11 @@ function guide(res) {
     };
     if (nap && nap.active) add("Today's NAP", nap);
     // A leg the market has moved away from is NO BET on the home page (2026-10-22).
-    const { legNow } = require("../services/dashboardService");
+    const { legNow, shortlistProvisional } = require("../services/dashboardService");
+    const provisional = shortlistProvisional(sl);   // before the 09:00 lock there is no "since 09:00" yet
     (sl.dailyDouble || []).forEach(p => {
         const now = legNow(ratings, nap, p);
-        const noBet = (now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open";
+        const noBet = !provisional && ((now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open");
         add(noBet ? "Daily double - no bet (market moved)" : "Daily double", p);
     });
     (sl.strong || []).forEach(p => add("Strong", p));

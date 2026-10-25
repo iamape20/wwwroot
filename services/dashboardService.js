@@ -248,6 +248,19 @@ function legNow(ratings, nap, entry) {
     return { nowTier, napNow, nowPick };
 }
 
+// Is the Daily Double still the overnight build, before the 09:00 lock?
+// (2026-10-25: before 09:00 the home page compared the overnight list with
+// live prices and said "Market has moved since 09:00 ... no bet".) Uses the
+// list's builtAt (UK hour); older files without it fall back to the clock.
+function shortlistProvisional(list, now = new Date()) {
+    const ukHour = d => Number(d.toLocaleString("en-GB", { timeZone: "Europe/London", hour: "2-digit", hour12: false }));
+    const ukDate = d => d.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    if (!list?.date || list.date !== ukDate(now)) return false;
+    const built = list.builtAt ? new Date(list.builtAt) : null;
+    if (built && !isNaN(built)) return ukDate(built) === list.date ? ukHour(built) < 9 : true;
+    return ukHour(now) < 9;
+}
+
 function makeCandidate(
     meetingId,
     meeting,
@@ -875,7 +888,8 @@ for (
 			(dailyDoubleData?.dailyDouble || []).map(e => ({
 				...e,
 				nonRunner: isWithdrawnPick(ratings, e),
-				...legNow(ratings, nap, e)
+				...legNow(ratings, nap, e),
+				provisional: shortlistProvisional(dailyDoubleData)
 			})),
 
 			dailyDoublePickMode:
@@ -917,7 +931,8 @@ module.exports = {
     classifyRace,
 
     // exported for api/glance.js (form guide labels a no-bet leg too)
-    legNow
+    legNow,
+    shortlistProvisional
 
 };
 

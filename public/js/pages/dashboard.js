@@ -71,7 +71,9 @@ const CHECKLIST_SHORT = {
 // and its record are unchanged. Legs whose race went VOID by the off won
 // 6/19, -30% at BSP (Aug-Oct archive).
 function legNoBet(p) {
-    if (!p || p.nonRunner) return false;
+    // Before the 09:00 lock the list is provisional - the lock re-picks on
+    // the live prices, so there is nothing "since 09:00" to compare yet.
+    if (!p || p.nonRunner || p.provisional) return false;
     const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
     return Boolean(pickChanged || p.nowTier === "Open");
 }
@@ -130,10 +132,14 @@ function renderDailyDouble(dashboard) {
     const headerText = dashboard?.dailyDoublePickMode === "single"
         ? "\u2B50 Daily Single"
         : "\u2B50 Daily Double";
+    const provisionalNote = picks.some(p => p.provisional)
+        ? `<div class="daily-double-race" style="opacity:0.8;">Provisional - set at 09:00 on the live prices.</div>`
+        : "";
 
     box.innerHTML = `
         <div class="daily-double-panel">
             <div class="daily-double-header">${headerText}</div>
+            ${provisionalNote}
             ${rows}
         </div>
     `;
@@ -1429,7 +1435,9 @@ function ddLegNote(meetingId, raceIndex, pickRunner) {
         return `<div class="pick-summary-note" ${style}>The 09:00 Daily Double pick here was ${escapeHtml(leg.horse)}. ${escapeHtml(legNoBetReason(leg))}</div>`;
     }
     return String(leg.horse || "").toUpperCase() === String(pickRunner?.name || "").toUpperCase()
-        ? `<div class="pick-summary-note" ${style}>This is today's Daily Double pick (set at 09:00).</div>`
+        ? `<div class="pick-summary-note" ${style}>${leg.provisional
+            ? "This is today's provisional Daily Double pick - the list is set at 09:00."
+            : "This is today's Daily Double pick (set at 09:00)."}</div>`
         : "";
 }
 
