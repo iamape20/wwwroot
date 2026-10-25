@@ -15273,10 +15273,16 @@
       "fav": {
         "horse": "PAPER MILL",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-25T14:30:40.245Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "85/40",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Galway|14:50",
@@ -15292,10 +15298,18 @@
       "fav": {
         "horse": "INTHENICKOFTIME",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T14:40:35.942Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|15:13",
@@ -15334,21 +15348,40 @@
       },
       "recordedAt": "2026-10-25T15:00:26.517Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|15:20",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "15:20",
+      "horse": "FLY AWAY HOME",
+      "price": "4/1",
+      "runners": 5,
+      "liveHorse": "HARPY EAGLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HARPY EAGLE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T15:10:32.983Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 559,
+    "recorded": 560,
     "pick": {
-      "settled": 543,
+      "settled": 545,
       "won": 116,
-      "pl": -30.14,
-      "roi": -5.5
+      "pl": -32.14,
+      "roi": -5.9
     },
     "favourite": {
-      "settled": 543,
+      "settled": 544,
       "won": 186,
-      "pl": -0.16,
-      "roi": 0
+      "pl": -1.16,
+      "roi": -0.2
     },
     "agree": {
       "settled": 140,
@@ -15357,10 +15390,10 @@
       "roi": 8.3
     },
     "disagree": {
-      "settled": 403,
+      "settled": 405,
       "won": 54,
-      "pl": -41.82,
-      "roi": -10.4
+      "pl": -43.82,
+      "roi": -10.8
     }
   },
   "lastBackfill": 1792933246337
