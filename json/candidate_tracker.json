@@ -2891,15 +2891,43 @@
       "rating": 81.3,
       "runners": 12,
       "recordedAt": "2026-10-25T15:50:17.402Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-25|Market Rasen|16:23",
+      "date": "2026-10-25",
+      "course": "Market Rasen",
+      "time": "16:23",
+      "horse": "CLOS DU MOUCHE",
+      "price": "1/1",
+      "rating": 64.5,
+      "runners": 4,
+      "recordedAt": "2026-10-25T16:10:19.855Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|16:30",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "16:30",
+      "horse": "MOSCOVITE",
+      "price": "4/5",
+      "rating": 66.3,
+      "runners": 6,
+      "recordedAt": "2026-10-25T16:20:16.920Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 176,
-    "settled": 172,
+    "recorded": 178,
+    "settled": 173,
     "won": 85,
-    "pl": -0.16,
-    "roi": -0.1
+    "pl": -1.16,
+    "roi": -0.7
   },
-  "lastBackfill": 1792933244343
+  "lastBackfill": 1792944619908
 }

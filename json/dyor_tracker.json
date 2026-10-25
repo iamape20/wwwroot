@@ -15429,10 +15429,16 @@
       "fav": {
         "horse": "LIGHTNING FLASH",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-10-25T15:40:21.469Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Galway|15:56",
@@ -15448,10 +15454,18 @@
       "fav": {
         "horse": "BULGADEN CASTLE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T15:50:17.587Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Wexford|16:10",
@@ -15471,34 +15485,72 @@
       },
       "recordedAt": "2026-10-25T16:00:22.303Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Market Rasen|16:23",
+      "date": "2026-10-25",
+      "course": "Market Rasen",
+      "time": "16:23",
+      "horse": "BEAU DE MAINE",
+      "price": "5/4",
+      "runners": 4,
+      "liveHorse": "CLOS DU MOUCHE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CLOS DU MOUCHE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T16:10:22.531Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Galway|16:30",
+      "date": "2026-10-25",
+      "course": "Galway",
+      "time": "16:30",
+      "horse": "MOZART'S SONG",
+      "price": "7/1",
+      "runners": 6,
+      "liveHorse": "MOSCOVITE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MOSCOVITE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T16:20:17.090Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 564,
+    "recorded": 566,
     "pick": {
-      "settled": 549,
+      "settled": 551,
       "won": 116,
-      "pl": -36.14,
-      "roi": -6.6
+      "pl": -38.14,
+      "roi": -6.9
     },
     "favourite": {
-      "settled": 546,
+      "settled": 547,
       "won": 186,
-      "pl": -3.16,
-      "roi": -0.6
+      "pl": -4.16,
+      "roi": -0.8
     },
     "agree": {
-      "settled": 140,
+      "settled": 141,
       "won": 62,
-      "pl": 11.68,
-      "roi": 8.3
+      "pl": 10.68,
+      "roi": 7.6
     },
     "disagree": {
-      "settled": 409,
+      "settled": 410,
       "won": 54,
-      "pl": -47.82,
-      "roi": -11.7
+      "pl": -48.82,
+      "roi": -11.9
     }
   },
-  "lastBackfill": 1792933246337
+  "lastBackfill": 1792944622546
 }
