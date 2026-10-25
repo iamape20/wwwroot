@@ -2907,7 +2907,11 @@
       "rating": 64.5,
       "runners": 4,
       "recordedAt": "2026-10-25T16:10:19.855Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Galway|16:30",
@@ -2924,10 +2928,10 @@
   ],
   "stats": {
     "recorded": 178,
-    "settled": 173,
+    "settled": 174,
     "won": 85,
-    "pl": -1.16,
-    "roi": -0.7
+    "pl": -2.16,
+    "roi": -1.2
   },
   "lastBackfill": 1792944619908
 }

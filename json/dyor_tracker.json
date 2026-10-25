@@ -15481,10 +15481,18 @@
       "fav": {
         "horse": "BAYMOUNT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T16:00:22.303Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Market Rasen|16:23",
@@ -15500,10 +15508,18 @@
       "fav": {
         "horse": "CLOS DU MOUCHE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T16:10:22.531Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Galway|16:30",
@@ -15523,33 +15539,52 @@
       },
       "recordedAt": "2026-10-25T16:20:17.090Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Wexford|16:40",
+      "date": "2026-10-25",
+      "course": "Wexford",
+      "time": "16:40",
+      "horse": "CERTAVI ET VICI",
+      "price": "13/2",
+      "runners": 8,
+      "liveHorse": "SOCRATES SMILED",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOCRATES SMILED",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T16:30:15.090Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 566,
+    "recorded": 567,
     "pick": {
-      "settled": 551,
+      "settled": 553,
       "won": 116,
-      "pl": -38.14,
-      "roi": -6.9
+      "pl": -40.14,
+      "roi": -7.3
     },
     "favourite": {
-      "settled": 547,
+      "settled": 549,
       "won": 186,
-      "pl": -4.16,
-      "roi": -0.8
+      "pl": -6.16,
+      "roi": -1.1
     },
     "agree": {
-      "settled": 141,
+      "settled": 142,
       "won": 62,
-      "pl": 10.68,
-      "roi": 7.6
+      "pl": 9.68,
+      "roi": 6.8
     },
     "disagree": {
-      "settled": 410,
+      "settled": 411,
       "won": 54,
-      "pl": -48.82,
-      "roi": -11.9
+      "pl": -49.82,
+      "roi": -12.1
     }
   },
   "lastBackfill": 1792944622546
