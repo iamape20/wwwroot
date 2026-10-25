@@ -15113,10 +15113,18 @@
       "fav": {
         "horse": "DON DANDY",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-25T13:20:46.066Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-25|Galway|13:42",
@@ -15136,27 +15144,65 @@
       },
       "recordedAt": "2026-10-25T13:30:45.941Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-25|Wexford|14:00",
+      "date": "2026-10-25",
+      "course": "Wexford",
+      "time": "14:00",
+      "horse": "HANSEL THE PURSE",
+      "price": "15/2",
+      "runners": 8,
+      "liveHorse": "NOON BLU DODVILLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOON BLU DODVILLE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T13:50:42.960Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-25|Market Rasen|14:10",
+      "date": "2026-10-25",
+      "course": "Market Rasen",
+      "time": "14:10",
+      "horse": "TOMMY'S OSCAR",
+      "price": "10/3",
+      "runners": 5,
+      "liveHorse": "TRIPLE TRADE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRIPLE TRADE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-25T14:00:50.079Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 551,
+    "recorded": 553,
     "pick": {
-      "settled": 537,
+      "settled": 538,
       "won": 116,
-      "pl": -24.14,
-      "roi": -4.5
+      "pl": -25.14,
+      "roi": -4.7
     },
     "favourite": {
-      "settled": 538,
+      "settled": 539,
       "won": 186,
-      "pl": 4.84,
-      "roi": 0.9
+      "pl": 3.84,
+      "roi": 0.7
     },
     "agree": {
-      "settled": 138,
+      "settled": 139,
       "won": 62,
-      "pl": 13.68,
-      "roi": 9.9
+      "pl": 12.68,
+      "roi": 9.1
     },
     "disagree": {
       "settled": 399,

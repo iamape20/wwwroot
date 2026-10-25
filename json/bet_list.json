@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:40:40.685Z",
+  "generatedAt": "2026-10-25T14:00:46.333Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-25",
       "course": "Market Rasen",
       "off": "13:35",
-      "horse": "DON DANDY"
-    }
-  ],
-  "recent": [
+      "horse": "DON DANDY",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-24",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": 1.81,
       "pl": 0.769,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Newmarket",
-      "off": "16:45",
-      "horse": "MUQARRABIN",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.00554324,
-      "pl": 0.955,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-25T13:40:40.575Z",
+    "updatedAt": "2026-10-25T14:00:46.152Z",
     "claude": {
       "races": 38,
       "won": 7,
