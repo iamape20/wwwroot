@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T14:20:36.135Z",
+  "generatedAt": "2026-10-25T14:40:34.278Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-25",
       "course": "Galway",
       "off": "14:17",
-      "horse": "LIGHT UP THE DARK"
-    }
-  ],
-  "recent": [
+      "horse": "LIGHT UP THE DARK",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-25",
       "course": "Market Rasen",
@@ -174,21 +179,10 @@
       "bsp": 1.38,
       "pl": 0.361,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-21",
-      "course": "Kempton",
-      "off": "17:30",
-      "horse": "DADDY STAR",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 1.81,
-      "pl": 0.769,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-25T14:20:35.989Z",
+    "updatedAt": "2026-10-25T14:40:34.182Z",
     "claude": {
       "races": 38,
       "won": 7,
