@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T13:01:27.769Z",
+  "generatedAt": "2026-10-26T13:21:21.096Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,28 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Redcar",
-      "off": "12:55",
-      "horse": "IRON STONE LAD"
+      "course": "Hereford",
+      "off": "13:18",
+      "horse": "KAMILLE AU KANADA"
+    },
+    {
+      "course": "Galway",
+      "off": "13:12",
+      "horse": "KARL DES TOURELLES"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-26",
+      "course": "Redcar",
+      "off": "12:55",
+      "horse": "IRON STONE LAD",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-25",
       "course": "Galway",
@@ -174,21 +190,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-22",
-      "course": "Ffos Las",
-      "off": "13:26",
-      "horse": "MOURNE CRYSTAL",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T13:01:27.591Z",
+    "updatedAt": "2026-10-26T13:21:20.964Z",
     "claude": {
       "races": 38,
       "won": 7,

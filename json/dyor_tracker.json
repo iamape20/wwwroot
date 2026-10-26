@@ -15647,10 +15647,16 @@
       "fav": {
         "horse": "INCA",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-26T12:41:29.879Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Redcar|12:55",
@@ -15666,10 +15672,16 @@
       "fav": {
         "horse": "IRON STONE LAD",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T12:41:29.902Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-26|Leicester|13:07",
@@ -15685,10 +15697,18 @@
       "fav": {
         "horse": "CALA VADELLA",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T13:01:33.183Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Galway|13:12",
@@ -15708,21 +15728,59 @@
       },
       "recordedAt": "2026-10-26T13:01:33.209Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Hereford|13:18",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "13:18",
+      "horse": "KAMILLE AU KANADA",
+      "price": "1/2",
+      "runners": 6,
+      "liveHorse": "KAMILLE AU KANADA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KAMILLE AU KANADA",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T13:11:28.894Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Redcar|13:25",
+      "date": "2026-10-26",
+      "course": "Redcar",
+      "time": "13:25",
+      "horse": "EVELYN'S PHOENIX",
+      "price": "11/2",
+      "runners": 14,
+      "liveHorse": "TAYLORMADE LAD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TAYLORMADE LAD",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T13:11:28.946Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 572,
+    "recorded": 574,
     "pick": {
-      "settled": 558,
+      "settled": 560,
       "won": 118,
-      "pl": -41.3,
-      "roi": -7.4
+      "pl": -43.3,
+      "roi": -7.7
     },
     "favourite": {
-      "settled": 560,
+      "settled": 562,
       "won": 195,
-      "pl": 13.23,
-      "roi": 2.4
+      "pl": 11.23,
+      "roi": 2
     },
     "agree": {
       "settled": 144,
@@ -15731,11 +15789,11 @@
       "roi": 8
     },
     "disagree": {
-      "settled": 414,
+      "settled": 416,
       "won": 54,
-      "pl": -52.82,
-      "roi": -12.8
+      "pl": -54.82,
+      "roi": -13.2
     }
   },
-  "lastBackfill": 1792998129353
+  "lastBackfill": 1793020884894
 }
