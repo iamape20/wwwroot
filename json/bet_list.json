@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:21:12.668Z",
+  "generatedAt": "2026-10-26T14:41:13.590Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-26",
       "course": "Hereford",
       "off": "14:18",
-      "horse": "OUR WEE HORSE"
-    }
-  ],
-  "recent": [
+      "horse": "OUR WEE HORSE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-26",
       "course": "Galway",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-23",
-      "course": "Doncaster",
-      "off": "15:20",
-      "horse": "DESERT ROMANCE",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T14:21:12.505Z",
+    "updatedAt": "2026-10-26T14:41:13.425Z",
     "claude": {
       "races": 38,
       "won": 7,

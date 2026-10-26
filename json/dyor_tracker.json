@@ -15922,10 +15922,18 @@
       "fav": {
         "horse": "COOLISHAEL",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T14:01:47.961Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Hereford|14:18",
@@ -15941,10 +15949,18 @@
       "fav": {
         "horse": "OUR WEE HORSE",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T14:11:21.694Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/6",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Redcar|14:25",
@@ -15960,37 +15976,100 @@
       "fav": {
         "horse": "NAEPOINT",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-26T14:11:21.720Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Leicester|14:39",
+      "date": "2026-10-26",
+      "course": "Leicester",
+      "time": "14:39",
+      "horse": "DINAH MYTE",
+      "price": "2/1",
+      "runners": 16,
+      "liveHorse": "DINAH MYTE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DINAH MYTE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:31:33.322Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Galway|14:45",
+      "date": "2026-10-26",
+      "course": "Galway",
+      "time": "14:45",
+      "horse": "BOYCETOWN",
+      "price": "4/9",
+      "runners": 20,
+      "liveHorse": "BOYCETOWN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BOYCETOWN",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:31:33.341Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Hereford|14:52",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "14:52",
+      "horse": "GETAROSE",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "LUCY THE WIRE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LUCY THE WIRE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:41:17.440Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 582,
+    "recorded": 585,
     "pick": {
-      "settled": 563,
+      "settled": 566,
       "won": 118,
-      "pl": -46.3,
-      "roi": -8.2
+      "pl": -49.3,
+      "roi": -8.7
     },
     "favourite": {
-      "settled": 566,
+      "settled": 568,
       "won": 195,
-      "pl": 7.23,
-      "roi": 1.3
+      "pl": 5.23,
+      "roi": 0.9
     },
     "agree": {
-      "settled": 144,
+      "settled": 145,
       "won": 64,
-      "pl": 11.52,
-      "roi": 8
+      "pl": 10.52,
+      "roi": 7.3
     },
     "disagree": {
-      "settled": 419,
+      "settled": 421,
       "won": 54,
-      "pl": -57.82,
-      "roi": -13.8
+      "pl": -59.82,
+      "roi": -14.2
     }
   },
   "lastBackfill": 1793020884894
