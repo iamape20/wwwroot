@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T16:40:41.300Z",
+  "generatedAt": "2026-10-26T17:00:33.857Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,6 +15,17 @@
   "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "off": "16:45",
+      "horse": "IDEALISE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-26",
       "course": "Hereford",
@@ -168,21 +179,10 @@
       "bsp": 2.14,
       "pl": 1.083,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-24",
-      "course": "Cheltenham",
-      "off": "13:45",
-      "horse": "ROAD TO WEMBLEY",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T16:40:41.215Z",
+    "updatedAt": "2026-10-26T17:00:33.780Z",
     "claude": {
       "races": 38,
       "won": 7,

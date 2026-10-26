@@ -3100,15 +3100,43 @@
       "rating": 68,
       "runners": 10,
       "recordedAt": "2026-10-26T16:30:48.199Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Southwell|17:00",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "17:00",
+      "horse": "PIVOTAL TERMS",
+      "price": "11/10",
+      "rating": 63.3,
+      "runners": 9,
+      "recordedAt": "2026-10-26T16:50:46.764Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|17:15",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "17:15",
+      "horse": "SHOWMASTER",
+      "price": "4/11",
+      "rating": 73.5,
+      "runners": 9,
+      "recordedAt": "2026-10-26T17:00:35.653Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 189,
-    "settled": 184,
+    "recorded": 191,
+    "settled": 185,
     "won": 88,
-    "pl": -5.67,
-    "roi": -3.1
+    "pl": -6.67,
+    "roi": -3.6
   },
-  "lastBackfill": 1793022680318
+  "lastBackfill": 1793034035678
 }
