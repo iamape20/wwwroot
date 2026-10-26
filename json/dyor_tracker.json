@@ -15797,10 +15797,14 @@
       "fav": {
         "horse": "ROGUE CONSTELATION",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-10-26T13:31:26.510Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     },
     {
       "id": "2026-10-26|Galway|13:42",
@@ -15816,10 +15820,14 @@
       "fav": {
         "horse": "SHARKEYBOY",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-10-26T13:31:26.534Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/13"
     },
     {
       "id": "2026-10-26|Hereford|13:48",
@@ -15858,10 +15866,48 @@
       },
       "recordedAt": "2026-10-26T13:41:25.991Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Leicester|14:07",
+      "date": "2026-10-26",
+      "course": "Leicester",
+      "time": "14:07",
+      "horse": "AMANTHA",
+      "price": "14/1",
+      "runners": 12,
+      "liveHorse": "BLANQUITA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLANQUITA",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:01:47.913Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Galway|14:12",
+      "date": "2026-10-26",
+      "course": "Galway",
+      "time": "14:12",
+      "horse": "GIVE IT A CRACK",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "COOLISHAEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COOLISHAEL",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:01:47.961Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 578,
+    "recorded": 580,
     "pick": {
       "settled": 561,
       "won": 118,
