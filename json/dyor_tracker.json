@@ -16806,25 +16806,33 @@
       "fav": {
         "horse": "BENVOY",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T20:20:19.188Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 614,
     "pick": {
-      "settled": 592,
+      "settled": 593,
       "won": 118,
-      "pl": -75.3,
-      "roi": -12.7
+      "pl": -76.3,
+      "roi": -12.9
     },
     "favourite": {
-      "settled": 588,
+      "settled": 589,
       "won": 195,
-      "pl": -14.77,
-      "roi": -2.5
+      "pl": -15.77,
+      "roi": -2.7
     },
     "agree": {
       "settled": 152,
@@ -16833,10 +16841,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 440,
+      "settled": 441,
       "won": 54,
-      "pl": -78.82,
-      "roi": -17.9
+      "pl": -79.82,
+      "roi": -18.1
     }
   },
   "lastBackfill": 1793043624095
