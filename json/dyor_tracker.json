@@ -16752,10 +16752,18 @@
       "fav": {
         "horse": "HORACE WALLACE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T19:50:23.099Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Kempton|20:15",
@@ -16775,27 +16783,46 @@
       },
       "recordedAt": "2026-10-26T20:00:25.612Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Southwell|20:30",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "20:30",
+      "horse": "SOLAR PASS",
+      "price": "9/2",
+      "runners": 6,
+      "liveHorse": "BENVOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BENVOY",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T20:20:19.188Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 613,
+    "recorded": 614,
     "pick": {
-      "settled": 590,
+      "settled": 591,
       "won": 118,
-      "pl": -73.3,
-      "roi": -12.4
+      "pl": -74.3,
+      "roi": -12.6
     },
     "favourite": {
-      "settled": 586,
+      "settled": 587,
       "won": 195,
-      "pl": -12.77,
-      "roi": -2.2
+      "pl": -13.77,
+      "roi": -2.3
     },
     "agree": {
-      "settled": 151,
+      "settled": 152,
       "won": 64,
-      "pl": 4.52,
-      "roi": 3
+      "pl": 3.52,
+      "roi": 2.3
     },
     "disagree": {
       "settled": 439,
