@@ -16779,10 +16779,18 @@
       "fav": {
         "horse": "ADA ROSE",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T20:00:25.612Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Southwell|20:30",
@@ -16807,16 +16815,16 @@
   "stats": {
     "recorded": 614,
     "pick": {
-      "settled": 591,
+      "settled": 592,
       "won": 118,
-      "pl": -74.3,
-      "roi": -12.6
+      "pl": -75.3,
+      "roi": -12.7
     },
     "favourite": {
-      "settled": 587,
+      "settled": 588,
       "won": 195,
-      "pl": -13.77,
-      "roi": -2.3
+      "pl": -14.77,
+      "roi": -2.5
     },
     "agree": {
       "settled": 152,
@@ -16825,10 +16833,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 439,
+      "settled": 440,
       "won": 54,
-      "pl": -77.82,
-      "roi": -17.7
+      "pl": -78.82,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1793043624095
