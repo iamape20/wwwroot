@@ -15843,10 +15843,16 @@
       "fav": {
         "horse": "JERSEYGEORDIE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T13:41:25.968Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-26|Redcar|13:55",
@@ -15862,10 +15868,18 @@
       "fav": {
         "horse": "NASCONDINO",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T13:41:25.991Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Leicester|14:07",
@@ -15881,10 +15895,18 @@
       "fav": {
         "horse": "BLANQUITA",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T14:01:47.913Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Galway|14:12",
@@ -15904,21 +15926,59 @@
       },
       "recordedAt": "2026-10-26T14:01:47.961Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Hereford|14:18",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "14:18",
+      "horse": "OUR WEE HORSE",
+      "price": "1/2",
+      "runners": 9,
+      "liveHorse": "OUR WEE HORSE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "OUR WEE HORSE",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:11:21.694Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Redcar|14:25",
+      "date": "2026-10-26",
+      "course": "Redcar",
+      "time": "14:25",
+      "horse": "RAJAPOUR",
+      "price": "11/1",
+      "runners": 10,
+      "liveHorse": "NAEPOINT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NAEPOINT",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T14:11:21.720Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 580,
+    "recorded": 582,
     "pick": {
-      "settled": 561,
+      "settled": 563,
       "won": 118,
-      "pl": -44.3,
-      "roi": -7.9
+      "pl": -46.3,
+      "roi": -8.2
     },
     "favourite": {
-      "settled": 563,
+      "settled": 566,
       "won": 195,
-      "pl": 10.23,
-      "roi": 1.8
+      "pl": 7.23,
+      "roi": 1.3
     },
     "agree": {
       "settled": 144,
@@ -15927,10 +15987,10 @@
       "roi": 8
     },
     "disagree": {
-      "settled": 417,
+      "settled": 419,
       "won": 54,
-      "pl": -55.82,
-      "roi": -13.4
+      "pl": -57.82,
+      "roi": -13.8
     }
   },
   "lastBackfill": 1793020884894

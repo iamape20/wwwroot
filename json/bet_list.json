@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:01:39.926Z",
+  "generatedAt": "2026-10-26T14:21:12.668Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -16,8 +16,8 @@
   "awaitingResult": [
     {
       "course": "Hereford",
-      "off": "13:48",
-      "horse": "JERSEYGEORDIE"
+      "off": "14:18",
+      "horse": "OUR WEE HORSE"
     }
   ],
   "recent": [
@@ -31,6 +31,17 @@
       "bsp": null,
       "pl": null,
       "settledAt": null
+    },
+    {
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "off": "13:48",
+      "horse": "JERSEYGEORDIE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "date": "2026-10-26",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-23",
-      "course": "Cheltenham",
-      "off": "15:00",
-      "horse": "COOLTOBECARELESS",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T14:01:39.545Z",
+    "updatedAt": "2026-10-26T14:21:12.505Z",
     "claude": {
       "races": 38,
       "won": 7,

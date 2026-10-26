@@ -2166,10 +2166,11 @@
       "runners": 8,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "1/1",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Galway|13:42",
@@ -2183,6 +2184,21 @@
       "stake": 0,
       "result": "won",
       "isp": "8/13",
+      "bsp": null,
+      "pl": null
+    },
+    {
+      "id": "2026-10-26|Hereford|14:18",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "14:18",
+      "horse": "OUR WEE HORSE",
+      "priceAtOff": "1/2",
+      "runners": 9,
+      "phase": "STOPPED",
+      "stake": 0,
+      "result": null,
+      "isp": null,
       "bsp": null,
       "pl": null
     }
