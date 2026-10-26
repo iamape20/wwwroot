@@ -16621,25 +16621,71 @@
       "fav": {
         "horse": "BREATHE EASY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T18:30:32.723Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Southwell|19:00",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "19:00",
+      "horse": "BIG MONEY",
+      "price": "8/11",
+      "runners": 10,
+      "liveHorse": "BIG MONEY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BIG MONEY",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T18:50:26.260Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|19:15",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "19:15",
+      "horse": "KATALYST",
+      "price": "14/1",
+      "runners": 11,
+      "liveHorse": "BRAVE LEADER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BRAVE LEADER",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T19:00:37.399Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 607,
+    "recorded": 609,
     "pick": {
-      "settled": 585,
+      "settled": 586,
       "won": 118,
-      "pl": -68.3,
-      "roi": -11.7
+      "pl": -69.3,
+      "roi": -11.8
     },
     "favourite": {
-      "settled": 583,
+      "settled": 584,
       "won": 195,
-      "pl": -9.77,
-      "roi": -1.7
+      "pl": -10.77,
+      "roi": -1.8
     },
     "agree": {
       "settled": 150,
@@ -16648,10 +16694,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 435,
+      "settled": 436,
       "won": 54,
-      "pl": -73.82,
-      "roi": -17
+      "pl": -74.82,
+      "roi": -17.2
     }
   },
   "lastBackfill": 1793032248554
