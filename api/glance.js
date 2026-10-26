@@ -45,7 +45,9 @@ function guideEntry(ratings, meetingName, time, horse, label, tier, tierReason) 
     if (second && Number.isFinite(u.power_rating) && Number.isFinite(second.power_rating)) {
         reasons.unshift("Rated " + (u.power_rating - second.power_rating).toFixed(1) + " points above the next best (" + second.name + ", " + second.power_rating + ").");
     }
-    if (active.length <= 5) risks.push("Small field of " + active.length + " - fewer rivals, but the order is easier to upset.");
+    // No "small field - easier to upset" risk (removed 2026-10-26): in the
+    // results archive the favourite of a UK/IRE field of 5 or fewer won 48.4%
+    // (157 races, A/E 0.94) vs 37.8% in 6-8 runners and 32.7% in 9+.
     if (u.days_since_run > 120) risks.push("Last ran " + u.days_since_run + " days ago.");
     if (u.is_unexposed) risks.push("Little or no form on record, so the rating leans on the market and the trainer.");
     const mine = active.map(r => decimal(r.current_odds)).filter(Boolean).sort((a, b) => a - b);
