@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T19:00:35.198Z",
+  "generatedAt": "2026-10-26T19:20:22.947Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-26",
       "course": "Southwell",
       "off": "19:00",
-      "horse": "BIG MONEY"
-    }
-  ],
-  "recent": [
+      "horse": "BIG MONEY",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-26",
       "course": "Kempton",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-24",
-      "course": "Southwell",
-      "off": "18:30",
-      "horse": "GEOMETRY",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.07832065,
-      "pl": 1.024,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T19:00:35.107Z",
+    "updatedAt": "2026-10-26T19:20:22.845Z",
     "claude": {
       "races": 38,
       "won": 7,

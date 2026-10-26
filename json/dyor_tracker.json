@@ -16648,10 +16648,18 @@
       "fav": {
         "horse": "BIG MONEY",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T18:50:26.260Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Kempton|19:15",
@@ -16671,27 +16679,46 @@
       },
       "recordedAt": "2026-10-26T19:00:37.399Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Southwell|19:30",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "ENCORE",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "COURAGEOUS SIOUX",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COURAGEOUS SIOUX",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T19:20:24.564Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 609,
+    "recorded": 610,
     "pick": {
-      "settled": 586,
+      "settled": 587,
       "won": 118,
-      "pl": -69.3,
-      "roi": -11.8
+      "pl": -70.3,
+      "roi": -12
     },
     "favourite": {
-      "settled": 584,
+      "settled": 585,
       "won": 195,
-      "pl": -10.77,
-      "roi": -1.8
+      "pl": -11.77,
+      "roi": -2
     },
     "agree": {
-      "settled": 150,
+      "settled": 151,
       "won": 64,
-      "pl": 5.52,
-      "roi": 3.7
+      "pl": 4.52,
+      "roi": 3
     },
     "disagree": {
       "settled": 436,
