@@ -16080,10 +16080,14 @@
       "fav": {
         "horse": "KISS ME MY LOVE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-26T14:51:09.383Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "15/8"
     },
     {
       "id": "2026-10-26|Leicester|15:14",
@@ -16122,10 +16126,48 @@
       },
       "recordedAt": "2026-10-26T15:11:11.874Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Hereford|15:27",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "15:27",
+      "horse": "MISS KINGSTON",
+      "price": "4/11",
+      "runners": 12,
+      "liveHorse": "MISS KINGSTON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MISS KINGSTON",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T15:21:03.258Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Redcar|15:35",
+      "date": "2026-10-26",
+      "course": "Redcar",
+      "time": "15:35",
+      "horse": "HARES BREDTH",
+      "price": "7/2",
+      "runners": 14,
+      "liveHorse": "BIG APPLE JACK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BIG APPLE JACK",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T15:21:03.273Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 588,
+    "recorded": 590,
     "pick": {
       "settled": 569,
       "won": 118,
