@@ -16544,10 +16544,16 @@
       "fav": {
         "horse": "TOASTMASTER",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-26T17:50:37.531Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Kempton|18:15",
@@ -16567,15 +16573,34 @@
       },
       "recordedAt": "2026-10-26T18:00:33.488Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Southwell|18:30",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "THESTRAL",
+      "price": "7/1",
+      "runners": 11,
+      "liveHorse": "HONEY DALE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HONEY DALE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T18:20:33.828Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 605,
+    "recorded": 606,
     "pick": {
-      "settled": 582,
+      "settled": 583,
       "won": 118,
-      "pl": -65.3,
-      "roi": -11.2
+      "pl": -66.3,
+      "roi": -11.4
     },
     "favourite": {
       "settled": 582,
@@ -16590,10 +16615,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 432,
+      "settled": 433,
       "won": 54,
-      "pl": -70.82,
-      "roi": -16.4
+      "pl": -71.82,
+      "roi": -16.6
     }
   },
   "lastBackfill": 1793032248554
