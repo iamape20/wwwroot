@@ -73,7 +73,7 @@ const CHECKLIST_SHORT = {
 function legNoBet(p) {
     // Before the 09:00 lock the list is provisional - the lock re-picks on
     // the live prices, so there is nothing "since 09:00" to compare yet.
-    if (!p || p.nonRunner || p.provisional) return false;
+    if (!p || p.nonRunner || p.abandoned || p.provisional) return false;
     const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
     return Boolean(pickChanged || p.nowTier === "Open");
 }
@@ -117,11 +117,13 @@ function renderDailyDouble(dashboard) {
             <div class="daily-double-rank">${i + 1}</div>
             <div class="daily-double-body">
                 <div class="daily-double-horse">
-                    <span${legNoBet(p) ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(p.horse)}</span>
+                    <span${legNoBet(p) || p.abandoned ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(p.horse)}</span>
                     <span class="daily-double-tier">${p.nap && p.napNow !== false ? "NAP &middot; " : ""}${escapeHtml(p.tier)}</span>
                     ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
                     ${legNoBet(p) ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;">NO BET</span>` : ""}
+                    ${p.abandoned ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;">ABANDONED</span>` : ""}
                 </div>
+                ${p.abandoned ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">This meeting was abandoned after the Daily Double was locked - this leg is void.</div>` : ""}
                 ${legNoBet(p) ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">${escapeHtml(legNoBetReason(p))}</div>` : ""}
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span></div>

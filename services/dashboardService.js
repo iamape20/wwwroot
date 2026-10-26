@@ -214,6 +214,18 @@ function isWithdrawnPick(ratings, entry) {
         String(r.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase());
 }
 
+// True when the leg's whole meeting has gone from today's card - dropAbandoned.js
+// removes a meeting abandoned after the 09:00 lock (2026-10-26: Wexford
+// waterlogged, HARTFORD still showed as a live Strong leg with no warning).
+// Same-day card only, so a list/card date mismatch around midnight can't
+// flag every leg.
+function isAbandonedLeg(ratings, list, entry) {
+    const meetings = Object.values(ratings || {}).filter(Boolean);
+    if (!meetings.length || !list?.date || meetings[0].date !== list.date) return false;
+    return !meetings.some(m =>
+        String(m?.name || "").toUpperCase() === String(entry?.course || "").toUpperCase());
+}
+
 // The Daily Double is locked at 09:00 (provisional before that), but prices
 // keep moving, so a leg's race can drop to Open (VOID BET on the race page)
 // and the NAP can be withdrawn. Found 2026-10-18: the overnight Daily Single
@@ -888,6 +900,7 @@ for (
 			(dailyDoubleData?.dailyDouble || []).map(e => ({
 				...e,
 				nonRunner: isWithdrawnPick(ratings, e),
+				abandoned: isAbandonedLeg(ratings, dailyDoubleData, e),
 				...legNow(ratings, nap, e),
 				provisional: shortlistProvisional(dailyDoubleData)
 			})),
@@ -932,6 +945,7 @@ module.exports = {
 
     // exported for api/glance.js (form guide labels a no-bet leg too)
     legNow,
+    isAbandonedLeg,
     shortlistProvisional
 
 };
