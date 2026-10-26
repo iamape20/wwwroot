@@ -16230,10 +16230,16 @@
       "fav": {
         "horse": "VISION DE MAINE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T15:40:56.097Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "12/1"
     },
     {
       "id": "2026-10-26|Hereford|16:00",
@@ -16249,10 +16255,18 @@
       "fav": {
         "horse": "SANDSCAPE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T15:50:57.079Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Redcar|16:05",
@@ -16268,10 +16282,18 @@
       "fav": {
         "horse": "NIGHT EMPEROR",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T15:50:57.095Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Kempton|16:10",
@@ -16291,21 +16313,78 @@
       },
       "recordedAt": "2026-10-26T16:01:09.620Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Leicester|16:24",
+      "date": "2026-10-26",
+      "course": "Leicester",
+      "time": "16:24",
+      "horse": "GLITTER CODE",
+      "price": "13/2",
+      "runners": 13,
+      "liveHorse": "KOTARI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KOTARI",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T16:10:44.175Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Southwell|16:30",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "16:30",
+      "horse": "MISTER MOET",
+      "price": "12/1",
+      "runners": 10,
+      "liveHorse": "MIDNIGHT LIR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MIDNIGHT LIR",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T16:20:50.325Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Galway|16:32",
+      "date": "2026-10-26",
+      "course": "Galway",
+      "time": "16:32",
+      "horse": "MARBLE HILL",
+      "price": "6/4",
+      "runners": 7,
+      "liveHorse": "BALLYADAM STAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYADAM STAR",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T16:20:50.338Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 595,
+    "recorded": 598,
     "pick": {
-      "settled": 572,
+      "settled": 574,
       "won": 118,
-      "pl": -55.3,
-      "roi": -9.7
+      "pl": -57.3,
+      "roi": -10
     },
     "favourite": {
-      "settled": 573,
+      "settled": 576,
       "won": 195,
-      "pl": 0.23,
-      "roi": 0
+      "pl": -2.77,
+      "roi": -0.5
     },
     "agree": {
       "settled": 148,
@@ -16314,10 +16393,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 424,
+      "settled": 426,
       "won": 54,
-      "pl": -62.82,
-      "roi": -14.8
+      "pl": -64.82,
+      "roi": -15.2
     }
   },
   "lastBackfill": 1793020884894
