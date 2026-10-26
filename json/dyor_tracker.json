@@ -16444,10 +16444,18 @@
       "fav": {
         "horse": "PIVOTAL TERMS",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T16:50:47.052Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Kempton|17:15",
@@ -16467,27 +16475,46 @@
       },
       "recordedAt": "2026-10-26T17:00:37.590Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Southwell|17:30",
+      "date": "2026-10-26",
+      "course": "Southwell",
+      "time": "17:30",
+      "horse": "PEACE BELLE",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "YAMNAH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "YAMNAH",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T17:20:36.538Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 601,
+    "recorded": 602,
     "pick": {
-      "settled": 579,
+      "settled": 580,
       "won": 118,
-      "pl": -62.3,
-      "roi": -10.8
+      "pl": -63.3,
+      "roi": -10.9
     },
     "favourite": {
-      "settled": 581,
+      "settled": 582,
       "won": 195,
-      "pl": -7.77,
-      "roi": -1.3
+      "pl": -8.77,
+      "roi": -1.5
     },
     "agree": {
-      "settled": 149,
+      "settled": 150,
       "won": 64,
-      "pl": 6.52,
-      "roi": 4.4
+      "pl": 5.52,
+      "roi": 3.7
     },
     "disagree": {
       "settled": 430,
