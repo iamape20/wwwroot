@@ -16028,10 +16028,18 @@
       "fav": {
         "horse": "BOYCETOWN",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T14:31:33.341Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Hereford|14:52",
@@ -16047,10 +16055,16 @@
       "fav": {
         "horse": "LUCY THE WIRE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-10-26T14:41:17.440Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Redcar|15:00",
@@ -16089,33 +16103,52 @@
       },
       "recordedAt": "2026-10-26T15:01:10.608Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Galway|15:20",
+      "date": "2026-10-26",
+      "course": "Galway",
+      "time": "15:20",
+      "horse": "BALKO D'ANGE",
+      "price": "6/1",
+      "runners": 12,
+      "liveHorse": "TEED UP",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TEED UP",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T15:11:11.874Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 587,
+    "recorded": 588,
     "pick": {
-      "settled": 567,
+      "settled": 569,
       "won": 118,
-      "pl": -50.3,
-      "roi": -8.9
+      "pl": -52.3,
+      "roi": -9.2
     },
     "favourite": {
-      "settled": 569,
+      "settled": 570,
       "won": 195,
-      "pl": 4.23,
-      "roi": 0.7
+      "pl": 3.23,
+      "roi": 0.6
     },
     "agree": {
-      "settled": 146,
+      "settled": 147,
       "won": 64,
-      "pl": 9.52,
-      "roi": 6.5
+      "pl": 8.52,
+      "roi": 5.8
     },
     "disagree": {
-      "settled": 421,
+      "settled": 422,
       "won": 54,
-      "pl": -59.82,
-      "roi": -14.2
+      "pl": -60.82,
+      "roi": -14.4
     }
   },
   "lastBackfill": 1793020884894

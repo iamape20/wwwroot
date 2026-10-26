@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T15:01:06.856Z",
+  "generatedAt": "2026-10-26T15:11:08.033Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-26",
       "course": "Galway",
       "off": "14:45",
-      "horse": "BOYCETOWN"
-    }
-  ],
-  "recent": [
+      "horse": "BOYCETOWN",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-26",
       "course": "Hereford",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-24",
-      "course": "Doncaster",
-      "off": "13:30",
-      "horse": "NOBLE EXHIBIT",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T15:01:06.721Z",
+    "updatedAt": "2026-10-26T15:11:07.869Z",
     "claude": {
       "races": 38,
       "won": 7,
