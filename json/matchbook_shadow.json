@@ -6590,27 +6590,27 @@
       "marketVolume": 110
     },
     "lastBeforeOff": {
-      "at": "2026-10-26T07:21:31.594Z",
+      "at": "2026-10-26T07:41:38.716Z",
       "eventId": 34688095445001024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.52,
-      "available": 2,
+      "bestBack": 1.55,
+      "available": 27.8,
       "depth": [
+        [
+          1.55,
+          27.8
+        ],
+        [
+          1.53,
+          3.23
+        ],
         [
           1.52,
           2
-        ],
-        [
-          1.51,
-          3.57
-        ],
-        [
-          1.48,
-          110.3
         ]
       ],
-      "marketVolume": 162
+      "marketVolume": 317
     }
   },
   "BEST|2026-10-26|Kempton|17:15|SHOWMASTER": {
@@ -6664,6 +6664,59 @@
         ]
       ],
       "marketVolume": 31
+    }
+  },
+  "BEST|2026-10-26|Wexford|16:15|HARTFORD": {
+    "type": "BEST",
+    "date": "2026-10-26",
+    "course": "Wexford",
+    "time": "16:15",
+    "horse": "HARTFORD",
+    "atReveal": {
+      "at": "2026-10-26T07:31:41.855Z",
+      "eventId": 34688253141902024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.99,
+      "available": 2,
+      "depth": [
+        [
+          1.99,
+          2
+        ],
+        [
+          1.91,
+          2.42
+        ],
+        [
+          1.9,
+          2.33
+        ]
+      ],
+      "marketVolume": 134
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-26T07:41:38.719Z",
+      "eventId": 34688253141902024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 1.99,
+      "available": 2,
+      "depth": [
+        [
+          1.99,
+          2
+        ],
+        [
+          1.91,
+          2.42
+        ],
+        [
+          1.9,
+          2.33
+        ]
+      ],
+      "marketVolume": 134
     }
   }
 }
