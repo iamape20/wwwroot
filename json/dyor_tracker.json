@@ -16727,10 +16727,16 @@
       "fav": {
         "horse": "ROY LANE",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-26T19:30:25.484Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Southwell|20:00",
@@ -16750,15 +16756,34 @@
       },
       "recordedAt": "2026-10-26T19:50:23.099Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|20:15",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "20:15",
+      "horse": "FURTHER MEASURE",
+      "price": "16/1",
+      "runners": 12,
+      "liveHorse": "ADA ROSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ADA ROSE",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T20:00:25.612Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 612,
+    "recorded": 613,
     "pick": {
-      "settled": 589,
+      "settled": 590,
       "won": 118,
-      "pl": -72.3,
-      "roi": -12.3
+      "pl": -73.3,
+      "roi": -12.4
     },
     "favourite": {
       "settled": 586,
@@ -16773,10 +16798,10 @@
       "roi": 3
     },
     "disagree": {
-      "settled": 438,
+      "settled": 439,
       "won": 54,
-      "pl": -76.82,
-      "roi": -17.5
+      "pl": -77.82,
+      "roi": -17.7
     }
   },
   "lastBackfill": 1793043624095
