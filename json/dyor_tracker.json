@@ -16157,10 +16157,14 @@
       "fav": {
         "horse": "MISS KINGSTON",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/7"
       },
       "recordedAt": "2026-10-26T15:21:03.258Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/7"
     },
     {
       "id": "2026-10-26|Redcar|15:35",
@@ -16176,10 +16180,16 @@
       "fav": {
         "horse": "BIG APPLE JACK",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-26T15:21:03.273Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Leicester|15:49",
@@ -16195,10 +16205,16 @@
       "fav": {
         "horse": "WODAO",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T15:40:56.082Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-26|Galway|15:55",
@@ -16218,21 +16234,78 @@
       },
       "recordedAt": "2026-10-26T15:40:56.097Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Hereford|16:00",
+      "date": "2026-10-26",
+      "course": "Hereford",
+      "time": "16:00",
+      "horse": "BITS BALLOU",
+      "price": "10/3",
+      "runners": 8,
+      "liveHorse": "SANDSCAPE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SANDSCAPE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T15:50:57.079Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Redcar|16:05",
+      "date": "2026-10-26",
+      "course": "Redcar",
+      "time": "16:05",
+      "horse": "ONE OF OUR OWN",
+      "price": "14/1",
+      "runners": 14,
+      "liveHorse": "NIGHT EMPEROR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NIGHT EMPEROR",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T15:50:57.095Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|16:10",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "16:10",
+      "horse": "DIVINE SYMMETRY",
+      "price": "6/5",
+      "runners": 9,
+      "liveHorse": "DIVINE SYMMETRY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DIVINE SYMMETRY",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T16:01:09.620Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 592,
+    "recorded": 595,
     "pick": {
-      "settled": 571,
+      "settled": 572,
       "won": 118,
-      "pl": -54.3,
-      "roi": -9.5
+      "pl": -55.3,
+      "roi": -9.7
     },
     "favourite": {
-      "settled": 572,
+      "settled": 573,
       "won": 195,
-      "pl": 1.23,
-      "roi": 0.2
+      "pl": 0.23,
+      "roi": 0
     },
     "agree": {
       "settled": 148,
@@ -16241,10 +16314,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 423,
+      "settled": 424,
       "won": 54,
-      "pl": -61.82,
-      "roi": -14.6
+      "pl": -62.82,
+      "roi": -14.8
     }
   },
   "lastBackfill": 1793020884894

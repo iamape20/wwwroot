@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T15:40:53.412Z",
+  "generatedAt": "2026-10-26T16:01:05.510Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-26",
       "course": "Hereford",
       "off": "15:27",
-      "horse": "MISS KINGSTON"
-    }
-  ],
-  "recent": [
+      "horse": "MISS KINGSTON",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-26",
       "course": "Galway",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": -1,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-24",
-      "course": "Kelso",
-      "off": "13:37",
-      "horse": "EAZY BREEZY",
-      "phase": "PAPER",
-      "result": "lost",
-      "bsp": null,
-      "pl": -1,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T15:40:53.288Z",
+    "updatedAt": "2026-10-26T16:01:05.338Z",
     "claude": {
       "races": 38,
       "won": 7,
