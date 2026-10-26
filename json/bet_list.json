@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T17:20:34.839Z",
+  "generatedAt": "2026-10-26T17:40:38.538Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-26",
       "course": "Kempton",
       "off": "17:15",
-      "horse": "SHOWMASTER"
-    }
-  ],
-  "recent": [
+      "horse": "SHOWMASTER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-26",
       "course": "Kempton",
@@ -174,21 +179,10 @@
       "bsp": 2.07832065,
       "pl": 1.024,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-24",
-      "course": "Doncaster",
-      "off": "14:05",
-      "horse": "BENGAL TIGER",
-      "phase": "PAPER",
-      "result": "won",
-      "bsp": 2.14,
-      "pl": 1.083,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-26T17:20:34.733Z",
+    "updatedAt": "2026-10-26T17:40:38.448Z",
     "claude": {
       "races": 38,
       "won": 7,

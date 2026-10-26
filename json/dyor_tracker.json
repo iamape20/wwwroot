@@ -16471,10 +16471,14 @@
       "fav": {
         "horse": "SHOWMASTER",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-10-26T17:00:37.590Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/2"
     },
     {
       "id": "2026-10-26|Southwell|17:30",
@@ -16494,10 +16498,29 @@
       },
       "recordedAt": "2026-10-26T17:20:36.538Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|17:45",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "17:45",
+      "horse": "BLUE PRINCE",
+      "price": "13/2",
+      "runners": 12,
+      "liveHorse": "SIWA OASIS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SIWA OASIS",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T17:30:38.169Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 602,
+    "recorded": 603,
     "pick": {
       "settled": 580,
       "won": 118,
