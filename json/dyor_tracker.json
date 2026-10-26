@@ -16675,10 +16675,16 @@
       "fav": {
         "horse": "BRAVE LEADER",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-26T19:00:37.399Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Southwell|19:30",
@@ -16694,25 +16700,52 @@
       "fav": {
         "horse": "COURAGEOUS SIOUX",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T19:20:24.564Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Kempton|19:45",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "19:45",
+      "horse": "SOUTHBANK",
+      "price": "16/1",
+      "runners": 12,
+      "liveHorse": "ROY LANE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROY LANE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T19:30:25.484Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 610,
+    "recorded": 611,
     "pick": {
-      "settled": 587,
+      "settled": 589,
       "won": 118,
-      "pl": -70.3,
-      "roi": -12
+      "pl": -72.3,
+      "roi": -12.3
     },
     "favourite": {
-      "settled": 585,
+      "settled": 586,
       "won": 195,
-      "pl": -11.77,
-      "roi": -2
+      "pl": -12.77,
+      "roi": -2.2
     },
     "agree": {
       "settled": 151,
@@ -16721,11 +16754,11 @@
       "roi": 3
     },
     "disagree": {
-      "settled": 436,
+      "settled": 438,
       "won": 54,
-      "pl": -74.82,
-      "roi": -17.2
+      "pl": -76.82,
+      "roi": -17.5
     }
   },
-  "lastBackfill": 1793032248554
+  "lastBackfill": 1793043624095
 }
