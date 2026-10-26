@@ -2121,8 +2121,8 @@
       "runners": 6,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "won",
+      "isp": "2/5",
       "bsp": null,
       "pl": null
     },
@@ -2133,6 +2133,21 @@
       "time": "13:12",
       "horse": "KARL DES TOURELLES",
       "priceAtOff": "1/1",
+      "runners": 7,
+      "phase": "STOPPED",
+      "stake": 0,
+      "result": "won",
+      "isp": "1/1",
+      "bsp": null,
+      "pl": null
+    },
+    {
+      "id": "2026-10-26|Leicester|13:37",
+      "date": "2026-10-26",
+      "course": "Leicester",
+      "time": "13:37",
+      "horse": "ROGUE CONSTELATION",
+      "priceAtOff": "8/13",
       "runners": 7,
       "phase": "STOPPED",
       "stake": 0,
@@ -2151,5 +2166,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1792911673154
+  "lastBackfill": 1793022080938
 }
