@@ -15620,10 +15620,18 @@
       "fav": {
         "horse": "ARCTIC FORCE",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T12:11:31.547Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Hereford|12:48",
@@ -15662,21 +15670,59 @@
       },
       "recordedAt": "2026-10-26T12:41:29.902Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Leicester|13:07",
+      "date": "2026-10-26",
+      "course": "Leicester",
+      "time": "13:07",
+      "horse": "WINDMILL",
+      "price": "11/1",
+      "runners": 6,
+      "liveHorse": "CALA VADELLA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CALA VADELLA",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T13:01:33.183Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-26|Galway|13:12",
+      "date": "2026-10-26",
+      "course": "Galway",
+      "time": "13:12",
+      "horse": "KARL DES TOURELLES",
+      "price": "1/1",
+      "runners": 7,
+      "liveHorse": "KARL DES TOURELLES",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KARL DES TOURELLES",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T13:01:33.209Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 570,
+    "recorded": 572,
     "pick": {
-      "settled": 557,
+      "settled": 558,
       "won": 118,
-      "pl": -40.3,
-      "roi": -7.2
+      "pl": -41.3,
+      "roi": -7.4
     },
     "favourite": {
-      "settled": 559,
+      "settled": 560,
       "won": 195,
-      "pl": 14.23,
-      "roi": 2.5
+      "pl": 13.23,
+      "roi": 2.4
     },
     "agree": {
       "settled": 144,
@@ -15685,10 +15731,10 @@
       "roi": 8
     },
     "disagree": {
-      "settled": 413,
+      "settled": 414,
       "won": 54,
-      "pl": -51.82,
-      "roi": -12.5
+      "pl": -52.82,
+      "roi": -12.8
     }
   },
   "lastBackfill": 1792998129353
