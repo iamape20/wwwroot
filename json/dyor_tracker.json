@@ -16569,10 +16569,18 @@
       "fav": {
         "horse": "LIAM MERA KAI",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T18:00:33.488Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Southwell|18:30",
@@ -16588,25 +16596,50 @@
       "fav": {
         "horse": "HONEY DALE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-26T18:20:33.828Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Kempton|18:45",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "18:45",
+      "horse": "CROSSBAR",
+      "price": "6/1",
+      "runners": 13,
+      "liveHorse": "BREATHE EASY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BREATHE EASY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T18:30:32.723Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 606,
+    "recorded": 607,
     "pick": {
-      "settled": 583,
+      "settled": 585,
       "won": 118,
-      "pl": -66.3,
-      "roi": -11.4
+      "pl": -68.3,
+      "roi": -11.7
     },
     "favourite": {
-      "settled": 582,
+      "settled": 583,
       "won": 195,
-      "pl": -8.77,
-      "roi": -1.5
+      "pl": -9.77,
+      "roi": -1.7
     },
     "agree": {
       "settled": 150,
@@ -16615,10 +16648,10 @@
       "roi": 3.7
     },
     "disagree": {
-      "settled": 433,
+      "settled": 435,
       "won": 54,
-      "pl": -71.82,
-      "roi": -16.6
+      "pl": -73.82,
+      "roi": -17
     }
   },
   "lastBackfill": 1793032248554
