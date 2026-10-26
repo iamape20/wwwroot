@@ -16309,10 +16309,18 @@
       "fav": {
         "horse": "DIVINE SYMMETRY",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T16:01:09.620Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Leicester|16:24",
@@ -16328,10 +16336,18 @@
       "fav": {
         "horse": "KOTARI",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-26T16:10:44.175Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Southwell|16:30",
@@ -16370,34 +16386,53 @@
       },
       "recordedAt": "2026-10-26T16:20:50.338Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-26|Kempton|16:45",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "16:45",
+      "horse": "BOY'S SLIPPER",
+      "price": "50/1",
+      "runners": 10,
+      "liveHorse": "IDEALISE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IDEALISE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-26T16:30:48.537Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 598,
+    "recorded": 599,
     "pick": {
-      "settled": 574,
+      "settled": 576,
       "won": 118,
-      "pl": -57.3,
-      "roi": -10
+      "pl": -59.3,
+      "roi": -10.3
     },
     "favourite": {
-      "settled": 576,
+      "settled": 578,
       "won": 195,
-      "pl": -2.77,
-      "roi": -0.5
+      "pl": -4.77,
+      "roi": -0.8
     },
     "agree": {
-      "settled": 148,
+      "settled": 149,
       "won": 64,
-      "pl": 7.52,
-      "roi": 5.1
+      "pl": 6.52,
+      "roi": 4.4
     },
     "disagree": {
-      "settled": 426,
+      "settled": 427,
       "won": 54,
-      "pl": -64.82,
-      "roi": -15.2
+      "pl": -65.82,
+      "roi": -15.4
     }
   },
-  "lastBackfill": 1793020884894
+  "lastBackfill": 1793032248554
 }

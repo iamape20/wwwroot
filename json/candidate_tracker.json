@@ -3068,7 +3068,11 @@
       "rating": 74.5,
       "runners": 9,
       "recordedAt": "2026-10-26T16:01:09.147Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-26|Leicester|16:24",
@@ -3080,15 +3084,31 @@
       "rating": 74.4,
       "runners": 13,
       "recordedAt": "2026-10-26T16:10:43.902Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-26|Kempton|16:45",
+      "date": "2026-10-26",
+      "course": "Kempton",
+      "time": "16:45",
+      "horse": "IDEALISE",
+      "price": "11/10",
+      "rating": 68,
+      "runners": 10,
+      "recordedAt": "2026-10-26T16:30:48.199Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 188,
-    "settled": 182,
+    "recorded": 189,
+    "settled": 184,
     "won": 88,
-    "pl": -3.67,
-    "roi": -2
+    "pl": -5.67,
+    "roi": -3.1
   },
   "lastBackfill": 1793022680318
 }
