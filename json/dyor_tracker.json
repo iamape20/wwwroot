@@ -17298,10 +17298,16 @@
       "fav": {
         "horse": "RULE ME IN",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-10-27T15:20:36.081Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Catterick|15:40",
@@ -17317,10 +17323,16 @@
       "fav": {
         "horse": "LILYKOY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-27T15:30:34.592Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Bangor-on-Dee|15:46",
@@ -17340,15 +17352,53 @@
       },
       "recordedAt": "2026-10-27T15:40:35.670Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-27|Newcastle|16:01",
+      "date": "2026-10-27",
+      "course": "Newcastle",
+      "time": "16:01",
+      "horse": "MON MISSEL",
+      "price": "4/1",
+      "runners": 9,
+      "liveHorse": "CAYENNE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CAYENNE",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T15:50:34.131Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Catterick|16:10",
+      "date": "2026-10-27",
+      "course": "Catterick",
+      "time": "16:10",
+      "horse": "SOMETHING",
+      "price": "40/1",
+      "runners": 10,
+      "liveHorse": "SASSICAIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SASSICAIA",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T16:00:37.599Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 632,
+    "recorded": 634,
     "pick": {
-      "settled": 613,
+      "settled": 615,
       "won": 129,
-      "pl": -53.55,
-      "roi": -8.7
+      "pl": -55.55,
+      "roi": -9
     },
     "favourite": {
       "settled": 615,
@@ -17363,10 +17413,10 @@
       "roi": 3.6
     },
     "disagree": {
-      "settled": 451,
+      "settled": 453,
       "won": 58,
-      "pl": -59.35,
-      "roi": -13.2
+      "pl": -61.35,
+      "roi": -13.5
     }
   },
   "lastBackfill": 1793107863763
