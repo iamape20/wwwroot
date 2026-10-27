@@ -17448,10 +17448,16 @@
       "fav": {
         "horse": "EIGHTY EIGHT",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T16:20:28.597Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     }
   ],
   "stats": {
@@ -17463,10 +17469,10 @@
       "roi": -9.5
     },
     "favourite": {
-      "settled": 618,
+      "settled": 619,
       "won": 212,
-      "pl": 0.16,
-      "roi": 0
+      "pl": -0.84,
+      "roi": -0.1
     },
     "agree": {
       "settled": 163,
@@ -17481,5 +17487,5 @@
       "roi": -13.9
     }
   },
-  "lastBackfill": 1793107863763
+  "lastBackfill": 1793119234530
 }
