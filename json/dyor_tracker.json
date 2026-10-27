@@ -17658,31 +17658,39 @@
       "fav": {
         "horse": "MACANUDO",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T20:20:22.470Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 644,
     "pick": {
-      "settled": 625,
+      "settled": 626,
       "won": 129,
-      "pl": -65.55,
-      "roi": -10.5
+      "pl": -66.55,
+      "roi": -10.6
     },
     "favourite": {
-      "settled": 622,
+      "settled": 623,
       "won": 212,
-      "pl": -3.84,
-      "roi": -0.6
+      "pl": -4.84,
+      "roi": -0.8
     },
     "agree": {
-      "settled": 164,
+      "settled": 165,
       "won": 71,
-      "pl": 3.8,
-      "roi": 2.3
+      "pl": 2.8,
+      "roi": 1.7
     },
     "disagree": {
       "settled": 461,
