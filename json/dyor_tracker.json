@@ -17556,25 +17556,52 @@
       "fav": {
         "horse": "MIDNIGHT'S DREAM",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T18:20:30.061Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-27|Wolverhampton|19:00",
+      "date": "2026-10-27",
+      "course": "Wolverhampton",
+      "time": "19:00",
+      "horse": "BARRY THE WORM",
+      "price": "11/4",
+      "runners": 12,
+      "liveHorse": "TERRITORIAL STAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TERRITORIAL STAR",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T18:50:32.162Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 640,
+    "recorded": 641,
     "pick": {
-      "settled": 621,
+      "settled": 622,
       "won": 129,
-      "pl": -61.55,
-      "roi": -9.9
+      "pl": -62.55,
+      "roi": -10.1
     },
     "favourite": {
-      "settled": 621,
+      "settled": 622,
       "won": 212,
-      "pl": -2.84,
-      "roi": -0.5
+      "pl": -3.84,
+      "roi": -0.6
     },
     "agree": {
       "settled": 164,
@@ -17583,10 +17610,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 457,
+      "settled": 458,
       "won": 58,
-      "pl": -65.35,
-      "roi": -14.3
+      "pl": -66.35,
+      "roi": -14.5
     }
   },
   "lastBackfill": 1793119234530
