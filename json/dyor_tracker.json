@@ -17529,25 +17529,33 @@
       "fav": {
         "horse": "RIDGER",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T17:50:34.804Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 639,
     "pick": {
-      "settled": 620,
+      "settled": 621,
       "won": 129,
-      "pl": -60.55,
-      "roi": -9.8
+      "pl": -61.55,
+      "roi": -9.9
     },
     "favourite": {
-      "settled": 620,
+      "settled": 621,
       "won": 212,
-      "pl": -1.84,
-      "roi": -0.3
+      "pl": -2.84,
+      "roi": -0.5
     },
     "agree": {
       "settled": 164,
@@ -17556,10 +17564,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 456,
+      "settled": 457,
       "won": 58,
-      "pl": -64.35,
-      "roi": -14.1
+      "pl": -65.35,
+      "roi": -14.3
     }
   },
   "lastBackfill": 1793119234530
