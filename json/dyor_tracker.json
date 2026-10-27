@@ -17140,10 +17140,18 @@
       "fav": {
         "horse": "SILVER HILL",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T14:20:56.952Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Catterick|14:40",
@@ -17159,10 +17167,18 @@
       "fav": {
         "horse": "ABERAMA GOLD",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T14:30:50.427Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Bangor-on-Dee|14:46",
@@ -17182,33 +17198,71 @@
       },
       "recordedAt": "2026-10-27T14:40:49.640Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-27|Newcastle|15:01",
+      "date": "2026-10-27",
+      "course": "Newcastle",
+      "time": "15:01",
+      "horse": "ROARIN' SUCCESS",
+      "price": "11/4",
+      "runners": 6,
+      "liveHorse": "JENTOBELLO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JENTOBELLO",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T14:50:47.596Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Catterick|15:10",
+      "date": "2026-10-27",
+      "course": "Catterick",
+      "time": "15:10",
+      "horse": "VINCE LE PRINCE",
+      "price": "7/2",
+      "runners": 15,
+      "liveHorse": "VINCE LE PRINCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "VINCE LE PRINCE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T15:00:42.307Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 626,
+    "recorded": 628,
     "pick": {
-      "settled": 609,
+      "settled": 611,
       "won": 129,
-      "pl": -49.55,
-      "roi": -8.1
+      "pl": -51.55,
+      "roi": -8.4
     },
     "favourite": {
-      "settled": 609,
+      "settled": 611,
       "won": 212,
-      "pl": 9.16,
-      "roi": 1.5
+      "pl": 7.16,
+      "roi": 1.2
     },
     "agree": {
-      "settled": 160,
+      "settled": 161,
       "won": 71,
-      "pl": 7.8,
-      "roi": 4.9
+      "pl": 6.8,
+      "roi": 4.2
     },
     "disagree": {
-      "settled": 449,
+      "settled": 450,
       "won": 58,
-      "pl": -57.35,
-      "roi": -12.8
+      "pl": -58.35,
+      "roi": -13
     }
   },
   "lastBackfill": 1793107863763
