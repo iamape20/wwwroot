@@ -16917,31 +16917,77 @@
       "fav": {
         "horse": "CYBERSPACE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T12:31:06.214Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-27|Newcastle|12:56",
+      "date": "2026-10-27",
+      "course": "Newcastle",
+      "time": "12:56",
+      "horse": "MY MATE AJ",
+      "price": "11/8",
+      "runners": 6,
+      "liveHorse": "WILDE'S LEGACY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WILDE'S LEGACY",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T12:51:04.006Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Catterick|13:10",
+      "date": "2026-10-27",
+      "course": "Catterick",
+      "time": "13:10",
+      "horse": "BLADEY LADY",
+      "price": "7/4",
+      "runners": 8,
+      "liveHorse": "BLADEY LADY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BLADEY LADY",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T13:00:57.594Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 615,
+    "recorded": 617,
     "pick": {
-      "settled": 604,
+      "settled": 605,
       "won": 129,
-      "pl": -44.55,
-      "roi": -7.4
+      "pl": -45.55,
+      "roi": -7.5
     },
     "favourite": {
-      "settled": 606,
+      "settled": 607,
       "won": 212,
-      "pl": 12.16,
-      "roi": 2
+      "pl": 11.16,
+      "roi": 1.8
     },
     "agree": {
-      "settled": 159,
+      "settled": 160,
       "won": 71,
-      "pl": 8.8,
-      "roi": 5.5
+      "pl": 7.8,
+      "roi": 4.9
     },
     "disagree": {
       "settled": 445,
