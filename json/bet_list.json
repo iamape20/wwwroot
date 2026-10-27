@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:20:54.126Z",
+  "generatedAt": "2026-10-27T14:40:45.882Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-27",
       "course": "Bangor-on-Dee",
       "off": "14:16",
-      "horse": "RATTLIN HOME"
-    }
-  ],
-  "recent": [
+      "horse": "RATTLIN HOME",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-27",
       "course": "Newcastle",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-25",
-      "course": "Galway",
-      "off": "14:17",
-      "horse": "LIGHT UP THE DARK",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-27T14:20:53.980Z",
+    "updatedAt": "2026-10-27T14:40:45.777Z",
     "claude": {
       "races": 38,
       "won": 7,
