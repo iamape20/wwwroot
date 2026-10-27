@@ -2601,9 +2601,21 @@ const LIVE_REFRESH_MS = 300000;
 let liveRefreshInFlight = false;
 let lastLiveRefresh = Date.now();
 
+// A tab left open overnight still holds yesterday's races; the race it has
+// open no longer exists, so every refresh logged a 404 (27 Oct: 324 console
+// errors on a tab opened 25 Oct). On a new UK day, reload the page instead -
+// that also picks up any newer site version.
+const ukDateNow = () => new Date().toLocaleDateString("en-GB", { timeZone: "Europe/London" });
+const pageUkDate = ukDateNow();
+
 async function refreshLiveData() {
 
     if (liveRefreshInFlight || document.hidden) return;
+
+    if (ukDateNow() !== pageUkDate) {
+        location.reload();
+        return;
+    }
     liveRefreshInFlight = true;
     lastLiveRefresh = Date.now();
 
