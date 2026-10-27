@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:00:54.996Z",
+  "generatedAt": "2026-10-27T13:20:59.032Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-27",
       "course": "Newcastle",
       "off": "12:56",
-      "horse": "WILDE'S LEGACY"
-    }
-  ],
-  "recent": [
+      "horse": "WILDE'S LEGACY",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-26",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-25",
-      "course": "Market Rasen",
-      "off": "13:35",
-      "horse": "DON DANDY",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-27T13:00:54.858Z",
+    "updatedAt": "2026-10-27T13:20:58.930Z",
     "claude": {
       "races": 38,
       "won": 7,
