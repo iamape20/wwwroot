@@ -17348,10 +17348,18 @@
       "fav": {
         "horse": "INEDIT D'AMOUR",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T15:40:35.670Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Newcastle|16:01",
@@ -17367,10 +17375,18 @@
       "fav": {
         "horse": "CAYENNE",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T15:50:34.131Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Catterick|16:10",
@@ -17386,37 +17402,83 @@
       "fav": {
         "horse": "SASSICAIA",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T16:00:37.599Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-27|Bangor-on-Dee|16:16",
+      "date": "2026-10-27",
+      "course": "Bangor-on-Dee",
+      "time": "16:16",
+      "horse": "TWISTTHENIGHTAWAY",
+      "price": "7/2",
+      "runners": 13,
+      "liveHorse": "TWISTTHENIGHTAWAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TWISTTHENIGHTAWAY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T16:10:27.500Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Wolverhampton|16:30",
+      "date": "2026-10-27",
+      "course": "Wolverhampton",
+      "time": "16:30",
+      "horse": "BAJAN BANDIT",
+      "price": "10/3",
+      "runners": 10,
+      "liveHorse": "EIGHTY EIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EIGHTY EIGHT",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T16:20:28.597Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 634,
+    "recorded": 636,
     "pick": {
-      "settled": 615,
+      "settled": 618,
       "won": 129,
-      "pl": -55.55,
-      "roi": -9
+      "pl": -58.55,
+      "roi": -9.5
     },
     "favourite": {
-      "settled": 615,
+      "settled": 618,
       "won": 212,
-      "pl": 3.16,
-      "roi": 0.5
+      "pl": 0.16,
+      "roi": 0
     },
     "agree": {
-      "settled": 162,
+      "settled": 163,
       "won": 71,
-      "pl": 5.8,
-      "roi": 3.6
+      "pl": 4.8,
+      "roi": 2.9
     },
     "disagree": {
-      "settled": 453,
+      "settled": 455,
       "won": 58,
-      "pl": -61.35,
-      "roi": -13.5
+      "pl": -63.35,
+      "roi": -13.9
     }
   },
   "lastBackfill": 1793107863763
