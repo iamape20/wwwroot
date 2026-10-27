@@ -2966,7 +2966,10 @@
       "recordedAt": "2026-10-26T13:11:28.479Z",
       "stake": 1,
       "result": "won",
-      "isp": "2/5"
+      "isp": "2/5",
+      "bsp": 1.4839113,
+      "pl": 0.46,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Leicester|13:37",
@@ -2980,7 +2983,10 @@
       "recordedAt": "2026-10-26T13:31:26.083Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/9"
+      "isp": "4/9",
+      "bsp": 1.49514384,
+      "pl": 0.47,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Galway|13:42",
@@ -2994,7 +3000,10 @@
       "recordedAt": "2026-10-26T13:31:26.127Z",
       "stake": 1,
       "result": "won",
-      "isp": "8/13"
+      "isp": "8/13",
+      "bsp": 1.71,
+      "pl": 0.674,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Hereford|13:48",
@@ -3056,7 +3065,10 @@
       "recordedAt": "2026-10-26T15:21:02.995Z",
       "stake": 1,
       "result": "won",
-      "isp": "2/7"
+      "isp": "2/7",
+      "bsp": 1.3,
+      "pl": 0.285,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Kempton|16:10",
@@ -3134,7 +3146,10 @@
       "recordedAt": "2026-10-26T17:00:35.653Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/2"
+      "isp": "1/2",
+      "bsp": 1.5,
+      "pl": 0.475,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Southwell|19:00",
@@ -3164,15 +3179,18 @@
       "recordedAt": "2026-10-26T19:30:25.199Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/1"
+      "isp": "1/1",
+      "bsp": 2.18,
+      "pl": 1.121,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 193,
-    "settled": 187,
-    "won": 88,
-    "pl": -8.67,
-    "roi": -4.6
+    "settled": 193,
+    "won": 94,
+    "pl": -5.19,
+    "roi": -2.7
   },
-  "lastBackfill": 1793045425302
+  "lastBackfill": 1793084488866
 }

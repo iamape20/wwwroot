@@ -2123,8 +2123,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.4839113,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Galway|13:12",
@@ -2138,8 +2139,9 @@
       "stake": 0,
       "result": "won",
       "isp": "1/1",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.97,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Leicester|13:37",
@@ -2153,8 +2155,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/9",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.49514384,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Hereford|13:48",
@@ -2184,8 +2187,9 @@
       "stake": 0,
       "result": "won",
       "isp": "8/13",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.71,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Hereford|14:18",
@@ -2231,8 +2235,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/7",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.3,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Kempton|16:45",
@@ -2262,8 +2267,9 @@
       "stake": 0,
       "result": "won",
       "isp": "1/2",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.5,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-26|Southwell|19:00",
@@ -2291,5 +2297,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1793044821817
+  "lastBackfill": 1793084484244
 }
