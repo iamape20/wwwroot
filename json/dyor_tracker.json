@@ -16992,10 +16992,16 @@
       "fav": {
         "horse": "ROYAL TIME",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-27T13:21:01.200Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Bangor-on-Dee|13:46",
@@ -17011,10 +17017,18 @@
       "fav": {
         "horse": "GLANCE OF GLORY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T13:31:03.733Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Catterick|13:40",
@@ -17030,25 +17044,86 @@
       "fav": {
         "horse": "BATTENBURG BELLE",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-10-27T13:31:03.760Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
+    },
+    {
+      "id": "2026-10-27|Newcastle|14:01",
+      "date": "2026-10-27",
+      "course": "Newcastle",
+      "time": "14:01",
+      "horse": "NATIONAL QUESTION",
+      "price": "5/1",
+      "runners": 10,
+      "liveHorse": "CAWTHORNE CRACKER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CAWTHORNE CRACKER",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T13:50:56.423Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Bangor-on-Dee|14:16",
+      "date": "2026-10-27",
+      "course": "Bangor-on-Dee",
+      "time": "14:16",
+      "horse": "RATTLIN HOME",
+      "price": "1/3",
+      "runners": 11,
+      "liveHorse": "RATTLIN HOME",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "RATTLIN HOME",
+        "price": "1/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T14:01:15.707Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Catterick|14:10",
+      "date": "2026-10-27",
+      "course": "Catterick",
+      "time": "14:10",
+      "horse": "ELDEYAAR",
+      "price": "10/3",
+      "runners": 10,
+      "liveHorse": "KNICKS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KNICKS",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T14:01:15.742Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 620,
+    "recorded": 623,
     "pick": {
-      "settled": 606,
+      "settled": 608,
       "won": 129,
-      "pl": -46.55,
-      "roi": -7.7
+      "pl": -48.55,
+      "roi": -8
     },
     "favourite": {
-      "settled": 607,
+      "settled": 608,
       "won": 212,
-      "pl": 11.16,
-      "roi": 1.8
+      "pl": 10.16,
+      "roi": 1.7
     },
     "agree": {
       "settled": 160,
@@ -17057,10 +17132,10 @@
       "roi": 4.9
     },
     "disagree": {
-      "settled": 446,
+      "settled": 448,
       "won": 58,
-      "pl": -54.35,
-      "roi": -12.2
+      "pl": -56.35,
+      "roi": -12.6
     }
   },
   "lastBackfill": 1793107863763
