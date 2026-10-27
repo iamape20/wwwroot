@@ -17429,10 +17429,18 @@
       "fav": {
         "horse": "TWISTTHENIGHTAWAY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-27T16:10:27.500Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-27|Wolverhampton|16:30",
@@ -17458,27 +17466,46 @@
       "stake": 1,
       "result": "won",
       "isp": "10/3"
+    },
+    {
+      "id": "2026-10-27|Wolverhampton|17:00",
+      "date": "2026-10-27",
+      "course": "Wolverhampton",
+      "time": "17:00",
+      "horse": "AMBIENCE",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "SHOW ME GLORY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHOW ME GLORY",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T16:50:27.295Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 636,
+    "recorded": 637,
     "pick": {
-      "settled": 618,
+      "settled": 619,
       "won": 129,
-      "pl": -58.55,
-      "roi": -9.5
+      "pl": -59.55,
+      "roi": -9.6
     },
     "favourite": {
-      "settled": 619,
+      "settled": 620,
       "won": 212,
-      "pl": -0.84,
-      "roi": -0.1
+      "pl": -1.84,
+      "roi": -0.3
     },
     "agree": {
-      "settled": 163,
+      "settled": 164,
       "won": 71,
-      "pl": 4.8,
-      "roi": 2.9
+      "pl": 3.8,
+      "roi": 2.3
     },
     "disagree": {
       "settled": 455,
