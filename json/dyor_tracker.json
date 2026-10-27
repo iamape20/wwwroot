@@ -16969,10 +16969,14 @@
       "fav": {
         "horse": "BLADEY LADY",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-27T13:00:57.594Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-27|Newcastle|13:26",
@@ -16992,10 +16996,48 @@
       },
       "recordedAt": "2026-10-27T13:21:01.200Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-27|Bangor-on-Dee|13:46",
+      "date": "2026-10-27",
+      "course": "Bangor-on-Dee",
+      "time": "13:46",
+      "horse": "SPEED DAVIS",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "GLANCE OF GLORY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GLANCE OF GLORY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T13:31:03.733Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-27|Catterick|13:40",
+      "date": "2026-10-27",
+      "course": "Catterick",
+      "time": "13:40",
+      "horse": "BATTENBURG BELLE",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "BATTENBURG BELLE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BATTENBURG BELLE",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T13:31:03.760Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 618,
+    "recorded": 620,
     "pick": {
       "settled": 606,
       "won": 129,
@@ -17021,5 +17063,5 @@
       "roi": -12.2
     }
   },
-  "lastBackfill": 1793084490739
+  "lastBackfill": 1793107863763
 }
