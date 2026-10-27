@@ -248311,7 +248311,7 @@
             "checklist_points": "10.05/18.5",
             "checklist_earned_points": 10.05,
             "stat_rating": 8.77,
-            "meta_rating": 12.61,
+            "meta_rating": 10.74,
             "trainer_trend": null
           },
           {
@@ -248987,7 +248987,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "6/1",
+            "current_odds": "13/2",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -249660,12 +249660,12 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 3",
-                  "Odds 6/1"
+                  "Odds 13/2"
                 ],
                 "metrics": {
                   "rank": 3,
-                  "odds": "6/1",
-                  "decimal_odds": 7,
+                  "odds": "13/2",
+                  "decimal_odds": 7.5,
                   "favourite": false,
                   "runners_with_prices": 9
                 }
@@ -249789,8 +249789,8 @@
               "marketMove": {
                 "points": 0,
                 "max": 1,
-                "answer": "Steady",
-                "evidence": "11/2 → 6/1 (20 snapshots)"
+                "answer": "Drifter",
+                "evidence": "11/2 → 13/2 (20 snapshots)"
               },
               "winningMark": {
                 "points": 1,
@@ -249829,6 +249829,546 @@
             "trainer_trend": "cold"
           },
           {
+            "name": "KISS DON'T TELL",
+            "id": 1195455,
+            "formsummary": "052-808",
+            "official_no": 5,
+            "draw": 6,
+            "weight": "9-5",
+            "age": 3,
+            "foaled": "2023-04-08",
+            "sex": "f",
+            "trainer": "N P Littmoden",
+            "trainer_id": 6118,
+            "jockey": "K S McHugh",
+            "jockey_id": 32358,
+            "jockey_claim": 7,
+            "current_class": "6",
+            "ride_status": "RUNNER",
+            "current_odds": "10/1",
+            "historical_odds": [],
+            "race_history_stats": [],
+            "horse_lifetime_stats": [],
+            "medication": [],
+            "insights": [],
+            "past_results": [
+              {
+                "date": "2026-09-04",
+                "pos": 8,
+                "win": false,
+                "place": false,
+                "runners": 12,
+                "course": "Down Royal",
+                "course_code": "DOW",
+                "dist": "5f",
+                "distance_furlongs": 5,
+                "class": null,
+                "weight": 129,
+                "weight_st": "9-3",
+                "going": "Good (Good to Firm in places)",
+                "odds": "8/1",
+                "draw": null,
+                "official_rating": 60,
+                "bha": 60,
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Tracked leaders, pushed along over 2f out, ridden in 4th over 1f out, soon no extra and weakened inside final furlong",
+                "beaten_lengths": "Neck",
+                "race_name": "Irish Stallion Farms EBF Maiden",
+                "position_in_market": 3,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 9000,
+                "days_since_previous_run": 13
+              },
+              {
+                "date": "2026-08-22",
+                "pos": 17,
+                "win": false,
+                "place": false,
+                "runners": 27,
+                "course": "Curragh",
+                "course_code": "CUR",
+                "dist": "6f",
+                "distance_furlongs": 6,
+                "class": null,
+                "weight": 134,
+                "weight_st": "9-8",
+                "going": "Good (Good to Firm in places)",
+                "odds": "40/1",
+                "draw": null,
+                "official_rating": 67,
+                "bha": 67,
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Nicola Burns",
+                "jockey_id": 34598,
+                "ride_description": "Tracked leader on stand's side, ridden 2f out, no extra 1 1/2f out",
+                "beaten_lengths": "2 1/2l",
+                "race_name": "Friends Of Moorefield GAA Handicap",
+                "position_in_market": 23,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": true,
+                "novice": false,
+                "mares": false,
+                "prize": 10800,
+                "days_since_previous_run": 8
+              },
+              {
+                "date": "2026-08-14",
+                "pos": 8,
+                "win": false,
+                "place": false,
+                "runners": 12,
+                "course": "Cork",
+                "course_code": "COR",
+                "dist": "5f",
+                "distance_furlongs": 5,
+                "class": null,
+                "weight": 140,
+                "weight_st": "10-0",
+                "going": "Good (Good to Firm in places)",
+                "odds": "12/1",
+                "draw": null,
+                "official_rating": 68,
+                "bha": 68,
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Dwelt slightly, soon prominent, dropped to 5th and under pressure over 1f out, weakened closing stages",
+                "beaten_lengths": "3/4 length",
+                "race_name": "OCS Recruitment Handicap",
+                "position_in_market": 7,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": true,
+                "novice": false,
+                "mares": false,
+                "prize": 7200,
+                "days_since_previous_run": 254
+              },
+              {
+                "date": "2025-12-03",
+                "pos": 2,
+                "win": false,
+                "place": true,
+                "runners": 9,
+                "course": "Dundalk",
+                "course_code": "DUN",
+                "dist": "5f",
+                "distance_furlongs": 5,
+                "class": null,
+                "weight": 128,
+                "weight_st": "9-2",
+                "going": "Standard",
+                "odds": "9/2",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Led, pushed along 2f out, ridden and headed early final furlong, no impression on winner inside final 150 yards, kept on one pace",
+                "beaten_lengths": "3l",
+                "race_name": "Irish Stallion Farms EBF Maiden",
+                "position_in_market": 3,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 10800,
+                "days_since_previous_run": 101
+              },
+              {
+                "date": "2025-08-24",
+                "pos": 5,
+                "win": false,
+                "place": false,
+                "runners": 12,
+                "course": "Naas",
+                "course_code": "NAA",
+                "dist": "5f",
+                "distance_furlongs": 5,
+                "class": null,
+                "weight": 128,
+                "weight_st": "9-2",
+                "going": "Good",
+                "odds": "66/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Ben Coen",
+                "jockey_id": 25202,
+                "ride_description": "Tracked leader in 2nd, ridden in 2nd over 2f out, closer 2nd 1f out, soon no impression on leaders, 5th inside final furlong, no extra",
+                "beaten_lengths": "2 3/4l",
+                "race_name": "Irish Stallion Farms EBF Fillies Maiden",
+                "position_in_market": 10,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 10800,
+                "days_since_previous_run": 15
+              },
+              {
+                "date": "2025-08-09",
+                "pos": 17,
+                "win": false,
+                "place": false,
+                "runners": 28,
+                "course": "Curragh",
+                "course_code": "CUR",
+                "dist": "6f",
+                "distance_furlongs": 6,
+                "class": null,
+                "weight": 128,
+                "weight_st": "9-2",
+                "going": "Good",
+                "odds": "66/1",
+                "draw": null,
+                "official_rating": "null",
+                "bha": "null",
+                "trainer": "Daniel McLoughlin",
+                "trainer_id": 36495,
+                "jockey": "Nathan Crosse",
+                "jockey_id": 24432,
+                "ride_description": "Slowly into stride, always towards rear, never a factor",
+                "beaten_lengths": "1 length",
+                "race_name": "Audi Naas Irish European Breeders Fund Maiden",
+                "position_in_market": 19,
+                "favourite": false,
+                "race_type": "Flat",
+                "handicap": false,
+                "novice": false,
+                "mares": false,
+                "prize": 12000,
+                "days_since_previous_run": null
+              }
+            ],
+            "is_unexposed": false,
+            "silk_url": "https://www.sportinglife.com/images/silks/20261027wol203005.png",
+            "headgear": [],
+            "race_course": "Wolverhampton",
+            "race_going": "Standard",
+            "race_distance": "5f 21y",
+            "race_time": "20:30",
+            "race_class": "6",
+            "race_id": 945579,
+            "non_runner": false,
+            "timeform_stars": 2,
+            "historical_runs": 6,
+            "days_since_run": 53,
+            "last_run_date_used": "2026-09-04",
+            "history": {
+              "averageOR": 65,
+              "wins": 0,
+              "places": 1,
+              "averageFinish": 9.5,
+              "daysSinceRun": 53
+            },
+            "form": {
+              "raw": "052-808",
+              "runs": 6,
+              "wins": 0,
+              "places": 1,
+              "strikeRate": 0,
+              "placeRate": 17,
+              "nonFinishers": 0,
+              "lastRun": 8,
+              "trend": "Declining",
+              "momentum": 18,
+              "consistency": 35,
+              "positions": [
+                8,
+                10,
+                8,
+                2,
+                5,
+                10
+              ]
+            },
+            "horse_profile": {
+              "running_style": "PROMINENT",
+              "running_style_confidence": 52,
+              "style_scores": {
+                "LEADER": 3,
+                "PROMINENT": 15,
+                "MIDFIELD": 0,
+                "HELD_UP": 11,
+                "UNKNOWN": 0
+              },
+              "style_distribution": {
+                "LEADER": 10,
+                "PROMINENT": 52,
+                "MIDFIELD": 0,
+                "HELD_UP": 38
+              },
+              "sample_size": 6
+            },
+            "v2_score": 32.3,
+            "power_rating": 32.3,
+            "confidence": 40,
+            "confidence_grade": "CAUTIOUS",
+            "rating_breakdown": {
+              "form": {
+                "score": 15,
+                "weight": 0.3,
+                "weighted": 4.5
+              },
+              "context": {
+                "score": 12,
+                "weight": 0.15,
+                "weighted": 1.8
+              },
+              "market": {
+                "score": 80,
+                "weight": 0.2,
+                "weighted": 16
+              },
+              "verdict": {
+                "score": 40,
+                "weight": 0.35,
+                "weighted": 14
+              },
+              "stars": {
+                "score": 40,
+                "weight": 4,
+                "weighted": -4,
+                "stars": 2
+              }
+            },
+            "engine_details": {
+              "form": {
+                "engine": "form",
+                "score": 15,
+                "confidence": "High",
+                "reasons": [
+                  "Recent form: 052-808"
+                ],
+                "metrics": {
+                  "runs": 6,
+                  "wins": 0,
+                  "places": 1,
+                  "strikeRate": 0,
+                  "placeRate": 17,
+                  "trend": "Declining",
+                  "momentum": 18,
+                  "consistency": 35,
+                  "nonFinishers": 0
+                }
+              },
+              "context": {
+                "engine": "context",
+                "score": 12,
+                "confidence": "Low",
+                "reasons": [
+                  "1 place",
+                  "Ran 53 days ago"
+                ],
+                "metrics": {
+                  "averageOR": 65,
+                  "wins": 0,
+                  "places": 1,
+                  "averageFinish": 9.5,
+                  "daysSinceRun": 53,
+                  "trainerFormPoints": 0,
+                  "jockeyOnDebutantPoints": 0,
+                  "jockeyWonOutsiderPoints": 0
+                }
+              },
+              "market": {
+                "engine": "market",
+                "score": 80,
+                "confidence": "Medium",
+                "reasons": [
+                  "Market Rank 4",
+                  "Odds 10/1"
+                ],
+                "metrics": {
+                  "rank": 4,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
+                  "favourite": false,
+                  "runners_with_prices": 9
+                }
+              },
+              "verdict": {
+                "engine": "verdict",
+                "score": 40,
+                "confidence": "Low",
+                "reasons": [],
+                "metrics": {
+                  "mentioned": false,
+                  "analystRank": 0
+                }
+              }
+            },
+            "checklist_rating": 24.6,
+            "checklist_breakdown": {
+              "class": {
+                "points": 0,
+                "max": 3,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No qualifying class history recorded"
+              },
+              "classChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              },
+              "tripChange": {
+                "points": 0,
+                "max": 0,
+                "answer": "Same",
+                "evidence": "Same trip as last run (5.1f)"
+              },
+              "recentForm": {
+                "points": 0,
+                "max": 3,
+                "answer": "Well beaten",
+                "evidence": "8th, 04/09/2026, finished 8th last time"
+              },
+              "speed": {
+                "points": 2,
+                "max": 2,
+                "answer": "Yes",
+                "evidence": "OR 60 vs highest in race 60 (100%)"
+              },
+              "classDropRatingEdge": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No class data available for comparison"
+              },
+              "draw": {
+                "points": 0,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "Draw 6 of 9 - Wolverhampton favours low draws over 5f"
+              },
+              "fitness": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "53 days since last run (04/09/2026)"
+              },
+              "firstTimeAids": {
+                "points": 1,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockey": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": null
+              },
+              "jockeyForm": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "0 of 1 rides placed in the last 14 days"
+              },
+              "trainer": {
+                "points": 0,
+                "max": 1,
+                "answer": "No",
+                "evidence": "0 of 1 runners placed in the last 14 days"
+              },
+              "weightChange": {
+                "points": 0,
+                "max": 0.25,
+                "answer": "Up",
+                "evidence": "8th, 04/09/2026, 2lb more than last time"
+              },
+              "trainerCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyCourse": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
+              },
+              "jockeyTrainerCombo": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Fewer than 10 runs recorded for this trainer-jockey pairing"
+              },
+              "jockeyOnDebutant": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "Not a debutant - see jockey/jockeyForm instead"
+              },
+              "marketMove": {
+                "points": 1,
+                "max": 1,
+                "answer": "Steamer",
+                "evidence": "12/1 → 10/1 (20 snapshots)"
+              },
+              "winningMark": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null,
+                "note": "No past wins with a recorded rating"
+              },
+              "runningStyle": {
+                "points": 0,
+                "max": 1,
+                "answer": "Fades",
+                "evidence": "0 stayed-on, 4 faded, of last 4 classifiable runs"
+              },
+              "beatenFavourite": {
+                "points": 0,
+                "max": 0,
+                "answer": "N/A",
+                "evidence": null
+              }
+            },
+            "rated_weight_advantage": {
+              "runnerOR": 60,
+              "medianOR": 58,
+              "declaredWeight": 131,
+              "jockeyClaim": 7,
+              "effectiveWeight": 124,
+              "medianEffectiveWeight": 128,
+              "orAdvantage": 2,
+              "weightAdvantage": 4,
+              "combined": 6
+            },
+            "checklist_points": "4/16.25",
+            "checklist_earned_points": 4,
+            "stat_rating": 5.66,
+            "meta_rating": 6.64,
+            "trainer_trend": null
+          },
+          {
             "name": "IN DENIAL",
             "id": 1208146,
             "formsummary": "746305",
@@ -249845,7 +250385,7 @@
             "jockey_claim": 7,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "33/1",
+            "current_odds": "40/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -250262,12 +250802,12 @@
                 "confidence": "Medium",
                 "reasons": [
                   "Market Rank 8",
-                  "Odds 33/1"
+                  "Odds 40/1"
                 ],
                 "metrics": {
                   "rank": 8,
-                  "odds": "33/1",
-                  "decimal_odds": 34,
+                  "odds": "40/1",
+                  "decimal_odds": 41,
                   "favourite": false,
                   "runners_with_prices": 9
                 }
@@ -250393,7 +250933,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Drifter",
-                "evidence": "25/1 → 33/1 (20 snapshots)"
+                "evidence": "25/1 → 40/1 (20 snapshots)"
               },
               "winningMark": {
                 "points": 0,
@@ -250429,548 +250969,8 @@
             "checklist_points": "5.85/19.5",
             "checklist_earned_points": 5.85,
             "stat_rating": 6.92,
-            "meta_rating": 3.56,
+            "meta_rating": 3.21,
             "trainer_trend": "hot"
-          },
-          {
-            "name": "KISS DON'T TELL",
-            "id": 1195455,
-            "formsummary": "052-808",
-            "official_no": 5,
-            "draw": 6,
-            "weight": "9-5",
-            "age": 3,
-            "foaled": "2023-04-08",
-            "sex": "f",
-            "trainer": "N P Littmoden",
-            "trainer_id": 6118,
-            "jockey": "K S McHugh",
-            "jockey_id": 32358,
-            "jockey_claim": 7,
-            "current_class": "6",
-            "ride_status": "RUNNER",
-            "current_odds": "11/1",
-            "historical_odds": [],
-            "race_history_stats": [],
-            "horse_lifetime_stats": [],
-            "medication": [],
-            "insights": [],
-            "past_results": [
-              {
-                "date": "2026-09-04",
-                "pos": 8,
-                "win": false,
-                "place": false,
-                "runners": 12,
-                "course": "Down Royal",
-                "course_code": "DOW",
-                "dist": "5f",
-                "distance_furlongs": 5,
-                "class": null,
-                "weight": 129,
-                "weight_st": "9-3",
-                "going": "Good (Good to Firm in places)",
-                "odds": "8/1",
-                "draw": null,
-                "official_rating": 60,
-                "bha": 60,
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Tracked leaders, pushed along over 2f out, ridden in 4th over 1f out, soon no extra and weakened inside final furlong",
-                "beaten_lengths": "Neck",
-                "race_name": "Irish Stallion Farms EBF Maiden",
-                "position_in_market": 3,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 9000,
-                "days_since_previous_run": 13
-              },
-              {
-                "date": "2026-08-22",
-                "pos": 17,
-                "win": false,
-                "place": false,
-                "runners": 27,
-                "course": "Curragh",
-                "course_code": "CUR",
-                "dist": "6f",
-                "distance_furlongs": 6,
-                "class": null,
-                "weight": 134,
-                "weight_st": "9-8",
-                "going": "Good (Good to Firm in places)",
-                "odds": "40/1",
-                "draw": null,
-                "official_rating": 67,
-                "bha": 67,
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Nicola Burns",
-                "jockey_id": 34598,
-                "ride_description": "Tracked leader on stand's side, ridden 2f out, no extra 1 1/2f out",
-                "beaten_lengths": "2 1/2l",
-                "race_name": "Friends Of Moorefield GAA Handicap",
-                "position_in_market": 23,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": true,
-                "novice": false,
-                "mares": false,
-                "prize": 10800,
-                "days_since_previous_run": 8
-              },
-              {
-                "date": "2026-08-14",
-                "pos": 8,
-                "win": false,
-                "place": false,
-                "runners": 12,
-                "course": "Cork",
-                "course_code": "COR",
-                "dist": "5f",
-                "distance_furlongs": 5,
-                "class": null,
-                "weight": 140,
-                "weight_st": "10-0",
-                "going": "Good (Good to Firm in places)",
-                "odds": "12/1",
-                "draw": null,
-                "official_rating": 68,
-                "bha": 68,
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Dwelt slightly, soon prominent, dropped to 5th and under pressure over 1f out, weakened closing stages",
-                "beaten_lengths": "3/4 length",
-                "race_name": "OCS Recruitment Handicap",
-                "position_in_market": 7,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": true,
-                "novice": false,
-                "mares": false,
-                "prize": 7200,
-                "days_since_previous_run": 254
-              },
-              {
-                "date": "2025-12-03",
-                "pos": 2,
-                "win": false,
-                "place": true,
-                "runners": 9,
-                "course": "Dundalk",
-                "course_code": "DUN",
-                "dist": "5f",
-                "distance_furlongs": 5,
-                "class": null,
-                "weight": 128,
-                "weight_st": "9-2",
-                "going": "Standard",
-                "odds": "9/2",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Led, pushed along 2f out, ridden and headed early final furlong, no impression on winner inside final 150 yards, kept on one pace",
-                "beaten_lengths": "3l",
-                "race_name": "Irish Stallion Farms EBF Maiden",
-                "position_in_market": 3,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 10800,
-                "days_since_previous_run": 101
-              },
-              {
-                "date": "2025-08-24",
-                "pos": 5,
-                "win": false,
-                "place": false,
-                "runners": 12,
-                "course": "Naas",
-                "course_code": "NAA",
-                "dist": "5f",
-                "distance_furlongs": 5,
-                "class": null,
-                "weight": 128,
-                "weight_st": "9-2",
-                "going": "Good",
-                "odds": "66/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Ben Coen",
-                "jockey_id": 25202,
-                "ride_description": "Tracked leader in 2nd, ridden in 2nd over 2f out, closer 2nd 1f out, soon no impression on leaders, 5th inside final furlong, no extra",
-                "beaten_lengths": "2 3/4l",
-                "race_name": "Irish Stallion Farms EBF Fillies Maiden",
-                "position_in_market": 10,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 10800,
-                "days_since_previous_run": 15
-              },
-              {
-                "date": "2025-08-09",
-                "pos": 17,
-                "win": false,
-                "place": false,
-                "runners": 28,
-                "course": "Curragh",
-                "course_code": "CUR",
-                "dist": "6f",
-                "distance_furlongs": 6,
-                "class": null,
-                "weight": 128,
-                "weight_st": "9-2",
-                "going": "Good",
-                "odds": "66/1",
-                "draw": null,
-                "official_rating": "null",
-                "bha": "null",
-                "trainer": "Daniel McLoughlin",
-                "trainer_id": 36495,
-                "jockey": "Nathan Crosse",
-                "jockey_id": 24432,
-                "ride_description": "Slowly into stride, always towards rear, never a factor",
-                "beaten_lengths": "1 length",
-                "race_name": "Audi Naas Irish European Breeders Fund Maiden",
-                "position_in_market": 19,
-                "favourite": false,
-                "race_type": "Flat",
-                "handicap": false,
-                "novice": false,
-                "mares": false,
-                "prize": 12000,
-                "days_since_previous_run": null
-              }
-            ],
-            "is_unexposed": false,
-            "silk_url": "https://www.sportinglife.com/images/silks/20261027wol203005.png",
-            "headgear": [],
-            "race_course": "Wolverhampton",
-            "race_going": "Standard",
-            "race_distance": "5f 21y",
-            "race_time": "20:30",
-            "race_class": "6",
-            "race_id": 945579,
-            "non_runner": false,
-            "timeform_stars": 2,
-            "historical_runs": 6,
-            "days_since_run": 53,
-            "last_run_date_used": "2026-09-04",
-            "history": {
-              "averageOR": 65,
-              "wins": 0,
-              "places": 1,
-              "averageFinish": 9.5,
-              "daysSinceRun": 53
-            },
-            "form": {
-              "raw": "052-808",
-              "runs": 6,
-              "wins": 0,
-              "places": 1,
-              "strikeRate": 0,
-              "placeRate": 17,
-              "nonFinishers": 0,
-              "lastRun": 8,
-              "trend": "Declining",
-              "momentum": 18,
-              "consistency": 35,
-              "positions": [
-                8,
-                10,
-                8,
-                2,
-                5,
-                10
-              ]
-            },
-            "horse_profile": {
-              "running_style": "PROMINENT",
-              "running_style_confidence": 52,
-              "style_scores": {
-                "LEADER": 3,
-                "PROMINENT": 15,
-                "MIDFIELD": 0,
-                "HELD_UP": 11,
-                "UNKNOWN": 0
-              },
-              "style_distribution": {
-                "LEADER": 10,
-                "PROMINENT": 52,
-                "MIDFIELD": 0,
-                "HELD_UP": 38
-              },
-              "sample_size": 6
-            },
-            "v2_score": 31.1,
-            "power_rating": 31.1,
-            "confidence": 40,
-            "confidence_grade": "CAUTIOUS",
-            "rating_breakdown": {
-              "form": {
-                "score": 15,
-                "weight": 0.3,
-                "weighted": 4.5
-              },
-              "context": {
-                "score": 12,
-                "weight": 0.15,
-                "weighted": 1.8
-              },
-              "market": {
-                "score": 74,
-                "weight": 0.2,
-                "weighted": 14.8
-              },
-              "verdict": {
-                "score": 40,
-                "weight": 0.35,
-                "weighted": 14
-              },
-              "stars": {
-                "score": 40,
-                "weight": 4,
-                "weighted": -4,
-                "stars": 2
-              }
-            },
-            "engine_details": {
-              "form": {
-                "engine": "form",
-                "score": 15,
-                "confidence": "High",
-                "reasons": [
-                  "Recent form: 052-808"
-                ],
-                "metrics": {
-                  "runs": 6,
-                  "wins": 0,
-                  "places": 1,
-                  "strikeRate": 0,
-                  "placeRate": 17,
-                  "trend": "Declining",
-                  "momentum": 18,
-                  "consistency": 35,
-                  "nonFinishers": 0
-                }
-              },
-              "context": {
-                "engine": "context",
-                "score": 12,
-                "confidence": "Low",
-                "reasons": [
-                  "1 place",
-                  "Ran 53 days ago"
-                ],
-                "metrics": {
-                  "averageOR": 65,
-                  "wins": 0,
-                  "places": 1,
-                  "averageFinish": 9.5,
-                  "daysSinceRun": 53,
-                  "trainerFormPoints": 0,
-                  "jockeyOnDebutantPoints": 0,
-                  "jockeyWonOutsiderPoints": 0
-                }
-              },
-              "market": {
-                "engine": "market",
-                "score": 74,
-                "confidence": "Medium",
-                "reasons": [
-                  "Market Rank 5",
-                  "Odds 11/1"
-                ],
-                "metrics": {
-                  "rank": 5,
-                  "odds": "11/1",
-                  "decimal_odds": 12,
-                  "favourite": false,
-                  "runners_with_prices": 9
-                }
-              },
-              "verdict": {
-                "engine": "verdict",
-                "score": 40,
-                "confidence": "Low",
-                "reasons": [],
-                "metrics": {
-                  "mentioned": false,
-                  "analystRank": 0
-                }
-              }
-            },
-            "checklist_rating": 18.5,
-            "checklist_breakdown": {
-              "class": {
-                "points": 0,
-                "max": 3,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No qualifying class history recorded"
-              },
-              "classChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              },
-              "tripChange": {
-                "points": 0,
-                "max": 0,
-                "answer": "Same",
-                "evidence": "Same trip as last run (5.1f)"
-              },
-              "recentForm": {
-                "points": 0,
-                "max": 3,
-                "answer": "Well beaten",
-                "evidence": "8th, 04/09/2026, finished 8th last time"
-              },
-              "speed": {
-                "points": 2,
-                "max": 2,
-                "answer": "Yes",
-                "evidence": "OR 60 vs highest in race 60 (100%)"
-              },
-              "classDropRatingEdge": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No class data available for comparison"
-              },
-              "draw": {
-                "points": 0,
-                "max": 1,
-                "answer": "Yes",
-                "evidence": "Draw 6 of 9 - Wolverhampton favours low draws over 5f"
-              },
-              "fitness": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "53 days since last run (04/09/2026)"
-              },
-              "firstTimeAids": {
-                "points": 1,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockey": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": null
-              },
-              "jockeyForm": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "0 of 1 rides placed in the last 14 days"
-              },
-              "trainer": {
-                "points": 0,
-                "max": 1,
-                "answer": "No",
-                "evidence": "0 of 1 runners placed in the last 14 days"
-              },
-              "weightChange": {
-                "points": 0,
-                "max": 0.25,
-                "answer": "Up",
-                "evidence": "8th, 04/09/2026, 2lb more than last time"
-              },
-              "trainerCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyCourse": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs at this course on record"
-              },
-              "jockeyTrainerCombo": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Fewer than 10 runs recorded for this trainer-jockey pairing"
-              },
-              "jockeyOnDebutant": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "Not a debutant - see jockey/jockeyForm instead"
-              },
-              "marketMove": {
-                "points": 0,
-                "max": 1,
-                "answer": "Steady",
-                "evidence": "12/1 → 11/1 (20 snapshots)"
-              },
-              "winningMark": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No past wins with a recorded rating"
-              },
-              "runningStyle": {
-                "points": 0,
-                "max": 1,
-                "answer": "Fades",
-                "evidence": "0 stayed-on, 4 faded, of last 4 classifiable runs"
-              },
-              "beatenFavourite": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
-              }
-            },
-            "rated_weight_advantage": {
-              "runnerOR": 60,
-              "medianOR": 58,
-              "declaredWeight": 131,
-              "jockeyClaim": 7,
-              "effectiveWeight": 124,
-              "medianEffectiveWeight": 128,
-              "orAdvantage": 2,
-              "weightAdvantage": 4,
-              "combined": 6
-            },
-            "checklist_points": "3/16.25",
-            "checklist_earned_points": 3,
-            "stat_rating": 5.66,
-            "meta_rating": 5.05,
-            "trainer_trend": null
           },
           {
             "name": "LOCHABER",

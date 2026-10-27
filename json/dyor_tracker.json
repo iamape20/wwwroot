@@ -17633,19 +17633,44 @@
       "fav": {
         "horse": "ROI DE COEUR",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-27T19:50:39.018Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-27|Wolverhampton|20:30",
+      "date": "2026-10-27",
+      "course": "Wolverhampton",
+      "time": "20:30",
+      "horse": "MACANUDO",
+      "price": "10/11",
+      "runners": 9,
+      "liveHorse": "MACANUDO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MACANUDO",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-27T20:20:22.470Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 643,
+    "recorded": 644,
     "pick": {
-      "settled": 624,
+      "settled": 625,
       "won": 129,
-      "pl": -64.55,
-      "roi": -10.3
+      "pl": -65.55,
+      "roi": -10.5
     },
     "favourite": {
       "settled": 622,
@@ -17660,10 +17685,10 @@
       "roi": 2.3
     },
     "disagree": {
-      "settled": 460,
+      "settled": 461,
       "won": 58,
-      "pl": -68.35,
-      "roi": -14.9
+      "pl": -69.35,
+      "roi": -15
     }
   },
   "lastBackfill": 1793130036245
