@@ -18553,10 +18553,18 @@
       "fav": {
         "horse": "ENCHANTED LADY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T17:20:34.847Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Kempton|17:45",
@@ -18581,16 +18589,16 @@
   "stats": {
     "recorded": 677,
     "pick": {
-      "settled": 657,
+      "settled": 658,
       "won": 137,
-      "pl": -56.2,
-      "roi": -8.6
+      "pl": -57.2,
+      "roi": -8.7
     },
     "favourite": {
-      "settled": 659,
+      "settled": 660,
       "won": 225,
-      "pl": -0.33,
-      "roi": 0
+      "pl": -1.33,
+      "roi": -0.2
     },
     "agree": {
       "settled": 177,
@@ -18599,10 +18607,10 @@
       "roi": 1.6
     },
     "disagree": {
-      "settled": 480,
+      "settled": 481,
       "won": 62,
-      "pl": -59.11,
-      "roi": -12.3
+      "pl": -60.11,
+      "roi": -12.5
     }
   },
   "lastBackfill": 1793204432188
