@@ -18062,10 +18062,18 @@
       "fav": {
         "horse": "GALLIVANTED",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T14:21:01.387Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Nottingham|14:46",
@@ -18104,10 +18112,18 @@
       "fav": {
         "horse": "WESTERN CROSS",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T14:40:57.489Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|15:00",
@@ -18123,10 +18139,18 @@
       "fav": {
         "horse": "NEVERMINDTHERAIN",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T14:50:55.108Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Huntingdon|15:06",
@@ -18146,27 +18170,84 @@
       },
       "recordedAt": "2026-10-28T15:00:51.991Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Newton Abbot|15:21",
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "time": "15:21",
+      "horse": "THE FOUR SIXES",
+      "price": "3/1",
+      "runners": 5,
+      "liveHorse": "OPENING BID",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OPENING BID",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:10:45.488Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Nottingham|15:16",
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "time": "15:16",
+      "horse": "JUST AN HOUR",
+      "price": "14/1",
+      "runners": 13,
+      "liveHorse": "MAXIDENT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAXIDENT",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:10:45.516Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Dundalk|15:30",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "15:30",
+      "horse": "JACOB'S JOURNEY",
+      "price": "16/1",
+      "runners": 11,
+      "liveHorse": "MUDYRK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MUDYRK",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:20:43.009Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 661,
+    "recorded": 664,
     "pick": {
-      "settled": 644,
+      "settled": 647,
       "won": 137,
-      "pl": -43.2,
-      "roi": -6.7
+      "pl": -46.2,
+      "roi": -7.1
     },
     "favourite": {
-      "settled": 645,
+      "settled": 648,
       "won": 225,
-      "pl": 13.67,
-      "roi": 2.1
+      "pl": 10.67,
+      "roi": 1.6
     },
     "agree": {
-      "settled": 171,
+      "settled": 174,
       "won": 75,
-      "pl": 8.91,
-      "roi": 5.2
+      "pl": 5.91,
+      "roi": 3.4
     },
     "disagree": {
       "settled": 473,

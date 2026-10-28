@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T15:00:50.436Z",
+  "generatedAt": "2026-10-28T15:20:41.533Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-28",
       "course": "Dundalk",
       "off": "15:00",
-      "horse": "NEVERMINDTHERAIN"
-    }
-  ],
-  "recent": [
+      "horse": "NEVERMINDTHERAIN",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-28",
       "course": "Nottingham",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Hereford",
-      "off": "14:18",
-      "horse": "OUR WEE HORSE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-28T15:00:50.347Z",
+    "updatedAt": "2026-10-28T15:20:41.464Z",
     "claude": {
       "races": 38,
       "won": 7,
