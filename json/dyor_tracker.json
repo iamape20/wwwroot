@@ -17973,10 +17973,18 @@
       "fav": {
         "horse": "CENTIGRADE",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T14:01:29.934Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Newton Abbot|14:21",
@@ -18034,21 +18042,40 @@
       },
       "recordedAt": "2026-10-28T14:21:01.387Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Nottingham|14:46",
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "time": "14:46",
+      "horse": "STAR ROSE",
+      "price": "8/11",
+      "runners": 9,
+      "liveHorse": "STAR ROSE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "STAR ROSE",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:31:02.540Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 657,
+    "recorded": 658,
     "pick": {
-      "settled": 640,
+      "settled": 641,
       "won": 137,
-      "pl": -39.2,
-      "roi": -6.1
+      "pl": -40.2,
+      "roi": -6.3
     },
     "favourite": {
-      "settled": 641,
+      "settled": 642,
       "won": 225,
-      "pl": 17.67,
-      "roi": 2.8
+      "pl": 16.67,
+      "roi": 2.6
     },
     "agree": {
       "settled": 170,
@@ -18057,10 +18084,10 @@
       "roi": 5.8
     },
     "disagree": {
-      "settled": 470,
+      "settled": 471,
       "won": 62,
-      "pl": -49.11,
-      "roi": -10.4
+      "pl": -50.11,
+      "roi": -10.6
     }
   },
   "lastBackfill": 1793193081420

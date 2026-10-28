@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T14:20:59.067Z",
+  "generatedAt": "2026-10-28T14:30:59.490Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-28",
       "course": "Nottingham",
       "off": "14:16",
-      "horse": "CENTIGRADE"
-    }
-  ],
-  "recent": [
+      "horse": "CENTIGRADE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-28",
       "course": "Dundalk",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Galway",
-      "off": "13:42",
-      "horse": "SHARKEYBOY",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.71,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-28T14:20:58.955Z",
+    "updatedAt": "2026-10-28T14:30:59.330Z",
     "claude": {
       "races": 38,
       "won": 7,
