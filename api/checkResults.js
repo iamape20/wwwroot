@@ -90,7 +90,7 @@ async function fetchFullField(date, courseName, raceId, slug) {
         // the race card's result banner, finish pills and PU/F pills read
         // odds / casualtyReason, which this used to drop (always blank).
         // Non-finishers have no finish_position, so keep them by reason.
-        return race.rides
+        const placings = race.rides
             .map(ride => ({
                 name: ride.horse?.name,
                 position: ride.finish_position,
@@ -98,6 +98,12 @@ async function fetchFullField(date, courseName, raceId, slug) {
                 casualtyReason: ride.casualty?.reason || null
             }))
             .filter(p => p.name && (p.position || p.casualtyReason));
+
+        // Horses that actually ran (as js/a1results.js counts them), for
+        // place terms: a late withdrawal is never flagged on our card.
+        placings.starters = race.rides.filter(ride => ride.ride_status === "RUNNER").length;
+
+        return placings;
 
     } catch {
 
@@ -359,6 +365,8 @@ module.exports = async (req, res) => {
                  */
                 let ourTopPick = null;
                 let placesPaid = 3;
+                let declared = 0;
+                let raceTitle = null;
 
                 for (const meeting of Object.values(predictions)) {
 
@@ -381,11 +389,11 @@ module.exports = async (req, res) => {
                         ourTopPick =
                             activeRunners[0];
 
+                        declared = activeRunners.length;
+                        raceTitle = predRace.display_title || predRace.title;
+
                         placesPaid =
-                            placesForField(
-                                activeRunners.length,
-                                predRace.display_title || predRace.title
-                            );
+                            placesForField(declared, raceTitle);
 
                         break;
 
@@ -420,6 +428,20 @@ module.exports = async (req, res) => {
                         : null;
 
                 const placings = fullField || race.topHorses;
+
+                /*
+                 * Place terms follow the horses that ran (2026-10-28): a
+                 * horse withdrawn after the last pre-off price check is
+                 * still declared on our card (Catterick 13:10 on 27 Oct:
+                 * 8 declared, 7 ran - 3 places paid instead of 2). Only
+                 * from a detail page that places every starter; a
+                 * partial one just after the weigh-in keeps the card's.
+                 */
+                if (fullField?.starters > 0 &&
+                    fullField.length >= fullField.starters &&
+                    fullField.starters < declared) {
+                    placesPaid = placesForField(fullField.starters, raceTitle);
+                }
 
                 const pickName =
                     normaliseHorseName(ourTopPick.name);
