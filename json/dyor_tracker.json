@@ -18245,10 +18245,18 @@
       "fav": {
         "horse": "MUDYRK",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:20:43.009Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Huntingdon|15:36",
@@ -18264,10 +18272,16 @@
       "fav": {
         "horse": "IT'S TOP",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:30:38.215Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/1"
     },
     {
       "id": "2026-10-28|Newton Abbot|15:51",
@@ -18302,25 +18316,90 @@
       "fav": {
         "horse": "SWEET KISS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:40:43.423Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-28|Dundalk|16:00",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "16:00",
+      "horse": "JAZZIT",
+      "price": "5/2",
+      "runners": 14,
+      "liveHorse": "JAZZIT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JAZZIT",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:50:41.744Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Huntingdon|16:06",
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "time": "16:06",
+      "horse": "INDIZA",
+      "price": "70/1",
+      "runners": 9,
+      "liveHorse": "PERSIAN ART",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PERSIAN ART",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T16:00:41.573Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Kempton|16:15",
+      "date": "2026-10-28",
+      "course": "Kempton",
+      "time": "16:15",
+      "horse": "KING CHERRY",
+      "price": "15/2",
+      "runners": 11,
+      "liveHorse": "INSUSPENSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INSUSPENSE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T16:00:41.592Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 667,
+    "recorded": 670,
     "pick": {
-      "settled": 649,
+      "settled": 651,
       "won": 137,
-      "pl": -48.2,
-      "roi": -7.4
+      "pl": -50.2,
+      "roi": -7.7
     },
     "favourite": {
-      "settled": 651,
+      "settled": 654,
       "won": 225,
-      "pl": 7.67,
-      "roi": 1.2
+      "pl": 4.67,
+      "roi": 0.7
     },
     "agree": {
       "settled": 174,
@@ -18329,10 +18408,10 @@
       "roi": 3.4
     },
     "disagree": {
-      "settled": 475,
+      "settled": 477,
       "won": 62,
-      "pl": -54.11,
-      "roi": -11.4
+      "pl": -56.11,
+      "roi": -11.8
     }
   },
   "lastBackfill": 1793193081420
