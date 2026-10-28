@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T14:11:15.585Z",
+  "generatedAt": "2026-10-28T14:20:59.067Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,22 +15,39 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Huntingdon",
-      "off": "13:36",
-      "horse": "CURRENT EDITION"
-    },
-    {
-      "course": "Dundalk",
-      "off": "14:00",
-      "horse": "SONORAN"
+      "course": "Nottingham",
+      "off": "14:16",
+      "horse": "CENTIGRADE"
     }
   ],
   "recent": [
     {
       "date": "2026-10-28",
+      "course": "Dundalk",
+      "off": "14:00",
+      "horse": "SONORAN",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-10-28",
       "course": "Nottingham",
       "off": "13:46",
       "horse": "FULCRUM",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "off": "13:36",
+      "horse": "CURRENT EDITION",
       "phase": "STOPPED",
       "result": "lost",
       "bsp": null,
@@ -168,32 +185,10 @@
       "bsp": 1.71,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Hereford",
-      "off": "13:48",
-      "horse": "JERSEYGEORDIE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Leicester",
-      "off": "13:37",
-      "horse": "ROGUE CONSTELATION",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.49514384,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-28T14:11:15.437Z",
+    "updatedAt": "2026-10-28T14:20:58.955Z",
     "claude": {
       "races": 38,
       "won": 7,

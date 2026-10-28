@@ -17850,10 +17850,18 @@
       "fav": {
         "horse": "CURRENT EDITION",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T13:21:15.214Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Nottingham|13:46",
@@ -17921,10 +17929,16 @@
       "fav": {
         "horse": "SONORAN",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-28T13:51:23.714Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Huntingdon|14:06",
@@ -17982,33 +17996,71 @@
       },
       "recordedAt": "2026-10-28T14:11:18.410Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Dundalk|14:30",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "14:30",
+      "horse": "BELLA COLOMBIA",
+      "price": "10/1",
+      "runners": 12,
+      "liveHorse": "GAVOO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GAVOO",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:21:01.364Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Huntingdon|14:36",
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "time": "14:36",
+      "horse": "GALLIVANTED",
+      "price": "11/4",
+      "runners": 8,
+      "liveHorse": "GALLIVANTED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GALLIVANTED",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:21:01.387Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 655,
+    "recorded": 657,
     "pick": {
-      "settled": 638,
+      "settled": 640,
       "won": 137,
-      "pl": -37.2,
-      "roi": -5.8
+      "pl": -39.2,
+      "roi": -6.1
     },
     "favourite": {
-      "settled": 640,
+      "settled": 641,
       "won": 225,
-      "pl": 18.67,
-      "roi": 2.9
+      "pl": 17.67,
+      "roi": 2.8
     },
     "agree": {
-      "settled": 169,
+      "settled": 170,
       "won": 75,
-      "pl": 10.91,
-      "roi": 6.5
+      "pl": 9.91,
+      "roi": 5.8
     },
     "disagree": {
-      "settled": 469,
+      "settled": 470,
       "won": 62,
-      "pl": -48.11,
-      "roi": -10.3
+      "pl": -49.11,
+      "roi": -10.4
     }
   },
   "lastBackfill": 1793193081420

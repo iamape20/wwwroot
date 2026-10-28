@@ -2376,10 +2376,11 @@
       "runners": 6,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "4/5",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Nottingham|13:46",
@@ -2405,6 +2406,21 @@
       "horse": "SONORAN",
       "priceAtOff": "6/5",
       "runners": 11,
+      "phase": "STOPPED",
+      "stake": 0,
+      "result": "won",
+      "isp": "11/8",
+      "bsp": null,
+      "pl": null
+    },
+    {
+      "id": "2026-10-28|Nottingham|14:16",
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "time": "14:16",
+      "horse": "CENTIGRADE",
+      "priceAtOff": "6/4",
+      "runners": 8,
       "phase": "STOPPED",
       "stake": 0,
       "result": null,
