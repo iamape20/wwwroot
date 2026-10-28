@@ -18297,10 +18297,16 @@
       "fav": {
         "horse": "BADBURY RINGS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:40:43.407Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-10-28|Nottingham|15:46",
@@ -18343,10 +18349,18 @@
       "fav": {
         "horse": "JAZZIT",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:50:41.744Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Huntingdon|16:06",
@@ -18385,27 +18399,65 @@
       },
       "recordedAt": "2026-10-28T16:00:41.592Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Newton Abbot|16:21",
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "time": "16:21",
+      "horse": "STORM CRACKER",
+      "price": "14/1",
+      "runners": 7,
+      "liveHorse": "PAR AVION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PAR AVION",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T16:10:32.473Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Dundalk|16:30",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "16:30",
+      "horse": "UNA MATATA",
+      "price": "9/4",
+      "runners": 13,
+      "liveHorse": "UNA MATATA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "UNA MATATA",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T16:20:32.174Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 670,
+    "recorded": 672,
     "pick": {
-      "settled": 651,
+      "settled": 652,
       "won": 137,
-      "pl": -50.2,
-      "roi": -7.7
+      "pl": -51.2,
+      "roi": -7.9
     },
     "favourite": {
-      "settled": 654,
+      "settled": 656,
       "won": 225,
-      "pl": 4.67,
-      "roi": 0.7
+      "pl": 2.67,
+      "roi": 0.4
     },
     "agree": {
-      "settled": 174,
+      "settled": 175,
       "won": 75,
-      "pl": 5.91,
-      "roi": 3.4
+      "pl": 4.91,
+      "roi": 2.8
     },
     "disagree": {
       "settled": 477,
@@ -18414,5 +18466,5 @@
       "roi": -11.8
     }
   },
-  "lastBackfill": 1793193081420
+  "lastBackfill": 1793204432188
 }
