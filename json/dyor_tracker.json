@@ -18580,14 +18580,37 @@
       "fav": {
         "horse": "THESPIAN QUEEN",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-28T17:30:32.086Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
+    },
+    {
+      "id": "2026-10-28|Kempton|18:15",
+      "date": "2026-10-28",
+      "course": "Kempton",
+      "time": "18:15",
+      "horse": "AMARACHI",
+      "price": "6/1",
+      "runners": 9,
+      "liveHorse": "GOOMAH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GOOMAH",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T18:00:32.739Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 677,
+    "recorded": 678,
     "pick": {
       "settled": 658,
       "won": 137,
