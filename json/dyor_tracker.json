@@ -18081,10 +18081,14 @@
       "fav": {
         "horse": "STAR ROSE",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-28T14:31:02.540Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-28|Newton Abbot|14:51",
@@ -18123,10 +18127,29 @@
       },
       "recordedAt": "2026-10-28T14:50:55.108Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Huntingdon|15:06",
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "time": "15:06",
+      "horse": "NORTHERN ROSE",
+      "price": "16/1",
+      "runners": 9,
+      "liveHorse": "ZARAQUELLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZARAQUELLE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:00:51.991Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 660,
+    "recorded": 661,
     "pick": {
       "settled": 644,
       "won": 137,
