@@ -17896,10 +17896,16 @@
       "fav": {
         "horse": "REAL QUARTZ",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-28T13:41:11.233Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|14:00",
@@ -17957,15 +17963,34 @@
       },
       "recordedAt": "2026-10-28T14:01:29.934Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Newton Abbot|14:21",
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "time": "14:21",
+      "horse": "IT'S A BREEZE",
+      "price": "5/1",
+      "runners": 6,
+      "liveHorse": "DWIGHT K SCHRUTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DWIGHT K SCHRUTE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:11:18.410Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 654,
+    "recorded": 655,
     "pick": {
-      "settled": 637,
+      "settled": 638,
       "won": 137,
-      "pl": -36.2,
-      "roi": -5.7
+      "pl": -37.2,
+      "roi": -5.8
     },
     "favourite": {
       "settled": 640,
@@ -17980,10 +18005,10 @@
       "roi": 6.5
     },
     "disagree": {
-      "settled": 468,
+      "settled": 469,
       "won": 62,
-      "pl": -47.11,
-      "roi": -10.1
+      "pl": -48.11,
+      "roi": -10.3
     }
   },
   "lastBackfill": 1793193081420
