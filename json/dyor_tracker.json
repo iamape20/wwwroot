@@ -18166,10 +18166,18 @@
       "fav": {
         "horse": "ZARAQUELLE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:00:51.991Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Newton Abbot|15:21",
@@ -18185,10 +18193,16 @@
       "fav": {
         "horse": "OPENING BID",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:10:45.488Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-10-28|Nottingham|15:16",
@@ -18204,10 +18218,18 @@
       "fav": {
         "horse": "MAXIDENT",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T15:10:45.516Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|15:30",
@@ -18227,21 +18249,78 @@
       },
       "recordedAt": "2026-10-28T15:20:43.009Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Huntingdon|15:36",
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "time": "15:36",
+      "horse": "NAZARE",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "IT'S TOP",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IT'S TOP",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:30:38.215Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Newton Abbot|15:51",
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "time": "15:51",
+      "horse": "MASK OF ZORRO",
+      "price": "5/2",
+      "runners": 5,
+      "liveHorse": "BADBURY RINGS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BADBURY RINGS",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:40:43.407Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Nottingham|15:46",
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "time": "15:46",
+      "horse": "STAR START",
+      "price": "16/1",
+      "runners": 15,
+      "liveHorse": "SWEET KISS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SWEET KISS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T15:40:43.423Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 664,
+    "recorded": 667,
     "pick": {
-      "settled": 647,
+      "settled": 649,
       "won": 137,
-      "pl": -46.2,
-      "roi": -7.1
+      "pl": -48.2,
+      "roi": -7.4
     },
     "favourite": {
-      "settled": 648,
+      "settled": 651,
       "won": 225,
-      "pl": 10.67,
-      "roi": 1.6
+      "pl": 7.67,
+      "roi": 1.2
     },
     "agree": {
       "settled": 174,
@@ -18250,10 +18329,10 @@
       "roi": 3.4
     },
     "disagree": {
-      "settled": 473,
+      "settled": 475,
       "won": 62,
-      "pl": -52.11,
-      "roi": -11
+      "pl": -54.11,
+      "roi": -11.4
     }
   },
   "lastBackfill": 1793193081420
