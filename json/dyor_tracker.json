@@ -18376,10 +18376,16 @@
       "fav": {
         "horse": "PERSIAN ART",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-28T16:00:41.573Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "125/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Kempton|16:15",
@@ -18395,10 +18401,18 @@
       "fav": {
         "horse": "INSUSPENSE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T16:00:41.592Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Newton Abbot|16:21",
@@ -18414,10 +18428,16 @@
       "fav": {
         "horse": "PAR AVION",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-28T16:10:32.473Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|16:30",
@@ -18437,21 +18457,40 @@
       },
       "recordedAt": "2026-10-28T16:20:32.174Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Kempton|16:45",
+      "date": "2026-10-28",
+      "course": "Kempton",
+      "time": "16:45",
+      "horse": "GIRLS ALLOWED",
+      "price": "11/10",
+      "runners": 10,
+      "liveHorse": "GIRLS ALLOWED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GIRLS ALLOWED",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T16:30:35.164Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 672,
+    "recorded": 673,
     "pick": {
-      "settled": 652,
+      "settled": 655,
       "won": 137,
-      "pl": -51.2,
-      "roi": -7.9
+      "pl": -54.2,
+      "roi": -8.3
     },
     "favourite": {
-      "settled": 656,
+      "settled": 657,
       "won": 225,
-      "pl": 2.67,
-      "roi": 0.4
+      "pl": 1.67,
+      "roi": 0.3
     },
     "agree": {
       "settled": 175,
@@ -18460,10 +18499,10 @@
       "roi": 2.8
     },
     "disagree": {
-      "settled": 477,
+      "settled": 480,
       "won": 62,
-      "pl": -56.11,
-      "roi": -11.8
+      "pl": -59.11,
+      "roi": -12.3
     }
   },
   "lastBackfill": 1793204432188
