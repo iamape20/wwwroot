@@ -18630,25 +18630,52 @@
       "fav": {
         "horse": "PURE MINT",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T18:30:35.886Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-28|Kempton|19:15",
+      "date": "2026-10-28",
+      "course": "Kempton",
+      "time": "19:15",
+      "horse": "ARABIAN SUMMER",
+      "price": "4/6",
+      "runners": 8,
+      "liveHorse": "ARABIAN SUMMER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ARABIAN SUMMER",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T19:00:32.221Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 679,
+    "recorded": 680,
     "pick": {
-      "settled": 659,
+      "settled": 660,
       "won": 137,
-      "pl": -58.2,
-      "roi": -8.8
+      "pl": -59.2,
+      "roi": -9
     },
     "favourite": {
-      "settled": 661,
+      "settled": 662,
       "won": 225,
-      "pl": -2.33,
-      "roi": -0.4
+      "pl": -3.33,
+      "roi": -0.5
     },
     "agree": {
       "settled": 177,
@@ -18657,10 +18684,10 @@
       "roi": 1.6
     },
     "disagree": {
-      "settled": 482,
+      "settled": 483,
       "won": 62,
-      "pl": -61.11,
-      "roi": -12.7
+      "pl": -62.11,
+      "roi": -12.9
     }
   },
   "lastBackfill": 1793204432188
