@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T13:41:08.651Z",
+  "generatedAt": "2026-10-28T14:01:23.282Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -18,9 +18,25 @@
       "course": "Huntingdon",
       "off": "13:36",
       "horse": "CURRENT EDITION"
+    },
+    {
+      "course": "Dundalk",
+      "off": "14:00",
+      "horse": "SONORAN"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "off": "13:46",
+      "horse": "FULCRUM",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-28",
       "course": "Newton Abbot",
@@ -174,21 +190,10 @@
       "bsp": 1.49514384,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Galway",
-      "off": "13:12",
-      "horse": "KARL DES TOURELLES",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.97,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-28T13:41:08.541Z",
+    "updatedAt": "2026-10-28T14:01:23.092Z",
     "claude": {
       "races": 38,
       "won": 7,

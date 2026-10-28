@@ -17773,10 +17773,18 @@
       "fav": {
         "horse": "JIMMYJEROO",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T12:51:16.980Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Nottingham|13:16",
@@ -17861,10 +17869,18 @@
       "fav": {
         "horse": "FULCRUM",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T13:31:15.323Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Newton Abbot|13:51",
@@ -17884,21 +17900,78 @@
       },
       "recordedAt": "2026-10-28T13:41:11.233Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Dundalk|14:00",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "14:00",
+      "horse": "VENETIAN",
+      "price": "15/2",
+      "runners": 11,
+      "liveHorse": "SONORAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SONORAN",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T13:51:23.714Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Huntingdon|14:06",
+      "date": "2026-10-28",
+      "course": "Huntingdon",
+      "time": "14:06",
+      "horse": "BETTY'S TIARA",
+      "price": "3/1",
+      "runners": 6,
+      "liveHorse": "BETTY'S TIARA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BETTY'S TIARA",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T13:51:23.735Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-28|Nottingham|14:16",
+      "date": "2026-10-28",
+      "course": "Nottingham",
+      "time": "14:16",
+      "horse": "EBT'S GUARD",
+      "price": "9/2",
+      "runners": 8,
+      "liveHorse": "CENTIGRADE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CENTIGRADE",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:01:29.934Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 651,
+    "recorded": 654,
     "pick": {
-      "settled": 635,
+      "settled": 637,
       "won": 137,
-      "pl": -34.2,
-      "roi": -5.4
+      "pl": -36.2,
+      "roi": -5.7
     },
     "favourite": {
-      "settled": 638,
+      "settled": 640,
       "won": 225,
-      "pl": 20.67,
-      "roi": 3.2
+      "pl": 18.67,
+      "roi": 2.9
     },
     "agree": {
       "settled": 169,
@@ -17907,10 +17980,10 @@
       "roi": 6.5
     },
     "disagree": {
-      "settled": 466,
+      "settled": 468,
       "won": 62,
-      "pl": -45.11,
-      "roi": -9.7
+      "pl": -47.11,
+      "roi": -10.1
     }
   },
   "lastBackfill": 1793193081420
