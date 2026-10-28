@@ -18526,10 +18526,18 @@
       "fav": {
         "horse": "CROWN THE FUTURE",
         "price": "1/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T17:00:36.487Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|17:30",
@@ -18549,27 +18557,46 @@
       },
       "recordedAt": "2026-10-28T17:20:34.847Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Kempton|17:45",
+      "date": "2026-10-28",
+      "course": "Kempton",
+      "time": "17:45",
+      "horse": "THESPIAN QUEEN",
+      "price": "11/10",
+      "runners": 9,
+      "liveHorse": "THESPIAN QUEEN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THESPIAN QUEEN",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T17:30:32.086Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 676,
+    "recorded": 677,
     "pick": {
-      "settled": 656,
+      "settled": 657,
       "won": 137,
-      "pl": -55.2,
-      "roi": -8.4
+      "pl": -56.2,
+      "roi": -8.6
     },
     "favourite": {
-      "settled": 658,
+      "settled": 659,
       "won": 225,
-      "pl": 0.67,
-      "roi": 0.1
+      "pl": -0.33,
+      "roi": 0
     },
     "agree": {
-      "settled": 176,
+      "settled": 177,
       "won": 75,
-      "pl": 3.91,
-      "roi": 2.2
+      "pl": 2.91,
+      "roi": 1.6
     },
     "disagree": {
       "settled": 480,
