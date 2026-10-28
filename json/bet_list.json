@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T13:21:12.387Z",
+  "generatedAt": "2026-10-28T13:41:08.651Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Newton Abbot",
-      "off": "13:21",
-      "horse": "VANGO CAN GO"
+      "course": "Huntingdon",
+      "off": "13:36",
+      "horse": "CURRENT EDITION"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "off": "13:21",
+      "horse": "VANGO CAN GO",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-27",
       "course": "Wolverhampton",
@@ -174,21 +185,10 @@
       "bsp": 1.97,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Hereford",
-      "off": "13:18",
-      "horse": "KAMILLE AU KANADA",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.4839113,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-28T13:21:12.243Z",
+    "updatedAt": "2026-10-28T13:41:08.541Z",
     "claude": {
       "races": 38,
       "won": 7,
