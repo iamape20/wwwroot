@@ -2299,8 +2299,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/7",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.65,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-27|Bangor-on-Dee|14:16",
@@ -2314,8 +2315,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.4885717,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-27|Wolverhampton|17:00",
@@ -2329,8 +2331,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.88,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-27|Wolverhampton|17:30",
@@ -2344,8 +2347,9 @@
       "stake": 0,
       "result": "won",
       "isp": "13/8",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.96544164,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": {
@@ -2357,5 +2361,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1793130033491
+  "lastBackfill": 1793170892021
 }
