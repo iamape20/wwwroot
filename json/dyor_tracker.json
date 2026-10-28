@@ -18000,10 +18000,18 @@
       "fav": {
         "horse": "DWIGHT K SCHRUTE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-28T14:11:18.410Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-28|Dundalk|14:30",
@@ -18061,21 +18069,40 @@
       },
       "recordedAt": "2026-10-28T14:31:02.540Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Newton Abbot|14:51",
+      "date": "2026-10-28",
+      "course": "Newton Abbot",
+      "time": "14:51",
+      "horse": "WESTERN CROSS",
+      "price": "2/1",
+      "runners": 8,
+      "liveHorse": "WESTERN CROSS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WESTERN CROSS",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T14:40:57.489Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 658,
+    "recorded": 659,
     "pick": {
-      "settled": 641,
+      "settled": 642,
       "won": 137,
-      "pl": -40.2,
-      "roi": -6.3
+      "pl": -41.2,
+      "roi": -6.4
     },
     "favourite": {
-      "settled": 642,
+      "settled": 643,
       "won": 225,
-      "pl": 16.67,
-      "roi": 2.6
+      "pl": 15.67,
+      "roi": 2.4
     },
     "agree": {
       "settled": 170,
@@ -18084,10 +18111,10 @@
       "roi": 5.8
     },
     "disagree": {
-      "settled": 471,
+      "settled": 472,
       "won": 62,
-      "pl": -50.11,
-      "roi": -10.6
+      "pl": -51.11,
+      "roi": -10.8
     }
   },
   "lastBackfill": 1793193081420
