@@ -18503,10 +18503,14 @@
       "fav": {
         "horse": "CRAYONS IN THE SKY",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-10-28T16:50:39.801Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/2"
     },
     {
       "id": "2026-10-28|Kempton|17:15",
@@ -18526,10 +18530,29 @@
       },
       "recordedAt": "2026-10-28T17:00:36.487Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-28|Dundalk|17:30",
+      "date": "2026-10-28",
+      "course": "Dundalk",
+      "time": "17:30",
+      "horse": "CELTIC DRUID",
+      "price": "11/1",
+      "runners": 13,
+      "liveHorse": "ENCHANTED LADY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ENCHANTED LADY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-28T17:20:34.847Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 675,
+    "recorded": 676,
     "pick": {
       "settled": 656,
       "won": 137,
