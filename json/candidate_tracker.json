@@ -3327,7 +3327,10 @@
       "recordedAt": "2026-10-28T13:11:21.031Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/4"
+      "isp": "1/4",
+      "bsp": 1.33812848,
+      "pl": 0.321,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Huntingdon|13:36",
@@ -3357,7 +3360,10 @@
       "recordedAt": "2026-10-28T13:51:21.399Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.64,
+      "pl": 1.558,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Nottingham|14:16",
@@ -3387,7 +3393,10 @@
       "recordedAt": "2026-10-28T14:31:02.166Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/11"
+      "isp": "10/11",
+      "bsp": 2.04,
+      "pl": 0.988,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Dundalk|15:30",
@@ -3417,7 +3426,10 @@
       "recordedAt": "2026-10-28T16:30:34.839Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/4"
+      "isp": "5/4",
+      "bsp": 2.32,
+      "pl": 1.254,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Dundalk|17:00",
@@ -3431,7 +3443,10 @@
       "recordedAt": "2026-10-28T16:50:39.565Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/2"
+      "isp": "1/2",
+      "bsp": 1.69,
+      "pl": 0.655,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Kempton|17:15",
@@ -3461,7 +3476,10 @@
       "recordedAt": "2026-10-28T17:30:31.849Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.63652414,
+      "pl": 1.555,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-28|Kempton|18:45",
@@ -3498,10 +3516,10 @@
   ],
   "stats": {
     "recorded": 213,
-    "settled": 207,
-    "won": 97,
-    "pl": -13.69,
-    "roi": -6.6
+    "settled": 213,
+    "won": 103,
+    "pl": -7.36,
+    "roi": -3.5
   },
-  "lastBackfill": 1793218225736
+  "lastBackfill": 1793257287674
 }
