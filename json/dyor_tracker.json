@@ -18878,31 +18878,58 @@
       "fav": {
         "horse": "FROM ME TO YOU",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T17:26:47.985Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|18:00",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "18:00",
+      "horse": "BROTHER DAVE",
+      "price": "25/1",
+      "runners": 12,
+      "liveHorse": "DISTILLATE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DISTILLATE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T17:50:53.118Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 686,
+    "recorded": 687,
     "pick": {
-      "settled": 678,
+      "settled": 679,
       "won": 146,
-      "pl": -38.6,
-      "roi": -5.7
+      "pl": -39.6,
+      "roi": -5.8
     },
     "favourite": {
-      "settled": 678,
+      "settled": 679,
       "won": 235,
-      "pl": 6.22,
-      "roi": 0.9
+      "pl": 5.22,
+      "roi": 0.8
     },
     "agree": {
-      "settled": 187,
+      "settled": 188,
       "won": 80,
-      "pl": 2.68,
-      "roi": 1.4
+      "pl": 1.68,
+      "roi": 0.9
     },
     "disagree": {
       "settled": 491,
