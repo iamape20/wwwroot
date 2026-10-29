@@ -18932,19 +18932,44 @@
       "fav": {
         "horse": "MINI MAC",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-29T18:20:59.725Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|19:00",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "19:00",
+      "horse": "STORM FREE",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "STORM FREE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "STORM FREE",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T18:50:45.313Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 688,
+    "recorded": 689,
     "pick": {
-      "settled": 680,
+      "settled": 681,
       "won": 146,
-      "pl": -40.6,
-      "roi": -6
+      "pl": -41.6,
+      "roi": -6.1
     },
     "favourite": {
       "settled": 680,
@@ -18959,11 +18984,11 @@
       "roi": 0.9
     },
     "disagree": {
-      "settled": 492,
+      "settled": 493,
       "won": 66,
-      "pl": -42.28,
-      "roi": -8.6
+      "pl": -43.28,
+      "roi": -8.8
     }
   },
-  "lastBackfill": 1793257289598
+  "lastBackfill": 1793300455055
 }
