@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T12:41:24.739Z",
+  "generatedAt": "2026-10-29T13:01:26.734Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,6 +15,17 @@
   "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-29",
+      "course": "Bath",
+      "off": "12:42",
+      "horse": "LADY PHILLIPS",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-28",
       "course": "Kempton",
@@ -168,21 +179,10 @@
       "bsp": 1.5,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-26",
-      "course": "Kempton",
-      "off": "16:45",
-      "horse": "IDEALISE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-29T12:41:24.507Z",
+    "updatedAt": "2026-10-29T13:01:26.534Z",
     "claude": {
       "races": 38,
       "won": 7,

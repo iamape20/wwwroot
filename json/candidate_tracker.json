@@ -3523,15 +3523,43 @@
       "rating": 76.3,
       "runners": 12,
       "recordedAt": "2026-10-29T12:31:36.863Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Punchestown|13:05",
+      "date": "2026-10-29",
+      "course": "Punchestown",
+      "time": "13:05",
+      "horse": "WUNDERSCHON",
+      "price": "5/6",
+      "rating": 71.7,
+      "runners": 8,
+      "recordedAt": "2026-10-29T12:51:32.599Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-29|Bath|13:12",
+      "date": "2026-10-29",
+      "course": "Bath",
+      "time": "13:12",
+      "horse": "SPACE BOB",
+      "price": "8/11",
+      "rating": 78,
+      "runners": 11,
+      "recordedAt": "2026-10-29T13:01:32.875Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 214,
-    "settled": 213,
+    "recorded": 216,
+    "settled": 214,
     "won": 103,
-    "pl": -7.36,
-    "roi": -3.5
+    "pl": -8.36,
+    "roi": -3.9
   },
   "lastBackfill": 1793257287674
 }

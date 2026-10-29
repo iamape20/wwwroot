@@ -18798,31 +18798,77 @@
       "fav": {
         "horse": "LADY PHILLIPS",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/15",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T12:31:37.561Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Punchestown|13:05",
+      "date": "2026-10-29",
+      "course": "Punchestown",
+      "time": "13:05",
+      "horse": "WUNDERSCHON",
+      "price": "5/6",
+      "runners": 8,
+      "liveHorse": "WUNDERSCHON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WUNDERSCHON",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T12:51:33.399Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-29|Bath|13:12",
+      "date": "2026-10-29",
+      "course": "Bath",
+      "time": "13:12",
+      "horse": "MASTER CELERITAS",
+      "price": "8/1",
+      "runners": 11,
+      "liveHorse": "SPACE BOB",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SPACE BOB",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T13:01:33.826Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 683,
+    "recorded": 685,
     "pick": {
-      "settled": 675,
+      "settled": 676,
       "won": 146,
-      "pl": -35.6,
-      "roi": -5.3
+      "pl": -36.6,
+      "roi": -5.4
     },
     "favourite": {
-      "settled": 676,
+      "settled": 677,
       "won": 235,
-      "pl": 8.22,
-      "roi": 1.2
+      "pl": 7.22,
+      "roi": 1.1
     },
     "agree": {
-      "settled": 185,
+      "settled": 186,
       "won": 80,
-      "pl": 4.68,
-      "roi": 2.5
+      "pl": 3.68,
+      "roi": 2
     },
     "disagree": {
       "settled": 490,
