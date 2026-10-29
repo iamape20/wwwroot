@@ -2617,6 +2617,12 @@ button {
 
 /* Header link to the results page. */
 .topbar-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+/* Four links + theme button no longer fit one row on a phone (29 Oct):
+   let the top bar's right side shrink and its links wrap. */
+@media (max-width: 600px) {
+    .topbar-right { flex: 1 1 auto; min-width: 0; }
+    .topbar-actions { flex-wrap: wrap; gap: 6px; }
+}
 .topbar-link {
     align-self: center;
     padding: 4px 12px;
