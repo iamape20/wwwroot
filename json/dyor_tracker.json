@@ -19011,25 +19011,52 @@
       "fav": {
         "horse": "MIDNIGHT MEDIA",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T19:50:39.743Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|20:30",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "20:30",
+      "horse": "MR MOONSHINE",
+      "price": "7/2",
+      "runners": 10,
+      "liveHorse": "I'D GO MANIAC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I'D GO MANIAC",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T20:20:37.435Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 691,
+    "recorded": 692,
     "pick": {
-      "settled": 683,
+      "settled": 684,
       "won": 146,
-      "pl": -43.6,
-      "roi": -6.4
+      "pl": -44.6,
+      "roi": -6.5
     },
     "favourite": {
-      "settled": 682,
+      "settled": 683,
       "won": 235,
-      "pl": 2.22,
-      "roi": 0.3
+      "pl": 1.22,
+      "roi": 0.2
     },
     "agree": {
       "settled": 189,
@@ -19038,10 +19065,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 494,
+      "settled": 495,
       "won": 66,
-      "pl": -44.28,
-      "roi": -9
+      "pl": -45.28,
+      "roi": -9.1
     }
   },
   "lastBackfill": 1793300455055
