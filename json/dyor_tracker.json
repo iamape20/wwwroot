@@ -18825,10 +18825,18 @@
       "fav": {
         "horse": "WUNDERSCHON",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T12:51:33.399Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/13",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-29|Bath|13:12",
@@ -18844,37 +18852,63 @@
       "fav": {
         "horse": "SPACE BOB",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "non_runner"
       },
       "recordedAt": "2026-10-29T13:01:33.826Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|17:30",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "17:30",
+      "horse": "FROM ME TO YOU",
+      "price": "3/1",
+      "runners": 13,
+      "liveHorse": "FROM ME TO YOU",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FROM ME TO YOU",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T17:26:47.985Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 685,
+    "recorded": 686,
     "pick": {
-      "settled": 676,
+      "settled": 678,
       "won": 146,
-      "pl": -36.6,
-      "roi": -5.4
+      "pl": -38.6,
+      "roi": -5.7
     },
     "favourite": {
-      "settled": 677,
+      "settled": 678,
       "won": 235,
-      "pl": 7.22,
-      "roi": 1.1
+      "pl": 6.22,
+      "roi": 0.9
     },
     "agree": {
-      "settled": 186,
+      "settled": 187,
       "won": 80,
-      "pl": 3.68,
-      "roi": 2
+      "pl": 2.68,
+      "roi": 1.4
     },
     "disagree": {
-      "settled": 490,
+      "settled": 491,
       "won": 66,
-      "pl": -40.28,
-      "roi": -8.2
+      "pl": -41.28,
+      "roi": -8.4
     }
   },
   "lastBackfill": 1793257289598
