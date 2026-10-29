@@ -72,6 +72,18 @@ a { color: var(--series); }
         <div class="tablewrap"><table id="napBets"></table></div>
     </details>
 
+    <h2>Automatic NAP bet on Matchbook: dry run</h2>
+    <div class="card"><div id="abText"></div></div>
+    <div class="stats" id="abStats"></div>
+    <p class="muted">A rehearsal of betting the NAP automatically on Matchbook. In the last 15 minutes before the off it finds the
+        horse on Matchbook and works out the bet: 1/10 of the practice pot (£100 start, £1 minimum, £25 maximum), at the best
+        back price, only as much as the money on offer would match. Nothing is sent to Matchbook and no money is used.
+        Settled overnight at that price after 2% commission. Real bets only if the NAP test above passes, and only if you decide to.</p>
+    <details>
+        <summary>Every dry-run bet</summary>
+        <div class="tablewrap"><table id="abBets"></table></div>
+    </details>
+
     <h2>Bet list: progress to the 120-bet verdict</h2>
     <div class="card">
         <div class="row" id="progressText"></div>
@@ -263,6 +275,28 @@ async function load() {
             : `<tr><td class="muted">No NAP bets settled yet.</td></tr>`;
     } else {
         $("napText").textContent = "The NAP test data is not on the site yet - it appears after the next odds refresh.";
+    }
+
+    const ab = d.autoBet;
+    const gbp = v => v == null ? "–" : (v < 0 ? "-£" : "£") + Math.abs(v).toFixed(2);
+    if (ab) {
+        $("abText").innerHTML = `<b>Dry run</b> - nothing is sent to Matchbook. Practice pot <b>${gbp(ab.pot)}</b> from ${gbp(ab.startPot)}` +
+            ` since ${new Date(ab.startedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long" })}.`;
+        $("abStats").innerHTML =
+            stat("Practice pot", gbp(ab.pot), `started at ${gbp(ab.startPot)}`) +
+            stat("Bets it would have placed", String(ab.placed), ab.placed - ab.settled ? `${ab.placed - ab.settled} awaiting result` : "") +
+            stat("Winners", ab.settled ? `${ab.won} of ${ab.settled}` : "–", "") +
+            stat("Skipped", String(ab.skipped), "reason shown in the table");
+        $("abBets").innerHTML = ab.bets.length
+            ? `<tr><th>Date</th><th>Race (UK)</th><th>Horse</th><th class="num">Stake</th><th class="num">Price</th><th class="num">Mins before</th><th>Result</th><th class="num">P/L</th><th class="num">Pot</th></tr>` +
+              ab.bets.slice().reverse().map(b => `<tr><td>${esc(b.date)}</td><td>${ukTime(b.date, b.time)} ${esc(b.course)}</td><td>${esc(b.horse)}</td>` +
+                (b.status === "placed"
+                    ? `<td class="num">${gbp(b.stake)}</td><td class="num">${b.price != null ? Number(b.price).toFixed(2) : "–"}</td><td class="num">${b.minutesBeforeOff ?? "–"}</td>` +
+                      `<td class="${b.result ? (String(b.result).startsWith("won") ? "won" : "lost") : ""}">${esc(b.result || "awaiting result")}</td><td class="num">${b.pl != null ? gbp(b.pl) : "–"}</td><td class="num">${b.potAfter != null ? gbp(b.potAfter) : "–"}</td>`
+                    : `<td colspan="6" class="muted">Skipped: ${esc(b.reason || "")}</td>`) + `</tr>`).join("")
+            : `<tr><td class="muted">No dry-run bets yet - the first is decided in the last 15 minutes before today's NAP.</td></tr>`;
+    } else {
+        $("abText").textContent = "The dry run's record is not on the site yet - it appears after the next odds refresh.";
     }
 
     const mb = Object.entries(d.matchbook || {});
