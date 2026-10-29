@@ -1,36 +1,60 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "strong": [],
   "moderate": [
     {
-      "horse": "RATTLIN HOME",
-      "course": "Bangor-on-Dee",
-      "time": "14:16",
-      "rating": "81.6",
-      "margin": "17.8",
-      "marginValue": 17.799999999999997,
-      "confidence": 61,
-      "meetingId": "122221",
-      "raceIndex": 1,
+      "horse": "VANGO CAN GO",
+      "course": "Newton Abbot",
+      "time": "13:21",
+      "rating": "70.5",
+      "margin": "10.1",
+      "marginValue": 10.100000000000001,
+      "confidence": 80,
+      "meetingId": "122242",
+      "raceIndex": 0,
+      "outcome": "won"
+    },
+    {
+      "horse": "STAR ROSE",
+      "course": "Nottingham",
+      "time": "14:46",
+      "rating": "71.7",
+      "margin": "16.3",
+      "marginValue": 16.300000000000004,
+      "confidence": 58,
+      "meetingId": "122244",
+      "raceIndex": 4,
       "outcome": "won"
     }
   ],
   "dailyDouble": [
     {
-      "horse": "RATTLIN HOME",
-      "course": "Bangor-on-Dee",
-      "time": "14:16",
-      "rating": "81.6",
-      "margin": "17.8",
-      "marginValue": 17.799999999999997,
-      "confidence": 61,
-      "meetingId": "122221",
-      "raceIndex": 1,
+      "horse": "VANGO CAN GO",
+      "course": "Newton Abbot",
+      "time": "13:21",
+      "rating": "70.5",
+      "margin": "10.1",
+      "marginValue": 10.1,
+      "confidence": 80,
+      "meetingId": "122242",
+      "raceIndex": 0,
       "tier": "Moderate",
-      "outcome": "void",
-      "voidReason": "No bet - race was a VOID BET at the off",
-      "resultIfBacked": "won"
+      "nap": true,
+      "outcome": "won"
+    },
+    {
+      "horse": "STAR ROSE",
+      "course": "Nottingham",
+      "time": "14:46",
+      "rating": "71.7",
+      "margin": "16.3",
+      "marginValue": 16.300000000000004,
+      "confidence": 58,
+      "meetingId": "122244",
+      "raceIndex": 4,
+      "tier": "Moderate",
+      "outcome": "won"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
