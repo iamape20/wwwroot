@@ -18905,25 +18905,52 @@
       "fav": {
         "horse": "DISTILLATE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T17:50:53.118Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|18:30",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "18:30",
+      "horse": "BAD HABITS",
+      "price": "20/1",
+      "runners": 13,
+      "liveHorse": "MINI MAC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MINI MAC",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T18:20:59.725Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 687,
+    "recorded": 688,
     "pick": {
-      "settled": 679,
+      "settled": 680,
       "won": 146,
-      "pl": -39.6,
-      "roi": -5.8
+      "pl": -40.6,
+      "roi": -6
     },
     "favourite": {
-      "settled": 679,
+      "settled": 680,
       "won": 235,
-      "pl": 5.22,
-      "roi": 0.8
+      "pl": 4.22,
+      "roi": 0.6
     },
     "agree": {
       "settled": 188,
@@ -18932,10 +18959,10 @@
       "roi": 0.9
     },
     "disagree": {
-      "settled": 491,
+      "settled": 492,
       "won": 66,
-      "pl": -41.28,
-      "roi": -8.4
+      "pl": -42.28,
+      "roi": -8.6
     }
   },
   "lastBackfill": 1793257289598
