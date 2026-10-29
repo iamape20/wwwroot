@@ -18957,31 +18957,58 @@
       "fav": {
         "horse": "STORM FREE",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T18:50:45.313Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|19:30",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "SYCAMORE GAP",
+      "price": "10/3",
+      "runners": 12,
+      "liveHorse": "SEVENKINGSMUSTDIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SEVENKINGSMUSTDIE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T19:20:46.782Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 689,
+    "recorded": 690,
     "pick": {
-      "settled": 681,
+      "settled": 682,
       "won": 146,
-      "pl": -41.6,
-      "roi": -6.1
+      "pl": -42.6,
+      "roi": -6.2
     },
     "favourite": {
-      "settled": 680,
+      "settled": 681,
       "won": 235,
-      "pl": 4.22,
-      "roi": 0.6
+      "pl": 3.22,
+      "roi": 0.5
     },
     "agree": {
-      "settled": 188,
+      "settled": 189,
       "won": 80,
-      "pl": 1.68,
-      "roi": 0.9
+      "pl": 0.68,
+      "roi": 0.4
     },
     "disagree": {
       "settled": 493,
