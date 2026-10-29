@@ -469,6 +469,17 @@ module.exports = async (req, res) => {
                 }
 
                 /*
+                 * Our pick missing from a detail page that places every
+                 * starter was withdrawn after the last pre-off refresh -
+                 * void, not a loss (2026-10-29, Bath 13:12 SPACE BOB).
+                 */
+                if (!placing && fullField?.starters > 0 &&
+                    fullField.length >= fullField.starters) {
+                    alreadyChecked.add(raceKey);
+                    continue;
+                }
+
+                /*
                  * We have both a result and a prediction,
                  * so this race can now safely be counted.
                  */
