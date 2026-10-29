@@ -18984,25 +18984,52 @@
       "fav": {
         "horse": "SEVENKINGSMUSTDIE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T19:20:46.782Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-29|Southwell|20:00",
+      "date": "2026-10-29",
+      "course": "Southwell",
+      "time": "20:00",
+      "horse": "LILLY LUX",
+      "price": "9/4",
+      "runners": 7,
+      "liveHorse": "MIDNIGHT MEDIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MIDNIGHT MEDIA",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-29T19:50:39.743Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 690,
+    "recorded": 691,
     "pick": {
-      "settled": 682,
+      "settled": 683,
       "won": 146,
-      "pl": -42.6,
-      "roi": -6.2
+      "pl": -43.6,
+      "roi": -6.4
     },
     "favourite": {
-      "settled": 681,
+      "settled": 682,
       "won": 235,
-      "pl": 3.22,
-      "roi": 0.5
+      "pl": 2.22,
+      "roi": 0.3
     },
     "agree": {
       "settled": 189,
@@ -19011,10 +19038,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 493,
+      "settled": 494,
       "won": 66,
-      "pl": -43.28,
-      "roi": -8.8
+      "pl": -44.28,
+      "roi": -9
     }
   },
   "lastBackfill": 1793300455055
