@@ -19038,25 +19038,33 @@
       "fav": {
         "horse": "I'D GO MANIAC",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-29T20:20:37.435Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 692,
     "pick": {
-      "settled": 684,
+      "settled": 685,
       "won": 146,
-      "pl": -44.6,
-      "roi": -6.5
+      "pl": -45.6,
+      "roi": -6.7
     },
     "favourite": {
-      "settled": 683,
+      "settled": 684,
       "won": 235,
-      "pl": 1.22,
-      "roi": 0.2
+      "pl": 0.22,
+      "roi": 0
     },
     "agree": {
       "settled": 189,
@@ -19065,10 +19073,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 495,
+      "settled": 496,
       "won": 66,
-      "pl": -45.28,
-      "roi": -9.1
+      "pl": -46.28,
+      "roi": -9.3
     }
   },
   "lastBackfill": 1793300455055
