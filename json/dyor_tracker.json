@@ -19167,10 +19167,14 @@
       "fav": {
         "horse": "WITH NOLIMIT",
         "price": "1/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/6"
       },
       "recordedAt": "2026-10-30T12:51:34.496Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/6"
     },
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -19186,10 +19190,14 @@
       "fav": {
         "horse": "TARANIS DUBH",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-10-30T12:54:34.275Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     },
     {
       "id": "2026-10-30|Newmarket|13:15",
@@ -19209,10 +19217,29 @@
       },
       "recordedAt": "2026-10-30T13:01:32.594Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Down Royal|13:30",
+      "date": "2026-10-30",
+      "course": "Down Royal",
+      "time": "13:30",
+      "horse": "ANNIE BUTTON",
+      "price": "13/2",
+      "runners": 20,
+      "liveHorse": "DARK LIEUTENANT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DARK LIEUTENANT",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T13:21:26.979Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 699,
+    "recorded": 700,
     "pick": {
       "settled": 688,
       "won": 146,
