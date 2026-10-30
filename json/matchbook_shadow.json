@@ -6961,27 +6961,80 @@
       "marketVolume": 1147
     },
     "lastBeforeOff": {
-      "at": "2026-10-30T10:04:34.361Z",
+      "at": "2026-10-30T10:21:28.270Z",
       "eventId": 34722811580701024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.48,
-      "available": 2.01,
+      "bestBack": 1.52,
+      "available": 0.78,
       "depth": [
         [
-          1.48,
-          2.01
+          1.52,
+          0.78
         ],
         [
-          1.47,
-          8.46
+          1.51,
+          4.69
         ],
         [
-          1.46,
-          27.74
+          1.5,
+          4.22
         ]
       ],
-      "marketVolume": 26042
+      "marketVolume": 27764
+    }
+  },
+  "BEST|2026-10-30|Newmarket|12:05|SOLOQUEST": {
+    "type": "BEST",
+    "date": "2026-10-30",
+    "course": "Newmarket",
+    "time": "12:05",
+    "horse": "SOLO QUEST",
+    "atReveal": {
+      "at": "2026-10-30T10:11:27.814Z",
+      "eventId": 34722836391901070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.34,
+      "available": 5.08,
+      "depth": [
+        [
+          2.34,
+          5.08
+        ],
+        [
+          2.32,
+          27.8
+        ],
+        [
+          2.3,
+          38.23
+        ]
+      ],
+      "marketVolume": 47943
+    },
+    "lastBeforeOff": {
+      "at": "2026-10-30T10:21:28.273Z",
+      "eventId": 34722836391901070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.38,
+      "available": 9.09,
+      "depth": [
+        [
+          2.38,
+          9.09
+        ],
+        [
+          2.36,
+          6.81
+        ],
+        [
+          2.34,
+          56.58
+        ]
+      ],
+      "marketVolume": 50107
     }
   }
 }
