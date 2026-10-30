@@ -19475,10 +19475,18 @@
       "fav": {
         "horse": "KALLY DES BRUYERES",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:31:15.024Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newmarket|14:55",
@@ -19494,10 +19502,18 @@
       "fav": {
         "horse": "BERRY CLEVER",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:41:08.454Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Wetherby|15:00",
@@ -19513,10 +19529,18 @@
       "fav": {
         "horse": "MINELLA ROCKETT",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:51:12.189Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Down Royal|15:10",
@@ -19536,33 +19560,90 @@
       },
       "recordedAt": "2026-10-30T15:01:07.084Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Uttoxeter|15:20",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "15:20",
+      "horse": "CAWTHORNE BANKER",
+      "price": "12/1",
+      "runners": 10,
+      "liveHorse": "CHICO MAGNIFICA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHICO MAGNIFICA",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T15:10:59.508Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Wetherby|15:35",
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "time": "15:35",
+      "horse": "KINGSTON NARCISSUS",
+      "price": "5/4",
+      "runners": 6,
+      "liveHorse": "KINGSTON NARCISSUS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KINGSTON NARCISSUS",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T15:20:52.664Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|15:30",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "15:30",
+      "horse": "CARBINE COUNTRY",
+      "price": "1/1",
+      "runners": 7,
+      "liveHorse": "CARBINE COUNTRY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CARBINE COUNTRY",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T15:20:52.680Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 712,
+    "recorded": 715,
     "pick": {
-      "settled": 698,
+      "settled": 701,
       "won": 146,
-      "pl": -58.6,
-      "roi": -8.4
+      "pl": -61.6,
+      "roi": -8.8
     },
     "favourite": {
-      "settled": 691,
+      "settled": 694,
       "won": 236,
-      "pl": -4.83,
-      "roi": -0.7
+      "pl": -7.83,
+      "roi": -1.1
     },
     "agree": {
-      "settled": 189,
+      "settled": 190,
       "won": 80,
-      "pl": 0.68,
-      "roi": 0.4
+      "pl": -0.32,
+      "roi": -0.2
     },
     "disagree": {
-      "settled": 509,
+      "settled": 511,
       "won": 66,
-      "pl": -59.28,
-      "roi": -11.6
+      "pl": -61.28,
+      "roi": -12
     }
   },
   "lastBackfill": 1793372080286
