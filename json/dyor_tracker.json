@@ -19369,10 +19369,18 @@
       "fav": {
         "horse": "LOUSTIC DU CHATEL",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:01:33.978Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "50/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Wetherby|14:25",
@@ -19388,10 +19396,18 @@
       "fav": {
         "horse": "HANDLETHEKETTLE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:11:15.183Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newmarket|14:20",
@@ -19407,10 +19423,16 @@
       "fav": {
         "horse": "AEGEAN PRINCE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-30T14:11:15.241Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Down Royal|14:35",
@@ -19430,21 +19452,59 @@
       },
       "recordedAt": "2026-10-30T14:21:11.356Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Uttoxeter|14:45",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "14:45",
+      "horse": "BRAVETHEWAVES",
+      "price": "11/1",
+      "runners": 11,
+      "liveHorse": "KALLY DES BRUYERES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KALLY DES BRUYERES",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:31:15.024Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|14:55",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "14:55",
+      "horse": "PLAY ME",
+      "price": "22/1",
+      "runners": 15,
+      "liveHorse": "BERRY CLEVER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BERRY CLEVER",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:41:08.454Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 708,
+    "recorded": 710,
     "pick": {
-      "settled": 694,
+      "settled": 697,
       "won": 146,
-      "pl": -54.6,
-      "roi": -7.9
+      "pl": -57.6,
+      "roi": -8.3
     },
     "favourite": {
-      "settled": 688,
+      "settled": 690,
       "won": 236,
-      "pl": -1.83,
-      "roi": -0.3
+      "pl": -3.83,
+      "roi": -0.6
     },
     "agree": {
       "settled": 189,
@@ -19453,10 +19513,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 505,
+      "settled": 508,
       "won": 66,
-      "pl": -55.28,
-      "roi": -10.9
+      "pl": -58.28,
+      "roi": -11.5
     }
   },
   "lastBackfill": 1793361276730
