@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T15:40:45.385Z",
+  "generatedAt": "2026-10-30T15:44:06.658Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-30",
       "course": "Newmarket",
       "off": "15:30",
-      "horse": "CARBINE COUNTRY"
-    }
-  ],
-  "recent": [
+      "horse": "CARBINE COUNTRY",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-30",
       "course": "Newmarket",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-28",
-      "course": "Nottingham",
-      "off": "14:16",
-      "horse": "CENTIGRADE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-30T15:40:45.297Z",
+    "updatedAt": "2026-10-30T15:44:06.577Z",
     "claude": {
       "races": 38,
       "won": 7,
