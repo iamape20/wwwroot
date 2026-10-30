@@ -20180,25 +20180,33 @@
       "fav": {
         "horse": "SERENITY BLUE",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T20:20:27.266Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 736,
     "pick": {
-      "settled": 722,
+      "settled": 723,
       "won": 146,
-      "pl": -82.6,
-      "roi": -11.4
+      "pl": -83.6,
+      "roi": -11.6
     },
     "favourite": {
-      "settled": 709,
+      "settled": 710,
       "won": 236,
-      "pl": -22.83,
-      "roi": -3.2
+      "pl": -23.83,
+      "roi": -3.4
     },
     "agree": {
       "settled": 195,
@@ -20207,10 +20215,10 @@
       "roi": -2.7
     },
     "disagree": {
-      "settled": 527,
+      "settled": 528,
       "won": 66,
-      "pl": -77.28,
-      "roi": -14.7
+      "pl": -78.28,
+      "roi": -14.8
     }
   },
   "lastBackfill": 1793383241077
