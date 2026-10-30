@@ -20051,10 +20051,18 @@
       "fav": {
         "horse": "MASSIMO BLUE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T19:00:50.159Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Dundalk|19:30",
@@ -20074,21 +20082,40 @@
       },
       "recordedAt": "2026-10-30T19:20:32.083Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newcastle|19:45",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "19:45",
+      "horse": "YAAJOOZ",
+      "price": "3/1",
+      "runners": 11,
+      "liveHorse": "YAAJOOZ",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "YAAJOOZ",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T19:30:35.816Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 732,
+    "recorded": 733,
     "pick": {
-      "settled": 718,
+      "settled": 719,
       "won": 146,
-      "pl": -78.6,
-      "roi": -10.9
+      "pl": -79.6,
+      "roi": -11.1
     },
     "favourite": {
-      "settled": 706,
+      "settled": 707,
       "won": 236,
-      "pl": -19.83,
-      "roi": -2.8
+      "pl": -20.83,
+      "roi": -2.9
     },
     "agree": {
       "settled": 194,
@@ -20097,10 +20124,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 524,
+      "settled": 525,
       "won": 66,
-      "pl": -74.28,
-      "roi": -14.2
+      "pl": -75.28,
+      "roi": -14.3
     }
   },
   "lastBackfill": 1793383241077
