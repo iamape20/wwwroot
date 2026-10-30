@@ -19714,10 +19714,18 @@
       "fav": {
         "horse": "ELOQUENCIA",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T15:50:50.683Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Wetherby|16:10",
@@ -19733,10 +19741,18 @@
       "fav": {
         "horse": "BRIGHT LEGEND",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T16:01:08.201Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newcastle|16:15",
@@ -19752,10 +19768,16 @@
       "fav": {
         "horse": "ALEMBIC",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T16:01:08.237Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-10-30|Down Royal|16:20",
@@ -19771,25 +19793,50 @@
       "fav": {
         "horse": "PREMIER DIVISION",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-10-30T16:10:42.827Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Newcastle|16:45",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "16:45",
+      "horse": "VENETIAN SKY",
+      "price": "3/1",
+      "runners": 10,
+      "liveHorse": "ALL YOU CAN BE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALL YOU CAN BE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T16:30:58.310Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 721,
+    "recorded": 722,
     "pick": {
-      "settled": 707,
+      "settled": 710,
       "won": 146,
-      "pl": -67.6,
-      "roi": -9.6
+      "pl": -70.6,
+      "roi": -9.9
     },
     "favourite": {
-      "settled": 698,
+      "settled": 701,
       "won": 236,
-      "pl": -11.83,
-      "roi": -1.7
+      "pl": -14.83,
+      "roi": -2.1
     },
     "agree": {
       "settled": 192,
@@ -19798,10 +19845,10 @@
       "roi": -1.2
     },
     "disagree": {
-      "settled": 515,
+      "settled": 518,
       "won": 66,
-      "pl": -65.28,
-      "roi": -12.7
+      "pl": -68.28,
+      "roi": -13.2
     }
   },
   "lastBackfill": 1793372080286
