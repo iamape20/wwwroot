@@ -19924,10 +19924,16 @@
       "fav": {
         "horse": "JORDAN BREEZE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-10-30T17:50:37.006Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newcastle|18:15",
@@ -19947,15 +19953,34 @@
       },
       "recordedAt": "2026-10-30T18:00:41.064Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Dundalk|18:30",
+      "date": "2026-10-30",
+      "course": "Dundalk",
+      "time": "18:30",
+      "horse": "MEHMAN",
+      "price": "9/2",
+      "runners": 8,
+      "liveHorse": "CITY HOUSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CITY HOUSE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T18:20:33.021Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 727,
+    "recorded": 728,
     "pick": {
-      "settled": 714,
+      "settled": 715,
       "won": 146,
-      "pl": -74.6,
-      "roi": -10.4
+      "pl": -75.6,
+      "roi": -10.6
     },
     "favourite": {
       "settled": 704,
@@ -19970,10 +19995,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 520,
+      "settled": 521,
       "won": 66,
-      "pl": -70.28,
-      "roi": -13.5
+      "pl": -71.28,
+      "roi": -13.7
     }
   },
   "lastBackfill": 1793383241077
