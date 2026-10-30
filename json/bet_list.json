@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T13:24:26.459Z",
+  "generatedAt": "2026-10-30T13:41:14.893Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Wetherby",
-      "off": "13:20",
-      "horse": "LE BEAU MADRIK"
+      "course": "Uttoxeter",
+      "off": "13:37",
+      "horse": "MERRY WOOD"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "off": "13:20",
+      "horse": "LE BEAU MADRIK",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-30",
       "course": "Uttoxeter",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-28",
-      "course": "Huntingdon",
-      "off": "13:36",
-      "horse": "CURRENT EDITION",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-30T13:24:26.301Z",
+    "updatedAt": "2026-10-30T13:41:14.726Z",
     "claude": {
       "races": 38,
       "won": 7,

@@ -19213,10 +19213,18 @@
       "fav": {
         "horse": "FENLANDER",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T13:01:32.594Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Down Royal|13:30",
@@ -19255,21 +19263,59 @@
       },
       "recordedAt": "2026-10-30T13:24:30.602Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|13:45",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "13:45",
+      "horse": "CHINA IN YOUR HAND",
+      "price": "25/1",
+      "runners": 13,
+      "liveHorse": "SIENA STORM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SIENA STORM",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T13:31:20.828Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Wetherby|13:50",
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "time": "13:50",
+      "horse": "I'VE GOT A FRIEND",
+      "price": "5/4",
+      "runners": 5,
+      "liveHorse": "NATE OF SPADES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NATE OF SPADES",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T13:41:19.082Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 701,
+    "recorded": 703,
     "pick": {
-      "settled": 688,
+      "settled": 689,
       "won": 146,
-      "pl": -48.6,
-      "roi": -7.1
+      "pl": -49.6,
+      "roi": -7.2
     },
     "favourite": {
-      "settled": 685,
+      "settled": 686,
       "won": 236,
-      "pl": 1.17,
-      "roi": 0.2
+      "pl": 0.17,
+      "roi": 0
     },
     "agree": {
       "settled": 189,
@@ -19278,10 +19324,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 499,
+      "settled": 500,
       "won": 66,
-      "pl": -49.28,
-      "roi": -9.9
+      "pl": -50.28,
+      "roi": -10.1
     }
   },
   "lastBackfill": 1793361276730
