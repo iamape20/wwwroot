@@ -19845,10 +19845,18 @@
       "fav": {
         "horse": "PEQUENITA",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T17:00:42.470Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Dundalk|17:30",
@@ -19868,27 +19876,46 @@
       },
       "recordedAt": "2026-10-30T17:20:37.797Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newcastle|17:45",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "17:45",
+      "horse": "STORM ESME",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "STORM ESME",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "STORM ESME",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T17:30:42.406Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 724,
+    "recorded": 725,
     "pick": {
-      "settled": 711,
+      "settled": 712,
       "won": 146,
-      "pl": -71.6,
-      "roi": -10.1
+      "pl": -72.6,
+      "roi": -10.2
     },
     "favourite": {
-      "settled": 702,
+      "settled": 703,
       "won": 236,
-      "pl": -15.83,
-      "roi": -2.3
+      "pl": -16.83,
+      "roi": -2.4
     },
     "agree": {
-      "settled": 192,
+      "settled": 193,
       "won": 80,
-      "pl": -2.32,
-      "roi": -1.2
+      "pl": -3.32,
+      "roi": -1.7
     },
     "disagree": {
       "settled": 519,

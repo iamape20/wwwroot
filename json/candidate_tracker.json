@@ -3825,7 +3825,11 @@
       "rating": 79.5,
       "runners": 5,
       "recordedAt": "2026-10-30T17:00:42.149Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Dundalk|17:30",
@@ -3842,10 +3846,10 @@
   ],
   "stats": {
     "recorded": 235,
-    "settled": 223,
+    "settled": 224,
     "won": 104,
-    "pl": -15.42,
-    "roi": -6.9
+    "pl": -16.42,
+    "roi": -7.3
   },
   "lastBackfill": 1793374251178
 }
