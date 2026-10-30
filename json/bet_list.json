@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T16:04:04.682Z",
+  "generatedAt": "2026-10-30T16:20:40.186Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Uttoxeter",
-      "off": "15:55",
-      "horse": "LOU PRINCE"
+      "course": "Down Royal",
+      "off": "16:20",
+      "horse": "PREMIER DIVISION"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "off": "15:55",
+      "horse": "LOU PRINCE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-10-30",
       "course": "Newmarket",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-28",
-      "course": "Dundalk",
-      "off": "15:00",
-      "horse": "NEVERMINDTHERAIN",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-30T16:04:04.598Z",
+    "updatedAt": "2026-10-30T16:20:40.106Z",
     "claude": {
       "races": 38,
       "won": 7,
