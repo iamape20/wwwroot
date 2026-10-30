@@ -1,8 +1,41 @@
 {
   "date": "2026-10-30",
-  "builtAt": "2026-10-30T02:36:31.848Z",
+  "builtAt": "2026-10-30T09:00:08.976Z",
   "strong": [],
   "moderate": [
+    {
+      "horse": "SOLO QUEST",
+      "course": "Newmarket",
+      "time": "12:05",
+      "rating": "74.5",
+      "margin": "22.7",
+      "marginValue": 22.700000000000003,
+      "confidence": 58,
+      "meetingId": "122281",
+      "raceIndex": 1
+    },
+    {
+      "horse": "TARANIS DUBH",
+      "course": "Uttoxeter",
+      "time": "13:07",
+      "rating": "89.7",
+      "margin": "35.8",
+      "marginValue": 35.800000000000004,
+      "confidence": 84,
+      "meetingId": "122282",
+      "raceIndex": 1
+    },
+    {
+      "horse": "MERRY WOOD",
+      "course": "Uttoxeter",
+      "time": "13:37",
+      "rating": "87.9",
+      "margin": "26.4",
+      "marginValue": 26.400000000000006,
+      "confidence": 68,
+      "meetingId": "122282",
+      "raceIndex": 2
+    },
     {
       "horse": "CARBINE COUNTRY",
       "course": "Newmarket",
@@ -13,21 +46,45 @@
       "confidence": 68,
       "meetingId": "122281",
       "raceIndex": 7
+    },
+    {
+      "horse": "LOU PRINCE",
+      "course": "Uttoxeter",
+      "time": "15:55",
+      "rating": "76.7",
+      "margin": "18.0",
+      "marginValue": 18,
+      "confidence": 72,
+      "meetingId": "122282",
+      "raceIndex": 6
     }
   ],
   "dailyDouble": [
     {
-      "horse": "CARBINE COUNTRY",
-      "course": "Newmarket",
-      "time": "15:30",
-      "rating": "66.8",
-      "margin": "11.4",
-      "marginValue": 11.399999999999999,
+      "horse": "TARANIS DUBH",
+      "course": "Uttoxeter",
+      "time": "13:07",
+      "rating": "89.7",
+      "margin": "35.8",
+      "marginValue": 35.8,
+      "confidence": 84,
+      "meetingId": "122282",
+      "raceIndex": 1,
+      "tier": "Moderate",
+      "nap": true
+    },
+    {
+      "horse": "MERRY WOOD",
+      "course": "Uttoxeter",
+      "time": "13:37",
+      "rating": "87.9",
+      "margin": "26.4",
+      "marginValue": 26.400000000000006,
       "confidence": 68,
-      "meetingId": "122281",
-      "raceIndex": 7,
+      "meetingId": "122282",
+      "raceIndex": 2,
       "tier": "Moderate"
     }
   ],
-  "pickMode": "single"
+  "pickMode": "double"
 }
