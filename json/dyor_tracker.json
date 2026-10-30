@@ -20078,10 +20078,18 @@
       "fav": {
         "horse": "SUIR MONAD",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T19:20:32.083Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newcastle|19:45",
@@ -20106,16 +20114,16 @@
   "stats": {
     "recorded": 733,
     "pick": {
-      "settled": 719,
+      "settled": 720,
       "won": 146,
-      "pl": -79.6,
-      "roi": -11.1
+      "pl": -80.6,
+      "roi": -11.2
     },
     "favourite": {
-      "settled": 707,
+      "settled": 708,
       "won": 236,
-      "pl": -20.83,
-      "roi": -2.9
+      "pl": -21.83,
+      "roi": -3.1
     },
     "agree": {
       "settled": 194,
@@ -20124,10 +20132,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 525,
+      "settled": 526,
       "won": 66,
-      "pl": -75.28,
-      "roi": -14.3
+      "pl": -76.28,
+      "roi": -14.5
     }
   },
   "lastBackfill": 1793383241077
