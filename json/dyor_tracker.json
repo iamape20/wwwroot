@@ -19240,10 +19240,18 @@
       "fav": {
         "horse": "DARK LIEUTENANT",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T13:21:26.979Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Uttoxeter|13:37",
@@ -19259,10 +19267,16 @@
       "fav": {
         "horse": "MERRY WOOD",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-30T13:24:30.602Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newmarket|13:45",
@@ -19278,10 +19292,16 @@
       "fav": {
         "horse": "SIENA STORM",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-10-30T13:31:20.828Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Wetherby|13:50",
@@ -19301,21 +19321,59 @@
       },
       "recordedAt": "2026-10-30T13:41:19.082Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Down Royal|14:00",
+      "date": "2026-10-30",
+      "course": "Down Royal",
+      "time": "14:00",
+      "horse": "SWITCH FROM DIESEL",
+      "price": "7/2",
+      "runners": 7,
+      "liveHorse": "FASTNET CRYSTAL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FASTNET CRYSTAL",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T13:51:19.530Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Uttoxeter|14:10",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "14:10",
+      "horse": "FINE THING",
+      "price": "40/1",
+      "runners": 15,
+      "liveHorse": "LOUSTIC DU CHATEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LOUSTIC DU CHATEL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:01:33.978Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 703,
+    "recorded": 705,
     "pick": {
-      "settled": 689,
+      "settled": 692,
       "won": 146,
-      "pl": -49.6,
-      "roi": -7.2
+      "pl": -52.6,
+      "roi": -7.6
     },
     "favourite": {
-      "settled": 686,
+      "settled": 687,
       "won": 236,
-      "pl": 0.17,
-      "roi": 0
+      "pl": -0.83,
+      "roi": -0.1
     },
     "agree": {
       "settled": 189,
@@ -19324,10 +19382,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 500,
+      "settled": 503,
       "won": 66,
-      "pl": -50.28,
-      "roi": -10.1
+      "pl": -53.28,
+      "roi": -10.6
     }
   },
   "lastBackfill": 1793361276730
