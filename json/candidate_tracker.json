@@ -3749,7 +3749,9 @@
       "rating": 72.3,
       "runners": 10,
       "recordedAt": "2026-10-30T15:10:59.239Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-30|Newmarket|15:30",
@@ -3774,10 +3776,22 @@
       "runners": 6,
       "recordedAt": "2026-10-30T15:30:51.153Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Uttoxeter|15:55",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "15:55",
+      "horse": "LOU PRINCE",
+      "price": "4/6",
+      "rating": 76.7,
+      "runners": 8,
+      "recordedAt": "2026-10-30T15:40:47.512Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 231,
+    "recorded": 232,
     "settled": 220,
     "won": 104,
     "pl": -12.42,
