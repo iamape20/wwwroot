@@ -18934,7 +18934,10 @@
         "price": "5/6",
         "stake": 1,
         "result": "won",
-        "isp": "10/11"
+        "isp": "10/11",
+        "bsp": 1.99,
+        "pl": 0.941,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-10-29T18:20:59.725Z",
       "stake": 1,
@@ -19061,10 +19064,10 @@
       "roi": -6.7
     },
     "favourite": {
-      "settled": 684,
-      "won": 235,
-      "pl": 0.22,
-      "roi": 0
+      "settled": 685,
+      "won": 236,
+      "pl": 1.17,
+      "roi": 0.2
     },
     "agree": {
       "settled": 189,
@@ -19079,5 +19082,5 @@
       "roi": -9.3
     }
   },
-  "lastBackfill": 1793311821205
+  "lastBackfill": 1793344428234
 }
