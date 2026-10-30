@@ -19897,31 +19897,77 @@
       "fav": {
         "horse": "STORM ESME",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T17:30:42.406Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Dundalk|18:00",
+      "date": "2026-10-30",
+      "course": "Dundalk",
+      "time": "18:00",
+      "horse": "SUBIACO",
+      "price": "9/2",
+      "runners": 14,
+      "liveHorse": "JORDAN BREEZE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JORDAN BREEZE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T17:50:37.006Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newcastle|18:15",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "18:15",
+      "horse": "GERMANIC",
+      "price": "8/1",
+      "runners": 13,
+      "liveHorse": "ELYAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ELYAM",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T18:00:41.064Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 725,
+    "recorded": 727,
     "pick": {
-      "settled": 713,
+      "settled": 714,
       "won": 146,
-      "pl": -73.6,
-      "roi": -10.3
+      "pl": -74.6,
+      "roi": -10.4
     },
     "favourite": {
-      "settled": 703,
+      "settled": 704,
       "won": 236,
-      "pl": -16.83,
-      "roi": -2.4
+      "pl": -17.83,
+      "roi": -2.5
     },
     "agree": {
-      "settled": 193,
+      "settled": 194,
       "won": 80,
-      "pl": -3.32,
-      "roi": -1.7
+      "pl": -4.32,
+      "roi": -2.2
     },
     "disagree": {
       "settled": 520,
@@ -19930,5 +19976,5 @@
       "roi": -13.5
     }
   },
-  "lastBackfill": 1793372080286
+  "lastBackfill": 1793383241077
 }
