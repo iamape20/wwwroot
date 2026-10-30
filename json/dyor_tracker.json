@@ -20132,19 +20132,63 @@
       "fav": {
         "horse": "GO OUT",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-30T19:50:31.055Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Newcastle|20:20",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "20:20",
+      "horse": "CAVALLO PAZZO",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "CAVALLO PAZZO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CAVALLO PAZZO",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T20:10:31.535Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Dundalk|20:30",
+      "date": "2026-10-30",
+      "course": "Dundalk",
+      "time": "20:30",
+      "horse": "PALMEZZANO",
+      "price": "28/1",
+      "runners": 9,
+      "liveHorse": "SERENITY BLUE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SERENITY BLUE",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T20:20:27.266Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 734,
+    "recorded": 736,
     "pick": {
-      "settled": 721,
+      "settled": 722,
       "won": 146,
-      "pl": -81.6,
-      "roi": -11.3
+      "pl": -82.6,
+      "roi": -11.4
     },
     "favourite": {
       "settled": 709,
@@ -20159,10 +20203,10 @@
       "roi": -2.7
     },
     "disagree": {
-      "settled": 526,
+      "settled": 527,
       "won": 66,
-      "pl": -76.28,
-      "roi": -14.5
+      "pl": -77.28,
+      "roi": -14.7
     }
   },
   "lastBackfill": 1793383241077
