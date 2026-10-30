@@ -19116,10 +19116,16 @@
       "fav": {
         "horse": "HOLD THE SERVE",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-10-30T12:21:33.216Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newmarket|12:40",
@@ -19135,19 +19141,83 @@
       "fav": {
         "horse": "LAST HORIZON",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "non_runner"
       },
       "recordedAt": "2026-10-30T12:31:33.973Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Down Royal|13:00",
+      "date": "2026-10-30",
+      "course": "Down Royal",
+      "time": "13:00",
+      "horse": "WITH NOLIMIT",
+      "price": "1/5",
+      "runners": 9,
+      "liveHorse": "WITH NOLIMIT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WITH NOLIMIT",
+        "price": "1/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T12:51:34.496Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Uttoxeter|13:07",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "13:07",
+      "horse": "TARANIS DUBH",
+      "price": "4/9",
+      "runners": 4,
+      "liveHorse": "TARANIS DUBH",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TARANIS DUBH",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T12:54:34.275Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|13:15",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "13:15",
+      "horse": "DIOMED DUKE",
+      "price": "10/1",
+      "runners": 13,
+      "liveHorse": "FENLANDER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FENLANDER",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T13:01:32.594Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 696,
+    "recorded": 699,
     "pick": {
-      "settled": 686,
+      "settled": 688,
       "won": 146,
-      "pl": -46.6,
-      "roi": -6.8
+      "pl": -48.6,
+      "roi": -7.1
     },
     "favourite": {
       "settled": 685,
@@ -19162,10 +19232,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 497,
+      "settled": 499,
       "won": 66,
-      "pl": -47.28,
-      "roi": -9.5
+      "pl": -49.28,
+      "roi": -9.9
     }
   },
   "lastBackfill": 1793361276730

@@ -3,6 +3,40 @@
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
   "pot": 100,
-  "bets": [],
-  "updatedAt": "2026-10-30T12:44:32.941Z"
+  "bets": [
+    {
+      "id": "2026-10-30|Uttoxeter|13:07",
+      "mode": "DRY RUN",
+      "date": "2026-10-30",
+      "course": "Uttoxeter",
+      "time": "13:07",
+      "horse": "TARANIS DUBH",
+      "decidedAt": "2026-10-30T12:54:33.506Z",
+      "minutesBeforeOff": 12,
+      "potBefore": 100,
+      "eventId": 34722811580701024,
+      "marketId": 34722811651200070,
+      "runnerId": 34722811651502070,
+      "price": 1.53,
+      "available": 50.88,
+      "depth": [
+        [
+          1.53,
+          50.88
+        ],
+        [
+          1.52,
+          163.94
+        ],
+        [
+          1.51,
+          265.55
+        ]
+      ],
+      "status": "placed",
+      "stake": 10,
+      "matched": 10
+    }
+  ],
+  "updatedAt": "2026-10-30T13:01:31.527Z"
 }
