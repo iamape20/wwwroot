@@ -19068,19 +19068,44 @@
       "fav": {
         "horse": "DOVE TALE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-30T11:21:39.501Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Newmarket|12:05",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "12:05",
+      "horse": "SOLO QUEST",
+      "price": "11/10",
+      "runners": 12,
+      "liveHorse": "SOLO QUEST",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SOLO QUEST",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T11:51:37.766Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 693,
+    "recorded": 694,
     "pick": {
-      "settled": 685,
+      "settled": 686,
       "won": 146,
-      "pl": -45.6,
-      "roi": -6.7
+      "pl": -46.6,
+      "roi": -6.8
     },
     "favourite": {
       "settled": 685,
@@ -19095,11 +19120,11 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 496,
+      "settled": 497,
       "won": 66,
-      "pl": -46.28,
-      "roi": -9.3
+      "pl": -47.28,
+      "roi": -9.5
     }
   },
-  "lastBackfill": 1793344428234
+  "lastBackfill": 1793361276730
 }
