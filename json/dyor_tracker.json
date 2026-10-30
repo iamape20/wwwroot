@@ -20105,31 +20105,58 @@
       "fav": {
         "horse": "YAAJOOZ",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T19:30:35.816Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Dundalk|20:00",
+      "date": "2026-10-30",
+      "course": "Dundalk",
+      "time": "20:00",
+      "horse": "BATTLE BORNE",
+      "price": "14/1",
+      "runners": 14,
+      "liveHorse": "GO OUT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO OUT",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T19:50:31.055Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 733,
+    "recorded": 734,
     "pick": {
-      "settled": 720,
+      "settled": 721,
       "won": 146,
-      "pl": -80.6,
-      "roi": -11.2
+      "pl": -81.6,
+      "roi": -11.3
     },
     "favourite": {
-      "settled": 708,
+      "settled": 709,
       "won": 236,
-      "pl": -21.83,
-      "roi": -3.1
+      "pl": -22.83,
+      "roi": -3.2
     },
     "agree": {
-      "settled": 194,
+      "settled": 195,
       "won": 80,
-      "pl": -4.32,
-      "roi": -2.2
+      "pl": -5.32,
+      "roi": -2.7
     },
     "disagree": {
       "settled": 526,
