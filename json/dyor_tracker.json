@@ -19448,10 +19448,18 @@
       "fav": {
         "horse": "BLAKE",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T14:21:11.356Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Uttoxeter|14:45",
@@ -19490,21 +19498,59 @@
       },
       "recordedAt": "2026-10-30T14:41:08.454Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Wetherby|15:00",
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "time": "15:00",
+      "horse": "MINELLA ROCKETT",
+      "price": "5/4",
+      "runners": 8,
+      "liveHorse": "MINELLA ROCKETT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MINELLA ROCKETT",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:51:12.189Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Down Royal|15:10",
+      "date": "2026-10-30",
+      "course": "Down Royal",
+      "time": "15:10",
+      "horse": "FARROKH",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "MANOIR DE MIRANDE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MANOIR DE MIRANDE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T15:01:07.084Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 710,
+    "recorded": 712,
     "pick": {
-      "settled": 697,
+      "settled": 698,
       "won": 146,
-      "pl": -57.6,
-      "roi": -8.3
+      "pl": -58.6,
+      "roi": -8.4
     },
     "favourite": {
-      "settled": 690,
+      "settled": 691,
       "won": 236,
-      "pl": -3.83,
-      "roi": -0.6
+      "pl": -4.83,
+      "roi": -0.7
     },
     "agree": {
       "settled": 189,
@@ -19513,11 +19559,11 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 508,
+      "settled": 509,
       "won": 66,
-      "pl": -58.28,
-      "roi": -11.5
+      "pl": -59.28,
+      "roi": -11.6
     }
   },
-  "lastBackfill": 1793361276730
+  "lastBackfill": 1793372080286
 }
