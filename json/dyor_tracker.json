@@ -19949,10 +19949,16 @@
       "fav": {
         "horse": "ELYAM",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-10-30T18:00:41.064Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Dundalk|18:30",
@@ -19972,15 +19978,34 @@
       },
       "recordedAt": "2026-10-30T18:20:33.021Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newcastle|18:45",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "18:45",
+      "horse": "CRIMINAL SHORE",
+      "price": "9/1",
+      "runners": 11,
+      "liveHorse": "MWAFAQ",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MWAFAQ",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T18:30:30.587Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 728,
+    "recorded": 729,
     "pick": {
-      "settled": 715,
+      "settled": 716,
       "won": 146,
-      "pl": -75.6,
-      "roi": -10.6
+      "pl": -76.6,
+      "roi": -10.7
     },
     "favourite": {
       "settled": 704,
@@ -19995,10 +20020,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 521,
+      "settled": 522,
       "won": 66,
-      "pl": -71.28,
-      "roi": -13.7
+      "pl": -72.28,
+      "roi": -13.8
     }
   },
   "lastBackfill": 1793383241077
