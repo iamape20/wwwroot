@@ -19317,10 +19317,16 @@
       "fav": {
         "horse": "NATE OF SPADES",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-30T13:41:19.082Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Down Royal|14:00",
@@ -19336,10 +19342,18 @@
       "fav": {
         "horse": "FASTNET CRYSTAL",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T13:51:19.530Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Uttoxeter|14:10",
@@ -19359,21 +19373,78 @@
       },
       "recordedAt": "2026-10-30T14:01:33.978Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Wetherby|14:25",
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "time": "14:25",
+      "horse": "SERVICE MINIMUM",
+      "price": "6/1",
+      "runners": 4,
+      "liveHorse": "HANDLETHEKETTLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HANDLETHEKETTLE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:11:15.183Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|14:20",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "14:20",
+      "horse": "EVANESCO",
+      "price": "8/1",
+      "runners": 6,
+      "liveHorse": "AEGEAN PRINCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AEGEAN PRINCE",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:11:15.241Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Down Royal|14:35",
+      "date": "2026-10-30",
+      "course": "Down Royal",
+      "time": "14:35",
+      "horse": "EL CAIROS",
+      "price": "13/8",
+      "runners": 4,
+      "liveHorse": "BLAKE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLAKE",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T14:21:11.356Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 705,
+    "recorded": 708,
     "pick": {
-      "settled": 692,
+      "settled": 694,
       "won": 146,
-      "pl": -52.6,
-      "roi": -7.6
+      "pl": -54.6,
+      "roi": -7.9
     },
     "favourite": {
-      "settled": 687,
+      "settled": 688,
       "won": 236,
-      "pl": -0.83,
-      "roi": -0.1
+      "pl": -1.83,
+      "roi": -0.3
     },
     "agree": {
       "settled": 189,
@@ -19382,10 +19453,10 @@
       "roi": 0.4
     },
     "disagree": {
-      "settled": 503,
+      "settled": 505,
       "won": 66,
-      "pl": -53.28,
-      "roi": -10.6
+      "pl": -55.28,
+      "roi": -10.9
     }
   },
   "lastBackfill": 1793361276730
