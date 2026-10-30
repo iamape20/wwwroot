@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T12:04:31.341Z",
+  "generatedAt": "2026-10-30T12:21:28.365Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,6 +15,17 @@
   "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "off": "12:05",
+      "horse": "SOLO QUEST",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-29",
       "course": "Punchestown",
@@ -168,21 +179,10 @@
       "bsp": 1.88,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-27",
-      "course": "Bangor-on-Dee",
-      "off": "14:16",
-      "horse": "RATTLIN HOME",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.4885717,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-30T12:04:31.156Z",
+    "updatedAt": "2026-10-30T12:21:28.194Z",
     "claude": {
       "races": 38,
       "won": 7,
