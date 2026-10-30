@@ -19872,10 +19872,16 @@
       "fav": {
         "horse": "SOUTHERN BOULEVARD",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-30T17:20:37.797Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newcastle|17:45",
@@ -19900,10 +19906,10 @@
   "stats": {
     "recorded": 725,
     "pick": {
-      "settled": 712,
+      "settled": 713,
       "won": 146,
-      "pl": -72.6,
-      "roi": -10.2
+      "pl": -73.6,
+      "roi": -10.3
     },
     "favourite": {
       "settled": 703,
@@ -19918,10 +19924,10 @@
       "roi": -1.7
     },
     "disagree": {
-      "settled": 519,
+      "settled": 520,
       "won": 66,
-      "pl": -69.28,
-      "roi": -13.3
+      "pl": -70.28,
+      "roi": -13.5
     }
   },
   "lastBackfill": 1793372080286
