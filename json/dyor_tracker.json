@@ -19818,25 +19818,52 @@
       "fav": {
         "horse": "ALL YOU CAN BE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T16:30:58.310Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-30|Newcastle|17:15",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "17:15",
+      "horse": "PEQUENITA",
+      "price": "1/1",
+      "runners": 5,
+      "liveHorse": "PEQUENITA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PEQUENITA",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T17:00:42.470Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 722,
+    "recorded": 723,
     "pick": {
-      "settled": 710,
+      "settled": 711,
       "won": 146,
-      "pl": -70.6,
-      "roi": -9.9
+      "pl": -71.6,
+      "roi": -10.1
     },
     "favourite": {
-      "settled": 701,
+      "settled": 702,
       "won": 236,
-      "pl": -14.83,
-      "roi": -2.1
+      "pl": -15.83,
+      "roi": -2.3
     },
     "agree": {
       "settled": 192,
@@ -19845,10 +19872,10 @@
       "roi": -1.2
     },
     "disagree": {
-      "settled": 518,
+      "settled": 519,
       "won": 66,
-      "pl": -68.28,
-      "roi": -13.2
+      "pl": -69.28,
+      "roi": -13.3
     }
   },
   "lastBackfill": 1793372080286
