@@ -19608,10 +19608,18 @@
       "fav": {
         "horse": "KINGSTON NARCISSUS",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-30T15:20:52.664Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Newmarket|15:30",
@@ -19654,10 +19662,16 @@
       "fav": {
         "horse": "MATIN MIDI ET SOIR",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-10-30T15:30:53.056Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-30|Uttoxeter|15:55",
@@ -19677,33 +19691,90 @@
       },
       "recordedAt": "2026-10-30T15:40:47.784Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newmarket|16:05",
+      "date": "2026-10-30",
+      "course": "Newmarket",
+      "time": "16:05",
+      "horse": "AMUSED",
+      "price": "7/2",
+      "runners": 14,
+      "liveHorse": "ELOQUENCIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ELOQUENCIA",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T15:50:50.683Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Wetherby|16:10",
+      "date": "2026-10-30",
+      "course": "Wetherby",
+      "time": "16:10",
+      "horse": "FAIRLY FULLING",
+      "price": "16/1",
+      "runners": 11,
+      "liveHorse": "BRIGHT LEGEND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BRIGHT LEGEND",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T16:01:08.201Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-30|Newcastle|16:15",
+      "date": "2026-10-30",
+      "course": "Newcastle",
+      "time": "16:15",
+      "horse": "GOLSPIE",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "ALEMBIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALEMBIC",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-30T16:01:08.237Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 717,
+    "recorded": 720,
     "pick": {
-      "settled": 704,
+      "settled": 706,
       "won": 146,
-      "pl": -64.6,
-      "roi": -9.2
+      "pl": -66.6,
+      "roi": -9.4
     },
     "favourite": {
-      "settled": 696,
+      "settled": 697,
       "won": 236,
-      "pl": -9.83,
-      "roi": -1.4
+      "pl": -10.83,
+      "roi": -1.6
     },
     "agree": {
-      "settled": 191,
+      "settled": 192,
       "won": 80,
-      "pl": -1.32,
-      "roi": -0.7
+      "pl": -2.32,
+      "roi": -1.2
     },
     "disagree": {
-      "settled": 513,
+      "settled": 514,
       "won": 66,
-      "pl": -63.28,
-      "roi": -12.3
+      "pl": -64.28,
+      "roi": -12.5
     }
   },
   "lastBackfill": 1793372080286
