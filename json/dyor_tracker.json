@@ -21180,10 +21180,16 @@
       "fav": {
         "horse": "SAINT ARGENTE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-10-31T16:00:45.252Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ayr|16:10",
@@ -21199,10 +21205,18 @@
       "fav": {
         "horse": "CK O'MARA",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T16:00:45.275Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|16:20",
@@ -21218,10 +21232,18 @@
       "fav": {
         "horse": "RIVERSDALE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T16:10:37.001Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Southwell|16:35",
@@ -21246,16 +21268,16 @@
   "stats": {
     "recorded": 775,
     "pick": {
-      "settled": 757,
+      "settled": 760,
       "won": 152,
-      "pl": -100.53,
-      "roi": -13.3
+      "pl": -103.53,
+      "roi": -13.6
     },
     "favourite": {
-      "settled": 748,
+      "settled": 750,
       "won": 254,
-      "pl": -18,
-      "roi": -2.4
+      "pl": -20,
+      "roi": -2.7
     },
     "agree": {
       "settled": 202,
@@ -21264,10 +21286,10 @@
       "roi": -1.9
     },
     "disagree": {
-      "settled": 555,
+      "settled": 558,
       "won": 68,
-      "pl": -96.77,
-      "roi": -17.4
+      "pl": -99.77,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1793458864593
