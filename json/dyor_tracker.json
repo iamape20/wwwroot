@@ -20331,10 +20331,14 @@
       "fav": {
         "horse": "IBTEKAR",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-31T12:11:24.628Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-10-31|Wetherby|12:35",
@@ -20354,10 +20358,48 @@
       },
       "recordedAt": "2026-10-31T12:21:27.728Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|12:43",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "12:43",
+      "horse": "KING KUBALA",
+      "price": "9/2",
+      "runners": 8,
+      "liveHorse": "THE SKECHER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE SKECHER",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:31:26.816Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|12:50",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "12:50",
+      "horse": "BEAU QUALI",
+      "price": "16/1",
+      "runners": 9,
+      "liveHorse": "SECRET SNIPER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SECRET SNIPER",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:41:27.094Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 740,
+    "recorded": 742,
     "pick": {
       "settled": 731,
       "won": 152,
