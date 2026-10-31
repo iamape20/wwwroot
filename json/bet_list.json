@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T13:21:20.672Z",
+  "generatedAt": "2026-10-31T13:41:07.662Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,18 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Down Royal",
+      "off": "13:30",
+      "horse": "SKERRY HILL"
+    },
+    {
+      "course": "Newmarket",
+      "off": "13:40",
+      "horse": "BENGAL TIGER"
+    }
+  ],
   "recent": [
     {
       "date": "2026-10-31",
@@ -182,7 +193,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-31T13:21:20.523Z",
+    "updatedAt": "2026-10-31T13:41:07.524Z",
     "claude": {
       "races": 38,
       "won": 7,
