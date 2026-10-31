@@ -20764,10 +20764,18 @@
       "fav": {
         "horse": "CALIFET EN VOL",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:21:00.596Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ayr|14:28",
@@ -20783,10 +20791,18 @@
       "fav": {
         "horse": "HALFTHEWORLDAWAY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:21:00.621Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|14:38",
@@ -20802,10 +20818,18 @@
       "fav": {
         "horse": "DINOLAND",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:31:07.711Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Newmarket|14:44",
@@ -20821,10 +20845,18 @@
       "fav": {
         "horse": "NAHRAAN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:31:07.737Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|14:55",
@@ -20844,21 +20876,78 @@
       },
       "recordedAt": "2026-10-31T14:40:57.375Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|15:03",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "15:03",
+      "horse": "SHE'S NOTJOEKING",
+      "price": "7/4",
+      "runners": 9,
+      "liveHorse": "SHE'S NOTJOEKING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SHE'S NOTJOEKING",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:51:09.453Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|15:15",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "15:15",
+      "horse": "CROKE PARK",
+      "price": "40/1",
+      "runners": 5,
+      "liveHorse": "ROMEO COOLIO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROMEO COOLIO",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:01:04.561Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|15:10",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "15:10",
+      "horse": "SPORTINGSILVERMINE",
+      "price": "15/8",
+      "runners": 5,
+      "liveHorse": "NO WAY JAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NO WAY JAY",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:01:04.586Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 760,
+    "recorded": 763,
     "pick": {
-      "settled": 744,
+      "settled": 748,
       "won": 152,
-      "pl": -87.53,
-      "roi": -11.8
+      "pl": -91.53,
+      "roi": -12.2
     },
     "favourite": {
-      "settled": 737,
+      "settled": 741,
       "won": 254,
-      "pl": -7,
-      "roi": -0.9
+      "pl": -11,
+      "roi": -1.5
     },
     "agree": {
       "settled": 201,
@@ -20867,11 +20956,11 @@
       "roi": -1.4
     },
     "disagree": {
-      "settled": 543,
+      "settled": 547,
       "won": 68,
-      "pl": -84.77,
-      "roi": -15.6
+      "pl": -88.77,
+      "roi": -16.2
     }
   },
-  "lastBackfill": 1793447492782
+  "lastBackfill": 1793458864593
 }
