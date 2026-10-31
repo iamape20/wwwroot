@@ -20897,10 +20897,18 @@
       "fav": {
         "horse": "SHE'S NOTJOEKING",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:51:09.453Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|15:15",
@@ -20916,10 +20924,18 @@
       "fav": {
         "horse": "ROMEO COOLIO",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:01:04.561Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ascot|15:10",
@@ -20935,10 +20951,18 @@
       "fav": {
         "horse": "NO WAY JAY",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:01:04.586Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Newmarket|15:23",
@@ -20954,10 +20978,16 @@
       "fav": {
         "horse": "DANCING DUNES",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:10:54.075Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
     },
     {
       "id": "2026-10-31|Wetherby|15:30",
@@ -20977,33 +21007,90 @@
       },
       "recordedAt": "2026-10-31T15:20:50.062Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|15:43",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "15:43",
+      "horse": "NAP HAND",
+      "price": "12/1",
+      "runners": 16,
+      "liveHorse": "TRUSTINTIMES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRUSTINTIMES",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:30:45.134Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|15:37",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "15:37",
+      "horse": "THE HATCHET",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "SOLDANTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOLDANTE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:30:45.147Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|15:50",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "15:50",
+      "horse": "JACOB'S LADDER",
+      "price": "11/8",
+      "runners": 5,
+      "liveHorse": "KALA CONTI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KALA CONTI",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:40:42.226Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 765,
+    "recorded": 768,
     "pick": {
-      "settled": 749,
+      "settled": 752,
       "won": 152,
-      "pl": -92.53,
-      "roi": -12.4
+      "pl": -95.53,
+      "roi": -12.7
     },
     "favourite": {
-      "settled": 741,
+      "settled": 745,
       "won": 254,
-      "pl": -11,
-      "roi": -1.5
+      "pl": -15,
+      "roi": -2
     },
     "agree": {
-      "settled": 201,
+      "settled": 202,
       "won": 84,
-      "pl": -2.76,
-      "roi": -1.4
+      "pl": -3.76,
+      "roi": -1.9
     },
     "disagree": {
-      "settled": 548,
+      "settled": 550,
       "won": 68,
-      "pl": -89.77,
-      "roi": -16.4
+      "pl": -91.77,
+      "roi": -16.7
     }
   },
   "lastBackfill": 1793458864593
