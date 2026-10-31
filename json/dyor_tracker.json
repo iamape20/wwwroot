@@ -20635,10 +20635,16 @@
       "fav": {
         "horse": "THE G WIZARD",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-31T13:41:11.237Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|14:05",
@@ -20673,10 +20679,16 @@
       "fav": {
         "horse": "VANDERPOEL",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/1"
       },
       "recordedAt": "2026-10-31T13:51:12.912Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Newmarket|14:10",
@@ -20696,15 +20708,72 @@
       },
       "recordedAt": "2026-10-31T14:01:29.920Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|14:18",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "14:18",
+      "horse": "STRONG LEADER",
+      "price": "11/8",
+      "runners": 3,
+      "liveHorse": "TAKE NO CHANCES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TAKE NO CHANCES",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:11:03.860Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|14:33",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "14:33",
+      "horse": "HENRY'S FRIEND",
+      "price": "13/2",
+      "runners": 10,
+      "liveHorse": "CALIFET EN VOL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CALIFET EN VOL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:21:00.596Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|14:28",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "14:28",
+      "horse": "CAVALIER DU LUY",
+      "price": "5/1",
+      "runners": 10,
+      "liveHorse": "HALFTHEWORLDAWAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HALFTHEWORLDAWAY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:21:00.621Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 754,
+    "recorded": 757,
     "pick": {
-      "settled": 740,
+      "settled": 742,
       "won": 152,
-      "pl": -83.53,
-      "roi": -11.3
+      "pl": -85.53,
+      "roi": -11.5
     },
     "favourite": {
       "settled": 734,
@@ -20719,10 +20788,10 @@
       "roi": -0.9
     },
     "disagree": {
-      "settled": 540,
+      "settled": 542,
       "won": 68,
-      "pl": -81.77,
-      "roi": -15.1
+      "pl": -83.77,
+      "roi": -15.5
     }
   },
   "lastBackfill": 1793447492782
