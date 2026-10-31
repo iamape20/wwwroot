@@ -20739,10 +20739,16 @@
       "fav": {
         "horse": "TAKE NO CHANCES",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:11:03.860Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-10-31|Ascot|14:33",
@@ -20819,10 +20825,29 @@
       },
       "recordedAt": "2026-10-31T14:31:07.737Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|14:55",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "14:55",
+      "horse": "RISKINTHEGROUND",
+      "price": "33/1",
+      "runners": 6,
+      "liveHorse": "PIC D'ORHY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PIC D'ORHY",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:40:57.375Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 759,
+    "recorded": 760,
     "pick": {
       "settled": 744,
       "won": 152,
@@ -20830,10 +20855,10 @@
       "roi": -11.8
     },
     "favourite": {
-      "settled": 736,
+      "settled": 737,
       "won": 254,
-      "pl": -6,
-      "roi": -0.8
+      "pl": -7,
+      "roi": -0.9
     },
     "agree": {
       "settled": 201,
