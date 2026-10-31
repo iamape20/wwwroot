@@ -21078,10 +21078,16 @@
       "fav": {
         "horse": "KALA CONTI",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-10-31T15:40:42.226Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|16:03",
@@ -21116,10 +21122,18 @@
       "fav": {
         "horse": "DISTILLATE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:50:43.611Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Newmarket|15:58",
@@ -21177,21 +21191,40 @@
       },
       "recordedAt": "2026-10-31T16:00:45.275Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|16:20",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "16:20",
+      "horse": "BRAVEMANS CALL",
+      "price": "11/4",
+      "runners": 14,
+      "liveHorse": "RIVERSDALE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RIVERSDALE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T16:10:37.001Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 773,
+    "recorded": 774,
     "pick": {
-      "settled": 754,
+      "settled": 756,
       "won": 152,
-      "pl": -97.53,
-      "roi": -12.9
+      "pl": -99.53,
+      "roi": -13.2
     },
     "favourite": {
-      "settled": 746,
+      "settled": 747,
       "won": 254,
-      "pl": -16,
-      "roi": -2.1
+      "pl": -17,
+      "roi": -2.3
     },
     "agree": {
       "settled": 202,
@@ -21200,10 +21233,10 @@
       "roi": -1.9
     },
     "disagree": {
-      "settled": 552,
+      "settled": 554,
       "won": 68,
-      "pl": -93.77,
-      "roi": -17
+      "pl": -95.77,
+      "roi": -17.3
     }
   },
   "lastBackfill": 1793458864593
