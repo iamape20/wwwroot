@@ -21003,10 +21003,14 @@
       "fav": {
         "horse": "FILIBUSTERING",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-10-31T15:20:50.062Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-10-31|Ascot|15:43",
@@ -21064,10 +21068,67 @@
       },
       "recordedAt": "2026-10-31T15:40:42.226Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|16:03",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "16:03",
+      "horse": "SLANEY OPERA",
+      "price": "9/1",
+      "runners": 4,
+      "liveHorse": "SLEDGEHAMMER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SLEDGEHAMMER",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:50:43.592Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Southwell|16:00",
+      "date": "2026-10-31",
+      "course": "Southwell",
+      "time": "16:00",
+      "horse": "SECRET ROAD",
+      "price": "22/1",
+      "runners": 12,
+      "liveHorse": "DISTILLATE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DISTILLATE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:50:43.611Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Newmarket|15:58",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "15:58",
+      "horse": "GEORGE WICKHAM",
+      "price": "11/2",
+      "runners": 16,
+      "liveHorse": "DWINDLING FUNDS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DWINDLING FUNDS",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:50:43.613Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 768,
+    "recorded": 771,
     "pick": {
       "settled": 752,
       "won": 152,
