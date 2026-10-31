@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T18:00:32.967Z",
+  "generatedAt": "2026-10-31T18:20:28.282Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-31",
       "course": "Southwell",
       "off": "17:40",
-      "horse": "ALWAYS SUNNY"
-    }
-  ],
-  "recent": [
+      "horse": "ALWAYS SUNNY",
+      "phase": "STOPPED",
+      "result": "void",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "abandoned"
+    },
     {
       "date": "2026-10-31",
       "course": "Wetherby",
@@ -174,21 +179,10 @@
       "bsp": 1.61469712,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-30",
-      "course": "Down Royal",
-      "off": "13:00",
-      "horse": "WITH NOLIMIT",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.17,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-31T18:00:32.859Z",
+    "updatedAt": "2026-10-31T18:20:28.186Z",
     "claude": {
       "races": 38,
       "won": 7,
