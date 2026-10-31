@@ -20660,10 +20660,18 @@
       "fav": {
         "horse": "BEN HUR",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T13:51:12.882Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ascot|14:00",
@@ -20704,10 +20712,18 @@
       "fav": {
         "horse": "HAVEN",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T14:01:29.920Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|14:18",
@@ -20765,33 +20781,71 @@
       },
       "recordedAt": "2026-10-31T14:21:00.621Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|14:38",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "14:38",
+      "horse": "LADIES WELL",
+      "price": "4/1",
+      "runners": 12,
+      "liveHorse": "DINOLAND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DINOLAND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:31:07.711Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Newmarket|14:44",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "14:44",
+      "horse": "GREY CUBAN",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "NAHRAAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NAHRAAN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:31:07.737Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 757,
+    "recorded": 759,
     "pick": {
-      "settled": 742,
+      "settled": 744,
       "won": 152,
-      "pl": -85.53,
-      "roi": -11.5
+      "pl": -87.53,
+      "roi": -11.8
     },
     "favourite": {
-      "settled": 734,
+      "settled": 736,
       "won": 254,
-      "pl": -4,
-      "roi": -0.5
+      "pl": -6,
+      "roi": -0.8
     },
     "agree": {
-      "settled": 200,
+      "settled": 201,
       "won": 84,
-      "pl": -1.76,
-      "roi": -0.9
+      "pl": -2.76,
+      "roi": -1.4
     },
     "disagree": {
-      "settled": 542,
+      "settled": 543,
       "won": 68,
-      "pl": -83.77,
-      "roi": -15.5
+      "pl": -84.77,
+      "roi": -15.6
     }
   },
   "lastBackfill": 1793447492782

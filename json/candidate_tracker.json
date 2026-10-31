@@ -3987,7 +3987,11 @@
       "rating": 79.3,
       "runners": 11,
       "recordedAt": "2026-10-31T14:01:29.348Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|14:18",
@@ -4004,10 +4008,10 @@
   ],
   "stats": {
     "recorded": 244,
-    "settled": 236,
+    "settled": 237,
     "won": 114,
-    "pl": -9.9,
-    "roi": -4.2
+    "pl": -10.9,
+    "roi": -4.6
   },
   "lastBackfill": 1793451083376
 }
