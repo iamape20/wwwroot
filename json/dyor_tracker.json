@@ -21103,10 +21103,16 @@
       "fav": {
         "horse": "SLEDGEHAMMER",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-10-31T15:50:43.592Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Southwell|16:00",
@@ -21149,10 +21155,16 @@
       "fav": {
         "horse": "DWINDLING FUNDS",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:50:43.613Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     },
     {
       "id": "2026-10-31|Ascot|16:15",
@@ -21210,21 +21222,40 @@
       },
       "recordedAt": "2026-10-31T16:10:37.001Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Southwell|16:35",
+      "date": "2026-10-31",
+      "course": "Southwell",
+      "time": "16:35",
+      "horse": "HEAR THE DRUMS",
+      "price": "16/1",
+      "runners": 14,
+      "liveHorse": "OPPENHEIMER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OPPENHEIMER",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T16:20:34.827Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 774,
+    "recorded": 775,
     "pick": {
-      "settled": 756,
+      "settled": 757,
       "won": 152,
-      "pl": -99.53,
-      "roi": -13.2
+      "pl": -100.53,
+      "roi": -13.3
     },
     "favourite": {
-      "settled": 747,
+      "settled": 748,
       "won": 254,
-      "pl": -17,
-      "roi": -2.3
+      "pl": -18,
+      "roi": -2.4
     },
     "agree": {
       "settled": 202,
@@ -21233,10 +21264,10 @@
       "roi": -1.9
     },
     "disagree": {
-      "settled": 554,
+      "settled": 555,
       "won": 68,
-      "pl": -95.77,
-      "roi": -17.3
+      "pl": -96.77,
+      "roi": -17.4
     }
   },
   "lastBackfill": 1793458864593
