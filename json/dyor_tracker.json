@@ -21026,10 +21026,16 @@
       "fav": {
         "horse": "TRUSTINTIMES",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-10-31T15:30:45.134Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ayr|15:37",
@@ -21045,10 +21051,18 @@
       "fav": {
         "horse": "SOLDANTE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T15:30:45.147Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|15:50",
@@ -21125,21 +21139,59 @@
       },
       "recordedAt": "2026-10-31T15:50:43.613Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|16:15",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "16:15",
+      "horse": "LORD CHURCHILL",
+      "price": "5/2",
+      "runners": 9,
+      "liveHorse": "SAINT ARGENTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAINT ARGENTE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T16:00:45.252Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|16:10",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "16:10",
+      "horse": "BOLLIN MATILDA",
+      "price": "7/2",
+      "runners": 12,
+      "liveHorse": "CK O'MARA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CK O'MARA",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T16:00:45.275Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 771,
+    "recorded": 773,
     "pick": {
-      "settled": 752,
+      "settled": 754,
       "won": 152,
-      "pl": -95.53,
-      "roi": -12.7
+      "pl": -97.53,
+      "roi": -12.9
     },
     "favourite": {
-      "settled": 745,
+      "settled": 746,
       "won": 254,
-      "pl": -15,
-      "roi": -2
+      "pl": -16,
+      "roi": -2.1
     },
     "agree": {
       "settled": 202,
@@ -21148,10 +21200,10 @@
       "roi": -1.9
     },
     "disagree": {
-      "settled": 550,
+      "settled": 552,
       "won": 68,
-      "pl": -91.77,
-      "roi": -16.7
+      "pl": -93.77,
+      "roi": -17
     }
   },
   "lastBackfill": 1793458864593
