@@ -20304,31 +20304,77 @@
       "fav": {
         "horse": "DASHING DICK",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T11:41:25.445Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-10-31|Newmarket|12:25",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "12:25",
+      "horse": "IBTEKAR",
+      "price": "4/5",
+      "runners": 11,
+      "liveHorse": "IBTEKAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "IBTEKAR",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:11:24.628Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|12:35",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "12:35",
+      "horse": "MINELLA HOLLOW",
+      "price": "4/11",
+      "runners": 6,
+      "liveHorse": "MINELLA HOLLOW",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MINELLA HOLLOW",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:21:27.728Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 738,
+    "recorded": 740,
     "pick": {
-      "settled": 730,
+      "settled": 731,
       "won": 152,
-      "pl": -73.53,
-      "roi": -10.1
+      "pl": -74.53,
+      "roi": -10.2
     },
     "favourite": {
-      "settled": 728,
+      "settled": 729,
       "won": 254,
-      "pl": 2,
-      "roi": 0.3
+      "pl": 1,
+      "roi": 0.1
     },
     "agree": {
-      "settled": 199,
+      "settled": 200,
       "won": 84,
-      "pl": -0.76,
-      "roi": -0.4
+      "pl": -1.76,
+      "roi": -0.9
     },
     "disagree": {
       "settled": 531,
