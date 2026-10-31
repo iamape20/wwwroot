@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T15:01:00.880Z",
+  "generatedAt": "2026-10-31T15:20:47.903Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-31",
       "course": "Wetherby",
       "off": "14:55",
-      "horse": "PIC D'ORHY"
-    }
-  ],
-  "recent": [
+      "horse": "PIC D'ORHY",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-31",
       "course": "Newmarket",
@@ -174,21 +179,10 @@
       "bsp": 1.17,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-30",
-      "course": "Uttoxeter",
-      "off": "12:35",
-      "horse": "HOLD THE SERVE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.84769618,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-31T15:01:00.741Z",
+    "updatedAt": "2026-10-31T15:20:47.829Z",
     "claude": {
       "races": 38,
       "won": 7,

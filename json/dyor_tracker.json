@@ -20872,10 +20872,16 @@
       "fav": {
         "horse": "PIC D'ORHY",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-31T14:40:57.375Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ayr|15:03",
@@ -20933,15 +20939,53 @@
       },
       "recordedAt": "2026-10-31T15:01:04.586Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Newmarket|15:23",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "15:23",
+      "horse": "HIGH CALIBRE",
+      "price": "10/3",
+      "runners": 10,
+      "liveHorse": "DANCING DUNES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DANCING DUNES",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:10:54.075Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|15:30",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "15:30",
+      "horse": "FILIBUSTERING",
+      "price": "6/5",
+      "runners": 4,
+      "liveHorse": "FILIBUSTERING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FILIBUSTERING",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T15:20:50.062Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 763,
+    "recorded": 765,
     "pick": {
-      "settled": 748,
+      "settled": 749,
       "won": 152,
-      "pl": -91.53,
-      "roi": -12.2
+      "pl": -92.53,
+      "roi": -12.4
     },
     "favourite": {
       "settled": 741,
@@ -20956,10 +21000,10 @@
       "roi": -1.4
     },
     "disagree": {
-      "settled": 547,
+      "settled": 548,
       "won": 68,
-      "pl": -88.77,
-      "roi": -16.2
+      "pl": -89.77,
+      "roi": -16.4
     }
   },
   "lastBackfill": 1793458864593
