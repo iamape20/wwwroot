@@ -20377,10 +20377,16 @@
       "fav": {
         "horse": "THE SKECHER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-10-31T12:31:26.816Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ascot|12:50",
@@ -20396,10 +20402,18 @@
       "fav": {
         "horse": "SECRET SNIPER",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T12:41:27.094Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Down Royal|13:00",
@@ -20415,10 +20429,18 @@
       "fav": {
         "horse": "KENOUGH",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T12:51:25.546Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Newmarket|13:05",
@@ -20434,10 +20456,16 @@
       "fav": {
         "horse": "BEAGLE BAY",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-10-31T12:51:25.573Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|13:10",
@@ -20457,21 +20485,78 @@
       },
       "recordedAt": "2026-10-31T13:01:24.333Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|13:25",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "13:25",
+      "horse": "GLYNN BRAE",
+      "price": "4/1",
+      "runners": 5,
+      "liveHorse": "JET TO VEGAS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JET TO VEGAS",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:11:20.119Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ayr|13:18",
+      "date": "2026-10-31",
+      "course": "Ayr",
+      "time": "13:18",
+      "horse": "NIGHTS IN VENICE",
+      "price": "7/1",
+      "runners": 11,
+      "liveHorse": "DIDNTGOTWENTY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DIDNTGOTWENTY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:11:20.148Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|13:30",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "13:30",
+      "horse": "S T HAMO",
+      "price": "15/2",
+      "runners": 12,
+      "liveHorse": "SKERRY HILL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SKERRY HILL",
+        "price": "2/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:21:26.505Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 745,
+    "recorded": 748,
     "pick": {
-      "settled": 731,
+      "settled": 735,
       "won": 152,
-      "pl": -74.53,
-      "roi": -10.2
+      "pl": -78.53,
+      "roi": -10.7
     },
     "favourite": {
-      "settled": 729,
+      "settled": 731,
       "won": 254,
-      "pl": 1,
-      "roi": 0.1
+      "pl": -1,
+      "roi": -0.1
     },
     "agree": {
       "settled": 200,
@@ -20480,10 +20565,10 @@
       "roi": -0.9
     },
     "disagree": {
-      "settled": 531,
+      "settled": 535,
       "won": 68,
-      "pl": -72.77,
-      "roi": -13.7
+      "pl": -76.77,
+      "roi": -14.3
     }
   },
   "lastBackfill": 1793447492782

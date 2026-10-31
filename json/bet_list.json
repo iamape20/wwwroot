@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T13:01:18.329Z",
+  "generatedAt": "2026-10-31T13:21:20.672Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-10-31",
       "course": "Ayr",
       "off": "12:43",
-      "horse": "THE SKECHER"
-    }
-  ],
-  "recent": [
+      "horse": "THE SKECHER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-31",
       "course": "Wetherby",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": null
-    },
-    {
-      "date": "2026-10-29",
-      "course": "Stratford",
-      "off": "14:20",
-      "horse": "FORTHFACTOR",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.16,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-31T13:01:18.181Z",
+    "updatedAt": "2026-10-31T13:21:20.523Z",
     "claude": {
       "races": 38,
       "won": 7,
