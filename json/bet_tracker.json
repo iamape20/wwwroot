@@ -2554,8 +2554,9 @@
       "stake": 0,
       "result": "won",
       "isp": "5/4",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.56,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Uttoxeter|12:35",
@@ -2569,8 +2570,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.84769618,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Down Royal|13:00",
@@ -2584,8 +2586,9 @@
       "stake": 0,
       "result": "won",
       "isp": "1/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.17,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -2599,8 +2602,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/9",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.61469712,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Wetherby|13:20",
@@ -2630,8 +2634,9 @@
       "stake": 0,
       "result": "won",
       "isp": "1/1",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.14,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Newmarket|13:45",
@@ -2645,8 +2650,9 @@
       "stake": 0,
       "result": "won",
       "isp": "11/8",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.92,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Newmarket|15:30",
@@ -2692,8 +2698,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/9",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.4807841,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-30|Dundalk|17:30",
@@ -2707,8 +2714,9 @@
       "stake": 0,
       "result": "won",
       "isp": "5/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.87,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": {
@@ -2720,5 +2728,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1793396421188
+  "lastBackfill": 1793430105260
 }
