@@ -20560,10 +20560,16 @@
       "fav": {
         "horse": "SKERRY HILL",
         "price": "2/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/13"
       },
       "recordedAt": "2026-10-31T13:21:26.505Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Wetherby|13:45",
@@ -20579,10 +20585,16 @@
       "fav": {
         "horse": "LA CONQUIERE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T13:31:11.452Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-10-31|Newmarket|13:40",
@@ -20598,10 +20610,16 @@
       "fav": {
         "horse": "BENGAL TIGER",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-10-31T13:31:11.481Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-10-31|Ayr|13:53",
@@ -20621,21 +20639,78 @@
       },
       "recordedAt": "2026-10-31T13:41:11.237Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|14:05",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "14:05",
+      "horse": "MINO DES MOTTES",
+      "price": "11/2",
+      "runners": 12,
+      "liveHorse": "BEN HUR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BEN HUR",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:51:12.882Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Ascot|14:00",
+      "date": "2026-10-31",
+      "course": "Ascot",
+      "time": "14:00",
+      "horse": "TEDDY BLUE",
+      "price": "11/1",
+      "runners": 12,
+      "liveHorse": "VANDERPOEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VANDERPOEL",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:51:12.912Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Newmarket|14:10",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "14:10",
+      "horse": "HAVEN",
+      "price": "5/6",
+      "runners": 11,
+      "liveHorse": "HAVEN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HAVEN",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T14:01:29.920Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 751,
+    "recorded": 754,
     "pick": {
-      "settled": 738,
+      "settled": 740,
       "won": 152,
-      "pl": -81.53,
-      "roi": -11
+      "pl": -83.53,
+      "roi": -11.3
     },
     "favourite": {
-      "settled": 733,
+      "settled": 734,
       "won": 254,
-      "pl": -3,
-      "roi": -0.4
+      "pl": -4,
+      "roi": -0.5
     },
     "agree": {
       "settled": 200,
@@ -20644,10 +20719,10 @@
       "roi": -0.9
     },
     "disagree": {
-      "settled": 538,
+      "settled": 540,
       "won": 68,
-      "pl": -79.77,
-      "roi": -14.8
+      "pl": -81.77,
+      "roi": -15.1
     }
   },
   "lastBackfill": 1793447492782
