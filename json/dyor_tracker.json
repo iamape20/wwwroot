@@ -20354,10 +20354,14 @@
       "fav": {
         "horse": "MINELLA HOLLOW",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/7"
       },
       "recordedAt": "2026-10-31T12:21:27.728Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/7"
     },
     {
       "id": "2026-10-31|Ayr|12:43",
@@ -20396,10 +20400,67 @@
       },
       "recordedAt": "2026-10-31T12:41:27.094Z",
       "stake": 1
+    },
+    {
+      "id": "2026-10-31|Down Royal|13:00",
+      "date": "2026-10-31",
+      "course": "Down Royal",
+      "time": "13:00",
+      "horse": "CITE FLORALE",
+      "price": "11/8",
+      "runners": 8,
+      "liveHorse": "KENOUGH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KENOUGH",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:51:25.546Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Newmarket|13:05",
+      "date": "2026-10-31",
+      "course": "Newmarket",
+      "time": "13:05",
+      "horse": "BEARIN UP",
+      "price": "9/1",
+      "runners": 14,
+      "liveHorse": "BEAGLE BAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BEAGLE BAY",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T12:51:25.573Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-10-31|Wetherby|13:10",
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "time": "13:10",
+      "horse": "GERYVILLE",
+      "price": "20/1",
+      "runners": 8,
+      "liveHorse": "PALAMON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PALAMON",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-10-31T13:01:24.333Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 742,
+    "recorded": 745,
     "pick": {
       "settled": 731,
       "won": 152,

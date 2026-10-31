@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T12:41:22.756Z",
+  "generatedAt": "2026-10-31T13:01:18.329Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Wetherby",
-      "off": "12:35",
-      "horse": "MINELLA HOLLOW"
+      "course": "Ayr",
+      "off": "12:43",
+      "horse": "THE SKECHER"
     }
   ],
   "recent": [
+    {
+      "date": "2026-10-31",
+      "course": "Wetherby",
+      "off": "12:35",
+      "horse": "MINELLA HOLLOW",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-10-30",
       "course": "Dundalk",
@@ -174,21 +185,10 @@
       "bsp": 1.16,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-29",
-      "course": "Bath",
-      "off": "12:42",
-      "horse": "LADY PHILLIPS",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-10-31T12:41:22.618Z",
+    "updatedAt": "2026-10-31T13:01:18.181Z",
     "claude": {
       "races": 38,
       "won": 7,
