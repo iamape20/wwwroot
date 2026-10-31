@@ -21284,25 +21284,33 @@
       "fav": {
         "horse": "NATIONAL HONOUR",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-10-31T16:50:34.039Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 776,
     "pick": {
-      "settled": 761,
+      "settled": 762,
       "won": 152,
-      "pl": -104.53,
-      "roi": -13.7
+      "pl": -105.53,
+      "roi": -13.8
     },
     "favourite": {
-      "settled": 750,
+      "settled": 751,
       "won": 254,
-      "pl": -20,
-      "roi": -2.7
+      "pl": -21,
+      "roi": -2.8
     },
     "agree": {
       "settled": 202,
@@ -21311,10 +21319,10 @@
       "roi": -1.9
     },
     "disagree": {
-      "settled": 559,
+      "settled": 560,
       "won": 68,
-      "pl": -100.77,
-      "roi": -18
+      "pl": -101.77,
+      "roi": -18.2
     }
   },
   "lastBackfill": 1793458864593
