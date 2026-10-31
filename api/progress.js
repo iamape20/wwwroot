@@ -152,7 +152,7 @@ module.exports = (req, res) => {
         settled: (ab.bets || []).filter(b => b.status === "placed" && b.result).length,
         won: (ab.bets || []).filter(b => String(b.result || "").startsWith("won")).length,
         skipped: (ab.bets || []).filter(b => b.status === "skipped").length,
-        bets: (ab.bets || []).slice(-60).map(b => ({ mode: b.mode || "DRY RUN", date: b.date, time: b.time, course: b.course, horse: b.horse, status: b.status,
+        bets: (ab.bets || []).slice(-60).map(b => ({ mode: b.mode || "DRY RUN", kind: b.kind || "NAP", date: b.date, time: b.time, course: b.course, horse: b.horse, status: b.status,
             stake: b.matched ?? null, price: b.price ?? null, minutesBeforeOff: b.minutesBeforeOff ?? null, result: b.result ?? null,
             pl: b.pl ?? null, potAfter: b.potAfter ?? null, reason: b.reason ?? b.note ?? null }))
     } : null;

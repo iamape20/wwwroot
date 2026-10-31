@@ -289,7 +289,7 @@ async function load() {
             stat("Skipped", String(ab.skipped), "reason shown in the table");
         $("abBets").innerHTML = ab.bets.length
             ? `<tr><th>Date</th><th>Race (UK)</th><th>Horse</th><th class="num">Stake</th><th class="num">Price</th><th class="num">Mins before</th><th>Result</th><th class="num">P/L</th><th class="num">Pot</th></tr>` +
-              ab.bets.slice().reverse().map(b => `<tr><td>${esc(b.date)}</td><td>${ukTime(b.date, b.time)} ${esc(b.course)}</td><td>${esc(b.horse)}</td>` +
+              ab.bets.slice().reverse().map(b => `<tr><td>${esc(b.date)}</td><td>${ukTime(b.date, b.time)} ${esc(b.course)}</td><td>${esc(b.horse)}${b.kind === "EXTRA" ? ' <span class="muted">(extra)</span>' : ""}</td>` +
                 (b.status === "placed"
                     ? `<td class="num">${gbp(b.stake)}</td><td class="num">${b.price != null ? Number(b.price).toFixed(2) : "–"}</td><td class="num">${b.minutesBeforeOff ?? "–"}</td>` +
                       `<td class="${b.result ? (String(b.result).startsWith("won") ? "won" : "lost") : ""}">${esc(b.result || "awaiting result")}</td><td class="num">${b.pl != null ? gbp(b.pl) : "–"}</td><td class="num">${b.potAfter != null ? gbp(b.potAfter) : "–"}</td>`
