@@ -1,56 +1,68 @@
 {
-  "date": "2026-10-31",
-  "builtAt": "2026-10-31T09:00:06.431Z",
+  "date": "2026-11-01",
+  "builtAt": "2026-11-01T02:31:52.697Z",
   "strong": [
     {
-      "horse": "MINELLA HOLLOW",
-      "course": "Wetherby",
-      "time": "12:35",
-      "rating": "88.1",
-      "margin": "28.6",
-      "marginValue": 28.599999999999994,
-      "confidence": 87,
-      "meetingId": "122304",
+      "horse": "SONG OF THE STARS",
+      "course": "Worcester",
+      "time": "14:30",
+      "rating": "77.6",
+      "margin": "21.1",
+      "marginValue": 21.099999999999994,
+      "confidence": 75,
+      "meetingId": "122308",
+      "raceIndex": 4
+    }
+  ],
+  "moderate": [
+    {
+      "horse": "CHOCTAW NATION",
+      "course": "Curragh",
+      "time": "12:17",
+      "rating": "76.3",
+      "margin": "21.3",
+      "marginValue": 21.299999999999997,
+      "confidence": 65,
+      "meetingId": "121970",
       "raceIndex": 0
     },
     {
-      "horse": "SKERRY HILL",
-      "course": "Down Royal",
-      "time": "13:30",
-      "rating": "88.8",
-      "margin": "37.9",
-      "marginValue": 37.9,
-      "confidence": 71,
-      "meetingId": "121969",
-      "raceIndex": 1
+      "horse": "JOHNNY'S JURY",
+      "course": "Worcester",
+      "time": "13:20",
+      "rating": "88.6",
+      "margin": "18.5",
+      "marginValue": 18.5,
+      "confidence": 84,
+      "meetingId": "122308",
+      "raceIndex": 2
     }
   ],
-  "moderate": [],
   "dailyDouble": [
     {
-      "horse": "MINELLA HOLLOW",
-      "course": "Wetherby",
-      "time": "12:35",
-      "rating": "88.1",
-      "margin": "28.6",
-      "marginValue": 28.6,
-      "confidence": 87,
-      "meetingId": "122304",
-      "raceIndex": 0,
+      "horse": "SONG OF THE STARS",
+      "course": "Worcester",
+      "time": "14:30",
+      "rating": "77.6",
+      "margin": "21.1",
+      "marginValue": 21.1,
+      "confidence": 75,
+      "meetingId": "122308",
+      "raceIndex": 4,
       "tier": "Strong",
       "nap": true
     },
     {
-      "horse": "SKERRY HILL",
-      "course": "Down Royal",
-      "time": "13:30",
-      "rating": "88.8",
-      "margin": "37.9",
-      "marginValue": 37.9,
-      "confidence": 71,
-      "meetingId": "121969",
-      "raceIndex": 1,
-      "tier": "Strong"
+      "horse": "CHOCTAW NATION",
+      "course": "Curragh",
+      "time": "12:17",
+      "rating": "76.3",
+      "margin": "21.3",
+      "marginValue": 21.299999999999997,
+      "confidence": 65,
+      "meetingId": "121970",
+      "raceIndex": 0,
+      "tier": "Moderate"
     }
   ],
   "pickMode": "double"
