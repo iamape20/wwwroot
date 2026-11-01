@@ -21658,10 +21658,18 @@
       "fav": {
         "horse": "KINGS CHAMPION",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:31:15.382Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Curragh|12:52",
@@ -21719,21 +21727,40 @@
       },
       "recordedAt": "2026-11-01T12:51:09.838Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|13:13",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "13:13",
+      "horse": "CUSHENDUN",
+      "price": "22/1",
+      "runners": 8,
+      "liveHorse": "KEOPS DES BORDES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KEOPS DES BORDES",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:01:10.854Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 791,
+    "recorded": 792,
     "pick": {
-      "settled": 772,
+      "settled": 773,
       "won": 159,
-      "pl": -91.23,
-      "roi": -11.8
+      "pl": -92.23,
+      "roi": -11.9
     },
     "favourite": {
-      "settled": 770,
+      "settled": 771,
       "won": 271,
-      "pl": 7.4,
-      "roi": 1
+      "pl": 6.4,
+      "roi": 0.8
     },
     "agree": {
       "settled": 205,
@@ -21742,10 +21769,10 @@
       "roi": -0.7
     },
     "disagree": {
-      "settled": 567,
+      "settled": 568,
       "won": 72,
-      "pl": -89.81,
-      "roi": -15.8
+      "pl": -90.81,
+      "roi": -16
     }
   },
   "lastBackfill": 1793536871150
