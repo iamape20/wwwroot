@@ -4185,7 +4185,9 @@
       "rating": 89.8,
       "runners": 4,
       "recordedAt": "2026-11-01T13:21:03.300Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/10"
     },
     {
       "id": "2026-11-01|Carlisle|13:48",
@@ -4198,10 +4200,34 @@
       "runners": 4,
       "recordedAt": "2026-11-01T13:40:57.738Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Huntingdon|14:07",
+      "date": "2026-11-01",
+      "course": "Huntingdon",
+      "time": "14:07",
+      "horse": "LITTLE LADY ROCK",
+      "price": "4/11",
+      "rating": 83.8,
+      "runners": 4,
+      "recordedAt": "2026-11-01T14:01:30.550Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|14:15",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "14:15",
+      "horse": "ROC DINO",
+      "price": "11/10",
+      "rating": 77.4,
+      "runners": 6,
+      "recordedAt": "2026-11-01T14:01:30.694Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 256,
+    "recorded": 258,
     "settled": 247,
     "won": 120,
     "pl": -9.02,

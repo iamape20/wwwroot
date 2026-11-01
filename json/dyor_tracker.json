@@ -21843,10 +21843,16 @@
       "fav": {
         "horse": "BROADWAY HONEY",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-01T13:21:03.802Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|13:40",
@@ -21862,10 +21868,18 @@
       "fav": {
         "horse": "WEST AWAY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T13:31:00.057Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Carlisle|13:48",
@@ -21904,33 +21918,90 @@
       },
       "recordedAt": "2026-11-01T13:40:58.135Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Curragh|14:02",
+      "date": "2026-11-01",
+      "course": "Curragh",
+      "time": "14:02",
+      "horse": "THEREWILLBEGLORY",
+      "price": "11/2",
+      "runners": 25,
+      "liveHorse": "LADY MARY HEATH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LADY MARY HEATH",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:50:59.832Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Huntingdon|14:07",
+      "date": "2026-11-01",
+      "course": "Huntingdon",
+      "time": "14:07",
+      "horse": "LITTLE LADY ROCK",
+      "price": "4/11",
+      "runners": 4,
+      "liveHorse": "LITTLE LADY ROCK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LITTLE LADY ROCK",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:01:31.235Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|14:15",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "14:15",
+      "horse": "MINELLA EMPEROR",
+      "price": "13/2",
+      "runners": 6,
+      "liveHorse": "ROC DINO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROC DINO",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:01:31.308Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 798,
+    "recorded": 801,
     "pick": {
-      "settled": 779,
+      "settled": 781,
       "won": 159,
-      "pl": -98.23,
-      "roi": -12.6
+      "pl": -100.23,
+      "roi": -12.8
     },
     "favourite": {
-      "settled": 775,
+      "settled": 776,
       "won": 271,
-      "pl": 2.4,
-      "roi": 0.3
+      "pl": 1.4,
+      "roi": 0.2
     },
     "agree": {
-      "settled": 206,
+      "settled": 207,
       "won": 87,
-      "pl": -2.42,
-      "roi": -1.2
+      "pl": -3.42,
+      "roi": -1.6
     },
     "disagree": {
-      "settled": 573,
+      "settled": 574,
       "won": 72,
-      "pl": -95.81,
-      "roi": -16.7
+      "pl": -96.81,
+      "roi": -16.9
     }
   },
   "lastBackfill": 1793536871150
