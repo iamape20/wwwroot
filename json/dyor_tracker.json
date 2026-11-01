@@ -22417,10 +22417,18 @@
       "fav": {
         "horse": "MEETMEBYTHELAKE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T16:00:28.249Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Curragh|16:20",
@@ -22436,25 +22444,31 @@
       "fav": {
         "horse": "THREAD OF GOLD",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-01T16:10:19.305Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 818,
     "pick": {
-      "settled": 798,
+      "settled": 800,
       "won": 159,
-      "pl": -117.23,
-      "roi": -14.7
+      "pl": -119.23,
+      "roi": -14.9
     },
     "favourite": {
-      "settled": 790,
+      "settled": 791,
       "won": 271,
-      "pl": -12.6,
-      "roi": -1.6
+      "pl": -13.6,
+      "roi": -1.7
     },
     "agree": {
       "settled": 210,
@@ -22463,10 +22477,10 @@
       "roi": -3.1
     },
     "disagree": {
-      "settled": 588,
+      "settled": 590,
       "won": 72,
-      "pl": -110.81,
-      "roi": -18.8
+      "pl": -112.81,
+      "roi": -19.1
     }
   },
   "lastBackfill": 1793548231933
