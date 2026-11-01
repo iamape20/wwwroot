@@ -21533,10 +21533,16 @@
       "fav": {
         "horse": "JOYAU ALLEN",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-01T12:01:27.726Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Curragh|12:17",
@@ -21552,10 +21558,16 @@
       "fav": {
         "horse": "CHOCTAW NATION",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-11-01T12:11:06.119Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|12:22",
@@ -21571,10 +21583,18 @@
       "fav": {
         "horse": "BLACKWATER LILLY",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:11:06.141Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|12:30",
@@ -21594,21 +21614,78 @@
       },
       "recordedAt": "2026-11-01T12:21:08.384Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|12:38",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "12:38",
+      "horse": "WALKING ON A DREAM",
+      "price": "4/1",
+      "runners": 4,
+      "liveHorse": "WE'RE RED AND BLUE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WE'RE RED AND BLUE",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T12:31:15.328Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|12:45",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "12:45",
+      "horse": "BROOMFIELD ADERRA",
+      "price": "16/1",
+      "runners": 13,
+      "liveHorse": "KINGS CHAMPION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KINGS CHAMPION",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T12:31:15.382Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Curragh|12:52",
+      "date": "2026-11-01",
+      "course": "Curragh",
+      "time": "12:52",
+      "horse": "SMOKE THEM OUT",
+      "price": "7/1",
+      "runners": 13,
+      "liveHorse": "GERRIT'S GEM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GERRIT'S GEM",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T12:41:11.129Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 786,
+    "recorded": 789,
     "pick": {
-      "settled": 769,
+      "settled": 772,
       "won": 159,
-      "pl": -88.23,
-      "roi": -11.5
+      "pl": -91.23,
+      "roi": -11.8
     },
     "favourite": {
-      "settled": 768,
+      "settled": 769,
       "won": 271,
-      "pl": 9.4,
-      "roi": 1.2
+      "pl": 8.4,
+      "roi": 1.1
     },
     "agree": {
       "settled": 205,
@@ -21617,11 +21694,11 @@
       "roi": -0.7
     },
     "disagree": {
-      "settled": 564,
+      "settled": 567,
       "won": 72,
-      "pl": -86.81,
-      "roi": -15.4
+      "pl": -89.81,
+      "roi": -15.8
     }
   },
-  "lastBackfill": 1793516485546
+  "lastBackfill": 1793536871150
 }

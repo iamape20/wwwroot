@@ -4097,7 +4097,9 @@
       "rating": 76.3,
       "runners": 23,
       "recordedAt": "2026-11-01T12:11:05.793Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     },
     {
       "id": "2026-11-01|Cork|12:30",
@@ -4110,14 +4112,26 @@
       "runners": 10,
       "recordedAt": "2026-11-01T12:21:07.976Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|12:45",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "12:45",
+      "horse": "KINGS CHAMPION",
+      "price": "11/8",
+      "rating": 81.3,
+      "runners": 13,
+      "recordedAt": "2026-11-01T12:31:14.939Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 250,
+    "recorded": 251,
     "settled": 245,
     "won": 120,
     "pl": -7.02,
     "roi": -2.9
   },
-  "lastBackfill": 1793516483671
+  "lastBackfill": 1793536868676
 }
