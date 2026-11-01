@@ -4215,7 +4215,11 @@
       "rating": 83.8,
       "runners": 4,
       "recordedAt": "2026-11-01T14:01:30.550Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|14:15",
@@ -4227,7 +4231,9 @@
       "rating": 77.4,
       "runners": 6,
       "recordedAt": "2026-11-01T14:01:30.694Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-01|Worcester|14:30",
@@ -4240,14 +4246,26 @@
       "runners": 5,
       "recordedAt": "2026-11-01T14:20:57.375Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|14:50",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "14:50",
+      "horse": "LOVE ME TENDER",
+      "price": "6/5",
+      "rating": 82.9,
+      "runners": 6,
+      "recordedAt": "2026-11-01T14:40:45.816Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 259,
-    "settled": 248,
+    "recorded": 260,
+    "settled": 249,
     "won": 120,
-    "pl": -10.02,
-    "roi": -4
+    "pl": -11.02,
+    "roi": -4.4
   },
   "lastBackfill": 1793536868676
 }
