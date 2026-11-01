@@ -22313,10 +22313,16 @@
       "fav": {
         "horse": "THEATRE TOM",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T15:30:32.765Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/1"
     },
     {
       "id": "2026-11-01|Curragh|15:47",
@@ -22374,10 +22380,29 @@
       },
       "recordedAt": "2026-11-01T15:50:31.919Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|16:10",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "16:10",
+      "horse": "BLUTIQUE",
+      "price": "25/1",
+      "runners": 7,
+      "liveHorse": "MEETMEBYTHELAKE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MEETMEBYTHELAKE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T16:00:28.249Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 816,
+    "recorded": 817,
     "pick": {
       "settled": 795,
       "won": 159,
@@ -22385,10 +22410,10 @@
       "roi": -14.4
     },
     "favourite": {
-      "settled": 787,
+      "settled": 788,
       "won": 271,
-      "pl": -9.6,
-      "roi": -1.2
+      "pl": -10.6,
+      "roi": -1.3
     },
     "agree": {
       "settled": 210,

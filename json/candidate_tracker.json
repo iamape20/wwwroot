@@ -4303,7 +4303,11 @@
       "rating": 75.3,
       "runners": 9,
       "recordedAt": "2026-11-01T15:30:32.551Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|16:00",
@@ -4316,14 +4320,26 @@
       "runners": 21,
       "recordedAt": "2026-11-01T15:50:29.499Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|16:10",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "16:10",
+      "horse": "MEETMEBYTHELAKE",
+      "price": "5/4",
+      "rating": 78.8,
+      "runners": 7,
+      "recordedAt": "2026-11-01T16:00:27.945Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 264,
-    "settled": 250,
+    "recorded": 265,
+    "settled": 251,
     "won": 120,
-    "pl": -12.02,
-    "roi": -4.8
+    "pl": -13.02,
+    "roi": -5.2
   },
   "lastBackfill": 1793548229528
 }
