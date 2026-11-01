@@ -21685,10 +21685,18 @@
       "fav": {
         "horse": "GERRIT'S GEM",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:41:11.129Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|12:57",
@@ -21704,10 +21712,18 @@
       "fav": {
         "horse": "CODE NAME CUBITT",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:51:09.812Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|13:05",
@@ -21723,10 +21739,18 @@
       "fav": {
         "horse": "LENNON GROVE",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/15",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:51:09.838Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Carlisle|13:13",
@@ -21746,33 +21770,90 @@
       },
       "recordedAt": "2026-11-01T13:01:10.854Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|13:20",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "13:20",
+      "horse": "DALSTON LAD",
+      "price": "15/2",
+      "runners": 7,
+      "liveHorse": "JOHNNY'S JURY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JOHNNY'S JURY",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:11:04.780Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Curragh|13:27",
+      "date": "2026-11-01",
+      "course": "Curragh",
+      "time": "13:27",
+      "horse": "KEY WITNESS",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "EXCELLENT BELIEVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EXCELLENT BELIEVE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:21:03.776Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Huntingdon|13:32",
+      "date": "2026-11-01",
+      "course": "Huntingdon",
+      "time": "13:32",
+      "horse": "SAMUEL SPADE",
+      "price": "9/4",
+      "runners": 4,
+      "liveHorse": "BROADWAY HONEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BROADWAY HONEY",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:21:03.802Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 792,
+    "recorded": 795,
     "pick": {
-      "settled": 773,
+      "settled": 776,
       "won": 159,
-      "pl": -92.23,
-      "roi": -11.9
+      "pl": -95.23,
+      "roi": -12.3
     },
     "favourite": {
-      "settled": 771,
+      "settled": 774,
       "won": 271,
-      "pl": 6.4,
-      "roi": 0.8
+      "pl": 3.4,
+      "roi": 0.4
     },
     "agree": {
-      "settled": 205,
+      "settled": 206,
       "won": 87,
-      "pl": -1.42,
-      "roi": -0.7
+      "pl": -2.42,
+      "roi": -1.2
     },
     "disagree": {
-      "settled": 568,
+      "settled": 570,
       "won": 72,
-      "pl": -90.81,
-      "roi": -16
+      "pl": -92.81,
+      "roi": -16.3
     }
   },
   "lastBackfill": 1793536871150

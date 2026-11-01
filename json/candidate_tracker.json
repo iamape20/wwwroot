@@ -4141,7 +4141,11 @@
       "rating": 81.2,
       "runners": 19,
       "recordedAt": "2026-11-01T12:51:09.429Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Carlisle|13:13",
@@ -4154,14 +4158,38 @@
       "runners": 8,
       "recordedAt": "2026-11-01T13:01:10.439Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|13:20",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "13:20",
+      "horse": "JOHNNY'S JURY",
+      "price": "4/6",
+      "rating": 88.6,
+      "runners": 7,
+      "recordedAt": "2026-11-01T13:11:04.406Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Huntingdon|13:32",
+      "date": "2026-11-01",
+      "course": "Huntingdon",
+      "time": "13:32",
+      "horse": "BROADWAY HONEY",
+      "price": "4/5",
+      "rating": 89.8,
+      "runners": 4,
+      "recordedAt": "2026-11-01T13:21:03.300Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 253,
-    "settled": 246,
+    "recorded": 255,
+    "settled": 247,
     "won": 120,
-    "pl": -8.02,
-    "roi": -3.3
+    "pl": -9.02,
+    "roi": -3.7
   },
   "lastBackfill": 1793536868676
 }
