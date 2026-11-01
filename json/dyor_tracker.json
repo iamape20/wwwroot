@@ -21610,10 +21610,14 @@
       "fav": {
         "horse": "MARCO DU SEUIL",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-01T12:21:08.384Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
     },
     {
       "id": "2026-11-01|Carlisle|12:38",
@@ -21629,10 +21633,16 @@
       "fav": {
         "horse": "WE'RE RED AND BLUE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T12:31:15.328Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-11-01|Worcester|12:45",
@@ -21671,10 +21681,48 @@
       },
       "recordedAt": "2026-11-01T12:41:11.129Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Huntingdon|12:57",
+      "date": "2026-11-01",
+      "course": "Huntingdon",
+      "time": "12:57",
+      "horse": "TENADAAY",
+      "price": "14/1",
+      "runners": 10,
+      "liveHorse": "CODE NAME CUBITT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CODE NAME CUBITT",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T12:51:09.812Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|13:05",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "13:05",
+      "horse": "LENNON GROVE",
+      "price": "8/13",
+      "runners": 19,
+      "liveHorse": "LENNON GROVE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LENNON GROVE",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T12:51:09.838Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 789,
+    "recorded": 791,
     "pick": {
       "settled": 772,
       "won": 159,
@@ -21682,10 +21730,10 @@
       "roi": -11.8
     },
     "favourite": {
-      "settled": 769,
+      "settled": 770,
       "won": 271,
-      "pl": 8.4,
-      "roi": 1.1
+      "pl": 7.4,
+      "roi": 1
     },
     "agree": {
       "settled": 205,
