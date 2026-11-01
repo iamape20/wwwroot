@@ -21895,10 +21895,18 @@
       "fav": {
         "horse": "PAGGANE",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T13:40:58.109Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Worcester|13:55",
@@ -21914,10 +21922,18 @@
       "fav": {
         "horse": "RED OAK",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T13:40:58.135Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Curragh|14:02",
@@ -21933,10 +21949,18 @@
       "fav": {
         "horse": "LADY MARY HEATH",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T13:50:59.832Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|14:07",
@@ -21975,33 +21999,71 @@
       },
       "recordedAt": "2026-11-01T14:01:31.308Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|14:23",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "14:23",
+      "horse": "MADARA",
+      "price": "9/2",
+      "runners": 10,
+      "liveHorse": "TO CHASE A DREAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TO CHASE A DREAM",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:10:54.096Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|14:30",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "14:30",
+      "horse": "SONG OF THE STARS",
+      "price": "2/11",
+      "runners": 5,
+      "liveHorse": "SONG OF THE STARS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SONG OF THE STARS",
+        "price": "2/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:20:57.784Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 801,
+    "recorded": 803,
     "pick": {
-      "settled": 781,
+      "settled": 784,
       "won": 159,
-      "pl": -100.23,
-      "roi": -12.8
+      "pl": -103.23,
+      "roi": -13.2
     },
     "favourite": {
-      "settled": 776,
+      "settled": 779,
       "won": 271,
-      "pl": 1.4,
-      "roi": 0.2
+      "pl": -1.6,
+      "roi": -0.2
     },
     "agree": {
-      "settled": 207,
+      "settled": 208,
       "won": 87,
-      "pl": -3.42,
-      "roi": -1.6
+      "pl": -4.42,
+      "roi": -2.1
     },
     "disagree": {
-      "settled": 574,
+      "settled": 576,
       "won": 72,
-      "pl": -96.81,
-      "roi": -16.9
+      "pl": -98.81,
+      "roi": -17.2
     }
   },
   "lastBackfill": 1793536871150

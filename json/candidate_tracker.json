@@ -4199,7 +4199,11 @@
       "rating": 84.9,
       "runners": 4,
       "recordedAt": "2026-11-01T13:40:57.738Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|14:07",
@@ -4224,14 +4228,26 @@
       "runners": 6,
       "recordedAt": "2026-11-01T14:01:30.694Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|14:30",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "14:30",
+      "horse": "SONG OF THE STARS",
+      "price": "2/11",
+      "rating": 77.6,
+      "runners": 5,
+      "recordedAt": "2026-11-01T14:20:57.375Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 258,
-    "settled": 247,
+    "recorded": 259,
+    "settled": 248,
     "won": 120,
-    "pl": -9.02,
-    "roi": -3.7
+    "pl": -10.02,
+    "roi": -4
   },
   "lastBackfill": 1793536868676
 }
