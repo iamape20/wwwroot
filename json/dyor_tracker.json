@@ -21766,10 +21766,16 @@
       "fav": {
         "horse": "KEOPS DES BORDES",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-01T13:01:10.854Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Worcester|13:20",
@@ -21785,10 +21791,16 @@
       "fav": {
         "horse": "JOHNNY'S JURY",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-11-01T13:11:04.780Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Curragh|13:27",
@@ -21804,10 +21816,18 @@
       "fav": {
         "horse": "EXCELLENT BELIEVE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T13:21:03.776Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|13:32",
@@ -21827,21 +21847,78 @@
       },
       "recordedAt": "2026-11-01T13:21:03.802Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|13:40",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "13:40",
+      "horse": "WEST AWAY",
+      "price": "2/1",
+      "runners": 14,
+      "liveHorse": "WEST AWAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WEST AWAY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:31:00.057Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|13:48",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "13:48",
+      "horse": "APPLE AWAY",
+      "price": "5/2",
+      "runners": 4,
+      "liveHorse": "PAGGANE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PAGGANE",
+        "price": "8/15",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:40:58.109Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|13:55",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "13:55",
+      "horse": "RED OAK",
+      "price": "15/8",
+      "runners": 10,
+      "liveHorse": "RED OAK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "RED OAK",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T13:40:58.135Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 795,
+    "recorded": 798,
     "pick": {
-      "settled": 776,
+      "settled": 779,
       "won": 159,
-      "pl": -95.23,
-      "roi": -12.3
+      "pl": -98.23,
+      "roi": -12.6
     },
     "favourite": {
-      "settled": 774,
+      "settled": 775,
       "won": 271,
-      "pl": 3.4,
-      "roi": 0.4
+      "pl": 2.4,
+      "roi": 0.3
     },
     "agree": {
       "settled": 206,
@@ -21850,10 +21927,10 @@
       "roi": -1.2
     },
     "disagree": {
-      "settled": 570,
+      "settled": 573,
       "won": 72,
-      "pl": -92.81,
-      "roi": -16.3
+      "pl": -95.81,
+      "roi": -16.7
     }
   },
   "lastBackfill": 1793536871150
