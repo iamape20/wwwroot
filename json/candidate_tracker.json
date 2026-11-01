@@ -4319,7 +4319,11 @@
       "rating": 70.2,
       "runners": 21,
       "recordedAt": "2026-11-01T15:50:29.499Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Carlisle|16:10",
@@ -4336,10 +4340,10 @@
   ],
   "stats": {
     "recorded": 265,
-    "settled": 251,
+    "settled": 252,
     "won": 120,
-    "pl": -13.02,
-    "roi": -5.2
+    "pl": -14.02,
+    "roi": -5.6
   },
   "lastBackfill": 1793548229528
 }
