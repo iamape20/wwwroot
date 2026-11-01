@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T15:00:41.509Z",
+  "generatedAt": "2026-11-01T15:20:30.939Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,30 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "off": "15:05",
+      "horse": "HIDDEN MOUNTAIN",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-11-01",
       "course": "Cork",
       "off": "14:50",
-      "horse": "LOVE ME TENDER"
-    }
-  ],
-  "recent": [
+      "horse": "LOVE ME TENDER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-01",
       "course": "Worcester",
@@ -163,32 +179,10 @@
       "bsp": 1.4807841,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-10-30",
-      "course": "Uttoxeter",
-      "off": "15:55",
-      "horse": "LOU PRINCE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-30",
-      "course": "Newmarket",
-      "off": "15:30",
-      "horse": "CARBINE COUNTRY",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-01T15:00:41.349Z",
+    "updatedAt": "2026-11-01T15:20:30.860Z",
     "claude": {
       "races": 38,
       "won": 7,
