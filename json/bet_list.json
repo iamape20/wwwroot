@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T14:40:42.314Z",
+  "generatedAt": "2026-11-01T15:00:41.509Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Worcester",
-      "off": "14:30",
-      "horse": "SONG OF THE STARS"
+      "course": "Cork",
+      "off": "14:50",
+      "horse": "LOVE ME TENDER"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "off": "14:30",
+      "horse": "SONG OF THE STARS",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-01",
       "course": "Cork",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-10-30",
-      "course": "Newmarket",
-      "off": "13:45",
-      "horse": "SIENA STORM",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.92,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-01T14:40:42.161Z",
+    "updatedAt": "2026-11-01T15:00:41.349Z",
     "claude": {
       "races": 38,
       "won": 7,

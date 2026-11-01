@@ -22055,10 +22055,14 @@
       "fav": {
         "horse": "SONG OF THE STARS",
         "price": "2/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/6"
       },
       "recordedAt": "2026-11-01T14:20:57.784Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/6"
     },
     {
       "id": "2026-11-01|Curragh|14:37",
@@ -22074,10 +22078,16 @@
       "fav": {
         "horse": "AMELIA EARHART",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-01T14:30:50.718Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Huntingdon|14:42",
@@ -22093,10 +22103,18 @@
       "fav": {
         "horse": "JIMBO SPORT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T14:30:50.744Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Cork|14:50",
@@ -22116,21 +22134,78 @@
       },
       "recordedAt": "2026-11-01T14:40:46.205Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Carlisle|14:58",
+      "date": "2026-11-01",
+      "course": "Carlisle",
+      "time": "14:58",
+      "horse": "DOYEN QUEST",
+      "price": "11/4",
+      "runners": 3,
+      "liveHorse": "POTTERS CHARM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POTTERS CHARM",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:50:43.295Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Worcester|15:05",
+      "date": "2026-11-01",
+      "course": "Worcester",
+      "time": "15:05",
+      "horse": "HIDDEN MOUNTAIN",
+      "price": "8/13",
+      "runners": 16,
+      "liveHorse": "HIDDEN MOUNTAIN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HIDDEN MOUNTAIN",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T14:50:43.320Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-01|Curragh|15:12",
+      "date": "2026-11-01",
+      "course": "Curragh",
+      "time": "15:12",
+      "horse": "INVINCIBLE WILL",
+      "price": "8/1",
+      "runners": 21,
+      "liveHorse": "HELLORHIGHWATER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HELLORHIGHWATER",
+        "price": "11/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T15:00:46.533Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 806,
+    "recorded": 809,
     "pick": {
-      "settled": 787,
+      "settled": 789,
       "won": 159,
-      "pl": -106.23,
-      "roi": -13.5
+      "pl": -108.23,
+      "roi": -13.7
     },
     "favourite": {
-      "settled": 781,
+      "settled": 782,
       "won": 271,
-      "pl": -3.6,
-      "roi": -0.5
+      "pl": -4.6,
+      "roi": -0.6
     },
     "agree": {
       "settled": 209,
@@ -22139,10 +22214,10 @@
       "roi": -2.6
     },
     "disagree": {
-      "settled": 578,
+      "settled": 580,
       "won": 72,
-      "pl": -100.81,
-      "roi": -17.4
+      "pl": -102.81,
+      "roi": -17.7
     }
   },
   "lastBackfill": 1793536871150
