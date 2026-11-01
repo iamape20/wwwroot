@@ -2730,8 +2730,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/7",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.33,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-31|Ayr|12:43",
@@ -2745,8 +2746,9 @@
       "stake": 0,
       "result": "won",
       "isp": "10/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.04,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-31|Down Royal|13:30",
@@ -2760,8 +2762,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/13",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.2069575,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-31|Newmarket|13:40",
@@ -2775,8 +2778,9 @@
       "stake": 0,
       "result": "won",
       "isp": "6/4",
-      "bsp": null,
-      "pl": null
+      "bsp": 2.81847849,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-31|Newmarket|14:10",
@@ -2806,8 +2810,9 @@
       "stake": 0,
       "result": "won",
       "isp": "10/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.99790313,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-10-31|Southwell|17:40",
@@ -2835,5 +2840,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1793473834422
+  "lastBackfill": 1793516478251
 }
