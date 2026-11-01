@@ -22259,10 +22259,18 @@
       "fav": {
         "horse": "FOU DE TOI",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T15:10:40.426Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Carlisle|15:33",
@@ -22278,10 +22286,18 @@
       "fav": {
         "horse": "GRAND GESTE",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-01T15:20:33.584Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-01|Worcester|15:40",
@@ -22339,21 +22355,40 @@
       },
       "recordedAt": "2026-11-01T15:40:25.276Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-01|Cork|16:00",
+      "date": "2026-11-01",
+      "course": "Cork",
+      "time": "16:00",
+      "horse": "THEANNIVERSARY MAN",
+      "price": "11/2",
+      "runners": 21,
+      "liveHorse": "COLIN'S FRIEND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COLIN'S FRIEND",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-01T15:50:31.919Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 815,
+    "recorded": 816,
     "pick": {
-      "settled": 793,
+      "settled": 795,
       "won": 159,
-      "pl": -112.23,
-      "roi": -14.2
+      "pl": -114.23,
+      "roi": -14.4
     },
     "favourite": {
-      "settled": 785,
+      "settled": 787,
       "won": 271,
-      "pl": -7.6,
-      "roi": -1
+      "pl": -9.6,
+      "roi": -1.2
     },
     "agree": {
       "settled": 210,
@@ -22362,11 +22397,11 @@
       "roi": -3.1
     },
     "disagree": {
-      "settled": 583,
+      "settled": 585,
       "won": 72,
-      "pl": -105.81,
-      "roi": -18.1
+      "pl": -107.81,
+      "roi": -18.4
     }
   },
-  "lastBackfill": 1793536871150
+  "lastBackfill": 1793548231933
 }
