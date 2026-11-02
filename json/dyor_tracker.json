@@ -23186,10 +23186,16 @@
       "fav": {
         "horse": "SOVEREIGN BAY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T19:20:23.435Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-02|Chelmsford City|19:45",
@@ -23209,10 +23215,48 @@
       },
       "recordedAt": "2026-11-02T19:30:24.689Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Wolverhampton|20:00",
+      "date": "2026-11-02",
+      "course": "Wolverhampton",
+      "time": "20:00",
+      "horse": "IMOLA",
+      "price": "22/1",
+      "runners": 12,
+      "liveHorse": "STIPULATION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STIPULATION",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T19:50:25.302Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|20:15",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "20:15",
+      "horse": "RENESMEE",
+      "price": "12/1",
+      "runners": 8,
+      "liveHorse": "METALLO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "METALLO",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T20:00:22.964Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 845,
+    "recorded": 847,
     "pick": {
       "settled": 827,
       "won": 164,
@@ -23220,10 +23264,10 @@
       "roi": -15.7
     },
     "favourite": {
-      "settled": 826,
+      "settled": 827,
       "won": 284,
-      "pl": -18.59,
-      "roi": -2.3
+      "pl": -19.59,
+      "roi": -2.4
     },
     "agree": {
       "settled": 224,
@@ -23238,5 +23282,5 @@
       "roi": -18.9
     }
   },
-  "lastBackfill": 1793638235995
+  "lastBackfill": 1793649622979
 }
