@@ -23211,10 +23211,16 @@
       "fav": {
         "horse": "INTERVENTION",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T19:30:24.689Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "16/1"
     },
     {
       "id": "2026-11-02|Wolverhampton|20:00",
@@ -23230,10 +23236,18 @@
       "fav": {
         "horse": "STIPULATION",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T19:50:25.302Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Chelmsford City|20:15",
@@ -23253,21 +23267,40 @@
       },
       "recordedAt": "2026-11-02T20:00:22.964Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Wolverhampton|20:30",
+      "date": "2026-11-02",
+      "course": "Wolverhampton",
+      "time": "20:30",
+      "horse": "DAYTONA LADY",
+      "price": "7/2",
+      "runners": 10,
+      "liveHorse": "MACARONE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MACARONE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T20:20:20.728Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 847,
+    "recorded": 848,
     "pick": {
-      "settled": 827,
+      "settled": 828,
       "won": 164,
-      "pl": -129.85,
-      "roi": -15.7
+      "pl": -130.85,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 827,
+      "settled": 829,
       "won": 284,
-      "pl": -19.59,
-      "roi": -2.4
+      "pl": -21.59,
+      "roi": -2.6
     },
     "agree": {
       "settled": 224,
@@ -23276,10 +23309,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 603,
+      "settled": 604,
       "won": 74,
-      "pl": -114.25,
-      "roi": -18.9
+      "pl": -115.25,
+      "roi": -19.1
     }
   },
   "lastBackfill": 1793649622979
