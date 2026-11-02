@@ -22656,10 +22656,18 @@
       "fav": {
         "horse": "CHINESE WHISPERS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T14:01:18.612Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Plumpton|14:30",
@@ -22679,21 +22687,40 @@
       },
       "recordedAt": "2026-11-02T14:20:58.858Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Southwell|14:45",
+      "date": "2026-11-02",
+      "course": "Southwell",
+      "time": "14:45",
+      "horse": "WESTBROOKE BOY",
+      "price": "16/1",
+      "runners": 14,
+      "liveHorse": "RICES POOL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RICES POOL",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T14:30:51.480Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 825,
+    "recorded": 826,
     "pick": {
-      "settled": 809,
+      "settled": 810,
       "won": 164,
-      "pl": -111.85,
-      "roi": -13.8
+      "pl": -112.85,
+      "roi": -13.9
     },
     "favourite": {
-      "settled": 809,
+      "settled": 810,
       "won": 284,
-      "pl": -1.59,
-      "roi": -0.2
+      "pl": -2.59,
+      "roi": -0.3
     },
     "agree": {
       "settled": 217,
@@ -22702,10 +22729,10 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 592,
+      "settled": 593,
       "won": 74,
-      "pl": -103.25,
-      "roi": -17.4
+      "pl": -104.25,
+      "roi": -17.6
     }
   },
   "lastBackfill": 1793626859081
