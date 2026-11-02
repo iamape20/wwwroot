@@ -22868,31 +22868,58 @@
       "fav": {
         "horse": "THE ANTHONY GOVER",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T16:20:38.328Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|16:45",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "16:45",
+      "horse": "SHALAA ASKER",
+      "price": "16/1",
+      "runners": 7,
+      "liveHorse": "STARTLING",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STARTLING",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T16:30:40.443Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 832,
+    "recorded": 833,
     "pick": {
-      "settled": 816,
+      "settled": 817,
       "won": 164,
-      "pl": -118.85,
-      "roi": -14.6
+      "pl": -119.85,
+      "roi": -14.7
     },
     "favourite": {
-      "settled": 816,
+      "settled": 817,
       "won": 284,
-      "pl": -8.59,
-      "roi": -1.1
+      "pl": -9.59,
+      "roi": -1.2
     },
     "agree": {
-      "settled": 219,
+      "settled": 220,
       "won": 90,
-      "pl": -10.6,
-      "roi": -4.8
+      "pl": -11.6,
+      "roi": -5.3
     },
     "disagree": {
       "settled": 597,
