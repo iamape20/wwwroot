@@ -23105,10 +23105,18 @@
       "fav": {
         "horse": "WEDYAN",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T18:30:29.659Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Wolverhampton|19:00",
@@ -23124,10 +23132,18 @@
       "fav": {
         "horse": "THAT DARN CANTOR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T18:50:24.885Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Chelmsford City|19:15",
@@ -23152,28 +23168,28 @@
   "stats": {
     "recorded": 843,
     "pick": {
-      "settled": 824,
+      "settled": 826,
       "won": 164,
-      "pl": -126.85,
-      "roi": -15.4
+      "pl": -128.85,
+      "roi": -15.6
     },
     "favourite": {
-      "settled": 823,
+      "settled": 825,
       "won": 284,
-      "pl": -15.59,
-      "roi": -1.9
+      "pl": -17.59,
+      "roi": -2.1
     },
     "agree": {
-      "settled": 223,
+      "settled": 224,
       "won": 90,
-      "pl": -14.6,
-      "roi": -6.5
+      "pl": -15.6,
+      "roi": -7
     },
     "disagree": {
-      "settled": 601,
+      "settled": 602,
       "won": 74,
-      "pl": -112.25,
-      "roi": -18.7
+      "pl": -113.25,
+      "roi": -18.8
     }
   },
   "lastBackfill": 1793638235995
