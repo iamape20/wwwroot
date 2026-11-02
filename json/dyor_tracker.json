@@ -22789,10 +22789,18 @@
       "fav": {
         "horse": "UNCLE REMUS",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T15:20:47.719Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Southwell|15:45",
@@ -22812,21 +22820,40 @@
       },
       "recordedAt": "2026-11-02T15:30:55.234Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Plumpton|16:00",
+      "date": "2026-11-02",
+      "course": "Plumpton",
+      "time": "16:00",
+      "horse": "THE BOSS BEAR",
+      "price": "13/8",
+      "runners": 7,
+      "liveHorse": "THE BOSS BEAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THE BOSS BEAR",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T15:50:49.135Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 830,
+    "recorded": 831,
     "pick": {
-      "settled": 814,
+      "settled": 815,
       "won": 164,
-      "pl": -116.85,
-      "roi": -14.4
+      "pl": -117.85,
+      "roi": -14.5
     },
     "favourite": {
-      "settled": 813,
+      "settled": 814,
       "won": 284,
-      "pl": -5.59,
-      "roi": -0.7
+      "pl": -6.59,
+      "roi": -0.8
     },
     "agree": {
       "settled": 218,
@@ -22835,10 +22862,10 @@
       "roi": -4.4
     },
     "disagree": {
-      "settled": 596,
+      "settled": 597,
       "won": 74,
-      "pl": -107.25,
-      "roi": -18
+      "pl": -108.25,
+      "roi": -18.1
     }
   },
   "lastBackfill": 1793626859081
