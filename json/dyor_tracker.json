@@ -22895,19 +22895,63 @@
       "fav": {
         "horse": "STARTLING",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-02T16:30:40.443Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-02|Wolverhampton|17:00",
+      "date": "2026-11-02",
+      "course": "Wolverhampton",
+      "time": "17:00",
+      "horse": "THE DRAGON KING",
+      "price": "16/1",
+      "runners": 8,
+      "liveHorse": "MONTEZIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MONTEZIN",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T16:50:35.919Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|17:15",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "17:15",
+      "horse": "GEMMARI",
+      "price": "7/4",
+      "runners": 6,
+      "liveHorse": "GEMMARI",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GEMMARI",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T17:00:34.190Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 833,
+    "recorded": 835,
     "pick": {
-      "settled": 817,
+      "settled": 818,
       "won": 164,
-      "pl": -119.85,
-      "roi": -14.7
+      "pl": -120.85,
+      "roi": -14.8
     },
     "favourite": {
       "settled": 817,
@@ -22922,11 +22966,11 @@
       "roi": -5.3
     },
     "disagree": {
-      "settled": 597,
+      "settled": 598,
       "won": 74,
-      "pl": -108.25,
-      "roi": -18.1
+      "pl": -109.25,
+      "roi": -18.3
     }
   },
-  "lastBackfill": 1793626859081
+  "lastBackfill": 1793638235995
 }
