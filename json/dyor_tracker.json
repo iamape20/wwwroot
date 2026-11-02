@@ -22816,10 +22816,16 @@
       "fav": {
         "horse": "INCA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T15:30:55.234Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-02|Plumpton|16:00",
@@ -22835,31 +22841,58 @@
       "fav": {
         "horse": "THE BOSS BEAR",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T15:50:49.135Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-02|Wolverhampton|16:30",
+      "date": "2026-11-02",
+      "course": "Wolverhampton",
+      "time": "16:30",
+      "horse": "THE ANTHONY GOVER",
+      "price": "5/6",
+      "runners": 9,
+      "liveHorse": "THE ANTHONY GOVER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THE ANTHONY GOVER",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T16:20:38.328Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 831,
+    "recorded": 832,
     "pick": {
-      "settled": 815,
+      "settled": 816,
       "won": 164,
-      "pl": -117.85,
-      "roi": -14.5
+      "pl": -118.85,
+      "roi": -14.6
     },
     "favourite": {
-      "settled": 814,
+      "settled": 816,
       "won": 284,
-      "pl": -6.59,
-      "roi": -0.8
+      "pl": -8.59,
+      "roi": -1.1
     },
     "agree": {
-      "settled": 218,
+      "settled": 219,
       "won": 90,
-      "pl": -9.6,
-      "roi": -4.4
+      "pl": -10.6,
+      "roi": -4.8
     },
     "disagree": {
       "settled": 597,
