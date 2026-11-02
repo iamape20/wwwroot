@@ -23159,10 +23159,18 @@
       "fav": {
         "horse": "ARCHER'S GRACE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T19:00:26.054Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Wolverhampton|19:30",
@@ -23182,21 +23190,40 @@
       },
       "recordedAt": "2026-11-02T19:20:23.435Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|19:45",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "19:45",
+      "horse": "SHADES OF MAY",
+      "price": "12/1",
+      "runners": 13,
+      "liveHorse": "INTERVENTION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INTERVENTION",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T19:30:24.689Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 844,
+    "recorded": 845,
     "pick": {
-      "settled": 826,
+      "settled": 827,
       "won": 164,
-      "pl": -128.85,
-      "roi": -15.6
+      "pl": -129.85,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 825,
+      "settled": 826,
       "won": 284,
-      "pl": -17.59,
-      "roi": -2.1
+      "pl": -18.59,
+      "roi": -2.3
     },
     "agree": {
       "settled": 224,
@@ -23205,10 +23232,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 602,
+      "settled": 603,
       "won": 74,
-      "pl": -113.25,
-      "roi": -18.8
+      "pl": -114.25,
+      "roi": -18.9
     }
   },
   "lastBackfill": 1793638235995
