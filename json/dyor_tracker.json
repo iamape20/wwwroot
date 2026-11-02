@@ -22550,10 +22550,16 @@
       "fav": {
         "horse": "LAW OF SUPPLY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T13:01:00.537Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/1"
     },
     {
       "id": "2026-11-02|Plumpton|13:30",
@@ -22573,10 +22579,29 @@
       },
       "recordedAt": "2026-11-02T13:20:57.537Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Southwell|13:45",
+      "date": "2026-11-02",
+      "course": "Southwell",
+      "time": "13:45",
+      "horse": "KALKAROO",
+      "price": "11/8",
+      "runners": 5,
+      "liveHorse": "KALKAROO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KALKAROO",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T13:30:56.424Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 821,
+    "recorded": 822,
     "pick": {
       "settled": 806,
       "won": 164,
@@ -22584,10 +22609,10 @@
       "roi": -13.5
     },
     "favourite": {
-      "settled": 805,
+      "settled": 806,
       "won": 284,
-      "pl": 2.41,
-      "roi": 0.3
+      "pl": 1.41,
+      "roi": 0.2
     },
     "agree": {
       "settled": 214,
@@ -22602,5 +22627,5 @@
       "roi": -17.4
     }
   },
-  "lastBackfill": 1793602879329
+  "lastBackfill": 1793626859081
 }
