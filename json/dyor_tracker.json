@@ -22602,10 +22602,18 @@
       "fav": {
         "horse": "KALKAROO",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T13:30:56.424Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Plumpton|14:00",
@@ -22625,27 +22633,46 @@
       },
       "recordedAt": "2026-11-02T13:50:58.844Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Southwell|14:15",
+      "date": "2026-11-02",
+      "course": "Southwell",
+      "time": "14:15",
+      "horse": "CHIQUITA MILANO",
+      "price": "25/1",
+      "runners": 12,
+      "liveHorse": "CHINESE WHISPERS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHINESE WHISPERS",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T14:01:18.612Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 823,
+    "recorded": 824,
     "pick": {
-      "settled": 807,
+      "settled": 808,
       "won": 164,
-      "pl": -109.85,
-      "roi": -13.6
+      "pl": -110.85,
+      "roi": -13.7
     },
     "favourite": {
-      "settled": 807,
+      "settled": 808,
       "won": 284,
-      "pl": 0.41,
-      "roi": 0.1
+      "pl": -0.59,
+      "roi": -0.1
     },
     "agree": {
-      "settled": 215,
+      "settled": 216,
       "won": 90,
-      "pl": -6.6,
-      "roi": -3.1
+      "pl": -7.6,
+      "roi": -3.5
     },
     "disagree": {
       "settled": 592,
