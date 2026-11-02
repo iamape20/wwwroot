@@ -22575,10 +22575,18 @@
       "fav": {
         "horse": "BAILLY'S COMET",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T13:20:57.537Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Southwell|13:45",
@@ -22598,27 +22606,46 @@
       },
       "recordedAt": "2026-11-02T13:30:56.424Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Plumpton|14:00",
+      "date": "2026-11-02",
+      "course": "Plumpton",
+      "time": "14:00",
+      "horse": "HIERO SPORT",
+      "price": "7/2",
+      "runners": 9,
+      "liveHorse": "HIERO SPORT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HIERO SPORT",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T13:50:58.844Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 822,
+    "recorded": 823,
     "pick": {
-      "settled": 806,
+      "settled": 807,
       "won": 164,
-      "pl": -108.85,
-      "roi": -13.5
+      "pl": -109.85,
+      "roi": -13.6
     },
     "favourite": {
-      "settled": 806,
+      "settled": 807,
       "won": 284,
-      "pl": 1.41,
-      "roi": 0.2
+      "pl": 0.41,
+      "roi": 0.1
     },
     "agree": {
-      "settled": 214,
+      "settled": 215,
       "won": 90,
-      "pl": -5.6,
-      "roi": -2.6
+      "pl": -6.6,
+      "roi": -3.1
     },
     "disagree": {
       "settled": 592,
