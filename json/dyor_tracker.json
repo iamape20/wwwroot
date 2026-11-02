@@ -23001,10 +23001,16 @@
       "fav": {
         "horse": "ROCSANE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T17:30:35.219Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "14/1"
     },
     {
       "id": "2026-11-02|Wolverhampton|18:00",
@@ -23020,10 +23026,18 @@
       "fav": {
         "horse": "CAVAN LADY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T17:50:31.784Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Chelmsford City|18:15",
@@ -23043,27 +23057,46 @@
       },
       "recordedAt": "2026-11-02T18:00:33.563Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Wolverhampton|18:30",
+      "date": "2026-11-02",
+      "course": "Wolverhampton",
+      "time": "18:30",
+      "horse": "WOSTA",
+      "price": "1/3",
+      "runners": 10,
+      "liveHorse": "WOSTA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WOSTA",
+        "price": "1/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T18:20:29.390Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 839,
+    "recorded": 840,
     "pick": {
-      "settled": 821,
+      "settled": 822,
       "won": 164,
-      "pl": -123.85,
-      "roi": -15.1
+      "pl": -124.85,
+      "roi": -15.2
     },
     "favourite": {
-      "settled": 820,
+      "settled": 822,
       "won": 284,
-      "pl": -12.59,
-      "roi": -1.5
+      "pl": -14.59,
+      "roi": -1.8
     },
     "agree": {
-      "settled": 221,
+      "settled": 222,
       "won": 90,
-      "pl": -12.6,
-      "roi": -5.7
+      "pl": -13.6,
+      "roi": -6.1
     },
     "disagree": {
       "settled": 600,
