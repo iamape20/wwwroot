@@ -22683,10 +22683,18 @@
       "fav": {
         "horse": "MALDINI MILANO",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T14:20:58.858Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Southwell|14:45",
@@ -22702,25 +22710,71 @@
       "fav": {
         "horse": "RICES POOL",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T14:30:51.480Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-02|Plumpton|15:00",
+      "date": "2026-11-02",
+      "course": "Plumpton",
+      "time": "15:00",
+      "horse": "JUBILANT",
+      "price": "11/8",
+      "runners": 6,
+      "liveHorse": "JUBILANT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JUBILANT",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T14:50:51.585Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-02|Southwell|15:15",
+      "date": "2026-11-02",
+      "course": "Southwell",
+      "time": "15:15",
+      "horse": "DARTMOUTH ROSE",
+      "price": "5/1",
+      "runners": 8,
+      "liveHorse": "BLUE MARVEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLUE MARVEL",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T15:00:54.459Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 826,
+    "recorded": 828,
     "pick": {
-      "settled": 810,
+      "settled": 812,
       "won": 164,
-      "pl": -112.85,
-      "roi": -13.9
+      "pl": -114.85,
+      "roi": -14.1
     },
     "favourite": {
-      "settled": 810,
+      "settled": 812,
       "won": 284,
-      "pl": -2.59,
-      "roi": -0.3
+      "pl": -4.59,
+      "roi": -0.6
     },
     "agree": {
       "settled": 217,
@@ -22729,10 +22783,10 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 593,
+      "settled": 595,
       "won": 74,
-      "pl": -104.25,
-      "roi": -17.6
+      "pl": -106.25,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1793626859081
