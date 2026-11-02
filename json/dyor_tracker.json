@@ -22947,10 +22947,18 @@
       "fav": {
         "horse": "GEMMARI",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T17:00:34.190Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Wolverhampton|17:30",
@@ -22966,37 +22974,64 @@
       "fav": {
         "horse": "PETER THE WOLF",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T17:20:31.511Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|17:45",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "17:45",
+      "horse": "ANNA BELARDO",
+      "price": "25/1",
+      "runners": 12,
+      "liveHorse": "ROCSANE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROCSANE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T17:30:35.219Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 836,
+    "recorded": 837,
     "pick": {
-      "settled": 819,
+      "settled": 821,
       "won": 164,
-      "pl": -121.85,
-      "roi": -14.9
+      "pl": -123.85,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 818,
+      "settled": 820,
       "won": 284,
-      "pl": -10.59,
-      "roi": -1.3
+      "pl": -12.59,
+      "roi": -1.5
     },
     "agree": {
-      "settled": 220,
+      "settled": 221,
       "won": 90,
-      "pl": -11.6,
-      "roi": -5.3
+      "pl": -12.6,
+      "roi": -5.7
     },
     "disagree": {
-      "settled": 599,
+      "settled": 600,
       "won": 74,
-      "pl": -110.25,
-      "roi": -18.4
+      "pl": -111.25,
+      "roi": -18.5
     }
   },
   "lastBackfill": 1793638235995
