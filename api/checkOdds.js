@@ -35,10 +35,13 @@ function getSlug(name) {
 // favourite only 56% of the time (real SP fav won 35.1%, forecast fav
 // 27.7%). Real prices are on the race's own racecard page as
 // rides[].bookmakerOdds. Consensus = median across the listed bookmakers,
-// kept as one of their real fractional prices.
+// kept as one of their real fractional prices. Real prices only: a bookmaker
+// can also list an SP-only market ("SP", decimalOdds 0), which sorted first and
+// made the median "SP" - found 2026-11-02: 3 of 6 quotes per Chelmsford runner
+// were SP, so the whole meeting was rated with no prices.
 function consensusPrice(bookmakerOdds) {
     const quotes = (bookmakerOdds || [])
-        .filter(b => b && b.fractionalOdds && Number.isFinite(Number(b.decimalOdds)))
+        .filter(b => b && b.fractionalOdds && Number(b.decimalOdds) > 1)
         .sort((a, b) => Number(a.decimalOdds) - Number(b.decimalOdds));
     if (!quotes.length) return null;
     return quotes[Math.floor((quotes.length - 1) / 2)].fractionalOdds;
