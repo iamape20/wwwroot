@@ -23053,10 +23053,16 @@
       "fav": {
         "horse": "BLUE PETE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-02T18:00:33.563Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Wolverhampton|18:30",
@@ -23076,15 +23082,34 @@
       },
       "recordedAt": "2026-11-02T18:20:29.390Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-02|Chelmsford City|18:45",
+      "date": "2026-11-02",
+      "course": "Chelmsford City",
+      "time": "18:45",
+      "horse": "WEDYAN",
+      "price": "10/11",
+      "runners": 12,
+      "liveHorse": "WEDYAN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WEDYAN",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-02T18:30:29.659Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 840,
+    "recorded": 841,
     "pick": {
-      "settled": 822,
+      "settled": 823,
       "won": 164,
-      "pl": -124.85,
-      "roi": -15.2
+      "pl": -125.85,
+      "roi": -15.3
     },
     "favourite": {
       "settled": 822,
@@ -23099,10 +23124,10 @@
       "roi": -6.1
     },
     "disagree": {
-      "settled": 600,
+      "settled": 601,
       "won": 74,
-      "pl": -111.25,
-      "roi": -18.5
+      "pl": -112.25,
+      "roi": -18.7
     }
   },
   "lastBackfill": 1793638235995

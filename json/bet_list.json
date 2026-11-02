@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T18:20:27.699Z",
+  "generatedAt": "2026-11-02T18:40:24.685Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Wolverhampton",
+      "off": "18:30",
+      "horse": "WOSTA"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-01",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-02T18:20:27.623Z",
+    "updatedAt": "2026-11-02T18:40:24.598Z",
     "claude": {
       "races": 38,
       "won": 7,
