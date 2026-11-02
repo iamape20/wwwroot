@@ -23263,10 +23263,18 @@
       "fav": {
         "horse": "METALLO",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-02T20:00:22.964Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-02|Wolverhampton|20:30",
@@ -23282,25 +23290,31 @@
       "fav": {
         "horse": "MACARONE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-11-02T20:20:20.728Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 848,
     "pick": {
-      "settled": 828,
+      "settled": 830,
       "won": 164,
-      "pl": -130.85,
-      "roi": -15.8
+      "pl": -132.85,
+      "roi": -16
     },
     "favourite": {
-      "settled": 829,
+      "settled": 830,
       "won": 284,
-      "pl": -21.59,
-      "roi": -2.6
+      "pl": -22.59,
+      "roi": -2.7
     },
     "agree": {
       "settled": 224,
@@ -23309,10 +23323,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 604,
+      "settled": 606,
       "won": 74,
-      "pl": -115.25,
-      "roi": -19.1
+      "pl": -117.25,
+      "roi": -19.3
     }
   },
   "lastBackfill": 1793649622979
