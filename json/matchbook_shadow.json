@@ -7332,27 +7332,80 @@
       "marketVolume": 812
     },
     "lastBeforeOff": {
-      "at": "2026-11-03T09:00:58.337Z",
+      "at": "2026-11-03T09:21:08.720Z",
       "eventId": 34757483791301024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.27,
-      "available": 2.01,
+      "bestBack": 1.25,
+      "available": 9.03,
       "depth": [
         [
-          1.27,
-          2.01
-        ],
-        [
-          1.26,
-          2.01
-        ],
-        [
           1.25,
-          13.9
+          9.03
+        ],
+        [
+          1.24,
+          17.91
+        ],
+        [
+          1.23,
+          19.92
         ]
       ],
-      "marketVolume": 6127
+      "marketVolume": 8259
+    }
+  },
+  "BEST|2026-11-03|Warwick|13:28|TRIGG": {
+    "type": "BEST",
+    "date": "2026-11-03",
+    "course": "Warwick",
+    "time": "13:28",
+    "horse": "TRIGG",
+    "atReveal": {
+      "at": "2026-11-03T09:11:05.728Z",
+      "eventId": 34757483759502070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.12,
+      "available": 1.54,
+      "depth": [
+        [
+          2.12,
+          1.54
+        ],
+        [
+          2.1,
+          7.4
+        ],
+        [
+          2.08,
+          7.71
+        ]
+      ],
+      "marketVolume": 14513
+    },
+    "lastBeforeOff": {
+      "at": "2026-11-03T09:21:08.724Z",
+      "eventId": 34757483759502070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.1,
+      "available": 11.47,
+      "depth": [
+        [
+          2.1,
+          11.47
+        ],
+        [
+          2.08,
+          5.61
+        ],
+        [
+          2.06,
+          11.42
+        ]
+      ],
+      "marketVolume": 16586
     }
   }
 }
