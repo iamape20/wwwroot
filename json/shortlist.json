@@ -1,20 +1,19 @@
 {
   "date": "2026-11-03",
-  "builtAt": "2026-11-03T02:28:24.229Z",
-  "strong": [
+  "builtAt": "2026-11-03T09:00:06.345Z",
+  "strong": [],
+  "moderate": [
     {
       "horse": "BURK FLIGHT",
       "course": "Lingfield",
       "time": "13:02",
       "rating": "64.5",
-      "margin": "19.0",
-      "marginValue": 19,
-      "confidence": 53,
+      "margin": "14.1",
+      "marginValue": 14.100000000000001,
+      "confidence": 63,
       "meetingId": "122355",
       "raceIndex": 0
-    }
-  ],
-  "moderate": [
+    },
     {
       "horse": "MOMENT OF LIGHT",
       "course": "Sedgefield",
@@ -27,12 +26,23 @@
       "raceIndex": 1
     },
     {
+      "horse": "TRIGG",
+      "course": "Warwick",
+      "time": "13:28",
+      "rating": "97.5",
+      "margin": "34.1",
+      "marginValue": 34.1,
+      "confidence": 87,
+      "meetingId": "122356",
+      "raceIndex": 2
+    },
+    {
       "horse": "BON BON FIZZ",
       "course": "Fairyhouse",
       "time": "13:45",
       "rating": "81.1",
-      "margin": "19.8",
-      "marginValue": 19.799999999999997,
+      "margin": "18.6",
+      "marginValue": 18.599999999999994,
       "confidence": 74,
       "meetingId": "122376",
       "raceIndex": 3
@@ -53,16 +63,16 @@
       "nap": true
     },
     {
-      "horse": "BURK FLIGHT",
-      "course": "Lingfield",
-      "time": "13:02",
-      "rating": "64.5",
-      "margin": "19.0",
-      "marginValue": 19,
-      "confidence": 53,
-      "meetingId": "122355",
-      "raceIndex": 0,
-      "tier": "Strong"
+      "horse": "TRIGG",
+      "course": "Warwick",
+      "time": "13:28",
+      "rating": "97.5",
+      "margin": "34.1",
+      "marginValue": 34.1,
+      "confidence": 87,
+      "meetingId": "122356",
+      "raceIndex": 2,
+      "tier": "Moderate"
     }
   ],
   "pickMode": "double"
