@@ -24166,25 +24166,33 @@
       "fav": {
         "horse": "STARMADE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T19:20:25.682Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 881,
     "pick": {
-      "settled": 861,
+      "settled": 862,
       "won": 169,
-      "pl": -107.87,
-      "roi": -12.5
+      "pl": -108.87,
+      "roi": -12.6
     },
     "favourite": {
-      "settled": 851,
+      "settled": 852,
       "won": 288,
-      "pl": -31.64,
-      "roi": -3.7
+      "pl": -32.64,
+      "roi": -3.8
     },
     "agree": {
       "settled": 228,
@@ -24193,11 +24201,11 @@
       "roi": -8.6
     },
     "disagree": {
-      "settled": 633,
+      "settled": 634,
       "won": 79,
-      "pl": -88.27,
-      "roi": -13.9
+      "pl": -89.27,
+      "roi": -14.1
     }
   },
-  "lastBackfill": 1793722830997
+  "lastBackfill": 1793734224995
 }
