@@ -24112,25 +24112,33 @@
       "fav": {
         "horse": "SAM'S XPRESS",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T18:20:26.379Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 879,
     "pick": {
-      "settled": 859,
+      "settled": 860,
       "won": 169,
-      "pl": -105.87,
-      "roi": -12.3
+      "pl": -106.87,
+      "roi": -12.4
     },
     "favourite": {
-      "settled": 849,
+      "settled": 850,
       "won": 288,
-      "pl": -29.64,
-      "roi": -3.5
+      "pl": -30.64,
+      "roi": -3.6
     },
     "agree": {
       "settled": 227,
@@ -24139,10 +24147,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 632,
+      "settled": 633,
       "won": 79,
-      "pl": -87.27,
-      "roi": -13.8
+      "pl": -88.27,
+      "roi": -13.9
     }
   },
   "lastBackfill": 1793722830997
