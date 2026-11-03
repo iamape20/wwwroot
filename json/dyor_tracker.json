@@ -23729,10 +23729,16 @@
       "fav": {
         "horse": "PLAYFUL FOX",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "non_runner"
       },
       "recordedAt": "2026-11-03T14:30:55.529Z",
-      "stake": 1
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "non_runner"
     },
     {
       "id": "2026-11-03|Lingfield|14:47",
@@ -23748,10 +23754,18 @@
       "fav": {
         "horse": "AWAY FOR THE NIGHT",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T14:40:58.033Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|14:55",
@@ -23771,21 +23785,59 @@
       },
       "recordedAt": "2026-11-03T14:40:58.060Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Sedgefield|15:04",
+      "date": "2026-11-03",
+      "course": "Sedgefield",
+      "time": "15:04",
+      "horse": "CADILLAC RANCH",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "GINTIME",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GINTIME",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:50:52.557Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Warwick|15:13",
+      "date": "2026-11-03",
+      "course": "Warwick",
+      "time": "15:13",
+      "horse": "BAHTIYAR",
+      "price": "11/4",
+      "runners": 3,
+      "liveHorse": "I LOVE YOU SIVOLA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I LOVE YOU SIVOLA",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:00:48.938Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 866,
+    "recorded": 868,
     "pick": {
-      "settled": 847,
+      "settled": 848,
       "won": 169,
-      "pl": -93.87,
-      "roi": -11.1
+      "pl": -94.87,
+      "roi": -11.2
     },
     "favourite": {
-      "settled": 843,
+      "settled": 844,
       "won": 288,
-      "pl": -23.64,
-      "roi": -2.8
+      "pl": -24.64,
+      "roi": -2.9
     },
     "agree": {
       "settled": 227,
@@ -23794,10 +23846,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 620,
+      "settled": 621,
       "won": 79,
-      "pl": -75.27,
-      "roi": -12.1
+      "pl": -76.27,
+      "roi": -12.3
     }
   },
   "lastBackfill": 1793711467485
