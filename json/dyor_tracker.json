@@ -23883,10 +23883,16 @@
       "fav": {
         "horse": "KING OF THE GREYS",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-03T15:20:59.531Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Sedgefield|15:39",
@@ -23902,10 +23908,16 @@
       "fav": {
         "horse": "LUCKIE DEVIL",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-03T15:30:44.649Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|15:48",
@@ -23921,19 +23933,63 @@
       "fav": {
         "horse": "BALLYMOREEN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-03T15:40:33.913Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-03|Lingfield|15:57",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "15:57",
+      "horse": "MERSEY STREET",
+      "price": "18/1",
+      "runners": 7,
+      "liveHorse": "A GREAT EXCUSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "A GREAT EXCUSE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:50:34.361Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|16:04",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "16:04",
+      "horse": "SMACKWATER JACK",
+      "price": "12/1",
+      "runners": 12,
+      "liveHorse": "PRINCESS FELICIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRINCESS FELICIA",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:50:34.375Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 872,
+    "recorded": 874,
     "pick": {
-      "settled": 851,
+      "settled": 854,
       "won": 169,
-      "pl": -97.87,
-      "roi": -11.5
+      "pl": -100.87,
+      "roi": -11.8
     },
     "favourite": {
       "settled": 846,
@@ -23948,10 +24004,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 624,
+      "settled": 627,
       "won": 79,
-      "pl": -79.27,
-      "roi": -12.7
+      "pl": -82.27,
+      "roi": -13.1
     }
   },
   "lastBackfill": 1793711467485
