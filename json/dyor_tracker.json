@@ -23369,10 +23369,18 @@
       "fav": {
         "horse": "MISTYBURN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T12:21:11.786Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Sedgefield|12:44",
@@ -23388,10 +23396,14 @@
       "fav": {
         "horse": "JETEYE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-03T12:31:11.352Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-11-03|Warwick|12:53",
@@ -23411,27 +23423,65 @@
       },
       "recordedAt": "2026-11-03T12:41:09.296Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Lingfield|13:02",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "13:02",
+      "horse": "CHEESE",
+      "price": "12/1",
+      "runners": 8,
+      "liveHorse": "BURK FLIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BURK FLIGHT",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T12:51:08.251Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|13:10",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "13:10",
+      "horse": "BELLE NUIT",
+      "price": "12/1",
+      "runners": 13,
+      "liveHorse": "MAXMINELLI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAXMINELLI",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:01:12.855Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 852,
+    "recorded": 854,
     "pick": {
-      "settled": 836,
+      "settled": 837,
       "won": 169,
-      "pl": -82.87,
-      "roi": -9.9
+      "pl": -83.87,
+      "roi": -10
     },
     "favourite": {
-      "settled": 835,
+      "settled": 836,
       "won": 288,
-      "pl": -15.64,
-      "roi": -1.9
+      "pl": -16.64,
+      "roi": -2
     },
     "agree": {
-      "settled": 224,
+      "settled": 225,
       "won": 90,
-      "pl": -15.6,
-      "roi": -7
+      "pl": -16.6,
+      "roi": -7.4
     },
     "disagree": {
       "settled": 612,
