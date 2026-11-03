@@ -24062,25 +24062,52 @@
       "fav": {
         "horse": "AMANDARI",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T17:20:23.001Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|18:00",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "horse": "RED BLUE POINT",
+      "price": "2/5",
+      "runners": 8,
+      "liveHorse": "RED BLUE POINT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "RED BLUE POINT",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T17:50:24.548Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 877,
+    "recorded": 878,
     "pick": {
-      "settled": 858,
+      "settled": 859,
       "won": 169,
-      "pl": -104.87,
-      "roi": -12.2
+      "pl": -105.87,
+      "roi": -12.3
     },
     "favourite": {
-      "settled": 848,
+      "settled": 849,
       "won": 288,
-      "pl": -28.64,
-      "roi": -3.4
+      "pl": -29.64,
+      "roi": -3.5
     },
     "agree": {
       "settled": 227,
@@ -24089,10 +24116,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 631,
+      "settled": 632,
       "won": 79,
-      "pl": -86.27,
-      "roi": -13.7
+      "pl": -87.27,
+      "roi": -13.8
     }
   },
   "lastBackfill": 1793722830997
