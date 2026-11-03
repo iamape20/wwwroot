@@ -4534,7 +4534,11 @@
       "rating": 82.7,
       "runners": 8,
       "recordedAt": "2026-11-03T13:11:07.110Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/9",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|13:28",
@@ -4547,14 +4551,26 @@
       "runners": 6,
       "recordedAt": "2026-11-03T13:21:00.865Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|13:45",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "13:45",
+      "horse": "BON BON FIZZ",
+      "price": "11/8",
+      "rating": 81.1,
+      "runners": 15,
+      "recordedAt": "2026-11-03T13:41:05.134Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 277,
-    "settled": 270,
+    "recorded": 278,
+    "settled": 271,
     "won": 129,
-    "pl": -14.31,
-    "roi": -5.3
+    "pl": -15.31,
+    "roi": -5.7
   },
   "lastBackfill": 1793709666900
 }

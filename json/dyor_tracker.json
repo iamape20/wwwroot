@@ -23473,10 +23473,18 @@
       "fav": {
         "horse": "MAXMINELLI",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T13:01:12.855Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Sedgefield|13:19",
@@ -23492,10 +23500,18 @@
       "fav": {
         "horse": "MOMENT OF LIGHT",
         "price": "2/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T13:11:07.460Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/9",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|13:28",
@@ -23515,33 +23531,90 @@
       },
       "recordedAt": "2026-11-03T13:21:01.247Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Lingfield|13:37",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "13:37",
+      "horse": "ANALOGICAL",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "THE PERFECT POET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE PERFECT POET",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:31:05.397Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|13:45",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "13:45",
+      "horse": "BUD FOX",
+      "price": "9/2",
+      "runners": 15,
+      "liveHorse": "BON BON FIZZ",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BON BON FIZZ",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:31:05.421Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Sedgefield|13:54",
+      "date": "2026-11-03",
+      "course": "Sedgefield",
+      "time": "13:54",
+      "horse": "YANKA BLUE",
+      "price": "28/1",
+      "runners": 5,
+      "liveHorse": "ROXY RUSSET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROXY RUSSET",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:41:05.471Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 856,
+    "recorded": 859,
     "pick": {
-      "settled": 839,
+      "settled": 841,
       "won": 169,
-      "pl": -85.87,
-      "roi": -10.2
+      "pl": -87.87,
+      "roi": -10.4
     },
     "favourite": {
-      "settled": 838,
+      "settled": 840,
       "won": 288,
-      "pl": -18.64,
-      "roi": -2.2
+      "pl": -20.64,
+      "roi": -2.5
     },
     "agree": {
-      "settled": 225,
+      "settled": 226,
       "won": 90,
-      "pl": -16.6,
-      "roi": -7.4
+      "pl": -17.6,
+      "roi": -7.8
     },
     "disagree": {
-      "settled": 614,
+      "settled": 615,
       "won": 79,
-      "pl": -69.27,
-      "roi": -11.3
+      "pl": -70.27,
+      "roi": -11.4
     }
   },
   "lastBackfill": 1793711467485
