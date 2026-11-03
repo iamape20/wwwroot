@@ -24139,31 +24139,58 @@
       "fav": {
         "horse": "POLITELY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T18:50:22.629Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|19:30",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "19:30",
+      "horse": "TWILIGHT FUN",
+      "price": "14/1",
+      "runners": 12,
+      "liveHorse": "STARMADE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STARMADE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T19:20:25.682Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 880,
+    "recorded": 881,
     "pick": {
-      "settled": 860,
+      "settled": 861,
       "won": 169,
-      "pl": -106.87,
-      "roi": -12.4
+      "pl": -107.87,
+      "roi": -12.5
     },
     "favourite": {
-      "settled": 850,
+      "settled": 851,
       "won": 288,
-      "pl": -30.64,
-      "roi": -3.6
+      "pl": -31.64,
+      "roi": -3.7
     },
     "agree": {
-      "settled": 227,
+      "settled": 228,
       "won": 90,
-      "pl": -18.6,
-      "roi": -8.2
+      "pl": -19.6,
+      "roi": -8.6
     },
     "disagree": {
       "settled": 633,
