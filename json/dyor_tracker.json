@@ -23527,10 +23527,16 @@
       "fav": {
         "horse": "TRIGG",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-11-03T13:21:01.247Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Lingfield|13:37",
@@ -23546,10 +23552,16 @@
       "fav": {
         "horse": "THE PERFECT POET",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/5"
       },
       "recordedAt": "2026-11-03T13:31:05.397Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|13:45",
@@ -23588,15 +23600,53 @@
       },
       "recordedAt": "2026-11-03T13:41:05.471Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Warwick|14:03",
+      "date": "2026-11-03",
+      "course": "Warwick",
+      "time": "14:03",
+      "horse": "BERRY EDGE",
+      "price": "9/4",
+      "runners": 11,
+      "liveHorse": "BERRY EDGE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BERRY EDGE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:51:02.613Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Lingfield|14:12",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "14:12",
+      "horse": "LITTLE LADY LUCY",
+      "price": "12/1",
+      "runners": 9,
+      "liveHorse": "CHOSEN HERO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHOSEN HERO",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:01:09.160Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 859,
+    "recorded": 861,
     "pick": {
-      "settled": 841,
+      "settled": 843,
       "won": 169,
-      "pl": -87.87,
-      "roi": -10.4
+      "pl": -89.87,
+      "roi": -10.7
     },
     "favourite": {
       "settled": 840,
@@ -23611,10 +23661,10 @@
       "roi": -7.8
     },
     "disagree": {
-      "settled": 615,
+      "settled": 617,
       "won": 79,
-      "pl": -70.27,
-      "roi": -11.4
+      "pl": -72.27,
+      "roi": -11.7
     }
   },
   "lastBackfill": 1793711467485
