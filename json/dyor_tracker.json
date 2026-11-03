@@ -24193,19 +24193,44 @@
       "fav": {
         "horse": "SAXOPHONIC",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-03T19:50:26.955Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|20:30",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "20:30",
+      "horse": "CARAWAY",
+      "price": "11/4",
+      "runners": 8,
+      "liveHorse": "BARACHIEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BARACHIEL",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T20:20:26.767Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 882,
+    "recorded": 883,
     "pick": {
-      "settled": 862,
+      "settled": 863,
       "won": 169,
-      "pl": -108.87,
-      "roi": -12.6
+      "pl": -109.87,
+      "roi": -12.7
     },
     "favourite": {
       "settled": 852,
@@ -24220,10 +24245,10 @@
       "roi": -8.6
     },
     "disagree": {
-      "settled": 634,
+      "settled": 635,
       "won": 79,
-      "pl": -89.27,
-      "roi": -14.1
+      "pl": -90.27,
+      "roi": -14.2
     }
   },
   "lastBackfill": 1793734224995
