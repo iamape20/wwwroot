@@ -23577,10 +23577,16 @@
       "fav": {
         "horse": "BON BON FIZZ",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T13:31:05.421Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-03|Sedgefield|13:54",
@@ -23596,10 +23602,16 @@
       "fav": {
         "horse": "ROXY RUSSET",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-03T13:41:05.471Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|14:03",
@@ -23615,10 +23627,18 @@
       "fav": {
         "horse": "BERRY EDGE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T13:51:02.613Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Lingfield|14:12",
@@ -23638,33 +23658,71 @@
       },
       "recordedAt": "2026-11-03T14:01:09.160Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|14:20",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "14:20",
+      "horse": "QUINTA DO LAGO",
+      "price": "1/1",
+      "runners": 5,
+      "liveHorse": "QUINTA DO LAGO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "QUINTA DO LAGO",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:10:50.724Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Sedgefield|14:29",
+      "date": "2026-11-03",
+      "course": "Sedgefield",
+      "time": "14:29",
+      "horse": "CLEAN GETAWAY",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "TREATY BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TREATY BOY",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:20:55.932Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 861,
+    "recorded": 863,
     "pick": {
-      "settled": 843,
+      "settled": 845,
       "won": 169,
-      "pl": -89.87,
-      "roi": -10.7
+      "pl": -91.87,
+      "roi": -10.9
     },
     "favourite": {
-      "settled": 840,
+      "settled": 842,
       "won": 288,
-      "pl": -20.64,
-      "roi": -2.5
+      "pl": -22.64,
+      "roi": -2.7
     },
     "agree": {
-      "settled": 226,
+      "settled": 227,
       "won": 90,
-      "pl": -17.6,
-      "roi": -7.8
+      "pl": -18.6,
+      "roi": -8.2
     },
     "disagree": {
-      "settled": 617,
+      "settled": 618,
       "won": 79,
-      "pl": -72.27,
-      "roi": -11.7
+      "pl": -73.27,
+      "roi": -11.9
     }
   },
   "lastBackfill": 1793711467485

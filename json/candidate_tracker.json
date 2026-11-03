@@ -4564,7 +4564,11 @@
       "rating": 81.1,
       "runners": 15,
       "recordedAt": "2026-11-03T13:41:05.134Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Lingfield|14:12",
@@ -4577,14 +4581,26 @@
       "runners": 9,
       "recordedAt": "2026-11-03T14:01:08.704Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|14:20",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "14:20",
+      "horse": "QUINTA DO LAGO",
+      "price": "1/1",
+      "rating": 79.9,
+      "runners": 5,
+      "recordedAt": "2026-11-03T14:10:50.381Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 279,
-    "settled": 271,
+    "recorded": 280,
+    "settled": 272,
     "won": 129,
-    "pl": -15.31,
-    "roi": -5.7
+    "pl": -16.31,
+    "roi": -6
   },
   "lastBackfill": 1793709666900
 }
