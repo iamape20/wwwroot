@@ -23654,10 +23654,16 @@
       "fav": {
         "horse": "CHOSEN HERO",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-11-03T14:01:09.160Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|14:20",
@@ -23696,15 +23702,34 @@
       },
       "recordedAt": "2026-11-03T14:20:55.932Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Warwick|14:38",
+      "date": "2026-11-03",
+      "course": "Warwick",
+      "time": "14:38",
+      "horse": "PLAYFUL FOX",
+      "price": "1/1",
+      "runners": 4,
+      "liveHorse": "PLAYFUL FOX",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PLAYFUL FOX",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:30:55.529Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 863,
+    "recorded": 864,
     "pick": {
-      "settled": 845,
+      "settled": 846,
       "won": 169,
-      "pl": -91.87,
-      "roi": -10.9
+      "pl": -92.87,
+      "roi": -11
     },
     "favourite": {
       "settled": 842,
@@ -23719,10 +23744,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 618,
+      "settled": 619,
       "won": 79,
-      "pl": -73.27,
-      "roi": -11.9
+      "pl": -74.27,
+      "roi": -12
     }
   },
   "lastBackfill": 1793711467485
