@@ -23958,10 +23958,18 @@
       "fav": {
         "horse": "A GREAT EXCUSE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T15:50:34.361Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|16:04",
@@ -23981,21 +23989,40 @@
       },
       "recordedAt": "2026-11-03T15:50:34.375Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|16:30",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "16:30",
+      "horse": "CUBAN FIESTA",
+      "price": "14/1",
+      "runners": 10,
+      "liveHorse": "MINI MAC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MINI MAC",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T16:20:30.982Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 874,
+    "recorded": 875,
     "pick": {
-      "settled": 854,
+      "settled": 855,
       "won": 169,
-      "pl": -100.87,
-      "roi": -11.8
+      "pl": -101.87,
+      "roi": -11.9
     },
     "favourite": {
-      "settled": 846,
+      "settled": 847,
       "won": 288,
-      "pl": -26.64,
-      "roi": -3.1
+      "pl": -27.64,
+      "roi": -3.3
     },
     "agree": {
       "settled": 227,
@@ -24004,11 +24031,11 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 627,
+      "settled": 628,
       "won": 79,
-      "pl": -82.27,
-      "roi": -13.1
+      "pl": -83.27,
+      "roi": -13.3
     }
   },
-  "lastBackfill": 1793711467485
+  "lastBackfill": 1793722830997
 }

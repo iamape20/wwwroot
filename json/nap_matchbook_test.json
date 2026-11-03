@@ -3,14 +3,14 @@
   "target": 200,
   "mbCommission": 0.02,
   "bfCommission": 0.05,
-  "mbPl": 1.931,
-  "bspPl": 1.855,
+  "mbPl": 0.931,
+  "bspPl": 0.855,
   "bspMissing": 0,
   "noPrice": 0,
   "voids": 0,
-  "pending": 1,
+  "pending": 0,
   "verdict": null,
-  "updatedAt": "2026-11-03T16:00:40.018Z",
+  "updatedAt": "2026-11-03T16:20:33.755Z",
   "bets": [
     {
       "date": "2026-10-26",
@@ -77,6 +77,17 @@
       "pl": 0.225,
       "bsp": 1.21,
       "bspPl": 0.199
+    },
+    {
+      "date": "2026-11-03",
+      "time": "13:19",
+      "course": "Sedgefield",
+      "horse": "MOMENT OF LIGHT",
+      "result": "lost",
+      "price": 1.24,
+      "pl": -1,
+      "bsp": null,
+      "bspPl": -1
     }
   ]
 }
