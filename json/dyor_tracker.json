@@ -23419,10 +23419,18 @@
       "fav": {
         "horse": "CHANGING LANES",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T12:41:09.296Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Lingfield|13:02",
@@ -23438,10 +23446,18 @@
       "fav": {
         "horse": "BURK FLIGHT",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T12:51:08.251Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|13:10",
@@ -23461,21 +23477,59 @@
       },
       "recordedAt": "2026-11-03T13:01:12.855Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Sedgefield|13:19",
+      "date": "2026-11-03",
+      "course": "Sedgefield",
+      "time": "13:19",
+      "horse": "MOMENT OF LIGHT",
+      "price": "2/11",
+      "runners": 8,
+      "liveHorse": "MOMENT OF LIGHT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MOMENT OF LIGHT",
+        "price": "2/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:11:07.460Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Warwick|13:28",
+      "date": "2026-11-03",
+      "course": "Warwick",
+      "time": "13:28",
+      "horse": "NIGHTFLYER",
+      "price": "5/1",
+      "runners": 6,
+      "liveHorse": "TRIGG",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRIGG",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T13:21:01.247Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 854,
+    "recorded": 856,
     "pick": {
-      "settled": 837,
+      "settled": 839,
       "won": 169,
-      "pl": -83.87,
-      "roi": -10
+      "pl": -85.87,
+      "roi": -10.2
     },
     "favourite": {
-      "settled": 836,
+      "settled": 838,
       "won": 288,
-      "pl": -16.64,
-      "roi": -2
+      "pl": -18.64,
+      "roi": -2.2
     },
     "agree": {
       "settled": 225,
@@ -23484,11 +23538,11 @@
       "roi": -7.4
     },
     "disagree": {
-      "settled": 612,
+      "settled": 614,
       "won": 79,
-      "pl": -67.27,
-      "roi": -11
+      "pl": -69.27,
+      "roi": -11.3
     }
   },
-  "lastBackfill": 1793689274002
+  "lastBackfill": 1793711467485
 }
