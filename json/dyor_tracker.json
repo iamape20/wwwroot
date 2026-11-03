@@ -23833,10 +23833,16 @@
       "fav": {
         "horse": "I LOVE YOU SIVOLA",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/11"
       },
       "recordedAt": "2026-11-03T15:00:48.938Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Lingfield|15:22",
@@ -23852,10 +23858,16 @@
       "fav": {
         "horse": "COOLER THAN ME",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-03T15:10:51.663Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Fairyhouse|15:30",
@@ -23875,15 +23887,53 @@
       },
       "recordedAt": "2026-11-03T15:20:59.531Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Sedgefield|15:39",
+      "date": "2026-11-03",
+      "course": "Sedgefield",
+      "time": "15:39",
+      "horse": "CURIOUS MRS FOX",
+      "price": "3/1",
+      "runners": 11,
+      "liveHorse": "LUCKIE DEVIL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LUCKIE DEVIL",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:30:44.649Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Warwick|15:48",
+      "date": "2026-11-03",
+      "course": "Warwick",
+      "time": "15:48",
+      "horse": "KITTYS GLANCE",
+      "price": "10/3",
+      "runners": 10,
+      "liveHorse": "BALLYMOREEN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYMOREEN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:40:33.913Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 870,
+    "recorded": 872,
     "pick": {
-      "settled": 849,
+      "settled": 851,
       "won": 169,
-      "pl": -95.87,
-      "roi": -11.3
+      "pl": -97.87,
+      "roi": -11.5
     },
     "favourite": {
       "settled": 846,
@@ -23898,10 +23948,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 622,
+      "settled": 624,
       "won": 79,
-      "pl": -77.27,
-      "roi": -12.4
+      "pl": -79.27,
+      "roi": -12.7
     }
   },
   "lastBackfill": 1793711467485
