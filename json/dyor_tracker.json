@@ -23781,10 +23781,16 @@
       "fav": {
         "horse": "ANOTHER CHALLENGE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T14:40:58.060Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "12/1"
     },
     {
       "id": "2026-11-03|Sedgefield|15:04",
@@ -23800,10 +23806,18 @@
       "fav": {
         "horse": "GINTIME",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T14:50:52.557Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|15:13",
@@ -23823,21 +23837,59 @@
       },
       "recordedAt": "2026-11-03T15:00:48.938Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Lingfield|15:22",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "15:22",
+      "horse": "BEGIN THE LUCK",
+      "price": "15/2",
+      "runners": 9,
+      "liveHorse": "COOLER THAN ME",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COOLER THAN ME",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:10:51.663Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|15:30",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "15:30",
+      "horse": "TUDORISTA",
+      "price": "7/2",
+      "runners": 15,
+      "liveHorse": "KING OF THE GREYS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KING OF THE GREYS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T15:20:59.531Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 868,
+    "recorded": 870,
     "pick": {
-      "settled": 848,
+      "settled": 849,
       "won": 169,
-      "pl": -94.87,
-      "roi": -11.2
+      "pl": -95.87,
+      "roi": -11.3
     },
     "favourite": {
-      "settled": 844,
+      "settled": 846,
       "won": 288,
-      "pl": -24.64,
-      "roi": -2.9
+      "pl": -26.64,
+      "roi": -3.1
     },
     "agree": {
       "settled": 227,
@@ -23846,10 +23898,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 621,
+      "settled": 622,
       "won": 79,
-      "pl": -76.27,
-      "roi": -12.3
+      "pl": -77.27,
+      "roi": -12.4
     }
   },
   "lastBackfill": 1793711467485
