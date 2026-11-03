@@ -23679,10 +23679,14 @@
       "fav": {
         "horse": "QUINTA DO LAGO",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-03T14:10:50.724Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-11-03|Sedgefield|14:29",
@@ -23698,10 +23702,18 @@
       "fav": {
         "horse": "TREATY BOY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-03T14:20:55.932Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-03|Warwick|14:38",
@@ -23721,21 +23733,59 @@
       },
       "recordedAt": "2026-11-03T14:30:55.529Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-03|Lingfield|14:47",
+      "date": "2026-11-03",
+      "course": "Lingfield",
+      "time": "14:47",
+      "horse": "TOUQUET",
+      "price": "6/1",
+      "runners": 8,
+      "liveHorse": "AWAY FOR THE NIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AWAY FOR THE NIGHT",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:40:58.033Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-03|Fairyhouse|14:55",
+      "date": "2026-11-03",
+      "course": "Fairyhouse",
+      "time": "14:55",
+      "horse": "MY GOOD PAL",
+      "price": "9/1",
+      "runners": 15,
+      "liveHorse": "ANOTHER CHALLENGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANOTHER CHALLENGE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T14:40:58.060Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 864,
+    "recorded": 866,
     "pick": {
-      "settled": 846,
+      "settled": 847,
       "won": 169,
-      "pl": -92.87,
-      "roi": -11
+      "pl": -93.87,
+      "roi": -11.1
     },
     "favourite": {
-      "settled": 842,
+      "settled": 843,
       "won": 288,
-      "pl": -22.64,
-      "roi": -2.7
+      "pl": -23.64,
+      "roi": -2.8
     },
     "agree": {
       "settled": 227,
@@ -23744,10 +23794,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 619,
+      "settled": 620,
       "won": 79,
-      "pl": -74.27,
-      "roi": -12
+      "pl": -75.27,
+      "roi": -12.1
     }
   },
   "lastBackfill": 1793711467485
