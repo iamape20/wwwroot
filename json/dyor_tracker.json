@@ -24089,14 +24089,37 @@
       "fav": {
         "horse": "RED BLUE POINT",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-03T17:50:24.548Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|18:30",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "18:30",
+      "horse": "KIPP KELLY",
+      "price": "7/1",
+      "runners": 9,
+      "liveHorse": "SAM'S XPRESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAM'S XPRESS",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T18:20:26.379Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 878,
+    "recorded": 879,
     "pick": {
       "settled": 859,
       "won": 169,
