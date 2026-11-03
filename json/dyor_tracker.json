@@ -24037,19 +24037,44 @@
       "fav": {
         "horse": "OPPENHEIMER",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/5"
       },
       "recordedAt": "2026-11-03T16:50:28.456Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-03|Wolverhampton|17:30",
+      "date": "2026-11-03",
+      "course": "Wolverhampton",
+      "time": "17:30",
+      "horse": "MEHEN",
+      "price": "18/1",
+      "runners": 11,
+      "liveHorse": "AMANDARI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AMANDARI",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-03T17:20:23.001Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 876,
+    "recorded": 877,
     "pick": {
-      "settled": 857,
+      "settled": 858,
       "won": 169,
-      "pl": -103.87,
-      "roi": -12.1
+      "pl": -104.87,
+      "roi": -12.2
     },
     "favourite": {
       "settled": 848,
@@ -24064,10 +24089,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 630,
+      "settled": 631,
       "won": 79,
-      "pl": -85.27,
-      "roi": -13.5
+      "pl": -86.27,
+      "roi": -13.7
     }
   },
   "lastBackfill": 1793722830997
