@@ -1722,7 +1722,9 @@ async function loadRace(
                 if (selectionStatus?.value) {
                     // Our bet is the value pick: say why, and that rating and market are only background.
                     bits.length = 0;
-                    bits.push("Chosen because its chance looks bigger than its price.");
+                    const why = valuePick.reasons?.plus?.length ? ` Why: ${valuePick.reasons.plus.map(escapeHtml).join(", ")}.` : "";
+                    const against = valuePick.reasons?.minus?.length ? ` Against: ${valuePick.reasons.minus.map(escapeHtml).join(", ")}.` : "";
+                    bits.push(`Chosen because its chance looks bigger than its price.${why}${against}`);
                     if (topRated && topRated !== pickRunner) bits.push(`Top-rated on our numbers: <b>${escapeHtml(topRated.name)}</b> (rating ${escapeHtml(topRated.elite.rating)}).`);
                     else bits.push(`Also top-rated on our numbers (rating ${escapeHtml(pickRunner.elite.rating)}).`);
                     if (favR && favR !== pickRunner) bits.push(`Market favourite: <b>${escapeHtml(favR.name)}</b> ${escapeHtml(favR.current_odds || "")}.`);
