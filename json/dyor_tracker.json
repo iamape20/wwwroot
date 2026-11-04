@@ -24379,10 +24379,18 @@
       "fav": {
         "horse": "TRUE HEART",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T12:21:29.023Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|12:45",
@@ -24398,10 +24406,18 @@
       "fav": {
         "horse": "MAHARAJAS EXPRESS",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T12:31:40.384Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|12:51",
@@ -24421,21 +24437,59 @@
       },
       "recordedAt": "2026-11-04T12:41:41.419Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|13:00",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "13:00",
+      "horse": "MIDNIGHT REIGN",
+      "price": "80/1",
+      "runners": 14,
+      "liveHorse": "PALINCA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PALINCA",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:51:43.368Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|13:10",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "13:10",
+      "horse": "GREY FABLE",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "FLYING MOONLIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FLYING MOONLIGHT",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T13:01:39.255Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 889,
+    "recorded": 891,
     "pick": {
-      "settled": 871,
+      "settled": 873,
       "won": 174,
-      "pl": -87.4,
-      "roi": -10
+      "pl": -89.4,
+      "roi": -10.2
     },
     "favourite": {
-      "settled": 868,
+      "settled": 870,
       "won": 304,
-      "pl": -5.96,
-      "roi": -0.7
+      "pl": -7.96,
+      "roi": -0.9
     },
     "agree": {
       "settled": 231,
@@ -24444,10 +24498,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 640,
+      "settled": 642,
       "won": 81,
-      "pl": -71.33,
-      "roi": -11.1
+      "pl": -73.33,
+      "roi": -11.4
     }
   },
   "lastBackfill": 1793795500405
