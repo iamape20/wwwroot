@@ -25314,10 +25314,18 @@
       "fav": {
         "horse": "I BID YOU AJOU",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T17:00:43.147Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Kempton|17:30",
@@ -25337,21 +25345,40 @@
       },
       "recordedAt": "2026-11-04T17:20:42.519Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Dundalk|17:45",
+      "date": "2026-11-04",
+      "course": "Dundalk",
+      "time": "17:45",
+      "horse": "JUSTICIAR",
+      "price": "15/8",
+      "runners": 8,
+      "liveHorse": "JUSTICIAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JUSTICIAR",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T17:30:33.434Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 924,
+    "recorded": 925,
     "pick": {
-      "settled": 903,
+      "settled": 904,
       "won": 174,
-      "pl": -119.4,
-      "roi": -13.2
+      "pl": -120.4,
+      "roi": -13.3
     },
     "favourite": {
-      "settled": 889,
+      "settled": 890,
       "won": 304,
-      "pl": -26.96,
-      "roi": -3
+      "pl": -27.96,
+      "roi": -3.1
     },
     "agree": {
       "settled": 236,
@@ -25360,10 +25387,10 @@
       "roi": -8.9
     },
     "disagree": {
-      "settled": 667,
+      "settled": 668,
       "won": 81,
-      "pl": -98.33,
-      "roi": -14.7
+      "pl": -99.33,
+      "roi": -14.9
     }
   },
   "lastBackfill": 1793806868997
