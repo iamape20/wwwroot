@@ -24485,10 +24485,16 @@
       "fav": {
         "horse": "FLYING MOONLIGHT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-04T13:01:39.255Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|13:20",
@@ -24504,10 +24510,18 @@
       "fav": {
         "horse": "SHAFFRON",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T13:11:41.545Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|13:25",
@@ -24523,10 +24537,16 @@
       "fav": {
         "horse": "ORDER ON TIME",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T13:11:41.575Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-04|Wexford|13:33",
@@ -24546,21 +24566,59 @@
       },
       "recordedAt": "2026-11-04T13:21:44.667Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|13:42",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "13:42",
+      "horse": "ALPINE SIERRA",
+      "price": "10/3",
+      "runners": 10,
+      "liveHorse": "GEMINI MAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GEMINI MAN",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T13:31:35.914Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|13:50",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "13:50",
+      "horse": "SALVER",
+      "price": "3/1",
+      "runners": 10,
+      "liveHorse": "INDHAAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INDHAAR",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T13:41:37.364Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 894,
+    "recorded": 896,
     "pick": {
-      "settled": 875,
+      "settled": 877,
       "won": 174,
-      "pl": -91.4,
-      "roi": -10.4
+      "pl": -93.4,
+      "roi": -10.7
     },
     "favourite": {
-      "settled": 871,
+      "settled": 873,
       "won": 304,
-      "pl": -8.96,
-      "roi": -1
+      "pl": -10.96,
+      "roi": -1.3
     },
     "agree": {
       "settled": 231,
@@ -24569,10 +24627,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 644,
+      "settled": 646,
       "won": 81,
-      "pl": -75.33,
-      "roi": -11.7
+      "pl": -77.33,
+      "roi": -12
     }
   },
   "lastBackfill": 1793795500405

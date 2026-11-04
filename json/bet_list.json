@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T13:21:38.676Z",
+  "generatedAt": "2026-11-04T13:41:31.163Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,6 +15,17 @@
   "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "off": "13:25",
+      "horse": "ORDER ON TIME",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-04",
       "course": "Wexford",
@@ -168,21 +179,10 @@
       "bsp": 1.21,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-01",
-      "course": "Cork",
-      "off": "14:15",
-      "horse": "ROC DINO",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 3.21912311,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-04T13:21:38.514Z",
+    "updatedAt": "2026-11-04T13:41:30.947Z",
     "claude": {
       "races": 38,
       "won": 7,
