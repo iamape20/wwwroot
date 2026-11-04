@@ -25416,10 +25416,18 @@
       "fav": {
         "horse": "LITTLEPACER",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T18:00:47.027Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Kempton|18:30",
@@ -25439,27 +25447,46 @@
       },
       "recordedAt": "2026-11-04T18:20:48.003Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Dundalk|18:45",
+      "date": "2026-11-04",
+      "course": "Dundalk",
+      "time": "18:45",
+      "horse": "COMFORT LINE",
+      "price": "6/1",
+      "runners": 13,
+      "liveHorse": "CARRIGANS GROVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CARRIGANS GROVE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T18:30:46.978Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 928,
+    "recorded": 929,
     "pick": {
-      "settled": 906,
+      "settled": 907,
       "won": 174,
-      "pl": -122.4,
-      "roi": -13.5
+      "pl": -123.4,
+      "roi": -13.6
     },
     "favourite": {
-      "settled": 891,
+      "settled": 892,
       "won": 304,
-      "pl": -28.96,
-      "roi": -3.3
+      "pl": -29.96,
+      "roi": -3.4
     },
     "agree": {
-      "settled": 236,
+      "settled": 237,
       "won": 93,
-      "pl": -21.07,
-      "roi": -8.9
+      "pl": -22.07,
+      "roi": -9.3
     },
     "disagree": {
       "settled": 670,
