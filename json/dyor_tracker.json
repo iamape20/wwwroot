@@ -25001,10 +25001,18 @@
       "fav": {
         "horse": "RED CURRY",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T15:21:12.471Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Wexford|15:45",
@@ -25020,10 +25028,16 @@
       "fav": {
         "horse": "THE BIG CLUBMAN",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-04T15:31:09.227Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|15:40",
@@ -25058,10 +25072,18 @@
       "fav": {
         "horse": "VINCE LE PRINCE",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T15:41:08.965Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|15:55",
@@ -25081,21 +25103,78 @@
       },
       "recordedAt": "2026-11-04T15:41:08.992Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Dundalk|16:05",
+      "date": "2026-11-04",
+      "course": "Dundalk",
+      "time": "16:05",
+      "horse": "VENETIAN",
+      "price": "12/1",
+      "runners": 8,
+      "liveHorse": "APACHE OUTLAW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "APACHE OUTLAW",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:51:11.657Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Kempton|16:00",
+      "date": "2026-11-04",
+      "course": "Kempton",
+      "time": "16:00",
+      "horse": "CHERRY AMBER",
+      "price": "100/1",
+      "runners": 12,
+      "liveHorse": "LIGHT OF THE STARS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LIGHT OF THE STARS",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:51:11.690Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|16:10",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "16:10",
+      "horse": "RAMBLINGAMBLINMAN",
+      "price": "25/1",
+      "runners": 13,
+      "liveHorse": "DON'T PANIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DON'T PANIC",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T16:01:23.060Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 915,
+    "recorded": 918,
     "pick": {
-      "settled": 891,
+      "settled": 894,
       "won": 174,
-      "pl": -107.4,
-      "roi": -12.1
+      "pl": -110.4,
+      "roi": -12.3
     },
     "favourite": {
-      "settled": 883,
+      "settled": 885,
       "won": 304,
-      "pl": -20.96,
-      "roi": -2.4
+      "pl": -22.96,
+      "roi": -2.6
     },
     "agree": {
       "settled": 234,
@@ -25104,10 +25183,10 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 657,
+      "settled": 660,
       "won": 81,
-      "pl": -88.33,
-      "roi": -13.4
+      "pl": -91.33,
+      "roi": -13.8
     }
   },
   "lastBackfill": 1793806868997
