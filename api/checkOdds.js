@@ -159,8 +159,19 @@ module.exports = async (req, res) => {
         snapshots.push({ time: now, odds: currentData.odds, source: currentData.source });
 
         // Keep a reasonable cap so one race's history doesn't grow
-        // unbounded across a very long day
-        const trimmed = snapshots.slice(-20);
+        // unbounded across a very long day: the last 20, plus the first of
+        // each earlier hour per price source. A flat last-20 at one snapshot
+        // every 10 minutes only reached back 3 hours, so "the price at 09:00"
+        // and "the first live price today" were gone for most races
+        // (2026-11-04: 46 of 47 races).
+        const seen = new Set();
+        const older = snapshots.slice(0, -20).filter(s => {
+            const bucket = `${s.source}|${Math.floor(s.time / 3600000)}`;
+            if (seen.has(bucket)) return false;
+            seen.add(bucket);
+            return true;
+        });
+        const trimmed = [...older, ...snapshots.slice(-20)];
 
         await redis.set(key, { lastChecked: now, snapshots: trimmed, nonRunners: currentData.nonRunners }, { ex: 172800 });
 
