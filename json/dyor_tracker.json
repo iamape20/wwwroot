@@ -24562,10 +24562,18 @@
       "fav": {
         "horse": "THE BESTY WOMAN",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T13:21:44.667Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Musselburgh|13:42",
@@ -24581,10 +24589,18 @@
       "fav": {
         "horse": "GEMINI MAN",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T13:31:35.914Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|13:50",
@@ -24604,21 +24620,78 @@
       },
       "recordedAt": "2026-11-04T13:41:37.364Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|14:05",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "14:05",
+      "horse": "CAPRISON",
+      "price": "4/1",
+      "runners": 14,
+      "liveHorse": "WALKING SAINT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WALKING SAINT",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T13:51:37.129Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|13:58",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "13:58",
+      "horse": "ONE COOL KID",
+      "price": "30/1",
+      "runners": 12,
+      "liveHorse": "A SIGHT TO SEA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "A SIGHT TO SEA",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T13:51:37.154Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|14:15",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "14:15",
+      "horse": "QUERCUS ROBUR",
+      "price": "10/1",
+      "runners": 11,
+      "liveHorse": "RICH BELIEF",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RICH BELIEF",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:01:51.378Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 896,
+    "recorded": 899,
     "pick": {
-      "settled": 877,
+      "settled": 879,
       "won": 174,
-      "pl": -93.4,
-      "roi": -10.7
+      "pl": -95.4,
+      "roi": -10.9
     },
     "favourite": {
-      "settled": 873,
+      "settled": 875,
       "won": 304,
-      "pl": -10.96,
-      "roi": -1.3
+      "pl": -12.96,
+      "roi": -1.5
     },
     "agree": {
       "settled": 231,
@@ -24627,10 +24700,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 646,
+      "settled": 648,
       "won": 81,
-      "pl": -77.33,
-      "roi": -12
+      "pl": -79.33,
+      "roi": -12.2
     }
   },
   "lastBackfill": 1793795500405
