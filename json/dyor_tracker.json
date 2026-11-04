@@ -24291,10 +24291,48 @@
       "isp": "3/1",
       "pl": -1,
       "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-04|Musselburgh|12:05",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "12:05",
+      "horse": "ALBEGONE",
+      "price": "17/2",
+      "runners": 11,
+      "liveHorse": "ALNOFOOR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALNOFOOR",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T11:51:31.751Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|12:15",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "12:15",
+      "horse": "CHEVERE",
+      "price": "1/3",
+      "runners": 4,
+      "liveHorse": "CHEVERE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CHEVERE",
+        "price": "1/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:01:47.172Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 883,
+    "recorded": 885,
     "pick": {
       "settled": 869,
       "won": 174,
