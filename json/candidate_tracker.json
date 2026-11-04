@@ -4508,7 +4508,10 @@
       "recordedAt": "2026-11-03T12:11:10.062Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/11"
+      "isp": "4/11",
+      "bsp": 1.47026218,
+      "pl": 0.447,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Sedgefield|12:44",
@@ -4522,7 +4525,10 @@
       "recordedAt": "2026-11-03T12:31:11.004Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/1"
+      "isp": "1/1",
+      "bsp": 2.11671434,
+      "pl": 1.061,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Sedgefield|13:19",
@@ -4552,7 +4558,10 @@
       "recordedAt": "2026-11-03T13:21:00.865Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/6"
+      "isp": "5/6",
+      "bsp": 1.89,
+      "pl": 0.845,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Fairyhouse|13:45",
@@ -4582,7 +4591,10 @@
       "recordedAt": "2026-11-03T14:01:08.704Z",
       "stake": 1,
       "result": "won",
-      "isp": "6/5"
+      "isp": "6/5",
+      "bsp": 2.44,
+      "pl": 1.368,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Fairyhouse|14:20",
@@ -4596,7 +4608,10 @@
       "recordedAt": "2026-11-03T14:10:50.381Z",
       "stake": 1,
       "result": "won",
-      "isp": "7/4"
+      "isp": "7/4",
+      "bsp": 3.15,
+      "pl": 2.042,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Warwick|14:38",
@@ -4641,7 +4656,10 @@
       "recordedAt": "2026-11-03T16:20:30.749Z",
       "stake": 1,
       "result": "won",
-      "isp": "8/11"
+      "isp": "8/11",
+      "bsp": 1.85,
+      "pl": 0.807,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Wolverhampton|17:00",
@@ -4655,7 +4673,10 @@
       "recordedAt": "2026-11-03T16:50:28.249Z",
       "stake": 1,
       "result": "won",
-      "isp": "2/5"
+      "isp": "2/5",
+      "bsp": 1.48,
+      "pl": 0.456,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Wolverhampton|18:00",
@@ -4669,15 +4690,18 @@
       "recordedAt": "2026-11-03T17:50:24.345Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/11"
+      "isp": "4/11",
+      "bsp": 1.44245519,
+      "pl": 0.42,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 285,
-    "settled": 273,
-    "won": 129,
-    "pl": -17.31,
-    "roi": -6.3
+    "settled": 281,
+    "won": 137,
+    "pl": -9.87,
+    "roi": -3.5
   },
-  "lastBackfill": 1793732430250
+  "lastBackfill": 1793775702408
 }

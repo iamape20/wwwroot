@@ -3002,8 +3002,9 @@
       "stake": 0,
       "result": "won",
       "isp": "5/6",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.89,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Lingfield|13:37",
@@ -3017,8 +3018,9 @@
       "stake": 0,
       "result": "won",
       "isp": "4/5",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.89,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-03|Fairyhouse|14:20",
@@ -3032,8 +3034,9 @@
       "stake": 0,
       "result": "won",
       "isp": "7/4",
-      "bsp": null,
-      "pl": null
+      "bsp": 3.15,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": {
@@ -3045,5 +3048,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1793737221377
+  "lastBackfill": 1793775696107
 }
