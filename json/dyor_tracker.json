@@ -24331,10 +24331,14 @@
       "fav": {
         "horse": "CHEVERE",
         "price": "1/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-04T12:01:47.172Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
     },
     {
       "id": "2026-11-04|Chepstow|12:20",
@@ -24350,10 +24354,16 @@
       "fav": {
         "horse": "GINGERBRED",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-04T12:11:30.581Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Musselburgh|12:35",
@@ -24373,15 +24383,53 @@
       },
       "recordedAt": "2026-11-04T12:21:29.023Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|12:45",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "12:45",
+      "horse": "VINCE L'AMOUR",
+      "price": "8/1",
+      "runners": 10,
+      "liveHorse": "MAHARAJAS EXPRESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAHARAJAS EXPRESS",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:31:40.384Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|12:51",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "12:51",
+      "horse": "COOL CUSTOMER",
+      "price": "5/1",
+      "runners": 14,
+      "liveHorse": "RED ACRES MAX",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RED ACRES MAX",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:41:41.419Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 887,
+    "recorded": 889,
     "pick": {
-      "settled": 870,
+      "settled": 871,
       "won": 174,
-      "pl": -86.4,
-      "roi": -9.9
+      "pl": -87.4,
+      "roi": -10
     },
     "favourite": {
       "settled": 868,
@@ -24396,11 +24444,11 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 639,
+      "settled": 640,
       "won": 81,
-      "pl": -70.33,
-      "roi": -11
+      "pl": -71.33,
+      "roi": -11.1
     }
   },
-  "lastBackfill": 1793775704575
+  "lastBackfill": 1793795500405
 }
