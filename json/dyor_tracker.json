@@ -24616,10 +24616,16 @@
       "fav": {
         "horse": "INDHAAR",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-11-04T13:41:37.364Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Wexford|14:05",
@@ -24654,10 +24660,16 @@
       "fav": {
         "horse": "A SIGHT TO SEA",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-11-04T13:51:37.154Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Musselburgh|14:15",
@@ -24677,15 +24689,53 @@
       },
       "recordedAt": "2026-11-04T14:01:51.378Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|14:20",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "14:20",
+      "horse": "ARBAAWY",
+      "price": "2/1",
+      "runners": 9,
+      "liveHorse": "ARBAAWY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ARBAAWY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:11:27.474Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Kempton|14:25",
+      "date": "2026-11-04",
+      "course": "Kempton",
+      "time": "14:25",
+      "horse": "MYTHICAL COMPOSER",
+      "price": "2/1",
+      "runners": 12,
+      "liveHorse": "MYTHICAL COMPOSER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MYTHICAL COMPOSER",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:11:27.506Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 899,
+    "recorded": 901,
     "pick": {
-      "settled": 879,
+      "settled": 881,
       "won": 174,
-      "pl": -95.4,
-      "roi": -10.9
+      "pl": -97.4,
+      "roi": -11.1
     },
     "favourite": {
       "settled": 875,
@@ -24700,10 +24750,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 648,
+      "settled": 650,
       "won": 81,
-      "pl": -79.33,
-      "roi": -12.2
+      "pl": -81.33,
+      "roi": -12.5
     }
   },
   "lastBackfill": 1793795500405
