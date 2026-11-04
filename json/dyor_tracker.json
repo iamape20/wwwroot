@@ -24901,10 +24901,18 @@
       "fav": {
         "horse": "MR MCWHINNY",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:51:16.818Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Wexford|15:10",
@@ -24920,10 +24928,14 @@
       "fav": {
         "horse": "THE BIG WESTERNER",
         "price": "3/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/3"
       },
       "recordedAt": "2026-11-04T15:01:16.845Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/3"
     },
     {
       "id": "2026-11-04|Musselburgh|15:17",
@@ -24939,10 +24951,16 @@
       "fav": {
         "horse": "THE RESDEV SCHOLAR",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-04T15:11:10.845Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|15:23",
@@ -24958,10 +24976,16 @@
       "fav": {
         "horse": "MERTOUN",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "14/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T15:11:10.880Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-04|Kempton|15:30",
@@ -24981,21 +25005,97 @@
       },
       "recordedAt": "2026-11-04T15:21:12.471Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|15:45",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "15:45",
+      "horse": "MODE AVION",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "THE BIG CLUBMAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE BIG CLUBMAN",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:31:09.227Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|15:40",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "15:40",
+      "horse": "HIGHBURY HILL",
+      "price": "11/1",
+      "runners": 17,
+      "liveHorse": "ANGEL WAVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANGEL WAVE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:31:09.260Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|15:50",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "15:50",
+      "horse": "INDIA GOLD",
+      "price": "18/1",
+      "runners": 12,
+      "liveHorse": "VINCE LE PRINCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VINCE LE PRINCE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:41:08.965Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|15:55",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "15:55",
+      "horse": "LOOK BACK SMILING",
+      "price": "4/1",
+      "runners": 15,
+      "liveHorse": "LOOK BACK SMILING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LOOK BACK SMILING",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:41:08.992Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 911,
+    "recorded": 915,
     "pick": {
-      "settled": 889,
+      "settled": 891,
       "won": 174,
-      "pl": -105.4,
-      "roi": -11.9
+      "pl": -107.4,
+      "roi": -12.1
     },
     "favourite": {
-      "settled": 881,
+      "settled": 883,
       "won": 304,
-      "pl": -18.96,
-      "roi": -2.2
+      "pl": -20.96,
+      "roi": -2.4
     },
     "agree": {
       "settled": 234,
@@ -25004,11 +25104,11 @@
       "roi": -8.2
     },
     "disagree": {
-      "settled": 655,
+      "settled": 657,
       "won": 81,
-      "pl": -86.33,
-      "roi": -13.2
+      "pl": -88.33,
+      "roi": -13.4
     }
   },
-  "lastBackfill": 1793795500405
+  "lastBackfill": 1793806868997
 }
