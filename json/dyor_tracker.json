@@ -25053,10 +25053,17 @@
       "fav": {
         "horse": "ANGEL WAVE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "void",
+        "pl": 0,
+        "settledAt": "non_runner"
       },
       "recordedAt": "2026-11-04T15:31:09.260Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Musselburgh|15:50",
@@ -25099,10 +25106,18 @@
       "fav": {
         "horse": "LOOK BACK SMILING",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T15:41:08.992Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Dundalk|16:05",
@@ -25118,10 +25133,16 @@
       "fav": {
         "horse": "APACHE OUTLAW",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-04T15:51:11.657Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Kempton|16:00",
@@ -25137,10 +25158,16 @@
       "fav": {
         "horse": "LIGHT OF THE STARS",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-04T15:51:11.690Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "250/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|16:10",
@@ -25160,33 +25187,71 @@
       },
       "recordedAt": "2026-11-04T16:01:23.060Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|16:20",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "16:20",
+      "horse": "HARTFORD",
+      "price": "1/2",
+      "runners": 7,
+      "liveHorse": "HARTFORD",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HARTFORD",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T16:10:59.593Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Kempton|16:30",
+      "date": "2026-11-04",
+      "course": "Kempton",
+      "time": "16:30",
+      "horse": "NOBLE ARCHER",
+      "price": "33/1",
+      "runners": 13,
+      "liveHorse": "SILKEN WARRIOR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SILKEN WARRIOR",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T16:20:58.283Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 918,
+    "recorded": 920,
     "pick": {
-      "settled": 894,
+      "settled": 898,
       "won": 174,
-      "pl": -110.4,
-      "roi": -12.3
+      "pl": -114.4,
+      "roi": -12.7
     },
     "favourite": {
-      "settled": 885,
+      "settled": 886,
       "won": 304,
-      "pl": -22.96,
-      "roi": -2.6
+      "pl": -23.96,
+      "roi": -2.7
     },
     "agree": {
-      "settled": 234,
+      "settled": 235,
       "won": 93,
-      "pl": -19.07,
-      "roi": -8.2
+      "pl": -20.07,
+      "roi": -8.5
     },
     "disagree": {
-      "settled": 660,
+      "settled": 663,
       "won": 81,
-      "pl": -91.33,
-      "roi": -13.8
+      "pl": -94.33,
+      "roi": -14.2
     }
   },
   "lastBackfill": 1793806868997
