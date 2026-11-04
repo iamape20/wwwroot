@@ -2,7 +2,7 @@
   "mode": "LIVE",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 101.28,
+  "pot": 91.68,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -234,9 +234,49 @@
       "stake": 9.6,
       "matched": 9.6,
       "offerId": "34784520861800087",
-      "offerStatus": "matched"
+      "offerStatus": "matched",
+      "result": "lost",
+      "pl": -9.6,
+      "potAfter": 91.68,
+      "settledAt": "2026-11-04T14:45:25.871Z"
+    },
+    {
+      "id": "2026-11-04|Wexford|15:10",
+      "kind": "EXTRA",
+      "mode": "LIVE",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "15:10",
+      "horse": "THE BIG WESTERNER",
+      "decidedAt": "2026-11-04T15:01:14.657Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 91.68,
+      "bankBefore": 86.49204,
+      "bankPeak": 106.762,
+      "halfStake": true,
+      "eventId": "34766197574301023",
+      "marketId": "34766197663501072",
+      "runnerId": "34766197663902072",
+      "price": 1.33,
+      "available": 442.5,
+      "depth": [
+        [
+          1.33,
+          442.5
+        ],
+        [
+          1.32,
+          282.81
+        ],
+        [
+          1.31,
+          289.9
+        ]
+      ],
+      "status": "skipped",
+      "reason": "price 1.33 under 1.5"
     }
   ],
-  "updatedAt": "2026-11-04T14:41:24.421Z",
+  "updatedAt": "2026-11-04T15:01:14.662Z",
   "bankPeak": 106.762
 }

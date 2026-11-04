@@ -24770,10 +24770,16 @@
       "fav": {
         "horse": "RULA BULA",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:21:27.293Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-11-04|Wexford|14:37",
@@ -24789,10 +24795,18 @@
       "fav": {
         "horse": "THE COBBLERS WIFE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:31:31.029Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Musselburgh|14:45",
@@ -24808,10 +24822,18 @@
       "fav": {
         "horse": "EMPIRESTATEOFMIND",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:31:31.143Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|14:53",
@@ -24831,33 +24853,90 @@
       },
       "recordedAt": "2026-11-04T14:41:27.050Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Kempton|15:00",
+      "date": "2026-11-04",
+      "course": "Kempton",
+      "time": "15:00",
+      "horse": "VALENTINE BOY",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "SNOOKER MCCREW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SNOOKER MCCREW",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:51:16.783Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|15:05",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "15:05",
+      "horse": "TWO TO TANGO",
+      "price": "15/2",
+      "runners": 8,
+      "liveHorse": "MR MCWHINNY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MR MCWHINNY",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:51:16.818Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|15:10",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "15:10",
+      "horse": "THE BIG WESTERNER",
+      "price": "3/10",
+      "runners": 4,
+      "liveHorse": "THE BIG WESTERNER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THE BIG WESTERNER",
+        "price": "3/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T15:01:16.845Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 905,
+    "recorded": 908,
     "pick": {
-      "settled": 885,
+      "settled": 887,
       "won": 174,
-      "pl": -101.4,
-      "roi": -11.5
+      "pl": -103.4,
+      "roi": -11.7
     },
     "favourite": {
-      "settled": 877,
+      "settled": 880,
       "won": 304,
-      "pl": -14.96,
-      "roi": -1.7
+      "pl": -17.96,
+      "roi": -2
     },
     "agree": {
-      "settled": 233,
+      "settled": 234,
       "won": 93,
-      "pl": -18.07,
-      "roi": -7.8
+      "pl": -19.07,
+      "roi": -8.2
     },
     "disagree": {
-      "settled": 652,
+      "settled": 653,
       "won": 81,
-      "pl": -83.33,
-      "roi": -12.8
+      "pl": -84.33,
+      "roi": -12.9
     }
   },
   "lastBackfill": 1793795500405
