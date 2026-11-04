@@ -25289,10 +25289,16 @@
       "fav": {
         "horse": "COLOMBIER",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-04T16:50:37.918Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Dundalk|17:15",
@@ -25312,15 +25318,34 @@
       },
       "recordedAt": "2026-11-04T17:00:43.147Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Kempton|17:30",
+      "date": "2026-11-04",
+      "course": "Kempton",
+      "time": "17:30",
+      "horse": "AMELIA'S JOY",
+      "price": "11/4",
+      "runners": 7,
+      "liveHorse": "PERSIAN SPIRIT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PERSIAN SPIRIT",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T17:20:42.519Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 923,
+    "recorded": 924,
     "pick": {
-      "settled": 902,
+      "settled": 903,
       "won": 174,
-      "pl": -118.4,
-      "roi": -13.1
+      "pl": -119.4,
+      "roi": -13.2
     },
     "favourite": {
       "settled": 889,
@@ -25335,10 +25360,10 @@
       "roi": -8.9
     },
     "disagree": {
-      "settled": 666,
+      "settled": 667,
       "won": 81,
-      "pl": -97.33,
-      "roi": -14.6
+      "pl": -98.33,
+      "roi": -14.7
     }
   },
   "lastBackfill": 1793806868997
