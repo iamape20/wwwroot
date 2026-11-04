@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T16:20:51.663Z",
+  "generatedAt": "2026-11-04T16:40:44.667Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-04",
       "course": "Wexford",
       "off": "16:20",
-      "horse": "HARTFORD"
-    }
-  ],
-  "recent": [
+      "horse": "HARTFORD",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-04",
       "course": "Dundalk",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-01",
-      "course": "Carlisle",
-      "off": "16:10",
-      "horse": "MEETMEBYTHELAKE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-04T16:20:51.460Z",
+    "updatedAt": "2026-11-04T16:40:44.477Z",
     "claude": {
       "races": 38,
       "won": 7,

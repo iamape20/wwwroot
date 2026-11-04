@@ -25183,10 +25183,16 @@
       "fav": {
         "horse": "DON'T PANIC",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-04T16:01:23.060Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Wexford|16:20",
@@ -25202,10 +25208,18 @@
       "fav": {
         "horse": "HARTFORD",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T16:10:59.593Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/7",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Kempton|16:30",
@@ -25225,33 +25239,52 @@
       },
       "recordedAt": "2026-11-04T16:20:58.283Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Dundalk|16:40",
+      "date": "2026-11-04",
+      "course": "Dundalk",
+      "time": "16:40",
+      "horse": "MONOLOGUE",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "ALWAYS MAGIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALWAYS MAGIC",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T16:30:44.088Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 920,
+    "recorded": 921,
     "pick": {
-      "settled": 898,
+      "settled": 900,
       "won": 174,
-      "pl": -114.4,
-      "roi": -12.7
+      "pl": -116.4,
+      "roi": -12.9
     },
     "favourite": {
-      "settled": 886,
+      "settled": 887,
       "won": 304,
-      "pl": -23.96,
-      "roi": -2.7
+      "pl": -24.96,
+      "roi": -2.8
     },
     "agree": {
-      "settled": 235,
+      "settled": 236,
       "won": 93,
-      "pl": -20.07,
-      "roi": -8.5
+      "pl": -21.07,
+      "roi": -8.9
     },
     "disagree": {
-      "settled": 663,
+      "settled": 664,
       "won": 81,
-      "pl": -94.33,
-      "roi": -14.2
+      "pl": -95.33,
+      "roi": -14.4
     }
   },
   "lastBackfill": 1793806868997
