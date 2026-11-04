@@ -24691,10 +24691,16 @@
       "fav": {
         "horse": "RICH BELIEF",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-04T14:01:51.378Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|14:20",
@@ -24710,10 +24716,18 @@
       "fav": {
         "horse": "ARBAAWY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:11:27.474Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Kempton|14:25",
@@ -24729,10 +24743,18 @@
       "fav": {
         "horse": "MYTHICAL COMPOSER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-04T14:11:27.506Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|14:30",
@@ -24752,33 +24774,90 @@
       },
       "recordedAt": "2026-11-04T14:21:27.293Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Wexford|14:37",
+      "date": "2026-11-04",
+      "course": "Wexford",
+      "time": "14:37",
+      "horse": "BUTTY O BRIEN",
+      "price": "14/1",
+      "runners": 13,
+      "liveHorse": "THE COBBLERS WIFE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE COBBLERS WIFE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:31:31.029Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|14:45",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "14:45",
+      "horse": "EMPIRESTATEOFMIND",
+      "price": "3/1",
+      "runners": 10,
+      "liveHorse": "EMPIRESTATEOFMIND",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "EMPIRESTATEOFMIND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:31:31.143Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Nottingham|14:53",
+      "date": "2026-11-04",
+      "course": "Nottingham",
+      "time": "14:53",
+      "horse": "LUCKY LUNA",
+      "price": "10/1",
+      "runners": 9,
+      "liveHorse": "BORJINA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BORJINA",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:41:27.050Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 902,
+    "recorded": 905,
     "pick": {
-      "settled": 882,
+      "settled": 885,
       "won": 174,
-      "pl": -98.4,
-      "roi": -11.2
+      "pl": -101.4,
+      "roi": -11.5
     },
     "favourite": {
-      "settled": 875,
+      "settled": 877,
       "won": 304,
-      "pl": -12.96,
-      "roi": -1.5
+      "pl": -14.96,
+      "roi": -1.7
     },
     "agree": {
-      "settled": 231,
+      "settled": 233,
       "won": 93,
-      "pl": -16.07,
-      "roi": -7
+      "pl": -18.07,
+      "roi": -7.8
     },
     "disagree": {
-      "settled": 651,
+      "settled": 652,
       "won": 81,
-      "pl": -82.33,
-      "roi": -12.6
+      "pl": -83.33,
+      "roi": -12.8
     }
   },
   "lastBackfill": 1793795500405
