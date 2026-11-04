@@ -24641,10 +24641,16 @@
       "fav": {
         "horse": "WALKING SAINT",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-04T13:51:37.129Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Chepstow|13:58",
@@ -24727,15 +24733,34 @@
       },
       "recordedAt": "2026-11-04T14:11:27.506Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|14:30",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "14:30",
+      "horse": "TOUR OVALIE",
+      "price": "11/4",
+      "runners": 4,
+      "liveHorse": "RULA BULA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RULA BULA",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T14:21:27.293Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 901,
+    "recorded": 902,
     "pick": {
-      "settled": 881,
+      "settled": 882,
       "won": 174,
-      "pl": -97.4,
-      "roi": -11.1
+      "pl": -98.4,
+      "roi": -11.2
     },
     "favourite": {
       "settled": 875,
@@ -24750,10 +24775,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 650,
+      "settled": 651,
       "won": 81,
-      "pl": -81.33,
-      "roi": -12.5
+      "pl": -82.33,
+      "roi": -12.6
     }
   },
   "lastBackfill": 1793795500405
