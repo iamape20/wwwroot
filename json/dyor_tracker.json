@@ -24306,10 +24306,16 @@
       "fav": {
         "horse": "ALNOFOOR",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-04T11:51:31.751Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-04|Nottingham|12:15",
@@ -24329,15 +24335,53 @@
       },
       "recordedAt": "2026-11-04T12:01:47.172Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-04|Chepstow|12:20",
+      "date": "2026-11-04",
+      "course": "Chepstow",
+      "time": "12:20",
+      "horse": "ROE AND CO",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "GINGERBRED",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GINGERBRED",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:11:30.581Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-04|Musselburgh|12:35",
+      "date": "2026-11-04",
+      "course": "Musselburgh",
+      "time": "12:35",
+      "horse": "SEQUOIADENDRON",
+      "price": "10/3",
+      "runners": 8,
+      "liveHorse": "TRUE HEART",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRUE HEART",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-04T12:21:29.023Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 885,
+    "recorded": 887,
     "pick": {
-      "settled": 869,
+      "settled": 870,
       "won": 174,
-      "pl": -85.4,
-      "roi": -9.8
+      "pl": -86.4,
+      "roi": -9.9
     },
     "favourite": {
       "settled": 868,
@@ -24352,10 +24396,10 @@
       "roi": -7
     },
     "disagree": {
-      "settled": 638,
+      "settled": 639,
       "won": 81,
-      "pl": -69.33,
-      "roi": -10.9
+      "pl": -70.33,
+      "roi": -11
     }
   },
   "lastBackfill": 1793775704575
