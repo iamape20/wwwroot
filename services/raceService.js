@@ -74,8 +74,9 @@ async function getRace(meetingId, raceIndex) {
     const offMs = Date.parse(`${meeting.date}T${String(race.time || "").trim().padStart(5, "0")}:00Z`);
     const raceIsOff = Number.isFinite(offMs) && Date.now() >= offMs;
 
+    // The race's value pick when it has one ("single Our bet", 2026-11-04).
     const officialPickId =
-        ratingsRace?.runners?.find(r => r && r.non_runner !== true)?.id ?? null;
+        require("./ourPick").ourPick(ratingsRace)?.id ?? null;
 
     // Claude's independent view (js/claudePicks.mjs): a second opinion
     // from pre-race form only - no odds, no EPR ratings. Optional: the
@@ -109,6 +110,8 @@ async function getRace(meetingId, raceIndex) {
             verdict: race.verdict,
             bettingForecast: race.betting_forecast,
             drawAdvantage: ratingsRace?.draw_advantage || "None",
+            // Value pick (js/markValuePicks.js, 2026-11-04): this race's Our bet.
+            valuePick: ratingsRace?.value_pick || null,
             claudeView: claudePick ? {
                 pick: claudePick.pick,
                 confidence: claudePick.confidence ?? null,

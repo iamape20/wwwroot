@@ -112,7 +112,7 @@ module.exports = (req, res) => {
             for (const race of meeting.races || []) {
                 const active = (race.runners || []).filter(r => r && r.non_runner !== true);
                 if (!active.length) continue;
-                const pick = active[0];
+                const pick = require("../services/ourPick").ourPick(race) || active[0];   // value pick first (2026-11-04)
 
                 let fav = null, favDec = Infinity, favCount = 0;
                 for (const r of active) {

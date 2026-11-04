@@ -253,7 +253,7 @@ function legNow(ratings, nap, entry) {
     // HAPPY LOVE, the market then made IMPERIALISM favourite, so the race page
     // said Our Pick IMPERIALISM (which won) with nothing on the home page
     // saying the pick had changed.
-    const nowPick = race?.runners?.find(r => r && r.non_runner !== true)?.name || null;
+    const nowPick = require("./ourPick").ourPick(race)?.name || null;   // value pick first (2026-11-04)
     const napNow = !!(nap?.active &&
         String(nap.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase() &&
         String(nap.meeting || "").toUpperCase() === String(entry?.course || "").toUpperCase());

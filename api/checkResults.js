@@ -386,8 +386,10 @@ module.exports = async (req, res) => {
 
                     if (activeRunners?.length) {
 
+                        // The race's value pick when it has one ("single
+                        // Our bet", 2026-11-04), else the first declared.
                         ourTopPick =
-                            activeRunners[0];
+                            require("../services/ourPick").ourPick(predRace) || activeRunners[0];
 
                         declared = activeRunners.length;
                         raceTitle = predRace.display_title || predRace.title;

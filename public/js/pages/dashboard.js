@@ -1592,6 +1592,11 @@ async function loadRace(
 			};
 		}
 
+        // A value pick (2026-11-04, "single Our bet") is the race's bet on its
+        // chance vs the price, so the ratings-margin label and VOID BET don't apply.
+        const valuePick = response.race.valuePick || null;
+        if (valuePick) selectionStatus = { label: "VALUE BET", className: "selection-safe", value: true };
+
         const tierLabel =
             selectionStatus
                 ? `<span class="race-info-dot">•</span>` +
@@ -1599,7 +1604,9 @@ async function loadRace(
                   `title="${selectionStatus.className === 'selection-safe' ? 'Our top rating is well clear of the rest of the field.' : selectionStatus.className === 'selection-caution' ? 'Our top rating has a modest lead - less certain than a clear top pick.' : 'The ratings cannot separate the leading runners, so we treat this race as open and do not suggest a bet.'}">` +
                   `${selectionStatus.label}` +
                   `${
-                      marginTier.margin > 0
+                      selectionStatus.value
+                          ? ` · ${Math.round(100 * valuePick.chance)}% chance at ${escapeHtml(valuePick.odds)}`
+                          : marginTier.margin > 0
                           ? ` · ${marginTier.margin.toFixed(1)} pts ahead of 2nd`
                           : ""
                   }` +
@@ -1615,7 +1622,7 @@ async function loadRace(
 
             analysisSection.classList.toggle(
                 "race-open",
-                marginTier?.tier === "Open"
+                marginTier?.tier === "Open" && !valuePick
             );
         }
 
@@ -1707,13 +1714,23 @@ async function loadRace(
                     : favR ? `Market favourite: <b>${escapeHtml(favR.name)}</b> ${escapeHtml(favR.current_odds || "")}${favN > 1 ? " (joint)" : ""}.` : "");
                 if (rankOfPick > 1 && topRated) bits.push(`Top-rated on our numbers: <b>${escapeHtml(topRated.name)}</b> (rating ${escapeHtml(topRated.elite.rating)}), our pick ranks #${rankOfPick} on rating - the market price decides the pick.`);
                 else bits.push(`Top-rated on our numbers (rating ${escapeHtml(pickRunner.elite.rating)}).`);
-                const tierText = selectionStatus
+                const tierText = selectionStatus?.value
+                    ? `Value bet · ${Math.round(100 * valuePick.chance)}% chance at ${valuePick.odds} - ${Math.round(100 * valuePick.edge)}% better than the price`
+                    : selectionStatus
                     ? selectionStatus.label + (marginTier.margin > 0 ? ` · ${marginTier.margin.toFixed(1)} pts ahead of 2nd` : "")
                     : "";
+                if (selectionStatus?.value) {
+                    // Our bet is the value pick: say why, and that rating and market are only background.
+                    bits.length = 0;
+                    bits.push("Chosen because its chance looks bigger than its price.");
+                    if (topRated && topRated !== pickRunner) bits.push(`Top-rated on our numbers: <b>${escapeHtml(topRated.name)}</b> (rating ${escapeHtml(topRated.elite.rating)}).`);
+                    else bits.push(`Also top-rated on our numbers (rating ${escapeHtml(pickRunner.elite.rating)}).`);
+                    if (favR && favR !== pickRunner) bits.push(`Market favourite: <b>${escapeHtml(favR.name)}</b> ${escapeHtml(favR.current_odds || "")}.`);
+                }
                 const box = document.createElement("div");
                 box.className = "pick-summary" + (selectionStatus ? " pick-summary--" + selectionStatus.className.replace("selection-", "") : "");
                 box.innerHTML =
-                    `<div class="pick-summary-main"><span class="pick-summary-label">Our pick</span> <b class="pick-summary-name">${escapeHtml(pickRunner.name)}</b> <span class="pick-summary-odds">${escapeHtml(pickRunner.current_odds || "")}</span></div>` +
+                    `<div class="pick-summary-main"><span class="pick-summary-label">${selectionStatus?.value ? "Our bet" : "Our pick"}</span> <b class="pick-summary-name">${escapeHtml(pickRunner.name)}</b> <span class="pick-summary-odds">${escapeHtml(pickRunner.current_odds || "")}</span></div>` +
                     (tierText ? `<div class="pick-summary-tier">${escapeHtml(tierText)}${selectionStatus.className === "selection-void" ? " - no bet suggested" : ""}</div>` : "") +
                     `<div class="pick-summary-note">${bits.filter(Boolean).join(" ")}</div>` +
                     ddLegNote(meetingId, raceIndex, pickRunner);
@@ -1892,7 +1909,9 @@ async function loadRace(
                                     )}
 
                                     ${
-                                        runner.isOurPick
+                                        runner.isOurPick && response.race.valuePick
+                                            ? `<span class="runner-our-pick-badge" title="Our bet in this race: its chance looks bigger than its price">Our bet</span>`
+                                            : runner.isOurPick
                                             ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
                                             : ""
                                     }
