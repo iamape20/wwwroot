@@ -87,7 +87,8 @@ function guide(res) {
     const provisional = shortlistProvisional(sl);   // before the 09:00 lock there is no "since 09:00" yet
     (sl.dailyDouble || []).forEach(p => {
         const now = legNow(ratings, nap, p);
-        const noBet = !provisional && ((now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open");
+        // Value legs (2026-11-04) aren't the race pick by design - never NO BET for that.
+        const noBet = !provisional && p.tier !== "Value" && ((now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open");
         add(noBet ? "Daily double - no bet (market moved)" : "Daily double", p);
     });
     (sl.strong || []).forEach(p => add("Strong", p));

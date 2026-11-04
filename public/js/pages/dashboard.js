@@ -74,6 +74,8 @@ function legNoBet(p) {
     // Before the 09:00 lock the list is provisional - the lock re-picks on
     // the live prices, so there is nothing "since 09:00" to compare yet.
     if (!p || p.nonRunner || p.abandoned || p.provisional) return false;
+    // A value leg is chosen on its chance vs the price, not as the race's pick (2026-11-04).
+    if (p.tier === "Value") return false;
     const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
     return Boolean(pickChanged || p.nowTier === "Open");
 }
@@ -126,7 +128,9 @@ function renderDailyDouble(dashboard) {
                 ${p.abandoned ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">This meeting was abandoned after the Daily Double was locked - this leg is void.</div>` : ""}
                 ${legNoBet(p) ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">${escapeHtml(legNoBetReason(p))}</div>` : ""}
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
-                <div class="daily-double-rating">EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span></div>
+                <div class="daily-double-rating">${p.tier === "Value" && p.chance != null
+                    ? `${escapeHtml(p.odds)} &middot; ${Math.round(100 * p.chance)}% chance, ${Math.round(100 * p.edge)}% better than the price`
+                    : `EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span>`}</div>
             </div>
         </div>
     `).join("");
