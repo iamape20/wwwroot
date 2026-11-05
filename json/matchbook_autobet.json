@@ -2,7 +2,7 @@
   "mode": "LIVE",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 91.68,
+  "pot": 87.36,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -313,7 +313,11 @@
       "stake": 4.32,
       "matched": 4.32,
       "offerId": "34793100852000019",
-      "offerStatus": "matched"
+      "offerStatus": "matched",
+      "result": "lost",
+      "pl": -4.32,
+      "potAfter": 87.36,
+      "settledAt": "2026-11-05T14:41:40.719Z"
     },
     {
       "id": "2026-11-05|Clonmel|14:35",
@@ -350,8 +354,47 @@
       ],
       "status": "skipped",
       "reason": "NO BET on the site (race was a VOID BET at the off)"
+    },
+    {
+      "id": "2026-11-05|Plumpton|14:47",
+      "kind": "EXTRA",
+      "mode": "LIVE",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "14:47",
+      "horse": "CENTRAL COMMAND",
+      "decidedAt": "2026-11-05T14:41:40.650Z",
+      "minutesBeforeOff": 5,
+      "potBefore": 91.68,
+      "bankBefore": 82.17205,
+      "bankPeak": 106.762,
+      "halfStake": true,
+      "eventId": "34774767316602072",
+      "marketId": "34774767343601023",
+      "runnerId": "34774767344204023",
+      "price": 1.66,
+      "available": 165.6,
+      "depth": [
+        [
+          1.66,
+          165.6
+        ],
+        [
+          1.65,
+          443
+        ],
+        [
+          1.64,
+          522.9
+        ]
+      ],
+      "status": "placed",
+      "stake": 2.05,
+      "matched": 2.05,
+      "offerId": "34793283021400019",
+      "offerStatus": "matched"
     }
   ],
-  "updatedAt": "2026-11-05T14:31:08.317Z",
+  "updatedAt": "2026-11-05T14:41:40.721Z",
   "bankPeak": 106.762
 }

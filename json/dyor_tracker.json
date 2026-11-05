@@ -25988,10 +25988,18 @@
       "fav": {
         "horse": "MACANUDO",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:11:22.577Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Clonmel|14:35",
@@ -26026,10 +26034,16 @@
       "fav": {
         "horse": "EIGHTY EIGHT",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-05T14:21:11.746Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newcastle|14:40",
@@ -26049,21 +26063,59 @@
       },
       "recordedAt": "2026-11-05T14:31:11.097Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Plumpton|14:47",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "14:47",
+      "horse": "BARBURY BOY",
+      "price": "3/1",
+      "runners": 4,
+      "liveHorse": "CENTRAL COMMAND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CENTRAL COMMAND",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T14:41:43.852Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Southwell|14:53",
+      "date": "2026-11-05",
+      "course": "Southwell",
+      "time": "14:53",
+      "horse": "OPTICIAN",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "PRINCE OF CALYPSO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRINCE OF CALYPSO",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T14:41:43.907Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 949,
+    "recorded": 951,
     "pick": {
-      "settled": 930,
+      "settled": 932,
       "won": 180,
-      "pl": -129.87,
-      "roi": -14
+      "pl": -131.87,
+      "roi": -14.1
     },
     "favourite": {
-      "settled": 923,
+      "settled": 924,
       "won": 325,
-      "pl": 8.96,
-      "roi": 1
+      "pl": 7.96,
+      "roi": 0.9
     },
     "agree": {
       "settled": 245,
@@ -26072,10 +26124,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 685,
+      "settled": 687,
       "won": 84,
-      "pl": -105.92,
-      "roi": -15.5
+      "pl": -107.92,
+      "roi": -15.7
     }
   },
   "lastBackfill": 1793884895908
