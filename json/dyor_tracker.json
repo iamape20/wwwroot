@@ -26614,10 +26614,16 @@
       "fav": {
         "horse": "NATIONAL PRIDE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-05T17:00:49.055Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|17:30",
@@ -26637,15 +26643,34 @@
       },
       "recordedAt": "2026-11-05T17:20:50.413Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|17:45",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "17:45",
+      "horse": "BAANDEE",
+      "price": "6/5",
+      "runners": 5,
+      "liveHorse": "MISSMISFORTUNE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MISSMISFORTUNE",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T17:30:32.702Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 971,
+    "recorded": 972,
     "pick": {
-      "settled": 951,
+      "settled": 952,
       "won": 180,
-      "pl": -150.87,
-      "roi": -15.9
+      "pl": -151.87,
+      "roi": -16
     },
     "favourite": {
       "settled": 937,
@@ -26660,10 +26685,10 @@
       "roi": -10.9
     },
     "disagree": {
-      "settled": 703,
+      "settled": 704,
       "won": 84,
-      "pl": -123.92,
-      "roi": -17.6
+      "pl": -124.92,
+      "roi": -17.7
     }
   },
   "lastBackfill": 1793896264018
