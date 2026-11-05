@@ -2904,6 +2904,14 @@ async function loadRecord() {
         if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
         // Real Matchbook bets not shown (user 2026-11-05).
         if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
+        // NAP rule forward test (user 2026-11-05): each rule's live record, what
+        // it did in testing, and the pass mark it must reach before real money.
+        for (const t of Object.values(d.ruleTest?.rules || {})) {
+            const bt = t.backtest || {};
+            const live = t.picks ? `${t.won} won of ${t.picks} &middot; <span class="${t.pl < 0 ? "record-minus" : "record-plus"}">${t.pl < 0 ? "-" : "+"}${Math.abs(t.pl).toFixed(2)} pts</span> at Betfair SP` : "no picks settled yet";
+            rows.push(`<div class="record-row"><b>${escapeHtml(t.rule)}</b> ${live} <span class="record-since">${t.picks}/${t.passAt} picks${t.verdict ? ` - ${t.verdict}` : ""}. In testing it won ${bt.wonPct}%, losing runs up to ${bt.losingRun}</span></div>`);
+        }
+        if (d.realBetsPaused) rows.push(`<div class="record-row record-since">Real-money bets are paused until a NAP rule shows a profit over ${Object.values(d.ruleTest?.rules || {})[0]?.passAt || 100} picks, in both halves.</div>`);
         renderLastNap(d.lastNap);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
