@@ -7650,27 +7650,133 @@
       "marketVolume": 9706
     },
     "lastBeforeOff": {
-      "at": "2026-11-05T08:20:59.796Z",
+      "at": "2026-11-05T08:31:09.554Z",
       "eventId": 34774767256900070,
       "found": true,
       "withdrawn": false,
       "bestBack": 9,
-      "available": 1.15,
+      "available": 4.45,
       "depth": [
         [
           9,
-          1.15
+          4.45
         ],
         [
           8.8,
-          3.85
+          5.34
         ],
         [
           8.6,
-          5.2
+          3.07
         ]
       ],
-      "marketVolume": 16294
+      "marketVolume": 24431
+    }
+  },
+  "BEST|2026-11-05|Newbury|15:33|WORDFROMHOME": {
+    "type": "BEST",
+    "date": "2026-11-05",
+    "course": "Newbury",
+    "time": "15:33",
+    "horse": "WORDFROMHOME",
+    "atReveal": {
+      "at": "2026-11-05T08:31:09.557Z",
+      "eventId": 34774767546801070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.62,
+      "available": 9.93,
+      "depth": [
+        [
+          2.62,
+          9.93
+        ],
+        [
+          2.6,
+          2
+        ],
+        [
+          2.58,
+          11.44
+        ]
+      ],
+      "marketVolume": 16266
+    },
+    "lastBeforeOff": {
+      "at": "2026-11-05T08:41:09.846Z",
+      "eventId": 34774767546801070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.66,
+      "available": 1.81,
+      "depth": [
+        [
+          2.66,
+          1.81
+        ],
+        [
+          2.64,
+          5.5
+        ],
+        [
+          2.62,
+          2.44
+        ]
+      ],
+      "marketVolume": 17929
+    }
+  },
+  "NAP|2026-11-05|Southwell|14:20|MACANUDO": {
+    "type": "NAP",
+    "date": "2026-11-05",
+    "course": "Southwell",
+    "time": "14:20",
+    "horse": "MACANUDO",
+    "atReveal": {
+      "at": "2026-11-05T08:41:09.842Z",
+      "eventId": 34774861939900024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 5.2,
+      "available": 1,
+      "depth": [
+        [
+          5.2,
+          1
+        ],
+        [
+          5.1,
+          5.51
+        ],
+        [
+          5,
+          10.63
+        ]
+      ],
+      "marketVolume": 24927
+    },
+    "lastBeforeOff": {
+      "at": "2026-11-05T08:41:09.842Z",
+      "eventId": 34774861939900024,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 5.2,
+      "available": 1,
+      "depth": [
+        [
+          5.2,
+          1
+        ],
+        [
+          5.1,
+          5.51
+        ],
+        [
+          5,
+          10.63
+        ]
+      ],
+      "marketVolume": 24927
     }
   }
 }
