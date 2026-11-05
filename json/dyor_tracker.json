@@ -26150,10 +26150,18 @@
       "fav": {
         "horse": "PERCY DE COURCY",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:51:07.641Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Chelmsford City|15:05",
@@ -26169,10 +26177,16 @@
       "fav": {
         "horse": "WHISKEY GALORE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/2"
       },
       "recordedAt": "2026-11-05T14:51:07.679Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Clonmel|15:10",
@@ -26230,21 +26244,59 @@
       },
       "recordedAt": "2026-11-05T15:11:30.693Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newbury|15:33",
+      "date": "2026-11-05",
+      "course": "Newbury",
+      "time": "15:33",
+      "horse": "BLOCK FLIGHT",
+      "price": "6/1",
+      "runners": 11,
+      "liveHorse": "WORDFROMHOME",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WORDFROMHOME",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:21:13.563Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Southwell|15:28",
+      "date": "2026-11-05",
+      "course": "Southwell",
+      "time": "15:28",
+      "horse": "ALESSIA FERNANDA",
+      "price": "16/1",
+      "runners": 12,
+      "liveHorse": "DOVEY MOON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DOVEY MOON",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:21:13.605Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 956,
+    "recorded": 958,
     "pick": {
-      "settled": 936,
+      "settled": 938,
       "won": 180,
-      "pl": -135.87,
-      "roi": -14.5
+      "pl": -137.87,
+      "roi": -14.7
     },
     "favourite": {
-      "settled": 927,
+      "settled": 928,
       "won": 325,
-      "pl": 4.96,
-      "roi": 0.5
+      "pl": 3.96,
+      "roi": 0.4
     },
     "agree": {
       "settled": 245,
@@ -26253,10 +26305,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 691,
+      "settled": 693,
       "won": 84,
-      "pl": -111.92,
-      "roi": -16.2
+      "pl": -113.92,
+      "roi": -16.4
     }
   },
   "lastBackfill": 1793884895908
