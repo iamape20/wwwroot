@@ -2853,3 +2853,21 @@ button {
 .coming-up-in { flex: 0 0 auto; color: var(--epr-muted); font-size: 12px; font-weight: 700; }
 /* On a phone Coming up would sit above the NAP; Card at a glance has the same races. */
 @media (max-width: 700px) { .coming-up { display: none; } }
+
+/* Meeting and race buttons in their own colours (user 2026-11-05):
+   meetings blue, races gold; the selected one of each filled solid. */
+:root { --epr-meet-rgb: 96,165,250; --epr-meet-solid: #2563EB; --epr-race-rgb: 212,175,55; --epr-race-solid: #B8922A; }
+:root[data-theme="light"] { --epr-meet-rgb: 37,99,235; --epr-meet-solid: #1D4ED8; --epr-race-rgb: 156,122,28; --epr-race-solid: #9C7A1C; }
+
+.meeting-card { background: rgba(var(--epr-meet-rgb),.12); border-color: rgba(var(--epr-meet-rgb),.45); }
+.meeting-card:hover { background: rgba(var(--epr-meet-rgb),.22); border-color: rgb(var(--epr-meet-rgb)); }
+.meeting-card.active { background: var(--epr-meet-solid); border-color: var(--epr-meet-solid); }
+.meeting-card.active .meeting-card-name { color: #fff; }
+.meeting-card.active .meeting-card-count { color: #fff; background: rgba(255,255,255,.22); }
+
+.race-card { background: rgba(var(--epr-race-rgb),.10); border-color: rgba(var(--epr-race-rgb),.40); }
+.race-card:hover { background: rgba(var(--epr-race-rgb),.20); border-color: rgb(var(--epr-race-rgb)); }
+.race-card.active { background: var(--epr-race-solid); border-color: var(--epr-race-solid); }
+.race-card.active .race-card-time,
+.race-card.active .race-card-meta,
+.race-card.active .race-card-runners { color: #fff; }

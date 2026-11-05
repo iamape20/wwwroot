@@ -1510,12 +1510,27 @@ function ddLegNote(meetingId, raceIndex, pickRunner) {
         : "";
 }
 
+// Highlight the open race's meeting and race buttons (user 2026-11-05). Races
+// opened from the NAP, the Daily Double, Coming up or on page load used to
+// leave both unmarked - only a click on the button itself set it.
+let openRace = null;
+function markSelected(meetingId = openRace?.meetingId, raceIndex = openRace?.raceIndex) {
+    if (meetingId == null) return;
+    openRace = { meetingId, raceIndex };
+    document.querySelectorAll(".meeting-card").forEach(el =>
+        el.classList.toggle("active", el.dataset.meetingId === String(meetingId)));
+    document.querySelectorAll(".race-card").forEach(el =>
+        el.classList.toggle("active", el.dataset.meetingId === String(meetingId) && el.dataset.raceIndex === String(raceIndex)));
+}
+
 async function loadRace(
     meetingId,
     raceIndex,
     raceTime,
     options = {}
 ) {
+
+    markSelected(meetingId, raceIndex);
 
     try {
 
@@ -2332,6 +2347,8 @@ async function loadRaces(
 
                 card.className =
                     "race-card";
+                card.dataset.meetingId = String(meetingId);
+                card.dataset.raceIndex = String(race.index);
 
                 card.innerHTML = `
 
@@ -3339,6 +3356,8 @@ async function loadMeetings(autoSelectFirst = false) {
             }
         );
 
+
+		markSelected();   // the buttons are drawn after the first race has opened
 
 		if (
 			autoSelectFirst &&
