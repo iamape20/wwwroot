@@ -26273,10 +26273,16 @@
       "fav": {
         "horse": "WORDFROMHOME",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-05T15:21:13.563Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|15:28",
@@ -26380,15 +26386,53 @@
       },
       "recordedAt": "2026-11-05T15:41:11.957Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newbury|16:05",
+      "date": "2026-11-05",
+      "course": "Newbury",
+      "time": "16:05",
+      "horse": "BRAZILIAN BLUE",
+      "price": "18/1",
+      "runners": 11,
+      "liveHorse": "NEWGROVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NEWGROVE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:51:17.745Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Southwell|16:00",
+      "date": "2026-11-05",
+      "course": "Southwell",
+      "time": "16:00",
+      "horse": "BOMBORA",
+      "price": "11/4",
+      "runners": 9,
+      "liveHorse": "FENAROLI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FENAROLI",
+        "price": "1/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:51:17.807Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 962,
+    "recorded": 964,
     "pick": {
-      "settled": 940,
+      "settled": 941,
       "won": 180,
-      "pl": -139.87,
-      "roi": -14.9
+      "pl": -140.87,
+      "roi": -15
     },
     "favourite": {
       "settled": 929,
@@ -26403,10 +26447,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 695,
+      "settled": 696,
       "won": 84,
-      "pl": -115.92,
-      "roi": -16.7
+      "pl": -116.92,
+      "roi": -16.8
     }
   },
   "lastBackfill": 1793884895908
