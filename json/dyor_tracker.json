@@ -26508,10 +26508,18 @@
       "fav": {
         "horse": "RED SEAGULL",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T16:11:05.312Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|16:30",
@@ -26527,10 +26535,16 @@
       "fav": {
         "horse": "LADY MARIKO",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-11-05T16:21:25.527Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Chelmsford City|16:45",
@@ -26555,16 +26569,16 @@
   "stats": {
     "recorded": 968,
     "pick": {
-      "settled": 947,
+      "settled": 949,
       "won": 180,
-      "pl": -146.87,
-      "roi": -15.5
+      "pl": -148.87,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 934,
+      "settled": 935,
       "won": 325,
-      "pl": -2.04,
-      "roi": -0.2
+      "pl": -3.04,
+      "roi": -0.3
     },
     "agree": {
       "settled": 247,
@@ -26573,10 +26587,10 @@
       "roi": -10.5
     },
     "disagree": {
-      "settled": 700,
+      "settled": 702,
       "won": 84,
-      "pl": -120.92,
-      "roi": -17.3
+      "pl": -122.92,
+      "roi": -17.5
     }
   },
   "lastBackfill": 1793896264018
