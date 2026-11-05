@@ -26483,10 +26483,16 @@
       "fav": {
         "horse": "HAVANA TOUCH",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-05T16:01:26.197Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Clonmel|16:20",
@@ -26525,15 +26531,34 @@
       },
       "recordedAt": "2026-11-05T16:21:25.527Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|16:45",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "16:45",
+      "horse": "GALIMIX",
+      "price": "9/4",
+      "runners": 12,
+      "liveHorse": "TOUGH DECISION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TOUGH DECISION",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T16:31:03.979Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 967,
+    "recorded": 968,
     "pick": {
-      "settled": 946,
+      "settled": 947,
       "won": 180,
-      "pl": -145.87,
-      "roi": -15.4
+      "pl": -146.87,
+      "roi": -15.5
     },
     "favourite": {
       "settled": 934,
@@ -26548,11 +26573,11 @@
       "roi": -10.5
     },
     "disagree": {
-      "settled": 699,
+      "settled": 700,
       "won": 84,
-      "pl": -119.92,
-      "roi": -17.2
+      "pl": -120.92,
+      "roi": -17.3
     }
   },
-  "lastBackfill": 1793884895908
+  "lastBackfill": 1793896264018
 }
