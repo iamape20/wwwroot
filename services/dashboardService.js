@@ -276,20 +276,28 @@ function napNow(ratings, nap, list) {
     const { nowTier, nowPick } = legNow(ratings, null, entry);
     const noBet = !nonRunner && !abandoned && !shortlistProvisional(list) && nap.tier !== "Value" &&
         ((nowPick && up(nowPick) !== up(nap.name)) || nowTier === "Open");
-    let result = null;
+    const result = raceResult(nap.date, nap.meeting, nap.time, nap.name);
+    return { nonRunner, abandoned, noBet, nowPick, nowTier, result };
+}
+
+// How a horse finished, once its race is in json/results_feed.json (rebuilt
+// every odds refresh): {position, odds, runners, winner, winnerOdds}, position
+// 0 with a reason for a faller/pulled up, null before the race. Used by the
+// NAP box and each Daily Double leg (user 2026-11-05).
+function raceResult(date, course, time, horse) {
+    const up = s => String(s || "").toUpperCase();
     try {
         const feed = json.load("results_feed.json");
-        const day = (feed.days || []).find(d => d.date === nap.date);
-        const race = day?.races?.find(r => up(r.course) === up(nap.meeting) && r.time === nap.time);
-        if (race) {
-            const fin = (race.finishers || []).find(f => up(f.name) === up(nap.name));
-            const out = (race.nonFinishers || []).find(f => up(f.name) === up(nap.name));
-            result = fin
-                ? { position: Number(fin.position), odds: fin.odds || null, runners: race.runners || null, winner: race.winner || null, winnerOdds: race.winnerOdds || null }
-                : out ? { position: 0, reason: out.reason || null, winner: race.winner || null, winnerOdds: race.winnerOdds || null } : null;
-        }
-    } catch { result = null; }
-    return { nonRunner, abandoned, noBet, nowPick, nowTier, result };
+        const day = (feed.days || []).find(d => d.date === date);
+        const race = day?.races?.find(r => up(r.course) === up(course) && r.time === time);
+        if (!race) return null;
+        const fin = (race.finishers || []).find(f => up(f.name) === up(horse));
+        const out = (race.nonFinishers || []).find(f => up(f.name) === up(horse));
+        const winner = { winner: race.winner || null, winnerOdds: race.winnerOdds || null };
+        if (fin) return { position: Number(fin.position), odds: fin.odds || null, runners: race.runners || null, ...winner };
+        if (out) return { position: 0, reason: out.reason || null, ...winner };
+        return null;
+    } catch { return null; }
 }
 
 // Is the Daily Double still the overnight build, before the 09:00 lock?
@@ -934,7 +942,8 @@ for (
 				nonRunner: isWithdrawnPick(ratings, e),
 				abandoned: isAbandonedLeg(ratings, dailyDoubleData, e),
 				...legNow(ratings, nap, e),
-				provisional: shortlistProvisional(dailyDoubleData)
+				provisional: shortlistProvisional(dailyDoubleData),
+				result: raceResult(dailyDoubleData?.date, e.course, e.time, e.horse)
 			})),
 
 			dailyDoublePickMode:

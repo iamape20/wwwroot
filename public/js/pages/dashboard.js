@@ -87,6 +87,32 @@ function legNoBetReason(p) {
         : "Market has moved since 09:00 - no clear pick in this race now, so no bet.";
 }
 
+// "WON at 5/4" / "Lost - finished 4th of 9. Won by X (3/1)" for a horse whose
+// race has a result (dashboardService raceResult; user 2026-11-05).
+function resultLineHtml(res) {
+    if (!res) return "";
+    const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th"));
+    const words = s => String(s || "").replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase().replace(/^./, c => c.toUpperCase());
+    const wonBy = res.winner ? `. Won by ${escapeHtml(res.winner)}${res.winnerOdds ? ` (${escapeHtml(res.winnerOdds)})` : ""}` : "";
+    if (res.position === 1) return `<div class="nap-result nap-result-won">WON${res.odds ? ` at ${escapeHtml(res.odds)}` : ""}</div>`;
+    if (res.position > 1) return `<div class="nap-result nap-result-lost">Lost - finished ${ord(res.position)}${res.runners ? ` of ${res.runners}` : ""}${wonBy}</div>`;
+    return `<div class="nap-result nap-result-lost">Lost - ${escapeHtml(words(res.reason) || "did not finish")}${wonBy}</div>`;
+}
+
+// The Daily Double's state after racing (user 2026-11-05): void legs
+// (non-runner, abandoned, NO BET) drop out as in the running record, the
+// rest must all win.
+function doubleSummaryHtml(picks, single) {
+    const bets = picks.filter(p => !p.nonRunner && !p.abandoned && !legNoBet(p));
+    if (!bets.length || !bets.some(p => p.result)) return "";
+    const lost = bets.filter(p => p.result && p.result.position !== 1).length;
+    const won = bets.filter(p => p.result?.position === 1).length;
+    const name = single ? "Single" : "Double";
+    if (lost) return `<div class="dd-summary dd-summary-lost">${name} lost</div>`;
+    if (won === bets.length) return `<div class="dd-summary dd-summary-won">${name} landed${picks.length > bets.length ? " (void leg dropped)" : ""}</div>`;
+    return `<div class="dd-summary">${won} of ${bets.length} won so far</div>`;
+}
+
 function renderDailyDouble(dashboard) {
 
     const box = document.getElementById("dailyDoubleBox");
@@ -128,6 +154,7 @@ function renderDailyDouble(dashboard) {
                 </div>
                 ${p.abandoned ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">This meeting was abandoned after the Daily Double was locked - this leg is void.</div>` : ""}
                 ${legNoBet(p) ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">${escapeHtml(legNoBetReason(p))}</div>` : ""}
+                ${p.nonRunner || p.abandoned || legNoBet(p) ? "" : resultLineHtml(p.result)}
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">${p.tier === "Value" && p.chance != null
                     ? `${escapeHtml(p.odds)} &middot; ${Math.round(100 * p.chance)}% chance, ${Math.round(100 * p.edge)}% better than the price`
@@ -148,6 +175,7 @@ function renderDailyDouble(dashboard) {
             <div class="daily-double-header">${headerText}</div>
             ${provisionalNote}
             ${rows}
+            ${doubleSummaryHtml(picks, dashboard?.dailyDoublePickMode === "single")}
         </div>
     `;
 
@@ -241,18 +269,18 @@ function renderNapCallout(nap) {
     // built by dashboardService napNow).
     const now = nap.now || {};
     const res = now.result;
-    const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th"));
-    const words = s => String(s || "").replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase().replace(/^./, c => c.toUpperCase());
     const struck = now.nonRunner || now.abandoned || now.noBet;
     const flag = now.nonRunner ? "NON-RUNNER" : now.abandoned ? "ABANDONED" : now.noBet ? "NO BET" : "";
     const flagWhy = now.nonRunner ? "Withdrawn since the NAP was chosen - no bet."
         : now.abandoned ? "The meeting has been abandoned - no bet."
         : now.noBet ? `Market has moved since 09:00 - ${now.nowPick && String(now.nowPick).toUpperCase() !== String(nap.name || "").toUpperCase() ? `the race page now picks ${escapeHtml(now.nowPick)}` : "no clear pick in this race now"}, so no bet.`
         : "";
-    const resultHtml = !res ? ""
-        : res.position === 1 ? `<div class="nap-result nap-result-won">WON${res.odds ? ` at ${escapeHtml(res.odds)}` : ""}</div>`
-        : res.position > 1 ? `<div class="nap-result nap-result-lost">Lost - finished ${ord(res.position)}${res.runners ? ` of ${res.runners}` : ""}${res.winner ? `. Won by ${escapeHtml(res.winner)}${res.winnerOdds ? ` (${escapeHtml(res.winnerOdds)})` : ""}` : ""}</div>`
-        : `<div class="nap-result nap-result-lost">Lost - ${escapeHtml(words(res.reason) || "did not finish")}${res.winner ? `. Won by ${escapeHtml(res.winner)}${res.winnerOdds ? ` (${escapeHtml(res.winnerOdds)})` : ""}` : ""}</div>`;
+    const resultHtml = resultLineHtml(res);
+    // Countdown to the off (user 2026-11-05); race times are UTC. Gone once
+    // the result is in or the horse is out.
+    const offMs = nap.date && nap.time ? Date.parse(`${nap.date}T${nap.time}:00Z`) : NaN;
+    const countdownHtml = !res && !struck && Number.isFinite(offMs)
+        ? `<span class="nap-countdown" data-off="${offMs}"></span>` : "";
     napEl.innerHTML = `
         <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
         <div class="nap-row">
@@ -261,13 +289,14 @@ function renderNapCallout(nap) {
                 <div class="nap-name"><span${struck ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(String(nap.name || "").toUpperCase())}</span>${flag ? ` <span class="nap-flag">${flag}</span>` : ""}</div>
                 ${flagWhy ? `<div class="nap-flag-why">${flagWhy}</div>` : ""}
                 ${resultHtml}
-                <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
+                <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
                 <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
             </div>
         </div>
     `;
 
     napEl.style.display = "";
+    tickNapCountdown();
 
     if (nap.meetingId != null && nap.raceIndex != null) {
 
@@ -290,6 +319,14 @@ function renderNapCallout(nap) {
 
     }
 
+}
+
+function tickNapCountdown() {
+    const el = document.querySelector(".nap-countdown");
+    if (!el) return;
+    const mins = Math.ceil((Number(el.dataset.off) - Date.now()) / 60000);
+    el.textContent = mins <= 0 ? " \u2022 off" : ` \u2022 off in ${mins >= 60 ? `${Math.floor(mins / 60)}h ${mins % 60}m` : `${mins}m`}`;
+    el.classList.toggle("nap-countdown-soon", mins > 0 && mins <= 15);
 }
 
 function escapeHtml(str) {
@@ -2631,6 +2668,9 @@ export async function loadDashboard() {
         loadRecord();
         setInterval(loadRecord, 300000);
 
+        // The NAP countdown and Coming up move with the clock (user 2026-11-05).
+        setInterval(() => { tickNapCountdown(); renderComingUp(); }, 30000);
+
         startLiveRefresh();
 
     } catch (err) {
@@ -2831,8 +2871,8 @@ async function loadUpdatedStamp() {
     } catch { /* keep the last stamp */ }
 }
 
-// Running record under the Daily Double (user 2026-11-05): NAPs at SP, the
-// real Matchbook bets and the Daily Double, built by js/buildStaticSite.js.
+// Running record under the Daily Double (user 2026-11-05): NAPs at SP and the
+// Daily Double, built by js/buildStaticSite.js.
 async function loadRecord() {
     const el = document.getElementById("recordBlock");
     if (!el) return;
@@ -2847,10 +2887,60 @@ async function loadRecord() {
         if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
         // Real Matchbook bets not shown (user 2026-11-05).
         if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
+        renderLastNap(d.lastNap);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
         el.style.display = "";
     } catch { /* keep the last record */ }
+}
+
+// "Yesterday's NAP: MACANUDO 2nd at 7/2" under today's NAP (user 2026-11-05):
+// the last settled NAP before today, from data/record.json.
+function renderLastNap(n) {
+    const el = document.getElementById("napYesterday");
+    if (!el) return;
+    if (!n?.name) { el.innerHTML = ""; return; }
+    const y = new Date(Date.now() - 86400000).toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const label = n.date === y ? "Yesterday's NAP"
+        : "Last NAP (" + new Date(n.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + ")";
+    const ord = p => p + (p % 100 >= 11 && p % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[p % 10] || "th"));
+    const sp = n.sp ? ` at ${escapeHtml(n.sp)}` : "";
+    const how = n.outcome === "won" ? `<span class="record-plus">won</span>${sp}`
+        : `<span class="record-minus">${n.position ? ord(n.position) : "lost"}</span>${sp}${n.winner ? ` &middot; won by ${escapeHtml(n.winner)}${n.winnerSp ? ` (${escapeHtml(n.winnerSp)})` : ""}` : ""}`;
+    el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.name).toUpperCase())}</b> ${how}`;
+}
+
+// Coming up (user 2026-11-05): the next races on the whole card with our pick
+// and the favourite, in the space under the race buttons. Built from the Card
+// at a glance data; a click opens the race the same way a glance row does.
+let glanceData = null;
+function renderComingUp() {
+    const box = document.getElementById("comingUp");
+    if (!box) return;
+    const d = glanceData;
+    const now = Date.now();
+    const offOf = x => Date.parse(d.date + "T" + x.time + ":00Z");
+    const next = (d?.races || []).filter(x => offOf(x) > now).slice(0, 6);
+    if (!next.length) { box.innerHTML = ""; return; }
+    box.innerHTML = "<div class='coming-up-label'>Coming up</div>" + next.map(x => {
+        const t = toLocalTimeString(x.time);
+        const mins = Math.ceil((offOf(x) - now) / 60000);
+        const inText = mins >= 60 ? Math.floor(mins / 60) + "h " + (mins % 60) + "m" : mins + "m";
+        const fav = x.agree ? "<span class='glance-yes'>Also the favourite</span>"
+            : x.fav ? "Favourite " + escapeHtml(x.fav) + " <span class='glance-odds'>" + escapeHtml(x.favOdds || "") + "</span>" + (x.jointFav ? " <i>(joint)</i>" : "") : "";
+        const silk = x.pickSilk
+            ? "<img src='" + escapeHtml(x.pickSilk) + "' class='coming-up-silk' alt='' loading='lazy' onerror=\"this.style.visibility='hidden';\">"
+            : "<span class='coming-up-silk'></span>";
+        return "<div class='coming-up-row' data-hash='" + escapeHtml(raceHash(x.course, t)) + "'>" +
+            "<div class='coming-up-time'><b>" + escapeHtml(t) + "</b><span>" + escapeHtml(x.course) + "</span></div>" + silk +
+            "<div class='coming-up-pick'><b>" + escapeHtml(x.pick) + "</b> <span class='glance-odds'>" + escapeHtml(x.pickOdds || "") + "</span>" +
+            "<div class='coming-up-fav'>" + fav + "</div></div>" +
+            "<div class='coming-up-in'>" + inText + "</div></div>";
+    }).join("");
+    box.querySelectorAll(".coming-up-row").forEach(row => row.addEventListener("click", () => {
+        location.hash = row.dataset.hash;
+        location.reload();
+    }));
 }
 
 async function loadGlance() {
@@ -2861,6 +2951,8 @@ async function loadGlance() {
         const r = await fetch(`data/glance.json?t=${Date.now()}`, { cache: "no-store" });
         if (!r.ok) return;
         const d = await r.json();
+        glanceData = d;
+        renderComingUp();
         const races = d.races || [];
         if (!races.length) { box.style.display = "none"; return; }
         const now = Date.now();
@@ -2874,7 +2966,7 @@ async function loadGlance() {
             const favCell = x.agree ? "<span class='glance-yes' title='Our pick is the market favourite'>Same</span>" : x.fav ? escapeHtml(x.fav) + " <span class='glance-odds'>" + escapeHtml(x.favOdds) + "</span>" + (x.jointFav ? " <i>(joint)</i>" : "") : "-";
             return "<tr class='glance-row" + (off ? " glance-off" : "") + "' data-hash='" + escapeHtml(hash) + "'>" +
                 "<td>" + escapeHtml(t) + "</td><td>" + escapeHtml(x.course) + "</td>" +
-                "<td><b>" + escapeHtml(x.pick) + "</b> <span class='glance-odds'>" + escapeHtml(x.pickOdds || "") + "</span></td>" +
+                "<td>" + (x.pickSilk ? "<img src='" + escapeHtml(x.pickSilk) + "' class='glance-silk' alt='' loading='lazy' onerror=\"this.style.display='none';\">" : "") + "<b>" + escapeHtml(x.pick) + "</b> <span class='glance-odds'>" + escapeHtml(x.pickOdds || "") + "</span></td>" +
                 "<td>" + favCell + "</td></tr>";
         }).join("");
         body.innerHTML = "<div class='glance-wrap'><table class='glance-table'><thead><tr><th>Time</th><th>Course</th><th>Our pick</th><th>Favourite</th></tr></thead><tbody>" +

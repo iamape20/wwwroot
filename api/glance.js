@@ -128,6 +128,7 @@ module.exports = (req, res) => {
                     runners: active.length,
                     pick: pick.name,
                     pickOdds: pick.current_odds || null,
+                    pickSilk: pick.silk_url || null,   // silks in Card at a glance (user 2026-11-05)
                     fav: fav ? fav.name : null,
                     favOdds: fav ? fav.current_odds : null,
                     jointFav: favCount > 1,

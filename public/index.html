@@ -40,12 +40,12 @@
          browser's module cache treats a different query string as a
          different module and busting the entry point alone does not
          bust what it imports. -->
-    <link rel="stylesheet" href="css/app.css?v=20261105e">
+    <link rel="stylesheet" href="css/app.css?v=20261105g">
 	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
 
     <script src="js/clock.js?v=20261105a" defer></script>
     <script src="js/theme.js?v=20260925" defer></script>
-    <script type="module" src="js/app.js?v=20261105f"></script>
+    <script type="module" src="js/app.js?v=20261105g"></script>
 
 </head>
 
@@ -102,6 +102,8 @@
 
                 <div id="races"></div>
 
+                <div id="comingUp" class="coming-up"></div>
+
             </section>
 
         </div>
@@ -110,6 +112,7 @@
 
             <section id="pickBoard" class="pick-board" aria-label="Today's betting candidates">
                 <div id="napCallout" class="nap-callout"></div>
+                <div id="napYesterday" class="nap-yesterday"></div>
                 <div id="dailyDoubleBox"></div>
                 <div id="dailyDoubleYesterday"></div>
                 <div id="recordBlock" class="record-block" style="display:none;"></div>
