@@ -25751,10 +25751,16 @@
       "fav": {
         "horse": "PRESLEY",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "85/40"
       },
       "recordedAt": "2026-11-05T13:11:03.042Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newcastle|13:34",
@@ -25774,15 +25780,34 @@
       },
       "recordedAt": "2026-11-05T13:21:35.819Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Plumpton|13:43",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "13:43",
+      "horse": "LADY LITIGATOR",
+      "price": "11/4",
+      "runners": 3,
+      "liveHorse": "JENNY FRANCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JENNY FRANCE",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:31:17.658Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 938,
+    "recorded": 939,
     "pick": {
-      "settled": 921,
+      "settled": 922,
       "won": 180,
-      "pl": -120.87,
-      "roi": -13.1
+      "pl": -121.87,
+      "roi": -13.2
     },
     "favourite": {
       "settled": 917,
@@ -25797,10 +25822,10 @@
       "roi": -8.7
     },
     "disagree": {
-      "settled": 679,
+      "settled": 680,
       "won": 84,
-      "pl": -99.92,
-      "roi": -14.7
+      "pl": -100.92,
+      "roi": -14.8
     }
   },
   "lastBackfill": 1793884895908
