@@ -26560,10 +26560,18 @@
       "fav": {
         "horse": "TOUGH DECISION",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T16:31:03.979Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|17:00",
@@ -26583,21 +26591,40 @@
       },
       "recordedAt": "2026-11-05T16:50:46.461Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|17:15",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "17:15",
+      "horse": "ROOSIKE",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "NATIONAL PRIDE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NATIONAL PRIDE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T17:00:49.055Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 969,
+    "recorded": 970,
     "pick": {
-      "settled": 949,
+      "settled": 950,
       "won": 180,
-      "pl": -148.87,
-      "roi": -15.7
+      "pl": -149.87,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 935,
+      "settled": 936,
       "won": 325,
-      "pl": -3.04,
-      "roi": -0.3
+      "pl": -4.04,
+      "roi": -0.4
     },
     "agree": {
       "settled": 247,
@@ -26606,10 +26633,10 @@
       "roi": -10.5
     },
     "disagree": {
-      "settled": 702,
+      "settled": 703,
       "won": 84,
-      "pl": -122.92,
-      "roi": -17.5
+      "pl": -123.92,
+      "roi": -17.6
     }
   },
   "lastBackfill": 1793896264018
