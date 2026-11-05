@@ -2911,6 +2911,12 @@ async function loadRecord() {
             const live = t.picks ? `${t.won} won of ${t.picks} &middot; <span class="${t.pl < 0 ? "record-minus" : "record-plus"}">${t.pl < 0 ? "-" : "+"}${Math.abs(t.pl).toFixed(2)} pts</span> at Betfair SP` : "no picks settled yet";
             rows.push(`<div class="record-row"><b>${escapeHtml(t.rule)}</b> ${live} <span class="record-since">${t.picks}/${t.passAt} picks${t.verdict ? ` - ${t.verdict}` : ""}. In testing it won ${bt.wonPct}%, losing runs up to ${bt.losingRun}</span></div>`);
         }
+        // Best Odds Guaranteed paper test (user 2026-11-05): no money, £1 a bet.
+        const bog = d.bogTest;
+        if (bog) {
+            const live = bog.bets ? `${bog.won} won of ${bog.bets} &middot; <span class="${bog.pl < 0 ? "record-minus" : "record-plus"}">${bog.pl < 0 ? "-" : "+"}${Math.abs(bog.pl).toFixed(2)} pts</span> with BOG${bog.noBogRoiPct != null ? ` (${bog.roiPct}%; without BOG ${bog.noBogRoiPct}%)` : ""}` : "first bets from 09:00";
+            rows.push(`<div class="record-row"><b>Best Odds Guaranteed test</b> ${live} <span class="record-since">${bog.bets}/${bog.passAt} bets${bog.verdict ? ` - ${bog.verdict}` : ""}. Our top-rated at evens to 4/1, paid the bigger of the 9am price and the SP; in testing +${bog.backtest?.roiPct}%</span></div>`);
+        }
         if (d.realBetsPaused) rows.push(`<div class="record-row record-since">Real-money bets are paused until a NAP rule shows a profit over ${Object.values(d.ruleTest?.rules || {})[0]?.passAt || 100} picks, in both halves.</div>`);
         renderLastNap(d.lastNap);
         if (!rows.length) { el.style.display = "none"; return; }
