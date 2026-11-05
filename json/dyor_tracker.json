@@ -26250,10 +26250,14 @@
       "fav": {
         "horse": "BEL OMBRE",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-11-05T15:11:30.693Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/13"
     },
     {
       "id": "2026-11-05|Newbury|15:33",
@@ -26288,10 +26292,18 @@
       "fav": {
         "horse": "DOVEY MOON",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T15:21:13.605Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Clonmel|15:45",
@@ -26330,21 +26342,59 @@
       },
       "recordedAt": "2026-11-05T15:31:14.141Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Plumpton|15:55",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "15:55",
+      "horse": "EZ TIGER",
+      "price": "1/1",
+      "runners": 4,
+      "liveHorse": "EZ TIGER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "EZ TIGER",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:41:11.863Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newcastle|15:50",
+      "date": "2026-11-05",
+      "course": "Newcastle",
+      "time": "15:50",
+      "horse": "ALBATROSS THE ACE",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "THAT GUY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THAT GUY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:41:11.957Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 960,
+    "recorded": 962,
     "pick": {
-      "settled": 939,
+      "settled": 940,
       "won": 180,
-      "pl": -138.87,
-      "roi": -14.8
+      "pl": -139.87,
+      "roi": -14.9
     },
     "favourite": {
-      "settled": 928,
+      "settled": 929,
       "won": 325,
-      "pl": 3.96,
-      "roi": 0.4
+      "pl": 2.96,
+      "roi": 0.3
     },
     "agree": {
       "settled": 245,
@@ -26353,10 +26403,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 694,
+      "settled": 695,
       "won": 84,
-      "pl": -114.92,
-      "roi": -16.6
+      "pl": -115.92,
+      "roi": -16.7
     }
   },
   "lastBackfill": 1793884895908
