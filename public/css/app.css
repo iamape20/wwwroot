@@ -496,6 +496,18 @@ button {
     gap: 12px;
 }
 
+/* Running record under the Daily Double (2026-11-05) */
+.record-block {
+    margin: 12px 14px 6px;
+    font-size: 12px;
+    color: var(--epr-text);
+}
+
+.record-row { margin-top: 3px; }
+.record-plus { color: #1e9e57; font-weight: 700; }
+.record-minus { color: #c0392b; font-weight: 700; }
+.record-since { color: var(--epr-muted); font-size: 11px; }
+
 /* NAP warnings and result (2026-11-05) */
 .nap-flag {
     margin-left: 6px;

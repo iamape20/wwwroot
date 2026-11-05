@@ -2628,6 +2628,9 @@ export async function loadDashboard() {
         loadUpdatedStamp();
         setInterval(loadUpdatedStamp, 60000);
 
+        loadRecord();
+        setInterval(loadRecord, 300000);
+
         startLiveRefresh();
 
     } catch (err) {
@@ -2826,6 +2829,28 @@ async function loadUpdatedStamp() {
         el.textContent = late ? `Updated ${hhmm} - ${mins >= 120 ? Math.round(mins / 60) + " hours" : mins + " min"} ago, may be out of date` : `Updated ${hhmm}`;
         el.classList.toggle("topbar-updated-late", late);
     } catch { /* keep the last stamp */ }
+}
+
+// Running record under the Daily Double (user 2026-11-05): NAPs at SP, the
+// real Matchbook bets and the Daily Double, built by js/buildStaticSite.js.
+async function loadRecord() {
+    const el = document.getElementById("recordBlock");
+    if (!el) return;
+    try {
+        const r = await fetch(`data/record.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!r.ok) return;
+        const d = await r.json();
+        const money = v => (v < 0 ? "-" : "+") + "£" + Math.abs(v).toFixed(2);
+        const since = iso => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
+        const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "-";
+        const rows = [];
+        if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
+        if (d.matchbook?.settled) rows.push(`<div class="record-row"><b>Real Matchbook bets</b> ${d.matchbook.won} won of ${d.matchbook.settled} &middot; <span class="${d.matchbook.pl < 0 ? "record-minus" : "record-plus"}">${money(d.matchbook.pl)}</span> <span class="record-since">since ${since(d.matchbook.from)}</span></div>`);
+        if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
+        if (!rows.length) { el.style.display = "none"; return; }
+        el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
+        el.style.display = "";
+    } catch { /* keep the last record */ }
 }
 
 async function loadGlance() {
