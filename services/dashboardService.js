@@ -263,6 +263,35 @@ function legNow(ratings, nap, entry) {
     return { nowTier, napNow, nowPick, silk };
 }
 
+// The NAP box's state now (user 2026-11-05): withdrawn, meeting abandoned,
+// NO BET (the same rule as a Daily Double leg - a value NAP is never NO BET),
+// and once its race has a result, how it finished (json/results_feed.json,
+// rebuilt every odds refresh).
+function napNow(ratings, nap, list) {
+    if (!nap?.active || !nap.name) return null;
+    const entry = { course: nap.meeting, time: nap.time, horse: nap.name };
+    const up = s => String(s || "").toUpperCase();
+    const nonRunner = isWithdrawnPick(ratings, entry);
+    const abandoned = !!list && isAbandonedLeg(ratings, list, entry);
+    const { nowTier, nowPick } = legNow(ratings, null, entry);
+    const noBet = !nonRunner && !abandoned && !shortlistProvisional(list) && nap.tier !== "Value" &&
+        ((nowPick && up(nowPick) !== up(nap.name)) || nowTier === "Open");
+    let result = null;
+    try {
+        const feed = json.load("results_feed.json");
+        const day = (feed.days || []).find(d => d.date === nap.date);
+        const race = day?.races?.find(r => up(r.course) === up(nap.meeting) && r.time === nap.time);
+        if (race) {
+            const fin = (race.finishers || []).find(f => up(f.name) === up(nap.name));
+            const out = (race.nonFinishers || []).find(f => up(f.name) === up(nap.name));
+            result = fin
+                ? { position: Number(fin.position), odds: fin.odds || null, runners: race.runners || null, winner: race.winner || null, winnerOdds: race.winnerOdds || null }
+                : out ? { position: 0, reason: out.reason || null, winner: race.winner || null, winnerOdds: race.winnerOdds || null } : null;
+        }
+    } catch { result = null; }
+    return { nonRunner, abandoned, noBet, nowPick, nowTier, result };
+}
+
 // Is the Daily Double still the overnight build, before the 09:00 lock?
 // (2026-10-25: before 09:00 the home page compared the overnight list with
 // live prices and said "Market has moved since 09:00 ... no bet".) Uses the
@@ -892,7 +921,7 @@ for (
 
             daily,
 
-            nap,
+            nap: nap ? { ...nap, now: napNow(ratings, nap, dailyDoubleData) } : nap,
 
             // Flag a locked Daily Double horse that has since been withdrawn
             // (2026-10-03): the list is locked in the morning, and 3 of 134
@@ -948,6 +977,7 @@ module.exports = {
 
     // exported for api/glance.js (form guide labels a no-bet leg too)
     legNow,
+    napNow,
     isAbandonedLeg,
     shortlistProvisional
 

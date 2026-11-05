@@ -237,12 +237,30 @@ function renderNapCallout(nap) {
 
     // Jockey silks (user 2026-11-05).
     const napSilk = nap.silk_url || nap.silkUrl;
+    // Its state now and, after the race, how it finished (user 2026-11-05;
+    // built by dashboardService napNow).
+    const now = nap.now || {};
+    const res = now.result;
+    const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th"));
+    const words = s => String(s || "").replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase().replace(/^./, c => c.toUpperCase());
+    const struck = now.nonRunner || now.abandoned || now.noBet;
+    const flag = now.nonRunner ? "NON-RUNNER" : now.abandoned ? "ABANDONED" : now.noBet ? "NO BET" : "";
+    const flagWhy = now.nonRunner ? "Withdrawn since the NAP was chosen - no bet."
+        : now.abandoned ? "The meeting has been abandoned - no bet."
+        : now.noBet ? `Market has moved since 09:00 - ${now.nowPick && String(now.nowPick).toUpperCase() !== String(nap.name || "").toUpperCase() ? `the race page now picks ${escapeHtml(now.nowPick)}` : "no clear pick in this race now"}, so no bet.`
+        : "";
+    const resultHtml = !res ? ""
+        : res.position === 1 ? `<div class="nap-result nap-result-won">WON${res.odds ? ` at ${escapeHtml(res.odds)}` : ""}</div>`
+        : res.position > 1 ? `<div class="nap-result nap-result-lost">Lost - finished ${ord(res.position)}${res.runners ? ` of ${res.runners}` : ""}${res.winner ? `. Won by ${escapeHtml(res.winner)}${res.winnerOdds ? ` (${escapeHtml(res.winnerOdds)})` : ""}` : ""}</div>`
+        : `<div class="nap-result nap-result-lost">Lost - ${escapeHtml(words(res.reason) || "did not finish")}${res.winner ? `. Won by ${escapeHtml(res.winner)}${res.winnerOdds ? ` (${escapeHtml(res.winnerOdds)})` : ""}` : ""}</div>`;
     napEl.innerHTML = `
         <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
         <div class="nap-row">
             ${napSilk ? `<img src="${escapeHtml(String(napSilk))}" class="pick-silk" alt="" loading="lazy" onerror="this.style.display='none';">` : ""}
             <div>
-                <div class="nap-name">${escapeHtml(String(nap.name || "").toUpperCase())}</div>
+                <div class="nap-name"><span${struck ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(String(nap.name || "").toUpperCase())}</span>${flag ? ` <span class="nap-flag">${flag}</span>` : ""}</div>
+                ${flagWhy ? `<div class="nap-flag-why">${flagWhy}</div>` : ""}
+                ${resultHtml}
                 <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
                 <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
             </div>
@@ -2607,6 +2625,9 @@ export async function loadDashboard() {
         loadGlance();
         setInterval(loadGlance, 300000);
 
+        loadUpdatedStamp();
+        setInterval(loadUpdatedStamp, 60000);
+
         startLiveRefresh();
 
     } catch (err) {
@@ -2788,6 +2809,25 @@ function renderYesterdayResults(dashboard) {
 // Card at a glance (2026-10-11): every race today, our pick against the market
 // favourite, on one screen. Click a row to open that race.
 // ---------------------------------------------------------------------------
+// "Updated HH:MM" under the clock (user 2026-11-05): the site is static since
+// 5 Nov, its data rebuilt every 10 minutes by the home computer's odds refresh
+// (data/built.json). Over 25 minutes old shows in red - the refresh has stopped.
+async function loadUpdatedStamp() {
+    const el = document.getElementById("data-updated");
+    if (!el) return;
+    try {
+        const r = await fetch(`data/built.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!r.ok) return;
+        const at = Date.parse((await r.json()).builtAt);
+        if (!Number.isFinite(at)) return;
+        const hhmm = new Date(at).toLocaleTimeString("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit" });
+        const mins = Math.round((Date.now() - at) / 60000);
+        const late = mins > 25;
+        el.textContent = late ? `Updated ${hhmm} - ${mins >= 120 ? Math.round(mins / 60) + " hours" : mins + " min"} ago, may be out of date` : `Updated ${hhmm}`;
+        el.classList.toggle("topbar-updated-late", late);
+    } catch { /* keep the last stamp */ }
+}
+
 async function loadGlance() {
     const box = document.getElementById("glanceBox");
     const body = document.getElementById("glanceBody");

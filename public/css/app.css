@@ -496,6 +496,42 @@ button {
     gap: 12px;
 }
 
+/* NAP warnings and result (2026-11-05) */
+.nap-flag {
+    margin-left: 6px;
+    color: #c0392b;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.nap-flag-why {
+    margin-top: 3px;
+    color: #c0392b;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.nap-result {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.nap-result-won { color: #1e9e57; }
+.nap-result-lost { color: #c0392b; }
+
+/* "Updated" stamp under the clock: when the site's data was last built */
+.topbar-updated {
+    margin-top: 4px;
+    color: var(--epr-muted);
+    font-size: 11px;
+}
+
+.topbar-updated-late {
+    color: #c0392b;
+    font-weight: 700;
+}
+
 /* Jockey silks on the NAP and Daily Double (2026-11-05) */
 .pick-silk {
     width: 38px;
