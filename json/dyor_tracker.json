@@ -25655,10 +25655,16 @@
       "fav": {
         "horse": "UNFLINCHING",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-05T12:41:09.974Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newcastle|12:59",
@@ -25697,15 +25703,53 @@
       },
       "recordedAt": "2026-11-05T13:01:06.701Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Clonmel|13:25",
+      "date": "2026-11-05",
+      "course": "Clonmel",
+      "time": "13:25",
+      "horse": "CARLEYS LILLY",
+      "price": "22/1",
+      "runners": 11,
+      "liveHorse": "ROKANAKO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROKANAKO",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:11:03.019Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newbury|13:17",
+      "date": "2026-11-05",
+      "course": "Newbury",
+      "time": "13:17",
+      "horse": "MERLIN ALLEN",
+      "price": "7/4",
+      "runners": 9,
+      "liveHorse": "PRESLEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRESLEY",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:11:03.042Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 935,
+    "recorded": 937,
     "pick": {
-      "settled": 918,
+      "settled": 919,
       "won": 180,
-      "pl": -117.87,
-      "roi": -12.8
+      "pl": -118.87,
+      "roi": -12.9
     },
     "favourite": {
       "settled": 916,
@@ -25720,10 +25764,10 @@
       "roi": -8.7
     },
     "disagree": {
-      "settled": 676,
+      "settled": 677,
       "won": 84,
-      "pl": -96.92,
-      "roi": -14.3
+      "pl": -97.92,
+      "roi": -14.5
     }
   },
   "lastBackfill": 1793862060103
