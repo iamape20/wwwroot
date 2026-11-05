@@ -25969,10 +25969,18 @@
       "fav": {
         "horse": "SPLENDID FELLOW",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:11:22.526Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|14:20",
@@ -26015,10 +26023,16 @@
       "fav": {
         "horse": "A SNOW WHITE PARK",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/11"
       },
       "recordedAt": "2026-11-05T14:21:11.707Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Chelmsford City|14:30",
@@ -26101,21 +26115,59 @@
       },
       "recordedAt": "2026-11-05T14:41:43.907Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newbury|14:58",
+      "date": "2026-11-05",
+      "course": "Newbury",
+      "time": "14:58",
+      "horse": "LE ROI REMI",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "PERCY DE COURCY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PERCY DE COURCY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T14:51:07.641Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|15:05",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "15:05",
+      "horse": "CHAISE LONGUE",
+      "price": "4/1",
+      "runners": 9,
+      "liveHorse": "WHISKEY GALORE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WHISKEY GALORE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T14:51:07.679Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 951,
+    "recorded": 953,
     "pick": {
-      "settled": 932,
+      "settled": 934,
       "won": 180,
-      "pl": -131.87,
-      "roi": -14.1
+      "pl": -133.87,
+      "roi": -14.3
     },
     "favourite": {
-      "settled": 924,
+      "settled": 925,
       "won": 325,
-      "pl": 7.96,
-      "roi": 0.9
+      "pl": 6.96,
+      "roi": 0.8
     },
     "agree": {
       "settled": 245,
@@ -26124,10 +26176,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 687,
+      "settled": 689,
       "won": 84,
-      "pl": -107.92,
-      "roi": -15.7
+      "pl": -109.92,
+      "roi": -16
     }
   },
   "lastBackfill": 1793884895908
