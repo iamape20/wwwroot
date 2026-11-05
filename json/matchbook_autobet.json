@@ -1,8 +1,8 @@
 {
-  "mode": "LIVE",
+  "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 87.36,
+  "pot": 88.69,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -392,9 +392,13 @@
       "stake": 2.05,
       "matched": 2.05,
       "offerId": "34793283021400019",
-      "offerStatus": "matched"
+      "offerStatus": "matched",
+      "result": "won",
+      "pl": 1.33,
+      "potAfter": 88.69,
+      "settledAt": "2026-11-05T15:01:10.639Z"
     }
   ],
-  "updatedAt": "2026-11-05T14:51:05.519Z",
+  "updatedAt": "2026-11-05T15:01:10.641Z",
   "bankPeak": 106.762
 }

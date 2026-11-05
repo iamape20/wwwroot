@@ -26073,10 +26073,16 @@
       "fav": {
         "horse": "NICE ONE ERIC",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:31:11.097Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-05|Plumpton|14:47",
@@ -26092,10 +26098,16 @@
       "fav": {
         "horse": "CENTRAL COMMAND",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-11-05T14:41:43.852Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Southwell|14:53",
@@ -26153,21 +26165,59 @@
       },
       "recordedAt": "2026-11-05T14:51:07.679Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Clonmel|15:10",
+      "date": "2026-11-05",
+      "course": "Clonmel",
+      "time": "15:10",
+      "horse": "KAPPA JY PYKE",
+      "price": "2/13",
+      "runners": 3,
+      "liveHorse": "KAPPA JY PYKE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KAPPA JY PYKE",
+        "price": "2/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:01:13.162Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newcastle|15:15",
+      "date": "2026-11-05",
+      "course": "Newcastle",
+      "time": "15:15",
+      "horse": "EMPTY NEST",
+      "price": "5/1",
+      "runners": 9,
+      "liveHorse": "TREATY BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TREATY BOY",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:01:13.232Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 953,
+    "recorded": 955,
     "pick": {
-      "settled": 934,
+      "settled": 935,
       "won": 180,
-      "pl": -133.87,
-      "roi": -14.3
+      "pl": -134.87,
+      "roi": -14.4
     },
     "favourite": {
-      "settled": 925,
+      "settled": 926,
       "won": 325,
-      "pl": 6.96,
-      "roi": 0.8
+      "pl": 5.96,
+      "roi": 0.6
     },
     "agree": {
       "settled": 245,
@@ -26176,10 +26226,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 689,
+      "settled": 690,
       "won": 84,
-      "pl": -109.92,
-      "roi": -16
+      "pl": -110.92,
+      "roi": -16.1
     }
   },
   "lastBackfill": 1793884895908
