@@ -26639,10 +26639,18 @@
       "fav": {
         "horse": "HOYA BELLA",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T17:20:50.413Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Chelmsford City|17:45",
@@ -26662,21 +26670,40 @@
       },
       "recordedAt": "2026-11-05T17:30:32.702Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Southwell|18:00",
+      "date": "2026-11-05",
+      "course": "Southwell",
+      "time": "18:00",
+      "horse": "MODERN TIMES",
+      "price": "9/4",
+      "runners": 9,
+      "liveHorse": "THAT'S RANDOM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THAT'S RANDOM",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T17:50:25.389Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 972,
+    "recorded": 973,
     "pick": {
-      "settled": 952,
+      "settled": 953,
       "won": 180,
-      "pl": -151.87,
+      "pl": -152.87,
       "roi": -16
     },
     "favourite": {
-      "settled": 937,
+      "settled": 938,
       "won": 325,
-      "pl": -5.04,
-      "roi": -0.5
+      "pl": -6.04,
+      "roi": -0.6
     },
     "agree": {
       "settled": 248,
@@ -26685,10 +26712,10 @@
       "roi": -10.9
     },
     "disagree": {
-      "settled": 704,
+      "settled": 705,
       "won": 84,
-      "pl": -124.92,
-      "roi": -17.7
+      "pl": -125.92,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1793896264018
