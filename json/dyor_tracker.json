@@ -25601,10 +25601,18 @@
       "fav": {
         "horse": "CREST OF STARS",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T12:21:23.543Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newbury|12:42",
@@ -25643,27 +25651,46 @@
       },
       "recordedAt": "2026-11-05T12:41:09.974Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newcastle|12:59",
+      "date": "2026-11-05",
+      "course": "Newcastle",
+      "time": "12:59",
+      "horse": "REGAL THUNDER",
+      "price": "18/1",
+      "runners": 8,
+      "liveHorse": "SPREADSHEET GURU",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SPREADSHEET GURU",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T12:51:04.782Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 933,
+    "recorded": 934,
     "pick": {
-      "settled": 916,
+      "settled": 917,
       "won": 180,
-      "pl": -115.87,
-      "roi": -12.6
+      "pl": -116.87,
+      "roi": -12.7
     },
     "favourite": {
-      "settled": 914,
+      "settled": 915,
       "won": 325,
-      "pl": 17.96,
-      "roi": 2
+      "pl": 16.96,
+      "roi": 1.9
     },
     "agree": {
-      "settled": 240,
+      "settled": 241,
       "won": 96,
-      "pl": -18.95,
-      "roi": -7.9
+      "pl": -19.95,
+      "roi": -8.3
     },
     "disagree": {
       "settled": 676,
