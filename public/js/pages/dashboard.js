@@ -117,6 +117,7 @@ function renderDailyDouble(dashboard) {
             style="cursor:pointer;"
         >
             <div class="daily-double-rank">${i + 1}</div>
+            ${p.silk ? `<img src="${escapeHtml(String(p.silk))}" class="pick-silk" alt="" loading="lazy" onerror="this.style.display='none';">` : ""}
             <div class="daily-double-body">
                 <div class="daily-double-horse">
                     <span${legNoBet(p) || p.abandoned ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(p.horse)}</span>
@@ -234,11 +235,18 @@ function renderNapCallout(nap) {
     const timeText =
         nap.time ? toLocalTimeString(nap.time) : "-";
 
+    // Jockey silks (user 2026-11-05).
+    const napSilk = nap.silk_url || nap.silkUrl;
     napEl.innerHTML = `
         <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
-        <div class="nap-name">${escapeHtml(String(nap.name || "").toUpperCase())}</div>
-        <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
-        <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
+        <div class="nap-row">
+            ${napSilk ? `<img src="${escapeHtml(String(napSilk))}" class="pick-silk" alt="" loading="lazy" onerror="this.style.display='none';">` : ""}
+            <div>
+                <div class="nap-name">${escapeHtml(String(nap.name || "").toUpperCase())}</div>
+                <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
+                <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
+            </div>
+        </div>
     `;
 
     napEl.style.display = "";

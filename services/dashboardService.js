@@ -257,7 +257,10 @@ function legNow(ratings, nap, entry) {
     const napNow = !!(nap?.active &&
         String(nap.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase() &&
         String(nap.meeting || "").toUpperCase() === String(entry?.course || "").toUpperCase());
-    return { nowTier, napNow, nowPick };
+    // Jockey silks on the home page's Daily Double (user 2026-11-05).
+    const silk = (race?.runners || []).find(r =>
+        String(r?.name || "").toUpperCase() === String(entry?.horse || "").toUpperCase())?.silk_url || null;
+    return { nowTier, napNow, nowPick, silk };
 }
 
 // Is the Daily Double still the overnight build, before the 09:00 lock?
