@@ -26377,10 +26377,18 @@
       "fav": {
         "horse": "EZ TIGER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T15:41:11.863Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newcastle|15:50",
@@ -26396,10 +26404,18 @@
       "fav": {
         "horse": "THAT GUY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T15:41:11.957Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newbury|16:05",
@@ -26434,10 +26450,16 @@
       "fav": {
         "horse": "FENAROLI",
         "price": "1/3",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/3"
       },
       "recordedAt": "2026-11-05T15:51:17.807Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Chelmsford City|16:15",
@@ -26457,33 +26479,52 @@
       },
       "recordedAt": "2026-11-05T16:01:26.197Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Clonmel|16:20",
+      "date": "2026-11-05",
+      "course": "Clonmel",
+      "time": "16:20",
+      "horse": "DISTRACTION",
+      "price": "11/4",
+      "runners": 12,
+      "liveHorse": "RED SEAGULL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RED SEAGULL",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T16:11:05.312Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 965,
+    "recorded": 966,
     "pick": {
-      "settled": 942,
+      "settled": 945,
       "won": 180,
-      "pl": -141.87,
-      "roi": -15.1
+      "pl": -144.87,
+      "roi": -15.3
     },
     "favourite": {
-      "settled": 931,
+      "settled": 933,
       "won": 325,
-      "pl": 0.96,
-      "roi": 0.1
+      "pl": -1.04,
+      "roi": -0.1
     },
     "agree": {
-      "settled": 246,
+      "settled": 247,
       "won": 96,
-      "pl": -24.95,
-      "roi": -10.1
+      "pl": -25.95,
+      "roi": -10.5
     },
     "disagree": {
-      "settled": 696,
+      "settled": 698,
       "won": 84,
-      "pl": -116.92,
-      "roi": -16.8
+      "pl": -118.92,
+      "roi": -17
     }
   },
   "lastBackfill": 1793884895908
