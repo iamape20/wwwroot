@@ -25915,10 +25915,18 @@
       "fav": {
         "horse": "FERRET JEETER",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:01:59.474Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newcastle|14:07",
@@ -25934,10 +25942,18 @@
       "fav": {
         "horse": "THORNEYLANDS",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:01:59.522Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newbury|14:25",
@@ -26014,33 +26030,52 @@
       },
       "recordedAt": "2026-11-05T14:21:11.746Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newcastle|14:40",
+      "date": "2026-11-05",
+      "course": "Newcastle",
+      "time": "14:40",
+      "horse": "LOOKING SPLENDID",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "NICE ONE ERIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NICE ONE ERIC",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T14:31:11.097Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 948,
+    "recorded": 949,
     "pick": {
-      "settled": 928,
+      "settled": 930,
       "won": 180,
-      "pl": -127.87,
-      "roi": -13.8
+      "pl": -129.87,
+      "roi": -14
     },
     "favourite": {
-      "settled": 921,
+      "settled": 923,
       "won": 325,
-      "pl": 10.96,
-      "roi": 1.2
+      "pl": 8.96,
+      "roi": 1
     },
     "agree": {
-      "settled": 244,
+      "settled": 245,
       "won": 96,
-      "pl": -22.95,
-      "roi": -9.4
+      "pl": -23.95,
+      "roi": -9.8
     },
     "disagree": {
-      "settled": 684,
+      "settled": 685,
       "won": 84,
-      "pl": -104.92,
-      "roi": -15.3
+      "pl": -105.92,
+      "roi": -15.5
     }
   },
   "lastBackfill": 1793884895908
