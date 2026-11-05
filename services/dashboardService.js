@@ -294,7 +294,11 @@ function raceResult(date, course, time, horse) {
         const fin = (race.finishers || []).find(f => up(f.name) === up(horse));
         const out = (race.nonFinishers || []).find(f => up(f.name) === up(horse));
         const winner = { winner: race.winner || null, winnerOdds: race.winnerOdds || null };
-        if (fin) return { position: Number(fin.position), odds: fin.odds || null, runners: race.runners || null, ...winner };
+        // race.runners is the card at the off, so a horse withdrawn at the start
+        // still counts in it (22 of 489 races: "4th of 12" when 11 ran). A full
+        // result has everyone who actually ran.
+        const ran = race.fullField ? (race.finishers || []).length + (race.nonFinishers || []).length : race.runners;
+        if (fin) return { position: Number(fin.position), odds: fin.odds || null, runners: ran || null, ...winner };
         if (out) return { position: 0, reason: out.reason || null, ...winner };
         return null;
     } catch { return null; }
