@@ -26202,10 +26202,14 @@
       "fav": {
         "horse": "KAPPA JY PYKE",
         "price": "2/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/9"
       },
       "recordedAt": "2026-11-05T15:01:13.162Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/9"
     },
     {
       "id": "2026-11-05|Newcastle|15:15",
@@ -26221,10 +26225,16 @@
       "fav": {
         "horse": "TREATY BOY",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/1"
       },
       "recordedAt": "2026-11-05T15:01:13.232Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Plumpton|15:22",
@@ -26282,15 +26292,53 @@
       },
       "recordedAt": "2026-11-05T15:21:13.605Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Clonmel|15:45",
+      "date": "2026-11-05",
+      "course": "Clonmel",
+      "time": "15:45",
+      "horse": "COURTBRACK BOY",
+      "price": "13/2",
+      "runners": 15,
+      "liveHorse": "ONEFORTHEDITCH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ONEFORTHEDITCH",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:31:14.084Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|15:40",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "15:40",
+      "horse": "CHARGING THUNDER",
+      "price": "13/8",
+      "runners": 6,
+      "liveHorse": "CHARGING THUNDER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "CHARGING THUNDER",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:31:14.141Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 958,
+    "recorded": 960,
     "pick": {
-      "settled": 938,
+      "settled": 939,
       "won": 180,
-      "pl": -137.87,
-      "roi": -14.7
+      "pl": -138.87,
+      "roi": -14.8
     },
     "favourite": {
       "settled": 928,
@@ -26305,10 +26353,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 693,
+      "settled": 694,
       "won": 84,
-      "pl": -113.92,
-      "roi": -16.4
+      "pl": -114.92,
+      "roi": -16.6
     }
   },
   "lastBackfill": 1793884895908
