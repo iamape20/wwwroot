@@ -2845,7 +2845,7 @@ async function loadRecord() {
         const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "-";
         const rows = [];
         if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
-        // Real Matchbook bets hidden from the public page (user 2026-11-05); still in data/record.json.
+        // Real Matchbook bets not shown (user 2026-11-05).
         if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
