@@ -2856,10 +2856,11 @@ async function loadMarketMoves() {
         if (drift.length) {
             rows.push('<div class="market-row"><span class="market-label market-label-out">Drifting</span>' + drift.map(x => move(x, "out")).join("") + more(driftAll, drift) + '</div>');
         }
-        // Collapsible: open on wide screens, closed on phones so the race stays near the top.
-        // A refresh keeps whatever the visitor chose.
+        // Collapsible, closed on every page load (user 2026-11-05; was open on wide
+        // screens) - the summary line keeps the counts. A refresh keeps whatever
+        // the visitor chose.
         const prev = el.querySelector("details");
-        const open = prev ? prev.open : (window.matchMedia && window.matchMedia("(min-width: 760px)").matches);
+        const open = prev ? prev.open : false;
         const parts = [];
         if (nrAll.length) parts.push(nrAll.length + (nrAll.length === 1 ? " non-runner" : " non-runners"));
         const nMoves = shortAll.length + driftAll.length;
