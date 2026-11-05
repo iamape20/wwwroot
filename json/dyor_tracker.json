@@ -26123,10 +26123,18 @@
       "fav": {
         "horse": "PRINCE OF CALYPSO",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T14:41:43.907Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newbury|14:58",
@@ -26203,21 +26211,40 @@
       },
       "recordedAt": "2026-11-05T15:01:13.232Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Plumpton|15:22",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "15:22",
+      "horse": "BEL OMBRE",
+      "price": "8/13",
+      "runners": 3,
+      "liveHorse": "BEL OMBRE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BEL OMBRE",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T15:11:30.693Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 955,
+    "recorded": 956,
     "pick": {
-      "settled": 935,
+      "settled": 936,
       "won": 180,
-      "pl": -134.87,
-      "roi": -14.4
+      "pl": -135.87,
+      "roi": -14.5
     },
     "favourite": {
-      "settled": 926,
+      "settled": 927,
       "won": 325,
-      "pl": 5.96,
-      "roi": 0.6
+      "pl": 4.96,
+      "roi": 0.5
     },
     "agree": {
       "settled": 245,
@@ -26226,10 +26253,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 690,
+      "settled": 691,
       "won": 84,
-      "pl": -110.92,
-      "roi": -16.1
+      "pl": -111.92,
+      "roi": -16.2
     }
   },
   "lastBackfill": 1793884895908
