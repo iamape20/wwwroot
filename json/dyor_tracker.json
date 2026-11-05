@@ -25782,10 +25782,18 @@
       "fav": {
         "horse": "AIRE SPRAY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T13:21:35.819Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Plumpton|13:43",
@@ -25824,27 +25832,65 @@
       },
       "recordedAt": "2026-11-05T13:41:02.895Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Clonmel|14:00",
+      "date": "2026-11-05",
+      "course": "Clonmel",
+      "time": "14:00",
+      "horse": "HOPEFUL HERO",
+      "price": "5/2",
+      "runners": 7,
+      "liveHorse": "HOPEFUL HERO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HOPEFUL HERO",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:51:08.255Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|13:57",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "13:57",
+      "horse": "MUY MUY LOCO",
+      "price": "17/2",
+      "runners": 14,
+      "liveHorse": "LABICHE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LABICHE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:51:08.284Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 940,
+    "recorded": 942,
     "pick": {
-      "settled": 923,
+      "settled": 924,
       "won": 180,
-      "pl": -122.87,
-      "roi": -13.3
+      "pl": -123.87,
+      "roi": -13.4
     },
     "favourite": {
-      "settled": 917,
+      "settled": 918,
       "won": 325,
-      "pl": 14.96,
-      "roi": 1.6
+      "pl": 13.96,
+      "roi": 1.5
     },
     "agree": {
-      "settled": 242,
+      "settled": 243,
       "won": 96,
-      "pl": -20.95,
-      "roi": -8.7
+      "pl": -21.95,
+      "roi": -9
     },
     "disagree": {
       "settled": 681,
