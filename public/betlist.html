@@ -57,7 +57,7 @@ ol { padding-left: 20px; } li { margin: 4px 0; }
     <h2>Record</h2>
     <div class="stats" id="stats"></div>
     <p class="muted" id="backtest"></p>
-    <p class="muted"><a href="/progress.html">The 120-bet verdict and the NAP Matchbook test →</a></p>
+    <p class="muted"><a href="progress.html">The 120-bet verdict and the NAP Matchbook test →</a></p>
 
     <h2>Recent bets</h2>
     <div class="tablewrap"><table id="recent"></table></div>
@@ -72,7 +72,7 @@ const signed = v => v == null ? "-" : (v > 0 ? "+" : "") + v;
 async function load() {
     let d;
     try {
-        const r = await fetch(`/api/betlist?t=${Date.now()}`, { cache: "no-store" });
+        const r = await fetch(`data/betlist.json?t=${Date.now()}`, { cache: "no-store" });
         d = await r.json();
     } catch { return; }
     if (!d.success) { document.getElementById("banner").textContent = "Bet list not available yet."; return; }

@@ -7,7 +7,7 @@ import {
     getMeetings,
     getRaces,
     getRace
-} from "../services/api.js?v=20260925";
+} from "../services/api.js?v=20261105a";
 
 const CHECKLIST_LABELS = {
     class: "Class",
@@ -922,7 +922,7 @@ function getResultDetails() {
     }
     resultDetailsCache = {
         at: Date.now(),
-        promise: fetch("/api/checkResults")
+        promise: fetch(`data/checkResults.json?t=${Date.now()}`, { cache: "no-store" })
             .then(r => (r.ok ? r.json() : null))
             .then(d => (d && d.success && Array.isArray(d.details) ? d.details : []))
             .catch(() => [])
@@ -2785,7 +2785,7 @@ async function loadGlance() {
     const body = document.getElementById("glanceBody");
     if (!box || !body) return;
     try {
-        const r = await fetch("/api/glance");
+        const r = await fetch(`data/glance.json?t=${Date.now()}`, { cache: "no-store" });
         if (!r.ok) return;
         const d = await r.json();
         const races = d.races || [];
@@ -2820,7 +2820,7 @@ async function loadMarketMoves() {
     const el = document.getElementById("marketStrip");
     if (!el) return;
     try {
-        const r = await fetch("/api/moves");
+        const r = await fetch(`data/moves.json?t=${Date.now()}`, { cache: "no-store" });
         if (!r.ok) return;
         const d = await r.json();
         // Drop rows for races that have gone off since the feed was built (card times are UTC).
@@ -2886,7 +2886,7 @@ async function loadTodaysResults() {
 
         const response =
             await fetch(
-                "/api/checkResults"
+                `data/checkResults.json?t=${Date.now()}`, { cache: "no-store" }
             );
 
         const strip =

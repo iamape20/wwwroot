@@ -67,7 +67,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
         <h1>Results</h1>
         <div class="muted">Every race on our card, our published pick and how it finished. Times are UK time.</div>
     </div>
-    <a href="/">&larr; Back to the cards</a>
+    <a href="./">&larr; Back to the cards</a>
 </header>
 
 <div class="card tablewrap">
@@ -112,7 +112,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
         current = date;
         [].forEach.call(daysBody.querySelectorAll("tr"), function (tr) { tr.classList.toggle("active", tr.dataset.date === date); });
         dayCard.style.display = "none"; msg.textContent = "Loading " + date + "...";
-        get("/api/results?date=" + date).then(function (d) {
+        get("data/results/" + date + ".json?t=" + Date.now()).then(function (d) {
             if (current !== date) return;
             var day = d.day, s = day.summary;
             document.getElementById("daySummary").innerHTML =
@@ -140,7 +140,7 @@ summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
         }).catch(function () { msg.textContent = "Could not load that day's results."; });
     }
 
-    get("/api/results").then(function (d) {
+    get("data/results.json?t=" + Date.now()).then(function (d) {
         if (!d.days || !d.days.length) { msg.textContent = "No results yet."; return; }
         daysBody.innerHTML = d.days.map(function (x) {
             var s = x.summary;

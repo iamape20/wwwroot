@@ -1,0 +1,36 @@
+# Static site on GitHub Pages (2026-11-05): Vercel paused the site until 5 Dec
+# for CPU (Hobby fair use). The home computer builds every page's data into
+# public/data/ (js/buildStaticSite.js in the root project) and pushes; this
+# publishes public/ as it stands. Nothing runs on the host per visitor.
+name: Publish site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A newer push replaces a publish still waiting; one already running finishes.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: public
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4

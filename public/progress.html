@@ -118,7 +118,7 @@ a { color: var(--series); }
 
     <p class="muted">Paper test only: no money is staked. Profit/loss is settled at Betfair SP after 5% commission
         (a winner counts at bookmaker SP, marked *, until Betfair SP is published the next morning); void races are excluded. Ranges are 95% confidence.
-        See also the <a href="/betlist.html">bet list</a>.</p>
+        See also the <a href="betlist.html">bet list</a>.</p>
 </main>
 <script>
 const $ = id => document.getElementById(id);
@@ -203,7 +203,7 @@ function drawChart(b, benchmarks) {
 async function load() {
     let d;
     try {
-        const r = await fetch(`/api/progress?t=${Date.now()}`, { cache: "no-store" });
+        const r = await fetch(`data/progress.json?t=${Date.now()}`, { cache: "no-store" });
         d = await r.json();
         if (!d.success) throw new Error(d.error);
     } catch (e) {

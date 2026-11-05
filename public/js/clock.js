@@ -189,16 +189,9 @@ function checkOddsForCurrentRace() {
 
     }
 
-    const params = new URLSearchParams({
-        meetingId: ctx.meetingId,
-        raceIndex: ctx.raceIndex,
-        date: ctx.date,
-        courseName: ctx.courseName
-    });
-
-    fetch(`/api/checkOdds?${params}`)
-        .then(r => r.json())
-        .catch(() => {}); // silent - this is background enrichment, not critical path
+    // Static site (2026-11-05): no /api/checkOdds to poke any more - the odds
+    // refresh on the home computer fetches every race's prices every 10 minutes
+    // (js/checkAllOdds.js), which is what this per-visitor call used to add.
 
 }
 
