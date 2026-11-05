@@ -25732,10 +25732,16 @@
       "fav": {
         "horse": "ROKANAKO",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-05T13:11:03.019Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Newbury|13:17",
@@ -25799,15 +25805,34 @@
       },
       "recordedAt": "2026-11-05T13:31:17.658Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Newbury|13:52",
+      "date": "2026-11-05",
+      "course": "Newbury",
+      "time": "13:52",
+      "horse": "PRINCESS DAY",
+      "price": "7/4",
+      "runners": 10,
+      "liveHorse": "NAN'S CHOICE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NAN'S CHOICE",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:41:02.895Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 939,
+    "recorded": 940,
     "pick": {
-      "settled": 922,
+      "settled": 923,
       "won": 180,
-      "pl": -121.87,
-      "roi": -13.2
+      "pl": -122.87,
+      "roi": -13.3
     },
     "favourite": {
       "settled": 917,
@@ -25822,10 +25847,10 @@
       "roi": -8.7
     },
     "disagree": {
-      "settled": 680,
+      "settled": 681,
       "won": 84,
-      "pl": -100.92,
-      "roi": -14.8
+      "pl": -101.92,
+      "roi": -15
     }
   },
   "lastBackfill": 1793884895908
