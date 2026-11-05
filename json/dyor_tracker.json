@@ -26325,10 +26325,16 @@
       "fav": {
         "horse": "ONEFORTHEDITCH",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T15:31:14.084Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/1"
     },
     {
       "id": "2026-11-05|Chelmsford City|15:40",
@@ -26344,10 +26350,18 @@
       "fav": {
         "horse": "CHARGING THUNDER",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T15:31:14.141Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Plumpton|15:55",
@@ -26424,27 +26438,46 @@
       },
       "recordedAt": "2026-11-05T15:51:17.807Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Chelmsford City|16:15",
+      "date": "2026-11-05",
+      "course": "Chelmsford City",
+      "time": "16:15",
+      "horse": "BAJAN BANDIT",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "HAVANA TOUCH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HAVANA TOUCH",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T16:01:26.197Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 964,
+    "recorded": 965,
     "pick": {
-      "settled": 941,
+      "settled": 942,
       "won": 180,
-      "pl": -140.87,
-      "roi": -15
+      "pl": -141.87,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 929,
+      "settled": 931,
       "won": 325,
-      "pl": 2.96,
-      "roi": 0.3
+      "pl": 0.96,
+      "roi": 0.1
     },
     "agree": {
-      "settled": 245,
+      "settled": 246,
       "won": 96,
-      "pl": -23.95,
-      "roi": -9.8
+      "pl": -24.95,
+      "roi": -10.1
     },
     "disagree": {
       "settled": 696,
