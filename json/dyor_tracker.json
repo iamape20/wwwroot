@@ -25628,10 +25628,18 @@
       "fav": {
         "horse": "TREASURE PLANET",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-05T12:31:20.255Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-05|Clonmel|12:50",
@@ -25670,27 +25678,46 @@
       },
       "recordedAt": "2026-11-05T12:51:04.782Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-05|Plumpton|13:08",
+      "date": "2026-11-05",
+      "course": "Plumpton",
+      "time": "13:08",
+      "horse": "SWEET CARYLINE",
+      "price": "9/4",
+      "runners": 4,
+      "liveHorse": "MARLACOO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MARLACOO",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-05T13:01:06.701Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 934,
+    "recorded": 935,
     "pick": {
-      "settled": 917,
+      "settled": 918,
       "won": 180,
-      "pl": -116.87,
-      "roi": -12.7
+      "pl": -117.87,
+      "roi": -12.8
     },
     "favourite": {
-      "settled": 915,
+      "settled": 916,
       "won": 325,
-      "pl": 16.96,
-      "roi": 1.9
+      "pl": 15.96,
+      "roi": 1.7
     },
     "agree": {
-      "settled": 241,
+      "settled": 242,
       "won": 96,
-      "pl": -19.95,
-      "roi": -8.3
+      "pl": -20.95,
+      "roi": -8.7
     },
     "disagree": {
       "settled": 676,
