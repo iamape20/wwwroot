@@ -27514,10 +27514,18 @@
       "fav": {
         "horse": "LION'S HOUSE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T17:20:55.747Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Dundalk|17:45",
@@ -27537,21 +27545,40 @@
       },
       "recordedAt": "2026-11-06T17:30:56.657Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Newcastle|18:00",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "18:00",
+      "horse": "WALK ON WALK ON",
+      "price": "28/1",
+      "runners": 14,
+      "liveHorse": "OXFORD CIRCUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OXFORD CIRCUS",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T17:50:47.099Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1003,
+    "recorded": 1004,
     "pick": {
-      "settled": 982,
+      "settled": 983,
       "won": 185,
-      "pl": -154.36,
-      "roi": -15.7
+      "pl": -155.36,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 976,
+      "settled": 977,
       "won": 344,
-      "pl": 11.41,
-      "roi": 1.2
+      "pl": 10.41,
+      "roi": 1.1
     },
     "agree": {
       "settled": 256,
@@ -27560,10 +27587,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 726,
+      "settled": 727,
       "won": 87,
-      "pl": -122.31,
-      "roi": -16.8
+      "pl": -123.31,
+      "roi": -17
     }
   },
   "lastBackfill": 1793980257458
