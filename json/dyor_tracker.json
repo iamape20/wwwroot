@@ -27090,10 +27090,16 @@
       "fav": {
         "horse": "KLIMT MADRIK",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T14:10:48.041Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-11-06|Fontwell|14:35",
@@ -27132,10 +27138,29 @@
       },
       "recordedAt": "2026-11-06T14:30:43.448Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Newcastle|14:53",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "14:53",
+      "horse": "HUMBLE SPARK",
+      "price": "25/1",
+      "runners": 14,
+      "liveHorse": "BLACK CHIFFON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BLACK CHIFFON",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T14:40:39.520Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 988,
+    "recorded": 989,
     "pick": {
       "settled": 968,
       "won": 185,
@@ -27143,10 +27168,10 @@
       "roi": -14.5
     },
     "favourite": {
-      "settled": 962,
+      "settled": 963,
       "won": 344,
-      "pl": 25.41,
-      "roi": 2.6
+      "pl": 24.41,
+      "roi": 2.5
     },
     "agree": {
       "settled": 251,
