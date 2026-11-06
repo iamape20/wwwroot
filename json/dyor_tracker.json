@@ -27670,10 +27670,18 @@
       "fav": {
         "horse": "PAL JOEY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T18:50:51.215Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Dundalk|19:15",
@@ -27698,16 +27706,16 @@
   "stats": {
     "recorded": 1009,
     "pick": {
-      "settled": 986,
+      "settled": 987,
       "won": 185,
-      "pl": -158.36,
+      "pl": -159.36,
       "roi": -16.1
     },
     "favourite": {
-      "settled": 981,
+      "settled": 982,
       "won": 344,
-      "pl": 6.41,
-      "roi": 0.7
+      "pl": 5.41,
+      "roi": 0.6
     },
     "agree": {
       "settled": 256,
@@ -27716,10 +27724,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 730,
+      "settled": 731,
       "won": 87,
-      "pl": -126.31,
-      "roi": -17.3
+      "pl": -127.31,
+      "roi": -17.4
     }
   },
   "lastBackfill": 1793991660007
