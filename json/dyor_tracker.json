@@ -27464,10 +27464,18 @@
       "fav": {
         "horse": "MOBILIZING",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T16:50:45.593Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Dundalk|17:15",
@@ -27487,21 +27495,40 @@
       },
       "recordedAt": "2026-11-06T17:00:53.815Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Newcastle|17:30",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "17:30",
+      "horse": "NORTH WEST GAL",
+      "price": "16/1",
+      "runners": 14,
+      "liveHorse": "LION'S HOUSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LION'S HOUSE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T17:20:55.747Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1001,
+    "recorded": 1002,
     "pick": {
-      "settled": 981,
+      "settled": 982,
       "won": 185,
-      "pl": -153.36,
-      "roi": -15.6
+      "pl": -154.36,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 975,
+      "settled": 976,
       "won": 344,
-      "pl": 12.41,
-      "roi": 1.3
+      "pl": 11.41,
+      "roi": 1.2
     },
     "agree": {
       "settled": 256,
@@ -27510,10 +27537,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 725,
+      "settled": 726,
       "won": 87,
-      "pl": -121.31,
-      "roi": -16.7
+      "pl": -122.31,
+      "roi": -16.8
     }
   },
   "lastBackfill": 1793980257458
