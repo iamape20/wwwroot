@@ -26865,10 +26865,16 @@
       "fav": {
         "horse": "RISKY OBSESSION",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-06T12:30:50.174Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Fontwell|12:50",
@@ -26907,15 +26913,34 @@
       },
       "recordedAt": "2026-11-06T12:50:51.332Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Aintree|13:15",
+      "date": "2026-11-06",
+      "course": "Aintree",
+      "time": "13:15",
+      "horse": "BELOW THE RADAR",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "BARNPARK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BARNPARK",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T13:00:53.104Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 979,
+    "recorded": 980,
     "pick": {
-      "settled": 962,
+      "settled": 963,
       "won": 185,
-      "pl": -134.36,
-      "roi": -14
+      "pl": -135.36,
+      "roi": -14.1
     },
     "favourite": {
       "settled": 959,
@@ -26930,10 +26955,10 @@
       "roi": -10.4
     },
     "disagree": {
-      "settled": 712,
+      "settled": 713,
       "won": 87,
-      "pl": -108.31,
-      "roi": -15.2
+      "pl": -109.31,
+      "roi": -15.3
     }
   },
   "lastBackfill": 1793969451352
