@@ -26840,10 +26840,16 @@
       "fav": {
         "horse": "IMPERFECTLYPERFECT",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-06T12:11:03.073Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Aintree|12:40",
@@ -26863,15 +26869,34 @@
       },
       "recordedAt": "2026-11-06T12:30:50.174Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Fontwell|12:50",
+      "date": "2026-11-06",
+      "course": "Fontwell",
+      "time": "12:50",
+      "horse": "GALANTE DE VASSY",
+      "price": "18/1",
+      "runners": 10,
+      "liveHorse": "SMOKEHOUSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SMOKEHOUSE",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T12:40:49.952Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 977,
+    "recorded": 978,
     "pick": {
-      "settled": 961,
+      "settled": 962,
       "won": 185,
-      "pl": -133.36,
-      "roi": -13.9
+      "pl": -134.36,
+      "roi": -14
     },
     "favourite": {
       "settled": 959,
@@ -26886,10 +26911,10 @@
       "roi": -10.4
     },
     "disagree": {
-      "settled": 711,
+      "settled": 712,
       "won": 87,
-      "pl": -107.31,
-      "roi": -15.1
+      "pl": -108.31,
+      "roi": -15.2
     }
   },
   "lastBackfill": 1793948479388
