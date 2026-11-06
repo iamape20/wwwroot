@@ -27356,10 +27356,18 @@
       "fav": {
         "horse": "LADY PHOEBE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T15:40:58.660Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Aintree|16:05",
@@ -27403,16 +27411,16 @@
   "stats": {
     "recorded": 998,
     "pick": {
-      "settled": 977,
+      "settled": 978,
       "won": 185,
-      "pl": -149.36,
-      "roi": -15.3
+      "pl": -150.36,
+      "roi": -15.4
     },
     "favourite": {
-      "settled": 971,
+      "settled": 972,
       "won": 344,
-      "pl": 16.41,
-      "roi": 1.7
+      "pl": 15.41,
+      "roi": 1.6
     },
     "agree": {
       "settled": 254,
@@ -27421,10 +27429,10 @@
       "roi": -11.8
     },
     "disagree": {
-      "settled": 723,
+      "settled": 724,
       "won": 87,
-      "pl": -119.31,
-      "roi": -16.5
+      "pl": -120.31,
+      "roi": -16.6
     }
   },
   "lastBackfill": 1793980257458
