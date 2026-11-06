@@ -26990,10 +26990,18 @@
       "fav": {
         "horse": "C'MON SO",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T13:20:54.080Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Aintree|13:50",
@@ -27013,27 +27021,46 @@
       },
       "recordedAt": "2026-11-06T13:40:57.785Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Fontwell|14:00",
+      "date": "2026-11-06",
+      "course": "Fontwell",
+      "time": "14:00",
+      "horse": "I LOVE YOU SIVOLA",
+      "price": "5/4",
+      "runners": 4,
+      "liveHorse": "MILD MAGIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MILD MAGIC",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T13:50:46.621Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 983,
+    "recorded": 984,
     "pick": {
-      "settled": 966,
+      "settled": 967,
       "won": 185,
-      "pl": -138.36,
-      "roi": -14.3
+      "pl": -139.36,
+      "roi": -14.4
     },
     "favourite": {
-      "settled": 960,
+      "settled": 961,
       "won": 344,
-      "pl": 27.41,
-      "roi": 2.9
+      "pl": 26.41,
+      "roi": 2.7
     },
     "agree": {
-      "settled": 250,
+      "settled": 251,
       "won": 98,
-      "pl": -26.05,
-      "roi": -10.4
+      "pl": -27.05,
+      "roi": -10.8
     },
     "disagree": {
       "settled": 716,
