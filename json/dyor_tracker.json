@@ -27142,10 +27142,18 @@
       "fav": {
         "horse": "TITANIUM RING",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T14:30:43.448Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Newcastle|14:53",
@@ -27161,10 +27169,18 @@
       "fav": {
         "horse": "BLACK CHIFFON",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T14:40:39.520Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Aintree|15:00",
@@ -27203,21 +27219,40 @@
       },
       "recordedAt": "2026-11-06T15:00:39.016Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Hexham|15:20",
+      "date": "2026-11-06",
+      "course": "Hexham",
+      "time": "15:20",
+      "horse": "BOY AARON",
+      "price": "2/1",
+      "runners": 9,
+      "liveHorse": "BOY AARON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BOY AARON",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T15:10:39.690Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 991,
+    "recorded": 992,
     "pick": {
-      "settled": 969,
+      "settled": 971,
       "won": 185,
-      "pl": -141.36,
-      "roi": -14.6
+      "pl": -143.36,
+      "roi": -14.8
     },
     "favourite": {
-      "settled": 964,
+      "settled": 966,
       "won": 344,
-      "pl": 23.41,
-      "roi": 2.4
+      "pl": 21.41,
+      "roi": 2.2
     },
     "agree": {
       "settled": 251,
@@ -27226,10 +27261,10 @@
       "roi": -10.8
     },
     "disagree": {
-      "settled": 718,
+      "settled": 720,
       "won": 87,
-      "pl": -114.31,
-      "roi": -15.9
+      "pl": -116.31,
+      "roi": -16.2
     }
   },
   "lastBackfill": 1793969451352
