@@ -49,7 +49,9 @@ function guideEntry(ratings, meetingName, time, horse, label, tier, tierReason) 
     // results archive the favourite of a UK/IRE field of 5 or fewer won 48.4%
     // (157 races, A/E 0.94) vs 37.8% in 6-8 runners and 32.7% in 9+.
     if (u.days_since_run > 120) risks.push("Last ran " + u.days_since_run + " days ago.");
-    if (u.is_unexposed) risks.push("Little or no form on record, so the rating leans on the market and the trainer.");
+    // Not "the rating leans on the market and the trainer" (2026-11-06): no engine
+    // treats an unexposed horse differently. SMOKEHOUSE: verdict 24.5, form 24, market 20.
+    if (u.is_unexposed) risks.push("Little or no form on record, so there is less to judge it on.");
     const mine = active.map(r => decimal(r.current_odds)).filter(Boolean).sort((a, b) => a - b);
     if (mine.length > 1 && mine[1] / mine[0] < 1.15) risks.push("The market is bunched at the top - the favourite is barely shorter than the second choice.");
     const d = decimal(u.current_odds);
