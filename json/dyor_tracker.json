@@ -27437,31 +27437,58 @@
       "fav": {
         "horse": "NORTHERN VIOLA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T16:20:46.114Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-06|Newcastle|17:00",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "17:00",
+      "horse": "LIZZIE BENNET",
+      "price": "7/2",
+      "runners": 10,
+      "liveHorse": "MOBILIZING",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MOBILIZING",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T16:50:45.593Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 999,
+    "recorded": 1000,
     "pick": {
-      "settled": 980,
+      "settled": 981,
       "won": 185,
-      "pl": -152.36,
-      "roi": -15.5
+      "pl": -153.36,
+      "roi": -15.6
     },
     "favourite": {
-      "settled": 974,
+      "settled": 975,
       "won": 344,
-      "pl": 13.41,
-      "roi": 1.4
+      "pl": 12.41,
+      "roi": 1.3
     },
     "agree": {
-      "settled": 255,
+      "settled": 256,
       "won": 98,
-      "pl": -31.05,
-      "roi": -12.2
+      "pl": -32.05,
+      "roi": -12.5
     },
     "disagree": {
       "settled": 725,
