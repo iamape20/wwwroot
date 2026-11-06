@@ -26915,10 +26915,14 @@
       "fav": {
         "horse": "KAMILLE AU KANADA",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-11-06T12:50:51.332Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     },
     {
       "id": "2026-11-06|Aintree|13:15",
@@ -26957,10 +26961,29 @@
       },
       "recordedAt": "2026-11-06T13:10:55.299Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Hexham|13:35",
+      "date": "2026-11-06",
+      "course": "Hexham",
+      "time": "13:35",
+      "horse": "C'MON SO",
+      "price": "11/8",
+      "runners": 7,
+      "liveHorse": "C'MON SO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "C'MON SO",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T13:20:54.080Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 981,
+    "recorded": 982,
     "pick": {
       "settled": 964,
       "won": 185,
