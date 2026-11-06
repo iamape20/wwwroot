@@ -26938,10 +26938,18 @@
       "fav": {
         "horse": "BARNPARK",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T13:00:53.104Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Fontwell|13:25",
@@ -26957,10 +26965,16 @@
       "fav": {
         "horse": "SEA WARRIOR",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-11-06T13:10:55.299Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Hexham|13:35",
@@ -26980,21 +26994,40 @@
       },
       "recordedAt": "2026-11-06T13:20:54.080Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Aintree|13:50",
+      "date": "2026-11-06",
+      "course": "Aintree",
+      "time": "13:50",
+      "horse": "BUCEPHALUS",
+      "price": "20/1",
+      "runners": 7,
+      "liveHorse": "ALL IN YOU",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALL IN YOU",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T13:40:57.785Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 982,
+    "recorded": 983,
     "pick": {
-      "settled": 964,
+      "settled": 966,
       "won": 185,
-      "pl": -136.36,
-      "roi": -14.1
+      "pl": -138.36,
+      "roi": -14.3
     },
     "favourite": {
-      "settled": 959,
+      "settled": 960,
       "won": 344,
-      "pl": 28.41,
-      "roi": 3
+      "pl": 27.41,
+      "roi": 2.9
     },
     "agree": {
       "settled": 250,
@@ -27003,10 +27036,10 @@
       "roi": -10.4
     },
     "disagree": {
-      "settled": 714,
+      "settled": 716,
       "won": 87,
-      "pl": -110.31,
-      "roi": -15.4
+      "pl": -112.31,
+      "roi": -15.7
     }
   },
   "lastBackfill": 1793969451352
