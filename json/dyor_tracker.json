@@ -27618,10 +27618,18 @@
       "fav": {
         "horse": "MONTPELLIER GREEN",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T18:20:52.902Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Dundalk|18:45",
@@ -27641,21 +27649,40 @@
       },
       "recordedAt": "2026-11-06T18:30:55.565Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Newcastle|19:00",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "19:00",
+      "horse": "ELLIE'S DE VEGA",
+      "price": "20/1",
+      "runners": 14,
+      "liveHorse": "PAL JOEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PAL JOEY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T18:50:51.215Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1007,
+    "recorded": 1008,
     "pick": {
-      "settled": 985,
+      "settled": 986,
       "won": 185,
-      "pl": -157.36,
-      "roi": -16
+      "pl": -158.36,
+      "roi": -16.1
     },
     "favourite": {
-      "settled": 979,
+      "settled": 980,
       "won": 344,
-      "pl": 8.41,
-      "roi": 0.9
+      "pl": 7.41,
+      "roi": 0.8
     },
     "agree": {
       "settled": 256,
@@ -27664,10 +27691,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 729,
+      "settled": 730,
       "won": 87,
-      "pl": -125.31,
-      "roi": -17.2
+      "pl": -126.31,
+      "roi": -17.3
     }
   },
   "lastBackfill": 1793980257458
