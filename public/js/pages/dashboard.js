@@ -2904,13 +2904,7 @@ async function loadRecord() {
         if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
         // Real Matchbook bets not shown (user 2026-11-05).
         if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
-        // NAP rule forward test (user 2026-11-05): each rule's live record, what
-        // it did in testing, and the pass mark it must reach before real money.
-        for (const t of Object.values(d.ruleTest?.rules || {})) {
-            const bt = t.backtest || {};
-            const live = t.picks ? `${t.won} won of ${t.picks} &middot; <span class="${t.pl < 0 ? "record-minus" : "record-plus"}">${t.pl < 0 ? "-" : "+"}${Math.abs(t.pl).toFixed(2)} pts</span> at Betfair SP` : "no picks settled yet";
-            rows.push(`<div class="record-row"><b>${escapeHtml(t.rule)}</b> ${live} <span class="record-since">${t.picks}/${t.passAt} picks${t.verdict ? ` - ${t.verdict}` : ""}. In testing it won ${bt.wonPct}%, losing runs up to ${bt.losingRun}</span></div>`);
-        }
+        // NAP rule forward test: its own panel below (user 2026-11-06).
         // Best Odds Guaranteed paper test (user 2026-11-05): no money, £1 a bet.
         const bog = d.bogTest;
         if (bog) {
@@ -2923,12 +2917,57 @@ async function loadRecord() {
             const live = ep.bets ? `${ep.won} won, ${ep.placed} placed of ${ep.bets} &middot; <span class="${ep.pl < 0 ? "record-minus" : "record-plus"}">${ep.pl < 0 ? "-" : "+"}${Math.abs(ep.pl).toFixed(2)} pts</span> (${ep.roiPct}%; on standard terms ${ep.standardRoiPct}%)` : "first bets from 09:00";
             rows.push(`<div class="record-row"><b>Extra places test</b> ${live} <span class="record-since">${ep.bets}/${ep.passAt} bets${ep.verdict ? ` - ${ep.verdict}` : ""}. Our top-rated each way, at the 9am price, in races where a bookmaker pays an extra place</span></div>`);
         }
-        if (d.realBetsPaused) rows.push(`<div class="record-row record-since">Real-money bets are paused until a NAP rule shows a profit over ${Object.values(d.ruleTest?.rules || {})[0]?.passAt || 100} picks, in both halves.</div>`);
         renderLastNap(d.lastNap);
+        renderRuleTest(d.ruleTest, d.realBetsPaused);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
         el.style.display = "";
     } catch { /* keep the last record */ }
+}
+
+// NAP rule test progress (user 2026-11-06 "show the NAP rule test progress"):
+// js/napRuleTest.js locks each rule's pick at 9am and settles it at Betfair SP
+// after 5%; a rule passes in profit after passAt picks and in both halves.
+function renderRuleTest(rt, paused) {
+    const el = document.getElementById("ruleTestBlock");
+    if (!el) return;
+    const rules = Object.entries(rt?.rules || {});
+    if (!rules.length) { el.style.display = "none"; return; }
+    const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
+    const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    const today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const res = p => !p ? `<span class="record-since">no horse cleared the bar</span>`
+        : p.outcome === "won" ? `<span class="record-plus">won</span> SP ${p.bsp}`
+        : p.outcome === "lost" ? `<span class="record-minus">lost</span> SP ${p.bsp}`
+        : p.outcome === "void" ? `<span class="record-since">void (non-runner)</span>` : `<span class="record-since">to run</span>`;
+    const pick = p => p ? `<b>${escapeHtml(p.horse)}</b> <span class="record-since">${escapeHtml(p.course)} ${escapeHtml(p.time)} &middot; ${escapeHtml(p.odds)}</span> ${res(p)}` : res(p);
+    const cards = rules.map(([k, t]) => {
+        const pct = Math.min(100, Math.round(100 * t.picks / (t.passAt || 100)));
+        const halves = t.picks >= 2 ? t.halves.map((h, i) => `<span class="${h > 0 ? "record-plus" : "record-minus"}">${i ? "2nd" : "1st"} half ${h > 0 ? "+" : ""}${h}%</span>`).join(" ") : "";
+        const verdict = t.verdict ? `<span class="rule-test-verdict rule-test-${t.verdict.toLowerCase()}">${t.verdict}</span>` : "";
+        const bt = t.backtest || {};
+        return `<div class="rule-test-rule">
+            <div class="rule-test-head"><b>${escapeHtml(k)}. ${escapeHtml(t.rule)}</b>${verdict}</div>
+            <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
+            <div class="record-since">${t.picks} of ${t.passAt} picks settled</div>
+            <div class="record-row">${t.picks ? `${t.won} won (${Math.round(100 * t.won / t.picks)}%) &middot; ${pts(t.pl)} &middot; ${t.roiPct > 0 ? "+" : ""}${t.roiPct}% a bet` : "No picks settled yet"}</div>
+            ${halves || t.currentRun ? `<div class="record-row">${halves}${t.currentRun ? ` <span class="record-since">&middot; ${t.currentRun} lost in a row</span>` : ""}</div>` : ""}
+            <div class="record-since">In testing: won ${bt.wonPct}%, ${bt.roiPct > 0 ? "+" : ""}${bt.roiPct}% &plusmn;${bt.range}, losing runs up to ${bt.losingRun}</div>
+        </div>`;
+    }).join("");
+    const recent = rt.recent || [];
+    const todayRow = recent.find(d => d.date === today);
+    const todayHtml = todayRow
+        ? rules.map(([k]) => `<div class="record-row">${escapeHtml(k)}: ${pick(todayRow.picks[k])}</div>`).join("")
+        : `<div class="record-row record-since">Today's picks lock at 9am.</div>`;
+    const past = recent.filter(d => d.date !== today);
+    const pastHtml = past.length ? `<div class="rule-test-sub">Recent picks</div><table class="rule-test-table"><tbody>${past.map(d =>
+        `<tr><td class="record-since">${day(d.date)}</td>${rules.map(([k]) => `<td>${escapeHtml(k)}: ${pick(d.picks[k])}</td>`).join("")}</tr>`).join("")}</tbody></table>` : "";
+    el.innerHTML = `<div class="results-strip-label">NAP rule test</div>
+        <div class="record-since">Two ways of choosing the NAP, on trial since ${day(String(rt.startedAt).slice(0, 10))}. Each picks one horse at 9am, settled at Betfair SP after 5%, £1 a pick. To pass, a rule must be in profit after ${rules[0][1].passAt} picks and in both halves.${paused ? " Real-money bets stay paused until one passes." : ""}</div>
+        <div class="rule-test-rules">${cards}</div>
+        <div class="rule-test-sub">Today</div>${todayHtml}${pastHtml}`;
+    el.style.display = "";
 }
 
 // "Yesterday's NAP: MACANUDO 2nd at 7/2" under today's NAP (user 2026-11-05):

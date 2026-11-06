@@ -2871,3 +2871,18 @@ button {
 .race-card.active .race-card-time,
 .race-card.active .race-card-meta,
 .race-card.active .race-card-runners { color: #fff; }
+
+/* NAP rule test panel (2026-11-06) */
+.rule-test { margin: 12px 14px 6px; font-size: 12px; color: var(--epr-text); }
+.rule-test-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; margin-top: 8px; }
+.rule-test-rule { border: 1px solid var(--epr-border); border-radius: 8px; padding: 8px 10px; }
+.rule-test-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.rule-test-bar { height: 6px; border-radius: 3px; background: rgba(var(--epr-overlay-rgb), 0.12); margin: 6px 0 3px; overflow: hidden; }
+.rule-test-bar span { display: block; height: 100%; background: var(--epr-gold); border-radius: 3px; }
+.rule-test-verdict { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 4px; color: #fff; }
+.rule-test-pass { background: #1e9e57; }
+.rule-test-fail { background: #c0392b; }
+.rule-test-sub { margin-top: 8px; font-weight: 700; color: var(--epr-muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.rule-test-table { width: 100%; border-collapse: collapse; margin-top: 2px; }
+.rule-test-table td { padding: 2px 6px 2px 0; vertical-align: top; }
+@media (max-width: 700px) { .rule-test-rules { grid-template-columns: 1fr; } .rule-test-table td { display: block; padding: 1px 0; } .rule-test-table tr { display: block; margin-bottom: 4px; } }
