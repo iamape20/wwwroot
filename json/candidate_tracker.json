@@ -5199,7 +5199,11 @@
       "rating": 80.5,
       "runners": 4,
       "recordedAt": "2026-11-06T13:50:46.330Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Aintree|14:25",
@@ -5216,10 +5220,10 @@
   ],
   "stats": {
     "recorded": 317,
-    "settled": 309,
+    "settled": 310,
     "won": 155,
-    "pl": -3.71,
-    "roi": -1.2
+    "pl": -4.71,
+    "roi": -1.5
   },
   "lastBackfill": 1793971251702
 }

@@ -27042,10 +27042,16 @@
       "fav": {
         "horse": "MILD MAGIC",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T13:50:46.621Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-06|Hexham|14:10",
@@ -27084,10 +27090,29 @@
       },
       "recordedAt": "2026-11-06T14:10:48.041Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Fontwell|14:35",
+      "date": "2026-11-06",
+      "course": "Fontwell",
+      "time": "14:35",
+      "horse": "MOTAZZEN",
+      "price": "6/1",
+      "runners": 8,
+      "liveHorse": "SO YOU KNOW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SO YOU KNOW",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T14:20:46.895Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 986,
+    "recorded": 987,
     "pick": {
       "settled": 968,
       "won": 185,
@@ -27095,10 +27120,10 @@
       "roi": -14.5
     },
     "favourite": {
-      "settled": 961,
+      "settled": 962,
       "won": 344,
-      "pl": 26.41,
-      "roi": 2.7
+      "pl": 25.41,
+      "roi": 2.6
     },
     "agree": {
       "settled": 251,
