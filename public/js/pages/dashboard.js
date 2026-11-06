@@ -249,7 +249,10 @@ function renderNapCallout(nap) {
         // No race qualifies (user 2026-11-06: the NAP is Our pick in a Strong or
         // Moderate race, never an Open one) - say so rather than show nothing.
         napEl.style.display = "";
-        napEl.innerHTML = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no race has a clear enough pick (Strong or Moderate) yet. It can appear once the 9am prices are in.</div>`;
+        // "Once the 9am prices are in" only while that is still to come; it can also
+        // be a Moderate race whose pick fails a NAP check (trainer out of form).
+        const beforeNine = Number(new Date().toLocaleString("en-GB", { timeZone: "Europe/London", hour: "2-digit", hourCycle: "h23" })) < 9;
+        napEl.innerHTML = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
         napEl.onclick = null;
         return;
     }
