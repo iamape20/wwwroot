@@ -125,7 +125,7 @@ function renderDailyDouble(dashboard) {
         box.innerHTML = `
             <div class="daily-double-panel">
                 <div class="daily-double-header">⭐ Daily Double</div>
-                <div class="daily-double-empty-text">No value, Strong or Moderate pick at evens (2.0) or bigger today — an honest zero, not padded with a weaker race.</div>
+                <div class="daily-double-empty-text">No Strong or Moderate pick at evens (2.0) or bigger today — an honest zero, not padded with a weaker race.</div>
             </div>
         `;
         return;
@@ -246,8 +246,10 @@ function renderNapCallout(nap) {
     if (!napEl) return;
 
     if (!nap) {
-        napEl.style.display = "none";
-        napEl.innerHTML = "";
+        // No race qualifies (user 2026-11-06: the NAP is Our pick in a Strong or
+        // Moderate race, never an Open one) - say so rather than show nothing.
+        napEl.style.display = "";
+        napEl.innerHTML = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no race has a clear enough pick (Strong or Moderate) yet. It can appear once the 9am prices are in.</div>`;
         napEl.onclick = null;
         return;
     }
