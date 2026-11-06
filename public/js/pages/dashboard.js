@@ -329,6 +329,27 @@ function tickNapCountdown() {
     el.classList.toggle("nap-countdown-soon", mins > 0 && mins <= 15);
 }
 
+// Form chance and the core facts under each runner (user 2026-11-06): the chance
+// from form alone (js/formModel.js - no price in it) and its record at this
+// course, trip and going, last run and days off. For judgement, not the pick.
+function formLineHtml(runner) {
+    const c = runner.formChance, f = runner.formFacts;
+    if (c == null || !f) return "";
+    const rec = ([w, r]) => r ? `${w}/${r}` : "-";
+    const tip = (label, [w, r]) => r ? `${label}: won ${w} of ${r} runs` : `${label}: not run`;
+    const last = f.lastPos == null ? "debut" : f.lastPos === "DNF" ? "last time did not finish" : `last time ${f.lastPos}${f.lastRunners ? `/${f.lastRunners}` : ""}`;
+    const cls = f.lastClass && f.todayClass ? (f.todayClass > f.lastClass ? " &middot; down in class" : f.todayClass < f.lastClass ? " &middot; up in class" : "") : "";
+    const hit = ([w]) => w > 0 ? " form-hit" : "";
+    return `<div class="runner-form-line" title="Chance of winning on form alone - class, course, distance, going, recent runs. No price in it.">
+        <span class="form-chance"><b>${Math.round(100 * c)}%</b> on form</span>
+        <span class="form-fact${hit(f.course)}" title="${tip("This course", f.course)}">C ${rec(f.course)}</span>
+        <span class="form-fact${hit(f.dist)}" title="${tip("This trip (within 10%)", f.dist)}">D ${rec(f.dist)}</span>
+        ${f.cd ? `<span class="form-fact form-hit" title="Has won over this course and distance">CD</span>` : ""}
+        <span class="form-fact${hit(f.going)}" title="${tip("This going (or one step either side)", f.going)}">G ${rec(f.going)}</span>
+        <span class="form-meta">${f.wins}/${f.runs} wins &middot; ${last}${f.daysOff != null ? ` &middot; ${f.daysOff} days off` : ""}${cls}</span>
+    </div>`;
+}
+
 function escapeHtml(str) {
     if (typeof str !== "string") return str ?? "";
 
@@ -1992,11 +2013,14 @@ async function loadRace(
                                         runner.isOurPick && response.race.valuePick
                                             ? `<span class="runner-our-pick-badge" title="Our bet in this race: its chance looks bigger than its price">Our bet</span>`
                                             : runner.isOurPick
-                                            ? `<span class="runner-our-pick-badge" title="The actual published pick - the market-override rule can promote a shorter-priced runner ahead of our own top rating">Our Pick</span>`
+                                            ? `<span class="runner-our-pick-badge" title="Our pick: the likeliest winner - the market price leads, our rating breaks ties">Our Pick</span>`
                                             : ""
                                     }
+                                    ${response.race.valueTag && String(response.race.valueTag.name).toUpperCase() === String(runner.name).toUpperCase()
+                                        ? `<span class="runner-value-badge" title="Value: the value model gives it a ${Math.round(100 * response.race.valueTag.chance)}% chance at ${escapeHtml(response.race.valueTag.odds)} - unproven, on test">Value</span>` : ""}
 
                                     ${isFavourite(runner) ? `<span class="runner-fav-badge" title="Shortest price in the market">${favCount > 1 ? "Joint fav" : "Fav"}</span>` : ""}
+                                    ${formLineHtml(runner)}
 
                                     ${finishPill(runner.name)}
 

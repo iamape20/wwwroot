@@ -111,7 +111,10 @@ async function getRace(meetingId, raceIndex) {
             bettingForecast: race.betting_forecast,
             drawAdvantage: ratingsRace?.draw_advantage || "None",
             // Value pick (js/markValuePicks.js, 2026-11-04): this race's Our bet.
-            valuePick: ratingsRace?.value_pick || null,
+            // From 2026-11-06 a value pick is not the pick (ourPick: false): it comes
+            // as valueTag, a badge on that runner, and valuePick stays for older days.
+            valuePick: ratingsRace?.value_pick && ratingsRace.value_pick.ourPick !== false ? ratingsRace.value_pick : null,
+            valueTag: ratingsRace?.value_pick?.ourPick === false ? ratingsRace.value_pick : null,
             claudeView: claudePick ? {
                 pick: claudePick.pick,
                 confidence: claudePick.confidence ?? null,
@@ -209,6 +212,10 @@ async function getRace(meetingId, raceIndex) {
 					isOurPick,
 
 					isClaudePick: claudePick != null && runner.name === claudePick.pick,
+
+					// Form chance and course/distance/going record (js/markFormChances.js, 2026-11-06).
+					formChance: elite.form_chance ?? null,
+					formFacts: elite.form_facts ?? null,
 
 					elite: {
 						rating: liveRating,

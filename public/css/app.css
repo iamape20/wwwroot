@@ -2891,3 +2891,12 @@ button {
 .bog-today summary { cursor: pointer; }
 .bog-today .rule-test-table { margin-top: 4px; }
 .record-link { color: var(--epr-gold); font-weight: 600; }
+
+/* Form chance line under each runner (2026-11-06) */
+.runner-form-line { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 4px; font-size: 11px; font-weight: 400; color: var(--epr-muted); }
+.runner-form-line .form-chance { color: var(--epr-text); }
+.runner-form-line .form-chance b { font-size: 12px; }
+.runner-form-line .form-fact { border: 1px solid var(--epr-border); border-radius: 4px; padding: 0 4px; }
+.runner-form-line .form-hit { color: #1e9e57; border-color: rgba(30,158,87,.5); font-weight: 600; }
+.runner-value-badge { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 700;
+    color: rgb(var(--epr-meet-rgb)); border: 1px solid rgba(var(--epr-meet-rgb), .6); vertical-align: middle; }
