@@ -27277,10 +27277,18 @@
       "fav": {
         "horse": "HERE COMES GEORGIE",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T15:20:59.993Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Newcastle|15:28",
@@ -27344,21 +27352,59 @@
       },
       "recordedAt": "2026-11-06T15:40:58.660Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Aintree|16:05",
+      "date": "2026-11-06",
+      "course": "Aintree",
+      "time": "16:05",
+      "horse": "KNIGHT TEMPLAR",
+      "price": "11/2",
+      "runners": 10,
+      "liveHorse": "QUAVISTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "QUAVISTE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T15:50:57.422Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-06|Newcastle|16:00",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "16:00",
+      "horse": "PRINTING MONEY",
+      "price": "7/2",
+      "runners": 11,
+      "liveHorse": "PRINTING MONEY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PRINTING MONEY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T15:50:57.452Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 996,
+    "recorded": 998,
     "pick": {
-      "settled": 975,
+      "settled": 976,
       "won": 185,
-      "pl": -147.36,
-      "roi": -15.1
+      "pl": -148.36,
+      "roi": -15.2
     },
     "favourite": {
-      "settled": 969,
+      "settled": 970,
       "won": 344,
-      "pl": 18.41,
-      "roi": 1.9
+      "pl": 17.41,
+      "roi": 1.8
     },
     "agree": {
       "settled": 253,
@@ -27367,11 +27413,11 @@
       "roi": -11.5
     },
     "disagree": {
-      "settled": 722,
+      "settled": 723,
       "won": 87,
-      "pl": -118.31,
-      "roi": -16.4
+      "pl": -119.31,
+      "roi": -16.5
     }
   },
-  "lastBackfill": 1793969451352
+  "lastBackfill": 1793980257458
 }
