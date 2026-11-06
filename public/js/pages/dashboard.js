@@ -2917,6 +2917,12 @@ async function loadRecord() {
             const live = bog.bets ? `${bog.won} won of ${bog.bets} &middot; <span class="${bog.pl < 0 ? "record-minus" : "record-plus"}">${bog.pl < 0 ? "-" : "+"}${Math.abs(bog.pl).toFixed(2)} pts</span> with BOG${bog.noBogRoiPct != null ? ` (${bog.roiPct}%; without BOG ${bog.noBogRoiPct}%)` : ""}` : "first bets from 09:00";
             rows.push(`<div class="record-row"><b>Best Odds Guaranteed test</b> ${live} <span class="record-since">${bog.bets}/${bog.passAt} bets${bog.verdict ? ` - ${bog.verdict}` : ""}. Our top-rated at evens to 4/1, paid the bigger of the 9am price and the SP. No valid past test - this is the first real one</span></div>`);
         }
+        // Extra places paper test (user 2026-11-06): no money, £1 each way a bet.
+        const ep = d.extraPlacesTest;
+        if (ep) {
+            const live = ep.bets ? `${ep.won} won, ${ep.placed} placed of ${ep.bets} &middot; <span class="${ep.pl < 0 ? "record-minus" : "record-plus"}">${ep.pl < 0 ? "-" : "+"}${Math.abs(ep.pl).toFixed(2)} pts</span> (${ep.roiPct}%; on standard terms ${ep.standardRoiPct}%)` : "first bets from 09:00";
+            rows.push(`<div class="record-row"><b>Extra places test</b> ${live} <span class="record-since">${ep.bets}/${ep.passAt} bets${ep.verdict ? ` - ${ep.verdict}` : ""}. Our top-rated each way, at the 9am price, in races where a bookmaker pays an extra place</span></div>`);
+        }
         if (d.realBetsPaused) rows.push(`<div class="record-row record-since">Real-money bets are paused until a NAP rule shows a profit over ${Object.values(d.ruleTest?.rules || {})[0]?.passAt || 100} picks, in both halves.</div>`);
         renderLastNap(d.lastNap);
         if (!rows.length) { el.style.display = "none"; return; }
