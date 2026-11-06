@@ -27383,10 +27383,18 @@
       "fav": {
         "horse": "QUAVISTE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T15:50:57.422Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Newcastle|16:00",
@@ -27402,37 +27410,64 @@
       "fav": {
         "horse": "PRINTING MONEY",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-06T15:50:57.452Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-06|Newcastle|16:30",
+      "date": "2026-11-06",
+      "course": "Newcastle",
+      "time": "16:30",
+      "horse": "NORTHERN VIOLA",
+      "price": "10/11",
+      "runners": 5,
+      "liveHorse": "NORTHERN VIOLA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "NORTHERN VIOLA",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T16:20:46.114Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 998,
+    "recorded": 999,
     "pick": {
-      "settled": 978,
+      "settled": 980,
       "won": 185,
-      "pl": -150.36,
-      "roi": -15.4
+      "pl": -152.36,
+      "roi": -15.5
     },
     "favourite": {
-      "settled": 972,
+      "settled": 974,
       "won": 344,
-      "pl": 15.41,
-      "roi": 1.6
+      "pl": 13.41,
+      "roi": 1.4
     },
     "agree": {
-      "settled": 254,
+      "settled": 255,
       "won": 98,
-      "pl": -30.05,
-      "roi": -11.8
+      "pl": -31.05,
+      "roi": -12.2
     },
     "disagree": {
-      "settled": 724,
+      "settled": 725,
       "won": 87,
-      "pl": -120.31,
-      "roi": -16.6
+      "pl": -121.31,
+      "roi": -16.7
     }
   },
   "lastBackfill": 1793980257458
