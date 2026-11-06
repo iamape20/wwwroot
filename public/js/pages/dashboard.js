@@ -80,10 +80,14 @@ function legNoBet(p) {
     return Boolean(pickChanged || p.nowTier === "Open");
 }
 
+// A one-leg day is a Daily Single in the header and the phone message, so the
+// notes about its leg must say so too (2026-11-06).
+function ddName() { return window.__dailyDoubleName || "Daily Double"; }
+
 function legNoBetReason(p) {
     const pickChanged = p.nowPick && String(p.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase();
     return pickChanged
-        ? `Market has moved since 09:00 - the race page now picks ${p.nowPick}${p.nowTier === "Open" ? " and there is no clear pick" : ""}, so no bet on the Daily Double.`
+        ? `Market has moved since 09:00 - the race page now picks ${p.nowPick}${p.nowTier === "Open" ? " and there is no clear pick" : ""}, so no bet on the ${ddName()}.`
         : "Market has moved since 09:00 - no clear pick in this race now, so no bet.";
 }
 
@@ -120,6 +124,7 @@ function renderDailyDouble(dashboard) {
 
     const picks = Array.isArray(dashboard?.dailyDouble) ? dashboard.dailyDouble : [];
     window.__dailyDouble = picks; // the race page says when its race holds a Daily Double leg
+    window.__dailyDoubleName = dashboard?.dailyDoublePickMode === "single" ? "Daily Single" : "Daily Double";
 
     if (!picks.length) {
         box.innerHTML = `
@@ -148,11 +153,11 @@ function renderDailyDouble(dashboard) {
                 <div class="daily-double-horse">
                     <span${legNoBet(p) || p.abandoned ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(p.horse)}</span>
                     <span class="daily-double-tier">${p.nap && p.napNow !== false ? "NAP &middot; " : ""}${escapeHtml(p.tier)}</span>
-                    ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the Daily Double was locked this morning">Non-runner</span>` : ""}
+                    ${p.nonRunner ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;" title="Withdrawn after the ${ddName()} was locked this morning">Non-runner</span>` : ""}
                     ${legNoBet(p) ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;">NO BET</span>` : ""}
                     ${p.abandoned ? `<span class="daily-double-nr" style="color:#c0392b;font-weight:700;margin-left:6px;">ABANDONED</span>` : ""}
                 </div>
-                ${p.abandoned ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">This meeting was abandoned after the Daily Double was locked - this leg is void.</div>` : ""}
+                ${p.abandoned ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">This meeting was abandoned after the ${ddName()} was locked - this leg is void.</div>` : ""}
                 ${legNoBet(p) ? `<div class="daily-double-race" style="color:#c0392b;font-weight:600;">${escapeHtml(legNoBetReason(p))}</div>` : ""}
                 ${p.nonRunner || p.abandoned || legNoBet(p) ? "" : resultLineHtml(p.result)}
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
@@ -1527,12 +1532,12 @@ function ddLegNote(meetingId, raceIndex, pickRunner) {
     if (!leg || leg.nonRunner) return "";
     const style = 'style="margin-top:6px;font-weight:600;"';
     if (legNoBet(leg)) {
-        return `<div class="pick-summary-note" ${style}>The 09:00 Daily Double pick here was ${escapeHtml(leg.horse)}. ${escapeHtml(legNoBetReason(leg))}</div>`;
+        return `<div class="pick-summary-note" ${style}>The 09:00 ${ddName()} pick here was ${escapeHtml(leg.horse)}. ${escapeHtml(legNoBetReason(leg))}</div>`;
     }
     return String(leg.horse || "").toUpperCase() === String(pickRunner?.name || "").toUpperCase()
         ? `<div class="pick-summary-note" ${style}>${leg.provisional
-            ? "This is today's provisional Daily Double pick - the list is set at 09:00."
-            : "This is today's Daily Double pick (set at 09:00)."}</div>`
+            ? `This is today's provisional ${ddName()} pick - the list is set at 09:00.`
+            : `This is today's ${ddName()} pick (set at 09:00).`}</div>`
         : "";
 }
 

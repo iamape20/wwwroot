@@ -85,11 +85,12 @@ function guide(res) {
     // A leg the market has moved away from is NO BET on the home page (2026-10-22).
     const { legNow, shortlistProvisional } = require("../services/dashboardService");
     const provisional = shortlistProvisional(sl);   // before the 09:00 lock there is no "since 09:00" yet
+    const ddLabel = sl.pickMode === "single" ? "Daily single" : "Daily double";   // as the home page and phone message
     (sl.dailyDouble || []).forEach(p => {
         const now = legNow(ratings, nap, p);
         // Value legs (2026-11-04) aren't the race pick by design - never NO BET for that.
         const noBet = !provisional && p.tier !== "Value" && ((now.nowPick && String(now.nowPick).toUpperCase() !== String(p.horse || "").toUpperCase()) || now.nowTier === "Open");
-        add(noBet ? "Daily double - no bet (market moved)" : "Daily double", p);
+        add(noBet ? ddLabel + " - no bet (market moved)" : ddLabel, p);
     });
     (sl.strong || []).forEach(p => add("Strong", p));
     (sl.moderate || []).forEach(p => add("Moderate", p));
