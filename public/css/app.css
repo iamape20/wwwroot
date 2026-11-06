@@ -2887,3 +2887,6 @@ button {
 .rule-test-table td { padding: 2px 6px 2px 0; vertical-align: top; }
 @media (max-width: 700px) { .rule-test-rules { grid-template-columns: 1fr; } .rule-test-table td { display: block; padding: 1px 0; } .rule-test-table tr { display: block; margin-bottom: 4px; } }
 .rule-test-table td:first-child { white-space: nowrap; width: 1%; padding-right: 10px; }
+.bog-today { margin-top: 3px; }
+.bog-today summary { cursor: pointer; }
+.bog-today .rule-test-table { margin-top: 4px; }

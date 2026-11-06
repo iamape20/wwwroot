@@ -2905,16 +2905,12 @@ async function loadRecord() {
         // Real Matchbook bets not shown (user 2026-11-05).
         if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
         // NAP rule forward test: its own panel below (user 2026-11-06).
-        // Best Odds Guaranteed paper test (user 2026-11-05): no money, £1 a bet.
-        const bog = d.bogTest;
-        if (bog) {
-            const live = bog.bets ? `${bog.won} won of ${bog.bets} &middot; <span class="${bog.pl < 0 ? "record-minus" : "record-plus"}">${bog.pl < 0 ? "-" : "+"}${Math.abs(bog.pl).toFixed(2)} pts</span> with BOG${bog.noBogRoiPct != null ? ` (${bog.roiPct}%; without BOG ${bog.noBogRoiPct}%)` : ""}` : "first bets from 09:00";
-            rows.push(`<div class="record-row"><b>Best Odds Guaranteed test</b> ${live} <span class="record-since">${bog.bets}/${bog.passAt} bets${bog.verdict ? ` - ${bog.verdict}` : ""}. Our top-rated at evens to 4/1, paid the bigger of the 9am price and the SP. No valid past test - this is the first real one</span></div>`);
-        }
+        // Best Odds Guaranteed paper test: its own panel below (user 2026-11-06).
         // Extra places paper test: its own panel below (user 2026-11-06).
         renderLastNap(d.lastNap);
         renderRuleTest(d.ruleTest, d.realBetsPaused);
         renderExtraPlaces(d.extraPlacesTest);
+        renderBogTest(d.bogTest);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
         el.style.display = "";
@@ -3012,6 +3008,59 @@ function renderExtraPlaces(ep) {
             <div class="rule-test-head"><b>For comparison</b></div>
             <div class="record-row">Every runner on an extra place: ${ep.everyRunner?.bets ? `${pc(ep.everyRunner.roiPct)} (usual terms ${pc(ep.everyRunner.standardRoiPct)}), ${ep.everyRunner.bets} bets` : "none settled yet"}</div>
             <div class="record-row">More places but a smaller fraction: ${ep.trade?.bets ? `${pc(ep.trade.roiPct)} (usual terms ${pc(ep.trade.standardRoiPct)}), ${ep.trade.bets} bets` : "none settled yet"}</div>
+        </div></div>
+        <div class="rule-test-sub">Today</div>${todayHtml}${pastHtml}`;
+    el.style.display = "";
+}
+
+// Best Odds Guaranteed paper test progress (user 2026-11-06 "show the BOG test
+// progress too"): js/bogPaperTest.js, £1 on our top-rated at evens to 4/1 in every
+// race at 9am, paid the bigger of that price and the SP; passes in profit after
+// passAt bets and in both halves.
+function renderBogTest(bg) {
+    const el = document.getElementById("bogBlock");
+    if (!el) return;
+    if (!bg) { el.style.display = "none"; return; }
+    const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
+    const pc = v => v == null ? "-" : `${v > 0 ? "+" : ""}${v}%`;
+    const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    const today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const spFrac = d => { if (!d) return ""; if (Math.abs(d - 2) < 0.01) return "evens"; for (const den of [1, 2, 3, 4, 5, 6, 8, 10, 11, 13, 15, 20, 40]) { const n = (d - 1) * den; if (Math.abs(n - Math.round(n)) < 0.02) return `${Math.round(n)}/${den}`; } return d.toFixed(2); };
+    const res = b => b.outcome === "won" ? `<span class="record-plus">won</span> SP ${spFrac(b.sp)} ${pts(b.pl)}${b.pl > b.plNoBog ? ` <span class="record-since">(BOG paid the SP)</span>` : ""}`
+        : b.outcome === "lost" ? `<span class="record-minus">lost</span>`
+        : b.outcome === "void" ? `<span class="record-since">void</span>` : `<span class="record-since">to run</span>`;
+    const pct = Math.min(100, Math.round(100 * bg.bets / (bg.passAt || 600)));
+    const halves = bg.bets >= 2 ? bg.halves.map((h, i) => `<span class="${h > 0 ? "record-plus" : "record-minus"}">${i ? "2nd" : "1st"} half ${pc(h)}</span>`).join(" ") : "";
+    const verdict = bg.verdict ? `<span class="rule-test-verdict rule-test-${bg.verdict.toLowerCase()}">${bg.verdict}</span>` : "";
+    const recent = bg.recent || [];
+    const todayRow = recent.find(d => d.date === today);
+    let todayHtml = `<div class="record-row record-since">Today's bets lock at 9am.</div>`;
+    if (todayRow) {
+        const done = todayRow.bets.filter(b => b.pl != null);
+        const head = `${todayRow.bets.length} bets &middot; ${done.filter(b => b.outcome === "won").length} won of ${done.length} run${done.length ? ` &middot; ${pts(done.reduce((s, b) => s + b.pl, 0))}` : ""}`;
+        todayHtml = todayRow.bets.length ? `<details class="bog-today"><summary>${head}</summary><table class="rule-test-table"><tbody>${
+            [...todayRow.bets].sort((a, b) => a.time.localeCompare(b.time)).map(b => `<tr><td class="record-since">${escapeHtml(b.time)}</td><td><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} &middot; ${escapeHtml(b.odds)}</span> ${res(b)}</td></tr>`).join("")
+        }</tbody></table></details>` : `<div class="record-row record-since">No bets today: no top-rated horse at evens to 4/1.</div>`;
+    }
+    const past = recent.filter(d => d.date !== today);
+    const pastHtml = past.length ? `<div class="rule-test-sub">Recent days</div><table class="rule-test-table"><tbody>${past.map(d => {
+        const done = d.bets.filter(b => b.pl != null);
+        const bogWins = done.filter(b => b.outcome === "won" && b.pl > b.plNoBog).length;
+        return `<tr><td class="record-since">${day(d.date)}</td><td>${d.bets.length} bets &middot; ${done.filter(b => b.outcome === "won").length} won${done.length ? ` &middot; ${pts(done.reduce((s, b) => s + b.pl, 0))}` : ""}${bogWins ? ` <span class="record-since">&middot; BOG paid more on ${bogWins}</span>` : ""}</td></tr>`;
+    }).join("")}</tbody></table>` : "";
+    el.innerHTML = `<div class="results-strip-label">Best Odds Guaranteed test</div>
+        <div class="record-since">£1 on our top-rated horse in every race, when its 9am price is evens to 4/1, paid the bigger of the 9am price and the starting price if it wins (Best Odds Guaranteed). No money. To pass it must be in profit after ${bg.passAt} bets and in both halves. There is no valid past test, so this is the first real one.</div>
+        <div class="rule-test-rules"><div class="rule-test-rule">
+            <div class="rule-test-head"><b>Top-rated, evens to 4/1</b>${verdict}</div>
+            <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
+            <div class="record-since">${bg.bets} of ${bg.passAt} bets settled</div>
+            <div class="record-row">${bg.bets ? `${bg.won} won (${Math.round(100 * bg.won / bg.bets)}%) &middot; ${pts(bg.pl)} &middot; ${pc(bg.roiPct)} a bet` : "No bets settled yet"}</div>
+            ${halves ? `<div class="record-row">${halves}</div>` : ""}
+        </div><div class="rule-test-rule">
+            <div class="rule-test-head"><b>What BOG is worth</b></div>
+            <div class="record-row">Without BOG (9am price only): ${bg.bets ? pc(bg.noBogRoiPct) : "-"}</div>
+            <div class="record-row">Same horses at Betfair SP after 2%: ${bg.exchangeBets ? `${pc(bg.exchangeRoiPct)} (${bg.exchangeBets} bets)` : "-"}</div>
+            <div class="record-row record-since">${bg.bets ? `BOG paid more than the 9am price on ${bg.bogPaidMore} of ${bg.won} winners` : "Filled in as bets settle"}</div>
         </div></div>
         <div class="rule-test-sub">Today</div>${todayHtml}${pastHtml}`;
     el.style.display = "";
