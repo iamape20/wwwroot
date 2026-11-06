@@ -2911,14 +2911,10 @@ async function loadRecord() {
             const live = bog.bets ? `${bog.won} won of ${bog.bets} &middot; <span class="${bog.pl < 0 ? "record-minus" : "record-plus"}">${bog.pl < 0 ? "-" : "+"}${Math.abs(bog.pl).toFixed(2)} pts</span> with BOG${bog.noBogRoiPct != null ? ` (${bog.roiPct}%; without BOG ${bog.noBogRoiPct}%)` : ""}` : "first bets from 09:00";
             rows.push(`<div class="record-row"><b>Best Odds Guaranteed test</b> ${live} <span class="record-since">${bog.bets}/${bog.passAt} bets${bog.verdict ? ` - ${bog.verdict}` : ""}. Our top-rated at evens to 4/1, paid the bigger of the 9am price and the SP. No valid past test - this is the first real one</span></div>`);
         }
-        // Extra places paper test (user 2026-11-06): no money, £1 each way a bet.
-        const ep = d.extraPlacesTest;
-        if (ep) {
-            const live = ep.bets ? `${ep.won} won, ${ep.placed} placed of ${ep.bets} &middot; <span class="${ep.pl < 0 ? "record-minus" : "record-plus"}">${ep.pl < 0 ? "-" : "+"}${Math.abs(ep.pl).toFixed(2)} pts</span> (${ep.roiPct}%; on standard terms ${ep.standardRoiPct}%)` : "first bets from 09:00";
-            rows.push(`<div class="record-row"><b>Extra places test</b> ${live} <span class="record-since">${ep.bets}/${ep.passAt} bets${ep.verdict ? ` - ${ep.verdict}` : ""}. Our top-rated each way, at the 9am price, in races where a bookmaker pays an extra place</span></div>`);
-        }
+        // Extra places paper test: its own panel below (user 2026-11-06).
         renderLastNap(d.lastNap);
         renderRuleTest(d.ruleTest, d.realBetsPaused);
+        renderExtraPlaces(d.extraPlacesTest);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
         el.style.display = "";
@@ -2966,6 +2962,57 @@ function renderRuleTest(rt, paused) {
     el.innerHTML = `<div class="results-strip-label">NAP rule test</div>
         <div class="record-since">Two ways of choosing the NAP, on trial since ${day(String(rt.startedAt).slice(0, 10))}. Each picks one horse at 9am, settled at Betfair SP after 5%, £1 a pick. To pass, a rule must be in profit after ${rules[0][1].passAt} picks and in both halves.${paused ? " Real-money bets stay paused until one passes." : ""}</div>
         <div class="rule-test-rules">${cards}</div>
+        <div class="rule-test-sub">Today</div>${todayHtml}${pastHtml}`;
+    el.style.display = "";
+}
+
+// Extra places paper test progress (user 2026-11-06 "show the extra places test
+// progress too"): js/extraPlacesPaperTest.js, £1 each way on our top-rated where a
+// bookmaker pays more places than standard; passes in profit after passAt bets
+// and in both halves, at the price taken (no Best Odds Guaranteed).
+function renderExtraPlaces(ep) {
+    const el = document.getElementById("extraPlacesBlock");
+    if (!el) return;
+    if (!ep) { el.style.display = "none"; return; }
+    const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
+    const pc = v => v == null ? "-" : `${v > 0 ? "+" : ""}${v}%`;
+    const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    const today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const ord = p => p + (p % 100 >= 11 && p % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[p % 10] || "th"));
+    const odds = d => { if (Math.abs(d - 2) < 0.01) return "evens"; for (const den of [1, 2, 3, 4, 5, 6, 8, 10, 11, 13, 15, 20, 40]) { const num = (d - 1) * den; if (Math.abs(num - Math.round(num)) < 0.02) return `${Math.round(num)}/${den}`; } return String(d); };
+    const fr = f => ({ 0.25: "1/4", 0.2: "1/5", 0.1667: "1/6", 0.3333: "1/3", 0.5: "1/2" }[f] || f);
+    const res = b => b.outcome === "won" ? `<span class="record-plus">won</span> ${pts(b.pl)}`
+        : b.outcome === "placed" ? `<span class="record-plus">${ord(b.pos)}</span>${b.pos > b.stdPlaces ? " (the extra place)" : ""} ${pts(b.pl)}`
+        : b.outcome === "lost" ? `<span class="record-minus">${b.pos && b.pos < 99 ? ord(b.pos) : "unplaced"}</span> ${pts(b.pl)}`
+        : b.outcome === "void" ? `<span class="record-since">void</span>` : `<span class="record-since">to run</span>`;
+    const bet = b => `<div class="record-row"><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} ${escapeHtml(b.time)} &middot; ${odds(b.price)} with ${escapeHtml(String(b.book).replace(/ v\d+$/, ""))}, ${b.places} places at ${fr(b.frac)} (usually ${b.stdPlaces})</span> ${res(b)}</div>`;
+    const pct = Math.min(100, Math.round(100 * ep.bets / (ep.passAt || 300)));
+    const halves = ep.bets >= 2 ? ep.halves.map((h, i) => `<span class="${h > 0 ? "record-plus" : "record-minus"}">${i ? "2nd" : "1st"} half ${pc(h)}</span>`).join(" ") : "";
+    const verdict = ep.verdict ? `<span class="rule-test-verdict rule-test-${ep.verdict.toLowerCase()}">${ep.verdict}</span>` : "";
+    const recent = ep.recent || [];
+    const todayRow = recent.find(d => d.date === today);
+    const todayHtml = todayRow ? (todayRow.bets.length ? todayRow.bets.map(bet).join("") : `<div class="record-row record-since">No extra places on today's card.</div>`)
+        : `<div class="record-row record-since">Today's bets lock at 9am.</div>`;
+    const past = recent.filter(d => d.date !== today);
+    const pastHtml = past.length ? `<div class="rule-test-sub">Recent days</div><table class="rule-test-table"><tbody>${past.map(d => {
+        const done = d.bets.filter(b => b.pl != null);
+        const tot = done.reduce((s, b) => s + b.pl, 0);
+        return `<tr><td class="record-since">${day(d.date)}</td><td>${d.bets.length} bets &middot; ${done.filter(b => b.outcome === "won").length} won, ${done.filter(b => b.outcome === "placed").length} placed${done.length ? ` &middot; ${pts(tot)}` : ""}</td></tr>`;
+    }).join("")}</tbody></table>` : "";
+    el.innerHTML = `<div class="results-strip-label">Extra places test</div>
+        <div class="record-since">Our top-rated horse each way, £1 each way, at the 9am price, in races where Betfair Sportsbook, Paddy Power or Sky Bet pays more places than usual at the same fraction of the odds. No money. To pass it must be in profit after ${ep.passAt} bets and in both halves, without counting Best Odds Guaranteed.</div>
+        <div class="rule-test-rules"><div class="rule-test-rule">
+            <div class="rule-test-head"><b>Top-rated each way</b>${verdict}</div>
+            <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
+            <div class="record-since">${ep.bets} of ${ep.passAt} bets settled</div>
+            <div class="record-row">${ep.bets ? `${ep.won} won, ${ep.placed} placed &middot; ${pts(ep.pl)} &middot; ${pc(ep.roiPct)} a £ staked` : "No bets settled yet"}</div>
+            ${ep.bets ? `<div class="record-row record-since">On usual terms it would be ${pc(ep.standardRoiPct)}; ${ep.extraPlaceHits} paid only thanks to the extra place. With Best Odds Guaranteed ${pc(ep.bogRoiPct)}</div>` : ""}
+            ${halves ? `<div class="record-row">${halves}</div>` : ""}
+        </div><div class="rule-test-rule">
+            <div class="rule-test-head"><b>For comparison</b></div>
+            <div class="record-row">Every runner on an extra place: ${ep.everyRunner?.bets ? `${pc(ep.everyRunner.roiPct)} (usual terms ${pc(ep.everyRunner.standardRoiPct)}), ${ep.everyRunner.bets} bets` : "none settled yet"}</div>
+            <div class="record-row">More places but a smaller fraction: ${ep.trade?.bets ? `${pc(ep.trade.roiPct)} (usual terms ${pc(ep.trade.standardRoiPct)}), ${ep.trade.bets} bets` : "none settled yet"}</div>
+        </div></div>
         <div class="rule-test-sub">Today</div>${todayHtml}${pastHtml}`;
     el.style.display = "";
 }
