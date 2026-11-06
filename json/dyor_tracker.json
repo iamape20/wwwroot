@@ -27017,10 +27017,16 @@
       "fav": {
         "horse": "ALL IN YOU",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-06T13:40:57.785Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-06|Fontwell|14:00",
@@ -27059,15 +27065,34 @@
       },
       "recordedAt": "2026-11-06T14:01:36.787Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-06|Aintree|14:25",
+      "date": "2026-11-06",
+      "course": "Aintree",
+      "time": "14:25",
+      "horse": "ROYAL INFANTRY",
+      "price": "6/4",
+      "runners": 3,
+      "liveHorse": "KLIMT MADRIK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KLIMT MADRIK",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-06T14:10:48.041Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 985,
+    "recorded": 986,
     "pick": {
-      "settled": 967,
+      "settled": 968,
       "won": 185,
-      "pl": -139.36,
-      "roi": -14.4
+      "pl": -140.36,
+      "roi": -14.5
     },
     "favourite": {
       "settled": 961,
@@ -27082,10 +27107,10 @@
       "roi": -10.8
     },
     "disagree": {
-      "settled": 716,
+      "settled": 717,
       "won": 87,
-      "pl": -112.31,
-      "roi": -15.7
+      "pl": -113.31,
+      "roi": -15.8
     }
   },
   "lastBackfill": 1793969451352
