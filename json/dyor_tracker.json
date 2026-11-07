@@ -28919,25 +28919,33 @@
       "fav": {
         "horse": "BONA FORTUNA",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T17:20:31.067Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1054,
     "pick": {
-      "settled": 1031,
+      "settled": 1032,
       "won": 192,
-      "pl": -184.34,
-      "roi": -17.9
+      "pl": -185.34,
+      "roi": -18
     },
     "favourite": {
-      "settled": 1023,
+      "settled": 1024,
       "won": 354,
-      "pl": -13.38,
-      "roi": -1.3
+      "pl": -14.38,
+      "roi": -1.4
     },
     "agree": {
       "settled": 265,
@@ -28946,10 +28954,10 @@
       "roi": -13.1
     },
     "disagree": {
-      "settled": 766,
+      "settled": 767,
       "won": 91,
-      "pl": -149.54,
-      "roi": -19.5
+      "pl": -150.54,
+      "roi": -19.6
     }
   },
   "lastBackfill": 1794066636905
