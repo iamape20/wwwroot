@@ -28973,31 +28973,39 @@
       "fav": {
         "horse": "FRAM CASTLE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "85/40",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T18:20:35.058Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "85/40",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1056,
     "pick": {
-      "settled": 1033,
+      "settled": 1034,
       "won": 192,
-      "pl": -186.34,
-      "roi": -18
+      "pl": -187.34,
+      "roi": -18.1
     },
     "favourite": {
-      "settled": 1025,
+      "settled": 1026,
       "won": 354,
-      "pl": -15.38,
-      "roi": -1.5
+      "pl": -16.38,
+      "roi": -1.6
     },
     "agree": {
-      "settled": 265,
+      "settled": 266,
       "won": 101,
-      "pl": -34.8,
-      "roi": -13.1
+      "pl": -35.8,
+      "roi": -13.5
     },
     "disagree": {
       "settled": 768,
@@ -29006,5 +29014,5 @@
       "roi": -19.7
     }
   },
-  "lastBackfill": 1794066636905
+  "lastBackfill": 1794077440292
 }
