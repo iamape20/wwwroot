@@ -28867,25 +28867,33 @@
       "fav": {
         "horse": "TAM LIN",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T16:10:26.986Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1052,
     "pick": {
-      "settled": 1029,
+      "settled": 1030,
       "won": 192,
-      "pl": -182.34,
-      "roi": -17.7
+      "pl": -183.34,
+      "roi": -17.8
     },
     "favourite": {
-      "settled": 1022,
+      "settled": 1023,
       "won": 354,
-      "pl": -12.38,
-      "roi": -1.2
+      "pl": -13.38,
+      "roi": -1.3
     },
     "agree": {
       "settled": 265,
@@ -28894,10 +28902,10 @@
       "roi": -13.1
     },
     "disagree": {
-      "settled": 764,
+      "settled": 765,
       "won": 91,
-      "pl": -147.54,
-      "roi": -19.3
+      "pl": -148.54,
+      "roi": -19.4
     }
   },
   "lastBackfill": 1794066636905
