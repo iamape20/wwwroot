@@ -28680,10 +28680,18 @@
       "fav": {
         "horse": "A SNOW WHITE PARK",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:20:43.590Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Kelso|15:45",
@@ -28760,27 +28768,65 @@
       },
       "recordedAt": "2026-11-07T15:40:52.081Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Aintree|16:05",
+      "date": "2026-11-07",
+      "course": "Aintree",
+      "time": "16:05",
+      "horse": "AL CAPONY",
+      "price": "5/4",
+      "runners": 6,
+      "liveHorse": "AL CAPONY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AL CAPONY",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:50:36.884Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Gowran Park|16:00",
+      "date": "2026-11-07",
+      "course": "Gowran Park",
+      "time": "16:00",
+      "horse": "JOLLY D'OLIVATE",
+      "price": "8/1",
+      "runners": 13,
+      "liveHorse": "POETIC FOCUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "POETIC FOCUS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:50:36.901Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1049,
+    "recorded": 1051,
     "pick": {
-      "settled": 1024,
+      "settled": 1025,
       "won": 192,
-      "pl": -177.34,
-      "roi": -17.3
+      "pl": -178.34,
+      "roi": -17.4
     },
     "favourite": {
-      "settled": 1016,
+      "settled": 1017,
       "won": 354,
-      "pl": -6.38,
-      "roi": -0.6
+      "pl": -7.38,
+      "roi": -0.7
     },
     "agree": {
-      "settled": 264,
+      "settled": 265,
       "won": 101,
-      "pl": -33.8,
-      "roi": -12.8
+      "pl": -34.8,
+      "roi": -13.1
     },
     "disagree": {
       "settled": 760,
@@ -28789,5 +28835,5 @@
       "roi": -18.9
     }
   },
-  "lastBackfill": 1794055263075
+  "lastBackfill": 1794066636905
 }
