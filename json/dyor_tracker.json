@@ -28532,10 +28532,18 @@
       "fav": {
         "horse": "OUR GUIDE",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:50:54.035Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Uttoxeter|15:05",
@@ -28551,10 +28559,18 @@
       "fav": {
         "horse": "NALA THE LIONESS",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:50:54.052Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Kelso|15:10",
@@ -28612,21 +28628,59 @@
       },
       "recordedAt": "2026-11-07T15:10:40.995Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Aintree|15:35",
+      "date": "2026-11-07",
+      "course": "Aintree",
+      "time": "15:35",
+      "horse": "JOSH THE BOSS",
+      "price": "11/2",
+      "runners": 11,
+      "liveHorse": "BOOMBAWN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BOOMBAWN",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:20:43.550Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Gowran Park|15:30",
+      "date": "2026-11-07",
+      "course": "Gowran Park",
+      "time": "15:30",
+      "horse": "A SNOW WHITE PARK",
+      "price": "8/13",
+      "runners": 14,
+      "liveHorse": "A SNOW WHITE PARK",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "A SNOW WHITE PARK",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:20:43.590Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1043,
+    "recorded": 1045,
     "pick": {
-      "settled": 1021,
+      "settled": 1023,
       "won": 192,
-      "pl": -174.34,
-      "roi": -17.1
+      "pl": -176.34,
+      "roi": -17.2
     },
     "favourite": {
-      "settled": 1012,
+      "settled": 1014,
       "won": 354,
-      "pl": -2.38,
-      "roi": -0.2
+      "pl": -4.38,
+      "roi": -0.4
     },
     "agree": {
       "settled": 264,
@@ -28635,10 +28689,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 757,
+      "settled": 759,
       "won": 91,
-      "pl": -140.54,
-      "roi": -18.6
+      "pl": -142.54,
+      "roi": -18.8
     }
   },
   "lastBackfill": 1794055263075
