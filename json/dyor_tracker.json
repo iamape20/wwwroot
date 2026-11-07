@@ -28586,10 +28586,16 @@
       "fav": {
         "horse": "NED TANNER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:00:43.991Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-07|Southwell|15:13",
@@ -28605,10 +28611,16 @@
       "fav": {
         "horse": "RIDGER",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:00:44.026Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/2"
     },
     {
       "id": "2026-11-07|Doncaster|15:25",
@@ -28666,10 +28678,48 @@
       },
       "recordedAt": "2026-11-07T15:20:43.590Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Kelso|15:45",
+      "date": "2026-11-07",
+      "course": "Kelso",
+      "time": "15:45",
+      "horse": "DREAM'S KA",
+      "price": "17/2",
+      "runners": 11,
+      "liveHorse": "HOURMAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HOURMAN",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:31:04.721Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Uttoxeter|15:40",
+      "date": "2026-11-07",
+      "course": "Uttoxeter",
+      "time": "15:40",
+      "horse": "MARIAH'S DREAM",
+      "price": "14/1",
+      "runners": 14,
+      "liveHorse": "CHICKS FOR FREE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHICKS FOR FREE",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:31:04.829Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1045,
+    "recorded": 1047,
     "pick": {
       "settled": 1023,
       "won": 192,
@@ -28677,10 +28727,10 @@
       "roi": -17.2
     },
     "favourite": {
-      "settled": 1014,
+      "settled": 1016,
       "won": 354,
-      "pl": -4.38,
-      "roi": -0.4
+      "pl": -6.38,
+      "roi": -0.6
     },
     "agree": {
       "settled": 264,

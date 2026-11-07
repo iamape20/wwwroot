@@ -5485,7 +5485,11 @@
       "rating": 80.4,
       "runners": 12,
       "recordedAt": "2026-11-07T15:00:43.719Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Gowran Park|15:30",
@@ -5502,10 +5506,10 @@
   ],
   "stats": {
     "recorded": 335,
-    "settled": 324,
+    "settled": 325,
     "won": 159,
-    "pl": -13.16,
-    "roi": -4.1
+    "pl": -14.16,
+    "roi": -4.4
   },
   "lastBackfill": 1794055261086
 }
