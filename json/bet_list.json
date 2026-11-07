@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T16:10:24.068Z",
+  "generatedAt": "2026-11-07T16:20:25.950Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-07",
       "course": "Aintree",
       "off": "16:05",
-      "horse": "AL CAPONY"
-    }
-  ],
-  "recent": [
+      "horse": "AL CAPONY",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-07",
       "course": "Uttoxeter",
@@ -174,21 +179,10 @@
       "bsp": 2.20122045,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-04",
-      "course": "Wexford",
-      "off": "15:10",
-      "horse": "THE BIG WESTERNER",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.36,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-07T16:10:23.968Z",
+    "updatedAt": "2026-11-07T16:20:25.866Z",
     "claude": {
       "races": 38,
       "won": 7,

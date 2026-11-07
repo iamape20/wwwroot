@@ -28817,10 +28817,14 @@
       "fav": {
         "horse": "AL CAPONY",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-07T15:50:36.884Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-11-07|Gowran Park|16:00",
@@ -28836,10 +28840,18 @@
       "fav": {
         "horse": "POETIC FOCUS",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:50:36.901Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Southwell|16:25",
@@ -28864,16 +28876,16 @@
   "stats": {
     "recorded": 1052,
     "pick": {
-      "settled": 1028,
+      "settled": 1029,
       "won": 192,
-      "pl": -181.34,
-      "roi": -17.6
+      "pl": -182.34,
+      "roi": -17.7
     },
     "favourite": {
-      "settled": 1021,
+      "settled": 1022,
       "won": 354,
-      "pl": -11.38,
-      "roi": -1.1
+      "pl": -12.38,
+      "roi": -1.2
     },
     "agree": {
       "settled": 265,
@@ -28882,10 +28894,10 @@
       "roi": -13.1
     },
     "disagree": {
-      "settled": 763,
+      "settled": 764,
       "won": 91,
-      "pl": -146.54,
-      "roi": -19.2
+      "pl": -147.54,
+      "roi": -19.3
     }
   },
   "lastBackfill": 1794066636905
