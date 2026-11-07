@@ -28270,10 +28270,16 @@
       "fav": {
         "horse": "JAMESIECONN",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T13:50:48.264Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-11-07|Southwell|14:05",
@@ -28289,10 +28295,18 @@
       "fav": {
         "horse": "TITAINIUM",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T13:50:48.295Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Doncaster|14:10",
@@ -28350,21 +28364,59 @@
       },
       "recordedAt": "2026-11-07T14:11:09.141Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Kelso|14:35",
+      "date": "2026-11-07",
+      "course": "Kelso",
+      "time": "14:35",
+      "horse": "WEARELONGTERM",
+      "price": "10/3",
+      "runners": 5,
+      "liveHorse": "RULE ME IN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RULE ME IN",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:20:55.071Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Uttoxeter|14:30",
+      "date": "2026-11-07",
+      "course": "Uttoxeter",
+      "time": "14:30",
+      "horse": "ABOUTDAMNTIME",
+      "price": "13/2",
+      "runners": 5,
+      "liveHorse": "GO TO WAR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO TO WAR",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:20:55.129Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1033,
+    "recorded": 1035,
     "pick": {
-      "settled": 1012,
+      "settled": 1013,
       "won": 192,
-      "pl": -165.34,
-      "roi": -16.3
+      "pl": -166.34,
+      "roi": -16.4
     },
     "favourite": {
-      "settled": 1005,
+      "settled": 1007,
       "won": 354,
-      "pl": 4.62,
-      "roi": 0.5
+      "pl": 2.62,
+      "roi": 0.3
     },
     "agree": {
       "settled": 262,
@@ -28373,10 +28425,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 750,
+      "settled": 751,
       "won": 91,
-      "pl": -133.54,
-      "roi": -17.8
+      "pl": -134.54,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1794055263075
