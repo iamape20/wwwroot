@@ -28420,10 +28420,16 @@
       "fav": {
         "horse": "GO TO WAR",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-07T14:20:55.129Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Doncaster|14:45",
@@ -28458,10 +28464,16 @@
       "fav": {
         "horse": "HIGHLAND RANGER",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-07T14:30:56.012Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Gowran Park|14:55",
@@ -28481,15 +28493,53 @@
       },
       "recordedAt": "2026-11-07T14:41:08.881Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Aintree|15:00",
+      "date": "2026-11-07",
+      "course": "Aintree",
+      "time": "15:00",
+      "horse": "DEEP CAVE",
+      "price": "12/1",
+      "runners": 14,
+      "liveHorse": "OUR GUIDE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OUR GUIDE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:50:54.035Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Uttoxeter|15:05",
+      "date": "2026-11-07",
+      "course": "Uttoxeter",
+      "time": "15:05",
+      "horse": "OCTOBER HILL",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "NALA THE LIONESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NALA THE LIONESS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:50:54.052Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1038,
+    "recorded": 1040,
     "pick": {
-      "settled": 1016,
+      "settled": 1018,
       "won": 192,
-      "pl": -169.34,
-      "roi": -16.7
+      "pl": -171.34,
+      "roi": -16.8
     },
     "favourite": {
       "settled": 1009,
@@ -28504,10 +28554,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 754,
+      "settled": 756,
       "won": 91,
-      "pl": -137.54,
-      "roi": -18.2
+      "pl": -139.54,
+      "roi": -18.5
     }
   },
   "lastBackfill": 1794055263075
