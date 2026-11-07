@@ -606,11 +606,13 @@ module.exports = async (req, res) => {
         tally.lastChecked = now;
 
         /*
-         * Keep the details list from growing unbounded across
-         * a long day.
+         * Keep the details list from growing unbounded across a long
+         * day, but above any real card: 50 cut off the first races on
+         * 12 of 98 archived days (up to 62 races, 15 Aug), and those
+         * races' cards lost their result banner (2026-11-07).
          */
         tally.details =
-            tally.details.slice(-50);
+            tally.details.slice(-100);
 
         await redis.set(
             key,
