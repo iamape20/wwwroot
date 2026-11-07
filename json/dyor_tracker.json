@@ -28322,10 +28322,16 @@
       "fav": {
         "horse": "COUL ANGEL",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-11-07T14:01:41.209Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Aintree|14:25",
@@ -28402,15 +28408,53 @@
       },
       "recordedAt": "2026-11-07T14:20:55.129Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Doncaster|14:45",
+      "date": "2026-11-07",
+      "course": "Doncaster",
+      "time": "14:45",
+      "horse": "FELICITAS",
+      "price": "10/3",
+      "runners": 17,
+      "liveHorse": "FELICITAS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "FELICITAS",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:30:55.977Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Southwell|14:40",
+      "date": "2026-11-07",
+      "course": "Southwell",
+      "time": "14:40",
+      "horse": "RING OF MUSIC",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "HIGHLAND RANGER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HIGHLAND RANGER",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:30:56.012Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1035,
+    "recorded": 1037,
     "pick": {
-      "settled": 1013,
+      "settled": 1014,
       "won": 192,
-      "pl": -166.34,
-      "roi": -16.4
+      "pl": -167.34,
+      "roi": -16.5
     },
     "favourite": {
       "settled": 1007,
@@ -28425,10 +28469,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 751,
+      "settled": 752,
       "won": 91,
-      "pl": -134.54,
-      "roi": -17.9
+      "pl": -135.54,
+      "roi": -18
     }
   },
   "lastBackfill": 1794055263075
