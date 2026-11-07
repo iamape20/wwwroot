@@ -28220,10 +28220,16 @@
       "fav": {
         "horse": "HARBOUR LIGHT",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-07T13:40:50.342Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Gowran Park|13:50",
@@ -28239,10 +28245,16 @@
       "fav": {
         "horse": "BAILA CONMIGO",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T13:40:50.355Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-11-07|Kelso|14:00",
@@ -28300,21 +28312,59 @@
       },
       "recordedAt": "2026-11-07T14:01:41.209Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Aintree|14:25",
+      "date": "2026-11-07",
+      "course": "Aintree",
+      "time": "14:25",
+      "horse": "FAVOUR AND FORTUNE",
+      "price": "9/1",
+      "runners": 4,
+      "liveHorse": "NO DRAMA THIS END",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NO DRAMA THIS END",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:11:09.084Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Gowran Park|14:20",
+      "date": "2026-11-07",
+      "course": "Gowran Park",
+      "time": "14:20",
+      "horse": "BACKINBUSINESS",
+      "price": "20/1",
+      "runners": 7,
+      "liveHorse": "RECKLESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RECKLESS",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:11:09.141Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1031,
+    "recorded": 1033,
     "pick": {
-      "settled": 1011,
+      "settled": 1012,
       "won": 192,
-      "pl": -164.34,
+      "pl": -165.34,
       "roi": -16.3
     },
     "favourite": {
-      "settled": 1004,
+      "settled": 1005,
       "won": 354,
-      "pl": 5.62,
-      "roi": 0.6
+      "pl": 4.62,
+      "roi": 0.5
     },
     "agree": {
       "settled": 262,
@@ -28323,10 +28373,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 749,
+      "settled": 750,
       "won": 91,
-      "pl": -132.54,
-      "roi": -17.7
+      "pl": -133.54,
+      "roi": -17.8
     }
   },
   "lastBackfill": 1794055263075
