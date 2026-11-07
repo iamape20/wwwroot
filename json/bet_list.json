@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T22:00:25.743Z",
+  "generatedAt": "2026-11-07T07:01:32.159Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -22,9 +22,9 @@
       "horse": "ENDLESS QUEST",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.10479782,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-06",
@@ -33,9 +33,9 @@
       "horse": "RISKY OBSESSION",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.08,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-05",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-06T22:00:25.663Z",
+    "updatedAt": "2026-11-07T07:01:32.049Z",
     "claude": {
       "races": 38,
       "won": 7,
