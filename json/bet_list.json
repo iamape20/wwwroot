@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T13:40:47.501Z",
+  "generatedAt": "2026-11-07T13:50:45.831Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Aintree",
+      "off": "13:45",
+      "horse": "ALEXEI"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-07",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-07T13:40:47.420Z",
+    "updatedAt": "2026-11-07T13:50:45.738Z",
     "claude": {
       "races": 38,
       "won": 7,

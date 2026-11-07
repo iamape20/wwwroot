@@ -28135,10 +28135,18 @@
       "fav": {
         "horse": "LESTER MAIL",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T13:20:57.674Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Doncaster|13:35",
@@ -28154,10 +28162,16 @@
       "fav": {
         "horse": "MY BOO BOO",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-07T13:20:57.686Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Aintree|13:45",
@@ -28215,21 +28229,59 @@
       },
       "recordedAt": "2026-11-07T13:40:50.355Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Kelso|14:00",
+      "date": "2026-11-07",
+      "course": "Kelso",
+      "time": "14:00",
+      "horse": "GOLDEN POINT",
+      "price": "5/4",
+      "runners": 3,
+      "liveHorse": "JAMESIECONN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JAMESIECONN",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T13:50:48.264Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Southwell|14:05",
+      "date": "2026-11-07",
+      "course": "Southwell",
+      "time": "14:05",
+      "horse": "ASIAN JOURNEY",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "TITAINIUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TITAINIUM",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T13:50:48.295Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1028,
+    "recorded": 1030,
     "pick": {
-      "settled": 1007,
+      "settled": 1009,
       "won": 192,
-      "pl": -160.34,
-      "roi": -15.9
+      "pl": -162.34,
+      "roi": -16.1
     },
     "favourite": {
-      "settled": 1002,
+      "settled": 1003,
       "won": 354,
-      "pl": 7.62,
-      "roi": 0.8
+      "pl": 6.62,
+      "roi": 0.7
     },
     "agree": {
       "settled": 262,
@@ -28238,10 +28290,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 745,
+      "settled": 747,
       "won": 91,
-      "pl": -128.54,
-      "roi": -17.3
+      "pl": -130.54,
+      "roi": -17.5
     }
   },
   "lastBackfill": 1794055263075
