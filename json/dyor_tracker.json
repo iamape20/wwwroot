@@ -28347,10 +28347,18 @@
       "fav": {
         "horse": "NO DRAMA THIS END",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:11:09.084Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Gowran Park|14:20",
@@ -28366,10 +28374,18 @@
       "fav": {
         "horse": "RECKLESS",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:11:09.141Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Kelso|14:35",
@@ -28446,21 +28462,40 @@
       },
       "recordedAt": "2026-11-07T14:30:56.012Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Gowran Park|14:55",
+      "date": "2026-11-07",
+      "course": "Gowran Park",
+      "time": "14:55",
+      "horse": "COCOFRED",
+      "price": "5/2",
+      "runners": 8,
+      "liveHorse": "COCOFRED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "COCOFRED",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T14:41:08.881Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1037,
+    "recorded": 1038,
     "pick": {
-      "settled": 1014,
+      "settled": 1016,
       "won": 192,
-      "pl": -167.34,
-      "roi": -16.5
+      "pl": -169.34,
+      "roi": -16.7
     },
     "favourite": {
-      "settled": 1007,
+      "settled": 1009,
       "won": 354,
-      "pl": 2.62,
-      "roi": 0.3
+      "pl": 0.62,
+      "roi": 0.1
     },
     "agree": {
       "settled": 262,
@@ -28469,10 +28504,10 @@
       "roi": -12.1
     },
     "disagree": {
-      "settled": 752,
+      "settled": 754,
       "won": 91,
-      "pl": -135.54,
-      "roi": -18
+      "pl": -137.54,
+      "roi": -18.2
     }
   },
   "lastBackfill": 1794055263075
