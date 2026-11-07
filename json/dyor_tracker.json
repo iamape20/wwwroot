@@ -28894,19 +28894,25 @@
       "fav": {
         "horse": "GO ON MY SON",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-11-07T16:50:27.110Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1053,
     "pick": {
-      "settled": 1030,
+      "settled": 1031,
       "won": 192,
-      "pl": -183.34,
-      "roi": -17.8
+      "pl": -184.34,
+      "roi": -17.9
     },
     "favourite": {
       "settled": 1023,
@@ -28921,10 +28927,10 @@
       "roi": -13.1
     },
     "disagree": {
-      "settled": 765,
+      "settled": 766,
       "won": 91,
-      "pl": -148.54,
-      "roi": -19.4
+      "pl": -149.54,
+      "roi": -19.5
     }
   },
   "lastBackfill": 1794066636905
