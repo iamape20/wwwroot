@@ -28401,10 +28401,18 @@
       "fav": {
         "horse": "RULE ME IN",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:20:55.071Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Uttoxeter|14:30",
@@ -28445,10 +28453,18 @@
       "fav": {
         "horse": "FELICITAS",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:30:55.977Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Southwell|14:40",
@@ -28531,33 +28547,71 @@
       },
       "recordedAt": "2026-11-07T14:50:54.052Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Kelso|15:10",
+      "date": "2026-11-07",
+      "course": "Kelso",
+      "time": "15:10",
+      "horse": "CADELL",
+      "price": "5/2",
+      "runners": 4,
+      "liveHorse": "NED TANNER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NED TANNER",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:00:43.991Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-07|Southwell|15:13",
+      "date": "2026-11-07",
+      "course": "Southwell",
+      "time": "15:13",
+      "horse": "CROWN THE FUTURE",
+      "price": "6/1",
+      "runners": 12,
+      "liveHorse": "RIDGER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RIDGER",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:00:44.026Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1040,
+    "recorded": 1042,
     "pick": {
-      "settled": 1018,
+      "settled": 1020,
       "won": 192,
-      "pl": -171.34,
-      "roi": -16.8
+      "pl": -173.34,
+      "roi": -17
     },
     "favourite": {
-      "settled": 1009,
+      "settled": 1011,
       "won": 354,
-      "pl": 0.62,
-      "roi": 0.1
+      "pl": -1.38,
+      "roi": -0.1
     },
     "agree": {
-      "settled": 262,
+      "settled": 263,
       "won": 101,
-      "pl": -31.8,
-      "roi": -12.1
+      "pl": -32.8,
+      "roi": -12.5
     },
     "disagree": {
-      "settled": 756,
+      "settled": 757,
       "won": 91,
-      "pl": -139.54,
-      "roi": -18.5
+      "pl": -140.54,
+      "roi": -18.6
     }
   },
   "lastBackfill": 1794055263075
