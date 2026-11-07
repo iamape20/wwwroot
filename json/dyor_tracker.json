@@ -28505,10 +28505,18 @@
       "fav": {
         "horse": "COCOFRED",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T14:41:08.881Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Aintree|15:00",
@@ -28585,27 +28593,46 @@
       },
       "recordedAt": "2026-11-07T15:00:44.026Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Doncaster|15:25",
+      "date": "2026-11-07",
+      "course": "Doncaster",
+      "time": "15:25",
+      "horse": "SAY WHAT YOU SEE",
+      "price": "20/1",
+      "runners": 23,
+      "liveHorse": "ALFRED WINCHAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALFRED WINCHAM",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T15:10:40.995Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1042,
+    "recorded": 1043,
     "pick": {
-      "settled": 1020,
+      "settled": 1021,
       "won": 192,
-      "pl": -173.34,
-      "roi": -17
+      "pl": -174.34,
+      "roi": -17.1
     },
     "favourite": {
-      "settled": 1011,
+      "settled": 1012,
       "won": 354,
-      "pl": -1.38,
-      "roi": -0.1
+      "pl": -2.38,
+      "roi": -0.2
     },
     "agree": {
-      "settled": 263,
+      "settled": 264,
       "won": 101,
-      "pl": -32.8,
-      "roi": -12.5
+      "pl": -33.8,
+      "roi": -12.8
     },
     "disagree": {
       "settled": 757,
