@@ -28765,10 +28765,18 @@
       "fav": {
         "horse": "FLASH HARRY",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:40:52.052Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-07|Southwell|15:50",
@@ -28784,10 +28792,16 @@
       "fav": {
         "horse": "BONDY BOY",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-07T15:40:52.081Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-11-07|Aintree|16:05",
@@ -28826,21 +28840,40 @@
       },
       "recordedAt": "2026-11-07T15:50:36.901Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-07|Southwell|16:25",
+      "date": "2026-11-07",
+      "course": "Southwell",
+      "time": "16:25",
+      "horse": "PIPERSTOWN",
+      "price": "35/1",
+      "runners": 11,
+      "liveHorse": "TAM LIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TAM LIN",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-07T16:10:26.986Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1051,
+    "recorded": 1052,
     "pick": {
-      "settled": 1027,
+      "settled": 1028,
       "won": 192,
-      "pl": -180.34,
+      "pl": -181.34,
       "roi": -17.6
     },
     "favourite": {
-      "settled": 1019,
+      "settled": 1021,
       "won": 354,
-      "pl": -9.38,
-      "roi": -0.9
+      "pl": -11.38,
+      "roi": -1.1
     },
     "agree": {
       "settled": 265,
@@ -28849,10 +28882,10 @@
       "roi": -13.1
     },
     "disagree": {
-      "settled": 762,
+      "settled": 763,
       "won": 91,
-      "pl": -145.54,
-      "roi": -19.1
+      "pl": -146.54,
+      "roi": -19.2
     }
   },
   "lastBackfill": 1794066636905

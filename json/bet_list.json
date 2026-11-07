@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T16:00:37.516Z",
+  "generatedAt": "2026-11-07T16:10:24.068Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Aintree",
+      "off": "16:05",
+      "horse": "AL CAPONY"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-07",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-07T16:00:37.386Z",
+    "updatedAt": "2026-11-07T16:10:23.968Z",
     "claude": {
       "races": 38,
       "won": 7,
