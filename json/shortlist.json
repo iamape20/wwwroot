@@ -1,8 +1,31 @@
 {
   "date": "2026-11-08",
-  "builtAt": "2026-11-08T02:18:32.111Z",
-  "strong": [],
+  "builtAt": "2026-11-08T09:00:06.054Z",
+  "strong": [
+    {
+      "horse": "BALLYDONAGH GIRL",
+      "course": "Naas",
+      "time": "15:48",
+      "rating": "80.6",
+      "margin": "29.2",
+      "marginValue": 29.199999999999996,
+      "confidence": 65,
+      "meetingId": "122463",
+      "raceIndex": 7
+    }
+  ],
   "moderate": [
+    {
+      "horse": "TAP TAP SHAMIE",
+      "course": "Ffos Las",
+      "time": "12:50",
+      "rating": "86.2",
+      "margin": "21.4",
+      "marginValue": 21.400000000000006,
+      "confidence": 73,
+      "meetingId": "122444",
+      "raceIndex": 0
+    },
     {
       "horse": "KOPEK DES BORDES",
       "course": "Naas",
@@ -13,19 +36,21 @@
       "confidence": 90,
       "meetingId": "122463",
       "raceIndex": 5
-    },
+    }
+  ],
+  "dailyDouble": [
     {
       "horse": "BALLYDONAGH GIRL",
       "course": "Naas",
       "time": "15:48",
       "rating": "80.6",
-      "margin": "26.8",
-      "marginValue": 26.799999999999997,
+      "margin": "29.2",
+      "marginValue": 29.199999999999996,
       "confidence": 65,
       "meetingId": "122463",
-      "raceIndex": 7
+      "raceIndex": 7,
+      "tier": "Strong"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "pickMode": "single"
 }
