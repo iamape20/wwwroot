@@ -29391,10 +29391,16 @@
       "fav": {
         "horse": "KOPEK DES BORDES",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T14:30:30.416Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-11-08|Sandown|14:50",
@@ -29433,10 +29439,29 @@
       },
       "recordedAt": "2026-11-08T14:50:25.935Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Naas|15:13",
+      "date": "2026-11-08",
+      "course": "Naas",
+      "time": "15:13",
+      "horse": "ARCADIAN EMPEROR",
+      "price": "10/1",
+      "runners": 8,
+      "liveHorse": "ANZADAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ANZADAM",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T15:00:31.605Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1072,
+    "recorded": 1073,
     "pick": {
       "settled": 1049,
       "won": 200,
@@ -29444,10 +29469,10 @@
       "roi": -15.8
     },
     "favourite": {
-      "settled": 1046,
+      "settled": 1047,
       "won": 368,
-      "pl": 0,
-      "roi": 0
+      "pl": -1,
+      "roi": -0.1
     },
     "agree": {
       "settled": 269,

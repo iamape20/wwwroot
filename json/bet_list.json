@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T14:50:23.159Z",
+  "generatedAt": "2026-11-08T15:00:27.590Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-08",
       "course": "Naas",
       "off": "14:39",
-      "horse": "KOPEK DES BORDES"
-    }
-  ],
-  "recent": [
+      "horse": "KOPEK DES BORDES",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-08",
       "course": "Naas",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-05",
-      "course": "Newbury",
-      "off": "15:33",
-      "horse": "WORDFROMHOME",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.3,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-08T14:50:23.041Z",
+    "updatedAt": "2026-11-08T15:00:27.432Z",
     "claude": {
       "races": 38,
       "won": 7,
