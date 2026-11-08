@@ -29264,10 +29264,16 @@
       "fav": {
         "horse": "WHITE NOISE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T13:30:28.404Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/1"
     },
     {
       "id": "2026-11-08|Ffos Las|13:52",
@@ -29306,10 +29312,29 @@
       },
       "recordedAt": "2026-11-08T13:50:31.919Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Sandown|14:15",
+      "date": "2026-11-08",
+      "course": "Sandown",
+      "time": "14:15",
+      "horse": "MACKTOAD",
+      "price": "9/4",
+      "runners": 7,
+      "liveHorse": "MACKTOAD",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MACKTOAD",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T14:00:36.919Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1067,
+    "recorded": 1068,
     "pick": {
       "settled": 1046,
       "won": 200,
@@ -29317,10 +29342,10 @@
       "roi": -15.5
     },
     "favourite": {
-      "settled": 1043,
+      "settled": 1044,
       "won": 368,
-      "pl": 3,
-      "roi": 0.3
+      "pl": 2,
+      "roi": 0.2
     },
     "agree": {
       "settled": 269,
