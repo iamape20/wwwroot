@@ -7862,27 +7862,80 @@
       "marketVolume": 175
     },
     "lastBeforeOff": {
-      "at": "2026-11-08T07:20:44.876Z",
+      "at": "2026-11-08T07:30:47.352Z",
       "eventId": 34800732638000024,
       "found": true,
       "withdrawn": false,
-      "bestBack": 1.94,
-      "available": 13.99,
+      "bestBack": 1.97,
+      "available": 2,
       "depth": [
         [
+          1.97,
+          2
+        ],
+        [
           1.94,
-          13.99
+          12.01
         ],
         [
           1.93,
-          10.22
-        ],
-        [
-          1.92,
-          5
+          2.01
         ]
       ],
-      "marketVolume": 256
+      "marketVolume": 268
+    }
+  },
+  "BEST|2026-11-08|Naas|15:48|BALLYDONAGHGIRL": {
+    "type": "BEST",
+    "date": "2026-11-08",
+    "course": "Naas",
+    "time": "15:48",
+    "horse": "BALLYDONAGH GIRL",
+    "atReveal": {
+      "at": "2026-11-08T07:30:47.357Z",
+      "eventId": 34800732806902070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.56,
+      "available": 2,
+      "depth": [
+        [
+          2.56,
+          2
+        ],
+        [
+          2.1,
+          2.87
+        ],
+        [
+          2.08,
+          2.26
+        ]
+      ],
+      "marketVolume": 243
+    },
+    "lastBeforeOff": {
+      "at": "2026-11-08T07:30:47.357Z",
+      "eventId": 34800732806902070,
+      "found": true,
+      "withdrawn": false,
+      "bestBack": 2.56,
+      "available": 2,
+      "depth": [
+        [
+          2.56,
+          2
+        ],
+        [
+          2.1,
+          2.87
+        ],
+        [
+          2.08,
+          2.26
+        ]
+      ],
+      "marketVolume": 243
     }
   }
 }
