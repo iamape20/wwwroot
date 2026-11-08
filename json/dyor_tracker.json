@@ -29568,10 +29568,18 @@
       "fav": {
         "horse": "OUT IN DE WILD",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T15:50:24.015Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Ffos Las|16:12",
@@ -29596,16 +29604,16 @@
   "stats": {
     "recorded": 1078,
     "pick": {
-      "settled": 1055,
+      "settled": 1056,
       "won": 200,
-      "pl": -171.49,
+      "pl": -172.49,
       "roi": -16.3
     },
     "favourite": {
-      "settled": 1048,
+      "settled": 1049,
       "won": 368,
-      "pl": -2,
-      "roi": -0.2
+      "pl": -3,
+      "roi": -0.3
     },
     "agree": {
       "settled": 269,
@@ -29614,10 +29622,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 786,
+      "settled": 787,
       "won": 97,
-      "pl": -137.01,
-      "roi": -17.4
+      "pl": -138.01,
+      "roi": -17.5
     }
   },
   "lastBackfill": 1794152422282
