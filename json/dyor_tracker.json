@@ -29168,10 +29168,14 @@
       "fav": {
         "horse": "LOVE ME TENDER",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-11-08T12:50:32.709Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/2"
     },
     {
       "id": "2026-11-08|Sandown|13:10",
@@ -29210,10 +29214,29 @@
       },
       "recordedAt": "2026-11-08T13:10:33.558Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Naas|13:30",
+      "date": "2026-11-08",
+      "course": "Naas",
+      "time": "13:30",
+      "horse": "MUCKANAGH LOUGH",
+      "price": "14/1",
+      "runners": 10,
+      "liveHorse": "MINELLA MACHINE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MINELLA MACHINE",
+        "price": "4/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T13:20:33.333Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1063,
+    "recorded": 1064,
     "pick": {
       "settled": 1045,
       "won": 200,
