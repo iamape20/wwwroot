@@ -29089,10 +29089,16 @@
       "fav": {
         "horse": "THE MOURNE RAMBLER",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/4"
       },
       "recordedAt": "2026-11-08T12:20:38.605Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Sandown|12:40",
@@ -29131,15 +29137,34 @@
       },
       "recordedAt": "2026-11-08T12:40:37.761Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Naas|13:00",
+      "date": "2026-11-08",
+      "course": "Naas",
+      "time": "13:00",
+      "horse": "LOVE ME TENDER",
+      "price": "1/2",
+      "runners": 4,
+      "liveHorse": "LOVE ME TENDER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LOVE ME TENDER",
+        "price": "1/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T12:50:32.709Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1060,
+    "recorded": 1061,
     "pick": {
-      "settled": 1042,
+      "settled": 1043,
       "won": 200,
-      "pl": -158.49,
-      "roi": -15.2
+      "pl": -159.49,
+      "roi": -15.3
     },
     "favourite": {
       "settled": 1040,
@@ -29154,10 +29179,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 774,
+      "settled": 775,
       "won": 97,
-      "pl": -125.01,
-      "roi": -16.2
+      "pl": -126.01,
+      "roi": -16.3
     }
   },
   "lastBackfill": 1794141034520
