@@ -29491,10 +29491,16 @@
       "fav": {
         "horse": "PORT STATION",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-08T15:10:36.255Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "17/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Ffos Las|15:37",
@@ -29514,15 +29520,34 @@
       },
       "recordedAt": "2026-11-08T15:30:20.589Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Naas|15:48",
+      "date": "2026-11-08",
+      "course": "Naas",
+      "time": "15:48",
+      "horse": "BETTER BE ELUSIVE",
+      "price": "70/1",
+      "runners": 17,
+      "liveHorse": "BALLYDONAGH GIRL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYDONAGH GIRL",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T15:40:22.265Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1075,
+    "recorded": 1076,
     "pick": {
-      "settled": 1052,
+      "settled": 1053,
       "won": 200,
-      "pl": -168.49,
-      "roi": -16
+      "pl": -169.49,
+      "roi": -16.1
     },
     "favourite": {
       "settled": 1047,
@@ -29537,11 +29562,11 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 783,
+      "settled": 784,
       "won": 97,
-      "pl": -134.01,
-      "roi": -17.1
+      "pl": -135.01,
+      "roi": -17.2
     }
   },
-  "lastBackfill": 1794141034520
+  "lastBackfill": 1794152422282
 }
