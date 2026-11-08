@@ -29343,10 +29343,14 @@
       "fav": {
         "horse": "MACKTOAD",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/1"
       },
       "recordedAt": "2026-11-08T14:00:36.919Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     },
     {
       "id": "2026-11-08|Ffos Las|14:27",
@@ -29385,10 +29389,29 @@
       },
       "recordedAt": "2026-11-08T14:30:30.416Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Sandown|14:50",
+      "date": "2026-11-08",
+      "course": "Sandown",
+      "time": "14:50",
+      "horse": "OTIE'S FRIEND",
+      "price": "11/8",
+      "runners": 3,
+      "liveHorse": "NIMBA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NIMBA",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T14:40:26.851Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1070,
+    "recorded": 1071,
     "pick": {
       "settled": 1048,
       "won": 200,
