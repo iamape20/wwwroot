@@ -29466,10 +29466,16 @@
       "fav": {
         "horse": "ANZADAM",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-11-08T15:00:31.605Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Sandown|15:25",
@@ -29489,15 +29495,34 @@
       },
       "recordedAt": "2026-11-08T15:10:36.255Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Ffos Las|15:37",
+      "date": "2026-11-08",
+      "course": "Ffos Las",
+      "time": "15:37",
+      "horse": "JACK'S JURY",
+      "price": "9/2",
+      "runners": 6,
+      "liveHorse": "GALWAY REEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GALWAY REEL",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T15:30:20.589Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1074,
+    "recorded": 1075,
     "pick": {
-      "settled": 1051,
+      "settled": 1052,
       "won": 200,
-      "pl": -167.49,
-      "roi": -15.9
+      "pl": -168.49,
+      "roi": -16
     },
     "favourite": {
       "settled": 1047,
@@ -29512,10 +29537,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 782,
+      "settled": 783,
       "won": 97,
-      "pl": -133.01,
-      "roi": -17
+      "pl": -134.01,
+      "roi": -17.1
     }
   },
   "lastBackfill": 1794141034520
