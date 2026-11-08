@@ -29191,10 +29191,14 @@
       "fav": {
         "horse": "COWBOY CASANOVA",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-08T13:00:37.193Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-11-08|Ffos Las|13:20",
@@ -29233,10 +29237,29 @@
       },
       "recordedAt": "2026-11-08T13:20:33.333Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Sandown|13:40",
+      "date": "2026-11-08",
+      "course": "Sandown",
+      "time": "13:40",
+      "horse": "RIALANNAH",
+      "price": "11/2",
+      "runners": 8,
+      "liveHorse": "WHITE NOISE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WHITE NOISE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T13:30:28.404Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1064,
+    "recorded": 1065,
     "pick": {
       "settled": 1045,
       "won": 200,
