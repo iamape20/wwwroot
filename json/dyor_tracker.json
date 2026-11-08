@@ -29416,10 +29416,16 @@
       "fav": {
         "horse": "NIMBA",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-11-08T14:40:26.851Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Ffos Las|15:02",
@@ -29458,15 +29464,34 @@
       },
       "recordedAt": "2026-11-08T15:00:31.605Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Sandown|15:25",
+      "date": "2026-11-08",
+      "course": "Sandown",
+      "time": "15:25",
+      "horse": "KALIF D'AIRY",
+      "price": "8/1",
+      "runners": 8,
+      "liveHorse": "PORT STATION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PORT STATION",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T15:10:36.255Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1073,
+    "recorded": 1074,
     "pick": {
-      "settled": 1049,
+      "settled": 1050,
       "won": 200,
-      "pl": -165.49,
-      "roi": -15.8
+      "pl": -166.49,
+      "roi": -15.9
     },
     "favourite": {
       "settled": 1047,
@@ -29481,10 +29506,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 780,
+      "settled": 781,
       "won": 97,
-      "pl": -131.01,
-      "roi": -16.8
+      "pl": -132.01,
+      "roi": -16.9
     }
   },
   "lastBackfill": 1794141034520
