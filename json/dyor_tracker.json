@@ -29516,10 +29516,18 @@
       "fav": {
         "horse": "GALWAY REEL",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T15:30:20.589Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Naas|15:48",
@@ -29558,21 +29566,40 @@
       },
       "recordedAt": "2026-11-08T15:50:24.015Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Ffos Las|16:12",
+      "date": "2026-11-08",
+      "course": "Ffos Las",
+      "time": "16:12",
+      "horse": "PURE CARBON",
+      "price": "2/1",
+      "runners": 4,
+      "liveHorse": "PURE CARBON",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PURE CARBON",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T16:00:23.542Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1077,
+    "recorded": 1078,
     "pick": {
-      "settled": 1053,
+      "settled": 1054,
       "won": 200,
-      "pl": -169.49,
-      "roi": -16.1
+      "pl": -170.49,
+      "roi": -16.2
     },
     "favourite": {
-      "settled": 1047,
+      "settled": 1048,
       "won": 368,
-      "pl": -1,
-      "roi": -0.1
+      "pl": -2,
+      "roi": -0.2
     },
     "agree": {
       "settled": 269,
@@ -29581,10 +29608,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 784,
+      "settled": 785,
       "won": 97,
-      "pl": -135.01,
-      "roi": -17.2
+      "pl": -136.01,
+      "roi": -17.3
     }
   },
   "lastBackfill": 1794152422282
