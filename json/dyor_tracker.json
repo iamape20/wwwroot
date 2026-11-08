@@ -29366,10 +29366,16 @@
       "fav": {
         "horse": "CORNER FORWARD",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-08T14:20:25.821Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Naas|14:39",
@@ -29408,15 +29414,34 @@
       },
       "recordedAt": "2026-11-08T14:40:26.851Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Ffos Las|15:02",
+      "date": "2026-11-08",
+      "course": "Ffos Las",
+      "time": "15:02",
+      "horse": "LITAQUE",
+      "price": "14/1",
+      "runners": 9,
+      "liveHorse": "LITTLE PATIENCE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LITTLE PATIENCE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T14:50:25.935Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1071,
+    "recorded": 1072,
     "pick": {
-      "settled": 1048,
+      "settled": 1049,
       "won": 200,
-      "pl": -164.49,
-      "roi": -15.7
+      "pl": -165.49,
+      "roi": -15.8
     },
     "favourite": {
       "settled": 1046,
@@ -29431,10 +29456,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 779,
+      "settled": 780,
       "won": 97,
-      "pl": -130.01,
-      "roi": -16.7
+      "pl": -131.01,
+      "roi": -16.8
     }
   },
   "lastBackfill": 1794141034520
