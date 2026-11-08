@@ -29141,10 +29141,18 @@
       "fav": {
         "horse": "TAP TAP SHAMIE",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/15",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T12:40:37.761Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/15",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Naas|13:00",
@@ -29183,27 +29191,46 @@
       },
       "recordedAt": "2026-11-08T13:00:37.193Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Ffos Las|13:20",
+      "date": "2026-11-08",
+      "course": "Ffos Las",
+      "time": "13:20",
+      "horse": "GENIETOILE",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "DEBRAVE SOLDIER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DEBRAVE SOLDIER",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T13:10:33.558Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1062,
+    "recorded": 1063,
     "pick": {
-      "settled": 1044,
+      "settled": 1045,
       "won": 200,
-      "pl": -160.49,
-      "roi": -15.4
+      "pl": -161.49,
+      "roi": -15.5
     },
     "favourite": {
-      "settled": 1041,
+      "settled": 1042,
       "won": 368,
-      "pl": 5,
-      "roi": 0.5
+      "pl": 4,
+      "roi": 0.4
     },
     "agree": {
-      "settled": 268,
+      "settled": 269,
       "won": 103,
-      "pl": -33.48,
-      "roi": -12.5
+      "pl": -34.48,
+      "roi": -12.8
     },
     "disagree": {
       "settled": 776,

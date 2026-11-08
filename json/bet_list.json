@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T13:00:30.735Z",
+  "generatedAt": "2026-11-08T13:10:30.772Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,17 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Ffos Las",
-      "off": "12:50",
-      "horse": "TAP TAP SHAMIE"
-    },
-    {
       "course": "Naas",
       "off": "13:00",
       "horse": "LOVE ME TENDER"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-08",
+      "course": "Ffos Las",
+      "off": "12:50",
+      "horse": "TAP TAP SHAMIE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-08",
       "course": "Naas",
@@ -179,21 +185,10 @@
       "bsp": 1.61367771,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-04",
-      "course": "Wexford",
-      "off": "16:20",
-      "horse": "HARTFORD",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-08T13:00:30.645Z",
+    "updatedAt": "2026-11-08T13:10:30.669Z",
     "claude": {
       "races": 38,
       "won": 7,
