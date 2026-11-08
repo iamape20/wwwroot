@@ -29114,10 +29114,18 @@
       "fav": {
         "horse": "BOWMORE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-08T12:30:34.503Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Ffos Las|12:50",
@@ -29156,21 +29164,40 @@
       },
       "recordedAt": "2026-11-08T12:50:32.709Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Sandown|13:10",
+      "date": "2026-11-08",
+      "course": "Sandown",
+      "time": "13:10",
+      "horse": "COWBOY CASANOVA",
+      "price": "11/8",
+      "runners": 7,
+      "liveHorse": "COWBOY CASANOVA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "COWBOY CASANOVA",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T13:00:37.193Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1061,
+    "recorded": 1062,
     "pick": {
-      "settled": 1043,
+      "settled": 1044,
       "won": 200,
-      "pl": -159.49,
-      "roi": -15.3
+      "pl": -160.49,
+      "roi": -15.4
     },
     "favourite": {
-      "settled": 1040,
+      "settled": 1041,
       "won": 368,
-      "pl": 6,
-      "roi": 0.6
+      "pl": 5,
+      "roi": 0.5
     },
     "agree": {
       "settled": 268,
@@ -29179,10 +29206,10 @@
       "roi": -12.5
     },
     "disagree": {
-      "settled": 775,
+      "settled": 776,
       "won": 97,
-      "pl": -126.01,
-      "roi": -16.3
+      "pl": -127.01,
+      "roi": -16.4
     }
   },
   "lastBackfill": 1794141034520
