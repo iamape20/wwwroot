@@ -29239,10 +29239,16 @@
       "fav": {
         "horse": "MINELLA MACHINE",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-11-08T13:20:33.333Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Sandown|13:40",
@@ -29281,14 +29287,33 @@
       },
       "recordedAt": "2026-11-08T13:40:29.033Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-08|Naas|14:04",
+      "date": "2026-11-08",
+      "course": "Naas",
+      "time": "14:04",
+      "horse": "THE NAGGER REIDY",
+      "price": "16/1",
+      "runners": 20,
+      "liveHorse": "BALLYBAWN BELTER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BALLYBAWN BELTER",
+        "price": "9/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-08T13:50:31.919Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1066,
+    "recorded": 1067,
     "pick": {
-      "settled": 1045,
+      "settled": 1046,
       "won": 200,
-      "pl": -161.49,
+      "pl": -162.49,
       "roi": -15.5
     },
     "favourite": {
@@ -29304,10 +29329,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 776,
+      "settled": 777,
       "won": 97,
-      "pl": -127.01,
-      "roi": -16.4
+      "pl": -128.01,
+      "roi": -16.5
     }
   },
   "lastBackfill": 1794141034520

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T13:40:26.660Z",
+  "generatedAt": "2026-11-08T13:50:29.428Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-08",
       "course": "Naas",
       "off": "13:30",
-      "horse": "MINELLA MACHINE"
-    }
-  ],
-  "recent": [
+      "horse": "MINELLA MACHINE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-08",
       "course": "Naas",
@@ -174,21 +179,10 @@
       "bsp": 2.3,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-05",
-      "course": "Plumpton",
-      "off": "14:47",
-      "horse": "CENTRAL COMMAND",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.60419985,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-08T13:40:26.564Z",
+    "updatedAt": "2026-11-08T13:50:29.255Z",
     "claude": {
       "races": 38,
       "won": 7,
