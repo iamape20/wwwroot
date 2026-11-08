@@ -29441,10 +29441,16 @@
       "fav": {
         "horse": "LITTLE PATIENCE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-08T14:50:25.935Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "20/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-08|Naas|15:13",
@@ -29488,9 +29494,9 @@
   "stats": {
     "recorded": 1074,
     "pick": {
-      "settled": 1050,
+      "settled": 1051,
       "won": 200,
-      "pl": -166.49,
+      "pl": -167.49,
       "roi": -15.9
     },
     "favourite": {
@@ -29506,10 +29512,10 @@
       "roi": -12.8
     },
     "disagree": {
-      "settled": 781,
+      "settled": 782,
       "won": 97,
-      "pl": -132.01,
-      "roi": -16.9
+      "pl": -133.01,
+      "roi": -17
     }
   },
   "lastBackfill": 1794141034520
