@@ -30116,10 +30116,18 @@
       "fav": {
         "horse": "LORD VIRGINIA",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T15:10:21.646Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Carlisle|15:35",
@@ -30158,21 +30166,40 @@
       },
       "recordedAt": "2026-11-09T15:30:20.569Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Stratford|15:55",
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "time": "15:55",
+      "horse": "COUNT ADHEMAR",
+      "price": "11/4",
+      "runners": 6,
+      "liveHorse": "APOLLON FORLONGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "APOLLON FORLONGE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T15:40:21.830Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1098,
+    "recorded": 1099,
     "pick": {
-      "settled": 1078,
+      "settled": 1079,
       "won": 207,
-      "pl": -162.26,
+      "pl": -163.26,
       "roi": -15.1
     },
     "favourite": {
-      "settled": 1071,
+      "settled": 1072,
       "won": 380,
-      "pl": 5.1,
-      "roi": 0.5
+      "pl": 4.1,
+      "roi": 0.4
     },
     "agree": {
       "settled": 276,
@@ -30181,11 +30208,11 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 802,
+      "settled": 803,
       "won": 100,
-      "pl": -134.21,
-      "roi": -16.7
+      "pl": -135.21,
+      "roi": -16.8
     }
   },
-  "lastBackfill": 1794227434490
+  "lastBackfill": 1794238821849
 }
