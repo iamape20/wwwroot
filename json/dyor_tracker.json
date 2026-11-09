@@ -29829,10 +29829,18 @@
       "fav": {
         "horse": "DIAMOND WHITE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T13:10:37.540Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Punchestown|13:30",
@@ -29871,27 +29879,46 @@
       },
       "recordedAt": "2026-11-09T13:30:32.456Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Carlisle|13:52",
+      "date": "2026-11-09",
+      "course": "Carlisle",
+      "time": "13:52",
+      "horse": "BE AWARE",
+      "price": "13/8",
+      "runners": 3,
+      "liveHorse": "CRISTAL D'ESTRUVAL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CRISTAL D'ESTRUVAL",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T13:40:34.371Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1087,
+    "recorded": 1088,
     "pick": {
-      "settled": 1068,
+      "settled": 1069,
       "won": 207,
-      "pl": -152.26,
+      "pl": -153.26,
       "roi": -14.3
     },
     "favourite": {
-      "settled": 1064,
+      "settled": 1065,
       "won": 380,
-      "pl": 12.1,
-      "roi": 1.1
+      "pl": 11.1,
+      "roi": 1
     },
     "agree": {
-      "settled": 274,
+      "settled": 275,
       "won": 107,
-      "pl": -26.05,
-      "roi": -9.5
+      "pl": -27.05,
+      "roi": -9.8
     },
     "disagree": {
       "settled": 794,
