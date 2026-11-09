@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T13:40:31.535Z",
+  "generatedAt": "2026-11-09T13:50:30.364Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-09",
       "course": "Punchestown",
       "off": "13:30",
-      "horse": "COEXIST"
-    }
-  ],
-  "recent": [
+      "horse": "COEXIST",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-09",
       "course": "Stratford",
@@ -174,21 +179,10 @@
       "bsp": 1.62,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-07",
-      "course": "Uttoxeter",
-      "off": "12:15",
-      "horse": "LUNAR TRIX",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T13:40:31.426Z",
+    "updatedAt": "2026-11-09T13:50:30.249Z",
     "claude": {
       "races": 38,
       "won": 7,

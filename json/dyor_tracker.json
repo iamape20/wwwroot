@@ -29856,10 +29856,16 @@
       "fav": {
         "horse": "COEXIST",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-09T13:20:32.136Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Stratford|13:40",
@@ -29898,15 +29904,34 @@
       },
       "recordedAt": "2026-11-09T13:40:34.371Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|14:03",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "14:03",
+      "horse": "LEONARD VALLIS",
+      "price": "6/4",
+      "runners": 10,
+      "liveHorse": "WERNER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WERNER",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T13:50:33.290Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1088,
+    "recorded": 1089,
     "pick": {
-      "settled": 1069,
+      "settled": 1070,
       "won": 207,
-      "pl": -153.26,
-      "roi": -14.3
+      "pl": -154.26,
+      "roi": -14.4
     },
     "favourite": {
       "settled": 1065,
@@ -29921,10 +29946,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 794,
+      "settled": 795,
       "won": 100,
-      "pl": -126.21,
-      "roi": -15.9
+      "pl": -127.21,
+      "roi": -16
     }
   },
   "lastBackfill": 1794227434490
