@@ -29983,10 +29983,18 @@
       "fav": {
         "horse": "GAELIC GLOW",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T14:20:26.607Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Punchestown|14:38",
@@ -30025,21 +30033,40 @@
       },
       "recordedAt": "2026-11-09T14:40:26.582Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Carlisle|15:02",
+      "date": "2026-11-09",
+      "course": "Carlisle",
+      "time": "15:02",
+      "horse": "OH CLARE",
+      "price": "7/2",
+      "runners": 7,
+      "liveHorse": "KIENTZHEIM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KIENTZHEIM",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T14:50:25.009Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1093,
+    "recorded": 1094,
     "pick": {
-      "settled": 1073,
+      "settled": 1074,
       "won": 207,
-      "pl": -157.26,
+      "pl": -158.26,
       "roi": -14.7
     },
     "favourite": {
-      "settled": 1067,
+      "settled": 1068,
       "won": 380,
-      "pl": 9.1,
-      "roi": 0.9
+      "pl": 8.1,
+      "roi": 0.8
     },
     "agree": {
       "settled": 275,
@@ -30048,10 +30075,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 798,
+      "settled": 799,
       "won": 100,
-      "pl": -130.21,
-      "roi": -16.3
+      "pl": -131.21,
+      "roi": -16.4
     }
   },
   "lastBackfill": 1794227434490
