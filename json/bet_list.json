@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:40:19.764Z",
+  "generatedAt": "2026-11-09T15:50:16.698Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-09",
       "course": "Carlisle",
       "off": "15:35",
-      "horse": "LADY JETFIRE"
-    }
-  ],
-  "recent": [
+      "horse": "LADY JETFIRE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-09",
       "course": "Punchestown",
@@ -174,21 +179,10 @@
       "bsp": 2.92823392,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-07",
-      "course": "Uttoxeter",
-      "off": "15:40",
-      "horse": "CHICKS FOR FREE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.00111793,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T15:40:19.677Z",
+    "updatedAt": "2026-11-09T15:50:16.609Z",
     "claude": {
       "races": 38,
       "won": 7,
