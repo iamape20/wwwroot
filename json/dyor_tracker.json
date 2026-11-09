@@ -29756,10 +29756,16 @@
       "fav": {
         "horse": "PARISENCORE",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T12:40:34.273Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-09|Punchestown|13:00",
@@ -29798,10 +29804,29 @@
       },
       "recordedAt": "2026-11-09T13:00:35.525Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Carlisle|13:20",
+      "date": "2026-11-09",
+      "course": "Carlisle",
+      "time": "13:20",
+      "horse": "DIAMOND WHITE",
+      "price": "2/1",
+      "runners": 10,
+      "liveHorse": "DIAMOND WHITE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DIAMOND WHITE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T13:10:37.540Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1084,
+    "recorded": 1085,
     "pick": {
       "settled": 1067,
       "won": 207,
@@ -29809,10 +29834,10 @@
       "roi": -14.2
     },
     "favourite": {
-      "settled": 1063,
+      "settled": 1064,
       "won": 380,
-      "pl": 13.1,
-      "roi": 1.2
+      "pl": 12.1,
+      "roi": 1.1
     },
     "agree": {
       "settled": 274,
