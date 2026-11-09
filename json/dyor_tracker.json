@@ -30168,10 +30168,18 @@
       "fav": {
         "horse": "HEAD FOR HOME",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T15:30:20.569Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Stratford|15:55",
@@ -30187,25 +30195,33 @@
       "fav": {
         "horse": "APOLLON FORLONGE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T15:40:21.830Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1099,
     "pick": {
-      "settled": 1080,
+      "settled": 1082,
       "won": 207,
-      "pl": -164.26,
-      "roi": -15.2
+      "pl": -166.26,
+      "roi": -15.4
     },
     "favourite": {
-      "settled": 1072,
+      "settled": 1074,
       "won": 380,
-      "pl": 4.1,
-      "roi": 0.4
+      "pl": 2.1,
+      "roi": 0.2
     },
     "agree": {
       "settled": 276,
@@ -30214,10 +30230,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 804,
+      "settled": 806,
       "won": 100,
-      "pl": -136.21,
-      "roi": -16.9
+      "pl": -138.21,
+      "roi": -17.1
     }
   },
   "lastBackfill": 1794238821849
