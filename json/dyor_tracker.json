@@ -30064,10 +30064,16 @@
       "fav": {
         "horse": "KIENTZHEIM",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-09T14:50:25.009Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Punchestown|15:13",
@@ -30106,15 +30112,34 @@
       },
       "recordedAt": "2026-11-09T15:10:21.646Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Carlisle|15:35",
+      "date": "2026-11-09",
+      "course": "Carlisle",
+      "time": "15:35",
+      "horse": "LADY SCARPHIA",
+      "price": "9/1",
+      "runners": 11,
+      "liveHorse": "LADY JETFIRE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LADY JETFIRE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T15:20:23.265Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1096,
+    "recorded": 1097,
     "pick": {
-      "settled": 1076,
+      "settled": 1077,
       "won": 207,
-      "pl": -160.26,
-      "roi": -14.9
+      "pl": -161.26,
+      "roi": -15
     },
     "favourite": {
       "settled": 1070,
@@ -30129,10 +30154,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 801,
+      "settled": 802,
       "won": 100,
-      "pl": -133.21,
-      "roi": -16.6
+      "pl": -134.21,
+      "roi": -16.7
     }
   },
   "lastBackfill": 1794227434490
