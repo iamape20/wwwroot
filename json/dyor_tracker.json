@@ -30010,10 +30010,18 @@
       "fav": {
         "horse": "BELLE THE TIGRESS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T14:30:24.363Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Stratford|14:50",
@@ -30052,21 +30060,40 @@
       },
       "recordedAt": "2026-11-09T14:50:25.009Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|15:13",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "15:13",
+      "horse": "BRICKFIELD BELLE",
+      "price": "4/11",
+      "runners": 11,
+      "liveHorse": "BRICKFIELD BELLE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BRICKFIELD BELLE",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T15:00:25.907Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1094,
+    "recorded": 1095,
     "pick": {
-      "settled": 1074,
+      "settled": 1075,
       "won": 207,
-      "pl": -158.26,
-      "roi": -14.7
+      "pl": -159.26,
+      "roi": -14.8
     },
     "favourite": {
-      "settled": 1068,
+      "settled": 1069,
       "won": 380,
-      "pl": 8.1,
-      "roi": 0.8
+      "pl": 7.1,
+      "roi": 0.7
     },
     "agree": {
       "settled": 275,
@@ -30075,10 +30102,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 799,
+      "settled": 800,
       "won": 100,
-      "pl": -131.21,
-      "roi": -16.4
+      "pl": -132.21,
+      "roi": -16.5
     }
   },
   "lastBackfill": 1794227434490
