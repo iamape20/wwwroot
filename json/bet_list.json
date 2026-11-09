@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:10:24.393Z",
+  "generatedAt": "2026-11-09T14:20:24.397Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Stratford",
+      "off": "14:15",
+      "horse": "LUNE BRILLANTE"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-09",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T14:10:24.307Z",
+    "updatedAt": "2026-11-09T14:20:24.313Z",
     "claude": {
       "races": 38,
       "won": 7,
