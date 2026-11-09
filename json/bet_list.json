@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T12:50:34.335Z",
+  "generatedAt": "2026-11-09T13:00:32.984Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Stratford",
-      "off": "12:40",
-      "horse": "EMID'IO PEPE"
+      "course": "Punchestown",
+      "off": "13:00",
+      "horse": "SMOKIN ACES"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "off": "12:40",
+      "horse": "EMID'IO PEPE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-08",
       "course": "Naas",
@@ -174,21 +185,10 @@
       "bsp": 1.10479782,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-06",
-      "course": "Aintree",
-      "off": "12:40",
-      "horse": "RISKY OBSESSION",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.08,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T12:50:34.223Z",
+    "updatedAt": "2026-11-09T13:00:32.904Z",
     "claude": {
       "races": 38,
       "won": 7,
