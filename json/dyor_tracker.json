@@ -29881,10 +29881,18 @@
       "fav": {
         "horse": "SUNSHINE DIAMOND",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T13:30:32.456Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Carlisle|13:52",
@@ -29923,21 +29931,40 @@
       },
       "recordedAt": "2026-11-09T13:50:33.290Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Stratford|14:15",
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "time": "14:15",
+      "horse": "LUNE BRILLANTE",
+      "price": "10/11",
+      "runners": 6,
+      "liveHorse": "LUNE BRILLANTE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LUNE BRILLANTE",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T14:00:39.120Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1089,
+    "recorded": 1090,
     "pick": {
-      "settled": 1070,
+      "settled": 1071,
       "won": 207,
-      "pl": -154.26,
-      "roi": -14.4
+      "pl": -155.26,
+      "roi": -14.5
     },
     "favourite": {
-      "settled": 1065,
+      "settled": 1066,
       "won": 380,
-      "pl": 11.1,
-      "roi": 1
+      "pl": 10.1,
+      "roi": 0.9
     },
     "agree": {
       "settled": 275,
@@ -29946,10 +29973,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 795,
+      "settled": 796,
       "won": 100,
-      "pl": -127.21,
-      "roi": -16
+      "pl": -128.21,
+      "roi": -16.1
     }
   },
   "lastBackfill": 1794227434490
