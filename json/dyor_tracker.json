@@ -29731,10 +29731,16 @@
       "fav": {
         "horse": "RATTLEDELATCH",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-09T12:20:35.434Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Carlisle|12:50",
@@ -29754,15 +29760,34 @@
       },
       "recordedAt": "2026-11-09T12:40:34.273Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|13:00",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "13:00",
+      "horse": "BURLEIGH BEACH",
+      "price": "100/1",
+      "runners": 9,
+      "liveHorse": "SMOKIN ACES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SMOKIN ACES",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T12:50:37.175Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1082,
+    "recorded": 1083,
     "pick": {
-      "settled": 1066,
+      "settled": 1067,
       "won": 207,
-      "pl": -150.26,
-      "roi": -14.1
+      "pl": -151.26,
+      "roi": -14.2
     },
     "favourite": {
       "settled": 1063,
@@ -29777,10 +29802,10 @@
       "roi": -9.5
     },
     "disagree": {
-      "settled": 792,
+      "settled": 793,
       "won": 100,
-      "pl": -124.21,
-      "roi": -15.7
+      "pl": -125.21,
+      "roi": -15.8
     }
   },
   "lastBackfill": 1794227434490
