@@ -29960,10 +29960,14 @@
       "fav": {
         "horse": "LUNE BRILLANTE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-09T14:00:39.120Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-11-09|Carlisle|14:27",
@@ -29983,10 +29987,29 @@
       },
       "recordedAt": "2026-11-09T14:20:26.607Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|14:38",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "14:38",
+      "horse": "SHIRZAN",
+      "price": "3/1",
+      "runners": 9,
+      "liveHorse": "BELLE THE TIGRESS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BELLE THE TIGRESS",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T14:30:24.363Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1091,
+    "recorded": 1092,
     "pick": {
       "settled": 1073,
       "won": 207,
