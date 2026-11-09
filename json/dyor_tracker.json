@@ -30037,10 +30037,18 @@
       "fav": {
         "horse": "DREAM SHADOW",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T14:40:26.582Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Carlisle|15:02",
@@ -30079,21 +30087,40 @@
       },
       "recordedAt": "2026-11-09T15:00:25.907Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Stratford|15:25",
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "time": "15:25",
+      "horse": "COTTON SOCKS",
+      "price": "4/1",
+      "runners": 7,
+      "liveHorse": "LORD VIRGINIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LORD VIRGINIA",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T15:10:21.646Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1095,
+    "recorded": 1096,
     "pick": {
-      "settled": 1075,
+      "settled": 1076,
       "won": 207,
-      "pl": -159.26,
-      "roi": -14.8
+      "pl": -160.26,
+      "roi": -14.9
     },
     "favourite": {
-      "settled": 1069,
+      "settled": 1070,
       "won": 380,
-      "pl": 7.1,
-      "roi": 0.7
+      "pl": 6.1,
+      "roi": 0.6
     },
     "agree": {
       "settled": 275,
@@ -30102,10 +30129,10 @@
       "roi": -9.8
     },
     "disagree": {
-      "settled": 800,
+      "settled": 801,
       "won": 100,
-      "pl": -132.21,
-      "roi": -16.5
+      "pl": -133.21,
+      "roi": -16.6
     }
   },
   "lastBackfill": 1794227434490
