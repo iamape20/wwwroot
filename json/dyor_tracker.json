@@ -29679,10 +29679,16 @@
       "fav": {
         "horse": "WESTERN MODEL",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/2"
       },
       "recordedAt": "2026-11-09T11:50:35.640Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "50/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Carlisle|12:20",
@@ -29702,15 +29708,34 @@
       },
       "recordedAt": "2026-11-09T12:10:33.036Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|12:30",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "12:30",
+      "horse": "BUTTER FINGERS",
+      "price": "8/1",
+      "runners": 7,
+      "liveHorse": "RATTLEDELATCH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RATTLEDELATCH",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T12:20:35.434Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1080,
+    "recorded": 1081,
     "pick": {
-      "settled": 1064,
+      "settled": 1065,
       "won": 207,
-      "pl": -148.26,
-      "roi": -13.9
+      "pl": -149.26,
+      "roi": -14
     },
     "favourite": {
       "settled": 1062,
@@ -29725,10 +29750,10 @@
       "roi": -9.5
     },
     "disagree": {
-      "settled": 790,
+      "settled": 791,
       "won": 100,
-      "pl": -122.21,
-      "roi": -15.5
+      "pl": -123.21,
+      "roi": -15.6
     }
   },
   "lastBackfill": 1794207660463
