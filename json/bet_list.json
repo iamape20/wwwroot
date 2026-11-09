@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T13:20:29.470Z",
+  "generatedAt": "2026-11-09T13:30:29.714Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Stratford",
-      "off": "13:10",
-      "horse": "EASTERN FIRE"
+      "course": "Punchestown",
+      "off": "13:30",
+      "horse": "COEXIST"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "off": "13:10",
+      "horse": "EASTERN FIRE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-09",
       "course": "Punchestown",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-07",
-      "course": "Gowran Park",
-      "off": "12:10",
-      "horse": "SIXANDAHALF",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.39,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T13:20:29.370Z",
+    "updatedAt": "2026-11-09T13:30:29.602Z",
     "claude": {
       "races": 38,
       "won": 7,

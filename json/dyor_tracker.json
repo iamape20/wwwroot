@@ -29806,10 +29806,14 @@
       "fav": {
         "horse": "EASTERN FIRE",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/15"
       },
       "recordedAt": "2026-11-09T13:00:35.525Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "8/15"
     },
     {
       "id": "2026-11-09|Carlisle|13:20",
@@ -29848,10 +29852,29 @@
       },
       "recordedAt": "2026-11-09T13:20:32.136Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Stratford|13:40",
+      "date": "2026-11-09",
+      "course": "Stratford",
+      "time": "13:40",
+      "horse": "MAJOR FORTUNE",
+      "price": "11/4",
+      "runners": 8,
+      "liveHorse": "SUNSHINE DIAMOND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SUNSHINE DIAMOND",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T13:30:32.456Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1086,
+    "recorded": 1087,
     "pick": {
       "settled": 1068,
       "won": 207,
