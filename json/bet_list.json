@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:20:21.236Z",
+  "generatedAt": "2026-11-09T15:30:17.945Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-09",
       "course": "Punchestown",
       "off": "15:13",
-      "horse": "BRICKFIELD BELLE"
-    }
-  ],
-  "recent": [
+      "horse": "BRICKFIELD BELLE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-09",
       "course": "Stratford",
@@ -174,21 +179,10 @@
       "bsp": 2.00111793,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-07",
-      "course": "Doncaster",
-      "off": "14:10",
-      "horse": "COUL ANGEL",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 4.2,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-09T15:20:21.144Z",
+    "updatedAt": "2026-11-09T15:30:17.869Z",
     "claude": {
       "races": 38,
       "won": 7,

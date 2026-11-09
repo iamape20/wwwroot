@@ -30089,10 +30089,18 @@
       "fav": {
         "horse": "BRICKFIELD BELLE",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/9",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-09T15:00:25.907Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/9",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Stratford|15:25",
@@ -30131,27 +30139,46 @@
       },
       "recordedAt": "2026-11-09T15:20:23.265Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|15:45",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "15:45",
+      "horse": "LE FANU",
+      "price": "28/1",
+      "runners": 22,
+      "liveHorse": "HEAD FOR HOME",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HEAD FOR HOME",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T15:30:20.569Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1097,
+    "recorded": 1098,
     "pick": {
-      "settled": 1077,
+      "settled": 1078,
       "won": 207,
-      "pl": -161.26,
-      "roi": -15
+      "pl": -162.26,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 1070,
+      "settled": 1071,
       "won": 380,
-      "pl": 6.1,
-      "roi": 0.6
+      "pl": 5.1,
+      "roi": 0.5
     },
     "agree": {
-      "settled": 275,
+      "settled": 276,
       "won": 107,
-      "pl": -27.05,
-      "roi": -9.8
+      "pl": -28.05,
+      "roi": -10.2
     },
     "disagree": {
       "settled": 802,
