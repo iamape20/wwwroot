@@ -29781,10 +29781,16 @@
       "fav": {
         "horse": "SMOKIN ACES",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-09T12:50:37.175Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "125/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-09|Stratford|13:10",
@@ -29823,15 +29829,34 @@
       },
       "recordedAt": "2026-11-09T13:10:37.540Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-09|Punchestown|13:30",
+      "date": "2026-11-09",
+      "course": "Punchestown",
+      "time": "13:30",
+      "horse": "BLISSFUL BONITA",
+      "price": "5/2",
+      "runners": 10,
+      "liveHorse": "COEXIST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COEXIST",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-09T13:20:32.136Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1085,
+    "recorded": 1086,
     "pick": {
-      "settled": 1067,
+      "settled": 1068,
       "won": 207,
-      "pl": -151.26,
-      "roi": -14.2
+      "pl": -152.26,
+      "roi": -14.3
     },
     "favourite": {
       "settled": 1064,
@@ -29846,10 +29871,10 @@
       "roi": -9.5
     },
     "disagree": {
-      "settled": 793,
+      "settled": 794,
       "won": 100,
-      "pl": -125.21,
-      "roi": -15.8
+      "pl": -126.21,
+      "roi": -15.9
     }
   },
   "lastBackfill": 1794227434490
