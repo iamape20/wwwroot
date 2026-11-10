@@ -30541,10 +30541,18 @@
       "fav": {
         "horse": "CAP RICOCHET",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T14:30:22.569Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Lingfield|14:50",
@@ -30583,21 +30591,40 @@
       },
       "recordedAt": "2026-11-10T14:50:27.622Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Huntingdon|15:10",
+      "date": "2026-11-10",
+      "course": "Huntingdon",
+      "time": "15:10",
+      "horse": "BLACKWATER LILLY",
+      "price": "11/4",
+      "runners": 6,
+      "liveHorse": "BRIGHT LEGEND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BRIGHT LEGEND",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T15:00:22.439Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1113,
+    "recorded": 1114,
     "pick": {
-      "settled": 1095,
+      "settled": 1096,
       "won": 210,
-      "pl": -172.65,
+      "pl": -173.65,
       "roi": -15.8
     },
     "favourite": {
-      "settled": 1088,
+      "settled": 1089,
       "won": 389,
-      "pl": 15.31,
-      "roi": 1.4
+      "pl": 14.31,
+      "roi": 1.3
     },
     "agree": {
       "settled": 279,
@@ -30606,10 +30633,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 816,
+      "settled": 817,
       "won": 101,
-      "pl": -145.86,
-      "roi": -17.9
+      "pl": -146.86,
+      "roi": -18
     }
   },
   "lastBackfill": 1794318634713
