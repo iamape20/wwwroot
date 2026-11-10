@@ -30462,10 +30462,18 @@
       "fav": {
         "horse": "SEVEN STARS",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T14:00:36.018Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Lingfield|14:20",
@@ -30504,21 +30512,40 @@
       },
       "recordedAt": "2026-11-10T14:20:24.922Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Huntingdon|14:40",
+      "date": "2026-11-10",
+      "course": "Huntingdon",
+      "time": "14:40",
+      "horse": "WALK THE PLANK",
+      "price": "6/1",
+      "runners": 6,
+      "liveHorse": "CAP RICOCHET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CAP RICOCHET",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T14:30:22.569Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1110,
+    "recorded": 1111,
     "pick": {
-      "settled": 1092,
+      "settled": 1093,
       "won": 210,
-      "pl": -169.65,
-      "roi": -15.5
+      "pl": -170.65,
+      "roi": -15.6
     },
     "favourite": {
-      "settled": 1086,
+      "settled": 1087,
       "won": 389,
-      "pl": 17.31,
-      "roi": 1.6
+      "pl": 16.31,
+      "roi": 1.5
     },
     "agree": {
       "settled": 279,
@@ -30527,10 +30554,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 813,
+      "settled": 814,
       "won": 101,
-      "pl": -142.86,
-      "roi": -17.6
+      "pl": -143.86,
+      "roi": -17.7
     }
   },
   "lastBackfill": 1794318634713
