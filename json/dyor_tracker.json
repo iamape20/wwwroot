@@ -30514,10 +30514,18 @@
       "fav": {
         "horse": "URBS INTACTA MANET",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T14:20:24.922Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|14:40",
@@ -30556,21 +30564,40 @@
       },
       "recordedAt": "2026-11-10T14:40:21.702Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|15:00",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "15:00",
+      "horse": "BARTLEMY BOY",
+      "price": "6/1",
+      "runners": 9,
+      "liveHorse": "HEARTS AND SPADES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HEARTS AND SPADES",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T14:50:27.622Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1112,
+    "recorded": 1113,
     "pick": {
-      "settled": 1094,
+      "settled": 1095,
       "won": 210,
-      "pl": -171.65,
-      "roi": -15.7
+      "pl": -172.65,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 1087,
+      "settled": 1088,
       "won": 389,
-      "pl": 16.31,
-      "roi": 1.5
+      "pl": 15.31,
+      "roi": 1.4
     },
     "agree": {
       "settled": 279,
@@ -30579,10 +30606,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 815,
+      "settled": 816,
       "won": 101,
-      "pl": -144.86,
-      "roi": -17.8
+      "pl": -145.86,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1794318634713
