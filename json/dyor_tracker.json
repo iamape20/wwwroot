@@ -30489,10 +30489,16 @@
       "fav": {
         "horse": "KAMILLE AU KANADA",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-10T14:10:26.323Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Fairyhouse|14:30",
@@ -30531,15 +30537,34 @@
       },
       "recordedAt": "2026-11-10T14:30:22.569Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Lingfield|14:50",
+      "date": "2026-11-10",
+      "course": "Lingfield",
+      "time": "14:50",
+      "horse": "WESTERN SOLDIER",
+      "price": "10/3",
+      "runners": 9,
+      "liveHorse": "WESTERN SOLDIER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WESTERN SOLDIER",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T14:40:21.702Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1111,
+    "recorded": 1112,
     "pick": {
-      "settled": 1093,
+      "settled": 1094,
       "won": 210,
-      "pl": -170.65,
-      "roi": -15.6
+      "pl": -171.65,
+      "roi": -15.7
     },
     "favourite": {
       "settled": 1087,
@@ -30554,10 +30579,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 814,
+      "settled": 815,
       "won": 101,
-      "pl": -143.86,
-      "roi": -17.7
+      "pl": -144.86,
+      "roi": -17.8
     }
   },
   "lastBackfill": 1794318634713
