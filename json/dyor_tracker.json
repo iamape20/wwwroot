@@ -30595,10 +30595,16 @@
       "fav": {
         "horse": "HEARTS AND SPADES",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-10T14:50:27.622Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|15:10",
@@ -30637,15 +30643,34 @@
       },
       "recordedAt": "2026-11-10T15:10:23.055Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|15:30",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "15:30",
+      "horse": "WEST OF CARRIG",
+      "price": "3/1",
+      "runners": 11,
+      "liveHorse": "WEST OF CARRIG",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WEST OF CARRIG",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T15:20:20.172Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1115,
+    "recorded": 1116,
     "pick": {
-      "settled": 1097,
+      "settled": 1098,
       "won": 210,
-      "pl": -174.65,
-      "roi": -15.9
+      "pl": -175.65,
+      "roi": -16
     },
     "favourite": {
       "settled": 1090,
@@ -30660,10 +30685,10 @@
       "roi": -9.9
     },
     "disagree": {
-      "settled": 817,
+      "settled": 818,
       "won": 101,
-      "pl": -146.86,
-      "roi": -18
+      "pl": -147.86,
+      "roi": -18.1
     }
   },
   "lastBackfill": 1794318634713
