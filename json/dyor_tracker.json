@@ -30672,10 +30672,18 @@
       "fav": {
         "horse": "WEST OF CARRIG",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T15:20:20.172Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|15:40",
@@ -30714,27 +30722,46 @@
       },
       "recordedAt": "2026-11-10T15:40:21.511Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|16:00",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "16:00",
+      "horse": "BELLAHILL",
+      "price": "6/5",
+      "runners": 5,
+      "liveHorse": "HERON HILL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HERON HILL",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T15:50:17.773Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1118,
+    "recorded": 1119,
     "pick": {
-      "settled": 1099,
+      "settled": 1100,
       "won": 210,
-      "pl": -176.65,
-      "roi": -16.1
+      "pl": -177.65,
+      "roi": -16.2
     },
     "favourite": {
-      "settled": 1092,
+      "settled": 1093,
       "won": 389,
-      "pl": 11.31,
-      "roi": 1
+      "pl": 10.31,
+      "roi": 0.9
     },
     "agree": {
-      "settled": 280,
+      "settled": 281,
       "won": 109,
-      "pl": -27.79,
-      "roi": -9.9
+      "pl": -28.79,
+      "roi": -10.2
     },
     "disagree": {
       "settled": 819,
