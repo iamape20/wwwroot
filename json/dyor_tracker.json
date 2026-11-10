@@ -30362,10 +30362,14 @@
       "fav": {
         "horse": "LIVE TO LAUGH",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-10T13:20:27.955Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-10|Huntingdon|13:40",
@@ -30404,10 +30408,29 @@
       },
       "recordedAt": "2026-11-10T13:40:36.116Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|14:00",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "14:00",
+      "horse": "GLEN KILN",
+      "price": "5/2",
+      "runners": 9,
+      "liveHorse": "STORM HEART",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STORM HEART",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T13:50:34.697Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1106,
+    "recorded": 1107,
     "pick": {
       "settled": 1089,
       "won": 210,
@@ -30433,5 +30456,5 @@
       "roi": -17.4
     }
   },
-  "lastBackfill": 1794294050314
+  "lastBackfill": 1794318634713
 }
