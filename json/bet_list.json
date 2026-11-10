@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:10:27.913Z",
+  "generatedAt": "2026-11-10T13:20:26.167Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Fairyhouse",
-      "off": "13:00",
-      "horse": "REBEL REBA"
+      "course": "Lingfield",
+      "off": "13:20",
+      "horse": "GOT TO BE REAL"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "off": "13:00",
+      "horse": "REBEL REBA",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-10",
       "course": "Fairyhouse",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-08",
-      "course": "Naas",
-      "off": "12:30",
-      "horse": "THE MOURNE RAMBLER",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.28,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-10T13:10:27.832Z",
+    "updatedAt": "2026-11-10T13:20:26.099Z",
     "claude": {
       "races": 38,
       "won": 7,

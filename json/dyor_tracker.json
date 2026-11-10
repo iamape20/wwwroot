@@ -30285,10 +30285,18 @@
       "fav": {
         "horse": "REBEL REBA",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T12:50:32.180Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|13:10",
@@ -30327,21 +30335,40 @@
       },
       "recordedAt": "2026-11-10T13:10:29.654Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|13:30",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "13:30",
+      "horse": "LIVE TO LAUGH",
+      "price": "9/4",
+      "runners": 11,
+      "liveHorse": "LIVE TO LAUGH",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LIVE TO LAUGH",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T13:20:27.955Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1103,
+    "recorded": 1104,
     "pick": {
-      "settled": 1086,
+      "settled": 1087,
       "won": 210,
-      "pl": -163.65,
+      "pl": -164.65,
       "roi": -15.1
     },
     "favourite": {
-      "settled": 1084,
+      "settled": 1085,
       "won": 389,
-      "pl": 19.31,
-      "roi": 1.8
+      "pl": 18.31,
+      "roi": 1.7
     },
     "agree": {
       "settled": 278,
@@ -30350,10 +30377,10 @@
       "roi": -9.3
     },
     "disagree": {
-      "settled": 808,
+      "settled": 809,
       "won": 101,
-      "pl": -137.86,
-      "roi": -17.1
+      "pl": -138.86,
+      "roi": -17.2
     }
   },
   "lastBackfill": 1794294050314
