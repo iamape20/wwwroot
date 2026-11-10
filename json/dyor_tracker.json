@@ -30620,10 +30620,18 @@
       "fav": {
         "horse": "BRIGHT LEGEND",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T15:00:22.439Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Lingfield|15:20",
@@ -30662,21 +30670,40 @@
       },
       "recordedAt": "2026-11-10T15:20:20.172Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Huntingdon|15:40",
+      "date": "2026-11-10",
+      "course": "Huntingdon",
+      "time": "15:40",
+      "horse": "GALLIVANTED",
+      "price": "5/2",
+      "runners": 8,
+      "liveHorse": "VIRTUAL ROCK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "VIRTUAL ROCK",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T15:30:19.784Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1116,
+    "recorded": 1117,
     "pick": {
-      "settled": 1098,
+      "settled": 1099,
       "won": 210,
-      "pl": -175.65,
-      "roi": -16
+      "pl": -176.65,
+      "roi": -16.1
     },
     "favourite": {
-      "settled": 1090,
+      "settled": 1091,
       "won": 389,
-      "pl": 13.31,
-      "roi": 1.2
+      "pl": 12.31,
+      "roi": 1.1
     },
     "agree": {
       "settled": 280,
@@ -30685,10 +30712,10 @@
       "roi": -9.9
     },
     "disagree": {
-      "settled": 818,
+      "settled": 819,
       "won": 101,
-      "pl": -147.86,
-      "roi": -18.1
+      "pl": -148.86,
+      "roi": -18.2
     }
   },
   "lastBackfill": 1794318634713
