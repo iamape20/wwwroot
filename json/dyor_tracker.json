@@ -30385,10 +30385,16 @@
       "fav": {
         "horse": "TEORIE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-10T13:30:30.571Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Lingfield|13:50",
@@ -30427,15 +30433,34 @@
       },
       "recordedAt": "2026-11-10T13:50:34.697Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Huntingdon|14:10",
+      "date": "2026-11-10",
+      "course": "Huntingdon",
+      "time": "14:10",
+      "horse": "DANCING DAME",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "SEVEN STARS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SEVEN STARS",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T14:00:36.018Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1107,
+    "recorded": 1108,
     "pick": {
-      "settled": 1089,
+      "settled": 1090,
       "won": 210,
-      "pl": -166.65,
-      "roi": -15.3
+      "pl": -167.65,
+      "roi": -15.4
     },
     "favourite": {
       "settled": 1085,
@@ -30450,10 +30475,10 @@
       "roi": -9.3
     },
     "disagree": {
-      "settled": 811,
+      "settled": 812,
       "won": 101,
-      "pl": -140.86,
-      "roi": -17.4
+      "pl": -141.86,
+      "roi": -17.5
     }
   },
   "lastBackfill": 1794318634713

@@ -5893,7 +5893,9 @@
       "rating": 75.5,
       "runners": 5,
       "recordedAt": "2026-11-10T13:30:30.338Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-11-10|Lingfield|13:50",
@@ -5906,10 +5908,22 @@
       "runners": 5,
       "recordedAt": "2026-11-10T13:40:35.748Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Huntingdon|14:10",
+      "date": "2026-11-10",
+      "course": "Huntingdon",
+      "time": "14:10",
+      "horse": "SEVEN STARS",
+      "price": "2/5",
+      "rating": 74.4,
+      "runners": 7,
+      "recordedAt": "2026-11-10T14:00:35.732Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 359,
+    "recorded": 360,
     "settled": 352,
     "won": 175,
     "pl": -10.54,
