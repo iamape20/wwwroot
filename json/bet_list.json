@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T14:00:33.067Z",
+  "generatedAt": "2026-11-10T14:10:24.509Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Lingfield",
-      "off": "13:50",
-      "horse": "PORT GLEN ONE"
+      "course": "Huntingdon",
+      "off": "14:10",
+      "horse": "SEVEN STARS"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-10",
+      "course": "Lingfield",
+      "off": "13:50",
+      "horse": "PORT GLEN ONE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-10",
       "course": "Lingfield",
@@ -174,21 +185,10 @@
       "bsp": 1.53716862,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-08",
-      "course": "Naas",
-      "off": "13:00",
-      "horse": "LOVE ME TENDER",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.65924006,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-10T14:00:32.952Z",
+    "updatedAt": "2026-11-10T14:10:24.341Z",
     "claude": {
       "races": 38,
       "won": 7,

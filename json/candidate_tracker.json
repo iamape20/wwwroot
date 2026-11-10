@@ -5907,7 +5907,11 @@
       "rating": 87.9,
       "runners": 5,
       "recordedAt": "2026-11-10T13:40:35.748Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "30/100",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|14:10",
@@ -5924,10 +5928,10 @@
   ],
   "stats": {
     "recorded": 360,
-    "settled": 352,
+    "settled": 353,
     "won": 175,
-    "pl": -10.54,
-    "roi": -3
+    "pl": -11.54,
+    "roi": -3.3
   },
   "lastBackfill": 1794318632708
 }
