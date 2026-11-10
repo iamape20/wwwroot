@@ -30258,25 +30258,52 @@
       "fav": {
         "horse": "QUATRE SAISON",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T12:20:32.830Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|13:00",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "13:00",
+      "horse": "WESTERN SHORES",
+      "price": "11/4",
+      "runners": 10,
+      "liveHorse": "REBEL REBA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "REBEL REBA",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T12:50:32.180Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1100,
+    "recorded": 1101,
     "pick": {
-      "settled": 1085,
+      "settled": 1086,
       "won": 210,
-      "pl": -162.65,
-      "roi": -15
+      "pl": -163.65,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 1083,
+      "settled": 1084,
       "won": 389,
-      "pl": 20.31,
-      "roi": 1.9
+      "pl": 19.31,
+      "roi": 1.8
     },
     "agree": {
       "settled": 278,
@@ -30285,10 +30312,10 @@
       "roi": -9.3
     },
     "disagree": {
-      "settled": 807,
+      "settled": 808,
       "won": 101,
-      "pl": -136.86,
-      "roi": -17
+      "pl": -137.86,
+      "roi": -17.1
     }
   },
   "lastBackfill": 1794294050314
