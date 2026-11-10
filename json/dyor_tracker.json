@@ -30568,10 +30568,18 @@
       "fav": {
         "horse": "WESTERN SOLDIER",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-10T14:40:21.702Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Fairyhouse|15:00",
@@ -30610,27 +30618,46 @@
       },
       "recordedAt": "2026-11-10T15:00:22.439Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Lingfield|15:20",
+      "date": "2026-11-10",
+      "course": "Lingfield",
+      "time": "15:20",
+      "horse": "BETTY'S TIARA",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "SAILING BY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SAILING BY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T15:10:23.055Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1114,
+    "recorded": 1115,
     "pick": {
-      "settled": 1096,
+      "settled": 1097,
       "won": 210,
-      "pl": -173.65,
-      "roi": -15.8
+      "pl": -174.65,
+      "roi": -15.9
     },
     "favourite": {
-      "settled": 1089,
+      "settled": 1090,
       "won": 389,
-      "pl": 14.31,
-      "roi": 1.3
+      "pl": 13.31,
+      "roi": 1.2
     },
     "agree": {
-      "settled": 279,
+      "settled": 280,
       "won": 109,
-      "pl": -26.79,
-      "roi": -9.6
+      "pl": -27.79,
+      "roi": -9.9
     },
     "disagree": {
       "settled": 817,
