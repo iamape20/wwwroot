@@ -30437,10 +30437,16 @@
       "fav": {
         "horse": "STORM HEART",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-10T13:50:34.697Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-10|Huntingdon|14:10",
@@ -30479,14 +30485,33 @@
       },
       "recordedAt": "2026-11-10T14:10:26.323Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-10|Fairyhouse|14:30",
+      "date": "2026-11-10",
+      "course": "Fairyhouse",
+      "time": "14:30",
+      "horse": "A YEAR OLDER",
+      "price": "5/2",
+      "runners": 5,
+      "liveHorse": "URBS INTACTA MANET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "URBS INTACTA MANET",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-10T14:20:24.922Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1109,
+    "recorded": 1110,
     "pick": {
-      "settled": 1091,
+      "settled": 1092,
       "won": 210,
-      "pl": -168.65,
+      "pl": -169.65,
       "roi": -15.5
     },
     "favourite": {
@@ -30502,10 +30527,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 812,
+      "settled": 813,
       "won": 101,
-      "pl": -141.86,
-      "roi": -17.5
+      "pl": -142.86,
+      "roi": -17.6
     }
   },
   "lastBackfill": 1794318634713
