@@ -30956,10 +30956,18 @@
       "fav": {
         "horse": "ATTIN",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T13:31:15.606Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|13:50",
@@ -30998,21 +31006,40 @@
       },
       "recordedAt": "2026-11-11T13:50:41.913Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Ayr|14:13",
+      "date": "2026-11-11",
+      "course": "Ayr",
+      "time": "14:13",
+      "horse": "BEAT THE RETREAT",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "JACK DEMPSEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JACK DEMPSEY",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T14:00:56.805Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1128,
+    "recorded": 1129,
     "pick": {
-      "settled": 1108,
+      "settled": 1109,
       "won": 212,
-      "pl": -176.76,
+      "pl": -177.76,
       "roi": -16
     },
     "favourite": {
-      "settled": 1104,
+      "settled": 1105,
       "won": 397,
-      "pl": 20.81,
-      "roi": 1.9
+      "pl": 19.81,
+      "roi": 1.8
     },
     "agree": {
       "settled": 284,
@@ -31021,10 +31048,10 @@
       "roi": -9.9
     },
     "disagree": {
-      "settled": 824,
+      "settled": 825,
       "won": 102,
-      "pl": -148.68,
-      "roi": -18
+      "pl": -149.68,
+      "roi": -18.1
     }
   },
   "lastBackfill": 1794402041107

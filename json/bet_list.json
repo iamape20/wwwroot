@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:50:39.215Z",
+  "generatedAt": "2026-11-11T14:00:51.353Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-11",
       "course": "Ayr",
       "off": "13:40",
-      "horse": "ATTIN"
-    }
-  ],
-  "recent": [
+      "horse": "ATTIN",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-10",
       "course": "Huntingdon",
@@ -174,21 +179,10 @@
       "bsp": 1.7,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-08",
-      "course": "Naas",
-      "off": "14:39",
-      "horse": "KOPEK DES BORDES",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-11T13:50:38.969Z",
+    "updatedAt": "2026-11-11T14:00:51.175Z",
     "claude": {
       "races": 38,
       "won": 7,
