@@ -30931,10 +30931,16 @@
       "fav": {
         "horse": "FIRST CONFESSION",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-11T13:20:41.827Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Ayr|13:40",
@@ -30973,15 +30979,34 @@
       },
       "recordedAt": "2026-11-11T13:40:40.261Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Bangor-on-Dee|14:05",
+      "date": "2026-11-11",
+      "course": "Bangor-on-Dee",
+      "time": "14:05",
+      "horse": "AGAFAY",
+      "price": "2/1",
+      "runners": 7,
+      "liveHorse": "AGAFAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AGAFAY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T13:50:41.913Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1127,
+    "recorded": 1128,
     "pick": {
-      "settled": 1107,
+      "settled": 1108,
       "won": 212,
-      "pl": -175.76,
-      "roi": -15.9
+      "pl": -176.76,
+      "roi": -16
     },
     "favourite": {
       "settled": 1104,
@@ -30996,10 +31021,10 @@
       "roi": -9.9
     },
     "disagree": {
-      "settled": 823,
+      "settled": 824,
       "won": 102,
-      "pl": -147.68,
-      "roi": -17.9
+      "pl": -148.68,
+      "roi": -18
     }
   },
   "lastBackfill": 1794402041107
