@@ -31422,31 +31422,58 @@
       "fav": {
         "horse": "SONIC SABIHA",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T16:20:30.247Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-11|Dundalk|17:02",
+      "date": "2026-11-11",
+      "course": "Dundalk",
+      "time": "17:02",
+      "horse": "CARRIGANS GROVE",
+      "price": "4/1",
+      "runners": 14,
+      "liveHorse": "GO OUT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO OUT",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T16:50:19.643Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1144,
+    "recorded": 1145,
     "pick": {
-      "settled": 1121,
+      "settled": 1122,
       "won": 212,
-      "pl": -189.76,
-      "roi": -16.9
+      "pl": -190.76,
+      "roi": -17
     },
     "favourite": {
-      "settled": 1117,
+      "settled": 1118,
       "won": 397,
-      "pl": 7.81,
-      "roi": 0.7
+      "pl": 6.81,
+      "roi": 0.6
     },
     "agree": {
-      "settled": 285,
+      "settled": 286,
       "won": 110,
-      "pl": -29.08,
-      "roi": -10.2
+      "pl": -30.08,
+      "roi": -10.5
     },
     "disagree": {
       "settled": 836,
