@@ -31141,10 +31141,18 @@
       "fav": {
         "horse": "ALLFOR",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T14:31:02.650Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|14:51",
@@ -31160,10 +31168,14 @@
       "fav": {
         "horse": "JACKSTELL",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-11T14:40:36.407Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|15:05",
@@ -31221,21 +31233,40 @@
       },
       "recordedAt": "2026-11-11T15:00:26.832Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|15:22",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "15:22",
+      "horse": "MIDNIGHT VIEW",
+      "price": "11/2",
+      "runners": 6,
+      "liveHorse": "MARY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MARY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T15:10:32.664Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1137,
+    "recorded": 1138,
     "pick": {
-      "settled": 1114,
+      "settled": 1115,
       "won": 212,
-      "pl": -182.76,
-      "roi": -16.4
+      "pl": -183.76,
+      "roi": -16.5
     },
     "favourite": {
-      "settled": 1110,
+      "settled": 1111,
       "won": 397,
-      "pl": 14.81,
-      "roi": 1.3
+      "pl": 13.81,
+      "roi": 1.2
     },
     "agree": {
       "settled": 285,
@@ -31244,10 +31275,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 829,
+      "settled": 830,
       "won": 102,
-      "pl": -153.68,
-      "roi": -18.5
+      "pl": -154.68,
+      "roi": -18.6
     }
   },
   "lastBackfill": 1794402041107
