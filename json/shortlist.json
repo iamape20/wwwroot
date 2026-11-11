@@ -1,20 +1,79 @@
 {
-  "date": "2026-11-10",
-  "builtAt": "2026-11-10T09:00:06.503Z",
+  "date": "2026-11-11",
+  "builtAt": "2026-11-11T02:19:19.352Z",
   "strong": [],
   "moderate": [
     {
-      "horse": "PORT GLEN ONE",
-      "course": "Lingfield",
-      "time": "13:50",
-      "rating": "87.9",
-      "margin": "27.4",
-      "marginValue": 27.400000000000006,
-      "confidence": 78,
-      "meetingId": "122484",
+      "horse": "LARGY FORCE",
+      "course": "Warwick",
+      "time": "13:20",
+      "rating": "96.3",
+      "margin": "29.2",
+      "marginValue": 29.200000000000003,
+      "confidence": 90,
+      "meetingId": "122506",
       "raceIndex": 1
+    },
+    {
+      "horse": "ATTIN",
+      "course": "Ayr",
+      "time": "13:40",
+      "rating": "81.2",
+      "margin": "21.4",
+      "marginValue": 21.400000000000006,
+      "confidence": 58,
+      "meetingId": "122505",
+      "raceIndex": 1
+    },
+    {
+      "horse": "DOUBLE ANNIE",
+      "course": "Ayr",
+      "time": "15:43",
+      "rating": "76.2",
+      "margin": "18.9",
+      "marginValue": 18.900000000000006,
+      "confidence": 75,
+      "meetingId": "122505",
+      "raceIndex": 5
+    },
+    {
+      "horse": "MARCESCENCE",
+      "course": "Dundalk",
+      "time": "16:32",
+      "rating": "77.1",
+      "margin": "15.7",
+      "marginValue": 15.699999999999996,
+      "confidence": 68,
+      "meetingId": "122508",
+      "raceIndex": 4
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "LARGY FORCE",
+      "course": "Warwick",
+      "time": "13:20",
+      "rating": "96.3",
+      "margin": "29.2",
+      "marginValue": 29.2,
+      "confidence": 90,
+      "meetingId": "122506",
+      "raceIndex": 1,
+      "tier": "Moderate",
+      "nap": true
+    },
+    {
+      "horse": "DOUBLE ANNIE",
+      "course": "Ayr",
+      "time": "15:43",
+      "rating": "76.2",
+      "margin": "18.9",
+      "marginValue": 18.900000000000006,
+      "confidence": 75,
+      "meetingId": "122505",
+      "raceIndex": 5,
+      "tier": "Moderate"
+    }
+  ],
+  "pickMode": "double"
 }
