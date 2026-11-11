@@ -31191,10 +31191,16 @@
       "fav": {
         "horse": "SOLID PERFORMER",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T14:50:38.837Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-11-11|Dundalk|15:00",
@@ -31298,10 +31304,29 @@
       },
       "recordedAt": "2026-11-11T15:20:28.456Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Ayr|15:43",
+      "date": "2026-11-11",
+      "course": "Ayr",
+      "time": "15:43",
+      "horse": "PONY EXPRESS",
+      "price": "13/2",
+      "runners": 6,
+      "liveHorse": "DOUBLE ANNIE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DOUBLE ANNIE",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T15:30:30.117Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1140,
+    "recorded": 1141,
     "pick": {
       "settled": 1116,
       "won": 212,
@@ -31309,10 +31334,10 @@
       "roi": -16.6
     },
     "favourite": {
-      "settled": 1112,
+      "settled": 1113,
       "won": 397,
-      "pl": 12.81,
-      "roi": 1.2
+      "pl": 11.81,
+      "roi": 1.1
     },
     "agree": {
       "settled": 285,
