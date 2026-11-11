@@ -31243,10 +31243,18 @@
       "fav": {
         "horse": "GREEN ANGEL",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T15:00:26.832Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|15:22",
@@ -31262,10 +31270,16 @@
       "fav": {
         "horse": "MARY",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T15:10:32.664Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|15:35",
@@ -31323,21 +31337,40 @@
       },
       "recordedAt": "2026-11-11T15:30:30.117Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|15:52",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "15:52",
+      "horse": "MARIA'S DOUBLE",
+      "price": "40/1",
+      "runners": 7,
+      "liveHorse": "KATIES TURN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KATIES TURN",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T15:40:30.195Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1141,
+    "recorded": 1142,
     "pick": {
-      "settled": 1116,
+      "settled": 1117,
       "won": 212,
-      "pl": -184.76,
+      "pl": -185.76,
       "roi": -16.6
     },
     "favourite": {
-      "settled": 1113,
+      "settled": 1115,
       "won": 397,
-      "pl": 11.81,
-      "roi": 1.1
+      "pl": 9.81,
+      "roi": 0.9
     },
     "agree": {
       "settled": 285,
@@ -31346,10 +31379,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 831,
+      "settled": 832,
       "won": 102,
-      "pl": -155.68,
-      "roi": -18.7
+      "pl": -156.68,
+      "roi": -18.8
     }
   },
   "lastBackfill": 1794402041107
