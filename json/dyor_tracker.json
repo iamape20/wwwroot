@@ -31210,10 +31210,18 @@
       "fav": {
         "horse": "INVINCIBLE IRISH",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T14:50:38.881Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Ayr|15:13",
@@ -31252,20 +31260,58 @@
       },
       "recordedAt": "2026-11-11T15:10:32.664Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Bangor-on-Dee|15:35",
+      "date": "2026-11-11",
+      "course": "Bangor-on-Dee",
+      "time": "15:35",
+      "horse": "STATIC",
+      "price": "5/2",
+      "runners": 4,
+      "liveHorse": "BROOKSIDE LA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BROOKSIDE LA",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T15:20:28.440Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-11|Dundalk|15:30",
+      "date": "2026-11-11",
+      "course": "Dundalk",
+      "time": "15:30",
+      "horse": "STAR STREWN",
+      "price": "5/1",
+      "runners": 8,
+      "liveHorse": "JUSTENZIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JUSTENZIA",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T15:20:28.456Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1138,
+    "recorded": 1140,
     "pick": {
-      "settled": 1115,
+      "settled": 1116,
       "won": 212,
-      "pl": -183.76,
-      "roi": -16.5
+      "pl": -184.76,
+      "roi": -16.6
     },
     "favourite": {
-      "settled": 1111,
+      "settled": 1112,
       "won": 397,
-      "pl": 13.81,
+      "pl": 12.81,
       "roi": 1.2
     },
     "agree": {
@@ -31275,10 +31321,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 830,
+      "settled": 831,
       "won": 102,
-      "pl": -154.68,
-      "roi": -18.6
+      "pl": -155.68,
+      "roi": -18.7
     }
   },
   "lastBackfill": 1794402041107
