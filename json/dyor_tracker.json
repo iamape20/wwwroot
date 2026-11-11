@@ -30854,10 +30854,18 @@
       "fav": {
         "horse": "MIGHTY FLEUR",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T12:50:39.287Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Ayr|13:10",
@@ -30896,21 +30904,40 @@
       },
       "recordedAt": "2026-11-11T13:10:45.494Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Bangor-on-Dee|13:30",
+      "date": "2026-11-11",
+      "course": "Bangor-on-Dee",
+      "time": "13:30",
+      "horse": "BLENKINSOP",
+      "price": "4/1",
+      "runners": 5,
+      "liveHorse": "FIRST CONFESSION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FIRST CONFESSION",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T13:20:41.827Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1124,
+    "recorded": 1125,
     "pick": {
-      "settled": 1105,
+      "settled": 1106,
       "won": 212,
-      "pl": -173.76,
-      "roi": -15.7
+      "pl": -174.76,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 1102,
+      "settled": 1103,
       "won": 397,
-      "pl": 22.81,
-      "roi": 2.1
+      "pl": 21.81,
+      "roi": 2
     },
     "agree": {
       "settled": 283,
@@ -30919,10 +30946,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 822,
+      "settled": 823,
       "won": 102,
-      "pl": -146.68,
-      "roi": -17.8
+      "pl": -147.68,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1794402041107
