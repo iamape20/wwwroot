@@ -6023,7 +6023,11 @@
       "rating": 84.4,
       "runners": 3,
       "recordedAt": "2026-11-11T13:00:40.901Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|13:20",
@@ -6036,14 +6040,26 @@
       "runners": 3,
       "recordedAt": "2026-11-11T13:10:45.294Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Ayr|13:40",
+      "date": "2026-11-11",
+      "course": "Ayr",
+      "time": "13:40",
+      "horse": "ATTIN",
+      "price": "8/15",
+      "rating": 81.2,
+      "runners": 10,
+      "recordedAt": "2026-11-11T13:31:15.137Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 367,
-    "settled": 360,
+    "recorded": 368,
+    "settled": 361,
     "won": 177,
-    "pl": -14.62,
-    "roi": -4.1
+    "pl": -15.62,
+    "roi": -4.3
   },
   "lastBackfill": 1794403239755
 }
