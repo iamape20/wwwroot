@@ -6101,7 +6101,9 @@
       "rating": 88.8,
       "runners": 4,
       "recordedAt": "2026-11-11T15:20:28.197Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/4"
     },
     {
       "id": "2026-11-11|Dundalk|15:30",
@@ -6113,7 +6115,11 @@
       "rating": 67.7,
       "runners": 8,
       "recordedAt": "2026-11-11T15:20:28.229Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Ayr|15:43",
@@ -6138,14 +6144,26 @@
       "runners": 7,
       "recordedAt": "2026-11-11T15:40:29.952Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Dundalk|16:02",
+      "date": "2026-11-11",
+      "course": "Dundalk",
+      "time": "16:02",
+      "horse": "LOOKINGFORARAINBOW",
+      "price": "5/4",
+      "rating": 73.2,
+      "runners": 13,
+      "recordedAt": "2026-11-11T15:50:25.970Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 374,
-    "settled": 364,
+    "recorded": 375,
+    "settled": 365,
     "won": 177,
-    "pl": -18.62,
-    "roi": -5.1
+    "pl": -19.62,
+    "roi": -5.4
   },
   "lastBackfill": 1794403239755
 }

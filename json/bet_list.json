@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T15:40:27.429Z",
+  "generatedAt": "2026-11-11T15:50:23.989Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Dundalk",
-      "off": "15:30",
-      "horse": "JUSTENZIA"
+      "course": "Ayr",
+      "off": "15:43",
+      "horse": "DOUBLE ANNIE"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-11",
+      "course": "Dundalk",
+      "off": "15:30",
+      "horse": "JUSTENZIA",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-11",
       "course": "Bangor-on-Dee",
@@ -174,21 +185,10 @@
       "bsp": 1.66,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-08",
-      "course": "Naas",
-      "off": "15:48",
-      "horse": "BALLYDONAGH GIRL",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.73438973,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-11T15:40:27.330Z",
+    "updatedAt": "2026-11-11T15:50:23.889Z",
     "claude": {
       "races": 38,
       "won": 7,
