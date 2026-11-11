@@ -5881,7 +5881,10 @@
       "recordedAt": "2026-11-10T13:10:29.471Z",
       "stake": 1,
       "result": "won",
-      "isp": "1/4"
+      "isp": "1/4",
+      "bsp": 1.25,
+      "pl": 0.237,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-10|Huntingdon|13:40",
@@ -5895,7 +5898,10 @@
       "recordedAt": "2026-11-10T13:30:30.338Z",
       "stake": 1,
       "result": "won",
-      "isp": "13/8"
+      "isp": "13/8",
+      "bsp": 2.77442719,
+      "pl": 1.686,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-10|Lingfield|13:50",
@@ -5996,10 +6002,10 @@
   ],
   "stats": {
     "recorded": 364,
-    "settled": 358,
-    "won": 175,
-    "pl": -16.54,
-    "roi": -4.6
+    "settled": 360,
+    "won": 177,
+    "pl": -14.62,
+    "roi": -4.1
   },
-  "lastBackfill": 1794340825273
+  "lastBackfill": 1794380457555
 }
