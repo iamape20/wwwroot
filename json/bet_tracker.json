@@ -3767,10 +3767,11 @@
       "runners": 7,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "1/1",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     }
   ],
   "verdict": {
@@ -3782,5 +3783,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1794380452376
+  "lastBackfill": 1794413418168
 }

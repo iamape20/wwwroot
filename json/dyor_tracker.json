@@ -31372,10 +31372,18 @@
       "fav": {
         "horse": "KATIES TURN",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T15:40:30.195Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "25/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Dundalk|16:02",
@@ -31400,16 +31408,16 @@
   "stats": {
     "recorded": 1143,
     "pick": {
-      "settled": 1120,
+      "settled": 1121,
       "won": 212,
-      "pl": -188.76,
+      "pl": -189.76,
       "roi": -16.9
     },
     "favourite": {
-      "settled": 1116,
+      "settled": 1117,
       "won": 397,
-      "pl": 8.81,
-      "roi": 0.8
+      "pl": 7.81,
+      "roi": 0.7
     },
     "agree": {
       "settled": 285,
@@ -31418,11 +31426,11 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 835,
+      "settled": 836,
       "won": 102,
-      "pl": -159.68,
-      "roi": -19.1
+      "pl": -160.68,
+      "roi": -19.2
     }
   },
-  "lastBackfill": 1794402041107
+  "lastBackfill": 1794413422515
 }
