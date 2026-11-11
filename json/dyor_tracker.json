@@ -30806,10 +30806,16 @@
       "fav": {
         "horse": "WANDERING EGO",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-11-11T12:20:39.273Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|12:50",
@@ -30829,15 +30835,34 @@
       },
       "recordedAt": "2026-11-11T12:40:48.808Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Bangor-on-Dee|13:00",
+      "date": "2026-11-11",
+      "course": "Bangor-on-Dee",
+      "time": "13:00",
+      "horse": "MERELY A DETAIL",
+      "price": "28/1",
+      "runners": 8,
+      "liveHorse": "MIGHTY FLEUR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MIGHTY FLEUR",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T12:50:39.287Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1121,
+    "recorded": 1122,
     "pick": {
-      "settled": 1104,
+      "settled": 1105,
       "won": 212,
-      "pl": -172.76,
-      "roi": -15.6
+      "pl": -173.76,
+      "roi": -15.7
     },
     "favourite": {
       "settled": 1102,
@@ -30852,10 +30877,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 821,
+      "settled": 822,
       "won": 102,
-      "pl": -145.68,
-      "roi": -17.7
+      "pl": -146.68,
+      "roi": -17.8
     }
   },
   "lastBackfill": 1794380459542
