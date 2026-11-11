@@ -31035,10 +31035,18 @@
       "fav": {
         "horse": "JACK DEMPSEY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T14:00:56.805Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|14:21",
@@ -31054,10 +31062,18 @@
       "fav": {
         "horse": "BROADWAY HONEY",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T14:10:45.250Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|14:35",
@@ -31115,21 +31131,40 @@
       },
       "recordedAt": "2026-11-11T14:31:02.650Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|14:51",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "14:51",
+      "horse": "JACKSTELL",
+      "price": "5/2",
+      "runners": 6,
+      "liveHorse": "JACKSTELL",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "JACKSTELL",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T14:40:36.407Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1133,
+    "recorded": 1134,
     "pick": {
-      "settled": 1111,
+      "settled": 1113,
       "won": 212,
-      "pl": -179.76,
-      "roi": -16.2
+      "pl": -181.76,
+      "roi": -16.3
     },
     "favourite": {
-      "settled": 1106,
+      "settled": 1108,
       "won": 397,
-      "pl": 18.81,
-      "roi": 1.7
+      "pl": 16.81,
+      "roi": 1.5
     },
     "agree": {
       "settled": 285,
@@ -31138,10 +31173,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 826,
+      "settled": 828,
       "won": 102,
-      "pl": -150.68,
-      "roi": -18.2
+      "pl": -152.68,
+      "roi": -18.4
     }
   },
   "lastBackfill": 1794402041107
