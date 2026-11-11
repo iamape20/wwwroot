@@ -41,14 +41,15 @@
 <body>
 <main class="tests-page">
     <h1>Paper tests</h1>
-    <div class="tests-intro">Three ways of betting on trial with no money, each with its pass mark set before the first bet.
+    <div class="tests-intro">Four ways of betting on trial with no money, each with its pass mark set before the first bet.
         <span id="testsUpdated"></span> &middot; <a href="index.html">Back to the card</a></div>
     <div id="ruleTestBlock" class="rule-test" style="display:none;"></div>
     <div id="extraPlacesBlock" class="rule-test" style="display:none;"></div>
     <div id="bogBlock" class="rule-test" style="display:none;"></div>
+    <div id="favBlock" class="rule-test" style="display:none;"></div>
 </main>
 <script type="module">
-    import { loadTests } from "./js/pages/testPanels.js?v=20261106a";
+    import { loadTests } from "./js/pages/testPanels.js?v=20261111a";
     loadTests();
     setInterval(loadTests, 120000);
 </script>

@@ -19,8 +19,8 @@ function renderRuleTest(rt, paused) {
     const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
     const today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" });
     const res = p => !p ? `<span class="record-since">no horse cleared the bar</span>`
-        : p.outcome === "won" ? `<span class="record-plus">won</span> SP ${p.bsp}`
-        : p.outcome === "lost" ? `<span class="record-minus">lost</span> SP ${p.bsp}`
+        : p.outcome === "won" ? `<span class="record-plus">won</span> SP ${+Number(p.bsp).toFixed(2)}`
+        : p.outcome === "lost" ? `<span class="record-minus">lost</span> SP ${+Number(p.bsp).toFixed(2)}`
         : p.outcome === "void" ? `<span class="record-since">void (non-runner)</span>` : `<span class="record-since">to run</span>`;
     const pick = p => p ? `<b>${escapeHtml(p.horse)}</b> <span class="record-since">${escapeHtml(p.course)} ${escapeHtml(p.time)} &middot; ${escapeHtml(p.odds)}</span> ${res(p)}` : res(p);
     const cards = rules.map(([k, t]) => {
@@ -156,6 +156,38 @@ function renderBogTest(bg) {
     el.style.display = "";
 }
 
+// Favourite 2/1-4/1 paper test (user 2026-11-11 "start it"): js/favPaperTest.js,
+// £1 on Our pick when it is the favourite at 2/1 to 4/1 in the last 15 minutes,
+// settled at Betfair SP after 2%; passes in profit after passAt bets and both halves.
+function renderFavTest(ft) {
+    const el = document.getElementById("favBlock");
+    if (!el) return;
+    if (!ft) { el.style.display = "none"; return; }
+    const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
+    const pc = v => v == null ? "-" : `${v > 0 ? "+" : ""}${v}%`;
+    const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    const uk = (d, t) => new Date(`${d}T${t}:00Z`).toLocaleTimeString("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit" });
+    const res = b => b.outcome === "won" ? `<span class="record-plus">won</span> SP ${+Number(b.bsp).toFixed(2)} ${pts(b.pl)}`
+        : b.outcome === "lost" ? `<span class="record-minus">lost</span>` : b.outcome === "void" ? `<span class="record-since">void</span>` : `<span class="record-since">result to come</span>`;
+    const pct = Math.min(100, Math.round(100 * ft.bets / (ft.passAt || 300)));
+    const halves = ft.bets >= 2 ? ft.halves.map((h, i) => `<span class="${h > 0 ? "record-plus" : "record-minus"}">${i ? "2nd" : "1st"} half ${pc(h)}</span>`).join(" ") : "";
+    const verdict = ft.verdict ? `<span class="rule-test-verdict rule-test-${ft.verdict.toLowerCase()}">${ft.verdict}</span>` : "";
+    const recent = [...(ft.recent || [])].sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time));
+    const rows = recent.length ? `<div class="rule-test-sub">Last 7 days</div><table class="rule-test-table"><tbody>${recent.map(b =>
+        `<tr><td class="record-since">${day(b.date)} ${uk(b.date, b.time)}</td><td><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} &middot; ${escapeHtml(b.odds)}</span> ${res(b)}</td></tr>`).join("")}</tbody></table>`
+        : `<div class="record-row record-since">No bets yet. A race is recorded in its last 15 minutes when our pick is the favourite at 2/1 to 4/1.</div>`;
+    el.innerHTML = `<div class="results-strip-label">Favourite 2/1 to 4/1 test</div>
+        <div class="record-since">£1 on our pick when it is the favourite at 2/1 to 4/1 in the last 15 minutes before the off, settled at Betfair starting price after 2%. No money. On ${ft.backtest.races} past races this won ${ft.backtest.wonPct}% when the price said ${ft.backtest.expectedPct}% (${pc(ft.backtest.roiPct)}), but that may be luck. To pass it must be in profit after ${ft.passAt} bets and in both halves.</div>
+        <div class="rule-test-rules"><div class="rule-test-rule">
+            <div class="rule-test-head"><b>Our pick, favourite at 2/1 to 4/1</b>${verdict}</div>
+            <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
+            <div class="record-since">${ft.bets} of ${ft.passAt} bets settled${ft.pending ? ` &middot; ${ft.pending} waiting for the starting price` : ""}</div>
+            <div class="record-row">${ft.bets ? `${ft.won} won (${ft.wonPct}%, price said ${ft.expectedPct}%) &middot; ${pts(ft.pl)} &middot; ${pc(ft.roiPct)} a bet` : "No bets settled yet"}</div>
+            ${halves ? `<div class="record-row">${halves}</div>` : ""}
+        </div></div>${rows}`;
+    el.style.display = "";
+}
+
 export async function loadTests() {
     try {
         const r = await fetch(`data/record.json?t=${Date.now()}`, { cache: "no-store" });
@@ -164,6 +196,7 @@ export async function loadTests() {
         renderRuleTest(d.ruleTest, d.realBetsPaused);
         renderExtraPlaces(d.extraPlacesTest);
         renderBogTest(d.bogTest);
+        renderFavTest(d.favTest);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
