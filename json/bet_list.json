@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T14:40:33.607Z",
+  "generatedAt": "2026-11-11T14:50:35.449Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-11",
       "course": "Bangor-on-Dee",
       "off": "14:35",
-      "horse": "ALCARATH"
-    }
-  ],
-  "recent": [
+      "horse": "ALCARATH",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-11",
       "course": "Ayr",
@@ -174,21 +179,10 @@
       "bsp": 2.73438973,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-08",
-      "course": "Naas",
-      "off": "15:13",
-      "horse": "ANZADAM",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.7,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-11T14:40:33.510Z",
+    "updatedAt": "2026-11-11T14:50:35.323Z",
     "claude": {
       "races": 38,
       "won": 7,
