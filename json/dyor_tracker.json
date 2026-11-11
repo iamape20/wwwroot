@@ -30983,10 +30983,16 @@
       "fav": {
         "horse": "FRESH PERSPECTIVE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-11T13:40:40.261Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|14:05",
@@ -31025,15 +31031,34 @@
       },
       "recordedAt": "2026-11-11T14:00:56.805Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|14:21",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "14:21",
+      "horse": "JUPITER DES BORDES",
+      "price": "9/4",
+      "runners": 4,
+      "liveHorse": "BROADWAY HONEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BROADWAY HONEY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T14:10:45.250Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1129,
+    "recorded": 1130,
     "pick": {
-      "settled": 1109,
+      "settled": 1110,
       "won": 212,
-      "pl": -177.76,
-      "roi": -16
+      "pl": -178.76,
+      "roi": -16.1
     },
     "favourite": {
       "settled": 1105,
@@ -31048,10 +31073,10 @@
       "roi": -9.9
     },
     "disagree": {
-      "settled": 825,
+      "settled": 826,
       "won": 102,
-      "pl": -149.68,
-      "roi": -18.1
+      "pl": -150.68,
+      "roi": -18.2
     }
   },
   "lastBackfill": 1794402041107
