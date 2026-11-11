@@ -30831,10 +30831,14 @@
       "fav": {
         "horse": "SERAPHIC",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-11-11T12:40:48.808Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "6/5"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|13:00",
@@ -30873,10 +30877,29 @@
       },
       "recordedAt": "2026-11-11T13:00:41.077Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|13:20",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "13:20",
+      "horse": "KEFIR D'OUDAIRIES",
+      "price": "2/9",
+      "runners": 3,
+      "liveHorse": "KEFIR D'OUDAIRIES",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "KEFIR D'OUDAIRIES",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T13:10:45.494Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1123,
+    "recorded": 1124,
     "pick": {
       "settled": 1105,
       "won": 212,
