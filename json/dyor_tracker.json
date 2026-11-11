@@ -31008,10 +31008,18 @@
       "fav": {
         "horse": "AGAFAY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-11T13:50:41.913Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Ayr|14:13",
@@ -31050,27 +31058,65 @@
       },
       "recordedAt": "2026-11-11T14:10:45.250Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Bangor-on-Dee|14:35",
+      "date": "2026-11-11",
+      "course": "Bangor-on-Dee",
+      "time": "14:35",
+      "horse": "SKY GROVE",
+      "price": "4/1",
+      "runners": 7,
+      "liveHorse": "ALCARATH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALCARATH",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T14:20:55.225Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-11|Dundalk|14:30",
+      "date": "2026-11-11",
+      "course": "Dundalk",
+      "time": "14:30",
+      "horse": "COINCIDENTAL GLORY",
+      "price": "7/1",
+      "runners": 13,
+      "liveHorse": "JORDAN BREEZE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JORDAN BREEZE",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T14:20:55.279Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1130,
+    "recorded": 1132,
     "pick": {
-      "settled": 1110,
+      "settled": 1111,
       "won": 212,
-      "pl": -178.76,
-      "roi": -16.1
+      "pl": -179.76,
+      "roi": -16.2
     },
     "favourite": {
-      "settled": 1105,
+      "settled": 1106,
       "won": 397,
-      "pl": 19.81,
-      "roi": 1.8
+      "pl": 18.81,
+      "roi": 1.7
     },
     "agree": {
-      "settled": 284,
+      "settled": 285,
       "won": 110,
-      "pl": -28.08,
-      "roi": -9.9
+      "pl": -29.08,
+      "roi": -10.2
     },
     "disagree": {
       "settled": 826,
