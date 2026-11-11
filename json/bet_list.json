@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T15:50:23.989Z",
+  "generatedAt": "2026-11-11T16:00:25.709Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Ayr",
-      "off": "15:43",
-      "horse": "DOUBLE ANNIE"
+      "course": "Warwick",
+      "off": "15:52",
+      "horse": "KATIES TURN"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-11",
+      "course": "Ayr",
+      "off": "15:43",
+      "horse": "DOUBLE ANNIE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-11",
       "course": "Dundalk",
@@ -174,21 +185,10 @@
       "bsp": 3.7,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-09",
-      "course": "Stratford",
-      "off": "12:40",
-      "horse": "EMID'IO PEPE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.66,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-11T15:50:23.889Z",
+    "updatedAt": "2026-11-11T16:00:25.594Z",
     "claude": {
       "races": 38,
       "won": 7,

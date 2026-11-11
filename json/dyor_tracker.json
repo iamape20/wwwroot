@@ -31347,10 +31347,16 @@
       "fav": {
         "horse": "DOUBLE ANNIE",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/11"
       },
       "recordedAt": "2026-11-11T15:30:30.117Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-11|Warwick|15:52",
@@ -31394,10 +31400,10 @@
   "stats": {
     "recorded": 1143,
     "pick": {
-      "settled": 1119,
+      "settled": 1120,
       "won": 212,
-      "pl": -187.76,
-      "roi": -16.8
+      "pl": -188.76,
+      "roi": -16.9
     },
     "favourite": {
       "settled": 1116,
@@ -31412,10 +31418,10 @@
       "roi": -10.2
     },
     "disagree": {
-      "settled": 834,
+      "settled": 835,
       "won": 102,
-      "pl": -158.68,
-      "roi": -19
+      "pl": -159.68,
+      "roi": -19.1
     }
   },
   "lastBackfill": 1794402041107
