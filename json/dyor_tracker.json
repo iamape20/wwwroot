@@ -30908,10 +30908,14 @@
       "fav": {
         "horse": "KEFIR D'OUDAIRIES",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/4"
       },
       "recordedAt": "2026-11-11T13:10:45.494Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/4"
     },
     {
       "id": "2026-11-11|Bangor-on-Dee|13:30",
@@ -30950,10 +30954,29 @@
       },
       "recordedAt": "2026-11-11T13:31:15.606Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-11|Warwick|13:50",
+      "date": "2026-11-11",
+      "course": "Warwick",
+      "time": "13:50",
+      "horse": "CRYSTAL DAYS",
+      "price": "10/3",
+      "runners": 4,
+      "liveHorse": "FRESH PERSPECTIVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FRESH PERSPECTIVE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-11T13:40:40.261Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1126,
+    "recorded": 1127,
     "pick": {
       "settled": 1107,
       "won": 212,
