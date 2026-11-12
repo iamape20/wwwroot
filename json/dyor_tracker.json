@@ -32059,25 +32059,33 @@
       "fav": {
         "horse": "SINBAD MY DAD",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T15:40:18.255Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1167,
     "pick": {
-      "settled": 1145,
+      "settled": 1146,
       "won": 219,
-      "pl": -183.12,
-      "roi": -16
+      "pl": -184.12,
+      "roi": -16.1
     },
     "favourite": {
-      "settled": 1139,
+      "settled": 1140,
       "won": 406,
-      "pl": 8.18,
-      "roi": 0.7
+      "pl": 7.18,
+      "roi": 0.6
     },
     "agree": {
       "settled": 295,
@@ -32086,10 +32094,10 @@
       "roi": -10
     },
     "disagree": {
-      "settled": 850,
+      "settled": 851,
       "won": 105,
-      "pl": -153.76,
-      "roi": -18.1
+      "pl": -154.76,
+      "roi": -18.2
     }
   },
   "lastBackfill": 1794499220277
