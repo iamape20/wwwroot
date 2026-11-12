@@ -31605,10 +31605,14 @@
       "fav": {
         "horse": "STONEYFORD LADY",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/4"
       },
       "recordedAt": "2026-11-12T12:10:34.745Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-11-12|Hereford|12:30",
@@ -31647,10 +31651,29 @@
       },
       "recordedAt": "2026-11-12T12:30:31.276Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Thurles|12:53",
+      "date": "2026-11-12",
+      "course": "Thurles",
+      "time": "12:53",
+      "horse": "GORTMORE LADY",
+      "price": "7/1",
+      "runners": 15,
+      "liveHorse": "ONEFORTHEDITCH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ONEFORTHEDITCH",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T12:40:30.578Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1151,
+    "recorded": 1152,
     "pick": {
       "settled": 1133,
       "won": 219,
