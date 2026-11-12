@@ -159,8 +159,19 @@ function renderBogTest(bg) {
 // Favourite 2/1-4/1 paper test (user 2026-11-11 "start it"): js/favPaperTest.js,
 // £1 on Our pick when it is the favourite at 2/1 to 4/1 in the last 15 minutes,
 // settled at Betfair SP after 2%; passes in profit after passAt bets and both halves.
-function renderFavTest(ft) {
-    const el = document.getElementById("favBlock");
+// The same panel shows the dropped-in-trip test (tripPaperTest.js, 2026-11-12).
+const FAV_TEXT = {
+    id: "favBlock", label: "Favourite 2/1 to 4/1 test", head: "Our pick, favourite at 2/1 to 4/1",
+    what: "£1 on our pick when it is the favourite at 2/1 to 4/1 in the last 15 minutes before the off",
+    none: "No bets yet. A race is recorded in its last 15 minutes when our pick is the favourite at 2/1 to 4/1.",
+};
+const TRIP_TEXT = {
+    id: "tripBlock", label: "Dropped in trip test", head: "Dropping back in trip, 10/1 or shorter",
+    what: "£1 on any horse whose Timeform comment says it is dropping back in trip, at 10/1 or shorter in the last 15 minutes before the off",
+    none: "No bets yet. A horse is recorded in its race's last 15 minutes when its comment says it drops back in trip and it is 10/1 or shorter.",
+};
+function renderFavTest(ft, t = FAV_TEXT) {
+    const el = document.getElementById(t.id);
     if (!el) return;
     if (!ft) { el.style.display = "none"; return; }
     const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
@@ -175,11 +186,11 @@ function renderFavTest(ft) {
     const recent = [...(ft.recent || [])].sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time));
     const rows = recent.length ? `<div class="rule-test-sub">Last 7 days</div><table class="rule-test-table"><tbody>${recent.map(b =>
         `<tr><td class="record-since">${day(b.date)} ${uk(b.date, b.time)}</td><td><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} &middot; ${escapeHtml(b.odds)}</span> ${res(b)}</td></tr>`).join("")}</tbody></table>`
-        : `<div class="record-row record-since">No bets yet. A race is recorded in its last 15 minutes when our pick is the favourite at 2/1 to 4/1.</div>`;
-    el.innerHTML = `<div class="results-strip-label">Favourite 2/1 to 4/1 test</div>
-        <div class="record-since">£1 on our pick when it is the favourite at 2/1 to 4/1 in the last 15 minutes before the off, settled at Betfair starting price after 2%. No money. On ${ft.backtest.races} past races this won ${ft.backtest.wonPct}% when the price said ${ft.backtest.expectedPct}% (${pc(ft.backtest.roiPct)}), but that may be luck. To pass it must be in profit after ${ft.passAt} bets and in both halves.</div>
+        : `<div class="record-row record-since">${t.none}</div>`;
+    el.innerHTML = `<div class="results-strip-label">${t.label}</div>
+        <div class="record-since">${t.what}, settled at Betfair starting price after 2%. No money. On ${ft.backtest.races} past races this won ${ft.backtest.wonPct}% when the price said ${ft.backtest.expectedPct}% (${pc(ft.backtest.roiPct)}), but that may be luck. To pass it must be in profit after ${ft.passAt} bets and in both halves.</div>
         <div class="rule-test-rules"><div class="rule-test-rule">
-            <div class="rule-test-head"><b>Our pick, favourite at 2/1 to 4/1</b>${verdict}</div>
+            <div class="rule-test-head"><b>${t.head}</b>${verdict}</div>
             <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
             <div class="record-since">${ft.bets} of ${ft.passAt} bets settled${ft.pending ? ` &middot; ${ft.pending} waiting for the starting price` : ""}</div>
             <div class="record-row">${ft.bets ? `${ft.won} won (${ft.wonPct}%, price said ${ft.expectedPct}%) &middot; ${pts(ft.pl)} &middot; ${pc(ft.roiPct)} a bet` : "No bets settled yet"}</div>
@@ -197,6 +208,7 @@ export async function loadTests() {
         renderExtraPlaces(d.extraPlacesTest);
         renderBogTest(d.bogTest);
         renderFavTest(d.favTest);
+        renderFavTest(d.tripTest, TRIP_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
