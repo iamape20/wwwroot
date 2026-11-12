@@ -31978,10 +31978,18 @@
       "fav": {
         "horse": "MAX MERIDIUS",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T15:00:23.746Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Hereford|15:25",
@@ -32001,21 +32009,40 @@
       },
       "recordedAt": "2026-11-12T15:10:26.221Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Market Rasen|15:36",
+      "date": "2026-11-12",
+      "course": "Market Rasen",
+      "time": "15:36",
+      "horse": "BALLYGEARY",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "TILEHURST",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TILEHURST",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T15:30:24.877Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1165,
+    "recorded": 1166,
     "pick": {
-      "settled": 1142,
+      "settled": 1143,
       "won": 219,
-      "pl": -180.12,
+      "pl": -181.12,
       "roi": -15.8
     },
     "favourite": {
-      "settled": 1136,
+      "settled": 1137,
       "won": 406,
-      "pl": 11.18,
-      "roi": 1
+      "pl": 10.18,
+      "roi": 0.9
     },
     "agree": {
       "settled": 294,
@@ -32024,10 +32051,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 848,
+      "settled": 849,
       "won": 105,
-      "pl": -151.76,
-      "roi": -17.9
+      "pl": -152.76,
+      "roi": -18
     }
   },
   "lastBackfill": 1794487847200
