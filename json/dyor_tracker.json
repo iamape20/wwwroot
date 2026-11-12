@@ -31878,10 +31878,14 @@
       "fav": {
         "horse": "TEOFIMO",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-12T14:20:30.189Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-11-12|Thurles|14:38",
@@ -31920,10 +31924,29 @@
       },
       "recordedAt": "2026-11-12T14:40:21.997Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Market Rasen|15:01",
+      "date": "2026-11-12",
+      "course": "Market Rasen",
+      "time": "15:01",
+      "horse": "SEASMOKE",
+      "price": "7/1",
+      "runners": 8,
+      "liveHorse": "FIREBALL FRENZY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FIREBALL FRENZY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T14:50:28.295Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1162,
+    "recorded": 1163,
     "pick": {
       "settled": 1139,
       "won": 219,
