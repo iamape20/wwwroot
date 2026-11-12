@@ -32032,10 +32032,18 @@
       "fav": {
         "horse": "TILEHURST",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "85/40",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T15:30:24.877Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Thurles|15:48",
@@ -32060,16 +32068,16 @@
   "stats": {
     "recorded": 1167,
     "pick": {
-      "settled": 1144,
+      "settled": 1145,
       "won": 219,
-      "pl": -182.12,
-      "roi": -15.9
+      "pl": -183.12,
+      "roi": -16
     },
     "favourite": {
-      "settled": 1138,
+      "settled": 1139,
       "won": 406,
-      "pl": 9.18,
-      "roi": 0.8
+      "pl": 8.18,
+      "roi": 0.7
     },
     "agree": {
       "settled": 295,
@@ -32078,11 +32086,11 @@
       "roi": -10
     },
     "disagree": {
-      "settled": 849,
+      "settled": 850,
       "won": 105,
-      "pl": -152.76,
-      "roi": -18
+      "pl": -153.76,
+      "roi": -18.1
     }
   },
-  "lastBackfill": 1794487847200
+  "lastBackfill": 1794499220277
 }
