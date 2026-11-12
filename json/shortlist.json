@@ -1,19 +1,8 @@
 {
   "date": "2026-11-12",
-  "builtAt": "2026-11-12T02:18:59.110Z",
+  "builtAt": "2026-11-12T09:00:08.082Z",
   "strong": [],
   "moderate": [
-    {
-      "horse": "BALLYDINE BOY",
-      "course": "Market Rasen",
-      "time": "12:06",
-      "rating": "79.7",
-      "margin": "18.3",
-      "marginValue": 18.300000000000004,
-      "confidence": 67,
-      "meetingId": "122528",
-      "raceIndex": 0
-    },
     {
       "horse": "GOVERNORS ROCK",
       "course": "Hereford",
@@ -24,8 +13,32 @@
       "confidence": 73,
       "meetingId": "122527",
       "raceIndex": 1
+    },
+    {
+      "horse": "GUNNERY SERGEANT",
+      "course": "Thurles",
+      "time": "14:03",
+      "rating": "79.2",
+      "margin": "19.4",
+      "marginValue": 19.400000000000006,
+      "confidence": 73,
+      "meetingId": "122504",
+      "raceIndex": 4
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "GUNNERY SERGEANT",
+      "course": "Thurles",
+      "time": "14:03",
+      "rating": "79.2",
+      "margin": "19.4",
+      "marginValue": 19.400000000000006,
+      "confidence": 73,
+      "meetingId": "122504",
+      "raceIndex": 4,
+      "tier": "Moderate"
+    }
+  ],
+  "pickMode": "single"
 }
