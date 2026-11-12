@@ -600,8 +600,46 @@
       ],
       "status": "skipped",
       "reason": "price 1.7 in the 1.5-2 no-bet band (overbet in the archive)"
+    },
+    {
+      "id": "2026-11-12|Thurles|15:15|TRIP|JAADIL",
+      "kind": "TRIP",
+      "mode": "LIVE",
+      "date": "2026-11-12",
+      "course": "Thurles",
+      "time": "15:15",
+      "horse": "JAADIL",
+      "decidedAt": "2026-11-12T15:10:25.006Z",
+      "minutesBeforeOff": 5,
+      "potBefore": 85.14,
+      "bankBefore": 79.95224,
+      "bankPeak": 109.65222,
+      "eventId": "34835290178202072",
+      "marketId": "34835290291504072",
+      "runnerId": "34835290293709072",
+      "price": 10.5,
+      "available": 57.89,
+      "depth": [
+        [
+          10.5,
+          57.89
+        ],
+        [
+          10,
+          84.82
+        ],
+        [
+          9.8,
+          109.56
+        ]
+      ],
+      "status": "placed",
+      "stake": 1.99,
+      "matched": 1.99,
+      "offerId": "34853935384500005",
+      "offerStatus": "matched"
     }
   ],
-  "updatedAt": "2026-11-12T15:00:22.988Z",
+  "updatedAt": "2026-11-12T15:10:25.055Z",
   "bankPeak": 109.65222
 }
