@@ -31805,10 +31805,14 @@
       "fav": {
         "horse": "NOBLE RECALL",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-12T13:40:30.984Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-12|Thurles|14:03",
@@ -31824,10 +31828,14 @@
       "fav": {
         "horse": "GUNNERY SERGEANT",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/6"
       },
       "recordedAt": "2026-11-12T13:50:31.694Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/6"
     },
     {
       "id": "2026-11-12|Hereford|14:15",
@@ -31847,10 +31855,29 @@
       },
       "recordedAt": "2026-11-12T14:00:37.037Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Market Rasen|14:26",
+      "date": "2026-11-12",
+      "course": "Market Rasen",
+      "time": "14:26",
+      "horse": "TEOFIMO",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "TEOFIMO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TEOFIMO",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T14:20:30.189Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1159,
+    "recorded": 1160,
     "pick": {
       "settled": 1138,
       "won": 219,
