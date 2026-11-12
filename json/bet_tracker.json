@@ -3754,8 +3754,9 @@
       "stake": 0,
       "result": "won",
       "isp": "8/11",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.84,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-11|Warwick|15:52",
@@ -3783,5 +3784,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1794424232537
+  "lastBackfill": 1794466844413
 }
