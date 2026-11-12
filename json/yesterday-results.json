@@ -1,20 +1,46 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "strong": [],
   "moderate": [
     {
-      "horse": "PORT GLEN ONE",
-      "course": "Lingfield",
-      "time": "13:50",
-      "rating": "87.9",
-      "margin": "27.4",
-      "marginValue": 27.400000000000006,
-      "confidence": 78,
-      "meetingId": "122484",
+      "horse": "ATTIN",
+      "course": "Ayr",
+      "time": "13:40",
+      "rating": "81.2",
+      "margin": "21.4",
+      "marginValue": 21.400000000000006,
+      "confidence": 58,
+      "meetingId": "122505",
       "raceIndex": 1,
-      "outcome": "lost"
+      "outcome": "placed"
+    },
+    {
+      "horse": "KATIES TURN",
+      "course": "Warwick",
+      "time": "15:52",
+      "rating": "66.3",
+      "margin": "10.9",
+      "marginValue": 10.899999999999999,
+      "confidence": 63,
+      "meetingId": "122506",
+      "raceIndex": 6,
+      "outcome": "placed"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "KATIES TURN",
+      "course": "Warwick",
+      "time": "15:52",
+      "rating": "66.3",
+      "margin": "10.9",
+      "marginValue": 10.899999999999999,
+      "confidence": 63,
+      "meetingId": "122506",
+      "raceIndex": 6,
+      "tier": "Moderate",
+      "outcome": "placed"
+    }
+  ],
+  "pickMode": "single"
 }
