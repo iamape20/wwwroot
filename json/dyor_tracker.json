@@ -31753,10 +31753,18 @@
       "fav": {
         "horse": "DOCTOR ELVIS",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T13:20:29.454Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/13",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Hereford|13:40",
@@ -31795,27 +31803,46 @@
       },
       "recordedAt": "2026-11-12T13:40:30.984Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Thurles|14:03",
+      "date": "2026-11-12",
+      "course": "Thurles",
+      "time": "14:03",
+      "horse": "GUNNERY SERGEANT",
+      "price": "5/6",
+      "runners": 11,
+      "liveHorse": "GUNNERY SERGEANT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GUNNERY SERGEANT",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T13:50:31.694Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1157,
+    "recorded": 1158,
     "pick": {
-      "settled": 1136,
+      "settled": 1137,
       "won": 219,
-      "pl": -174.12,
-      "roi": -15.3
+      "pl": -175.12,
+      "roi": -15.4
     },
     "favourite": {
-      "settled": 1133,
+      "settled": 1134,
       "won": 406,
-      "pl": 14.18,
-      "roi": 1.3
+      "pl": 13.18,
+      "roi": 1.2
     },
     "agree": {
-      "settled": 293,
+      "settled": 294,
       "won": 114,
-      "pl": -27.37,
-      "roi": -9.3
+      "pl": -28.37,
+      "roi": -9.6
     },
     "disagree": {
       "settled": 843,
