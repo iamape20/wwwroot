@@ -31851,10 +31851,18 @@
       "fav": {
         "horse": "ONEINTHEWELL",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T14:00:37.037Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Market Rasen|14:26",
@@ -31893,21 +31901,40 @@
       },
       "recordedAt": "2026-11-12T14:30:25.132Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Hereford|14:50",
+      "date": "2026-11-12",
+      "course": "Hereford",
+      "time": "14:50",
+      "horse": "LUCKY SEVENS",
+      "price": "28/1",
+      "runners": 9,
+      "liveHorse": "SERAPHIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SERAPHIC",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T14:40:21.997Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1161,
+    "recorded": 1162,
     "pick": {
-      "settled": 1138,
+      "settled": 1139,
       "won": 219,
-      "pl": -176.12,
-      "roi": -15.5
+      "pl": -177.12,
+      "roi": -15.6
     },
     "favourite": {
-      "settled": 1134,
+      "settled": 1135,
       "won": 406,
-      "pl": 13.18,
-      "roi": 1.2
+      "pl": 12.18,
+      "roi": 1.1
     },
     "agree": {
       "settled": 294,
@@ -31916,10 +31943,10 @@
       "roi": -9.6
     },
     "disagree": {
-      "settled": 844,
+      "settled": 845,
       "won": 105,
-      "pl": -147.76,
-      "roi": -17.5
+      "pl": -148.76,
+      "roi": -17.6
     }
   },
   "lastBackfill": 1794487847200
