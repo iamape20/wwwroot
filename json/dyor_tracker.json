@@ -32005,10 +32005,18 @@
       "fav": {
         "horse": "EAGLES PROMISE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T15:10:26.221Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Market Rasen|15:36",
@@ -32028,27 +32036,46 @@
       },
       "recordedAt": "2026-11-12T15:30:24.877Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Thurles|15:48",
+      "date": "2026-11-12",
+      "course": "Thurles",
+      "time": "15:48",
+      "horse": "CHESTERBAYLAD",
+      "price": "9/1",
+      "runners": 17,
+      "liveHorse": "SINBAD MY DAD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SINBAD MY DAD",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T15:40:18.255Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1166,
+    "recorded": 1167,
     "pick": {
-      "settled": 1143,
+      "settled": 1144,
       "won": 219,
-      "pl": -181.12,
-      "roi": -15.8
+      "pl": -182.12,
+      "roi": -15.9
     },
     "favourite": {
-      "settled": 1137,
+      "settled": 1138,
       "won": 406,
-      "pl": 10.18,
-      "roi": 0.9
+      "pl": 9.18,
+      "roi": 0.8
     },
     "agree": {
-      "settled": 294,
+      "settled": 295,
       "won": 114,
-      "pl": -28.37,
-      "roi": -9.6
+      "pl": -29.37,
+      "roi": -10
     },
     "disagree": {
       "settled": 849,
