@@ -31578,10 +31578,18 @@
       "fav": {
         "horse": "BALLYDINE BOY",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-12T12:00:41.145Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-12|Thurles|12:18",
@@ -31620,27 +31628,46 @@
       },
       "recordedAt": "2026-11-12T12:20:33.210Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-12|Market Rasen|12:41",
+      "date": "2026-11-12",
+      "course": "Market Rasen",
+      "time": "12:41",
+      "horse": "IVOR BEAR",
+      "price": "5/4",
+      "runners": 9,
+      "liveHorse": "IVOR BEAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "IVOR BEAR",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-12T12:30:31.276Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1150,
+    "recorded": 1151,
     "pick": {
-      "settled": 1132,
+      "settled": 1133,
       "won": 219,
-      "pl": -170.12,
-      "roi": -15
+      "pl": -171.12,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 1130,
+      "settled": 1131,
       "won": 406,
-      "pl": 17.18,
-      "roi": 1.5
+      "pl": 16.18,
+      "roi": 1.4
     },
     "agree": {
-      "settled": 291,
+      "settled": 292,
       "won": 114,
-      "pl": -25.37,
-      "roi": -8.7
+      "pl": -26.37,
+      "roi": -9
     },
     "disagree": {
       "settled": 841,
