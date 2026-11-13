@@ -642,8 +642,47 @@
       "pl": -1.99,
       "potAfter": 83.15,
       "settledAt": "2026-11-12T15:30:23.633Z"
+    },
+    {
+      "id": "2026-11-13|Southwell|12:20|TRIP|WALKINTHEPRESENT",
+      "kind": "TRIP",
+      "mode": "LIVE",
+      "date": "2026-11-13",
+      "course": "Southwell",
+      "time": "12:20",
+      "horse": "WALKINTHEPRESENT",
+      "decidedAt": "2026-11-13T12:10:39.157Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 83.15,
+      "bankBefore": 77.96225,
+      "bankPeak": 109.65222,
+      "claude": {
+        "action": "half",
+        "reason": "Ran no sort of race on his last run over fences, so half stake, though his hurdle form before that was solid."
+      },
+      "eventId": "34843879202300023",
+      "marketId": "34843879253305072",
+      "runnerId": "34843879254903072",
+      "price": 6.6,
+      "available": 5.1,
+      "depth": [
+        [
+          6.6,
+          5.1
+        ],
+        [
+          6.4,
+          141.23
+        ],
+        [
+          6.2,
+          183.59
+        ]
+      ],
+      "status": "skipped",
+      "reason": "stake £0.97 under the £1.00 minimum"
     }
   ],
-  "updatedAt": "2026-11-13T12:00:45.236Z",
+  "updatedAt": "2026-11-13T12:10:39.159Z",
   "bankPeak": 109.65222
 }
