@@ -32432,10 +32432,18 @@
       "fav": {
         "horse": "TRIPLE TRADE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T14:40:30.621Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Sedgefield|15:05",
@@ -32451,10 +32459,18 @@
       "fav": {
         "horse": "SOLDIER IN MAYO",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T14:50:32.597Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Southwell|15:15",
@@ -32474,21 +32490,40 @@
       },
       "recordedAt": "2026-11-13T15:00:30.954Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|15:30",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "15:30",
+      "horse": "LOCK STOCK",
+      "price": "7/2",
+      "runners": 8,
+      "liveHorse": "FEROCIMO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FEROCIMO",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T15:20:29.754Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1182,
+    "recorded": 1183,
     "pick": {
-      "settled": 1157,
+      "settled": 1159,
       "won": 225,
-      "pl": -177.56,
-      "roi": -15.3
+      "pl": -179.56,
+      "roi": -15.5
     },
     "favourite": {
-      "settled": 1156,
+      "settled": 1158,
       "won": 416,
-      "pl": 19.03,
-      "roi": 1.6
+      "pl": 17.03,
+      "roi": 1.5
     },
     "agree": {
       "settled": 301,
@@ -32497,10 +32532,10 @@
       "roi": -5.9
     },
     "disagree": {
-      "settled": 856,
+      "settled": 858,
       "won": 105,
-      "pl": -159.76,
-      "roi": -18.7
+      "pl": -161.76,
+      "roi": -18.9
     }
   },
   "lastBackfill": 1794574241079
