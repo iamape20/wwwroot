@@ -32640,19 +32640,44 @@
       "fav": {
         "horse": "FIREWALKER",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-13T17:50:25.828Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-13|Dundalk|18:30",
+      "date": "2026-11-13",
+      "course": "Dundalk",
+      "time": "18:30",
+      "horse": "CLOSEFIELD BEAU",
+      "price": "2/1",
+      "runners": 6,
+      "liveHorse": "SHENATA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHENATA",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T18:20:30.282Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1188,
+    "recorded": 1189,
     "pick": {
-      "settled": 1163,
+      "settled": 1164,
       "won": 225,
-      "pl": -183.56,
-      "roi": -15.8
+      "pl": -184.56,
+      "roi": -15.9
     },
     "favourite": {
       "settled": 1162,
@@ -32667,10 +32692,10 @@
       "roi": -6.5
     },
     "disagree": {
-      "settled": 860,
+      "settled": 861,
       "won": 105,
-      "pl": -163.76,
-      "roi": -19
+      "pl": -164.76,
+      "roi": -19.1
     }
   },
   "lastBackfill": 1794585631927
