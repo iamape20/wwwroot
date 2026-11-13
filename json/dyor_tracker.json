@@ -32486,10 +32486,16 @@
       "fav": {
         "horse": "NORTHWEST PASSAGE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-13T15:00:30.954Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Cheltenham|15:30",
@@ -32509,15 +32515,34 @@
       },
       "recordedAt": "2026-11-13T15:20:29.754Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Sedgefield|15:40",
+      "date": "2026-11-13",
+      "course": "Sedgefield",
+      "time": "15:40",
+      "horse": "STELLARMASTERPIECE",
+      "price": "1/1",
+      "runners": 4,
+      "liveHorse": "STELLARMASTERPIECE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "STELLARMASTERPIECE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T15:30:34.692Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1183,
+    "recorded": 1184,
     "pick": {
-      "settled": 1159,
+      "settled": 1160,
       "won": 225,
-      "pl": -179.56,
-      "roi": -15.5
+      "pl": -180.56,
+      "roi": -15.6
     },
     "favourite": {
       "settled": 1158,
@@ -32532,9 +32557,9 @@
       "roi": -5.9
     },
     "disagree": {
-      "settled": 858,
+      "settled": 859,
       "won": 105,
-      "pl": -161.76,
+      "pl": -162.76,
       "roi": -18.9
     }
   },
