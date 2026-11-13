@@ -32746,25 +32746,52 @@
       "fav": {
         "horse": "SERENITY BLUE",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T19:50:29.111Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-13|Dundalk|20:30",
+      "date": "2026-11-13",
+      "course": "Dundalk",
+      "time": "20:30",
+      "horse": "GLITTER AND GLORY",
+      "price": "11/4",
+      "runners": 10,
+      "liveHorse": "CHLOE'S BOY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHLOE'S BOY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T20:20:32.525Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1192,
+    "recorded": 1193,
     "pick": {
-      "settled": 1167,
+      "settled": 1168,
       "won": 225,
-      "pl": -187.56,
+      "pl": -188.56,
       "roi": -16.1
     },
     "favourite": {
-      "settled": 1165,
+      "settled": 1166,
       "won": 416,
-      "pl": 10.03,
-      "roi": 0.9
+      "pl": 9.03,
+      "roi": 0.8
     },
     "agree": {
       "settled": 304,
@@ -32773,10 +32800,10 @@
       "roi": -6.8
     },
     "disagree": {
-      "settled": 863,
+      "settled": 864,
       "won": 105,
-      "pl": -166.76,
-      "roi": -19.3
+      "pl": -167.76,
+      "roi": -19.4
     }
   },
   "lastBackfill": 1794596440419
