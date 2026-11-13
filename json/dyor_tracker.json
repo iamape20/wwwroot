@@ -32382,10 +32382,14 @@
       "fav": {
         "horse": "MILITARY CROSS",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-13T14:20:32.159Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-11-13|Southwell|14:40",
@@ -32424,10 +32428,29 @@
       },
       "recordedAt": "2026-11-13T14:40:30.621Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Sedgefield|15:05",
+      "date": "2026-11-13",
+      "course": "Sedgefield",
+      "time": "15:05",
+      "horse": "BRAVE MOVE",
+      "price": "5/1",
+      "runners": 5,
+      "liveHorse": "SOLDIER IN MAYO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SOLDIER IN MAYO",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T14:50:32.597Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1180,
+    "recorded": 1181,
     "pick": {
       "settled": 1156,
       "won": 225,
