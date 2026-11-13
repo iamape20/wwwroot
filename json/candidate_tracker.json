@@ -6320,7 +6320,11 @@
       "rating": 84.7,
       "runners": 5,
       "recordedAt": "2026-11-13T13:40:33.424Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Southwell|14:05",
@@ -6333,14 +6337,26 @@
       "runners": 7,
       "recordedAt": "2026-11-13T13:50:34.032Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|14:20",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "14:20",
+      "horse": "JONBON",
+      "price": "4/7",
+      "rating": 91.7,
+      "runners": 3,
+      "recordedAt": "2026-11-13T14:10:32.514Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 385,
-    "settled": 378,
+    "recorded": 386,
+    "settled": 379,
     "won": 186,
-    "pl": -13.92,
-    "roi": -3.7
+    "pl": -14.92,
+    "roi": -3.9
   },
   "lastBackfill": 1794574238907
 }
