@@ -32586,25 +32586,33 @@
       "fav": {
         "horse": "EBEN ZAABEEL",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T15:50:29.338Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 1186,
     "pick": {
-      "settled": 1161,
+      "settled": 1162,
       "won": 225,
-      "pl": -181.56,
-      "roi": -15.6
+      "pl": -182.56,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 1160,
+      "settled": 1161,
       "won": 416,
-      "pl": 15.03,
-      "roi": 1.3
+      "pl": 14.03,
+      "roi": 1.2
     },
     "agree": {
       "settled": 302,
@@ -32613,10 +32621,10 @@
       "roi": -6.2
     },
     "disagree": {
-      "settled": 859,
+      "settled": 860,
       "won": 105,
-      "pl": -162.76,
-      "roi": -18.9
+      "pl": -163.76,
+      "roi": -19
     }
   },
   "lastBackfill": 1794585631927
