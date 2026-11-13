@@ -32182,10 +32182,14 @@
       "fav": {
         "horse": "GATA BAN",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-13T12:40:41.606Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-11-13|Cheltenham|13:10",
@@ -32224,10 +32228,29 @@
       },
       "recordedAt": "2026-11-13T13:10:35.558Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Southwell|13:30",
+      "date": "2026-11-13",
+      "course": "Southwell",
+      "time": "13:30",
+      "horse": "GOLAN LOOP",
+      "price": "10/3",
+      "runners": 5,
+      "liveHorse": "ISLAND BRIDGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ISLAND BRIDGE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T13:20:38.463Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1172,
+    "recorded": 1173,
     "pick": {
       "settled": 1152,
       "won": 225,
