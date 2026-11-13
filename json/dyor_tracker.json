@@ -32665,25 +32665,52 @@
       "fav": {
         "horse": "SHENATA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T18:20:30.282Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-13|Dundalk|19:00",
+      "date": "2026-11-13",
+      "course": "Dundalk",
+      "time": "19:00",
+      "horse": "MAGNA GEE GEE",
+      "price": "6/1",
+      "runners": 14,
+      "liveHorse": "CHANT D'OR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHANT D'OR",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T18:50:34.830Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1189,
+    "recorded": 1190,
     "pick": {
-      "settled": 1164,
+      "settled": 1165,
       "won": 225,
-      "pl": -184.56,
+      "pl": -185.56,
       "roi": -15.9
     },
     "favourite": {
-      "settled": 1162,
+      "settled": 1163,
       "won": 416,
-      "pl": 13.03,
-      "roi": 1.1
+      "pl": 12.03,
+      "roi": 1
     },
     "agree": {
       "settled": 303,
@@ -32692,10 +32719,10 @@
       "roi": -6.5
     },
     "disagree": {
-      "settled": 861,
+      "settled": 862,
       "won": 105,
-      "pl": -164.76,
-      "roi": -19.1
+      "pl": -165.76,
+      "roi": -19.2
     }
   },
   "lastBackfill": 1794585631927
