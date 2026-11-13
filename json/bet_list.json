@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T19:40:29.550Z",
+  "generatedAt": "2026-11-13T19:50:26.180Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-13",
       "course": "Dundalk",
       "off": "19:30",
-      "horse": "SANGREAL"
-    }
-  ],
-  "recent": [
+      "horse": "SANGREAL",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-13",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-10",
-      "course": "Fairyhouse",
-      "off": "12:30",
-      "horse": "QUATRE SAISON",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-13T19:40:29.448Z",
+    "updatedAt": "2026-11-13T19:50:26.073Z",
     "claude": {
       "races": 38,
       "won": 7,

@@ -32719,31 +32719,58 @@
       "fav": {
         "horse": "SANGREAL",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T19:20:28.981Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-13|Dundalk|20:00",
+      "date": "2026-11-13",
+      "course": "Dundalk",
+      "time": "20:00",
+      "horse": "DIAMOND EXCHANGE",
+      "price": "9/1",
+      "runners": 10,
+      "liveHorse": "SERENITY BLUE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SERENITY BLUE",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T19:50:29.111Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1191,
+    "recorded": 1192,
     "pick": {
-      "settled": 1166,
+      "settled": 1167,
       "won": 225,
-      "pl": -186.56,
-      "roi": -16
+      "pl": -187.56,
+      "roi": -16.1
     },
     "favourite": {
-      "settled": 1164,
+      "settled": 1165,
       "won": 416,
-      "pl": 11.03,
+      "pl": 10.03,
       "roi": 0.9
     },
     "agree": {
-      "settled": 303,
+      "settled": 304,
       "won": 120,
-      "pl": -19.8,
-      "roi": -6.5
+      "pl": -20.8,
+      "roi": -6.8
     },
     "disagree": {
       "settled": 863,
