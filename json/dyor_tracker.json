@@ -32157,10 +32157,16 @@
       "fav": {
         "horse": "WALK IN THE VALLEY",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T12:30:38.526Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-11-13|Southwell|12:55",
@@ -32180,10 +32186,29 @@
       },
       "recordedAt": "2026-11-13T12:40:41.606Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|13:10",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "13:10",
+      "horse": "STEP AHEAD",
+      "price": "15/2",
+      "runners": 18,
+      "liveHorse": "GLANCING JACK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GLANCING JACK",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T13:00:41.963Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1170,
+    "recorded": 1171,
     "pick": {
       "settled": 1152,
       "won": 225,
@@ -32191,10 +32216,10 @@
       "roi": -15
     },
     "favourite": {
-      "settled": 1150,
+      "settled": 1151,
       "won": 416,
-      "pl": 25.03,
-      "roi": 2.2
+      "pl": 24.03,
+      "roi": 2.1
     },
     "agree": {
       "settled": 301,
