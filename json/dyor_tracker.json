@@ -32613,31 +32613,58 @@
       "fav": {
         "horse": "CRAYONS IN THE SKY",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T17:20:25.787Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-13|Dundalk|18:00",
+      "date": "2026-11-13",
+      "course": "Dundalk",
+      "time": "18:00",
+      "horse": "CITY HOUSE",
+      "price": "8/1",
+      "runners": 10,
+      "liveHorse": "FIREWALKER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FIREWALKER",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T17:50:25.828Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1187,
+    "recorded": 1188,
     "pick": {
-      "settled": 1162,
+      "settled": 1163,
       "won": 225,
-      "pl": -182.56,
-      "roi": -15.7
+      "pl": -183.56,
+      "roi": -15.8
     },
     "favourite": {
-      "settled": 1161,
+      "settled": 1162,
       "won": 416,
-      "pl": 14.03,
-      "roi": 1.2
+      "pl": 13.03,
+      "roi": 1.1
     },
     "agree": {
-      "settled": 302,
+      "settled": 303,
       "won": 120,
-      "pl": -18.8,
-      "roi": -6.2
+      "pl": -19.8,
+      "roi": -6.5
     },
     "disagree": {
       "settled": 860,
