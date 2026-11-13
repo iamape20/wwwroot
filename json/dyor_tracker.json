@@ -32205,10 +32205,18 @@
       "fav": {
         "horse": "GLANCING JACK",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T13:00:41.963Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Sedgefield|13:20",
@@ -32247,21 +32255,40 @@
       },
       "recordedAt": "2026-11-13T13:20:38.463Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|13:45",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "13:45",
+      "horse": "KINGSTON NARCISSUS",
+      "price": "7/2",
+      "runners": 5,
+      "liveHorse": "INTOSOMETHINGGOOD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "INTOSOMETHINGGOOD",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T13:30:35.840Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1173,
+    "recorded": 1174,
     "pick": {
-      "settled": 1152,
+      "settled": 1153,
       "won": 225,
-      "pl": -172.56,
-      "roi": -15
+      "pl": -173.56,
+      "roi": -15.1
     },
     "favourite": {
-      "settled": 1151,
+      "settled": 1152,
       "won": 416,
-      "pl": 24.03,
-      "roi": 2.1
+      "pl": 23.03,
+      "roi": 2
     },
     "agree": {
       "settled": 301,
@@ -32270,10 +32297,10 @@
       "roi": -5.9
     },
     "disagree": {
-      "settled": 851,
+      "settled": 852,
       "won": 105,
-      "pl": -154.76,
-      "roi": -18.2
+      "pl": -155.76,
+      "roi": -18.3
     }
   },
   "lastBackfill": 1794574241079
