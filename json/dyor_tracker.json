@@ -32334,10 +32334,16 @@
       "fav": {
         "horse": "HELIOS FORLONGE",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "8/13"
       },
       "recordedAt": "2026-11-13T13:50:34.221Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "150/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Cheltenham|14:20",
@@ -32357,15 +32363,34 @@
       },
       "recordedAt": "2026-11-13T14:10:32.685Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Sedgefield|14:30",
+      "date": "2026-11-13",
+      "course": "Sedgefield",
+      "time": "14:30",
+      "horse": "MILITARY CROSS",
+      "price": "8/11",
+      "runners": 7,
+      "liveHorse": "MILITARY CROSS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MILITARY CROSS",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T14:20:32.159Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1177,
+    "recorded": 1178,
     "pick": {
-      "settled": 1155,
+      "settled": 1156,
       "won": 225,
-      "pl": -175.56,
-      "roi": -15.2
+      "pl": -176.56,
+      "roi": -15.3
     },
     "favourite": {
       "settled": 1155,
@@ -32380,10 +32405,10 @@
       "roi": -5.9
     },
     "disagree": {
-      "settled": 854,
+      "settled": 855,
       "won": 105,
-      "pl": -157.76,
-      "roi": -18.5
+      "pl": -158.76,
+      "roi": -18.6
     }
   },
   "lastBackfill": 1794574241079

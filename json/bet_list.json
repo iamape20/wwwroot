@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T14:10:30.298Z",
+  "generatedAt": "2026-11-13T14:20:29.886Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Cheltenham",
+      "off": "14:20",
+      "horse": "JONBON"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-12",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-13T14:10:30.197Z",
+    "updatedAt": "2026-11-13T14:20:29.803Z",
     "claude": {
       "races": 38,
       "won": 7,
