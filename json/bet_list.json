@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T14:30:28.740Z",
+  "generatedAt": "2026-11-13T14:40:28.380Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Cheltenham",
-      "off": "14:20",
-      "horse": "JONBON"
+      "course": "Southwell",
+      "off": "14:40",
+      "horse": "CLONDAW PARK"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "off": "14:20",
+      "horse": "JONBON",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-12",
       "course": "Thurles",
@@ -174,21 +185,10 @@
       "bsp": 1.99,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-09",
-      "course": "Punchestown",
-      "off": "15:13",
-      "horse": "BRICKFIELD BELLE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-13T14:30:28.645Z",
+    "updatedAt": "2026-11-13T14:40:28.284Z",
     "claude": {
       "races": 38,
       "won": 7,

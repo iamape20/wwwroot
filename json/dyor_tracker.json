@@ -32359,10 +32359,14 @@
       "fav": {
         "horse": "JONBON",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/2"
       },
       "recordedAt": "2026-11-13T14:10:32.685Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/2"
     },
     {
       "id": "2026-11-13|Sedgefield|14:30",
@@ -32401,10 +32405,29 @@
       },
       "recordedAt": "2026-11-13T14:30:31.098Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|14:55",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "14:55",
+      "horse": "GLENGOULY",
+      "price": "11/2",
+      "runners": 8,
+      "liveHorse": "TRIPLE TRADE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRIPLE TRADE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T14:40:30.621Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1179,
+    "recorded": 1180,
     "pick": {
       "settled": 1156,
       "won": 225,
