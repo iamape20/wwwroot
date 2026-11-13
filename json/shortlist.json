@@ -1,19 +1,8 @@
 {
   "date": "2026-11-13",
-  "builtAt": "2026-11-13T02:19:32.654Z",
+  "builtAt": "2026-11-13T09:00:06.306Z",
   "strong": [],
   "moderate": [
-    {
-      "horse": "IN THE TRENCHES",
-      "course": "Sedgefield",
-      "time": "13:20",
-      "rating": "82.2",
-      "margin": "12.9",
-      "marginValue": 12.900000000000006,
-      "confidence": 86,
-      "meetingId": "122541",
-      "raceIndex": 1
-    },
     {
       "horse": "JONBON",
       "course": "Cheltenham",
@@ -24,6 +13,17 @@
       "confidence": 90,
       "meetingId": "122543",
       "raceIndex": 2
+    },
+    {
+      "horse": "MILITARY CROSS",
+      "course": "Sedgefield",
+      "time": "14:30",
+      "rating": "83.7",
+      "margin": "17.9",
+      "marginValue": 17.900000000000006,
+      "confidence": 78,
+      "meetingId": "122541",
+      "raceIndex": 3
     },
     {
       "horse": "SANGREAL",
@@ -37,6 +37,19 @@
       "raceIndex": 4
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "MILITARY CROSS",
+      "course": "Sedgefield",
+      "time": "14:30",
+      "rating": "83.7",
+      "margin": "17.9",
+      "marginValue": 17.900000000000006,
+      "confidence": 78,
+      "meetingId": "122541",
+      "raceIndex": 3,
+      "tier": "Moderate"
+    }
+  ],
+  "pickMode": "single"
 }
