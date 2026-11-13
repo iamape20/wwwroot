@@ -32405,10 +32405,18 @@
       "fav": {
         "horse": "CLONDAW PARK",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T14:30:31.098Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Cheltenham|14:55",
@@ -32447,21 +32455,40 @@
       },
       "recordedAt": "2026-11-13T14:50:32.597Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Southwell|15:15",
+      "date": "2026-11-13",
+      "course": "Southwell",
+      "time": "15:15",
+      "horse": "CHARACTER TESTING",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "NORTHWEST PASSAGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NORTHWEST PASSAGE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T15:00:30.954Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1181,
+    "recorded": 1182,
     "pick": {
-      "settled": 1156,
+      "settled": 1157,
       "won": 225,
-      "pl": -176.56,
+      "pl": -177.56,
       "roi": -15.3
     },
     "favourite": {
-      "settled": 1155,
+      "settled": 1156,
       "won": 416,
-      "pl": 20.03,
-      "roi": 1.7
+      "pl": 19.03,
+      "roi": 1.6
     },
     "agree": {
       "settled": 301,
@@ -32470,10 +32497,10 @@
       "roi": -5.9
     },
     "disagree": {
-      "settled": 855,
+      "settled": 856,
       "won": 105,
-      "pl": -158.76,
-      "roi": -18.6
+      "pl": -159.76,
+      "roi": -18.7
     }
   },
   "lastBackfill": 1794574241079
