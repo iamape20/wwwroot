@@ -32511,10 +32511,16 @@
       "fav": {
         "horse": "FEROCIMO",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T15:20:29.754Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     },
     {
       "id": "2026-11-13|Sedgefield|15:40",
@@ -32553,10 +32559,29 @@
       },
       "recordedAt": "2026-11-13T15:40:28.065Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-13|Cheltenham|16:00",
+      "date": "2026-11-13",
+      "course": "Cheltenham",
+      "time": "16:00",
+      "horse": "CROOKED PATH",
+      "price": "9/2",
+      "runners": 16,
+      "liveHorse": "EBEN ZAABEEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EBEN ZAABEEL",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-13T15:50:29.338Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1185,
+    "recorded": 1186,
     "pick": {
       "settled": 1160,
       "won": 225,
@@ -32564,10 +32589,10 @@
       "roi": -15.6
     },
     "favourite": {
-      "settled": 1158,
+      "settled": 1159,
       "won": 416,
-      "pl": 17.03,
-      "roi": 1.5
+      "pl": 16.03,
+      "roi": 1.4
     },
     "agree": {
       "settled": 301,
