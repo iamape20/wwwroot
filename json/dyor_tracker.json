@@ -32536,10 +32536,18 @@
       "fav": {
         "horse": "STELLARMASTERPIECE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-13T15:30:34.692Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-13|Southwell|15:50",
@@ -32555,10 +32563,14 @@
       "fav": {
         "horse": "CRAFTY GAEL",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/2"
       },
       "recordedAt": "2026-11-13T15:40:28.065Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-13|Cheltenham|16:00",
@@ -32583,22 +32595,22 @@
   "stats": {
     "recorded": 1186,
     "pick": {
-      "settled": 1160,
+      "settled": 1161,
       "won": 225,
-      "pl": -180.56,
+      "pl": -181.56,
       "roi": -15.6
     },
     "favourite": {
-      "settled": 1159,
+      "settled": 1160,
       "won": 416,
-      "pl": 16.03,
-      "roi": 1.4
+      "pl": 15.03,
+      "roi": 1.3
     },
     "agree": {
-      "settled": 301,
+      "settled": 302,
       "won": 120,
-      "pl": -17.8,
-      "roi": -5.9
+      "pl": -18.8,
+      "roi": -6.2
     },
     "disagree": {
       "settled": 859,
