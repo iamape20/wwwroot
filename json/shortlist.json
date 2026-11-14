@@ -1,55 +1,54 @@
 {
-  "date": "2026-11-13",
-  "builtAt": "2026-11-13T09:00:06.306Z",
-  "strong": [],
+  "date": "2026-11-14",
+  "builtAt": "2026-11-14T02:26:15.495Z",
+  "strong": [
+    {
+      "horse": "OLD PARK STAR",
+      "course": "Cheltenham",
+      "time": "13:45",
+      "rating": "92.2",
+      "margin": "25.2",
+      "marginValue": 25.200000000000003,
+      "confidence": 87,
+      "meetingId": "122330",
+      "raceIndex": 2
+    }
+  ],
   "moderate": [
     {
-      "horse": "JONBON",
-      "course": "Cheltenham",
-      "time": "14:20",
-      "rating": "91.7",
-      "margin": "20.7",
-      "marginValue": 20.700000000000003,
+      "horse": "CHARISMATIC KID",
+      "course": "Navan",
+      "time": "11:52",
+      "rating": "90.5",
+      "margin": "24.3",
+      "marginValue": 24.299999999999997,
+      "confidence": 71,
+      "meetingId": "122589",
+      "raceIndex": 0
+    },
+    {
+      "horse": "LORIKO",
+      "course": "Wetherby",
+      "time": "12:13",
+      "rating": "85.0",
+      "margin": "23.9",
+      "marginValue": 23.9,
       "confidence": 90,
-      "meetingId": "122543",
-      "raceIndex": 2
+      "meetingId": "122567",
+      "raceIndex": 0
     },
     {
-      "horse": "MILITARY CROSS",
-      "course": "Sedgefield",
-      "time": "14:30",
-      "rating": "83.7",
-      "margin": "17.9",
-      "marginValue": 17.900000000000006,
+      "horse": "VELVET OUTLAW",
+      "course": "Wetherby",
+      "time": "13:55",
+      "rating": "75.4",
+      "margin": "19.6",
+      "marginValue": 19.60000000000001,
       "confidence": 78,
-      "meetingId": "122541",
+      "meetingId": "122567",
       "raceIndex": 3
-    },
-    {
-      "horse": "SANGREAL",
-      "course": "Dundalk",
-      "time": "19:30",
-      "rating": "82.4",
-      "margin": "21.3",
-      "marginValue": 21.300000000000004,
-      "confidence": 70,
-      "meetingId": "122566",
-      "raceIndex": 4
     }
   ],
-  "dailyDouble": [
-    {
-      "horse": "MILITARY CROSS",
-      "course": "Sedgefield",
-      "time": "14:30",
-      "rating": "83.7",
-      "margin": "17.9",
-      "marginValue": 17.900000000000006,
-      "confidence": 78,
-      "meetingId": "122541",
-      "raceIndex": 3,
-      "tier": "Moderate"
-    }
-  ],
-  "pickMode": "single"
+  "dailyDouble": [],
+  "pickMode": "none"
 }
