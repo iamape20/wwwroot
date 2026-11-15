@@ -32934,10 +32934,18 @@
       "fav": {
         "horse": "THE ENABLER",
         "price": "9/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-15T14:50:26.220Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-15|Cheltenham|15:10",
@@ -32976,20 +32984,39 @@
       },
       "recordedAt": "2026-11-15T15:10:18.595Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-15|Navan|15:35",
+      "date": "2026-11-15",
+      "course": "Navan",
+      "time": "15:35",
+      "horse": "SARAHS LAWN",
+      "price": "1/1",
+      "runners": 8,
+      "liveHorse": "SARAHS LAWN",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SARAHS LAWN",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-15T15:20:19.533Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1199,
+    "recorded": 1200,
     "pick": {
-      "settled": 1181,
+      "settled": 1182,
       "won": 235,
-      "pl": -166.1,
+      "pl": -167.1,
       "roi": -14.1
     },
     "favourite": {
-      "settled": 1178,
+      "settled": 1179,
       "won": 425,
-      "pl": 24.11,
+      "pl": 23.11,
       "roi": 2
     },
     "agree": {
@@ -32999,9 +33026,9 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 871,
+      "settled": 872,
       "won": 110,
-      "pl": -153.75,
+      "pl": -154.75,
       "roi": -17.7
     }
   },
