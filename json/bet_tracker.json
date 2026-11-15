@@ -3880,10 +3880,10 @@
       "runners": 6,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
+      "result": "void",
       "isp": null,
       "bsp": null,
-      "pl": null
+      "pl": 0
     },
     {
       "id": "2026-11-14|Wetherby|12:13",
@@ -3895,10 +3895,11 @@
       "runners": 3,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "4/9",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-14|Wetherby|13:55",
@@ -3910,10 +3911,11 @@
       "runners": 4,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
-      "bsp": null,
-      "pl": null
+      "result": "won",
+      "isp": "4/9",
+      "bsp": 1.56673687,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-14|Windsor|12:20",
@@ -3925,10 +3927,10 @@
       "runners": 16,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
+      "result": "void",
       "isp": null,
       "bsp": null,
-      "pl": null
+      "pl": 0
     },
     {
       "id": "2026-11-14|Navan|11:52",
@@ -3940,10 +3942,11 @@
       "runners": 22,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "4/7",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-14|Navan|15:18",
@@ -3955,10 +3958,10 @@
       "runners": 11,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
+      "result": "void",
       "isp": null,
       "bsp": null,
-      "pl": null
+      "pl": 0
     },
     {
       "id": "2026-11-14|Navan|15:53",
@@ -3970,10 +3973,10 @@
       "runners": 10,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
+      "result": "void",
       "isp": null,
       "bsp": null,
-      "pl": null
+      "pl": 0
     }
   ],
   "verdict": {
