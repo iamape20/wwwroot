@@ -32874,19 +32874,44 @@
       "fav": {
         "horse": "FRUIT DE MER",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-15T14:20:35.081Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-15|Fontwell|14:50",
+      "date": "2026-11-15",
+      "course": "Fontwell",
+      "time": "14:50",
+      "horse": "VALIRANN GOLD",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "MAJESTIC MOMENT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MAJESTIC MOMENT",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-15T14:40:28.778Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1195,
+    "recorded": 1196,
     "pick": {
-      "settled": 1178,
+      "settled": 1179,
       "won": 235,
-      "pl": -163.1,
-      "roi": -13.8
+      "pl": -164.1,
+      "roi": -13.9
     },
     "favourite": {
       "settled": 1176,
@@ -32901,10 +32926,10 @@
       "roi": -3.7
     },
     "disagree": {
-      "settled": 869,
+      "settled": 870,
       "won": 110,
-      "pl": -151.75,
-      "roi": -17.5
+      "pl": -152.75,
+      "roi": -17.6
     }
   },
   "lastBackfill": 1794751864851

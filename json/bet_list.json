@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T14:30:28.358Z",
+  "generatedAt": "2026-11-15T14:40:26.857Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -11,10 +11,54 @@
     "PAPER phase: do not stake until 120 bets have settled and the verdict says LIVE.",
     "LIVE phase stops automatically at -20 units."
   ],
-  "morningMissing": true,
+  "morningMissing": false,
   "today": [],
   "awaitingResult": [],
   "recent": [
+    {
+      "date": "2026-11-15",
+      "course": "Fontwell",
+      "off": "13:43",
+      "horse": "BASS HUNTER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-11-15",
+      "course": "Navan",
+      "off": "13:15",
+      "horse": "WITH NOLIMIT",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-11-15",
+      "course": "Navan",
+      "off": "12:10",
+      "horse": "LA VALSERINE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-11-15",
+      "course": "Cheltenham",
+      "off": "12:50",
+      "horse": "WOLF RAYET",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-14",
       "course": "Navan",
@@ -135,54 +179,10 @@
       "bsp": 1.97,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-12",
-      "course": "Hereford",
-      "off": "13:05",
-      "horse": "GOVERNORS ROCK",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.53085,
-      "pl": 0,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-12",
-      "course": "Hereford",
-      "off": "12:30",
-      "horse": "KOALA ROSE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.5885008,
-      "pl": 0,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-11",
-      "course": "Warwick",
-      "off": "15:52",
-      "horse": "KATIES TURN",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-11",
-      "course": "Ayr",
-      "off": "15:43",
-      "horse": "DOUBLE ANNIE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.84,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-15T14:30:28.244Z",
+    "updatedAt": "2026-11-15T14:40:26.754Z",
     "claude": {
       "races": 38,
       "won": 7,
