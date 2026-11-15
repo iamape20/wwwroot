@@ -32907,10 +32907,18 @@
       "fav": {
         "horse": "MAJESTIC MOMENT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-15T14:40:28.778Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-15|Navan|15:00",
@@ -32949,21 +32957,40 @@
       },
       "recordedAt": "2026-11-15T15:00:18.397Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-15|Fontwell|15:25",
+      "date": "2026-11-15",
+      "course": "Fontwell",
+      "time": "15:25",
+      "horse": "COUNTY CHAMPS",
+      "price": "9/4",
+      "runners": 8,
+      "liveHorse": "ASTA LA VISTA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ASTA LA VISTA",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-15T15:10:18.595Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1198,
+    "recorded": 1199,
     "pick": {
-      "settled": 1180,
+      "settled": 1181,
       "won": 235,
-      "pl": -165.1,
-      "roi": -14
+      "pl": -166.1,
+      "roi": -14.1
     },
     "favourite": {
-      "settled": 1177,
+      "settled": 1178,
       "won": 425,
-      "pl": 25.11,
-      "roi": 2.1
+      "pl": 24.11,
+      "roi": 2
     },
     "agree": {
       "settled": 310,
@@ -32972,10 +32999,10 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 870,
+      "settled": 871,
       "won": 110,
-      "pl": -152.75,
-      "roi": -17.6
+      "pl": -153.75,
+      "roi": -17.7
     }
   },
   "lastBackfill": 1794751864851
