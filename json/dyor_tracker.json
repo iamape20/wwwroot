@@ -32988,10 +32988,18 @@
       "fav": {
         "horse": "ASTA LA VISTA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-15T15:10:18.595Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-15|Navan|15:35",
@@ -33007,10 +33015,18 @@
       "fav": {
         "horse": "SARAHS LAWN",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-15T15:20:19.533Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-15|Cheltenham|15:45",
@@ -33035,28 +33051,28 @@
   "stats": {
     "recorded": 1201,
     "pick": {
-      "settled": 1183,
+      "settled": 1185,
       "won": 235,
-      "pl": -168.1,
-      "roi": -14.2
+      "pl": -170.1,
+      "roi": -14.4
     },
     "favourite": {
-      "settled": 1180,
+      "settled": 1182,
       "won": 425,
-      "pl": 22.11,
-      "roi": 1.9
+      "pl": 20.11,
+      "roi": 1.7
     },
     "agree": {
-      "settled": 310,
+      "settled": 311,
       "won": 125,
-      "pl": -12.34,
-      "roi": -4
+      "pl": -13.34,
+      "roi": -4.3
     },
     "disagree": {
-      "settled": 873,
+      "settled": 874,
       "won": 110,
-      "pl": -155.75,
-      "roi": -17.8
+      "pl": -156.75,
+      "roi": -17.9
     }
   },
   "lastBackfill": 1794751864851
