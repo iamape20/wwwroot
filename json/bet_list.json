@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T22:00:28.726Z",
+  "generatedAt": "2026-11-15T14:10:47.443Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,43 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Cheltenham",
+      "off": "13:45",
+      "horse": "OLD PARK STAR"
+    },
+    {
+      "course": "Wetherby",
+      "off": "12:13",
+      "horse": "LORIKO"
+    },
+    {
+      "course": "Wetherby",
+      "off": "13:55",
+      "horse": "VELVET OUTLAW"
+    },
+    {
+      "course": "Windsor",
+      "off": "12:20",
+      "horse": "TI'MAMZEL"
+    },
+    {
+      "course": "Navan",
+      "off": "11:52",
+      "horse": "CHARISMATIC KID"
+    },
+    {
+      "course": "Navan",
+      "off": "15:18",
+      "horse": "MIGHTY PARK"
+    },
+    {
+      "course": "Navan",
+      "off": "15:53",
+      "horse": "UNCLE PAD"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-13",
@@ -44,9 +80,9 @@
       "horse": "JONBON",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.53219903,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-12",
@@ -182,7 +218,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-13T22:00:28.563Z",
+    "updatedAt": "2026-11-15T14:10:47.308Z",
     "claude": {
       "races": 38,
       "won": 7,
