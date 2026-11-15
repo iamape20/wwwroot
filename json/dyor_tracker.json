@@ -32961,10 +32961,18 @@
       "fav": {
         "horse": "HARRY LOWES",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-15T15:00:18.397Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "22/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-15|Fontwell|15:25",
@@ -33027,16 +33035,16 @@
   "stats": {
     "recorded": 1201,
     "pick": {
-      "settled": 1182,
+      "settled": 1183,
       "won": 235,
-      "pl": -167.1,
-      "roi": -14.1
+      "pl": -168.1,
+      "roi": -14.2
     },
     "favourite": {
-      "settled": 1179,
+      "settled": 1180,
       "won": 425,
-      "pl": 23.11,
-      "roi": 2
+      "pl": 22.11,
+      "roi": 1.9
     },
     "agree": {
       "settled": 310,
@@ -33045,10 +33053,10 @@
       "roi": -4
     },
     "disagree": {
-      "settled": 872,
+      "settled": 873,
       "won": 110,
-      "pl": -154.75,
-      "roi": -17.7
+      "pl": -155.75,
+      "roi": -17.8
     }
   },
   "lastBackfill": 1794751864851
