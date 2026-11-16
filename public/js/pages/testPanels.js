@@ -170,6 +170,12 @@ const TRIP_TEXT = {
     what: "£1 on any horse whose Timeform comment says it is dropping back in trip, at 10/1 or shorter in the last 15 minutes before the off",
     none: "No bets yet. A horse is recorded in its race's last 15 minutes when its comment says it drops back in trip and it is 10/1 or shorter.",
 };
+// Up-in-trip paper test (tripUpPaperTest.js, 2026-11-16), same panel shape.
+const TRIP_UP_TEXT = {
+    id: "tripUpBlock", label: "Up in trip test", head: "Running 1 furlong or more further than last time, 10/1 or shorter",
+    what: "£1 on any horse running at least 1 furlong further than its last race, at 10/1 or shorter in the last 15 minutes before the off",
+    none: "No bets yet. A horse is recorded in its race's last 15 minutes when today's trip is 1 furlong or more longer than its last run and it is 10/1 or shorter.",
+};
 function renderFavTest(ft, t = FAV_TEXT) {
     const el = document.getElementById(t.id);
     if (!el) return;
@@ -222,7 +228,7 @@ function renderLayTest(lt) {
         `<tr><td class="record-since">${day(b.date)} ${uk(b.date, b.time)}</td><td><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} &middot; ${escapeHtml(b.odds)}</span> ${res(b)}</td></tr>`).join("")}</tbody></table>`
         : `<div class="record-row record-since">No lays yet. A horse is recorded in its race's last 15 minutes when it won its last two runs and is 7/1 or shorter.</div>`;
     el.innerHTML = `<div class="results-strip-label">Lay test: won last two</div>
-        <div class="record-since">A £1 lay (betting it will NOT win) of any horse that won its last two runs, at 7/1 or shorter in the last 15 minutes, settled at Betfair starting price after 2% (no lay above 8.0). No money. Returns are on the money at risk. On past races it made ${pc(bt.returnPct)} (${bt.lays} lays) and ${pc(bt.holdout.returnPct)} on months it was never tested on (${bt.holdout.lays} lays), which may still be luck. To pass it must be in profit after ${lt.passAt} lays and in both halves.</div>
+        <div class="record-since">A £1 lay (betting it will NOT win) of any horse that won its last two runs, at 7/1 or shorter in the last 15 minutes, settled at Betfair starting price after 2% (no lay above 8.0). No money. Returns are on the money at risk. On past races it made ${pc(bt.returnPct)} (${bt.lays} lays) and ${pc(bt.holdout.returnPct)} on months it was never tested on (${bt.holdout.lays} lays), too close to zero to call an edge. To pass it must be in profit after ${lt.passAt} lays and in both halves.</div>
         <div class="rule-test-rules"><div class="rule-test-rule">
             <div class="rule-test-head"><b>Lay horses that won their last two</b>${verdict}</div>
             <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
@@ -244,6 +250,7 @@ export async function loadTests() {
         renderFavTest(d.favTest);
         renderFavTest(d.tripTest, TRIP_TEXT);
         renderLayTest(d.layTest);
+        renderFavTest(d.tripUpTest, TRIP_UP_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
