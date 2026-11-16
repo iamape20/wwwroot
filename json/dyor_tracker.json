@@ -43,30 +43,57 @@
       "fav": {
         "horse": "MARKET HOUSE",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T13:00:36.578Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-16|Plumpton|13:45",
+      "date": "2026-11-16",
+      "course": "Plumpton",
+      "time": "13:45",
+      "horse": "CREST OF STARS",
+      "price": "4/1",
+      "runners": 6,
+      "liveHorse": "IONIAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IONIAN",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T13:30:32.946Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 2,
+    "recorded": 3,
     "pick": {
-      "settled": 1,
+      "settled": 2,
       "won": 0,
-      "pl": -1,
+      "pl": -2,
       "roi": -100
     },
     "favourite": {
-      "settled": 1,
+      "settled": 2,
       "won": 0,
-      "pl": -1,
+      "pl": -2,
       "roi": -100
     },
     "agree": {
-      "settled": 1,
+      "settled": 2,
       "won": 0,
-      "pl": -1,
+      "pl": -2,
       "roi": -100
     },
     "disagree": {
