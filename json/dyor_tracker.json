@@ -16,31 +16,58 @@
       "fav": {
         "horse": "GINOLO",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T12:30:31.994Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-16|Plumpton|13:15",
+      "date": "2026-11-16",
+      "course": "Plumpton",
+      "time": "13:15",
+      "horse": "MARKET HOUSE",
+      "price": "10/3",
+      "runners": 12,
+      "liveHorse": "MARKET HOUSE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MARKET HOUSE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T13:00:36.578Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 1,
+    "recorded": 2,
     "pick": {
-      "settled": 0,
+      "settled": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "favourite": {
-      "settled": 0,
+      "settled": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "agree": {
-      "settled": 0,
+      "settled": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     },
     "disagree": {
       "settled": 0,
