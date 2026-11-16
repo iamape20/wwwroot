@@ -357,24 +357,51 @@
       "fav": {
         "horse": "R P MCMURPHY",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T19:20:24.004Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-16|Wolverhampton|20:00",
+      "date": "2026-11-16",
+      "course": "Wolverhampton",
+      "time": "20:00",
+      "horse": "MR NUGGET",
+      "price": "9/1",
+      "runners": 12,
+      "liveHorse": "TED LE SAUX",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TED LE SAUX",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T19:50:23.051Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 14,
+    "recorded": 15,
     "pick": {
-      "settled": 10,
-      "won": 0,
-      "pl": -10,
-      "roi": -100
-    },
-    "favourite": {
       "settled": 11,
       "won": 0,
       "pl": -11,
+      "roi": -100
+    },
+    "favourite": {
+      "settled": 12,
+      "won": 0,
+      "pl": -12,
       "roi": -100
     },
     "agree": {
@@ -384,9 +411,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 5,
+      "settled": 6,
       "won": 0,
-      "pl": -5,
+      "pl": -6,
       "roi": -100
     }
   },
