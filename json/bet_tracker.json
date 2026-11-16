@@ -4022,8 +4022,9 @@
       "stake": 0,
       "result": "won",
       "isp": "8/13",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.70377637,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-15|Fontwell|13:43",
@@ -4037,8 +4038,9 @@
       "stake": 0,
       "result": "won",
       "isp": "2/9",
-      "bsp": null,
-      "pl": null
+      "bsp": 1.27206946,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     }
   ],
   "verdict": {
@@ -4050,5 +4052,5 @@
   },
   "pausedAt": null,
   "restartNote": "Restarted 2026-10-02 13:51 UTC after the odds fix: every price, favourite and the 1.5x price-gap rule had been using Sporting Life's morning betting forecast, not live bookmaker prices (4 of 13 bets were not the real favourite). Previous test archived: json/bet_tracker_archive/bet_tracker_until_+process.argv[1]+.json",
-  "lastBackfill": 1794774018728
+  "lastBackfill": 1794812438940
 }

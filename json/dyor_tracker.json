@@ -32884,7 +32884,10 @@
         "price": "7/4",
         "stake": 1,
         "result": "won",
-        "isp": "13/8"
+        "isp": "13/8",
+        "bsp": 2.77918866,
+        "pl": 1.69,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-15T14:20:35.081Z",
       "stake": 1,
@@ -33051,22 +33054,25 @@
       "recordedAt": "2026-11-15T15:30:16.658Z",
       "stake": 1,
       "result": "won",
-      "isp": "3/1"
+      "isp": "3/1",
+      "bsp": 4.2,
+      "pl": 3.04,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 1201,
     "pick": {
-      "settled": 1185,
-      "won": 235,
-      "pl": -170.1,
-      "roi": -14.4
+      "settled": 1186,
+      "won": 236,
+      "pl": -167.06,
+      "roi": -14.1
     },
     "favourite": {
-      "settled": 1183,
-      "won": 425,
-      "pl": 19.11,
-      "roi": 1.6
+      "settled": 1184,
+      "won": 426,
+      "pl": 20.8,
+      "roi": 1.8
     },
     "agree": {
       "settled": 311,
@@ -33075,11 +33081,11 @@
       "roi": -4.3
     },
     "disagree": {
-      "settled": 874,
-      "won": 110,
-      "pl": -156.75,
-      "roi": -17.9
+      "settled": 875,
+      "won": 111,
+      "pl": -153.71,
+      "roi": -17.6
     }
   },
-  "lastBackfill": 1794774022161
+  "lastBackfill": 1794812444141
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:00:22.267Z",
+  "generatedAt": "2026-11-16T07:00:38.748Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -22,9 +22,9 @@
       "horse": "BASS HUNTER",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.27206946,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-15",
@@ -33,9 +33,9 @@
       "horse": "WITH NOLIMIT",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.70377637,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-15",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-15T22:00:22.088Z",
+    "updatedAt": "2026-11-16T07:00:38.654Z",
     "claude": {
       "races": 38,
       "won": 7,
