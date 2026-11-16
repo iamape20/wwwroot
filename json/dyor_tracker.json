@@ -176,30 +176,38 @@
       "fav": {
         "horse": "BOBBI'S BEAUTY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T15:30:30.077Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 7,
     "pick": {
-      "settled": 5,
-      "won": 0,
-      "pl": -5,
-      "roi": -100
-    },
-    "favourite": {
       "settled": 6,
       "won": 0,
       "pl": -6,
       "roi": -100
     },
-    "agree": {
-      "settled": 3,
+    "favourite": {
+      "settled": 7,
       "won": 0,
-      "pl": -3,
+      "pl": -7,
+      "roi": -100
+    },
+    "agree": {
+      "settled": 4,
+      "won": 0,
+      "pl": -4,
       "roi": -100
     },
     "disagree": {
