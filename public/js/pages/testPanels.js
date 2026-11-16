@@ -199,6 +199,40 @@ function renderFavTest(ft, t = FAV_TEXT) {
     el.style.display = "";
 }
 
+// Lay won-last-2 paper test (user 2026-11-16): js/layPaperTest.js, a £1 lay at
+// Betfair SP (limit 8.0) of any runner that won its last two runs, 7/1 or shorter
+// in the last 15 minutes. outcome is the lay's result; returns are on money at risk.
+function renderLayTest(lt) {
+    const el = document.getElementById("layBlock");
+    if (!el) return;
+    if (!lt) { el.style.display = "none"; return; }
+    const pts = v => `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v < 0 ? "-" : "+"}${Math.abs(v).toFixed(2)} pts</span>`;
+    const pc = v => v == null ? "-" : `${v > 0 ? "+" : ""}${v}%`;
+    const day = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+    const uk = (d, t) => new Date(`${d}T${t}:00Z`).toLocaleTimeString("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit" });
+    const res = b => b.outcome === "won" ? `beaten, <span class="record-plus">lay won</span> ${pts(b.pl)}`
+        : b.outcome === "lost" ? `won, <span class="record-minus">lay lost</span> SP ${+Number(b.bsp).toFixed(2)} ${pts(b.pl)}`
+        : b.outcome === "void" ? `<span class="record-since">void</span>` : `<span class="record-since">result to come</span>`;
+    const pct = Math.min(100, Math.round(100 * lt.bets / (lt.passAt || 300)));
+    const halves = lt.bets >= 2 ? lt.halves.map((h, i) => `<span class="${h > 0 ? "record-plus" : "record-minus"}">${i ? "2nd" : "1st"} half ${pc(h)}</span>`).join(" ") : "";
+    const verdict = lt.verdict ? `<span class="rule-test-verdict rule-test-${lt.verdict.toLowerCase()}">${lt.verdict}</span>` : "";
+    const recent = [...(lt.recent || [])].sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time));
+    const bt = lt.backtest;
+    const rows = recent.length ? `<div class="rule-test-sub">Last 7 days</div><table class="rule-test-table"><tbody>${recent.map(b =>
+        `<tr><td class="record-since">${day(b.date)} ${uk(b.date, b.time)}</td><td><b>${escapeHtml(b.horse)}</b> <span class="record-since">${escapeHtml(b.course)} &middot; ${escapeHtml(b.odds)}</span> ${res(b)}</td></tr>`).join("")}</tbody></table>`
+        : `<div class="record-row record-since">No lays yet. A horse is recorded in its race's last 15 minutes when it won its last two runs and is 7/1 or shorter.</div>`;
+    el.innerHTML = `<div class="results-strip-label">Lay test: won last two</div>
+        <div class="record-since">A £1 lay (betting it will NOT win) of any horse that won its last two runs, at 7/1 or shorter in the last 15 minutes, settled at Betfair starting price after 2% (no lay above 8.0). No money. Returns are on the money at risk. On past races it made ${pc(bt.returnPct)} (${bt.lays} lays) and ${pc(bt.holdout.returnPct)} on months it was never tested on (${bt.holdout.lays} lays), which may still be luck. To pass it must be in profit after ${lt.passAt} lays and in both halves.</div>
+        <div class="rule-test-rules"><div class="rule-test-rule">
+            <div class="rule-test-head"><b>Lay horses that won their last two</b>${verdict}</div>
+            <div class="rule-test-bar"><span style="width:${pct}%"></span></div>
+            <div class="record-since">${lt.bets} of ${lt.passAt} lays settled${lt.pending ? ` &middot; ${lt.pending} waiting for the starting price` : ""}</div>
+            <div class="record-row">${lt.bets ? `${lt.won} lays won (${lt.wonPct}%, price said ${lt.expectedPct}%) &middot; ${pts(lt.pl)} on ${lt.liability.toFixed(2)} at risk &middot; ${pc(lt.returnPct)}` : "No lays settled yet"}</div>
+            ${halves ? `<div class="record-row">${halves}</div>` : ""}
+        </div></div>${rows}`;
+    el.style.display = "";
+}
+
 export async function loadTests() {
     try {
         const r = await fetch(`data/record.json?t=${Date.now()}`, { cache: "no-store" });
@@ -209,6 +243,7 @@ export async function loadTests() {
         renderBogTest(d.bogTest);
         renderFavTest(d.favTest);
         renderFavTest(d.tripTest, TRIP_TEXT);
+        renderLayTest(d.layTest);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
