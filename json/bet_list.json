@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:40:21.216Z",
+  "generatedAt": "2026-11-16T17:50:23.011Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-16",
       "course": "Wolverhampton",
       "off": "17:30",
-      "horse": "LEADING ROLE"
-    }
-  ],
-  "recent": [
+      "horse": "LEADING ROLE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-16",
       "course": "Wolverhampton",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-13",
-      "course": "Cheltenham",
-      "off": "14:20",
-      "horse": "JONBON",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.53219903,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-16T17:40:21.124Z",
+    "updatedAt": "2026-11-16T17:50:22.923Z",
     "claude": {
       "races": 38,
       "won": 7,

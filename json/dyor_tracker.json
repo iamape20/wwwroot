@@ -253,14 +253,37 @@
       "fav": {
         "horse": "LEADING ROLE",
         "price": "2/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/9"
       },
       "recordedAt": "2026-11-16T17:20:27.813Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "2/9"
+    },
+    {
+      "id": "2026-11-16|Wolverhampton|18:00",
+      "date": "2026-11-16",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "horse": "AL LAHBAB",
+      "price": "8/13",
+      "runners": 9,
+      "liveHorse": "AL LAHBAB",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AL LAHBAB",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T17:50:25.066Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 10,
+    "recorded": 11,
     "pick": {
       "settled": 7,
       "won": 0,
