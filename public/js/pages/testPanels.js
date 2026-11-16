@@ -182,6 +182,12 @@ const SIMILAR_TEXT = {
     what: "£1 on any horse running at a course for the first time that has already won at a similar course (same direction, same kind of finish, equally tight or galloping), at 10/1 or shorter in the last 15 minutes before the off",
     none: "No bets yet. A horse is recorded in its race's last 15 minutes when it has never run at the course, has won at a similar course and is 10/1 or shorter.",
 };
+// Raised-winner paper test (raisedWinnerPaperTest.js, 2026-11-16), same panel shape.
+const RAISED_TEXT = {
+    id: "raisedBlock", label: "Raised after winning test", head: "Handicapper raised 5lb or more after winning, 10/1 or shorter",
+    what: "£1 on any handicapper that won last time and has been raised 5lb or more since, on its first run off the new mark, at 10/1 or shorter in the last 15 minutes before the off",
+    none: "No bets yet. A horse is recorded in its race's last 15 minutes when it won last time, is now rated 5lb or more higher and is 10/1 or shorter.",
+};
 function renderFavTest(ft, t = FAV_TEXT) {
     const el = document.getElementById(t.id);
     if (!el) return;
@@ -258,6 +264,7 @@ export async function loadTests() {
         renderLayTest(d.layTest);
         renderFavTest(d.tripUpTest, TRIP_UP_TEXT);
         renderFavTest(d.similarTest, SIMILAR_TEXT);
+        renderFavTest(d.raisedTest, RAISED_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
