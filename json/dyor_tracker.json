@@ -315,10 +315,29 @@
       "isp": "9/2",
       "pl": -1,
       "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-16|Wolverhampton|19:00",
+      "date": "2026-11-16",
+      "course": "Wolverhampton",
+      "time": "19:00",
+      "horse": "SPLIT ELEVENS",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "NEWSREADER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NEWSREADER",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T18:50:24.951Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 12,
+    "recorded": 13,
     "pick": {
       "settled": 9,
       "won": 0,
@@ -345,5 +364,5 @@
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1794843630675
+  "lastBackfill": 1794855024961
 }
