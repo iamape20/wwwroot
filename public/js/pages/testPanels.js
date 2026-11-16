@@ -176,6 +176,12 @@ const TRIP_UP_TEXT = {
     what: "£1 on any horse running at least 1 furlong further than its last race, at 10/1 or shorter in the last 15 minutes before the off",
     none: "No bets yet. A horse is recorded in its race's last 15 minutes when today's trip is 1 furlong or more longer than its last run and it is 10/1 or shorter.",
 };
+// Similar-course paper test (similarCoursePaperTest.js, 2026-11-16), same panel shape.
+const SIMILAR_TEXT = {
+    id: "similarBlock", label: "Similar course test", head: "First time at the course, already won at a similar one, 10/1 or shorter",
+    what: "£1 on any horse running at a course for the first time that has already won at a similar course (same direction, same kind of finish, equally tight or galloping), at 10/1 or shorter in the last 15 minutes before the off",
+    none: "No bets yet. A horse is recorded in its race's last 15 minutes when it has never run at the course, has won at a similar course and is 10/1 or shorter.",
+};
 function renderFavTest(ft, t = FAV_TEXT) {
     const el = document.getElementById(t.id);
     if (!el) return;
@@ -251,6 +257,7 @@ export async function loadTests() {
         renderFavTest(d.tripTest, TRIP_TEXT);
         renderLayTest(d.layTest);
         renderFavTest(d.tripUpTest, TRIP_UP_TEXT);
+        renderFavTest(d.similarTest, SIMILAR_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
