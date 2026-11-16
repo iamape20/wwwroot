@@ -263,11 +263,32 @@ function renderLayTest(lt) {
     el.style.display = "";
 }
 
+// "At a glance" (2026-11-16): every paper test in one table, from json/paper_tests_status.json
+// (js/paperTestsReport.js) - progress to the pass mark, return so far, both halves, expected finish.
+function renderGlance(st) {
+    const el = document.getElementById("glanceBlock");
+    if (!el) return;
+    if (!st?.tests?.length) { el.style.display = "none"; return; }
+    const pc = v => v == null ? "-" : `<span class="${v < 0 ? "record-minus" : "record-plus"}">${v > 0 ? "+" : ""}${v}%</span>`;
+    const day = iso => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "2-digit" }) : "-";
+    const rows = st.tests.map(t => `<tr>
+        <td><b>${escapeHtml(t.label)}</b>${t.note ? `<br><span class="record-since">${escapeHtml(t.note)}</span>` : ""}</td>
+        <td>${t.settled}${t.passAt ? ` / ${t.passAt}` : ""}</td>
+        <td>${pc(t.roi)}${t.vs != null ? `<br><span class="record-since">Betfair SP ${t.vs > 0 ? "+" : ""}${t.vs}%</span>` : ""}</td>
+        <td>${t.halves ? t.halves.map(pc).join(" / ") : "-"}${t.halvesAreGain ? `<br><span class="record-since">gain over Betfair SP</span>` : ""}</td>
+        <td>${t.verdict ? `<span class="rule-test-verdict rule-test-${String(t.verdict).toLowerCase()}">${escapeHtml(t.verdict)}</span>` : (t.eta ? `due ${day(t.eta)}` : "-")}</td></tr>`).join("");
+    el.innerHTML = `<div class="results-strip-label">At a glance</div>
+        <div class="record-since">Every test on one page. A test passes when it is in profit at its pass mark and in both halves. Real-money bets are ${st.realBetsPaused ? "paused until one passes" : "on"}. "Due" is a guess from the rate so far.</div>
+        <table class="rule-test-table"><thead><tr><th>Test</th><th>Settled</th><th>Return</th><th>Halves</th><th>Verdict</th></tr></thead><tbody>${rows}</tbody></table>`;
+    el.style.display = "";
+}
+
 export async function loadTests() {
     try {
         const r = await fetch(`data/record.json?t=${Date.now()}`, { cache: "no-store" });
         if (!r.ok) throw new Error(r.status);
         const d = await r.json();
+        renderGlance(d.testsStatus);
         renderRuleTest(d.ruleTest, d.realBetsPaused);
         renderExtraPlaces(d.extraPlacesTest);
         renderBogTest(d.bogTest);

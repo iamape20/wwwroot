@@ -43,6 +43,7 @@
     <h1>Paper tests</h1>
     <div class="tests-intro">Eleven ways of betting on trial with no money, each with its pass mark set before the first bet.
         <span id="testsUpdated"></span> &middot; <a href="index.html">Back to the card</a></div>
+    <div id="glanceBlock" class="rule-test" style="display:none;"></div>
     <div id="ruleTestBlock" class="rule-test" style="display:none;"></div>
     <div id="extraPlacesBlock" class="rule-test" style="display:none;"></div>
     <div id="bogBlock" class="rule-test" style="display:none;"></div>
@@ -56,7 +57,7 @@
     <div id="blendBlock" class="rule-test" style="display:none;"></div>
 </main>
 <script type="module">
-    import { loadTests } from "./js/pages/testPanels.js?v=20261116f";
+    import { loadTests } from "./js/pages/testPanels.js?v=20261116g";
     loadTests();
     setInterval(loadTests, 120000);
 </script>
