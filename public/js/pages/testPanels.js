@@ -188,6 +188,12 @@ const RAISED_TEXT = {
     what: "£1 on any handicapper that won last time and has been raised 5lb or more since, on its first run off the new mark, at 10/1 or shorter in the last 15 minutes before the off",
     none: "No bets yet. A horse is recorded in its race's last 15 minutes when it won last time, is now rated 5lb or more higher and is 10/1 or shorter.",
 };
+// New-trainer paper test (newTrainerPaperTest.js, 2026-11-16), same panel shape.
+const NEW_TRAINER_TEXT = {
+    id: "newTrainerBlock", label: "New trainer test", head: "First run for a new trainer, 10/1 or shorter",
+    what: "£1 on any horse having its first run for a new trainer, at 10/1 or shorter in the last 15 minutes before the off",
+    none: "No bets yet. A horse is recorded in its race's last 15 minutes when its trainer is different from its last run and it is 10/1 or shorter.",
+};
 function renderFavTest(ft, t = FAV_TEXT) {
     const el = document.getElementById(t.id);
     if (!el) return;
@@ -265,6 +271,7 @@ export async function loadTests() {
         renderFavTest(d.tripUpTest, TRIP_UP_TEXT);
         renderFavTest(d.similarTest, SIMILAR_TEXT);
         renderFavTest(d.raisedTest, RAISED_TEXT);
+        renderFavTest(d.newTrainerTest, NEW_TRAINER_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
