@@ -203,24 +203,32 @@
       "fav": {
         "horse": "GO GO GIRL",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T16:20:25.207Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 8,
     "pick": {
-      "settled": 6,
-      "won": 0,
-      "pl": -6,
-      "roi": -100
-    },
-    "favourite": {
       "settled": 7,
       "won": 0,
       "pl": -7,
+      "roi": -100
+    },
+    "favourite": {
+      "settled": 8,
+      "won": 0,
+      "pl": -8,
       "roi": -100
     },
     "agree": {
@@ -230,9 +238,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 2,
+      "settled": 3,
       "won": 0,
-      "pl": -2,
+      "pl": -3,
       "roi": -100
     }
   },
