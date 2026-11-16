@@ -194,6 +194,12 @@ const NEW_TRAINER_TEXT = {
     what: "£1 on any horse having its first run for a new trainer, at 10/1 or shorter in the last 15 minutes before the off",
     none: "No bets yet. A horse is recorded in its race's last 15 minutes when its trainer is different from its last run and it is 10/1 or shorter.",
 };
+// Rating + checklist blend paper test (blendPaperTest.js, 2026-11-16), same panel shape.
+const BLEND_TEXT = {
+    id: "blendBlock", label: "Rating + checklist test", head: "Our rating blended with the Do Your Own Ratings checklist",
+    what: "£1 in every race on the horse with the best mix of our rating and your Do Your Own Ratings checklist (half weight), at any price, in the last 15 minutes before the off",
+    none: "No bets yet. One horse is recorded in each race's last 15 minutes.",
+};
 function renderFavTest(ft, t = FAV_TEXT) {
     const el = document.getElementById(t.id);
     if (!el) return;
@@ -272,6 +278,7 @@ export async function loadTests() {
         renderFavTest(d.similarTest, SIMILAR_TEXT);
         renderFavTest(d.raisedTest, RAISED_TEXT);
         renderFavTest(d.newTrainerTest, NEW_TRAINER_TEXT);
+        renderFavTest(d.blendTest, BLEND_TEXT);
         const el = document.getElementById("testsUpdated");
         if (el && d.builtAt) el.textContent = `Updated ${new Date(d.builtAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`;
     } catch { /* keep what is shown */ }
