@@ -70,24 +70,51 @@
       "fav": {
         "horse": "IONIAN",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T13:30:32.946Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-16|Plumpton|14:15",
+      "date": "2026-11-16",
+      "course": "Plumpton",
+      "time": "14:15",
+      "horse": "GRAND CONQUEROR",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "KAMILLE AU KANADA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KAMILLE AU KANADA",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T14:00:43.363Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 3,
+    "recorded": 4,
     "pick": {
-      "settled": 2,
+      "settled": 3,
       "won": 0,
-      "pl": -2,
+      "pl": -3,
       "roi": -100
     },
     "favourite": {
-      "settled": 2,
+      "settled": 3,
       "won": 0,
-      "pl": -2,
+      "pl": -3,
       "roi": -100
     },
     "agree": {
@@ -97,10 +124,10 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 0,
+      "settled": 1,
       "won": 0,
-      "pl": 0,
-      "roi": null
+      "pl": -1,
+      "roi": -100
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak."
