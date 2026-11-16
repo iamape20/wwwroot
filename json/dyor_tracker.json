@@ -151,14 +151,39 @@
       "fav": {
         "horse": "UNCLE AL",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T15:00:32.837Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
+    },
+    {
+      "id": "2026-11-16|Plumpton|15:45",
+      "date": "2026-11-16",
+      "course": "Plumpton",
+      "time": "15:45",
+      "horse": "BOBBI'S BEAUTY",
+      "price": "5/2",
+      "runners": 8,
+      "liveHorse": "BOBBI'S BEAUTY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BOBBI'S BEAUTY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-16T15:30:30.077Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 6,
+    "recorded": 7,
     "pick": {
       "settled": 5,
       "won": 0,
@@ -166,9 +191,9 @@
       "roi": -100
     },
     "favourite": {
-      "settled": 5,
+      "settled": 6,
       "won": 0,
-      "pl": -5,
+      "pl": -6,
       "roi": -100
     },
     "agree": {
