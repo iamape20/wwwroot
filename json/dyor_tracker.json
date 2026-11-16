@@ -303,24 +303,32 @@
       "fav": {
         "horse": "TAN RAPIDO",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-16T18:20:24.664Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 12,
     "pick": {
-      "settled": 8,
-      "won": 0,
-      "pl": -8,
-      "roi": -100
-    },
-    "favourite": {
       "settled": 9,
       "won": 0,
       "pl": -9,
+      "roi": -100
+    },
+    "favourite": {
+      "settled": 10,
+      "won": 0,
+      "pl": -10,
       "roi": -100
     },
     "agree": {
@@ -330,9 +338,9 @@
       "roi": -100
     },
     "disagree": {
-      "settled": 3,
+      "settled": 4,
       "won": 0,
-      "pl": -3,
+      "pl": -4,
       "roi": -100
     }
   },
