@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T18:10:22.737Z",
+  "generatedAt": "2026-11-16T18:20:22.647Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-16",
       "course": "Wolverhampton",
       "off": "18:00",
-      "horse": "AL LAHBAB"
-    }
-  ],
-  "recent": [
+      "horse": "AL LAHBAB",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-16",
       "course": "Wolverhampton",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-13",
-      "course": "Southwell",
-      "off": "14:40",
-      "horse": "CLONDAW PARK",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-16T18:10:22.663Z",
+    "updatedAt": "2026-11-16T18:20:22.556Z",
     "claude": {
       "races": 38,
       "won": 7,
