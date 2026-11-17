@@ -919,14 +919,39 @@
       "fav": {
         "horse": "ALMEKAREM",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T17:20:29.000Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
+    },
+    {
+      "id": "2026-11-17|Southwell|18:00",
+      "date": "2026-11-17",
+      "course": "Southwell",
+      "time": "18:00",
+      "horse": "ALLAIRE",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "DANSEUSE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DANSEUSE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T17:50:34.318Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 35,
+    "recorded": 36,
     "pick": {
       "settled": 32,
       "won": 3,
@@ -934,10 +959,10 @@
       "roi": -73.4
     },
     "favourite": {
-      "settled": 26,
+      "settled": 27,
       "won": 2,
-      "pl": -22.09,
-      "roi": -85
+      "pl": -23.09,
+      "roi": -85.5
     },
     "agree": {
       "settled": 12,
