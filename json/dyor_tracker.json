@@ -634,10 +634,16 @@
       "fav": {
         "horse": "THE MONKEY POLE",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T13:30:39.142Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-17|Carlisle|13:55",
@@ -657,10 +663,29 @@
       },
       "recordedAt": "2026-11-17T13:40:40.262Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-17|Limerick|14:10",
+      "date": "2026-11-17",
+      "course": "Limerick",
+      "time": "14:10",
+      "horse": "ZOLPHARINE",
+      "price": "9/1",
+      "runners": 10,
+      "liveHorse": "ARDERA GUN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ARDERA GUN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T14:00:51.968Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 25,
+    "recorded": 26,
     "pick": {
       "settled": 22,
       "won": 3,
@@ -668,10 +693,10 @@
       "roi": -61.3
     },
     "favourite": {
-      "settled": 20,
+      "settled": 21,
       "won": 2,
-      "pl": -16.09,
-      "roi": -80.5
+      "pl": -17.09,
+      "roi": -81.4
     },
     "agree": {
       "settled": 9,
