@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:20:36.495Z",
+  "generatedAt": "2026-11-17T12:30:41.661Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,17 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Limerick",
-      "off": "12:10",
-      "horse": "POET'S DUKE"
-    },
-    {
       "course": "Carlisle",
       "off": "12:20",
       "horse": "BOSSMAN JACK"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-17",
+      "course": "Limerick",
+      "off": "12:10",
+      "horse": "POET'S DUKE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-16",
       "course": "Wolverhampton",
@@ -179,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": null
-    },
-    {
-      "date": "2026-11-13",
-      "course": "Dundalk",
-      "off": "19:30",
-      "horse": "SANGREAL",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-17T12:20:36.412Z",
+    "updatedAt": "2026-11-17T12:30:41.575Z",
     "claude": {
       "races": 38,
       "won": 7,

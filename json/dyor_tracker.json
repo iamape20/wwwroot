@@ -480,10 +480,16 @@
       "fav": {
         "horse": "POET'S DUKE",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-17T12:00:51.753Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-17|Carlisle|12:20",
@@ -503,15 +509,34 @@
       },
       "recordedAt": "2026-11-17T12:10:41.856Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-17|Limerick|12:40",
+      "date": "2026-11-17",
+      "course": "Limerick",
+      "time": "12:40",
+      "horse": "BURNING LIKE FIRE",
+      "price": "11/2",
+      "runners": 12,
+      "liveHorse": "DETROIT MAVERICK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DETROIT MAVERICK",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T12:30:44.045Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 19,
+    "recorded": 20,
     "pick": {
-      "settled": 17,
+      "settled": 18,
       "won": 3,
-      "pl": -8.48,
-      "roi": -49.9
+      "pl": -9.48,
+      "roi": -52.7
     },
     "favourite": {
       "settled": 17,
@@ -526,10 +551,10 @@
       "roi": -51.1
     },
     "disagree": {
-      "settled": 9,
+      "settled": 10,
       "won": 1,
-      "pl": -4.39,
-      "roi": -48.8
+      "pl": -5.39,
+      "roi": -53.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
