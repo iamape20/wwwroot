@@ -709,10 +709,18 @@
       "fav": {
         "horse": "DOYEN DU BAR",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T14:10:40.590Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-17|Limerick|14:40",
@@ -737,22 +745,22 @@
   "stats": {
     "recorded": 28,
     "pick": {
-      "settled": 24,
+      "settled": 25,
       "won": 3,
-      "pl": -15.48,
-      "roi": -64.5
+      "pl": -16.48,
+      "roi": -65.9
     },
     "favourite": {
-      "settled": 21,
+      "settled": 22,
       "won": 2,
-      "pl": -17.09,
-      "roi": -81.4
+      "pl": -18.09,
+      "roi": -82.2
     },
     "agree": {
-      "settled": 9,
+      "settled": 10,
       "won": 2,
-      "pl": -5.09,
-      "roi": -56.6
+      "pl": -6.09,
+      "roi": -60.9
     },
     "disagree": {
       "settled": 15,
