@@ -1023,31 +1023,58 @@
       "fav": {
         "horse": "EDMOND HALLEY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T19:20:27.223Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-17|Southwell|20:00",
+      "date": "2026-11-17",
+      "course": "Southwell",
+      "time": "20:00",
+      "horse": "MISS DEEDS",
+      "price": "9/2",
+      "runners": 6,
+      "liveHorse": "HAYATE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HAYATE",
+        "price": "1/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T19:50:26.174Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 39,
+    "recorded": 40,
     "pick": {
-      "settled": 34,
+      "settled": 35,
       "won": 3,
-      "pl": -25.48,
-      "roi": -74.9
+      "pl": -26.48,
+      "roi": -75.7
     },
     "favourite": {
-      "settled": 30,
+      "settled": 31,
       "won": 2,
-      "pl": -26.09,
-      "roi": -87
+      "pl": -27.09,
+      "roi": -87.4
     },
     "agree": {
-      "settled": 12,
+      "settled": 13,
       "won": 2,
-      "pl": -8.09,
-      "roi": -67.4
+      "pl": -9.09,
+      "roi": -69.9
     },
     "disagree": {
       "settled": 22,
