@@ -840,31 +840,39 @@
       "fav": {
         "horse": "MARBLE HILL",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T15:40:37.693Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 32,
     "pick": {
-      "settled": 29,
+      "settled": 30,
       "won": 3,
-      "pl": -20.48,
-      "roi": -70.6
+      "pl": -21.48,
+      "roi": -71.6
     },
     "favourite": {
-      "settled": 24,
+      "settled": 25,
       "won": 2,
-      "pl": -20.09,
-      "roi": -83.7
+      "pl": -21.09,
+      "roi": -84.4
     },
     "agree": {
-      "settled": 11,
+      "settled": 12,
       "won": 2,
-      "pl": -7.09,
-      "roi": -64.5
+      "pl": -8.09,
+      "roi": -67.4
     },
     "disagree": {
       "settled": 18,

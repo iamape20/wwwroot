@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T16:00:33.390Z",
+  "generatedAt": "2026-11-17T16:10:31.536Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-17",
       "course": "Limerick",
       "off": "15:50",
-      "horse": "MARBLE HILL"
-    }
-  ],
-  "recent": [
+      "horse": "MARBLE HILL",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-17",
       "course": "Carlisle",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-14",
-      "course": "Windsor",
-      "off": "12:20",
-      "horse": "TI'MAMZEL",
-      "phase": "STOPPED",
-      "result": "void",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": null
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-17T16:00:33.272Z",
+    "updatedAt": "2026-11-17T16:10:31.440Z",
     "claude": {
       "races": 38,
       "won": 7,
