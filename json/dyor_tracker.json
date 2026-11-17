@@ -557,10 +557,18 @@
       "fav": {
         "horse": "DOUBLY BLESSED",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T12:40:43.823Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-17|Limerick|13:10",
@@ -580,21 +588,40 @@
       },
       "recordedAt": "2026-11-17T13:00:42.688Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-17|Carlisle|13:25",
+      "date": "2026-11-17",
+      "course": "Carlisle",
+      "time": "13:25",
+      "horse": "TURBOCHARGED",
+      "price": "2/5",
+      "runners": 9,
+      "liveHorse": "TURBOCHARGED",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TURBOCHARGED",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T13:10:39.044Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 22,
+    "recorded": 23,
     "pick": {
-      "settled": 20,
+      "settled": 21,
       "won": 3,
-      "pl": -11.48,
-      "roi": -57.4
+      "pl": -12.48,
+      "roi": -59.4
     },
     "favourite": {
-      "settled": 18,
+      "settled": 19,
       "won": 2,
-      "pl": -14.09,
-      "roi": -78.3
+      "pl": -15.09,
+      "roi": -79.4
     },
     "agree": {
       "settled": 8,
@@ -603,10 +630,10 @@
       "roi": -51.1
     },
     "disagree": {
-      "settled": 12,
+      "settled": 13,
       "won": 1,
-      "pl": -7.39,
-      "roi": -61.6
+      "pl": -8.39,
+      "roi": -64.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
