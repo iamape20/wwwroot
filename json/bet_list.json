@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T22:00:16.254Z",
+  "generatedAt": "2026-11-17T07:00:51.886Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -33,9 +33,9 @@
       "horse": "LEADING ROLE",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.25,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-16",
@@ -44,9 +44,9 @@
       "horse": "DESERT ROMANCE",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.76,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-15",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-16T22:00:16.164Z",
+    "updatedAt": "2026-11-17T07:00:51.791Z",
     "claude": {
       "races": 38,
       "won": 7,

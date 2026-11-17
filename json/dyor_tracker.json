@@ -160,7 +160,10 @@
       "recordedAt": "2026-11-16T15:00:32.837Z",
       "stake": 1,
       "result": "won",
-      "isp": "7/2"
+      "isp": "7/2",
+      "bsp": 4.8,
+      "pl": 3.61,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-16|Plumpton|15:45",
@@ -232,12 +235,18 @@
         "price": "4/5",
         "stake": 1,
         "result": "won",
-        "isp": "11/8"
+        "isp": "11/8",
+        "bsp": 2.76,
+        "pl": 1.672,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-16T16:50:24.746Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.76,
+      "pl": 1.672,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-16|Wolverhampton|17:30",
@@ -255,12 +264,18 @@
         "price": "2/9",
         "stake": 1,
         "result": "won",
-        "isp": "2/9"
+        "isp": "2/9",
+        "bsp": 1.25,
+        "pl": 0.237,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-16T17:20:27.813Z",
       "stake": 1,
       "result": "won",
-      "isp": "2/9"
+      "isp": "2/9",
+      "bsp": 1.25,
+      "pl": 0.237,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-16|Wolverhampton|18:00",
@@ -428,30 +443,30 @@
   "stats": {
     "recorded": 16,
     "pick": {
-      "settled": 13,
-      "won": 0,
-      "pl": -13,
-      "roi": -100
+      "settled": 16,
+      "won": 3,
+      "pl": -7.48,
+      "roi": -46.8
     },
     "favourite": {
-      "settled": 14,
-      "won": 0,
-      "pl": -14,
-      "roi": -100
+      "settled": 16,
+      "won": 2,
+      "pl": -12.09,
+      "roi": -75.6
     },
     "agree": {
-      "settled": 6,
-      "won": 0,
-      "pl": -6,
-      "roi": -100
+      "settled": 8,
+      "won": 2,
+      "pl": -4.09,
+      "roi": -51.1
     },
     "disagree": {
-      "settled": 7,
-      "won": 0,
-      "pl": -7,
-      "roi": -100
+      "settled": 8,
+      "won": 1,
+      "pl": -3.39,
+      "roi": -42.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1794866418410
+  "lastBackfill": 1794898859670
 }
