@@ -584,10 +584,18 @@
       "fav": {
         "horse": "JUMBOS JET",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T13:00:42.688Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-17|Carlisle|13:25",
@@ -607,27 +615,46 @@
       },
       "recordedAt": "2026-11-17T13:10:39.044Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-17|Limerick|13:40",
+      "date": "2026-11-17",
+      "course": "Limerick",
+      "time": "13:40",
+      "horse": "THEANNIVERSARY MAN",
+      "price": "9/4",
+      "runners": 9,
+      "liveHorse": "THE MONKEY POLE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "THE MONKEY POLE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T13:30:39.142Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 23,
+    "recorded": 24,
     "pick": {
-      "settled": 21,
+      "settled": 22,
       "won": 3,
-      "pl": -12.48,
-      "roi": -59.4
+      "pl": -13.48,
+      "roi": -61.3
     },
     "favourite": {
-      "settled": 19,
+      "settled": 20,
       "won": 2,
-      "pl": -15.09,
-      "roi": -79.4
+      "pl": -16.09,
+      "roi": -80.5
     },
     "agree": {
-      "settled": 8,
+      "settled": 9,
       "won": 2,
-      "pl": -4.09,
-      "roi": -51.1
+      "pl": -5.09,
+      "roi": -56.6
     },
     "disagree": {
       "settled": 13,
