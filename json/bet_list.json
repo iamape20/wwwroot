@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T20:00:23.273Z",
+  "generatedAt": "2026-11-17T20:10:24.199Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-17",
       "course": "Southwell",
       "off": "20:00",
-      "horse": "HAYATE"
-    }
-  ],
-  "recent": [
+      "horse": "HAYATE",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-17",
       "course": "Limerick",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": null
-    },
-    {
-      "date": "2026-11-14",
-      "course": "Navan",
-      "off": "11:52",
-      "horse": "CHARISMATIC KID",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-17T20:00:23.181Z",
+    "updatedAt": "2026-11-17T20:10:24.095Z",
     "claude": {
       "races": 38,
       "won": 7,
