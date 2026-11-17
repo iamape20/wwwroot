@@ -998,14 +998,39 @@
       "fav": {
         "horse": "RED HAT EAGLE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-17T18:50:25.272Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
+    },
+    {
+      "id": "2026-11-17|Southwell|19:30",
+      "date": "2026-11-17",
+      "course": "Southwell",
+      "time": "19:30",
+      "horse": "EDMOND HALLEY",
+      "price": "11/4",
+      "runners": 9,
+      "liveHorse": "EDMOND HALLEY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "EDMOND HALLEY",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T19:20:27.223Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 38,
+    "recorded": 39,
     "pick": {
       "settled": 34,
       "won": 3,
@@ -1013,10 +1038,10 @@
       "roi": -74.9
     },
     "favourite": {
-      "settled": 29,
+      "settled": 30,
       "won": 2,
-      "pl": -25.09,
-      "roi": -86.5
+      "pl": -26.09,
+      "roi": -87
     },
     "agree": {
       "settled": 12,
