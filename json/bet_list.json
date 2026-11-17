@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T13:30:36.784Z",
+  "generatedAt": "2026-11-17T13:40:37.833Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-17",
       "course": "Carlisle",
       "off": "13:25",
-      "horse": "TURBOCHARGED"
-    }
-  ],
-  "recent": [
+      "horse": "TURBOCHARGED",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-17",
       "course": "Limerick",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": null
-    },
-    {
-      "date": "2026-11-14",
-      "course": "Wetherby",
-      "off": "13:55",
-      "horse": "VELVET OUTLAW",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.56673687,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-17T13:30:36.700Z",
+    "updatedAt": "2026-11-17T13:40:37.734Z",
     "claude": {
       "races": 38,
       "won": 7,

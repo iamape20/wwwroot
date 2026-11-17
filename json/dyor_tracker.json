@@ -611,10 +611,14 @@
       "fav": {
         "horse": "TURBOCHARGED",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-17T13:10:39.044Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
     },
     {
       "id": "2026-11-17|Limerick|13:40",
@@ -634,10 +638,29 @@
       },
       "recordedAt": "2026-11-17T13:30:39.142Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-17|Carlisle|13:55",
+      "date": "2026-11-17",
+      "course": "Carlisle",
+      "time": "13:55",
+      "horse": "JUNIOR DES MOTTES",
+      "price": "11/2",
+      "runners": 11,
+      "liveHorse": "KING BERRY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KING BERRY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-17T13:40:40.262Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 24,
+    "recorded": 25,
     "pick": {
       "settled": 22,
       "won": 3,
