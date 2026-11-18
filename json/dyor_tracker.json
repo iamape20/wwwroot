@@ -1260,10 +1260,16 @@
       "fav": {
         "horse": "OLD PARK STAR",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-18T13:40:45.600Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-18|Dundalk|14:00",
@@ -1302,10 +1308,29 @@
       },
       "recordedAt": "2026-11-18T14:01:03.131Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Ffos Las|14:18",
+      "date": "2026-11-18",
+      "course": "Ffos Las",
+      "time": "14:18",
+      "horse": "CALL YOUR BLUFF",
+      "price": "14/1",
+      "runners": 15,
+      "liveHorse": "WANNABE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WANNABE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T14:10:48.137Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 49,
+    "recorded": 50,
     "pick": {
       "settled": 43,
       "won": 7,
@@ -1313,10 +1338,10 @@
       "roi": -37
     },
     "favourite": {
-      "settled": 41,
+      "settled": 42,
       "won": 11,
-      "pl": -11.82,
-      "roi": -28.8
+      "pl": -12.82,
+      "roi": -30.5
     },
     "agree": {
       "settled": 14,
