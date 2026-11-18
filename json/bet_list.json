@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T15:00:56.219Z",
+  "generatedAt": "2026-11-18T15:10:37.664Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-18",
       "course": "Ffos Las",
       "off": "14:48",
-      "horse": "MERRY AWAY"
-    }
-  ],
-  "recent": [
+      "horse": "MERRY AWAY",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-18",
       "course": "Ffos Las",
@@ -174,21 +179,10 @@
       "bsp": 1.70377637,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-15",
-      "course": "Navan",
-      "off": "12:10",
-      "horse": "LA VALSERINE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-18T15:00:56.124Z",
+    "updatedAt": "2026-11-18T15:10:37.563Z",
     "claude": {
       "races": 38,
       "won": 7,
