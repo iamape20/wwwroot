@@ -1441,10 +1441,14 @@
       "fav": {
         "horse": "JAZZIT",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-18T14:50:43.743Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-18|Hexham|15:08",
@@ -1483,10 +1487,29 @@
       },
       "recordedAt": "2026-11-18T15:10:40.079Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Dundalk|15:30",
+      "date": "2026-11-18",
+      "course": "Dundalk",
+      "time": "15:30",
+      "horse": "ROCK ON JOHNNY",
+      "price": "6/4",
+      "runners": 12,
+      "liveHorse": "ROCK ON JOHNNY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ROCK ON JOHNNY",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T15:20:39.493Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 56,
+    "recorded": 57,
     "pick": {
       "settled": 48,
       "won": 7,
