@@ -6819,7 +6819,11 @@
       "rating": 74.5,
       "runners": 12,
       "recordedAt": "2026-11-18T16:50:33.480Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-18|Dundalk|17:07",
@@ -6831,15 +6835,17 @@
       "rating": 64,
       "runners": 9,
       "recordedAt": "2026-11-18T17:00:31.209Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     }
   ],
   "stats": {
     "recorded": 416,
-    "settled": 406,
+    "settled": 407,
     "won": 195,
-    "pl": -26.49,
-    "roi": -6.5
+    "pl": -27.49,
+    "roi": -6.8
   },
   "lastBackfill": 1795018236095
 }
