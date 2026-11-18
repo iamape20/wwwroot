@@ -1237,10 +1237,14 @@
       "fav": {
         "horse": "DE DELI COUNTER",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-18T13:20:47.765Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-11-18|Ffos Las|13:48",
@@ -1260,10 +1264,29 @@
       },
       "recordedAt": "2026-11-18T13:40:45.600Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Dundalk|14:00",
+      "date": "2026-11-18",
+      "course": "Dundalk",
+      "time": "14:00",
+      "horse": "COLOURSOFTHEWIND",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "MISS CASHMAN HOOKE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MISS CASHMAN HOOKE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T13:50:50.512Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 47,
+    "recorded": 48,
     "pick": {
       "settled": 43,
       "won": 7,
