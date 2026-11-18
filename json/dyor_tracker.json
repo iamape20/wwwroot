@@ -1141,10 +1141,14 @@
       "fav": {
         "horse": "LORD DU GOUET",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-18T12:20:50.671Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
     },
     {
       "id": "2026-11-18|Ffos Las|12:48",
@@ -1164,10 +1168,29 @@
       },
       "recordedAt": "2026-11-18T12:40:53.120Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Hexham|13:03",
+      "date": "2026-11-18",
+      "course": "Hexham",
+      "time": "13:03",
+      "horse": "PINOT ROUGE",
+      "price": "33/1",
+      "runners": 4,
+      "liveHorse": "DERRYHASSEN PADDY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DERRYHASSEN PADDY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T12:50:52.910Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 43,
+    "recorded": 44,
     "pick": {
       "settled": 41,
       "won": 7,
