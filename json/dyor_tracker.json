@@ -1876,14 +1876,39 @@
       "fav": {
         "horse": "ENACTING",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-18T19:50:28.910Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
+    },
+    {
+      "id": "2026-11-18|Kempton|20:30",
+      "date": "2026-11-18",
+      "course": "Kempton",
+      "time": "20:30",
+      "horse": "DUST COVER",
+      "price": "6/1",
+      "runners": 13,
+      "liveHorse": "CROWN OF CROWNS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CROWN OF CROWNS",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T20:20:28.645Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 71,
+    "recorded": 72,
     "pick": {
       "settled": 61,
       "won": 7,
@@ -1891,10 +1916,10 @@
       "roi": -55.6
     },
     "favourite": {
-      "settled": 55,
+      "settled": 56,
       "won": 11,
-      "pl": -25.82,
-      "roi": -47
+      "pl": -26.82,
+      "roi": -47.9
     },
     "agree": {
       "settled": 17,
