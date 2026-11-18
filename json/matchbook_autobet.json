@@ -888,8 +888,45 @@
       "pl": 12.9,
       "potAfter": 88.43,
       "settledAt": "2026-11-17T15:40:36.301Z"
+    },
+    {
+      "id": "2026-11-18|Dundalk|16:00|TRIP|STOOKED",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-18",
+      "course": "Dundalk",
+      "time": "16:00",
+      "horse": "STOOKED",
+      "decidedAt": "2026-11-18T15:50:32.590Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 88.43,
+      "claude": {
+        "action": "skip",
+        "reason": "The comment describes a past run down in trip at Cork, not a drop in trip today, so it does not belong to the trip test."
+      },
+      "eventId": "34887348919202072",
+      "marketId": "34887349038102023",
+      "runnerId": "34887349041002023",
+      "price": 3.3,
+      "available": 21.91,
+      "depth": [
+        [
+          3.3,
+          21.91
+        ],
+        [
+          3.25,
+          100.53
+        ],
+        [
+          3.2,
+          131.4
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: The comment describes a past run down in trip at Cork, not a drop in trip today, so it does not belong to the trip test."
     }
   ],
-  "updatedAt": "2026-11-18T15:40:35.329Z",
+  "updatedAt": "2026-11-18T15:50:32.591Z",
   "bankPeak": 109.65222
 }
