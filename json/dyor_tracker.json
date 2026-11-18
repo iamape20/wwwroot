@@ -1645,14 +1645,39 @@
       "fav": {
         "horse": "GO OUT",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-18T16:20:38.904Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "15/8"
+    },
+    {
+      "id": "2026-11-18|Kempton|17:00",
+      "date": "2026-11-18",
+      "course": "Kempton",
+      "time": "17:00",
+      "horse": "ANGEL FOOTSTEPS",
+      "price": "4/5",
+      "runners": 12,
+      "liveHorse": "ANGEL FOOTSTEPS",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ANGEL FOOTSTEPS",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T16:50:34.308Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 62,
+    "recorded": 63,
     "pick": {
       "settled": 54,
       "won": 7,
@@ -1660,10 +1685,10 @@
       "roi": -49.9
     },
     "favourite": {
-      "settled": 50,
+      "settled": 51,
       "won": 11,
-      "pl": -20.82,
-      "roi": -41.6
+      "pl": -21.82,
+      "roi": -42.8
     },
     "agree": {
       "settled": 16,
