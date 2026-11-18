@@ -163,7 +163,7 @@ function renderDailyDouble(dashboard) {
                 <div class="daily-double-race">${escapeHtml(p.course)} ${escapeHtml(toLocalTimeString(p.time))}</div>
                 <div class="daily-double-rating">${p.tier === "Value" && p.chance != null
                     ? `${escapeHtml(p.odds)} &middot; ${Math.round(100 * p.chance)}% chance, ${Math.round(100 * p.edge)}% better than the price`
-                    : `EPR ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span>`}</div>
+                    : `Rating ${escapeHtml(p.rating)} <span class="daily-double-margin">(${escapeHtml(p.margin)} pts ahead)</span>`}</div>
             </div>
         </div>
     `).join("");
@@ -299,7 +299,7 @@ function renderNapCallout(nap) {
                 <div class="nap-name"><span${struck ? ' style="text-decoration:line-through;opacity:0.6;"' : ""}>${escapeHtml(String(nap.name || "").toUpperCase())}</span>${flag ? ` <span class="nap-flag">${flag}</span>` : ""}</div>
                 ${flagWhy ? `<div class="nap-flag-why">${flagWhy}</div>` : ""}
                 ${resultHtml}
-                <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 EPR ${nap.rating ?? "-"}${gapText}</div>
+                <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 Rating ${nap.rating ?? "-"}${gapText}</div>
                 <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
             </div>
         </div>
@@ -1333,7 +1333,7 @@ picks.sort(
                     <span
                         class="candidate-selection-badge candidate-selection-epr"
                     >
-                        EPR SELECTION
+                        RATING PICK
                     </span>
                   `
                 : ""
@@ -1391,12 +1391,12 @@ picks.sort(
 
                         ${
                             rating != null
-                                ? `EPR ${escapeHtml(
+                                ? `Rating ${escapeHtml(
                                     Number(
                                         rating
                                     ).toFixed(1)
                                 )}`
-                                : "EPR -"
+                                : "Rating -"
                         }
 
                         ${

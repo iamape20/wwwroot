@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Elite Power Ratings — data-driven horse racing ratings, race analysis and performance intelligence.">
+    <meta name="description" content="Overlay — horse racing ratings, with every betting angle tested against the Betfair price.">
 
     <!-- Sets data-theme before first paint so there's no flash of the
          wrong theme - must run synchronously here, not as a deferred
@@ -25,7 +25,7 @@
         })();
     </script>
 
-    <title>Elite Power Ratings</title>
+    <title>Overlay</title>
 
     <!-- ?v= cache-busts CSS/JS on the browser and any CDN in front -
          there's no build step here to hash filenames automatically,
@@ -40,12 +40,13 @@
          browser's module cache treats a different query string as a
          different module and busting the entry point alone does not
          bust what it imports. -->
-    <link rel="stylesheet" href="css/app.css?v=20261106e">
-	<link rel="icon" href="images/crest.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/app.css?v=20261118a">
+	<link rel="icon" href="images/overlay-logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/overlay-180.png">
 
     <script src="js/clock.js?v=20261105a" defer></script>
     <script src="js/theme.js?v=20260925" defer></script>
-    <script type="module" src="js/app.js?v=20261112b"></script>
+    <script type="module" src="js/app.js?v=20261118a"></script>
 
 </head>
 
@@ -54,15 +55,15 @@
 <header class="topbar">
 
     <div class="brand">
-	<img src="images/crest.jpg"
-		 alt="Elite Power Ratings"
+	<img src="images/overlay-logo.svg"
+		 alt="Overlay"
 		 class="brand-logo"
 		 width="80"
 		 height="80">
 
         <div class="brand-text">
-            <h1>Elite Power Ratings</h1>
-            <span>Professional Racing Intelligence</span>
+            <h1>Overlay</h1>
+            <span>Racing value, tested</span>
         </div>
     </div>
 
@@ -151,7 +152,7 @@
 
 <footer>
     <p style="padding-left:20px">
-        Elite Power Ratings © 2026
+        Overlay © 2026
     </p>
 </footer>
 
