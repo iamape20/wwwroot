@@ -1774,19 +1774,44 @@
       "fav": {
         "horse": "DIVINE RHYTHM",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-18T17:50:34.837Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-18|Kempton|18:30",
+      "date": "2026-11-18",
+      "course": "Kempton",
+      "time": "18:30",
+      "horse": "ALA ET PRECE",
+      "price": "7/1",
+      "runners": 14,
+      "liveHorse": "STERLING COOPER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STERLING COOPER",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T18:20:38.178Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 67,
+    "recorded": 68,
     "pick": {
-      "settled": 58,
+      "settled": 59,
       "won": 7,
-      "pl": -30.93,
-      "roi": -53.3
+      "pl": -31.93,
+      "roi": -54.1
     },
     "favourite": {
       "settled": 53,
@@ -1801,10 +1826,10 @@
       "roi": -68.7
     },
     "disagree": {
-      "settled": 41,
+      "settled": 42,
       "won": 4,
-      "pl": -19.26,
-      "roi": -47
+      "pl": -20.26,
+      "roi": -48.2
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
