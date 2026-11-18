@@ -1545,10 +1545,16 @@
       "fav": {
         "horse": "MAX POTENTIAL",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-11-18T15:30:36.603Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-18|Ffos Las|15:48",
@@ -1592,10 +1598,10 @@
   "stats": {
     "recorded": 60,
     "pick": {
-      "settled": 51,
+      "settled": 52,
       "won": 7,
-      "pl": -23.93,
-      "roi": -46.9
+      "pl": -24.93,
+      "roi": -47.9
     },
     "favourite": {
       "settled": 49,
@@ -1610,10 +1616,10 @@
       "roi": -66.7
     },
     "disagree": {
-      "settled": 35,
+      "settled": 36,
       "won": 4,
-      "pl": -13.26,
-      "roi": -37.9
+      "pl": -14.26,
+      "roi": -39.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
