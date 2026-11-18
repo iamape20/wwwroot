@@ -1618,10 +1618,18 @@
       "fav": {
         "horse": "BRAVE COUNTRY",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-18T16:10:38.447Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-18|Dundalk|16:30",
@@ -1646,16 +1654,16 @@
   "stats": {
     "recorded": 62,
     "pick": {
-      "settled": 53,
+      "settled": 54,
       "won": 7,
-      "pl": -25.93,
-      "roi": -48.9
+      "pl": -26.93,
+      "roi": -49.9
     },
     "favourite": {
-      "settled": 49,
+      "settled": 50,
       "won": 11,
-      "pl": -19.82,
-      "roi": -40.5
+      "pl": -20.82,
+      "roi": -41.6
     },
     "agree": {
       "settled": 16,
@@ -1664,10 +1672,10 @@
       "roi": -66.7
     },
     "disagree": {
-      "settled": 37,
+      "settled": 38,
       "won": 4,
-      "pl": -15.26,
-      "roi": -41.2
+      "pl": -16.26,
+      "roi": -42.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
