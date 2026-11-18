@@ -1595,10 +1595,14 @@
       "fav": {
         "horse": "OTSANA",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-18T15:50:33.640Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-11-18|Kempton|16:25",
@@ -1618,10 +1622,29 @@
       },
       "recordedAt": "2026-11-18T16:10:38.447Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Dundalk|16:30",
+      "date": "2026-11-18",
+      "course": "Dundalk",
+      "time": "16:30",
+      "horse": "GOLDDREAM",
+      "price": "2/1",
+      "runners": 13,
+      "liveHorse": "GO OUT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO OUT",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T16:20:38.904Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 61,
+    "recorded": 62,
     "pick": {
       "settled": 53,
       "won": 7,
