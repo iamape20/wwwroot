@@ -1312,10 +1312,14 @@
       "fav": {
         "horse": "RATEMENOW",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-18T14:01:03.131Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-18|Ffos Las|14:18",
@@ -1354,10 +1358,29 @@
       },
       "recordedAt": "2026-11-18T14:20:47.344Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Hexham|14:38",
+      "date": "2026-11-18",
+      "course": "Hexham",
+      "time": "14:38",
+      "horse": "WAL BUCK'S",
+      "price": "5/2",
+      "runners": 7,
+      "liveHorse": "WAL BUCK'S",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "WAL BUCK'S",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T14:30:57.648Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 51,
+    "recorded": 52,
     "pick": {
       "settled": 44,
       "won": 7,
