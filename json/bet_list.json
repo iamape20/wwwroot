@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:00:44.448Z",
+  "generatedAt": "2026-11-18T13:10:47.373Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-18",
       "course": "Ffos Las",
       "off": "12:48",
-      "horse": "NO WALKOVER"
-    }
-  ],
-  "recent": [
+      "horse": "NO WALKOVER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-18",
       "course": "Hexham",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-14",
-      "course": "Navan",
-      "off": "15:53",
-      "horse": "UNCLE PAD",
-      "phase": "STOPPED",
-      "result": "void",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": null
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-18T13:00:44.351Z",
+    "updatedAt": "2026-11-18T13:10:47.262Z",
     "claude": {
       "races": 38,
       "won": 7,

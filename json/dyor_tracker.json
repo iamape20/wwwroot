@@ -1164,10 +1164,14 @@
       "fav": {
         "horse": "NO WALKOVER",
         "price": "2/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/3"
       },
       "recordedAt": "2026-11-18T12:40:53.120Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/3"
     },
     {
       "id": "2026-11-18|Hexham|13:03",
@@ -1187,10 +1191,29 @@
       },
       "recordedAt": "2026-11-18T12:50:52.910Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-18|Ffos Las|13:18",
+      "date": "2026-11-18",
+      "course": "Ffos Las",
+      "time": "13:18",
+      "horse": "QUICKKICK",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "DIAMOND STREET",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DIAMOND STREET",
+        "price": "2/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T13:10:51.083Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 44,
+    "recorded": 45,
     "pick": {
       "settled": 41,
       "won": 7,
