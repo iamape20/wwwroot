@@ -1824,25 +1824,52 @@
       "fav": {
         "horse": "PALLADAS",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-18T18:50:36.868Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "80/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-18|Kempton|19:30",
+      "date": "2026-11-18",
+      "course": "Kempton",
+      "time": "19:30",
+      "horse": "TARBAT NESS",
+      "price": "12/1",
+      "runners": 7,
+      "liveHorse": "ZACHARY HICKES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ZACHARY HICKES",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-18T19:20:34.957Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 69,
+    "recorded": 70,
     "pick": {
-      "settled": 59,
+      "settled": 60,
       "won": 7,
-      "pl": -31.93,
-      "roi": -54.1
+      "pl": -32.93,
+      "roi": -54.9
     },
     "favourite": {
-      "settled": 54,
+      "settled": 55,
       "won": 11,
-      "pl": -24.82,
-      "roi": -46
+      "pl": -25.82,
+      "roi": -47
     },
     "agree": {
       "settled": 17,
@@ -1851,12 +1878,12 @@
       "roi": -68.7
     },
     "disagree": {
-      "settled": 42,
+      "settled": 43,
       "won": 4,
-      "pl": -20.26,
-      "roi": -48.2
+      "pl": -21.26,
+      "roi": -49.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795018238458
+  "lastBackfill": 1795029634972
 }
