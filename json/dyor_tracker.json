@@ -2703,14 +2703,37 @@
       "fav": {
         "horse": "HIGH THRESHOLD",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-19T17:00:36.154Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "10/11"
+    },
+    {
+      "id": "2026-11-19|Newcastle|17:40",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "17:40",
+      "horse": "HOT MOONSTONE",
+      "price": "28/1",
+      "runners": 7,
+      "liveHorse": "SHIMMERING SHADOW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SHIMMERING SHADOW",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T17:30:36.775Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 100,
+    "recorded": 101,
     "pick": {
       "settled": 93,
       "won": 18,
