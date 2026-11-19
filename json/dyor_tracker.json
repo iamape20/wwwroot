@@ -2751,19 +2751,44 @@
       "fav": {
         "horse": "FRANKIES DREAM",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-19T18:00:32.255Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-19|Newcastle|18:40",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "18:40",
+      "horse": "BEALE STREET",
+      "price": "28/1",
+      "runners": 14,
+      "liveHorse": "WE NEVER STOP",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WE NEVER STOP",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T18:30:35.397Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 102,
+    "recorded": 103,
     "pick": {
-      "settled": 94,
+      "settled": 95,
       "won": 18,
-      "pl": -22.27,
-      "roi": -23.7
+      "pl": -23.27,
+      "roi": -24.5
     },
     "favourite": {
       "settled": 90,
@@ -2778,10 +2803,10 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 67,
+      "settled": 68,
       "won": 9,
-      "pl": -18.57,
-      "roi": -27.7
+      "pl": -19.57,
+      "roi": -28.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
