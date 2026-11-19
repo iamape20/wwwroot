@@ -286,15 +286,23 @@ async function renderAngleNapFallback(napEl) {
 // The NAP's reasons in plain words (user 2026-11-19 "add the angles or reasoning for selection to the
 // NAP description"): race tier, how it was chosen, the three form signals it has, and any of the tested
 // angles it fits (data/angle-nap.json napAngles, filled in after the first paint).
+// Written as sentences (user 2026-11-19: the Why line should read like an explanation, not a list).
 function napWhyHtml(nap) {
-    const bits = [];
-    if (nap.tier) bits.push(`${escapeHtml(nap.tier)} race${nap.tierReason ? ` (top-rated ${escapeHtml(nap.tierReason)})` : ""}`);
-    if (nap.modelTop?.name) bits.push(`market favourite chosen over the top-rated ${escapeHtml(nap.modelTop.name)}`);
-    if (nap.lastTop3) bits.push("finished in the first three last time");
-    if (nap.recentFavourite) bits.push("started favourite in a recent run");
-    if (nap.recent31_60) bits.push("back after a 31-60 day break");
-    if (Number(nap.lastRunDays) > 0) bits.push(`last ran ${nap.lastRunDays} days ago`);
-    return `<div class="nap-meta nap-why"><strong>Why:</strong> ${bits.join(" • ") || "top of our ratings"}</div>
+    const s = [];
+    const lead = nap.tierReason ? ` (${escapeHtml(nap.tierReason.replace(/\bpts\b/, "points"))})` : "";
+    if (nap.modelTop?.name)
+        s.push(`This is a ${escapeHtml(String(nap.tier || "").toLowerCase()) || "rated"} race where our top-rated horse, ${escapeHtml(nap.modelTop.name)}, stands clear${lead}, but the NAP goes with the market favourite instead.`);
+    else if (nap.tier)
+        s.push(`Our top-rated horse in a ${escapeHtml(String(nap.tier).toLowerCase())} race${lead}.`);
+    else s.push("The top horse on our ratings.");
+    const have = [], lack = [];
+    (nap.lastTop3 ? have : lack).push("finished in the first three last time");
+    (nap.recentFavourite ? have : lack).push("started favourite in a recent run");
+    (nap.recent31_60 ? have : lack).push("comes back after a 31-60 day break");
+    const n = have.length;
+    s.push(n ? `It has ${n} of our 3 form signals: it ${have.join(" and ")}.` : "It has none of our 3 form signals.");
+    if (Number(nap.lastRunDays) > 0) s.push(`It last ran ${nap.lastRunDays} days ago.`);
+    return `<div class="nap-meta nap-why"><strong>Why:</strong> ${s.join(" ")}</div>
         <div class="nap-meta nap-angles"></div>`;
 }
 
@@ -307,9 +315,12 @@ async function fillNapAngles(napEl, nap) {
     const box = napEl.querySelector(".nap-angles");
     const na = a?.napAngles;
     if (!box || !na || String(na.name || "").toUpperCase() !== String(nap.name || "").toUpperCase() || !Array.isArray(na.angles)) return;
+    const list = ws => { const e = ws.map(w => escapeHtml(w)); return e.length > 1 ? `${e.slice(0, -1).join(", ")} and ${e[e.length - 1]}` : e[0] || ""; };
+    const other = a.pick && String(a.pick.horse || "").toUpperCase() !== String(nap.name || "").toUpperCase()
+        ? ` Today's Angle NAP is ${escapeHtml(String(a.pick.horse || "").toUpperCase())} (${escapeHtml(a.pick.course || "")} ${escapeHtml(a.pick.time ? toLocalTimeString(a.pick.time) : "")}): ${list(a.pick.why || [])}.` : "";
     box.innerHTML = na.angles.length
-        ? `<strong>Angles:</strong> ${na.angles.map(w => escapeHtml(w)).join(" • ")} <span class="nap-angles-note">(paper-tested angles, no money)</span>`
-        : `<strong>Angles:</strong> none of our tested angles${a.pick ? ` - today's Angle NAP is ${escapeHtml(String(a.pick.horse || "").toUpperCase())} (${escapeHtml(a.pick.course || "")} ${escapeHtml(a.pick.time ? toLocalTimeString(a.pick.time) : "")}: ${a.pick.why.map(w => escapeHtml(w)).join(", ")})` : ""}`;
+        ? `<strong>Angles:</strong> It also fits ${na.angles.length === 1 ? "one" : na.angles.length} of our paper-tested angles: ${list(na.angles)}. These are tracked with no money on them.`
+        : `<strong>Angles:</strong> It fits none of our paper-tested angles.${other}`;
 }
 
 function renderNapCallout(nap) {
