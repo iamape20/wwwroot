@@ -283,6 +283,35 @@ async function renderAngleNapFallback(napEl) {
         </div></div>`;
 }
 
+// The NAP's reasons in plain words (user 2026-11-19 "add the angles or reasoning for selection to the
+// NAP description"): race tier, how it was chosen, the three form signals it has, and any of the tested
+// angles it fits (data/angle-nap.json napAngles, filled in after the first paint).
+function napWhyHtml(nap) {
+    const bits = [];
+    if (nap.tier) bits.push(`${escapeHtml(nap.tier)} race${nap.tierReason ? ` (top-rated ${escapeHtml(nap.tierReason)})` : ""}`);
+    if (nap.modelTop?.name) bits.push(`market favourite chosen over the top-rated ${escapeHtml(nap.modelTop.name)}`);
+    if (nap.lastTop3) bits.push("finished in the first three last time");
+    if (nap.recentFavourite) bits.push("started favourite in a recent run");
+    if (nap.recent31_60) bits.push("back after a 31-60 day break");
+    if (Number(nap.lastRunDays) > 0) bits.push(`last ran ${nap.lastRunDays} days ago`);
+    return `<div class="nap-meta nap-why"><strong>Why:</strong> ${bits.join(" • ") || "top of our ratings"}</div>
+        <div class="nap-meta nap-angles"></div>`;
+}
+
+async function fillNapAngles(napEl, nap) {
+    let a = null;
+    try {
+        const r = await fetch(`data/angle-nap.json?t=${Date.now()}`, { cache: "no-store" });
+        if (r.ok) a = await r.json();
+    } catch { return; }
+    const box = napEl.querySelector(".nap-angles");
+    const na = a?.napAngles;
+    if (!box || !na || String(na.name || "").toUpperCase() !== String(nap.name || "").toUpperCase() || !Array.isArray(na.angles)) return;
+    box.innerHTML = na.angles.length
+        ? `<strong>Angles:</strong> ${na.angles.map(w => escapeHtml(w)).join(" • ")} <span class="nap-angles-note">(paper-tested angles, no money)</span>`
+        : `<strong>Angles:</strong> none of our tested angles${a.pick ? ` - today's Angle NAP is ${escapeHtml(String(a.pick.horse || "").toUpperCase())} (${escapeHtml(a.pick.course || "")} ${escapeHtml(a.pick.time ? toLocalTimeString(a.pick.time) : "")}: ${a.pick.why.map(w => escapeHtml(w)).join(", ")})` : ""}`;
+}
+
 function renderNapCallout(nap) {
 
     const napEl = document.getElementById("napCallout");
@@ -345,13 +374,14 @@ function renderNapCallout(nap) {
                 ${flagWhy ? `<div class="nap-flag-why">${flagWhy}</div>` : ""}
                 ${resultHtml}
                 <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 Rating ${nap.rating ?? "-"}${gapText}</div>
-                <div class="nap-meta">${escapeHtml(nap.status_message || "3-signal pick, not Strong-tier guaranteed")}</div>
+                ${napWhyHtml(nap)}
             </div>
         </div>
     `;
 
     napEl.style.display = "";
     tickNapCountdown();
+    fillNapAngles(napEl, nap);
 
     if (nap.meetingId != null && nap.raceIndex != null) {
 
