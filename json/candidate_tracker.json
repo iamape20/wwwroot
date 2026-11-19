@@ -6930,7 +6930,9 @@
       "rating": 74.3,
       "runners": 8,
       "recordedAt": "2026-11-19T12:00:57.811Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/5"
     },
     {
       "id": "2026-11-19|Lingfield|12:18",
@@ -6942,15 +6944,19 @@
       "rating": 63.5,
       "runners": 9,
       "recordedAt": "2026-11-19T12:10:57.067Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 422,
-    "settled": 416,
+    "settled": 417,
     "won": 202,
-    "pl": -24.13,
-    "roi": -5.8
+    "pl": -25.13,
+    "roi": -6
   },
   "lastBackfill": 1795071683908
 }

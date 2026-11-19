@@ -2106,10 +2106,16 @@
       "fav": {
         "horse": "DOCTOR STEINBERG",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/5"
       },
       "recordedAt": "2026-11-19T12:00:59.318Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "50/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Lingfield|12:18",
@@ -2125,10 +2131,18 @@
       "fav": {
         "horse": "VALLEY RISING",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T12:10:57.695Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Warwick|12:27",
@@ -2148,21 +2162,40 @@
       },
       "recordedAt": "2026-11-19T12:21:04.969Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Thurles|12:40",
+      "date": "2026-11-19",
+      "course": "Thurles",
+      "time": "12:40",
+      "horse": "TOOR KHOV",
+      "price": "20/1",
+      "runners": 12,
+      "liveHorse": "IAMAGETAWAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IAMAGETAWAY",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T12:30:48.196Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 79,
+    "recorded": 80,
     "pick": {
-      "settled": 74,
+      "settled": 76,
       "won": 18,
-      "pl": -2.27,
-      "roi": -3.1
+      "pl": -4.27,
+      "roi": -5.6
     },
     "favourite": {
-      "settled": 75,
+      "settled": 76,
       "won": 26,
-      "pl": -2.81,
-      "roi": -3.7
+      "pl": -3.81,
+      "roi": -5
     },
     "agree": {
       "settled": 24,
@@ -2171,10 +2204,10 @@
       "roi": -2.9
     },
     "disagree": {
-      "settled": 50,
+      "settled": 52,
       "won": 9,
-      "pl": -1.57,
-      "roi": -3.1
+      "pl": -3.57,
+      "roi": -6.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",

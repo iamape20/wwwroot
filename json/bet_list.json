@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T12:20:58.285Z",
+  "generatedAt": "2026-11-19T12:30:45.583Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,17 +15,34 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Thurles",
-      "off": "12:08",
-      "horse": "DOCTOR STEINBERG"
-    },
-    {
-      "course": "Lingfield",
-      "off": "12:18",
-      "horse": "VALLEY RISING"
+      "course": "Warwick",
+      "off": "12:27",
+      "horse": "SMILE JOHN BOY"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-19",
+      "course": "Lingfield",
+      "off": "12:18",
+      "horse": "VALLEY RISING",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-11-19",
+      "course": "Thurles",
+      "off": "12:08",
+      "horse": "DOCTOR STEINBERG",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-18",
       "course": "Hexham",
@@ -168,32 +185,10 @@
       "bsp": 1.25,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-16",
-      "course": "Wolverhampton",
-      "off": "17:00",
-      "horse": "DESERT ROMANCE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.76,
-      "pl": 0,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-15",
-      "course": "Fontwell",
-      "off": "13:43",
-      "horse": "BASS HUNTER",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.27206946,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-19T12:20:58.162Z",
+    "updatedAt": "2026-11-19T12:30:45.503Z",
     "claude": {
       "races": 38,
       "won": 7,
