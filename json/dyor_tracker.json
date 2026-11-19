@@ -2547,10 +2547,16 @@
       "fav": {
         "horse": "KELLS BAY",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-11-19T15:10:33.066Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Thurles|15:30",
@@ -2589,15 +2595,34 @@
       },
       "recordedAt": "2026-11-19T15:20:34.123Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Lingfield|15:40",
+      "date": "2026-11-19",
+      "course": "Lingfield",
+      "time": "15:40",
+      "horse": "MAGNA",
+      "price": "10/1",
+      "runners": 7,
+      "liveHorse": "NOGO'S DREAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOGO'S DREAM",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T15:30:31.096Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 96,
+    "recorded": 97,
     "pick": {
-      "settled": 87,
+      "settled": 88,
       "won": 18,
-      "pl": -15.27,
-      "roi": -17.6
+      "pl": -16.27,
+      "roi": -18.5
     },
     "favourite": {
       "settled": 87,
@@ -2612,10 +2637,10 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 60,
+      "settled": 61,
       "won": 9,
-      "pl": -11.57,
-      "roi": -19.3
+      "pl": -12.57,
+      "roi": -20.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
