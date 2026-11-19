@@ -284,8 +284,8 @@ async function renderAngleNapFallback(napEl) {
 }
 
 // The NAP's reasons in plain words (user 2026-11-19 "add the angles or reasoning for selection to the
-// NAP description"): race tier, how it was chosen, the three form signals it has, and any of the tested
-// angles it fits (data/angle-nap.json napAngles, filled in after the first paint).
+// NAP description"): race tier, how it was chosen and the three form signals it has. The Angles line was
+// removed the same day (user: "remove Angles from NAP description").
 // Written as sentences (user 2026-11-19: the Why line should read like an explanation, not a list).
 function napWhyHtml(nap) {
     const s = [];
@@ -302,25 +302,7 @@ function napWhyHtml(nap) {
     const n = have.length;
     s.push(n ? `It has ${n} of our 3 form signals: it ${have.join(" and ")}.` : "It has none of our 3 form signals.");
     if (Number(nap.lastRunDays) > 0) s.push(`It last ran ${nap.lastRunDays} days ago.`);
-    return `<div class="nap-meta nap-why"><strong>Why:</strong> ${s.join(" ")}</div>
-        <div class="nap-meta nap-angles"></div>`;
-}
-
-async function fillNapAngles(napEl, nap) {
-    let a = null;
-    try {
-        const r = await fetch(`data/angle-nap.json?t=${Date.now()}`, { cache: "no-store" });
-        if (r.ok) a = await r.json();
-    } catch { return; }
-    const box = napEl.querySelector(".nap-angles");
-    const na = a?.napAngles;
-    if (!box || !na || String(na.name || "").toUpperCase() !== String(nap.name || "").toUpperCase() || !Array.isArray(na.angles)) return;
-    const list = ws => { const e = ws.map(w => escapeHtml(w)); return e.length > 1 ? `${e.slice(0, -1).join(", ")} and ${e[e.length - 1]}` : e[0] || ""; };
-    const other = a.pick && String(a.pick.horse || "").toUpperCase() !== String(nap.name || "").toUpperCase()
-        ? ` Today's Angle NAP is ${escapeHtml(String(a.pick.horse || "").toUpperCase())} (${escapeHtml(a.pick.course || "")} ${escapeHtml(a.pick.time ? toLocalTimeString(a.pick.time) : "")}): ${list(a.pick.why || [])}.` : "";
-    box.innerHTML = na.angles.length
-        ? `<strong>Angles:</strong> It also fits ${na.angles.length === 1 ? "one" : na.angles.length} of our paper-tested angles: ${list(na.angles)}. These are tracked with no money on them.`
-        : `<strong>Angles:</strong> It fits none of our paper-tested angles.${other}`;
+    return `<div class="nap-meta nap-why"><strong>Why:</strong> ${s.join(" ")}</div>`;
 }
 
 // The Value NAP (user 2026-11-19 "yes show both from tomorrow"): one handicap runner a day raised the most
@@ -431,7 +413,6 @@ function renderNapCallout(nap) {
 
     napEl.style.display = "";
     tickNapCountdown();
-    fillNapAngles(napEl, nap);
 
     if (nap.meetingId != null && nap.raceIndex != null) {
 
