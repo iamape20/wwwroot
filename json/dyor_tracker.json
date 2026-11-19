@@ -2803,14 +2803,37 @@
       "fav": {
         "horse": "LIQUID COOLED",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-11-19T19:00:43.193Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
+    },
+    {
+      "id": "2026-11-19|Newcastle|19:40",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "19:40",
+      "horse": "KINETIC FORCE",
+      "price": "9/2",
+      "runners": 14,
+      "liveHorse": "PADDY'S DAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PADDY'S DAY",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T19:30:32.688Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 104,
+    "recorded": 105,
     "pick": {
       "settled": 96,
       "won": 18,
