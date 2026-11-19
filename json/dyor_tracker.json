@@ -2262,10 +2262,14 @@
       "fav": {
         "horse": "MINELLA EMPEROR",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-19T13:00:49.476Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-11-19|Lingfield|13:28",
@@ -2281,10 +2285,14 @@
       "fav": {
         "horse": "ZOOELLA",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/9"
       },
       "recordedAt": "2026-11-19T13:20:48.237Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/9"
     },
     {
       "id": "2026-11-19|Warwick|13:37",
@@ -2304,10 +2312,29 @@
       },
       "recordedAt": "2026-11-19T13:31:13.916Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Thurles|13:50",
+      "date": "2026-11-19",
+      "course": "Thurles",
+      "time": "13:50",
+      "horse": "I DONT REALLY CARE",
+      "price": "15/8",
+      "runners": 14,
+      "liveHorse": "LIGHT UP THE DARK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LIGHT UP THE DARK",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T13:40:55.703Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 85,
+    "recorded": 86,
     "pick": {
       "settled": 79,
       "won": 18,
