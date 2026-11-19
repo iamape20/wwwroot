@@ -245,10 +245,49 @@ function applyBestOpportunityBadge(hero) {
 // the 2026-08-31 fix). NAP's selection logic isn't guarded the same
 // way, so it's never allowed to substitute for Best Opportunity -
 // it gets its own honest, separately-labelled slot instead.
+// £1 on our pick in every finished race at starting price (user 2026-11-19:
+// a high win rate on short-priced favourites is not a profit). From
+// api/checkResults.js pickReturn: { races, pl } or null.
+function pickReturnHtml(r) {
+    if (!r || !r.races) return "";
+    const cls = r.pl < 0 ? "record-minus" : "record-plus";
+    const money = `${r.pl < 0 ? "-" : "+"}£${Math.abs(r.pl).toFixed(2)}`;
+    return `<span class="results-strip-stat" title="£1 on our pick in each of the ${r.races} finished races at the bookmakers' starting price - wins at short prices do not always cover the losers">£1 each: <span class="${cls}">${money}</span></span>`;
+}
+
+// On a day with no NAP, the Angle NAP (paper test from 19 Nov: one runner a day
+// with the most of the six tested angles, 10/1 or shorter at 09:00) fills the
+// box instead of "No NAP today" (user 2026-11-19 "yes do both"). No money.
+async function renderAngleNapFallback(napEl) {
+    let a = null;
+    try {
+        const r = await fetch(`data/angle-nap.json?t=${Date.now()}`, { cache: "no-store" });
+        if (r.ok) a = await r.json();
+    } catch { /* keep the empty text */ }
+    if (!a?.pick || napEl.dataset.napState !== "empty") return;
+    const p = a.pick;
+    const res = p.outcome === "won" ? `<div class="nap-meta"><span class="record-plus">WON</span>${p.bsp ? ` at Betfair SP ${p.bsp}` : ""}</div>`
+        : p.outcome === "lost" ? `<div class="nap-meta"><span class="record-minus">Lost</span></div>`
+        : p.outcome === "void" ? `<div class="nap-meta">Void (non-runner)</div>` : "";
+    const rec = a.record && a.record.settled
+        ? `Paper test so far: ${a.record.won} won from ${a.record.settled}, ${a.record.roiPct >= 0 ? "+" : ""}${a.record.roiPct}% at Betfair SP (verdict at ${a.record.passAt}).`
+        : "Paper test started 19 Nov - no money on it.";
+    napEl.innerHTML = `
+        <div class="nap-label">Today's Angle NAP • ${p.why.length} angles</div>
+        <div class="nap-row"><div>
+            <div class="nap-name">${escapeHtml(String(p.horse || "").toUpperCase())}</div>
+            ${res}
+            <div class="nap-meta">${escapeHtml(p.course || "-")} ${escapeHtml(p.time ? toLocalTimeString(p.time) : "-")} • ${escapeHtml(p.odds || "-")} at 09:00</div>
+            <div class="nap-meta">${p.why.map(w => escapeHtml(w)).join(" • ")}</div>
+            <div class="nap-meta">No Strong or Moderate NAP today, so this is the day's Angle NAP instead. ${rec}</div>
+        </div></div>`;
+}
+
 function renderNapCallout(nap) {
 
     const napEl = document.getElementById("napCallout");
     if (!napEl) return;
+    napEl.dataset.napState = nap ? "nap" : "empty";
 
     if (!nap) {
         // No race qualifies (user 2026-11-06: the NAP is Our pick in a Strong or
@@ -257,10 +296,16 @@ function renderNapCallout(nap) {
         // "Once the 9am prices are in" only while that is still to come; it can also
         // be a Moderate race whose pick fails a NAP check (trainer out of form).
         const beforeNine = Number(new Date().toLocaleString("en-GB", { timeZone: "Europe/London", hour: "2-digit", hourCycle: "h23" })) < 9;
-        napEl.innerHTML = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
+        const emptyHtml = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
+        // Only rewrite when the text changes, so the Angle NAP shown below is not
+        // flashed away on every refresh.
+        if (!napEl.querySelector(".nap-name") || napEl.dataset.angle !== "1") napEl.innerHTML = emptyHtml;
         napEl.onclick = null;
+        napEl.style.cursor = "default";
+        renderAngleNapFallback(napEl).then(() => { if (napEl.querySelector(".nap-name")) napEl.dataset.angle = "1"; });
         return;
     }
+    napEl.dataset.angle = "";
 
     // Market-override pick: the stored gap is the rating leader's lead, not this horse's.
     const gapText =
@@ -3215,6 +3260,8 @@ todayBlockEl.innerHTML = `
                     (${placeRate}%)
                 </span>
 
+                ${pickReturnHtml(data.pickReturn)}
+
                 ${
                     data.yesterday
                         ? `
@@ -3231,6 +3278,7 @@ todayBlockEl.innerHTML = `
                                 placed ${data.yesterday.topPickPlaces}
                                 (${(data.yesterday.topPickPlaces / data.yesterday.racesChecked * 100).toFixed(1)}%)
                             </span>
+                            ${pickReturnHtml(data.yesterday.pickReturn)}
                         `
                         : ""
                 }

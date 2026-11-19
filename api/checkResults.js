@@ -134,6 +134,29 @@ function normaliseHorseName(name) {
 
 }
 
+/*
+ * £1 on our pick in every finished race at the bookmakers' starting price
+ * (user 2026-11-19 "yes do both": a 50% day is not a profitable day when the
+ * picks are mostly short-priced favourites). A winner returns its SP; a pick
+ * that ran and lost costs £1; a race where our pick is not among the runners
+ * (non-runner) is left out. { races, pl } or null when nothing has finished.
+ */
+function pickReturn(details) {
+    const dec = o => { if (!o) return null; if (/ev/i.test(o)) return 2; const [a, b] = String(o).split("/").map(Number); return b ? a / b + 1 : null; };
+    let races = 0, pl = 0;
+    for (const d of details || []) {
+        if (d.outcome === "won") {
+            const w = (d.finishers || d.actualTop || []).find(p => Number(p.position) === 1);
+            const sp = dec(w?.odds);
+            if (!sp) continue;
+            races++; pl += sp - 1;
+        } else if (d.ourPickPosition != null || (d.nonFinishers || []).some(n => n.name === d.ourPick)) {
+            races++; pl -= 1;
+        }
+    }
+    return races ? { races, pl: +pl.toFixed(2) } : null;
+}
+
 async function fetchTodaysResults() {
 
     const response = await axios.get(RESULTS_URL, {
@@ -267,7 +290,8 @@ module.exports = async (req, res) => {
                 date: yesterdayDate,
                 racesChecked: yesterdayStored.racesChecked,
                 topPickWins: yesterdayStored.topPickWins || 0,
-                topPickPlaces: yesterdayStored.topPickPlaces || 0
+                topPickPlaces: yesterdayStored.topPickPlaces || 0,
+                pickReturn: pickReturn(yesterdayStored.details)
             }
             : null;
 
@@ -287,6 +311,7 @@ module.exports = async (req, res) => {
                 success: true,
                 fresh: false,
                 ...existing,
+                pickReturn: pickReturn(existing.details),
                 yesterday
             });
 
@@ -309,6 +334,7 @@ module.exports = async (req, res) => {
                     topPickPlaces: 0,
                     details: []
                 }),
+                pickReturn: pickReturn(existing?.details),
                 yesterday
             });
 
@@ -626,6 +652,7 @@ module.exports = async (req, res) => {
             predictionsLoaded,
             predictionsError,
             ...tally,
+            pickReturn: pickReturn(tally.details),
             yesterday
         });
 
