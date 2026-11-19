@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T12:40:43.565Z",
+  "generatedAt": "2026-11-19T12:50:43.500Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-19",
       "course": "Warwick",
       "off": "12:27",
-      "horse": "SMILE JOHN BOY"
-    }
-  ],
-  "recent": [
+      "horse": "SMILE JOHN BOY",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-19",
       "course": "Lingfield",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-16",
-      "course": "Wolverhampton",
-      "off": "17:30",
-      "horse": "LEADING ROLE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.25,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-19T12:40:43.471Z",
+    "updatedAt": "2026-11-19T12:50:43.399Z",
     "claude": {
       "races": 38,
       "won": 7,

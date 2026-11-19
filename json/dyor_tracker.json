@@ -2158,10 +2158,18 @@
       "fav": {
         "horse": "SMILE JOHN BOY",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T12:21:04.969Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Thurles|12:40",
@@ -2200,27 +2208,46 @@
       },
       "recordedAt": "2026-11-19T12:40:49.510Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Warwick|13:02",
+      "date": "2026-11-19",
+      "course": "Warwick",
+      "time": "13:02",
+      "horse": "LARGY FORCE",
+      "price": "5/4",
+      "runners": 10,
+      "liveHorse": "LARGY FORCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LARGY FORCE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T12:50:46.639Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 81,
+    "recorded": 82,
     "pick": {
-      "settled": 76,
+      "settled": 77,
       "won": 18,
-      "pl": -4.27,
-      "roi": -5.6
+      "pl": -5.27,
+      "roi": -6.8
     },
     "favourite": {
-      "settled": 76,
+      "settled": 77,
       "won": 26,
-      "pl": -3.81,
-      "roi": -5
+      "pl": -4.81,
+      "roi": -6.2
     },
     "agree": {
-      "settled": 24,
+      "settled": 25,
       "won": 9,
-      "pl": -0.7,
-      "roi": -2.9
+      "pl": -1.7,
+      "roi": -6.8
     },
     "disagree": {
       "settled": 52,
