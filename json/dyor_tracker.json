@@ -2235,10 +2235,18 @@
       "fav": {
         "horse": "LARGY FORCE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T12:50:46.639Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Thurles|13:15",
@@ -2258,27 +2266,46 @@
       },
       "recordedAt": "2026-11-19T13:00:49.476Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Lingfield|13:28",
+      "date": "2026-11-19",
+      "course": "Lingfield",
+      "time": "13:28",
+      "horse": "ZOOELLA",
+      "price": "4/9",
+      "runners": 5,
+      "liveHorse": "ZOOELLA",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ZOOELLA",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T13:20:48.237Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 83,
+    "recorded": 84,
     "pick": {
-      "settled": 78,
+      "settled": 79,
       "won": 18,
-      "pl": -6.27,
-      "roi": -8
+      "pl": -7.27,
+      "roi": -9.2
     },
     "favourite": {
-      "settled": 78,
+      "settled": 79,
       "won": 26,
-      "pl": -5.81,
-      "roi": -7.5
+      "pl": -6.81,
+      "roi": -8.6
     },
     "agree": {
-      "settled": 25,
+      "settled": 26,
       "won": 9,
-      "pl": -1.7,
-      "roi": -6.8
+      "pl": -2.7,
+      "roi": -10.4
     },
     "disagree": {
       "settled": 53,
