@@ -2572,10 +2572,16 @@
       "fav": {
         "horse": "LEGENDARY STATUS",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "30/100"
       },
       "recordedAt": "2026-11-19T15:20:34.108Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Newcastle|15:35",
@@ -2591,10 +2597,18 @@
       "fav": {
         "horse": "WATER TO WINE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T15:20:34.123Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Lingfield|15:40",
@@ -2610,25 +2624,31 @@
       "fav": {
         "horse": "NOGO'S DREAM",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-11-19T15:30:31.096Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 97,
     "pick": {
-      "settled": 88,
+      "settled": 91,
       "won": 18,
-      "pl": -16.27,
-      "roi": -18.5
+      "pl": -19.27,
+      "roi": -21.2
     },
     "favourite": {
-      "settled": 87,
+      "settled": 88,
       "won": 26,
-      "pl": -14.81,
-      "roi": -17
+      "pl": -15.81,
+      "roi": -18
     },
     "agree": {
       "settled": 27,
@@ -2637,10 +2657,10 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 61,
+      "settled": 64,
       "won": 9,
-      "pl": -12.57,
-      "roi": -20.6
+      "pl": -15.57,
+      "roi": -24.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
