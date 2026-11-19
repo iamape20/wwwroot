@@ -1043,8 +1043,42 @@
       ],
       "status": "skipped",
       "reason": "Claude decided not to bet: The comment says it was unsuited by a drop in trip last time and is going back up today, so the trip rule picked it up by mistake."
+    },
+    {
+      "id": "2026-11-19|Newcastle|19:10|TRIP|ARCHANGELJOSEPI",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "19:10",
+      "horse": "ARCHANGEL JOSEPI",
+      "decidedAt": "2026-11-19T19:00:39.844Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 84.07,
+      "eventId": "34895727046601057",
+      "marketId": "34895727136700057",
+      "runnerId": "34895727137802057",
+      "price": 9.8,
+      "available": 21.8,
+      "depth": [
+        [
+          9.8,
+          21.8
+        ],
+        [
+          9.6,
+          127.43
+        ],
+        [
+          9.4,
+          209.31
+        ]
+      ],
+      "status": "placed",
+      "stake": 2.1,
+      "matched": 2.1
     }
   ],
-  "updatedAt": "2026-11-19T18:50:33.550Z",
+  "updatedAt": "2026-11-19T19:00:39.848Z",
   "bankPeak": 109.65222
 }
