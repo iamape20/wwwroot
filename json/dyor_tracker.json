@@ -2726,19 +2726,44 @@
       "fav": {
         "horse": "SHIMMERING SHADOW",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-19T17:30:36.775Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "40/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-19|Newcastle|18:10",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "18:10",
+      "horse": "MONTEZIN",
+      "price": "8/1",
+      "runners": 14,
+      "liveHorse": "FRANKIES DREAM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FRANKIES DREAM",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T18:00:32.255Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 101,
+    "recorded": 102,
     "pick": {
-      "settled": 93,
+      "settled": 94,
       "won": 18,
-      "pl": -21.27,
-      "roi": -22.9
+      "pl": -22.27,
+      "roi": -23.7
     },
     "favourite": {
       "settled": 90,
@@ -2753,12 +2778,12 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 66,
+      "settled": 67,
       "won": 9,
-      "pl": -17.57,
-      "roi": -26.6
+      "pl": -18.57,
+      "roi": -27.7
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795099837396
+  "lastBackfill": 1795111232265
 }
