@@ -819,6 +819,17 @@ button {
     margin: 14px 14px 0;
 }
 
+/* Value NAP (user 2026-11-19 "yes show both"): same card as the NAP, green accent so the two read apart. */
+#valueNapCallout {
+    margin: 10px 14px 0;
+    cursor: default;
+    border-color: rgba(46, 160, 67, .55);
+}
+
+#valueNapCallout .nap-label {
+    color: rgb(46, 140, 60);
+}
+
 #dailyDoubleBox {
     padding: 14px 14px 0;
 }

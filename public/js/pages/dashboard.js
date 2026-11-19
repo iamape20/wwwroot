@@ -323,8 +323,45 @@ async function fillNapAngles(napEl, nap) {
         : `<strong>Angles:</strong> It fits none of our paper-tested angles.${other}`;
 }
 
+// The Value NAP (user 2026-11-19 "yes show both from tomorrow"): one handicap runner a day raised the most
+// after winning last time (js/valueNapPaperTest.js, from 20 Nov). Wins less often than the Banker NAP but at
+// bigger prices; a paper test with no money. Hidden before its first day.
+const VALUE_NAP_FROM = "2026-11-20";
+async function renderValueNap() {
+    const el = document.getElementById("valueNapCallout");
+    if (!el) return;
+    let v = null;
+    try {
+        const r = await fetch(`data/value-nap.json?t=${Date.now()}`, { cache: "no-store" });
+        if (r.ok) v = await r.json();
+    } catch { return; }
+    if (!v || String(v.date || "") < VALUE_NAP_FROM) { el.style.display = "none"; return; }
+    const rec = v.record && v.record.settled
+        ? `Record so far: ${v.record.won} won from ${v.record.settled}, ${v.record.pl >= 0 ? "+" : "-"}${Math.abs(v.record.pl).toFixed(2)} pts (${v.record.roiPct >= 0 ? "+" : ""}${v.record.roiPct}%) at Betfair SP. Judged after ${v.record.passAt}.`
+        : `Paper test from 20 Nov - no money on it. Judged after 100 picks.`;
+    const p = v.pick;
+    let html = `<div class="nap-label">Today's Value NAP${p ? ` • raised ${p.rise}lb` : ""}</div>`;
+    if (p) {
+        const res = p.outcome === "won" ? `<div class="nap-meta"><span class="record-plus">WON</span>${p.bsp ? ` at Betfair SP ${p.bsp}` : ""}</div>`
+            : p.outcome === "lost" ? `<div class="nap-meta"><span class="record-minus">Lost</span></div>`
+            : p.outcome === "void" ? `<div class="nap-meta">Void (non-runner)</div>` : "";
+        html += `<div class="nap-row"><div>
+            <div class="nap-name">${escapeHtml(String(p.horse || "").toUpperCase())}</div>
+            ${res}
+            <div class="nap-meta">${escapeHtml(p.course || "-")} ${escapeHtml(p.time ? toLocalTimeString(p.time) : "-")} • ${escapeHtml(p.odds || "-")} at 09:00</div>
+            <div class="nap-meta nap-why"><strong>Why:</strong> It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. Of today's handicap runners raised after a win, it has the biggest rise. Horses like this have beaten the price in our results (about 3 in 10 win, at bigger prices than the Banker NAP), so expect losing runs.</div>
+            <div class="nap-meta">${rec}</div>
+        </div></div>`;
+    } else {
+        html += `<div class="daily-double-empty-text">${v.noPick ? "No Value NAP today: no handicap runner raised 5lb+ after winning at 10/1 or shorter." : "Picked from 9am, once the morning prices are in."}</div><div class="nap-meta">${rec}</div>`;
+    }
+    el.innerHTML = html;
+    el.style.display = "";
+}
+
 function renderNapCallout(nap) {
 
+    renderValueNap();
     const napEl = document.getElementById("napCallout");
     if (!napEl) return;
     napEl.dataset.napState = nap ? "nap" : "empty";
@@ -336,7 +373,8 @@ function renderNapCallout(nap) {
         // "Once the 9am prices are in" only while that is still to come; it can also
         // be a Moderate race whose pick fails a NAP check (trainer out of form).
         const beforeNine = Number(new Date().toLocaleString("en-GB", { timeZone: "Europe/London", hour: "2-digit", hourCycle: "h23" })) < 9;
-        const emptyHtml = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
+        const banker = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" }) >= VALUE_NAP_FROM;
+        const emptyHtml = `<div class="nap-label">${banker ? "Today's Banker NAP" : "Today's NAP"}</div><div class="daily-double-empty-text">No ${banker ? "Banker " : ""}NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
         // Only rewrite when the text changes, so the Angle NAP shown below is not
         // flashed away on every refresh.
         if (!napEl.querySelector(".nap-name") || napEl.dataset.angle !== "1") napEl.innerHTML = emptyHtml;
@@ -377,7 +415,7 @@ function renderNapCallout(nap) {
     const countdownHtml = !res && !struck && Number.isFinite(offMs)
         ? `<span class="nap-countdown" data-off="${offMs}"></span>` : "";
     napEl.innerHTML = `
-        <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
+        <div class="nap-label">${String(nap.date || "") >= VALUE_NAP_FROM ? "Today's Banker NAP" : "Today's NAP"} \u2022 ${nap.signalCount ?? 0}/3 signals</div>
         <div class="nap-row">
             ${napSilk ? `<img src="${escapeHtml(String(napSilk))}" class="pick-silk" alt="" loading="lazy" onerror="this.style.display='none';">` : ""}
             <div>
@@ -386,6 +424,7 @@ function renderNapCallout(nap) {
                 ${resultHtml}
                 <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 Rating ${nap.rating ?? "-"}${gapText}</div>
                 ${napWhyHtml(nap)}
+                ${String(nap.date || "") >= VALUE_NAP_FROM ? `<div class="nap-meta nap-banker-note">The Banker is the day's likeliest winner, usually a short-priced favourite: it wins often, but so far it has not beaten the price. The Value NAP below is the bigger-priced alternative.</div>` : ""}
             </div>
         </div>
     `;
