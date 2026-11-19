@@ -2826,10 +2826,16 @@
       "fav": {
         "horse": "PADDY'S DAY",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T19:30:32.688Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/2"
     }
   ],
   "stats": {
@@ -2841,10 +2847,10 @@
       "roi": -25.3
     },
     "favourite": {
-      "settled": 91,
+      "settled": 92,
       "won": 26,
-      "pl": -18.81,
-      "roi": -20.7
+      "pl": -19.81,
+      "roi": -21.5
     },
     "agree": {
       "settled": 27,
