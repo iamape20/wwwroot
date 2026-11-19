@@ -2308,10 +2308,18 @@
       "fav": {
         "horse": "THE BOOLA BOSS",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T13:31:13.916Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Thurles|13:50",
@@ -2350,27 +2358,46 @@
       },
       "recordedAt": "2026-11-19T13:50:40.240Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Warwick|14:12",
+      "date": "2026-11-19",
+      "course": "Warwick",
+      "time": "14:12",
+      "horse": "ANALIESE",
+      "price": "7/2",
+      "runners": 9,
+      "liveHorse": "STRONG RUN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STRONG RUN",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T14:01:00.877Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 87,
+    "recorded": 88,
     "pick": {
-      "settled": 79,
+      "settled": 80,
       "won": 18,
-      "pl": -7.27,
-      "roi": -9.2
+      "pl": -8.27,
+      "roi": -10.3
     },
     "favourite": {
-      "settled": 79,
+      "settled": 80,
       "won": 26,
-      "pl": -6.81,
-      "roi": -8.6
+      "pl": -7.81,
+      "roi": -9.8
     },
     "agree": {
-      "settled": 26,
+      "settled": 27,
       "won": 9,
-      "pl": -2.7,
-      "roi": -10.4
+      "pl": -3.7,
+      "roi": -13.7
     },
     "disagree": {
       "settled": 53,
