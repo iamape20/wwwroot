@@ -2649,25 +2649,52 @@
       "fav": {
         "horse": "EL RA'ADY",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T16:00:42.942Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-19|Newcastle|16:40",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "16:40",
+      "horse": "YORKSHIRE DREAM",
+      "price": "6/1",
+      "runners": 12,
+      "liveHorse": "MA FILLE DE REVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MA FILLE DE REVE",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T16:30:38.432Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 98,
+    "recorded": 99,
     "pick": {
-      "settled": 91,
+      "settled": 92,
       "won": 18,
-      "pl": -19.27,
-      "roi": -21.2
+      "pl": -20.27,
+      "roi": -22
     },
     "favourite": {
-      "settled": 88,
+      "settled": 89,
       "won": 26,
-      "pl": -15.81,
-      "roi": -18
+      "pl": -16.81,
+      "roi": -18.9
     },
     "agree": {
       "settled": 27,
@@ -2676,10 +2703,10 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 64,
+      "settled": 65,
       "won": 9,
-      "pl": -15.57,
-      "roi": -24.3
+      "pl": -16.57,
+      "roi": -25.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
