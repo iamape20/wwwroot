@@ -2470,10 +2470,16 @@
       "fav": {
         "horse": "COOLANNA",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T14:40:38.824Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-19|Thurles|15:00",
@@ -2512,10 +2518,29 @@
       },
       "recordedAt": "2026-11-19T15:00:34.968Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Warwick|15:17",
+      "date": "2026-11-19",
+      "course": "Warwick",
+      "time": "15:17",
+      "horse": "AGREYMIRACLESEEKER",
+      "price": "18/1",
+      "runners": 16,
+      "liveHorse": "KELLS BAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KELLS BAY",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T15:10:33.066Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 93,
+    "recorded": 94,
     "pick": {
       "settled": 85,
       "won": 18,
@@ -2523,10 +2548,10 @@
       "roi": -15.6
     },
     "favourite": {
-      "settled": 85,
+      "settled": 86,
       "won": 26,
-      "pl": -12.81,
-      "roi": -15.1
+      "pl": -13.81,
+      "roi": -16.1
     },
     "agree": {
       "settled": 27,
