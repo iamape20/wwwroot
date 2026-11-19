@@ -2495,10 +2495,18 @@
       "fav": {
         "horse": "LICEO",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-19T14:50:37.387Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Lingfield|15:08",
@@ -2514,10 +2522,16 @@
       "fav": {
         "horse": "CREDIT FORGEDD IT",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-19T15:00:34.968Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-19|Warwick|15:17",
@@ -2537,21 +2551,59 @@
       },
       "recordedAt": "2026-11-19T15:10:33.066Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-19|Thurles|15:30",
+      "date": "2026-11-19",
+      "course": "Thurles",
+      "time": "15:30",
+      "horse": "HOW DECC",
+      "price": "25/1",
+      "runners": 12,
+      "liveHorse": "LEGENDARY STATUS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LEGENDARY STATUS",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T15:20:34.108Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-19|Newcastle|15:35",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "15:35",
+      "horse": "STONEACRE DONNY",
+      "price": "9/4",
+      "runners": 8,
+      "liveHorse": "WATER TO WINE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WATER TO WINE",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-19T15:20:34.123Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 94,
+    "recorded": 96,
     "pick": {
-      "settled": 85,
+      "settled": 87,
       "won": 18,
-      "pl": -13.27,
-      "roi": -15.6
+      "pl": -15.27,
+      "roi": -17.6
     },
     "favourite": {
-      "settled": 86,
+      "settled": 87,
       "won": 26,
-      "pl": -13.81,
-      "roi": -16.1
+      "pl": -14.81,
+      "roi": -17
     },
     "agree": {
       "settled": 27,
@@ -2560,10 +2612,10 @@
       "roi": -13.7
     },
     "disagree": {
-      "settled": 58,
+      "settled": 60,
       "won": 9,
-      "pl": -9.57,
-      "roi": -16.5
+      "pl": -11.57,
+      "roi": -19.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
