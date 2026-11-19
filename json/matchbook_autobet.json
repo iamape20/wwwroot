@@ -1006,8 +1006,45 @@
       "pl": -2.15,
       "potAfter": 84.07,
       "settledAt": "2026-11-19T13:40:54.408Z"
+    },
+    {
+      "id": "2026-11-19|Newcastle|16:10|TRIP|BIGMONEY",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-19",
+      "course": "Newcastle",
+      "time": "16:10",
+      "horse": "BIG MONEY",
+      "decidedAt": "2026-11-19T16:00:41.495Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 84.07,
+      "claude": {
+        "action": "skip",
+        "reason": "The comment says it was unsuited by a drop in trip last time and is going back up today, so the trip rule picked it up by mistake."
+      },
+      "eventId": "34895727045001057",
+      "marketId": "34895727136701057",
+      "runnerId": "34895727137512057",
+      "price": 4.9,
+      "available": 360.71,
+      "depth": [
+        [
+          4.9,
+          360.71
+        ],
+        [
+          4.8,
+          656.55
+        ],
+        [
+          4.7,
+          567.12
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: The comment says it was unsuited by a drop in trip last time and is going back up today, so the trip rule picked it up by mistake."
     }
   ],
-  "updatedAt": "2026-11-19T15:50:41.594Z",
+  "updatedAt": "2026-11-19T16:00:41.495Z",
   "bankPeak": 109.65222
 }
