@@ -2917,31 +2917,58 @@
       "fav": {
         "horse": "BANDE ORGANISEE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T11:11:03.808Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-20|Chepstow|11:50",
+      "date": "2026-11-20",
+      "course": "Chepstow",
+      "time": "11:50",
+      "horse": "LITTLEBOBBYDAZZLER",
+      "price": "12/1",
+      "runners": 14,
+      "liveHorse": "SEA THE DAY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SEA THE DAY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T11:41:06.480Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 106,
+    "recorded": 107,
     "pick": {
-      "settled": 105,
+      "settled": 106,
       "won": 27,
-      "pl": 1.2,
-      "roi": 1.1
+      "pl": 0.2,
+      "roi": 0.2
     },
     "favourite": {
-      "settled": 105,
+      "settled": 106,
       "won": 39,
-      "pl": 4.11,
-      "roi": 3.9
+      "pl": 3.11,
+      "roi": 2.9
     },
     "agree": {
-      "settled": 33,
+      "settled": 34,
       "won": 15,
-      "pl": 6.43,
-      "roi": 19.5
+      "pl": 5.43,
+      "roi": 16
     },
     "disagree": {
       "settled": 72,

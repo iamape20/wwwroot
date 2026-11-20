@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T11:31:06.339Z",
+  "generatedAt": "2026-11-20T11:41:02.614Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-20",
       "course": "Chepstow",
       "off": "11:20",
-      "horse": "BANDE ORGANISEE"
-    }
-  ],
-  "recent": [
+      "horse": "BANDE ORGANISEE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-19",
       "course": "Newcastle",
@@ -174,21 +179,10 @@
       "bsp": 1.40327995,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-17",
-      "course": "Limerick",
-      "off": "12:10",
-      "horse": "POET'S DUKE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 3.45,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-20T11:31:06.172Z",
+    "updatedAt": "2026-11-20T11:41:02.527Z",
     "claude": {
       "races": 38,
       "won": 7,
