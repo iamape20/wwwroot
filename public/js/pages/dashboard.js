@@ -317,6 +317,7 @@ async function renderValueNap() {
         const r = await fetch(`data/value-nap.json?t=${Date.now()}`, { cache: "no-store" });
         if (r.ok) v = await r.json();
     } catch { return; }
+    renderLastValueNap(v && v.last);
     if (!v || String(v.date || "") < VALUE_NAP_FROM) { el.style.display = "none"; return; }
     const rec = v.record && v.record.settled
         ? `Record so far: ${v.record.won} won from ${v.record.settled}, ${v.record.pl >= 0 ? "+" : "-"}${Math.abs(v.record.pl).toFixed(2)} pts (${v.record.roiPct >= 0 ? "+" : ""}${v.record.roiPct}%) at Betfair SP. Judged after ${v.record.passAt}.`
@@ -3080,6 +3081,19 @@ function renderLastNap(n) {
     const how = n.outcome === "won" ? `<span class="record-plus">won</span>${sp}`
         : `<span class="record-minus">${n.position ? ord(n.position) : "lost"}</span>${sp}${n.winner ? ` &middot; won by ${escapeHtml(n.winner)}${n.winnerSp ? ` (${escapeHtml(n.winnerSp)})` : ""}` : ""}`;
     el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.name).toUpperCase())}</b> ${how}`;
+}
+
+// "Yesterday's Value NAP: X won at Betfair SP 5.2" with the other results (user 2026-11-20).
+function renderLastValueNap(n) {
+    const el = document.getElementById("valueNapYesterday");
+    if (!el) return;
+    if (!n?.horse) { el.innerHTML = ""; return; }
+    const y = new Date(Date.now() - 86400000).toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const label = n.date === y ? "Yesterday's Value NAP"
+        : "Last Value NAP (" + new Date(n.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + ")";
+    const how = n.outcome === "won" ? `<span class="record-plus">won</span>${n.bsp ? ` at Betfair SP ${escapeHtml(String(n.bsp))}` : ""}`
+        : n.outcome === "void" ? "void (non-runner)" : `<span class="record-minus">lost</span>`;
+    el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.horse).toUpperCase())}</b> ${how}`;
 }
 
 // Coming up (user 2026-11-05): the next races on the whole card with our pick
