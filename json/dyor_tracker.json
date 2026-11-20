@@ -3387,10 +3387,16 @@
       "fav": {
         "horse": "HURRICANE MICK",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-20T15:10:44.176Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Catterick|15:28",
@@ -3406,10 +3412,16 @@
       "fav": {
         "horse": "LA DAME ECARLATE",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T15:20:43.823Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-20|Ascot|15:40",
@@ -3434,16 +3446,16 @@
   "stats": {
     "recorded": 126,
     "pick": {
-      "settled": 121,
+      "settled": 122,
       "won": 27,
-      "pl": -14.8,
-      "roi": -12.2
+      "pl": -15.8,
+      "roi": -13
     },
     "favourite": {
-      "settled": 117,
+      "settled": 118,
       "won": 39,
-      "pl": -7.89,
-      "roi": -6.7
+      "pl": -8.89,
+      "roi": -7.5
     },
     "agree": {
       "settled": 37,
@@ -3452,10 +3464,10 @@
       "roi": 6.6
     },
     "disagree": {
-      "settled": 84,
+      "settled": 85,
       "won": 12,
-      "pl": -17.24,
-      "roi": -20.5
+      "pl": -18.24,
+      "roi": -21.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",

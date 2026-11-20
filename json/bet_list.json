@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T15:30:37.255Z",
+  "generatedAt": "2026-11-20T15:40:38.033Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-20",
       "course": "Chepstow",
       "off": "15:17",
-      "horse": "HURRICANE MICK"
-    }
-  ],
-  "recent": [
+      "horse": "HURRICANE MICK",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-20",
       "course": "Catterick",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-17",
-      "course": "Carlisle",
-      "off": "13:25",
-      "horse": "TURBOCHARGED",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.44,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-20T15:30:37.170Z",
+    "updatedAt": "2026-11-20T15:40:37.949Z",
     "claude": {
       "races": 38,
       "won": 7,
