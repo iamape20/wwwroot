@@ -3562,10 +3562,18 @@
       "fav": {
         "horse": "NOBLE LIGHT",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T17:20:42.868Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Dundalk|17:45",
@@ -3585,21 +3593,40 @@
       },
       "recordedAt": "2026-11-20T17:30:41.543Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Wolverhampton|18:00",
+      "date": "2026-11-20",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "horse": "ZHURI",
+      "price": "4/7",
+      "runners": 10,
+      "liveHorse": "ZHURI",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ZHURI",
+        "price": "4/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T17:50:40.839Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 132,
+    "recorded": 133,
     "pick": {
-      "settled": 125,
+      "settled": 126,
       "won": 27,
-      "pl": -18.8,
-      "roi": -15
+      "pl": -19.8,
+      "roi": -15.7
     },
     "favourite": {
-      "settled": 120,
+      "settled": 121,
       "won": 39,
-      "pl": -10.89,
-      "roi": -9.1
+      "pl": -11.89,
+      "roi": -9.8
     },
     "agree": {
       "settled": 38,
@@ -3608,10 +3635,10 @@
       "roi": 3.8
     },
     "disagree": {
-      "settled": 87,
+      "settled": 88,
       "won": 12,
-      "pl": -20.24,
-      "roi": -23.3
+      "pl": -21.24,
+      "roi": -24.1
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
