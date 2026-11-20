@@ -2,7 +2,7 @@
   "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 77.94,
+  "pot": 68.21,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -1227,7 +1227,11 @@
       ],
       "status": "placed",
       "stake": 7.79,
-      "matched": 7.79
+      "matched": 7.79,
+      "result": "lost",
+      "pl": -7.79,
+      "potAfter": 70.15,
+      "settledAt": "2026-11-20T18:30:42.921Z"
     },
     {
       "id": "2026-11-20|Dundalk|18:15|TRIP|ALISSAM",
@@ -1261,9 +1265,13 @@
       ],
       "status": "placed",
       "stake": 1.94,
-      "matched": 1.94
+      "matched": 1.94,
+      "result": "lost",
+      "pl": -1.94,
+      "potAfter": 68.21,
+      "settledAt": "2026-11-20T18:30:42.923Z"
     }
   ],
-  "updatedAt": "2026-11-20T18:20:43.654Z",
+  "updatedAt": "2026-11-20T18:30:42.923Z",
   "bankPeak": 109.65222
 }
