@@ -3772,10 +3772,14 @@
       "fav": {
         "horse": "ASUKA",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-20T19:21:36.124Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/4"
     },
     {
       "id": "2026-11-20|Dundalk|19:45",
@@ -3795,10 +3799,29 @@
       },
       "recordedAt": "2026-11-20T19:31:47.739Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Wolverhampton|20:00",
+      "date": "2026-11-20",
+      "course": "Wolverhampton",
+      "time": "20:00",
+      "horse": "BARRY THE WORM",
+      "price": "13/8",
+      "runners": 13,
+      "liveHorse": "BARRY THE WORM",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "BARRY THE WORM",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T19:50:49.805Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 140,
+    "recorded": 141,
     "pick": {
       "settled": 132,
       "won": 27,
