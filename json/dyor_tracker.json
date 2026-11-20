@@ -3512,10 +3512,18 @@
       "fav": {
         "horse": "FRANTIC",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T16:50:42.584Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Dundalk|17:15",
@@ -3540,22 +3548,22 @@
   "stats": {
     "recorded": 130,
     "pick": {
-      "settled": 124,
+      "settled": 125,
       "won": 27,
-      "pl": -17.8,
-      "roi": -14.4
+      "pl": -18.8,
+      "roi": -15
     },
     "favourite": {
-      "settled": 119,
+      "settled": 120,
       "won": 39,
-      "pl": -9.89,
-      "roi": -8.3
+      "pl": -10.89,
+      "roi": -9.1
     },
     "agree": {
-      "settled": 37,
+      "settled": 38,
       "won": 15,
-      "pl": 2.43,
-      "roi": 6.6
+      "pl": 1.43,
+      "roi": 3.8
     },
     "disagree": {
       "settled": 87,
