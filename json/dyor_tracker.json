@@ -3614,10 +3614,18 @@
       "fav": {
         "horse": "ZHURI",
         "price": "4/7",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T17:50:40.839Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Dundalk|18:15",
@@ -3637,27 +3645,46 @@
       },
       "recordedAt": "2026-11-20T18:00:42.328Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Wolverhampton|18:30",
+      "date": "2026-11-20",
+      "course": "Wolverhampton",
+      "time": "18:30",
+      "horse": "HITCHED",
+      "price": "11/1",
+      "runners": 11,
+      "liveHorse": "GUNFIGHTER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GUNFIGHTER",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T18:20:45.166Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 134,
+    "recorded": 135,
     "pick": {
-      "settled": 127,
+      "settled": 128,
       "won": 27,
-      "pl": -20.8,
-      "roi": -16.4
+      "pl": -21.8,
+      "roi": -17
     },
     "favourite": {
-      "settled": 121,
+      "settled": 122,
       "won": 39,
-      "pl": -11.89,
-      "roi": -9.8
+      "pl": -12.89,
+      "roi": -10.6
     },
     "agree": {
-      "settled": 38,
+      "settled": 39,
       "won": 15,
-      "pl": 1.43,
-      "roi": 3.8
+      "pl": 0.43,
+      "roi": 1.1
     },
     "disagree": {
       "settled": 89,
