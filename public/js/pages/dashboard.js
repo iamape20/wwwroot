@@ -326,8 +326,8 @@ async function renderValueNap() {
     let html = `<div class="nap-label">Today's Value NAP${p ? (co ? " • claimer off" : ` • raised ${p.rise}lb`) : ""}</div>`;
     if (p) {
         const why = co
-            ? `It ${escapeHtml(p.why || "won last time with a claiming rider and has a full jockey today")}. Horses like this have beaten the price in our results since 2024 (about 3 in 10 win), so expect losing runs.`
-            : `It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. ${String(v.date || "") >= "2026-11-21" ? "No claimer-off horse qualified today, so it is the flat or all-weather handicapper raised most after a win." : "Of today's handicap runners raised after a win, it has the biggest rise."} Horses like this have beaten the price in our results (about 3 in 10 win, at bigger prices than the Banker NAP), so expect losing runs.`;
+            ? `It ${escapeHtml(p.why || "won last time with a claiming rider and has a full jockey today")}. Horses like this beat the price in our results for 2024 to 2026, but lost about a third of their stakes in 2023. It is an unproven paper test with no money on it, so expect losing runs.`
+            : `It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. ${String(v.date || "") >= "2026-11-21" ? "No claimer-off horse qualified today, so it is the flat or all-weather handicapper raised most after a win." : "Of today's handicap runners raised after a win, it has the biggest rise."} Horses like this beat the price in our results for 2024 to 2026, but lost about a tenth of their stakes in 2023. It is an unproven paper test with no money on it, so expect losing runs.`;
         const res = p.outcome === "won" ? `<div class="nap-meta"><span class="record-plus">WON</span>${p.bsp ? ` at Betfair SP ${p.bsp}` : ""}</div>`
             : p.outcome === "lost" ? `<div class="nap-meta"><span class="record-minus">Lost</span></div>`
             : p.outcome === "void" ? `<div class="nap-meta">Void (non-runner)</div>` : "";
