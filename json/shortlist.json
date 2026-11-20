@@ -1,20 +1,79 @@
 {
-  "date": "2026-11-19",
-  "builtAt": "2026-11-19T09:00:05.170Z",
+  "date": "2026-11-20",
+  "builtAt": "2026-11-20T02:31:37.061Z",
   "strong": [],
   "moderate": [
     {
-      "horse": "LESLIE'S PRIDE",
-      "course": "Warwick",
-      "time": "11:27",
-      "rating": "66.3",
-      "margin": "10.9",
-      "marginValue": 10.899999999999999,
-      "confidence": 66,
-      "meetingId": "122649",
+      "horse": "SACRE CHEF",
+      "course": "Catterick",
+      "time": "12:00",
+      "rating": "78.8",
+      "margin": "18.8",
+      "marginValue": 18.799999999999997,
+      "confidence": 61,
+      "meetingId": "122666",
       "raceIndex": 0
+    },
+    {
+      "horse": "CURRENT EDITION",
+      "course": "Ascot",
+      "time": "12:45",
+      "rating": "85.8",
+      "margin": "21.5",
+      "marginValue": 21.5,
+      "confidence": 87,
+      "meetingId": "122667",
+      "raceIndex": 1
+    },
+    {
+      "horse": "HURRICANE MICK",
+      "course": "Chepstow",
+      "time": "15:17",
+      "rating": "78.8",
+      "margin": "16.5",
+      "marginValue": 16.5,
+      "confidence": 58,
+      "meetingId": "122668",
+      "raceIndex": 7
+    },
+    {
+      "horse": "ZHURI",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "rating": "75.7",
+      "margin": "17.2",
+      "marginValue": 17.200000000000003,
+      "confidence": 61,
+      "meetingId": "122669",
+      "raceIndex": 3
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "CURRENT EDITION",
+      "course": "Ascot",
+      "time": "12:45",
+      "rating": "85.8",
+      "margin": "21.5",
+      "marginValue": 21.5,
+      "confidence": 87,
+      "meetingId": "122667",
+      "raceIndex": 1,
+      "tier": "Moderate",
+      "nap": true
+    },
+    {
+      "horse": "SACRE CHEF",
+      "course": "Catterick",
+      "time": "12:00",
+      "rating": "78.8",
+      "margin": "18.8",
+      "marginValue": 18.799999999999997,
+      "confidence": 61,
+      "meetingId": "122666",
+      "raceIndex": 0,
+      "tier": "Moderate"
+    }
+  ],
+  "pickMode": "double"
 }
