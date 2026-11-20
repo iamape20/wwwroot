@@ -3820,10 +3820,18 @@
       "fav": {
         "horse": "BARRY THE WORM",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T19:50:49.805Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Dundalk|20:15",
@@ -3843,27 +3851,46 @@
       },
       "recordedAt": "2026-11-20T20:00:41.228Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Wolverhampton|20:30",
+      "date": "2026-11-20",
+      "course": "Wolverhampton",
+      "time": "20:30",
+      "horse": "THE DARK BARON",
+      "price": "15/2",
+      "runners": 13,
+      "liveHorse": "EXOTIC BABY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EXOTIC BABY",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T20:20:40.660Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 142,
+    "recorded": 143,
     "pick": {
-      "settled": 133,
+      "settled": 134,
       "won": 27,
-      "pl": -26.8,
-      "roi": -20.2
+      "pl": -27.8,
+      "roi": -20.7
     },
     "favourite": {
-      "settled": 126,
+      "settled": 127,
       "won": 39,
-      "pl": -16.89,
-      "roi": -13.4
+      "pl": -17.89,
+      "roi": -14.1
     },
     "agree": {
-      "settled": 41,
+      "settled": 42,
       "won": 15,
-      "pl": -1.57,
-      "roi": -3.8
+      "pl": -2.57,
+      "roi": -6.1
     },
     "disagree": {
       "settled": 92,
