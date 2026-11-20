@@ -2971,10 +2971,18 @@
       "fav": {
         "horse": "SACRE CHEF",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T11:50:58.910Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Chepstow|12:22",
@@ -2994,27 +3002,46 @@
       },
       "recordedAt": "2026-11-20T12:11:03.994Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Catterick|12:33",
+      "date": "2026-11-20",
+      "course": "Catterick",
+      "time": "12:33",
+      "horse": "NIGHTFLYER",
+      "price": "6/4",
+      "runners": 6,
+      "liveHorse": "I'VE GOT A FRIEND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I'VE GOT A FRIEND",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T12:20:58.171Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 109,
+    "recorded": 110,
     "pick": {
-      "settled": 107,
+      "settled": 108,
       "won": 27,
-      "pl": -0.8,
-      "roi": -0.8
+      "pl": -1.8,
+      "roi": -1.7
     },
     "favourite": {
-      "settled": 107,
+      "settled": 108,
       "won": 39,
-      "pl": 2.11,
-      "roi": 2
+      "pl": 1.11,
+      "roi": 1
     },
     "agree": {
-      "settled": 34,
+      "settled": 35,
       "won": 15,
-      "pl": 5.43,
-      "roi": 16
+      "pl": 4.43,
+      "roi": 12.7
     },
     "disagree": {
       "settled": 73,

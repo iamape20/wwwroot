@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T12:10:59.818Z",
+  "generatedAt": "2026-11-20T12:20:53.033Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-20",
       "course": "Catterick",
       "off": "12:00",
-      "horse": "SACRE CHEF"
-    }
-  ],
-  "recent": [
+      "horse": "SACRE CHEF",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-20",
       "course": "Chepstow",
@@ -174,21 +179,10 @@
       "bsp": 1.44,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-17",
-      "course": "Limerick",
-      "off": "12:40",
-      "horse": "DETROIT MAVERICK",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-20T12:10:59.744Z",
+    "updatedAt": "2026-11-20T12:20:52.953Z",
     "claude": {
       "races": 38,
       "won": 7,

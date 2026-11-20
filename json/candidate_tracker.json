@@ -7046,7 +7046,11 @@
       "rating": 78.8,
       "runners": 10,
       "recordedAt": "2026-11-20T11:50:58.122Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Chepstow|12:22",
@@ -7059,14 +7063,26 @@
       "runners": 13,
       "recordedAt": "2026-11-20T12:11:02.992Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Catterick|12:33",
+      "date": "2026-11-20",
+      "course": "Catterick",
+      "time": "12:33",
+      "horse": "I'VE GOT A FRIEND",
+      "price": "6/5",
+      "rating": 76.5,
+      "runners": 6,
+      "recordedAt": "2026-11-20T12:20:57.247Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 429,
-    "settled": 423,
+    "recorded": 430,
+    "settled": 424,
     "won": 206,
-    "pl": -23.78,
-    "roi": -5.6
+    "pl": -24.78,
+    "roi": -5.8
   },
   "lastBackfill": 1795158079712
 }
