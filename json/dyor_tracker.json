@@ -3333,10 +3333,18 @@
       "fav": {
         "horse": "I SEE THE SEA",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T14:43:15.426Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Ascot|15:05",
@@ -3356,27 +3364,46 @@
       },
       "recordedAt": "2026-11-20T14:51:38.629Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Chepstow|15:17",
+      "date": "2026-11-20",
+      "course": "Chepstow",
+      "time": "15:17",
+      "horse": "KILLYGOWAN",
+      "price": "15/2",
+      "runners": 10,
+      "liveHorse": "HURRICANE MICK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HURRICANE MICK",
+        "price": "5/6",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T15:10:44.176Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 123,
+    "recorded": 124,
     "pick": {
-      "settled": 119,
+      "settled": 120,
       "won": 27,
-      "pl": -12.8,
-      "roi": -10.8
+      "pl": -13.8,
+      "roi": -11.5
     },
     "favourite": {
-      "settled": 115,
+      "settled": 116,
       "won": 39,
-      "pl": -5.89,
-      "roi": -5.1
+      "pl": -6.89,
+      "roi": -5.9
     },
     "agree": {
-      "settled": 36,
+      "settled": 37,
       "won": 15,
-      "pl": 3.43,
-      "roi": 9.5
+      "pl": 2.43,
+      "roi": 6.6
     },
     "disagree": {
       "settled": 83,
