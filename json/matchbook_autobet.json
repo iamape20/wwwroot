@@ -1081,8 +1081,42 @@
       "pl": -2.1,
       "potAfter": 81.97,
       "settledAt": "2026-11-19T19:30:31.585Z"
+    },
+    {
+      "id": "2026-11-20|Ascot|13:55|TRIP|SOMESPRINGSPECIAL",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-20",
+      "course": "Ascot",
+      "time": "13:55",
+      "horse": "SOMESPRING SPECIAL",
+      "decidedAt": "2026-11-20T13:41:07.566Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 81.97,
+      "eventId": "34904448750001057",
+      "marketId": "34904448815600057",
+      "runnerId": "34904448817101057",
+      "price": 8.4,
+      "available": 56.99,
+      "depth": [
+        [
+          8.4,
+          56.99
+        ],
+        [
+          8.2,
+          74.93
+        ],
+        [
+          8,
+          149.83
+        ]
+      ],
+      "status": "placed",
+      "stake": 2.04,
+      "matched": 2.04
     }
   ],
-  "updatedAt": "2026-11-20T13:31:16.169Z",
+  "updatedAt": "2026-11-20T13:41:07.568Z",
   "bankPeak": 109.65222
 }
