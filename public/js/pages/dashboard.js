@@ -322,8 +322,12 @@ async function renderValueNap() {
         ? `Record so far: ${v.record.won} won from ${v.record.settled}, ${v.record.pl >= 0 ? "+" : "-"}${Math.abs(v.record.pl).toFixed(2)} pts (${v.record.roiPct >= 0 ? "+" : ""}${v.record.roiPct}%) at Betfair SP. Judged after ${v.record.passAt}.`
         : `Paper test from 20 Nov - no money on it. Judged after 100 picks.`;
     const p = v.pick;
-    let html = `<div class="nap-label">Today's Value NAP${p ? ` • raised ${p.rise}lb` : ""}</div>`;
+    const co = p && p.angle === "claimerOff";
+    let html = `<div class="nap-label">Today's Value NAP${p ? (co ? " • claimer off" : ` • raised ${p.rise}lb`) : ""}</div>`;
     if (p) {
+        const why = co
+            ? `It ${escapeHtml(p.why || "won last time with a claiming rider and has a full jockey today")}. Horses like this have beaten the price in our results since 2024 (about 3 in 10 win), so expect losing runs.`
+            : `It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. ${String(v.date || "") >= "2026-11-21" ? "No claimer-off horse qualified today, so it is the flat or all-weather handicapper raised most after a win." : "Of today's handicap runners raised after a win, it has the biggest rise."} Horses like this have beaten the price in our results (about 3 in 10 win, at bigger prices than the Banker NAP), so expect losing runs.`;
         const res = p.outcome === "won" ? `<div class="nap-meta"><span class="record-plus">WON</span>${p.bsp ? ` at Betfair SP ${p.bsp}` : ""}</div>`
             : p.outcome === "lost" ? `<div class="nap-meta"><span class="record-minus">Lost</span></div>`
             : p.outcome === "void" ? `<div class="nap-meta">Void (non-runner)</div>` : "";
@@ -331,11 +335,11 @@ async function renderValueNap() {
             <div class="nap-name">${escapeHtml(String(p.horse || "").toUpperCase())}</div>
             ${res}
             <div class="nap-meta">${escapeHtml(p.course || "-")} ${escapeHtml(p.time ? toLocalTimeString(p.time) : "-")} • ${escapeHtml(p.odds || "-")} at 09:00</div>
-            <div class="nap-meta nap-why"><strong>Why:</strong> It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. Of today's handicap runners raised after a win, it has the biggest rise. Horses like this have beaten the price in our results (about 3 in 10 win, at bigger prices than the Banker NAP), so expect losing runs.</div>
+            <div class="nap-meta nap-why"><strong>Why:</strong> ${why}</div>
             <div class="nap-meta">${rec}</div>
         </div></div>`;
     } else {
-        html += `<div class="daily-double-empty-text">${v.noPick ? "No Value NAP today: no handicap runner raised 5lb+ after winning at 10/1 or shorter." : "Picked from 9am, once the morning prices are in."}</div><div class="nap-meta">${rec}</div>`;
+        html += `<div class="daily-double-empty-text">${v.noPick ? (String(v.date || "") >= "2026-11-21" ? "No Value NAP today: no claimer-off horse and no flat or all-weather handicapper raised 5lb+ after winning, at 10/1 or shorter." : "No Value NAP today: no handicap runner raised 5lb+ after winning at 10/1 or shorter.") : "Picked from 9am, once the morning prices are in."}</div><div class="nap-meta">${rec}</div>`;
     }
     el.innerHTML = html;
     el.style.display = "";
