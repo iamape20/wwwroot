@@ -3668,10 +3668,16 @@
       "fav": {
         "horse": "GUNFIGHTER",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-20T18:20:45.166Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Dundalk|18:45",
@@ -3691,15 +3697,34 @@
       },
       "recordedAt": "2026-11-20T18:30:44.427Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Wolverhampton|19:00",
+      "date": "2026-11-20",
+      "course": "Wolverhampton",
+      "time": "19:00",
+      "horse": "PRINTING MONEY",
+      "price": "9/4",
+      "runners": 11,
+      "liveHorse": "BEECHWOOD GLORY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BEECHWOOD GLORY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T18:50:48.011Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 136,
+    "recorded": 137,
     "pick": {
-      "settled": 129,
+      "settled": 130,
       "won": 27,
-      "pl": -22.8,
-      "roi": -17.7
+      "pl": -23.8,
+      "roi": -18.3
     },
     "favourite": {
       "settled": 123,
@@ -3714,10 +3739,10 @@
       "roi": 1.1
     },
     "disagree": {
-      "settled": 90,
+      "settled": 91,
       "won": 12,
-      "pl": -23.24,
-      "roi": -25.8
+      "pl": -24.24,
+      "roi": -26.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
