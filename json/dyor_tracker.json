@@ -3308,10 +3308,16 @@
       "fav": {
         "horse": "NORTHWEST PASSAGE",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T14:30:52.703Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/2"
     },
     {
       "id": "2026-11-20|Catterick|14:53",
@@ -3361,10 +3367,10 @@
       "roi": -10.8
     },
     "favourite": {
-      "settled": 114,
+      "settled": 115,
       "won": 39,
-      "pl": -4.89,
-      "roi": -4.3
+      "pl": -5.89,
+      "roi": -5.1
     },
     "agree": {
       "settled": 36,
