@@ -3154,10 +3154,18 @@
       "fav": {
         "horse": "LEJO DU SEUIL",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-20T13:20:53.866Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "28/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-20|Catterick|13:43",
@@ -3201,16 +3209,16 @@
   "stats": {
     "recorded": 117,
     "pick": {
-      "settled": 114,
+      "settled": 115,
       "won": 27,
-      "pl": -7.8,
-      "roi": -6.8
+      "pl": -8.8,
+      "roi": -7.7
     },
     "favourite": {
-      "settled": 111,
+      "settled": 112,
       "won": 39,
-      "pl": -1.89,
-      "roi": -1.7
+      "pl": -2.89,
+      "roi": -2.6
     },
     "agree": {
       "settled": 36,
@@ -3219,10 +3227,10 @@
       "roi": 9.5
     },
     "disagree": {
-      "settled": 78,
+      "settled": 79,
       "won": 12,
-      "pl": -11.24,
-      "roi": -14.4
+      "pl": -12.24,
+      "roi": -15.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
