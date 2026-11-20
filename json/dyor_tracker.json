@@ -3489,10 +3489,14 @@
       "fav": {
         "horse": "PREMIER VIEW",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-20T16:30:59.061Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-20|Wolverhampton|17:00",
@@ -3512,10 +3516,29 @@
       },
       "recordedAt": "2026-11-20T16:50:42.584Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Dundalk|17:15",
+      "date": "2026-11-20",
+      "course": "Dundalk",
+      "time": "17:15",
+      "horse": "SURPASS AND SHINE",
+      "price": "13/8",
+      "runners": 14,
+      "liveHorse": "SURPASS AND SHINE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SURPASS AND SHINE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T17:00:45.894Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 129,
+    "recorded": 130,
     "pick": {
       "settled": 124,
       "won": 27,
