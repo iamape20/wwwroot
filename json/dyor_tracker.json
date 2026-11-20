@@ -3539,10 +3539,14 @@
       "fav": {
         "horse": "SURPASS AND SHINE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-20T17:00:45.894Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-11-20|Wolverhampton|17:30",
@@ -3562,10 +3566,29 @@
       },
       "recordedAt": "2026-11-20T17:20:42.868Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Dundalk|17:45",
+      "date": "2026-11-20",
+      "course": "Dundalk",
+      "time": "17:45",
+      "horse": "CLOSEFIELD BEAU",
+      "price": "10/3",
+      "runners": 7,
+      "liveHorse": "PRINCE OF PEPPARD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRINCE OF PEPPARD",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T17:30:41.543Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 131,
+    "recorded": 132,
     "pick": {
       "settled": 125,
       "won": 27,
