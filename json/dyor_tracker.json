@@ -3231,10 +3231,14 @@
       "fav": {
         "horse": "GINGERBRED",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "9/4"
       },
       "recordedAt": "2026-11-20T14:01:27.273Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "9/4"
     },
     {
       "id": "2026-11-20|Catterick|14:18",
@@ -3273,10 +3277,29 @@
       },
       "recordedAt": "2026-11-20T14:20:53.899Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-20|Chepstow|14:42",
+      "date": "2026-11-20",
+      "course": "Chepstow",
+      "time": "14:42",
+      "horse": "JOLLIE DAME",
+      "price": "4/1",
+      "runners": 10,
+      "liveHorse": "NORTHWEST PASSAGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NORTHWEST PASSAGE",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-20T14:30:52.703Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 120,
+    "recorded": 121,
     "pick": {
       "settled": 117,
       "won": 27,
