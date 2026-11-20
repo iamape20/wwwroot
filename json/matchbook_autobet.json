@@ -1157,8 +1157,45 @@
       "pl": -1.99,
       "potAfter": 77.94,
       "settledAt": "2026-11-20T15:20:42.628Z"
+    },
+    {
+      "id": "2026-11-20|Dundalk|16:45|TRIP|SAPPHIRESUN",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-20",
+      "course": "Dundalk",
+      "time": "16:45",
+      "horse": "SAPPHIRE SUN",
+      "decidedAt": "2026-11-20T16:30:56.847Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 77.94,
+      "claude": {
+        "action": "skip",
+        "reason": "The comment describes a drop in trip on its last run, and today it stays at the same minimum trip, so it does not belong to the trip test."
+      },
+      "eventId": "34904952686100023",
+      "marketId": "34904952801401023",
+      "runnerId": "34904952802901023",
+      "price": 3.2,
+      "available": 58.3,
+      "depth": [
+        [
+          3.2,
+          58.3
+        ],
+        [
+          3.15,
+          156.34
+        ],
+        [
+          3.1,
+          74.8
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: The comment describes a drop in trip on its last run, and today it stays at the same minimum trip, so it does not belong to the trip test."
     }
   ],
-  "updatedAt": "2026-11-20T16:20:41.184Z",
+  "updatedAt": "2026-11-20T16:30:56.848Z",
   "bankPeak": 109.65222
 }
