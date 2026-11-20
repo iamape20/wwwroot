@@ -3,14 +3,14 @@
   "target": 200,
   "mbCommission": 0.02,
   "bfCommission": 0.05,
-  "mbPl": -1.306,
-  "bspPl": -1.601,
+  "mbPl": -2.306,
+  "bspPl": -2.601,
   "bspMissing": 0,
   "noPrice": 0,
   "voids": 1,
-  "pending": 1,
+  "pending": 0,
   "verdict": null,
-  "updatedAt": "2026-11-19T22:00:24.974Z",
+  "updatedAt": "2026-11-20T07:01:25.058Z",
   "bets": [
     {
       "date": "2026-10-26",
@@ -173,6 +173,17 @@
       "horse": "SANGREAL",
       "result": "lost",
       "price": 1.51,
+      "pl": -1,
+      "bsp": null,
+      "bspPl": -1
+    },
+    {
+      "date": "2026-11-19",
+      "time": "12:27",
+      "course": "Warwick",
+      "horse": "SMILE JOHN BOY",
+      "result": "lost",
+      "price": 1.97,
       "pl": -1,
       "bsp": null,
       "bspPl": -1

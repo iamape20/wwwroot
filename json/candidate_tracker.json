@@ -6932,7 +6932,10 @@
       "recordedAt": "2026-11-19T12:00:57.811Z",
       "stake": 1,
       "result": "won",
-      "isp": "2/5"
+      "isp": "2/5",
+      "bsp": 1.4227461,
+      "pl": 0.402,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-19|Lingfield|12:18",
@@ -6962,7 +6965,10 @@
       "recordedAt": "2026-11-19T12:40:47.173Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/8"
+      "isp": "11/8",
+      "bsp": 2.51297244,
+      "pl": 1.437,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-19|Warwick|13:02",
@@ -6992,7 +6998,10 @@
       "recordedAt": "2026-11-19T13:20:47.536Z",
       "stake": 1,
       "result": "won",
-      "isp": "4/9"
+      "isp": "4/9",
+      "bsp": 1.64317781,
+      "pl": 0.611,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-19|Newcastle|17:10",
@@ -7006,15 +7015,18 @@
       "recordedAt": "2026-11-19T17:00:35.513Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/11"
+      "isp": "10/11",
+      "bsp": 1.95426628,
+      "pl": 0.907,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 426,
-    "settled": 418,
-    "won": 202,
-    "pl": -26.13,
-    "roi": -6.3
+    "settled": 422,
+    "won": 206,
+    "pl": -22.78,
+    "roi": -5.4
   },
-  "lastBackfill": 1795114840457
+  "lastBackfill": 1795158079712
 }
