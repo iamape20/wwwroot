@@ -1384,8 +1384,80 @@
       "pl": -1.62,
       "potAfter": 63.23,
       "settledAt": "2026-11-21T11:21:22.096Z"
+    },
+    {
+      "id": "2026-11-21|Haydock|12:05",
+      "kind": "NAP",
+      "mode": "DRY RUN",
+      "date": "2026-11-21",
+      "course": "Haydock",
+      "time": "12:05",
+      "horse": "KOKTAIL DIVIN",
+      "decidedAt": "2026-11-21T11:51:28.862Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 63.23,
+      "note": "half stake: price 1.76 is in the 1.5-2 band",
+      "claude": {
+        "action": "skip",
+        "reason": "Back after 226 days off at a very short price in a three-runner race, where one mistake loses it, and it was only picked as a loose fallback."
+      },
+      "eventId": "34913003066600023",
+      "marketId": "34913003115101057",
+      "runnerId": "34913003115400057",
+      "price": 1.76,
+      "available": 126.43,
+      "depth": [
+        [
+          1.76,
+          126.43
+        ],
+        [
+          1.75,
+          285.38
+        ],
+        [
+          1.74,
+          260.38
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: Back after 226 days off at a very short price in a three-runner race, where one mistake loses it, and it was only picked as a loose fallback."
+    },
+    {
+      "id": "2026-11-21|Haydock|12:05|TRIP|LEAVEOFABSENCE",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-21",
+      "course": "Haydock",
+      "time": "12:05",
+      "horse": "LEAVE OF ABSENCE",
+      "decidedAt": "2026-11-21T11:51:28.863Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 63.23,
+      "eventId": "34913003066600023",
+      "marketId": "34913003115101057",
+      "runnerId": "34913003115602057",
+      "price": 11,
+      "available": 8.64,
+      "depth": [
+        [
+          11,
+          8.64
+        ],
+        [
+          10.5,
+          48.67
+        ],
+        [
+          10,
+          110.59
+        ]
+      ],
+      "status": "placed",
+      "stake": 1.58,
+      "matched": 1.58
     }
   ],
-  "updatedAt": "2026-11-21T11:41:18.581Z",
+  "updatedAt": "2026-11-21T11:51:28.864Z",
   "bankPeak": 109.65222
 }
