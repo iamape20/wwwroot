@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T15:10:44.017Z",
+  "generatedAt": "2026-11-21T15:20:45.642Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,17 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Haydock",
-      "off": "15:00",
-      "horse": "GREY DAWNING"
-    },
-    {
       "course": "Huntingdon",
       "off": "15:10",
       "horse": "NOSTRAE DE COUGNY"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-21",
+      "course": "Haydock",
+      "off": "15:00",
+      "horse": "GREY DAWNING",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-21",
       "course": "Punchestown",
@@ -179,21 +185,10 @@
       "bsp": 1.95426628,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-19",
-      "course": "Warwick",
-      "off": "12:27",
-      "horse": "SMILE JOHN BOY",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-21T15:10:43.889Z",
+    "updatedAt": "2026-11-21T15:20:45.540Z",
     "claude": {
       "races": 38,
       "won": 7,
