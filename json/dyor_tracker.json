@@ -5093,31 +5093,58 @@
       "fav": {
         "horse": "OXFORD CIRCUS",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T18:20:42.655Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/6",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-21|Newcastle|19:00",
+      "date": "2026-11-21",
+      "course": "Newcastle",
+      "time": "19:00",
+      "horse": "BLUE FORCE",
+      "price": "10/1",
+      "runners": 13,
+      "liveHorse": "TOO MUCH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TOO MUCH",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T18:50:35.471Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 188,
+    "recorded": 189,
     "pick": {
-      "settled": 175,
+      "settled": 176,
       "won": 34,
-      "pl": -42.37,
-      "roi": -24.2
+      "pl": -43.37,
+      "roi": -24.6
     },
     "favourite": {
-      "settled": 168,
+      "settled": 169,
       "won": 55,
-      "pl": -3.57,
-      "roi": -2.1
+      "pl": -4.57,
+      "roi": -2.7
     },
     "agree": {
-      "settled": 50,
+      "settled": 51,
       "won": 19,
-      "pl": 2.28,
-      "roi": 4.6
+      "pl": 1.28,
+      "roi": 2.5
     },
     "disagree": {
       "settled": 125,
