@@ -4785,10 +4785,18 @@
       "fav": {
         "horse": "LOI DES JEUX",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T15:10:48.300Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Ascot|15:18",
@@ -4804,10 +4812,16 @@
       "fav": {
         "horse": "VANDERPOEL",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/5"
       },
       "recordedAt": "2026-11-21T15:10:48.322Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Haydock|15:35",
@@ -4842,10 +4856,16 @@
       "fav": {
         "horse": "HUMBLE SPARK",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-11-21T15:20:50.805Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Lingfield|15:40",
@@ -4865,21 +4885,59 @@
       },
       "recordedAt": "2026-11-21T15:30:53.444Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Punchestown|15:53",
+      "date": "2026-11-21",
+      "course": "Punchestown",
+      "time": "15:53",
+      "horse": "BLUEBELL BREEZE",
+      "price": "33/1",
+      "runners": 10,
+      "liveHorse": "MISTER BOUM",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MISTER BOUM",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T15:40:41.951Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-21|Ascot|15:48",
+      "date": "2026-11-21",
+      "course": "Ascot",
+      "time": "15:48",
+      "horse": "MR RAFIKI",
+      "price": "11/2",
+      "runners": 7,
+      "liveHorse": "HERBYGOESBANANAS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HERBYGOESBANANAS",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T15:40:41.967Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 180,
+    "recorded": 182,
     "pick": {
-      "settled": 166,
+      "settled": 169,
       "won": 34,
-      "pl": -33.37,
-      "roi": -20.1
+      "pl": -36.37,
+      "roi": -21.5
     },
     "favourite": {
-      "settled": 161,
+      "settled": 162,
       "won": 55,
-      "pl": 3.43,
-      "roi": 2.1
+      "pl": 2.43,
+      "roi": 1.5
     },
     "agree": {
       "settled": 50,
@@ -4888,10 +4946,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 116,
+      "settled": 119,
       "won": 15,
-      "pl": -35.65,
-      "roi": -30.7
+      "pl": -38.65,
+      "roi": -32.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
