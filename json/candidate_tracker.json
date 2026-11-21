@@ -7226,7 +7226,11 @@
       "rating": 81.2,
       "runners": 22,
       "recordedAt": "2026-11-21T11:41:19.295Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Haydock|12:05",
@@ -7238,7 +7242,9 @@
       "rating": 87,
       "runners": 3,
       "recordedAt": "2026-11-21T11:51:30.336Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/2"
     },
     {
       "id": "2026-11-21|Lingfield|12:00",
@@ -7267,14 +7273,26 @@
       "runners": 13,
       "recordedAt": "2026-11-21T12:01:44.031Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Lingfield|12:35",
+      "date": "2026-11-21",
+      "course": "Lingfield",
+      "time": "12:35",
+      "horse": "IRIS OLIVIA",
+      "price": "10/11",
+      "rating": 75.9,
+      "runners": 10,
+      "recordedAt": "2026-11-21T12:21:20.885Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 442,
-    "settled": 434,
+    "recorded": 443,
+    "settled": 435,
     "won": 212,
-    "pl": -20.44,
-    "roi": -4.7
+    "pl": -21.44,
+    "roi": -4.9
   },
   "lastBackfill": 1795260082821
 }

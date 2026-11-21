@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:11:05.664Z",
+  "generatedAt": "2026-11-21T12:21:16.867Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,22 +15,44 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Punchestown",
-      "off": "11:53",
-      "horse": "DELAMOTTE"
+      "course": "Ascot",
+      "off": "12:20",
+      "horse": "THE WALK"
     },
     {
-      "course": "Haydock",
-      "off": "12:05",
-      "horse": "KOKTAIL DIVIN"
+      "course": "Huntingdon",
+      "off": "12:13",
+      "horse": "LASTBUTNOTLEASED"
     }
   ],
   "recent": [
     {
       "date": "2026-11-21",
+      "course": "Haydock",
+      "off": "12:05",
+      "horse": "KOKTAIL DIVIN",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-11-21",
       "course": "Lingfield",
       "off": "12:00",
       "horse": "BIBURY STAR",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
+    {
+      "date": "2026-11-21",
+      "course": "Punchestown",
+      "off": "11:53",
+      "horse": "DELAMOTTE",
       "phase": "STOPPED",
       "result": "lost",
       "bsp": null,
@@ -168,32 +190,10 @@
       "bsp": 1.54238932,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-18",
-      "course": "Ffos Las",
-      "off": "12:48",
-      "horse": "NO WALKOVER",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.38996042,
-      "pl": 0,
-      "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-18",
-      "course": "Hexham",
-      "off": "12:33",
-      "horse": "LORD DU GOUET",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.39,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-21T12:11:05.559Z",
+    "updatedAt": "2026-11-21T12:21:16.762Z",
     "claude": {
       "races": 38,
       "won": 7,

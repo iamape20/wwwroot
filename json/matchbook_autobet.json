@@ -2,7 +2,7 @@
   "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 63.23,
+  "pot": 61.65,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -1455,9 +1455,47 @@
       ],
       "status": "placed",
       "stake": 1.58,
+      "matched": 1.58,
+      "result": "lost",
+      "pl": -1.58,
+      "potAfter": 61.65,
+      "settledAt": "2026-11-21T12:21:20.179Z"
+    },
+    {
+      "id": "2026-11-21|Lingfield|12:35|TRIP|IRISOLIVIA",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-21",
+      "course": "Lingfield",
+      "time": "12:35",
+      "horse": "IRIS OLIVIA",
+      "decidedAt": "2026-11-21T12:21:20.177Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 63.23,
+      "eventId": "34913087601501023",
+      "marketId": "34913087701000023",
+      "runnerId": "34913087702709023",
+      "price": 2.42,
+      "available": 17.13,
+      "depth": [
+        [
+          2.42,
+          17.13
+        ],
+        [
+          2.4,
+          42.81
+        ],
+        [
+          2.38,
+          54.83
+        ]
+      ],
+      "status": "placed",
+      "stake": 1.58,
       "matched": 1.58
     }
   ],
-  "updatedAt": "2026-11-21T12:11:08.135Z",
+  "updatedAt": "2026-11-21T12:21:20.180Z",
   "bankPeak": 109.65222
 }
