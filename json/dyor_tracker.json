@@ -4476,10 +4476,18 @@
       "fav": {
         "horse": "EASY LOVE",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T13:51:17.483Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Huntingdon|13:58",
@@ -4522,10 +4530,14 @@
       "fav": {
         "horse": "LOSSIEMOUTH",
         "price": "1/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/6"
       },
       "recordedAt": "2026-11-21T14:01:35.580Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/6"
     },
     {
       "id": "2026-11-21|Haydock|14:25",
@@ -4583,21 +4595,59 @@
       },
       "recordedAt": "2026-11-21T14:21:16.364Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Punchestown|14:45",
+      "date": "2026-11-21",
+      "course": "Punchestown",
+      "time": "14:45",
+      "horse": "DANNY POWER",
+      "price": "15/8",
+      "runners": 10,
+      "liveHorse": "MOMENTUM OF LOVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MOMENTUM OF LOVE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T14:30:59.846Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-21|Ascot|14:40",
+      "date": "2026-11-21",
+      "course": "Ascot",
+      "time": "14:40",
+      "horse": "ROCK MY WAY",
+      "price": "15/8",
+      "runners": 8,
+      "liveHorse": "ROCK MY WAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ROCK MY WAY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T14:30:59.957Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 169,
+    "recorded": 171,
     "pick": {
-      "settled": 159,
+      "settled": 160,
       "won": 34,
-      "pl": -26.37,
-      "roi": -16.6
+      "pl": -27.37,
+      "roi": -17.1
     },
     "favourite": {
-      "settled": 154,
+      "settled": 155,
       "won": 55,
-      "pl": 10.43,
-      "roi": 6.8
+      "pl": 9.43,
+      "roi": 6.1
     },
     "agree": {
       "settled": 48,
@@ -4606,12 +4656,12 @@
       "roi": 8.9
     },
     "disagree": {
-      "settled": 111,
+      "settled": 112,
       "won": 15,
-      "pl": -30.65,
-      "roi": -27.6
+      "pl": -31.65,
+      "roi": -28.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795260085537
+  "lastBackfill": 1795271459958
 }
