@@ -1,20 +1,58 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "strong": [],
   "moderate": [
     {
-      "horse": "LESLIE'S PRIDE",
-      "course": "Warwick",
-      "time": "11:27",
-      "rating": "66.3",
-      "margin": "10.9",
-      "marginValue": 10.899999999999999,
-      "confidence": 66,
-      "meetingId": "122649",
+      "horse": "SACRE CHEF",
+      "course": "Catterick",
+      "time": "12:00",
+      "rating": "78.8",
+      "margin": "19.3",
+      "marginValue": 19.299999999999997,
+      "confidence": 61,
+      "meetingId": "122666",
       "raceIndex": 0,
       "outcome": "lost"
+    },
+    {
+      "horse": "HURRICANE MICK",
+      "course": "Chepstow",
+      "time": "15:17",
+      "rating": "78.8",
+      "margin": "16.5",
+      "marginValue": 16.5,
+      "confidence": 58,
+      "meetingId": "122668",
+      "raceIndex": 7,
+      "outcome": "won"
+    },
+    {
+      "horse": "ZHURI",
+      "course": "Wolverhampton",
+      "time": "18:00",
+      "rating": "75.7",
+      "margin": "19.6",
+      "marginValue": 19.6,
+      "confidence": 61,
+      "meetingId": "122669",
+      "raceIndex": 3,
+      "outcome": "placed"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "HURRICANE MICK",
+      "course": "Chepstow",
+      "time": "15:17",
+      "rating": "78.8",
+      "margin": "16.5",
+      "marginValue": 16.5,
+      "confidence": 58,
+      "meetingId": "122668",
+      "raceIndex": 7,
+      "tier": "Moderate",
+      "outcome": "won"
+    }
+  ],
+  "pickMode": "single"
 }
