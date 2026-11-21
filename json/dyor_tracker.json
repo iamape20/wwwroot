@@ -4145,10 +4145,16 @@
       "fav": {
         "horse": "MIGHTY PARK",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/4"
       },
       "recordedAt": "2026-11-21T12:21:21.915Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Lingfield|12:35",
@@ -4164,10 +4170,18 @@
       "fav": {
         "horse": "IRIS OLIVIA",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T12:21:21.927Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Haydock|12:40",
@@ -4225,33 +4239,52 @@
       },
       "recordedAt": "2026-11-21T12:41:16.089Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Punchestown|13:03",
+      "date": "2026-11-21",
+      "course": "Punchestown",
+      "time": "13:03",
+      "horse": "CHANCEAWETMORNING",
+      "price": "6/1",
+      "runners": 7,
+      "liveHorse": "KISS WILL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KISS WILL",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T12:51:05.803Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 155,
+    "recorded": 156,
     "pick": {
-      "settled": 148,
+      "settled": 150,
       "won": 34,
-      "pl": -15.37,
-      "roi": -10.4
+      "pl": -17.37,
+      "roi": -11.6
     },
     "favourite": {
-      "settled": 147,
+      "settled": 148,
       "won": 55,
-      "pl": 17.43,
-      "roi": 11.9
+      "pl": 16.43,
+      "roi": 11.1
     },
     "agree": {
-      "settled": 47,
+      "settled": 48,
       "won": 19,
-      "pl": 5.28,
-      "roi": 11.2
+      "pl": 4.28,
+      "roi": 8.9
     },
     "disagree": {
-      "settled": 101,
+      "settled": 102,
       "won": 15,
-      "pl": -20.65,
-      "roi": -20.4
+      "pl": -21.65,
+      "roi": -21.2
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
