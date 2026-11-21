@@ -4197,10 +4197,16 @@
       "fav": {
         "horse": "KYKOROCK",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T12:31:11.021Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-11-21|Ascot|12:55",
@@ -4258,10 +4264,48 @@
       },
       "recordedAt": "2026-11-21T12:51:05.803Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Haydock|13:15",
+      "date": "2026-11-21",
+      "course": "Haydock",
+      "time": "13:15",
+      "horse": "KINGOFTHEFRONTIER",
+      "price": "11/2",
+      "runners": 8,
+      "liveHorse": "NORTH SHORE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NORTH SHORE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T13:01:12.792Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-21|Lingfield|13:10",
+      "date": "2026-11-21",
+      "course": "Lingfield",
+      "time": "13:10",
+      "horse": "DREAM PIRATE",
+      "price": "12/1",
+      "runners": 12,
+      "liveHorse": "FALLACIOUS PROMISE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FALLACIOUS PROMISE",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T13:01:12.819Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 156,
+    "recorded": 158,
     "pick": {
       "settled": 150,
       "won": 34,
@@ -4269,10 +4313,10 @@
       "roi": -11.6
     },
     "favourite": {
-      "settled": 148,
+      "settled": 149,
       "won": 55,
-      "pl": 16.43,
-      "roi": 11.1
+      "pl": 15.43,
+      "roi": 10.4
     },
     "agree": {
       "settled": 48,
