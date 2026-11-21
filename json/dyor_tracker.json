@@ -4629,10 +4629,18 @@
       "fav": {
         "horse": "MOMENTUM OF LOVE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T14:30:59.846Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Ascot|14:40",
@@ -4648,10 +4656,18 @@
       "fav": {
         "horse": "ROCK MY WAY",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T14:30:59.957Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Newcastle|14:49",
@@ -4709,33 +4725,52 @@
       },
       "recordedAt": "2026-11-21T14:50:51.999Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Huntingdon|15:10",
+      "date": "2026-11-21",
+      "course": "Huntingdon",
+      "time": "15:10",
+      "horse": "NOSTRAE DE COUGNY",
+      "price": "15/8",
+      "runners": 12,
+      "liveHorse": "NOSTRAE DE COUGNY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "NOSTRAE DE COUGNY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T15:01:01.775Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 174,
+    "recorded": 175,
     "pick": {
-      "settled": 161,
+      "settled": 163,
       "won": 34,
-      "pl": -28.37,
-      "roi": -17.6
+      "pl": -30.37,
+      "roi": -18.6
     },
     "favourite": {
-      "settled": 157,
+      "settled": 159,
       "won": 55,
-      "pl": 7.43,
-      "roi": 4.7
+      "pl": 5.43,
+      "roi": 3.4
     },
     "agree": {
-      "settled": 48,
+      "settled": 49,
       "won": 19,
-      "pl": 4.28,
-      "roi": 8.9
+      "pl": 3.28,
+      "roi": 6.7
     },
     "disagree": {
-      "settled": 113,
+      "settled": 114,
       "won": 15,
-      "pl": -32.65,
-      "roi": -28.9
+      "pl": -33.65,
+      "roi": -29.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
