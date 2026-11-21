@@ -4837,10 +4837,18 @@
       "fav": {
         "horse": "DEXPERTS OPINION",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T15:20:50.655Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Newcastle|15:29",
@@ -4881,10 +4889,18 @@
       "fav": {
         "horse": "BRAVE LEADER",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T15:30:53.444Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-21|Punchestown|15:53",
@@ -4947,16 +4963,16 @@
   "stats": {
     "recorded": 183,
     "pick": {
-      "settled": 169,
+      "settled": 171,
       "won": 34,
-      "pl": -36.37,
-      "roi": -21.5
+      "pl": -38.37,
+      "roi": -22.4
     },
     "favourite": {
-      "settled": 162,
+      "settled": 164,
       "won": 55,
-      "pl": 2.43,
-      "roi": 1.5
+      "pl": 0.43,
+      "roi": 0.3
     },
     "agree": {
       "settled": 50,
@@ -4965,10 +4981,10 @@
       "roi": 4.6
     },
     "disagree": {
-      "settled": 119,
+      "settled": 121,
       "won": 15,
-      "pl": -38.65,
-      "roi": -32.5
+      "pl": -40.65,
+      "roi": -33.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
