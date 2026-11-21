@@ -4572,10 +4572,15 @@
       "fav": {
         "horse": "GIORGIO M",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-21T14:11:02.409Z",
-      "stake": 1
+      "stake": 1,
+      "result": "void",
+      "pl": 0,
+      "settledAt": "non_runner"
     },
     {
       "id": "2026-11-21|Huntingdon|14:33",
@@ -4633,10 +4638,29 @@
       },
       "recordedAt": "2026-11-21T14:30:59.957Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Newcastle|14:49",
+      "date": "2026-11-21",
+      "course": "Newcastle",
+      "time": "14:49",
+      "horse": "MR MOONSHINE",
+      "price": "2/1",
+      "runners": 9,
+      "liveHorse": "FLEUR DE MER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FLEUR DE MER",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T14:41:04.614Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 171,
+    "recorded": 172,
     "pick": {
       "settled": 160,
       "won": 34,
