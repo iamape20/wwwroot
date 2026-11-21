@@ -3991,25 +3991,52 @@
       "fav": {
         "horse": "EL MUTAMAKEN",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T11:21:25.526Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-21|Punchestown|11:53",
+      "date": "2026-11-21",
+      "course": "Punchestown",
+      "time": "11:53",
+      "horse": "BRADY HARTSFIELD",
+      "price": "15/2",
+      "runners": 22,
+      "liveHorse": "DELAMOTTE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DELAMOTTE",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T11:41:20.261Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 145,
+    "recorded": 146,
     "pick": {
-      "settled": 144,
+      "settled": 145,
       "won": 34,
-      "pl": -11.37,
-      "roi": -7.9
+      "pl": -12.37,
+      "roi": -8.5
     },
     "favourite": {
-      "settled": 143,
+      "settled": 144,
       "won": 55,
-      "pl": 21.43,
-      "roi": 15
+      "pl": 20.43,
+      "roi": 14.2
     },
     "agree": {
       "settled": 46,
@@ -4018,10 +4045,10 @@
       "roi": 13.6
     },
     "disagree": {
-      "settled": 98,
+      "settled": 99,
       "won": 15,
-      "pl": -17.65,
-      "roi": -18
+      "pl": -18.65,
+      "roi": -18.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
