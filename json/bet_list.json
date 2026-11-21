@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:01:38.202Z",
+  "generatedAt": "2026-11-21T12:11:05.664Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -20,12 +20,23 @@
       "horse": "DELAMOTTE"
     },
     {
-      "course": "Lingfield",
-      "off": "12:00",
-      "horse": "BIBURY STAR"
+      "course": "Haydock",
+      "off": "12:05",
+      "horse": "KOKTAIL DIVIN"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-21",
+      "course": "Lingfield",
+      "off": "12:00",
+      "horse": "BIBURY STAR",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-20",
       "course": "Wolverhampton",
@@ -179,21 +190,10 @@
       "bsp": 1.39,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-17",
-      "course": "Southwell",
-      "off": "20:00",
-      "horse": "HAYATE",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.28,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-21T12:01:38.042Z",
+    "updatedAt": "2026-11-21T12:11:05.559Z",
     "claude": {
       "races": 38,
       "won": 7,
