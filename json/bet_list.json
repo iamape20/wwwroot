@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:21:16.867Z",
+  "generatedAt": "2026-11-21T12:31:04.940Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -20,12 +20,23 @@
       "horse": "THE WALK"
     },
     {
-      "course": "Huntingdon",
-      "off": "12:13",
-      "horse": "LASTBUTNOTLEASED"
+      "course": "Punchestown",
+      "off": "12:28",
+      "horse": "MIGHTY PARK"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-21",
+      "course": "Huntingdon",
+      "off": "12:13",
+      "horse": "LASTBUTNOTLEASED",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-21",
       "course": "Haydock",
@@ -179,21 +190,10 @@
       "bsp": 1.24412079,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-18",
-      "course": "Ffos Las",
-      "off": "13:18",
-      "horse": "DIAMOND STREET",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.54238932,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-21T12:21:16.762Z",
+    "updatedAt": "2026-11-21T12:31:04.833Z",
     "claude": {
       "races": 38,
       "won": 7,
