@@ -4120,10 +4120,16 @@
       "fav": {
         "horse": "THE WALK",
         "price": "4/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T12:11:09.742Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/1"
     },
     {
       "id": "2026-11-21|Punchestown|12:28",
@@ -4181,10 +4187,48 @@
       },
       "recordedAt": "2026-11-21T12:31:11.021Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Ascot|12:55",
+      "date": "2026-11-21",
+      "course": "Ascot",
+      "time": "12:55",
+      "horse": "DOYEN QUEST",
+      "price": "7/2",
+      "runners": 3,
+      "liveHorse": "MASTER CHEWY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MASTER CHEWY",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T12:41:15.945Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-21|Huntingdon|12:48",
+      "date": "2026-11-21",
+      "course": "Huntingdon",
+      "time": "12:48",
+      "horse": "CHARLIE MY BOY",
+      "price": "4/1",
+      "runners": 11,
+      "liveHorse": "U S MARSHALL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "U S MARSHALL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T12:41:16.089Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 153,
+    "recorded": 155,
     "pick": {
       "settled": 148,
       "won": 34,
@@ -4192,10 +4236,10 @@
       "roi": -10.4
     },
     "favourite": {
-      "settled": 146,
+      "settled": 147,
       "won": 55,
-      "pl": 18.43,
-      "roi": 12.6
+      "pl": 17.43,
+      "roi": 11.9
     },
     "agree": {
       "settled": 47,
