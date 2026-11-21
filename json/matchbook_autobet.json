@@ -1498,8 +1498,45 @@
       "pl": -1.58,
       "potAfter": 60.07,
       "settledAt": "2026-11-21T12:51:04.274Z"
+    },
+    {
+      "id": "2026-11-21|Lingfield|14:20|TRIP|GIORGIOM",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-21",
+      "course": "Lingfield",
+      "time": "14:20",
+      "horse": "GIORGIO M",
+      "decidedAt": "2026-11-21T14:11:00.592Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 60.07,
+      "claude": {
+        "action": "half",
+        "reason": "All his wins are at 7f and his recent 6f runs were 9th and 7th, with a penalty today."
+      },
+      "eventId": "34913087602102023",
+      "marketId": "34913087701104023",
+      "runnerId": "34913087701800023",
+      "price": 3.45,
+      "available": 188.89,
+      "depth": [
+        [
+          3.45,
+          188.89
+        ],
+        [
+          3.4,
+          554.28
+        ],
+        [
+          3.35,
+          483.33
+        ]
+      ],
+      "status": "skipped",
+      "reason": "stake £0.75 under the £1.00 minimum"
     }
   ],
-  "updatedAt": "2026-11-21T14:01:31.643Z",
+  "updatedAt": "2026-11-21T14:11:00.592Z",
   "bankPeak": 109.65222
 }
