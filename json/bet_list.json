@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:21:05.712Z",
+  "generatedAt": "2026-11-21T13:31:39.732Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Ascot",
+      "off": "13:30",
+      "horse": "LUCKY PLACE"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-21",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-21T13:21:05.602Z",
+    "updatedAt": "2026-11-21T13:31:39.607Z",
     "claude": {
       "races": 38,
       "won": 7,
