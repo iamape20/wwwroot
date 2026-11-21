@@ -4376,10 +4376,16 @@
       "fav": {
         "horse": "LUCKY PLACE",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-21T13:21:09.825Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-11-21|Punchestown|13:38",
@@ -4437,10 +4443,48 @@
       },
       "recordedAt": "2026-11-21T13:41:00.835Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-21|Ascot|14:05",
+      "date": "2026-11-21",
+      "course": "Ascot",
+      "time": "14:05",
+      "horse": "LOVE OF NEYMORE",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "EASY LOVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EASY LOVE",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T13:51:17.483Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-21|Huntingdon|13:58",
+      "date": "2026-11-21",
+      "course": "Huntingdon",
+      "time": "13:58",
+      "horse": "PERGAMON",
+      "price": "20/1",
+      "runners": 11,
+      "liveHorse": "NORTH OF RICHMOND",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NORTH OF RICHMOND",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-21T13:51:17.506Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 163,
+    "recorded": 165,
     "pick": {
       "settled": 155,
       "won": 34,
@@ -4448,10 +4492,10 @@
       "roi": -14.4
     },
     "favourite": {
-      "settled": 152,
+      "settled": 153,
       "won": 55,
-      "pl": 12.43,
-      "roi": 8.2
+      "pl": 11.43,
+      "roi": 7.5
     },
     "agree": {
       "settled": 48,
