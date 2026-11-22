@@ -826,8 +826,16 @@ button {
     border-color: rgba(46, 160, 67, .55);
 }
 
-#placeValueBox .nap-label {
+#placeValueBox .nap-label,
+#napCallout .place-nap .nap-label {
     color: rgb(46, 140, 60);
+}
+
+/* Place NAP at the top of the NAP box (user 2026-11-22), the likeliest winner below it. */
+#napCallout .place-nap {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(var(--epr-overlay-rgb), .12);
 }
 #dailyDoubleBox {
     padding: 14px 14px 0;

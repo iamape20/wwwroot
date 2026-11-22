@@ -338,6 +338,24 @@ async function renderPlaceValue() {
     if (rec?.settled) html += `<div class="nap-meta">Record since ${new Date(rec.from + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}: ${rec.placed} placed of ${rec.settled}, <span class="${rec.pl < 0 ? "record-minus" : "record-plus"}">${pts(rec.pl)} pts</span> to £1 stakes (${rec.roiPct >= 0 ? "+" : ""}${rec.roiPct}%).</div>`;
     el.innerHTML = html;
     el.style.display = "";
+    showPlaceNap(v.placeNap, res);
+}
+
+// Place NAP (user 2026-11-22 "yes make the Place NAP the NAP when one qualifies"): on a day with a place-value
+// bet, the NAP box leads with it and the usual pick stays below it as the likeliest winner. renderNapCallout
+// rewrites the box first (it starts this fetch), so this runs on top of it.
+function showPlaceNap(p, res) {
+    const napEl = document.getElementById("napCallout");
+    if (!napEl || !p || napEl.querySelector(".place-nap")) return;
+    const lab = napEl.querySelector(".nap-label");
+    if (lab) lab.textContent = lab.textContent.replace(/^Today's NAP/, "Likeliest winner (not a value bet)");
+    napEl.querySelector(".nap-banker-note")?.remove();
+    napEl.insertAdjacentHTML("afterbegin", `<div class="place-nap">
+        <div class="nap-label">Today's NAP • Place NAP</div>
+        <div class="nap-name">${escapeHtml(String(p.name || "").toUpperCase())}</div>
+        <div class="nap-meta">To place (${p.places} places) at ${p.price} • ${escapeHtml(p.course || "")} ${escapeHtml(p.time || "")} • worth ${Number(p.value).toFixed(2)}x${res(p.position != null ? { ...p, pos: p.position } : p)}</div>
+        <div class="nap-meta nap-why"><strong>Why:</strong> on a day when a horse's place price beats what the win market implies by 30% or more, that horse is the NAP. One-a-day picks like this made +16.6% at Betfair's place SP in 2021-26, in profit in 5 of 6 years. About half place.</div>
+    </div>`);
 }
 
 function renderNapCallout(nap) {
@@ -3039,7 +3057,7 @@ async function loadRecord() {
         const since = iso => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
         const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "-";
         const rows = [];
-        if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
+        if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}${d.nap.placeFrom ? ` &middot; from ${since(d.nap.placeFrom)} a Place NAP counts when there is one (placed = won, at its price)` : ""}</span></div>`);
         // Real Matchbook bets not shown (user 2026-11-05).
         // Daily Double row removed from the pick board as clutter (user 2026-11-22).
         // NAP rule forward test: its own panel below (user 2026-11-06).
@@ -3070,6 +3088,12 @@ function renderLastNap(n) {
     const label = n.date === y ? "Yesterday's NAP"
         : "Last NAP (" + new Date(n.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + ")";
     const ord = p => p + (p % 100 >= 11 && p % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" }[p % 10] || "th"));
+    if (n.kind === "place") {   // a Place NAP day (user 2026-11-22)
+        const pts = x => `${x >= 0 ? "+" : "-"}${Math.abs(x).toFixed(2)}`;
+        const placed = n.outcome === "placed";
+        el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.name).toUpperCase())}</b> (Place NAP at ${n.price}) <span class="${placed ? "record-plus" : "record-minus"}">${n.position && n.position < 99 ? ord(n.position) : placed ? "placed" : "unplaced"} ${pts(n.pl)}</span>`;
+        return;
+    }
     const sp = n.sp ? ` at ${escapeHtml(n.sp)}` : "";
     const how = n.outcome === "won" ? `<span class="record-plus">won</span>${sp}`
         : `<span class="record-minus">${n.position ? ord(n.position) : "lost"}</span>${sp}${n.winner ? ` &middot; won by ${escapeHtml(n.winner)}${n.winnerSp ? ` (${escapeHtml(n.winnerSp)})` : ""}` : ""}`;
