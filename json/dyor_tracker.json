@@ -5393,10 +5393,18 @@
       "fav": {
         "horse": "OUR WEE HORSE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T12:30:49.421Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|12:55",
@@ -5454,27 +5462,46 @@
       },
       "recordedAt": "2026-11-22T12:51:00.673Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Exeter|13:07",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "13:07",
+      "horse": "POET'S MUSE",
+      "price": "6/5",
+      "runners": 5,
+      "liveHorse": "POET'S MUSE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "POET'S MUSE",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:00:52.358Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 199,
+    "recorded": 200,
     "pick": {
-      "settled": 192,
+      "settled": 193,
       "won": 45,
-      "pl": 2.75,
-      "roi": 1.4
+      "pl": 1.75,
+      "roi": 0.9
     },
     "favourite": {
-      "settled": 194,
+      "settled": 195,
       "won": 74,
-      "pl": 21.11,
-      "roi": 10.9
+      "pl": 20.11,
+      "roi": 10.3
     },
     "agree": {
-      "settled": 57,
+      "settled": 58,
       "won": 24,
-      "pl": 4.76,
-      "roi": 8.4
+      "pl": 3.76,
+      "roi": 6.5
     },
     "disagree": {
       "settled": 135,
