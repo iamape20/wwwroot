@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T11:51:05.220Z",
+  "generatedAt": "2026-11-22T12:01:12.518Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,18 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Punchestown",
+      "off": "12:00",
+      "horse": "STUMPTOWN"
+    },
+    {
+      "course": "Lingfield",
+      "off": "11:55",
+      "horse": "ARKAT"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-21",
@@ -182,7 +193,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-22T11:51:05.106Z",
+    "updatedAt": "2026-11-22T12:01:12.322Z",
     "claude": {
       "races": 38,
       "won": 7,
