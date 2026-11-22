@@ -7444,7 +7444,11 @@
       "rating": 64.5,
       "runners": 10,
       "recordedAt": "2026-11-22T12:10:52.657Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Punchestown|12:30",
@@ -7456,7 +7460,9 @@
       "rating": 79.3,
       "runners": 15,
       "recordedAt": "2026-11-22T12:21:05.700Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/10"
     },
     {
       "id": "2026-11-22|Lingfield|12:55",
@@ -7473,10 +7479,10 @@
   ],
   "stats": {
     "recorded": 454,
-    "settled": 447,
+    "settled": 448,
     "won": 220,
-    "pl": -17.8,
-    "roi": -4
+    "pl": -18.8,
+    "roi": -4.2
   },
   "lastBackfill": 1795330898925
 }

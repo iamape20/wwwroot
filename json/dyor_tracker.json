@@ -5316,10 +5316,18 @@
       "fav": {
         "horse": "SEA FORTRESS",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T12:10:53.481Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|12:19",
@@ -5362,10 +5370,14 @@
       "fav": {
         "horse": "THEFLYINGKING",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/10"
       },
       "recordedAt": "2026-11-22T12:21:06.509Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/10"
     },
     {
       "id": "2026-11-22|Exeter|12:37",
@@ -5423,21 +5435,40 @@
       },
       "recordedAt": "2026-11-22T12:40:59.085Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|13:00",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "13:00",
+      "horse": "J'ARRIVE DE L'EST",
+      "price": "7/2",
+      "runners": 13,
+      "liveHorse": "J'ARRIVE DE L'EST",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "J'ARRIVE DE L'EST",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T12:51:00.673Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 198,
+    "recorded": 199,
     "pick": {
-      "settled": 191,
+      "settled": 192,
       "won": 45,
-      "pl": 3.75,
-      "roi": 2
+      "pl": 2.75,
+      "roi": 1.4
     },
     "favourite": {
-      "settled": 193,
+      "settled": 194,
       "won": 74,
-      "pl": 22.11,
-      "roi": 11.5
+      "pl": 21.11,
+      "roi": 10.9
     },
     "agree": {
       "settled": 57,
@@ -5446,10 +5477,10 @@
       "roi": 8.4
     },
     "disagree": {
-      "settled": 134,
+      "settled": 135,
       "won": 21,
-      "pl": -1.01,
-      "roi": -0.8
+      "pl": -2.01,
+      "roi": -1.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
