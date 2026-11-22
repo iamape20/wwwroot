@@ -5264,10 +5264,18 @@
       "fav": {
         "horse": "ARKAT",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T11:40:58.415Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Punchestown|12:00",
@@ -5283,10 +5291,16 @@
       "fav": {
         "horse": "STUMPTOWN",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T11:51:08.997Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/2"
     },
     {
       "id": "2026-11-22|Lingfield|12:25",
@@ -5325,27 +5339,46 @@
       },
       "recordedAt": "2026-11-22T12:10:53.619Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|12:30",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "12:30",
+      "horse": "THEFLYINGKING",
+      "price": "10/11",
+      "runners": 15,
+      "liveHorse": "THEFLYINGKING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "THEFLYINGKING",
+        "price": "10/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T12:21:06.509Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 194,
+    "recorded": 195,
     "pick": {
-      "settled": 189,
+      "settled": 190,
       "won": 45,
-      "pl": 5.75,
-      "roi": 3
+      "pl": 4.75,
+      "roi": 2.5
     },
     "favourite": {
-      "settled": 190,
+      "settled": 192,
       "won": 74,
-      "pl": 25.11,
-      "roi": 13.2
+      "pl": 23.11,
+      "roi": 12
     },
     "agree": {
-      "settled": 56,
+      "settled": 57,
       "won": 24,
-      "pl": 5.76,
-      "roi": 10.3
+      "pl": 4.76,
+      "roi": 8.4
     },
     "disagree": {
       "settled": 133,

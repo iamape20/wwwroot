@@ -4596,10 +4596,11 @@
       "runners": 14,
       "phase": "STOPPED",
       "stake": 0,
-      "result": null,
-      "isp": null,
+      "result": "lost",
+      "isp": "1/2",
       "bsp": null,
-      "pl": null
+      "pl": 0,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|11:55",
@@ -4609,6 +4610,22 @@
       "horse": "ARKAT",
       "priceAtOff": "6/4",
       "runners": 11,
+      "phase": "STOPPED",
+      "stake": 0,
+      "result": "lost",
+      "isp": "11/8",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-22|Cork|12:19",
+      "date": "2026-11-22",
+      "course": "Cork",
+      "time": "12:19",
+      "horse": "NOON BLU DODVILLE",
+      "priceAtOff": "11/8",
+      "runners": 10,
       "phase": "STOPPED",
       "stake": 0,
       "result": null,

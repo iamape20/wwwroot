@@ -7428,7 +7428,11 @@
       "rating": 91,
       "runners": 14,
       "recordedAt": "2026-11-22T11:51:08.113Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|12:25",
@@ -7441,14 +7445,26 @@
       "runners": 10,
       "recordedAt": "2026-11-22T12:10:52.657Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|12:30",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "12:30",
+      "horse": "THEFLYINGKING",
+      "price": "10/11",
+      "rating": 79.3,
+      "runners": 15,
+      "recordedAt": "2026-11-22T12:21:05.700Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 452,
-    "settled": 446,
+    "recorded": 453,
+    "settled": 447,
     "won": 220,
-    "pl": -16.8,
-    "roi": -3.8
+    "pl": -17.8,
+    "roi": -4
   },
   "lastBackfill": 1795330898925
 }
