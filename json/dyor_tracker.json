@@ -5628,10 +5628,18 @@
       "fav": {
         "horse": "MARIA DA SILVA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:40:56.214Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|13:49",
@@ -5647,10 +5655,18 @@
       "fav": {
         "horse": "PLACE DE LA NATION",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:40:56.369Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Punchestown|14:00",
@@ -5689,33 +5705,71 @@
       },
       "recordedAt": "2026-11-22T14:01:09.656Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Lingfield|14:25",
+      "date": "2026-11-22",
+      "course": "Lingfield",
+      "time": "14:25",
+      "horse": "LAZZAR",
+      "price": "2/1",
+      "runners": 10,
+      "liveHorse": "LAZZAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LAZZAR",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:10:44.362Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-22|Cork|14:19",
+      "date": "2026-11-22",
+      "course": "Cork",
+      "time": "14:19",
+      "horse": "AL KALILA",
+      "price": "10/1",
+      "runners": 16,
+      "liveHorse": "KARL DES TOURELLES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KARL DES TOURELLES",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:10:44.570Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 208,
+    "recorded": 210,
     "pick": {
-      "settled": 200,
+      "settled": 202,
       "won": 45,
-      "pl": -5.25,
-      "roi": -2.6
+      "pl": -7.25,
+      "roi": -3.6
     },
     "favourite": {
-      "settled": 200,
+      "settled": 202,
       "won": 74,
-      "pl": 15.11,
-      "roi": 7.6
+      "pl": 13.11,
+      "roi": 6.5
     },
     "agree": {
-      "settled": 60,
+      "settled": 61,
       "won": 24,
-      "pl": 1.76,
-      "roi": 2.9
+      "pl": 0.76,
+      "roi": 1.2
     },
     "disagree": {
-      "settled": 140,
+      "settled": 141,
       "won": 21,
-      "pl": -7.01,
-      "roi": -5
+      "pl": -8.01,
+      "roi": -5.7
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
