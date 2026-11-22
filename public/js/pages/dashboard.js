@@ -281,6 +281,7 @@ async function renderAngleNapFallback(napEl) {
             <div class="nap-meta">${p.why.map(w => escapeHtml(w)).join(" • ")}</div>
             <div class="nap-meta">No Strong or Moderate NAP today, so this is the day's Angle NAP instead. ${rec}</div>
         </div></div>`;
+    if (lastPlaceNap) showPlaceNap(lastPlaceNap.p, lastPlaceNap.res);
 }
 
 // The NAP's reasons in plain words (user 2026-11-19 "add the angles or reasoning for selection to the
@@ -344,9 +345,14 @@ async function renderPlaceValue() {
 // Place NAP (user 2026-11-22 "yes make the Place NAP the NAP when one qualifies"): on a day with a place-value
 // bet, the NAP box leads with it and the usual pick stays below it as the likeliest winner. renderNapCallout
 // rewrites the box first (it starts this fetch), so this runs on top of it.
+// Kept so renderAngleNapFallback can put it back after it rewrites the box (its fetch can finish last).
+let lastPlaceNap = null;
 function showPlaceNap(p, res) {
+    lastPlaceNap = p ? { p, res } : null;
     const napEl = document.getElementById("napCallout");
     if (!napEl || !p || napEl.querySelector(".place-nap")) return;
+    // No win NAP today: drop the "No NAP today" line rather than contradict the Place NAP above it.
+    if (napEl.dataset.napState === "empty" && napEl.querySelector(".daily-double-empty-text")) napEl.innerHTML = "";
     const lab = napEl.querySelector(".nap-label");
     if (lab) lab.textContent = lab.textContent.replace(/^Today's NAP/, "Likeliest winner (not a value bet)");
     napEl.querySelector(".nap-banker-note")?.remove();
