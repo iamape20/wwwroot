@@ -2041,13 +2041,10 @@ async function loadRace(
         const runnerFragment =
             document.createDocumentFragment();
 
-        // Our published pick is listed first (the market-override rule can make it
-        // a lower-rated runner); the medals still follow the rating rank.
+        // Listed by score, highest first (user 2026-11-22: "order by scoring instead of
+        // OUR PICK"); our pick keeps its badge wherever it ranks.
         const ratingRank = new Map(runners.map((r, i) => [r, i]));
-        const pickAt = runners.findIndex(r => r.isOurPick);
-        const displayRunners = pickAt > 0
-            ? [runners[pickAt], ...runners.filter((_, i) => i !== pickAt)]
-            : runners;
+        const displayRunners = runners;
 
         displayRunners.forEach(
             (runner, index) => {
