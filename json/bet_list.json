@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:10:52.300Z",
+  "generatedAt": "2026-11-22T13:20:45.534Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-22",
       "course": "Lingfield",
       "off": "12:55",
-      "horse": "OLYMPIC CHARTER"
-    }
-  ],
-  "recent": [
+      "horse": "OLYMPIC CHARTER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-22",
       "course": "Lingfield",
@@ -174,21 +179,10 @@
       "bsp": 1.55,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-21",
-      "course": "Lingfield",
-      "off": "12:00",
-      "horse": "BIBURY STAR",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-22T13:10:52.202Z",
+    "updatedAt": "2026-11-22T13:20:45.420Z",
     "claude": {
       "races": 38,
       "won": 7,

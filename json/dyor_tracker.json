@@ -5420,10 +5420,16 @@
       "fav": {
         "horse": "OLYMPIC CHARTER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-11-22T12:40:59.068Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|12:49",
@@ -5466,10 +5472,14 @@
       "fav": {
         "horse": "J'ARRIVE DE L'EST",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-22T12:51:00.673Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-11-22|Exeter|13:07",
@@ -5527,15 +5537,34 @@
       },
       "recordedAt": "2026-11-22T13:10:55.848Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|13:30",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "13:30",
+      "horse": "BUNKER BUSTER",
+      "price": "4/1",
+      "runners": 7,
+      "liveHorse": "GOMEZ ADDAMS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GOMEZ ADDAMS",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:20:48.797Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 202,
+    "recorded": 203,
     "pick": {
-      "settled": 194,
+      "settled": 195,
       "won": 45,
-      "pl": 0.75,
-      "roi": 0.4
+      "pl": -0.25,
+      "roi": -0.1
     },
     "favourite": {
       "settled": 196,
@@ -5550,10 +5579,10 @@
       "roi": 4.7
     },
     "disagree": {
-      "settled": 135,
+      "settled": 136,
       "won": 21,
-      "pl": -2.01,
-      "roi": -1.5
+      "pl": -3.01,
+      "roi": -2.2
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
