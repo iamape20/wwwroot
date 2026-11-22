@@ -5709,10 +5709,14 @@
       "fav": {
         "horse": "MWABANI",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "5/2"
       },
       "recordedAt": "2026-11-22T14:01:09.656Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-22|Lingfield|14:25",
@@ -5770,10 +5774,29 @@
       },
       "recordedAt": "2026-11-22T14:20:51.643Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Exeter|14:37",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "14:37",
+      "horse": "START AGAIN",
+      "price": "9/1",
+      "runners": 8,
+      "liveHorse": "KEL DU LARGE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KEL DU LARGE",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:30:39.214Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 211,
+    "recorded": 212,
     "pick": {
       "settled": 203,
       "won": 45,
