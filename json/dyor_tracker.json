@@ -5751,10 +5751,16 @@
       "fav": {
         "horse": "KARL DES TOURELLES",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T14:10:44.570Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/1"
     },
     {
       "id": "2026-11-22|Punchestown|14:30",
@@ -5793,10 +5799,48 @@
       },
       "recordedAt": "2026-11-22T14:30:39.214Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Lingfield|14:55",
+      "date": "2026-11-22",
+      "course": "Lingfield",
+      "time": "14:55",
+      "horse": "MUY MUY LOCO",
+      "price": "17/2",
+      "runners": 12,
+      "liveHorse": "WELLWHATSHAPPENIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "WELLWHATSHAPPENIN",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:40:48.942Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-22|Cork|14:49",
+      "date": "2026-11-22",
+      "course": "Cork",
+      "time": "14:49",
+      "horse": "SPECULATEUR",
+      "price": "9/2",
+      "runners": 15,
+      "liveHorse": "ROSIE'S WINGS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROSIE'S WINGS",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:40:49.127Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 212,
+    "recorded": 214,
     "pick": {
       "settled": 203,
       "won": 45,
@@ -5804,10 +5848,10 @@
       "roi": -4.1
     },
     "favourite": {
-      "settled": 203,
+      "settled": 204,
       "won": 74,
-      "pl": 12.11,
-      "roi": 6
+      "pl": 11.11,
+      "roi": 5.4
     },
     "agree": {
       "settled": 62,
