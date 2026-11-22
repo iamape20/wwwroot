@@ -5358,10 +5358,29 @@
       },
       "recordedAt": "2026-11-22T12:21:06.509Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Exeter|12:37",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "12:37",
+      "horse": "OUR WEE HORSE",
+      "price": "13/8",
+      "runners": 5,
+      "liveHorse": "OUR WEE HORSE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "OUR WEE HORSE",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T12:30:49.421Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 195,
+    "recorded": 196,
     "pick": {
       "settled": 190,
       "won": 45,
@@ -5388,5 +5407,5 @@
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795330902080
+  "lastBackfill": 1795350649434
 }
