@@ -5601,10 +5601,18 @@
       "fav": {
         "horse": "CHAMPAGNE CHIC",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:30:55.942Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|13:55",
@@ -5662,21 +5670,40 @@
       },
       "recordedAt": "2026-11-22T13:50:45.723Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Exeter|14:07",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "14:07",
+      "horse": "MWABANI",
+      "price": "2/1",
+      "runners": 5,
+      "liveHorse": "MWABANI",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MWABANI",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:01:09.656Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 207,
+    "recorded": 208,
     "pick": {
-      "settled": 199,
+      "settled": 200,
       "won": 45,
-      "pl": -4.25,
-      "roi": -2.1
+      "pl": -5.25,
+      "roi": -2.6
     },
     "favourite": {
-      "settled": 199,
+      "settled": 200,
       "won": 74,
-      "pl": 16.11,
-      "roi": 8.1
+      "pl": 15.11,
+      "roi": 7.6
     },
     "agree": {
       "settled": 60,
@@ -5685,10 +5712,10 @@
       "roi": 2.9
     },
     "disagree": {
-      "settled": 139,
+      "settled": 140,
       "won": 21,
-      "pl": -6.01,
-      "roi": -4.3
+      "pl": -7.01,
+      "roi": -5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
