@@ -5541,10 +5541,16 @@
       "fav": {
         "horse": "SOUL ASYLUM",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-22T13:10:55.848Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Punchestown|13:30",
@@ -5583,15 +5589,53 @@
       },
       "recordedAt": "2026-11-22T13:30:55.942Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Lingfield|13:55",
+      "date": "2026-11-22",
+      "course": "Lingfield",
+      "time": "13:55",
+      "horse": "EAZY ON THE EYE",
+      "price": "11/2",
+      "runners": 9,
+      "liveHorse": "MARIA DA SILVA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MARIA DA SILVA",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:40:56.214Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-22|Cork|13:49",
+      "date": "2026-11-22",
+      "course": "Cork",
+      "time": "13:49",
+      "horse": "PLACE DE LA NATION",
+      "price": "6/4",
+      "runners": 13,
+      "liveHorse": "PLACE DE LA NATION",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PLACE DE LA NATION",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:40:56.369Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 204,
+    "recorded": 206,
     "pick": {
-      "settled": 196,
+      "settled": 197,
       "won": 45,
-      "pl": -1.25,
-      "roi": -0.6
+      "pl": -2.25,
+      "roi": -1.1
     },
     "favourite": {
       "settled": 197,
@@ -5606,10 +5650,10 @@
       "roi": 2.9
     },
     "disagree": {
-      "settled": 136,
+      "settled": 137,
       "won": 21,
-      "pl": -3.01,
-      "roi": -2.2
+      "pl": -4.01,
+      "roi": -2.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
