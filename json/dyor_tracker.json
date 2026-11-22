@@ -5522,10 +5522,18 @@
       "fav": {
         "horse": "MERCI MONSIEUR",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:10:55.653Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|13:19",
@@ -5566,10 +5574,18 @@
       "fav": {
         "horse": "GOMEZ ADDAMS",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:20:48.797Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Exeter|13:37",
@@ -5627,21 +5643,40 @@
       },
       "recordedAt": "2026-11-22T13:40:56.369Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|14:00",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "14:00",
+      "horse": "OLDSCHOOL OUTLAW",
+      "price": "8/13",
+      "runners": 7,
+      "liveHorse": "OLDSCHOOL OUTLAW",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "OLDSCHOOL OUTLAW",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:50:45.723Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 206,
+    "recorded": 207,
     "pick": {
-      "settled": 197,
+      "settled": 199,
       "won": 45,
-      "pl": -2.25,
-      "roi": -1.1
+      "pl": -4.25,
+      "roi": -2.1
     },
     "favourite": {
-      "settled": 197,
+      "settled": 199,
       "won": 74,
-      "pl": 18.11,
-      "roi": 9.2
+      "pl": 16.11,
+      "roi": 8.1
     },
     "agree": {
       "settled": 60,
@@ -5650,10 +5685,10 @@
       "roi": 2.9
     },
     "disagree": {
-      "settled": 137,
+      "settled": 139,
       "won": 21,
-      "pl": -4.01,
-      "roi": -2.9
+      "pl": -6.01,
+      "roi": -4.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
