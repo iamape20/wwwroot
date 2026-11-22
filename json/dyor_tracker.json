@@ -5237,10 +5237,18 @@
       "fav": {
         "horse": "MISTER MOJITO",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T11:10:57.357Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "7/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|11:55",
@@ -5260,21 +5268,40 @@
       },
       "recordedAt": "2026-11-22T11:40:58.415Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|12:00",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "12:00",
+      "horse": "FOUNTAIN HOUSE",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "STUMPTOWN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STUMPTOWN",
+        "price": "8/13",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T11:51:08.997Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 191,
+    "recorded": 192,
     "pick": {
-      "settled": 188,
+      "settled": 189,
       "won": 45,
-      "pl": 6.75,
-      "roi": 3.6
+      "pl": 5.75,
+      "roi": 3
     },
     "favourite": {
-      "settled": 189,
+      "settled": 190,
       "won": 74,
-      "pl": 26.11,
-      "roi": 13.8
+      "pl": 25.11,
+      "roi": 13.2
     },
     "agree": {
       "settled": 56,
@@ -5283,10 +5310,10 @@
       "roi": 10.3
     },
     "disagree": {
-      "settled": 132,
+      "settled": 133,
       "won": 21,
-      "pl": 0.99,
-      "roi": 0.8
+      "pl": -0.01,
+      "roi": 0
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
