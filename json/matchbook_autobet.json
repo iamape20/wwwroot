@@ -2,7 +2,7 @@
   "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 59.45,
+  "pot": 67.09,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -1682,9 +1682,47 @@
       ],
       "status": "placed",
       "stake": 1.56,
-      "matched": 1.56
+      "matched": 1.56,
+      "result": "won",
+      "pl": 7.64,
+      "potAfter": 67.09,
+      "settledAt": "2026-11-22T15:30:38.234Z"
+    },
+    {
+      "id": "2026-11-22|Exeter|15:37|TRIP|LOCKEDDOWNLAD",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "15:37",
+      "horse": "LOCKED DOWN LAD",
+      "decidedAt": "2026-11-22T15:30:38.229Z",
+      "minutesBeforeOff": 6,
+      "potBefore": 59.45,
+      "eventId": "34921604273102002",
+      "marketId": "34921604346502023",
+      "runnerId": "34921604348507023",
+      "price": 4.6,
+      "available": 138.25,
+      "depth": [
+        [
+          4.6,
+          138.25
+        ],
+        [
+          4.5,
+          428.82
+        ],
+        [
+          4.4,
+          320
+        ]
+      ],
+      "status": "placed",
+      "stake": 1.48,
+      "matched": 1.48
     }
   ],
-  "updatedAt": "2026-11-22T15:20:35.343Z",
+  "updatedAt": "2026-11-22T15:30:38.241Z",
   "bankPeak": 109.65222
 }
