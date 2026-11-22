@@ -6046,10 +6046,16 @@
       "fav": {
         "horse": "COCK AND BULL",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T15:40:25.996Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/1"
     }
   ],
   "stats": {
@@ -6061,10 +6067,10 @@
       "roi": -8.6
     },
     "favourite": {
-      "settled": 212,
+      "settled": 213,
       "won": 74,
-      "pl": 3.11,
-      "roi": 1.5
+      "pl": 2.11,
+      "roi": 1
     },
     "agree": {
       "settled": 64,
