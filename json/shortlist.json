@@ -1,54 +1,66 @@
 {
-  "date": "2026-11-21",
-  "builtAt": "2026-11-21T09:00:09.056Z",
-  "strong": [
-    {
-      "horse": "BONDY BOY",
-      "course": "Newcastle",
-      "time": "16:00",
-      "rating": "73.5",
-      "margin": "23.1",
-      "marginValue": 23.1,
-      "confidence": 72,
-      "meetingId": "122696",
-      "raceIndex": 2
-    }
-  ],
+  "date": "2026-11-22",
+  "builtAt": "2026-11-22T02:29:35.445Z",
+  "strong": [],
   "moderate": [
     {
-      "horse": "BIBURY STAR",
-      "course": "Lingfield",
-      "time": "12:00",
-      "rating": "74.5",
-      "margin": "23.0",
-      "marginValue": 23,
-      "confidence": 58,
-      "meetingId": "122695",
-      "raceIndex": 2
-    },
-    {
-      "horse": "KOKTAIL DIVIN",
-      "course": "Haydock",
-      "time": "12:05",
-      "rating": "87.0",
-      "margin": "20.9",
-      "marginValue": 20.900000000000006,
-      "confidence": 90,
-      "meetingId": "122510",
+      "horse": "OUR WEE HORSE",
+      "course": "Exeter",
+      "time": "12:37",
+      "rating": "73.2",
+      "margin": "17.8",
+      "marginValue": 17.800000000000004,
+      "confidence": 78,
+      "meetingId": "122693",
       "raceIndex": 0
     },
     {
-      "horse": "LOSSIEMOUTH",
+      "horse": "OLYMPIC CHARTER",
+      "course": "Lingfield",
+      "time": "12:55",
+      "rating": "84.7",
+      "margin": "18.9",
+      "marginValue": 18.900000000000006,
+      "confidence": 58,
+      "meetingId": "122694",
+      "raceIndex": 3
+    },
+    {
+      "horse": "OLDSCHOOL OUTLAW",
       "course": "Punchestown",
-      "time": "14:10",
-      "rating": "95.0",
-      "margin": "20.8",
-      "marginValue": 20.799999999999997,
-      "confidence": 90,
-      "meetingId": "122377",
+      "time": "14:00",
+      "rating": "82.8",
+      "margin": "15.3",
+      "marginValue": 15.299999999999997,
+      "confidence": 87,
+      "meetingId": "122378",
       "raceIndex": 4
+    },
+    {
+      "horse": "GAELIC WARRIOR",
+      "course": "Punchestown",
+      "time": "15:00",
+      "rating": "97.3",
+      "margin": "17.1",
+      "marginValue": 17.099999999999994,
+      "confidence": 73,
+      "meetingId": "122378",
+      "raceIndex": 6
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "OLYMPIC CHARTER",
+      "course": "Lingfield",
+      "time": "12:55",
+      "rating": "84.7",
+      "margin": "18.9",
+      "marginValue": 18.900000000000006,
+      "confidence": 58,
+      "meetingId": "122694",
+      "raceIndex": 3,
+      "tier": "Moderate"
+    }
+  ],
+  "pickMode": "single"
 }
