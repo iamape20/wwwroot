@@ -40,13 +40,13 @@
          browser's module cache treats a different query string as a
          different module and busting the entry point alone does not
          bust what it imports. -->
-    <link rel="stylesheet" href="css/app.css?v=20261120d">
+    <link rel="stylesheet" href="css/app.css?v=20261122a">
 	<link rel="icon" href="images/overlay-logo.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="images/overlay-180.png?v=2">
 
     <script src="js/clock.js?v=20261105a" defer></script>
     <script src="js/theme.js?v=20260925" defer></script>
-    <script type="module" src="js/app.js?v=20261120d"></script>
+    <script type="module" src="js/app.js?v=20261122a"></script>
 
 </head>
 
@@ -113,13 +113,11 @@
         <div class="top-strip-right">
 
             <section id="pickBoard" class="pick-board" aria-label="Today's betting candidates">
-                <!-- order (user 2026-11-20): today's picks likeliest winner first, then yesterday's results, then the record -->
+                <!-- user 2026-11-22: place-value bets first (the only selections with a proven edge); Value NAP and
+                     Daily Double removed as clutter (no edge in 2021-26 tests); then the NAP, its result, the record -->
+                <div id="placeValueBox" class="nap-callout place-value-callout" style="display:none;"></div>
                 <div id="napCallout" class="nap-callout"></div>
-                <div id="valueNapCallout" class="nap-callout value-nap-callout" style="display:none;"></div>
-                <div id="dailyDoubleBox"></div>
                 <div id="napYesterday" class="nap-yesterday"></div>
-                <div id="valueNapYesterday" class="nap-yesterday"></div>
-                <div id="dailyDoubleYesterday"></div>
                 <div id="recordBlock" class="record-block" style="display:none;"></div>
             </section>
 

@@ -305,50 +305,44 @@ function napWhyHtml(nap) {
     return `<div class="nap-meta nap-why"><strong>Why:</strong> ${s.join(" ")}</div>`;
 }
 
-// The Value NAP (user 2026-11-19 "yes show both from tomorrow"): one handicap runner a day raised the most
-// after winning last time (js/valueNapPaperTest.js, from 20 Nov). Wins less often than the Banker NAP but at
-// bigger prices; a paper test with no money. Hidden before its first day.
-const VALUE_NAP_FROM = "2026-11-20";
-async function renderValueNap() {
-    const el = document.getElementById("valueNapCallout");
+// Place-value bets (user 2026-11-22 "yes add the place-value bets to the pick board"): js/winPlaceMatchbook.js
+// backs the place where the win market's prices make the place price worth 1.30x or more. The only selections
+// with a proven edge (2021-26 at Betfair place SP: 379 bets +31%, every year in profit). Built into
+// data/place-value.json by js/buildStaticSite.js. Times are UK time already. Replaces the Value NAP box.
+async function renderPlaceValue() {
+    const el = document.getElementById("placeValueBox");
     if (!el) return;
     let v = null;
     try {
-        const r = await fetch(`data/value-nap.json?t=${Date.now()}`, { cache: "no-store" });
+        const r = await fetch(`data/place-value.json?t=${Date.now()}`, { cache: "no-store" });
         if (r.ok) v = await r.json();
     } catch { return; }
-    renderLastValueNap(v && v.last);
-    if (!v || String(v.date || "") < VALUE_NAP_FROM) { el.style.display = "none"; return; }
-    const rec = v.record && v.record.settled
-        ? `Record so far: ${v.record.won} won from ${v.record.settled}, ${v.record.pl >= 0 ? "+" : "-"}${Math.abs(v.record.pl).toFixed(2)} pts (${v.record.roiPct >= 0 ? "+" : ""}${v.record.roiPct}%) at Betfair SP. Judged after ${v.record.passAt}.`
-        : `Paper test from 20 Nov - no money on it. Judged after 100 picks.`;
-    const p = v.pick;
-    const co = p && p.angle === "claimerOff";
-    let html = `<div class="nap-label">Today's Value NAP${p ? (co ? " • claimer off" : ` • raised ${p.rise}lb`) : ""}</div>`;
-    if (p) {
-        const why = co
-            ? `It ${escapeHtml(p.why || "won last time with a claiming rider and has a full jockey today")}. Horses like this beat the price in our results for 2024 to 2026, but lost about a third of their stakes in 2023. It is an unproven paper test with no money on it, so expect losing runs.`
-            : `It ${escapeHtml(p.why || `was raised ${p.rise}lb after winning`)}. ${String(v.date || "") >= "2026-11-21" ? "No claimer-off horse qualified today, so it is the flat or all-weather handicapper raised most after a win." : "Of today's handicap runners raised after a win, it has the biggest rise."} Horses like this beat the price in our results for 2024 to 2026, but lost about a tenth of their stakes in 2023. It is an unproven paper test with no money on it, so expect losing runs.`;
-        const res = p.outcome === "won" ? `<div class="nap-meta"><span class="record-plus">WON</span>${p.bsp ? ` at Betfair SP ${p.bsp}` : ""}</div>`
-            : p.outcome === "lost" ? `<div class="nap-meta"><span class="record-minus">Lost</span></div>`
-            : p.outcome === "void" ? `<div class="nap-meta">Void (non-runner)</div>` : "";
-        html += `<div class="nap-row"><div>
-            <div class="nap-name">${escapeHtml(String(p.horse || "").toUpperCase())}</div>
-            ${res}
-            <div class="nap-meta">${escapeHtml(p.course || "-")} ${escapeHtml(p.time ? toLocalTimeString(p.time) : "-")} • ${escapeHtml(p.odds || "-")} at 09:00</div>
-            <div class="nap-meta nap-why"><strong>Why:</strong> ${why}</div>
-            <div class="nap-meta">${rec}</div>
-        </div></div>`;
-    } else {
-        html += `<div class="daily-double-empty-text">${v.noPick ? (String(v.date || "") >= "2026-11-21" ? "No Value NAP today: no claimer-off horse and no flat or all-weather handicapper raised 5lb+ after winning, at 10/1 or shorter." : "No Value NAP today: no handicap runner raised 5lb+ after winning at 10/1 or shorter.") : "Picked from 9am, once the morning prices are in."}</div><div class="nap-meta">${rec}</div>`;
+    if (!v) { el.style.display = "none"; return; }
+    const pts = x => `${x >= 0 ? "+" : "-"}${Math.abs(x).toFixed(2)}`;
+    const ord = n => n + (["th", "st", "nd", "rd"][(n % 100 - 20) % 10] || ["th", "st", "nd", "rd"][n % 100] || "th");
+    const res = b => b.outcome === "placed" ? ` <span class="record-plus">${b.pos ? ord(b.pos) : "placed"} ${pts(b.pl)}</span>`
+        : b.outcome === "lost" ? ` <span class="record-minus">${b.pos && b.pos < 99 ? ord(b.pos) : "unplaced"} ${pts(b.pl)}</span>`
+        : b.outcome === "void" ? " void" : "";
+    const line = b => `<div class="nap-meta"><b>${escapeHtml(String(b.horse || "").toUpperCase())}</b> to place (${b.places} places) at ${b.price} • ${escapeHtml(b.course || "")} ${escapeHtml(b.time || "")} • worth ${Number(b.value).toFixed(2)}x${res(b)}</div>`;
+    const today = v.today || [];
+    let html = `<div class="nap-label">Place-value bets${today.length ? ` • ${today.length} today` : ""}</div>`;
+    html += today.length ? today.map(line).join("")
+        : `<div class="daily-double-empty-text">None yet today. Every race is checked through the day; about one or two qualify a week.</div>`;
+    html += `<div class="nap-meta nap-why"><strong>Why:</strong> the win market's prices give the horse a better chance of finishing in the places than the place price allows. Bets like this made +${v.backtest.roiPct}% over ${v.backtest.bets} bets at Betfair's place SP in ${v.backtest.years}, in profit every year. About half place, so expect losing runs.</div>`;
+    if (v.last?.bets?.length) {
+        const y = new Date(Date.now() - 86400000).toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+        const lab = v.last.date === y ? "Yesterday" : new Date(v.last.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+        html += `<div class="nap-meta"><span class="results-strip-label">${lab}</span> ${v.last.bets.map(b => `${escapeHtml(String(b.horse).toUpperCase())}${res(b)}`).join(" • ")}</div>`;
     }
+    const rec = v.record;
+    if (rec?.settled) html += `<div class="nap-meta">Record since ${new Date(rec.from + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}: ${rec.placed} placed of ${rec.settled}, <span class="${rec.pl < 0 ? "record-minus" : "record-plus"}">${pts(rec.pl)} pts</span> to £1 stakes (${rec.roiPct >= 0 ? "+" : ""}${rec.roiPct}%).</div>`;
     el.innerHTML = html;
     el.style.display = "";
 }
 
 function renderNapCallout(nap) {
 
-    renderValueNap();
+    renderPlaceValue();
     const napEl = document.getElementById("napCallout");
     if (!napEl) return;
     napEl.dataset.napState = nap ? "nap" : "empty";
@@ -360,8 +354,7 @@ function renderNapCallout(nap) {
         // "Once the 9am prices are in" only while that is still to come; it can also
         // be a Moderate race whose pick fails a NAP check (trainer out of form).
         const beforeNine = Number(new Date().toLocaleString("en-GB", { timeZone: "Europe/London", hour: "2-digit", hourCycle: "h23" })) < 9;
-        const banker = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" }) >= VALUE_NAP_FROM;
-        const emptyHtml = `<div class="nap-label">${banker ? "Today's Banker NAP" : "Today's NAP"}</div><div class="daily-double-empty-text">No ${banker ? "Banker " : ""}NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
+        const emptyHtml = `<div class="nap-label">Today's NAP</div><div class="daily-double-empty-text">No NAP today: no Strong or Moderate pick qualifies${beforeNine ? " yet. It can appear once the 9am prices are in." : "."}</div>`;
         // Only rewrite when the text changes, so the Angle NAP shown below is not
         // flashed away on every refresh.
         if (!napEl.querySelector(".nap-name") || napEl.dataset.angle !== "1") napEl.innerHTML = emptyHtml;
@@ -402,7 +395,7 @@ function renderNapCallout(nap) {
     const countdownHtml = !res && !struck && Number.isFinite(offMs)
         ? `<span class="nap-countdown" data-off="${offMs}"></span>` : "";
     napEl.innerHTML = `
-        <div class="nap-label">${String(nap.date || "") >= VALUE_NAP_FROM ? "Today's Banker NAP" : "Today's NAP"} \u2022 ${nap.signalCount ?? 0}/3 signals</div>
+        <div class="nap-label">Today's NAP \u2022 ${nap.signalCount ?? 0}/3 signals</div>
         <div class="nap-row">
             ${napSilk ? `<img src="${escapeHtml(String(napSilk))}" class="pick-silk" alt="" loading="lazy" onerror="this.style.display='none';">` : ""}
             <div>
@@ -411,7 +404,7 @@ function renderNapCallout(nap) {
                 ${resultHtml}
                 <div class="nap-meta">${escapeHtml(nap.meeting ?? "-")} ${escapeHtml(timeText)}${countdownHtml} \u2022 Rating ${nap.rating ?? "-"}${gapText}</div>
                 ${napWhyHtml(nap)}
-                ${String(nap.date || "") >= VALUE_NAP_FROM ? `<div class="nap-meta nap-banker-note">The Banker is the day's likeliest winner, usually a short-priced favourite: it wins often, but so far it has not beaten the price. The Value NAP below is the bigger-priced alternative.</div>` : ""}
+                <div class="nap-meta nap-banker-note">The NAP is the day's likeliest winner, usually a short-priced favourite: it wins often, but so far it has not beaten the price. The place-value bets above are the selections that have.</div>
             </div>
         </div>
     `;
@@ -3048,7 +3041,7 @@ async function loadRecord() {
         const rows = [];
         if (d.nap?.settled) rows.push(`<div class="record-row"><b>NAPs</b> ${d.nap.won} won of ${d.nap.settled} (${pct(d.nap.won, d.nap.settled)}) &middot; <span class="${d.nap.pl < 0 ? "record-minus" : "record-plus"}">${money(d.nap.pl)}</span> to £1 stakes at SP <span class="record-since">since ${since(d.nap.from)}</span></div>`);
         // Real Matchbook bets not shown (user 2026-11-05).
-        if (d.dailyDouble?.days) rows.push(`<div class="record-row"><b>Daily Double</b> ${d.dailyDouble.won} won of ${d.dailyDouble.days} days (${pct(d.dailyDouble.won, d.dailyDouble.days)}) <span class="record-since">since ${since(d.dailyDouble.from)}</span></div>`);
+        // Daily Double row removed from the pick board as clutter (user 2026-11-22).
         // NAP rule forward test: its own panel below (user 2026-11-06).
         // Best Odds Guaranteed paper test: its own panel below (user 2026-11-06).
         // Extra places paper test: its own panel below (user 2026-11-06).
@@ -3059,7 +3052,7 @@ async function loadRecord() {
             d.extraPlacesTest && ["extra places", d.extraPlacesTest.bets, d.extraPlacesTest.passAt, d.extraPlacesTest.verdict],
             d.bogTest && ["Best Odds Guaranteed", d.bogTest.bets, d.bogTest.passAt, d.bogTest.verdict]
         ].filter(Boolean);
-        if (tests.length) rows.push(`<div class="record-row"><b>Paper tests</b> <span class="record-since">${tests.map(([n, a, b, v]) => `${n} ${a}/${b}${v ? ` ${v}` : ""}`).join(" &middot; ")}</span> &middot; <a href="tests.html" class="record-link">see the tests</a>${d.realBetsPaused ? ` <span class="record-since">&middot; real-money bets paused</span>` : ""}</div>`);
+        if (tests.length) rows.push(`<div class="record-row"><b>Paper tests</b> <span class="record-since">${tests.map(([n, a, b, v]) => `${n} ${a}/${b}${v ? ` ${v}` : ""}`).join(" &middot; ")}</span> &middot; <a href="tests.html" class="record-link">see the tests</a></div>`);
         renderLastNap(d.lastNap);
         if (!rows.length) { el.style.display = "none"; return; }
         el.innerHTML = `<div class="results-strip-label">Running record</div>${rows.join("")}`;
@@ -3081,19 +3074,6 @@ function renderLastNap(n) {
     const how = n.outcome === "won" ? `<span class="record-plus">won</span>${sp}`
         : `<span class="record-minus">${n.position ? ord(n.position) : "lost"}</span>${sp}${n.winner ? ` &middot; won by ${escapeHtml(n.winner)}${n.winnerSp ? ` (${escapeHtml(n.winnerSp)})` : ""}` : ""}`;
     el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.name).toUpperCase())}</b> ${how}`;
-}
-
-// "Yesterday's Value NAP: X won at Betfair SP 5.2" with the other results (user 2026-11-20).
-function renderLastValueNap(n) {
-    const el = document.getElementById("valueNapYesterday");
-    if (!el) return;
-    if (!n?.horse) { el.innerHTML = ""; return; }
-    const y = new Date(Date.now() - 86400000).toLocaleDateString("en-CA", { timeZone: "Europe/London" });
-    const label = n.date === y ? "Yesterday's Value NAP"
-        : "Last Value NAP (" + new Date(n.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + ")";
-    const how = n.outcome === "won" ? `<span class="record-plus">won</span>${n.bsp ? ` at Betfair SP ${escapeHtml(String(n.bsp))}` : ""}`
-        : n.outcome === "void" ? "void (non-runner)" : `<span class="record-minus">lost</span>`;
-    el.innerHTML = `<span class="results-strip-label">${label}</span> <b>${escapeHtml(String(n.horse).toUpperCase())}</b> ${how}`;
 }
 
 // Coming up (user 2026-11-05): the next races on the whole card with our pick
