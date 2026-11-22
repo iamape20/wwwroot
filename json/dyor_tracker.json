@@ -5682,10 +5682,18 @@
       "fav": {
         "horse": "OLDSCHOOL OUTLAW",
         "price": "8/13",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:50:45.723Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/13",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Exeter|14:07",
@@ -5743,27 +5751,46 @@
       },
       "recordedAt": "2026-11-22T14:10:44.570Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|14:30",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "14:30",
+      "horse": "FRANKIE JOHN",
+      "price": "7/2",
+      "runners": 6,
+      "liveHorse": "OCASTLE DES MOTTES",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "OCASTLE DES MOTTES",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:20:51.643Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 210,
+    "recorded": 211,
     "pick": {
-      "settled": 202,
+      "settled": 203,
       "won": 45,
-      "pl": -7.25,
-      "roi": -3.6
+      "pl": -8.25,
+      "roi": -4.1
     },
     "favourite": {
-      "settled": 202,
+      "settled": 203,
       "won": 74,
-      "pl": 13.11,
-      "roi": 6.5
+      "pl": 12.11,
+      "roi": 6
     },
     "agree": {
-      "settled": 61,
+      "settled": 62,
       "won": 24,
-      "pl": 0.76,
-      "roi": 1.2
+      "pl": -0.24,
+      "roi": -0.4
     },
     "disagree": {
       "settled": 141,
