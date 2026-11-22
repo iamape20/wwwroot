@@ -5942,10 +5942,18 @@
       "fav": {
         "horse": "CHILLI KING",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T15:10:31.746Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|15:19",
@@ -5988,10 +5996,16 @@
       "fav": {
         "horse": "CEASAR'S BALL",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "6/4"
       },
       "recordedAt": "2026-11-22T15:20:36.564Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "18/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Exeter|15:37",
@@ -6035,16 +6049,16 @@
   "stats": {
     "recorded": 221,
     "pick": {
-      "settled": 210,
+      "settled": 212,
       "won": 45,
-      "pl": -15.25,
-      "roi": -7.3
+      "pl": -17.25,
+      "roi": -8.1
     },
     "favourite": {
-      "settled": 211,
+      "settled": 212,
       "won": 74,
-      "pl": 4.11,
-      "roi": 2
+      "pl": 3.11,
+      "roi": 1.5
     },
     "agree": {
       "settled": 64,
@@ -6053,10 +6067,10 @@
       "roi": -3.5
     },
     "disagree": {
-      "settled": 146,
+      "settled": 148,
       "won": 21,
-      "pl": -13.01,
-      "roi": -8.9
+      "pl": -15.01,
+      "roi": -10.1
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
