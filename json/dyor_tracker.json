@@ -5495,10 +5495,18 @@
       "fav": {
         "horse": "POET'S MUSE",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T13:00:52.358Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Lingfield|13:25",
@@ -5556,27 +5564,46 @@
       },
       "recordedAt": "2026-11-22T13:20:48.797Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Exeter|13:37",
+      "date": "2026-11-22",
+      "course": "Exeter",
+      "time": "13:37",
+      "horse": "RICKETY BRIDGE",
+      "price": "15/2",
+      "runners": 5,
+      "liveHorse": "CHAMPAGNE CHIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHAMPAGNE CHIC",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T13:30:55.942Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 203,
+    "recorded": 204,
     "pick": {
-      "settled": 195,
+      "settled": 196,
       "won": 45,
-      "pl": -0.25,
-      "roi": -0.1
+      "pl": -1.25,
+      "roi": -0.6
     },
     "favourite": {
-      "settled": 196,
+      "settled": 197,
       "won": 74,
-      "pl": 19.11,
-      "roi": 9.8
+      "pl": 18.11,
+      "roi": 9.2
     },
     "agree": {
-      "settled": 59,
+      "settled": 60,
       "won": 24,
-      "pl": 2.76,
-      "roi": 4.7
+      "pl": 1.76,
+      "roi": 2.9
     },
     "disagree": {
       "settled": 136,
