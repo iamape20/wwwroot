@@ -1573,8 +1573,45 @@
       "pl": 2.5,
       "potAfter": 62.57,
       "settledAt": "2026-11-21T15:20:49.152Z"
+    },
+    {
+      "id": "2026-11-22|Cork|12:19|TRIP|GREENHERITAGE",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-22",
+      "course": "Cork",
+      "time": "12:19",
+      "horse": "GREEN HERITAGE",
+      "decidedAt": "2026-11-22T12:10:52.058Z",
+      "minutesBeforeOff": 8,
+      "potBefore": 62.57,
+      "claude": {
+        "action": "skip",
+        "reason": "Unexposed with a single run, and unexposed picks are already excluded for losing money."
+      },
+      "eventId": "34921703846800002",
+      "marketId": "34921703965000002",
+      "runnerId": "34921703966418002",
+      "price": 5.5,
+      "available": 68.86,
+      "depth": [
+        [
+          5.5,
+          68.86
+        ],
+        [
+          5.4,
+          204.51
+        ],
+        [
+          5.3,
+          193.98
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: Unexposed with a single run, and unexposed picks are already excluded for losing money."
     }
   ],
-  "updatedAt": "2026-11-22T12:01:16.889Z",
+  "updatedAt": "2026-11-22T12:10:52.059Z",
   "bankPeak": 109.65222
 }
