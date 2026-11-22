@@ -1610,8 +1610,43 @@
       ],
       "status": "skipped",
       "reason": "Claude decided not to bet: Unexposed with a single run, and unexposed picks are already excluded for losing money."
+    },
+    {
+      "id": "2026-11-22|Punchestown|15:00",
+      "kind": "NAP",
+      "mode": "DRY RUN",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "15:00",
+      "horse": "GAELIC WARRIOR",
+      "decidedAt": "2026-11-22T14:50:35.848Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 62.57,
+      "note": "half stake: price 1.87 is in the 1.5-2 band",
+      "eventId": "34921703672101002",
+      "marketId": "34921703750904023",
+      "runnerId": "34921703751908023",
+      "price": 1.87,
+      "available": 277.54,
+      "depth": [
+        [
+          1.87,
+          277.54
+        ],
+        [
+          1.86,
+          1589.93
+        ],
+        [
+          1.85,
+          2165.71
+        ]
+      ],
+      "status": "placed",
+      "stake": 3.12,
+      "matched": 3.12
     }
   ],
-  "updatedAt": "2026-11-22T14:40:47.475Z",
+  "updatedAt": "2026-11-22T14:50:35.852Z",
   "bankPeak": 109.65222
 }

@@ -5732,10 +5732,18 @@
       "fav": {
         "horse": "LAZZAR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-22T14:10:44.362Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Cork|14:19",
@@ -5776,10 +5784,16 @@
       "fav": {
         "horse": "OCASTLE DES MOTTES",
         "price": "15/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "15/8"
       },
       "recordedAt": "2026-11-22T14:20:51.643Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-22|Exeter|14:37",
@@ -5837,33 +5851,52 @@
       },
       "recordedAt": "2026-11-22T14:40:49.127Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-22|Punchestown|15:00",
+      "date": "2026-11-22",
+      "course": "Punchestown",
+      "time": "15:00",
+      "horse": "GAELIC WARRIOR",
+      "price": "8/11",
+      "runners": 9,
+      "liveHorse": "GAELIC WARRIOR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GAELIC WARRIOR",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-22T14:50:37.960Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 214,
+    "recorded": 215,
     "pick": {
-      "settled": 203,
+      "settled": 205,
       "won": 45,
-      "pl": -8.25,
-      "roi": -4.1
+      "pl": -10.25,
+      "roi": -5
     },
     "favourite": {
-      "settled": 204,
+      "settled": 205,
       "won": 74,
-      "pl": 11.11,
-      "roi": 5.4
+      "pl": 10.11,
+      "roi": 4.9
     },
     "agree": {
-      "settled": 62,
+      "settled": 63,
       "won": 24,
-      "pl": -0.24,
-      "roi": -0.4
+      "pl": -1.24,
+      "roi": -2
     },
     "disagree": {
-      "settled": 141,
+      "settled": 142,
       "won": 21,
-      "pl": -8.01,
-      "roi": -5.7
+      "pl": -9.01,
+      "roi": -6.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
