@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:51:02.261Z",
+  "generatedAt": "2026-11-23T14:02:08.680Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-23",
       "course": "Huntingdon",
       "off": "13:45",
-      "horse": "CRYSTAL ISLAND"
-    }
-  ],
-  "recent": [
+      "horse": "CRYSTAL ISLAND",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-23",
       "course": "Bangor-on-Dee",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-21",
-      "course": "Punchestown",
-      "off": "12:28",
-      "horse": "MIGHTY PARK",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.30791523,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-23T13:51:02.141Z",
+    "updatedAt": "2026-11-23T14:02:08.396Z",
     "claude": {
       "races": 38,
       "won": 7,
