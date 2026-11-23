@@ -6116,10 +6116,18 @@
       "fav": {
         "horse": "STARMOUNT",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T11:51:09.030Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Kempton|12:25",
@@ -6139,21 +6147,40 @@
       },
       "recordedAt": "2026-11-23T12:11:02.934Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Bangor-on-Dee|12:35",
+      "date": "2026-11-23",
+      "course": "Bangor-on-Dee",
+      "time": "12:35",
+      "horse": "AIR APPARENT",
+      "price": "4/5",
+      "runners": 8,
+      "liveHorse": "AIR APPARENT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "AIR APPARENT",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T12:21:06.776Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 223,
+    "recorded": 224,
     "pick": {
-      "settled": 220,
+      "settled": 221,
       "won": 52,
-      "pl": 32.64,
-      "roi": 14.8
+      "pl": 31.64,
+      "roi": 14.3
     },
     "favourite": {
-      "settled": 221,
+      "settled": 222,
       "won": 82,
-      "pl": 19.75,
-      "roi": 8.9
+      "pl": 18.75,
+      "roi": 8.4
     },
     "agree": {
       "settled": 67,
@@ -6162,10 +6189,10 @@
       "roi": 8.5
     },
     "disagree": {
-      "settled": 153,
+      "settled": 154,
       "won": 25,
-      "pl": 26.95,
-      "roi": 17.6
+      "pl": 25.95,
+      "roi": 16.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
