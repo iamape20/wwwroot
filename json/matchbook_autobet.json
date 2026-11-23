@@ -1763,8 +1763,42 @@
       ],
       "status": "skipped",
       "reason": "Claude decided not to bet: She is odds-on after 256 days off and was well beaten on her last run, with no win in four starts, so a long absence at a short price is a risk the ratings ignore."
+    },
+    {
+      "id": "2026-11-23|Newcastle|15:30|TRIP|KOKOBLUE",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-23",
+      "course": "Newcastle",
+      "time": "15:30",
+      "horse": "KOKO BLUE",
+      "decidedAt": "2026-11-23T15:20:51.637Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 72.31,
+      "eventId": "34930299092000023",
+      "marketId": "34930299178002002",
+      "runnerId": "34930299179509002",
+      "price": 5.3,
+      "available": 121.93,
+      "depth": [
+        [
+          5.3,
+          121.93
+        ],
+        [
+          5.2,
+          180.82
+        ],
+        [
+          5.1,
+          274.44
+        ]
+      ],
+      "status": "placed",
+      "stake": 1.8,
+      "matched": 1.8
     }
   ],
-  "updatedAt": "2026-11-23T15:11:00.922Z",
+  "updatedAt": "2026-11-23T15:20:51.641Z",
   "bankPeak": 109.65222
 }
