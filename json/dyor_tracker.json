@@ -7054,25 +7054,33 @@
       "fav": {
         "horse": "THE WATCHER",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T19:50:36.055Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "50/1",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 258,
     "pick": {
-      "settled": 247,
+      "settled": 248,
       "won": 52,
-      "pl": 5.64,
-      "roi": 2.3
+      "pl": 4.64,
+      "roi": 1.9
     },
     "favourite": {
-      "settled": 248,
+      "settled": 249,
       "won": 82,
-      "pl": -7.25,
-      "roi": -2.9
+      "pl": -8.25,
+      "roi": -3.3
     },
     "agree": {
       "settled": 76,
@@ -7081,10 +7089,10 @@
       "roi": -4.3
     },
     "disagree": {
-      "settled": 171,
+      "settled": 172,
       "won": 25,
-      "pl": 8.95,
-      "roi": 5.2
+      "pl": 7.95,
+      "roi": 4.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
