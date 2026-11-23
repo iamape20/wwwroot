@@ -1725,8 +1725,46 @@
       "pl": 5.22,
       "potAfter": 72.31,
       "settledAt": "2026-11-22T16:00:31.165Z"
+    },
+    {
+      "id": "2026-11-23|Bangor-on-Dee|14:42",
+      "kind": "NAP",
+      "mode": "DRY RUN",
+      "date": "2026-11-23",
+      "course": "Bangor-on-Dee",
+      "time": "14:42",
+      "horse": "MILLE ET UNE VIES",
+      "decidedAt": "2026-11-23T14:30:56.135Z",
+      "minutesBeforeOff": 11,
+      "potBefore": 72.31,
+      "note": "half stake: price 1.51 is in the 1.5-2 band",
+      "claude": {
+        "action": "skip",
+        "reason": "She is odds-on after 256 days off and was well beaten on her last run, with no win in four starts, so a long absence at a short price is a risk the ratings ignore."
+      },
+      "eventId": "34930281031802023",
+      "marketId": "34930281085102002",
+      "runnerId": "34930281086804002",
+      "price": 1.51,
+      "available": 299.35,
+      "depth": [
+        [
+          1.51,
+          299.35
+        ],
+        [
+          1.5,
+          382.09
+        ],
+        [
+          1.49,
+          541.22
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: She is odds-on after 256 days off and was well beaten on her last run, with no win in four starts, so a long absence at a short price is a risk the ratings ignore."
     }
   ],
-  "updatedAt": "2026-11-23T14:21:10.064Z",
+  "updatedAt": "2026-11-23T14:30:56.135Z",
   "bankPeak": 109.65222
 }
