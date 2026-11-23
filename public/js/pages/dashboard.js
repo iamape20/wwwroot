@@ -1138,6 +1138,22 @@ function getLondonNowSeconds() {
 // ---------------------------------------------------------------------------
 let resultDetailsCache = { at: 0, promise: null };
 
+// Our own speed figures (user 2026-11-23): data/speed.json from js/buildStaticSite.js buildSpeed - per runner the
+// best of its last 3 figures, its last, all re-scaled for today's weight; "top" = best in the race. Information only.
+let speedCache = { at: 0, promise: null };
+function getSpeed() {
+    if (speedCache.promise && Date.now() - speedCache.at < 600000) return speedCache.promise;
+    speedCache = { at: Date.now(), promise: fetch(`data/speed.json?t=${Date.now()}`, { cache: "no-store" })
+        .then(r => (r.ok ? r.json() : null)).catch(() => null) };
+    return speedCache.promise;
+}
+function speedBadge(speed, date, name) {
+    const s = speed && speed.date === date ? speed.runners?.[resultKey(name)] : null;
+    if (!s) return "";
+    const tip = `Our speed figure, adjusted for the weight it carries today: best of its last ${Math.min(3, s.runs)} run(s) of this kind in the past year ${s.best}, last time ${s.last}.${s.top ? " Top in this race." : ""} For information - not a betting signal.`;
+    return `&nbsp;•&nbsp; <span class="speed-fig" title="${escapeHtml(tip)}">Speed ${s.best}${s.last !== s.best ? ` (last ${s.last})` : ""}${s.top ? " ⚡" : ""}</span>`;
+}
+
 function getResultDetails() {
     if (resultDetailsCache.promise && Date.now() - resultDetailsCache.at < 45000) {
         return resultDetailsCache.promise;
@@ -1904,6 +1920,7 @@ async function loadRace(
 
         // Result of the race, if it has finished (see getResultDetails).
         const resultDetail = await findResultDetail(response.meeting.name, response.race.time);
+        const speed = await getSpeed();
         window.currentRaceContext.hasResult = !!resultDetail;
         const resultPlacesList = resultDetail ? resultFinishers(resultDetail) : [];
         const nonFinishersList = (resultDetail && Array.isArray(resultDetail.nonFinishers)) ? resultDetail.nonFinishers : [];
@@ -2207,6 +2224,8 @@ async function loadRace(
                                     ${escapeHtml(
                                         runner.weight
                                     )}
+
+                                    ${speedBadge(speed, response.meeting.date, runner.name)}
 
                                     ${buildTripClassBadges(
                                         runner.elite.checklistBreakdown
