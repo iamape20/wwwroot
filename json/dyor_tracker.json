@@ -6170,10 +6170,18 @@
       "fav": {
         "horse": "AIR APPARENT",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T12:21:06.776Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/6",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Huntingdon|12:45",
@@ -6189,10 +6197,18 @@
       "fav": {
         "horse": "MY MATE AJ",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T12:31:21.643Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Kempton|12:55",
@@ -6231,27 +6247,46 @@
       },
       "recordedAt": "2026-11-23T12:51:47.440Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Huntingdon|13:15",
+      "date": "2026-11-23",
+      "course": "Huntingdon",
+      "time": "13:15",
+      "horse": "DOTTIES STAR",
+      "price": "15/2",
+      "runners": 11,
+      "liveHorse": "CHICO MAGNIFICA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHICO MAGNIFICA",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T13:01:24.806Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 227,
+    "recorded": 228,
     "pick": {
-      "settled": 222,
+      "settled": 224,
       "won": 52,
-      "pl": 30.64,
-      "roi": 13.8
+      "pl": 28.64,
+      "roi": 12.8
     },
     "favourite": {
-      "settled": 223,
+      "settled": 225,
       "won": 82,
-      "pl": 17.75,
-      "roi": 8
+      "pl": 15.75,
+      "roi": 7
     },
     "agree": {
-      "settled": 68,
+      "settled": 70,
       "won": 27,
-      "pl": 4.69,
-      "roi": 6.9
+      "pl": 2.69,
+      "roi": 3.8
     },
     "disagree": {
       "settled": 154,
