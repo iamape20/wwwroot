@@ -6224,10 +6224,18 @@
       "fav": {
         "horse": "PADEL WHACKER",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T12:41:32.760Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Bangor-on-Dee|13:05",
@@ -6266,27 +6274,46 @@
       },
       "recordedAt": "2026-11-23T13:01:24.806Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Kempton|13:25",
+      "date": "2026-11-23",
+      "course": "Kempton",
+      "time": "13:25",
+      "horse": "DANCE AND GLANCE",
+      "price": "5/4",
+      "runners": 3,
+      "liveHorse": "DANCE AND GLANCE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "DANCE AND GLANCE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T13:11:49.258Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 228,
+    "recorded": 229,
     "pick": {
-      "settled": 224,
+      "settled": 225,
       "won": 52,
-      "pl": 28.64,
-      "roi": 12.8
+      "pl": 27.64,
+      "roi": 12.3
     },
     "favourite": {
-      "settled": 225,
+      "settled": 226,
       "won": 82,
-      "pl": 15.75,
-      "roi": 7
+      "pl": 14.75,
+      "roi": 6.5
     },
     "agree": {
-      "settled": 70,
+      "settled": 71,
       "won": 27,
-      "pl": 2.69,
-      "roi": 3.8
+      "pl": 1.69,
+      "roi": 2.4
     },
     "disagree": {
       "settled": 154,
