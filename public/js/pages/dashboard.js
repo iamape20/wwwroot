@@ -1150,8 +1150,13 @@ function getSpeed() {
 function speedBadge(speed, date, name) {
     const s = speed && speed.date === date ? speed.runners?.[resultKey(name)] : null;
     if (!s) return "";
-    const tip = `Our speed figure, adjusted for the weight it carries today: best of its last ${Math.min(3, s.runs)} run(s) of this kind in the past year ${s.best}, last time ${s.last}.${s.top ? " Top in this race." : ""} For information - not a betting signal.`;
-    return `&nbsp;•&nbsp; <span class="speed-fig" title="${escapeHtml(tip)}">Speed ${s.best}${s.last !== s.best ? ` (last ${s.last})` : ""}${s.top ? " ⚡" : ""}</span>`;
+    // runs < 3: say how few runs it rests on; clock: a recent race whose time we didn't trust (figure toned to a normal race)
+    const clock = (s.clock || []).map(d => `${d > 0 ? "+" : ""}${d}lb`).join(", ");
+    const tip = `Our speed figure, adjusted for the weight it carries today: best of its last ${Math.min(3, s.runs)} run(s) of this kind in the past year ${s.best}, last time ${s.last}.`
+        + (s.runs < 3 ? ` Based on only ${s.runs} run${s.runs === 1 ? "" : "s"} - treat with caution.` : "")
+        + (clock ? ` † ${s.clock.length === 1 ? "One recent race's" : "Some recent races'"} clock looked wrong (the whole field ran ${clock} against its marks), so ${s.clock.length === 1 ? "that figure was" : "those figures were"} toned down to a normal race.` : "")
+        + `${s.top ? " Top in this race." : ""} For information - not a betting signal.`;
+    return `&nbsp;•&nbsp; <span class="speed-fig" title="${escapeHtml(tip)}">Speed ${s.best}${clock ? "†" : ""}${s.last !== s.best ? ` (last ${s.last})` : ""}${s.runs < 3 ? ` · ${s.runs} run${s.runs === 1 ? "" : "s"}` : ""}${s.top ? " ⚡" : ""}</span>`;
 }
 
 function getResultDetails() {
