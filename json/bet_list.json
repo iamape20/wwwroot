@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:10:48.619Z",
+  "generatedAt": "2026-11-23T16:20:54.906Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-23",
       "course": "Newcastle",
       "off": "16:05",
-      "horse": "OLD COMPTON"
-    }
-  ],
-  "recent": [
+      "horse": "OLD COMPTON",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-23",
       "course": "Bangor-on-Dee",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-21",
-      "course": "Haydock",
-      "off": "15:00",
-      "horse": "GREY DAWNING",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.36,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-23T16:10:48.491Z",
+    "updatedAt": "2026-11-23T16:20:54.797Z",
     "claude": {
       "races": 38,
       "won": 7,
