@@ -1155,8 +1155,10 @@ function speedBadge(speed, date, name) {
     const tip = `Our speed figure, adjusted for the weight it carries today: best of its last ${Math.min(3, s.runs)} run(s) of this kind in the past year ${s.best}, last time ${s.last}.`
         + (s.runs < 3 ? ` Based on only ${s.runs} run${s.runs === 1 ? "" : "s"} - treat with caution.` : "")
         + (clock ? ` † ${s.clock.length === 1 ? "One recent race's" : "Some recent races'"} clock looked wrong (the whole field ran ${clock} against its marks), so ${s.clock.length === 1 ? "that figure was" : "those figures were"} toned down to a normal race.` : "")
+        + (s.rating != null ? ` ${s.dnfLast ? "It did not finish last time" : "It failed to finish in one of its last 3 runs"}, so it is rated ${s.rating} against the others (over jumps a non-finish last time has meant about 15lb worse, another in the last 3 about 10lb more).` : "")
         + `${s.top ? " Top in this race." : ""} For information - not a betting signal.`;
-    return `&nbsp;•&nbsp; <span class="speed-fig" title="${escapeHtml(tip)}">Speed ${s.best}${clock ? "†" : ""}${s.last !== s.best ? ` (last ${s.last})` : ""}${s.runs < 3 ? ` · ${s.runs} run${s.runs === 1 ? "" : "s"}` : ""}${s.top ? " ⚡" : ""}</span>`;
+    const dnf = s.rating != null ? ` · ${s.dnfLast ? "didn't finish last time" : "a non-finish in last 3"} → ${s.rating}` : "";
+    return `&nbsp;•&nbsp; <span class="speed-fig" title="${escapeHtml(tip)}">Speed ${s.best}${clock ? "†" : ""}${s.last !== s.best ? ` (last ${s.last})` : ""}${s.runs < 3 ? ` · ${s.runs} run${s.runs === 1 ? "" : "s"}` : ""}${dnf}${s.top ? " ⚡" : ""}</span>`;
 }
 
 function getResultDetails() {
