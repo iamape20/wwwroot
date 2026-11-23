@@ -6303,10 +6303,18 @@
       "fav": {
         "horse": "DANCE AND GLANCE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T13:11:49.258Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Bangor-on-Dee|13:35",
@@ -6345,27 +6353,46 @@
       },
       "recordedAt": "2026-11-23T13:31:40.949Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Kempton|13:55",
+      "date": "2026-11-23",
+      "course": "Kempton",
+      "time": "13:55",
+      "horse": "IDAHO FIRE",
+      "price": "10/3",
+      "runners": 5,
+      "liveHorse": "ROAD TO WEMBLEY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ROAD TO WEMBLEY",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T13:41:06.873Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 231,
+    "recorded": 232,
     "pick": {
-      "settled": 226,
+      "settled": 227,
       "won": 52,
-      "pl": 26.64,
-      "roi": 11.8
+      "pl": 25.64,
+      "roi": 11.3
     },
     "favourite": {
-      "settled": 227,
+      "settled": 228,
       "won": 82,
-      "pl": 13.75,
-      "roi": 6.1
+      "pl": 12.75,
+      "roi": 5.6
     },
     "agree": {
-      "settled": 71,
+      "settled": 72,
       "won": 27,
-      "pl": 1.69,
-      "roi": 2.4
+      "pl": 0.69,
+      "roi": 1
     },
     "disagree": {
       "settled": 155,
@@ -6375,5 +6402,5 @@
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795417283810
+  "lastBackfill": 1795441266897
 }
