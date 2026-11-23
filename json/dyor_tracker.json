@@ -6407,10 +6407,14 @@
       "fav": {
         "horse": "JETZET",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-23T14:02:22.934Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-11-23|Huntingdon|14:18",
@@ -6426,10 +6430,18 @@
       "fav": {
         "horse": "JAMADA",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T14:11:07.430Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Kempton|14:30",
@@ -6468,27 +6480,46 @@
       },
       "recordedAt": "2026-11-23T14:30:58.660Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Huntingdon|14:53",
+      "date": "2026-11-23",
+      "course": "Huntingdon",
+      "time": "14:53",
+      "horse": "MIDNIGHT PASS",
+      "price": "4/1",
+      "runners": 8,
+      "liveHorse": "LETS GO MO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LETS GO MO",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T14:41:07.507Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 236,
+    "recorded": 237,
     "pick": {
-      "settled": 229,
+      "settled": 230,
       "won": 52,
-      "pl": 23.64,
-      "roi": 10.3
+      "pl": 22.64,
+      "roi": 9.8
     },
     "favourite": {
-      "settled": 230,
+      "settled": 231,
       "won": 82,
-      "pl": 10.75,
-      "roi": 4.7
+      "pl": 9.75,
+      "roi": 4.2
     },
     "agree": {
-      "settled": 72,
+      "settled": 73,
       "won": 27,
-      "pl": 0.69,
-      "roi": 1
+      "pl": -0.31,
+      "roi": -0.4
     },
     "disagree": {
       "settled": 157,

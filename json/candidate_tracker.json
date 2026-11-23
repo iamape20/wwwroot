@@ -7653,7 +7653,11 @@
       "rating": 81.3,
       "runners": 7,
       "recordedAt": "2026-11-23T14:11:04.574Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Bangor-on-Dee|14:42",
@@ -7670,10 +7674,10 @@
   ],
   "stats": {
     "recorded": 466,
-    "settled": 459,
+    "settled": 460,
     "won": 223,
-    "pl": -23.21,
-    "roi": -5.1
+    "pl": -24.21,
+    "roi": -5.3
   },
   "lastBackfill": 1795443064628
 }
