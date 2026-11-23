@@ -6143,10 +6143,18 @@
       "fav": {
         "horse": "THISONESFORYOU",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "3/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T12:11:02.934Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Bangor-on-Dee|12:35",
@@ -6185,27 +6193,46 @@
       },
       "recordedAt": "2026-11-23T12:31:21.643Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Kempton|12:55",
+      "date": "2026-11-23",
+      "course": "Kempton",
+      "time": "12:55",
+      "horse": "PADEL WHACKER",
+      "price": "11/10",
+      "runners": 3,
+      "liveHorse": "PADEL WHACKER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PADEL WHACKER",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T12:41:32.760Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 225,
+    "recorded": 226,
     "pick": {
-      "settled": 221,
+      "settled": 222,
       "won": 52,
-      "pl": 31.64,
-      "roi": 14.3
+      "pl": 30.64,
+      "roi": 13.8
     },
     "favourite": {
-      "settled": 222,
+      "settled": 223,
       "won": 82,
-      "pl": 18.75,
-      "roi": 8.4
+      "pl": 17.75,
+      "roi": 8
     },
     "agree": {
-      "settled": 67,
+      "settled": 68,
       "won": 27,
-      "pl": 5.69,
-      "roi": 8.5
+      "pl": 4.69,
+      "roi": 6.9
     },
     "disagree": {
       "settled": 154,
