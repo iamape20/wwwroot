@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:30:52.492Z",
+  "generatedAt": "2026-11-23T15:40:53.152Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-23",
       "course": "Bangor-on-Dee",
       "off": "15:17",
-      "horse": "CAVEMAN"
-    }
-  ],
-  "recent": [
+      "horse": "CAVEMAN",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-23",
       "course": "Bangor-on-Dee",
@@ -174,21 +179,10 @@
       "bsp": 2.36,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-21",
-      "course": "Punchestown",
-      "off": "14:10",
-      "horse": "LOSSIEMOUTH",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.15,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-23T15:30:52.382Z",
+    "updatedAt": "2026-11-23T15:40:53.034Z",
     "claude": {
       "races": 38,
       "won": 7,
