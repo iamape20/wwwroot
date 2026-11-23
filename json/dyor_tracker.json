@@ -5300,7 +5300,10 @@
       "recordedAt": "2026-11-22T11:51:08.997Z",
       "stake": 1,
       "result": "won",
-      "isp": "7/2"
+      "isp": "7/2",
+      "bsp": 8.2,
+      "pl": 6.84,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Lingfield|12:25",
@@ -5372,12 +5375,18 @@
         "price": "10/11",
         "stake": 1,
         "result": "won",
-        "isp": "11/10"
+        "isp": "11/10",
+        "bsp": 2.2,
+        "pl": 1.14,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T12:21:06.509Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/10"
+      "isp": "11/10",
+      "bsp": 2.2,
+      "pl": 1.14,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Exeter|12:37",
@@ -5422,7 +5431,10 @@
         "price": "1/1",
         "stake": 1,
         "result": "won",
-        "isp": "4/6"
+        "isp": "4/6",
+        "bsp": 1.77,
+        "pl": 0.731,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T12:40:59.068Z",
       "stake": 1,
@@ -5474,12 +5486,18 @@
         "price": "7/2",
         "stake": 1,
         "result": "won",
-        "isp": "10/3"
+        "isp": "10/3",
+        "bsp": 5.2,
+        "pl": 3.99,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T12:51:00.673Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/3"
+      "isp": "10/3",
+      "bsp": 5.2,
+      "pl": 3.99,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Exeter|13:07",
@@ -5551,7 +5569,10 @@
         "price": "11/10",
         "stake": 1,
         "result": "won",
-        "isp": "13/8"
+        "isp": "13/8",
+        "bsp": 2.80975167,
+        "pl": 1.719,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T13:10:55.848Z",
       "stake": 1,
@@ -5711,12 +5732,18 @@
         "price": "2/1",
         "stake": 1,
         "result": "won",
-        "isp": "5/2"
+        "isp": "5/2",
+        "bsp": 3.95,
+        "pl": 2.803,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T14:01:09.656Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/2"
+      "isp": "5/2",
+      "bsp": 3.95,
+      "pl": 2.803,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Lingfield|14:25",
@@ -5768,7 +5795,10 @@
       "recordedAt": "2026-11-22T14:10:44.570Z",
       "stake": 1,
       "result": "won",
-      "isp": "11/1"
+      "isp": "11/1",
+      "bsp": 17.41709434,
+      "pl": 15.596,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Punchestown|14:30",
@@ -5786,7 +5816,10 @@
         "price": "15/8",
         "stake": 1,
         "result": "won",
-        "isp": "15/8"
+        "isp": "15/8",
+        "bsp": 3.2,
+        "pl": 2.09,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T14:20:51.643Z",
       "stake": 1,
@@ -5926,7 +5959,10 @@
       "recordedAt": "2026-11-22T15:00:42.609Z",
       "stake": 1,
       "result": "won",
-      "isp": "5/1"
+      "isp": "5/1",
+      "bsp": 6.6,
+      "pl": 5.32,
+      "settledAt": "betfair_sp"
     },
     {
       "id": "2026-11-22|Lingfield|15:25",
@@ -5998,7 +6034,10 @@
         "price": "7/4",
         "stake": 1,
         "result": "won",
-        "isp": "6/4"
+        "isp": "6/4",
+        "bsp": 2.68806374,
+        "pl": 1.604,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T15:20:36.564Z",
       "stake": 1,
@@ -6023,7 +6062,10 @@
         "price": "11/4",
         "stake": 1,
         "result": "won",
-        "isp": "10/3"
+        "isp": "10/3",
+        "bsp": 4.74548044,
+        "pl": 3.558,
+        "settledAt": "betfair_sp"
       },
       "recordedAt": "2026-11-22T15:30:39.816Z",
       "stake": 1,
@@ -6055,36 +6097,39 @@
       "recordedAt": "2026-11-22T15:40:25.996Z",
       "stake": 1,
       "result": "won",
-      "isp": "10/1"
+      "isp": "10/1",
+      "bsp": 17,
+      "pl": 15.2,
+      "settledAt": "betfair_sp"
     }
   ],
   "stats": {
     "recorded": 221,
     "pick": {
-      "settled": 213,
-      "won": 45,
-      "pl": -18.25,
-      "roi": -8.6
+      "settled": 220,
+      "won": 52,
+      "pl": 32.64,
+      "roi": 14.8
     },
     "favourite": {
-      "settled": 213,
-      "won": 74,
-      "pl": 2.11,
-      "roi": 1
+      "settled": 221,
+      "won": 82,
+      "pl": 19.75,
+      "roi": 8.9
     },
     "agree": {
-      "settled": 64,
-      "won": 24,
-      "pl": -2.24,
-      "roi": -3.5
+      "settled": 67,
+      "won": 27,
+      "pl": 5.69,
+      "roi": 8.5
     },
     "disagree": {
-      "settled": 149,
-      "won": 21,
-      "pl": -16.01,
-      "roi": -10.7
+      "settled": 153,
+      "won": 25,
+      "pl": 26.95,
+      "roi": 17.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795384233773
+  "lastBackfill": 1795417283810
 }

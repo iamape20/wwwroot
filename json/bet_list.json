@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T22:00:27.031Z",
+  "generatedAt": "2026-11-23T07:01:14.776Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -44,9 +44,9 @@
       "horse": "OLYMPIC CHARTER",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.77,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-22",
@@ -66,9 +66,9 @@
       "horse": "THEFLYINGKING",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.2,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-22",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-22T22:00:26.934Z",
+    "updatedAt": "2026-11-23T07:01:14.661Z",
     "claude": {
       "races": 38,
       "won": 7,
