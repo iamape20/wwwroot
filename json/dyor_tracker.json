@@ -6894,10 +6894,16 @@
       "fav": {
         "horse": "BARACHIEL",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T18:20:42.723Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-23|Newcastle|18:45",
@@ -6917,10 +6923,29 @@
       },
       "recordedAt": "2026-11-23T18:30:49.761Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Wolverhampton|19:00",
+      "date": "2026-11-23",
+      "course": "Wolverhampton",
+      "time": "19:00",
+      "horse": "RIDGER",
+      "price": "5/2",
+      "runners": 11,
+      "liveHorse": "RIDGER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "RIDGER",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T18:50:41.645Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 253,
+    "recorded": 254,
     "pick": {
       "settled": 242,
       "won": 52,
@@ -6928,10 +6953,10 @@
       "roi": 4.4
     },
     "favourite": {
-      "settled": 242,
+      "settled": 243,
       "won": 82,
-      "pl": -1.25,
-      "roi": -0.5
+      "pl": -2.25,
+      "roi": -0.9
     },
     "agree": {
       "settled": 74,
