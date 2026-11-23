@@ -6457,10 +6457,16 @@
       "fav": {
         "horse": "JACKIE HOBBS",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T14:21:11.709Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/4"
     },
     {
       "id": "2026-11-23|Bangor-on-Dee|14:42",
@@ -6499,10 +6505,29 @@
       },
       "recordedAt": "2026-11-23T14:41:07.507Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Kempton|15:05",
+      "date": "2026-11-23",
+      "course": "Kempton",
+      "time": "15:05",
+      "horse": "TAPLEY",
+      "price": "7/4",
+      "runners": 5,
+      "liveHorse": "TAPLEY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TAPLEY",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T14:50:54.283Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 237,
+    "recorded": 238,
     "pick": {
       "settled": 230,
       "won": 52,
@@ -6510,10 +6535,10 @@
       "roi": 9.8
     },
     "favourite": {
-      "settled": 231,
+      "settled": 232,
       "won": 82,
-      "pl": 9.75,
-      "roi": 4.2
+      "pl": 8.75,
+      "roi": 3.8
     },
     "agree": {
       "settled": 73,
