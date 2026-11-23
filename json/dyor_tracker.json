@@ -6919,10 +6919,18 @@
       "fav": {
         "horse": "MULTANEIGHTTOTHREE",
         "price": "3/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-23T18:30:49.761Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-23|Wolverhampton|19:00",
@@ -6942,21 +6950,40 @@
       },
       "recordedAt": "2026-11-23T18:50:41.645Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-23|Newcastle|19:15",
+      "date": "2026-11-23",
+      "course": "Newcastle",
+      "time": "19:15",
+      "horse": "WATER OF LEITH",
+      "price": "16/1",
+      "runners": 13,
+      "liveHorse": "SIMBA'S PRIDE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SIMBA'S PRIDE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-23T19:01:27.965Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 254,
+    "recorded": 255,
     "pick": {
-      "settled": 242,
+      "settled": 243,
       "won": 52,
-      "pl": 10.64,
-      "roi": 4.4
+      "pl": 9.64,
+      "roi": 4
     },
     "favourite": {
-      "settled": 243,
+      "settled": 244,
       "won": 82,
-      "pl": -2.25,
-      "roi": -0.9
+      "pl": -3.25,
+      "roi": -1.3
     },
     "agree": {
       "settled": 74,
@@ -6965,10 +6992,10 @@
       "roi": -1.8
     },
     "disagree": {
-      "settled": 168,
+      "settled": 169,
       "won": 25,
-      "pl": 11.95,
-      "roi": 7.1
+      "pl": 10.95,
+      "roi": 6.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
