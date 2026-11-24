@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T22:00:30.741Z",
+  "generatedAt": "2026-11-24T07:01:11.504Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -44,9 +44,9 @@
       "horse": "CAVEMAN",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.82206538,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-23",
@@ -66,9 +66,9 @@
       "horse": "CRYSTAL ISLAND",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 2.07480956,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-23",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-23T22:00:30.622Z",
+    "updatedAt": "2026-11-24T07:01:11.396Z",
     "claude": {
       "races": 38,
       "won": 7,
