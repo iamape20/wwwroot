@@ -2,7 +2,7 @@
   "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 68.75,
+  "pot": 65.33,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -1872,7 +1872,11 @@
       ],
       "status": "placed",
       "stake": 1.71,
-      "matched": 1.71
+      "matched": 1.71,
+      "result": "lost",
+      "pl": -1.71,
+      "potAfter": 67.04,
+      "settledAt": "2026-11-24T19:40:36.061Z"
     },
     {
       "id": "2026-11-24|Wolverhampton|19:30|TRIP|NANOSCIENCE",
@@ -1906,9 +1910,13 @@
       ],
       "status": "placed",
       "stake": 1.71,
-      "matched": 1.71
+      "matched": 1.71,
+      "result": "lost",
+      "pl": -1.71,
+      "potAfter": 65.33,
+      "settledAt": "2026-11-24T19:40:36.062Z"
     }
   ],
-  "updatedAt": "2026-11-24T19:30:41.493Z",
+  "updatedAt": "2026-11-24T19:40:36.062Z",
   "bankPeak": 109.65222
 }
