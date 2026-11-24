@@ -7812,31 +7812,39 @@
       "fav": {
         "horse": "PROSEWRITER",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-24T16:50:40.016Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/5",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 285,
     "pick": {
-      "settled": 279,
+      "settled": 280,
       "won": 62,
-      "pl": 21.13,
-      "roi": 7.6
+      "pl": 20.13,
+      "roi": 7.2
     },
     "favourite": {
-      "settled": 275,
+      "settled": 276,
       "won": 91,
-      "pl": -10.56,
-      "roi": -3.8
+      "pl": -11.56,
+      "roi": -4.2
     },
     "agree": {
-      "settled": 84,
+      "settled": 85,
       "won": 32,
-      "pl": 1.57,
-      "roi": 1.9
+      "pl": 0.57,
+      "roi": 0.7
     },
     "disagree": {
       "settled": 195,
