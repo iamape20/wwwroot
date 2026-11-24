@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:31:01.141Z",
+  "generatedAt": "2026-11-24T13:41:01.303Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,19 +13,30 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
-      "course": "Tramore",
-      "off": "13:15",
-      "horse": "EVEN THO"
-    },
-    {
+      "date": "2026-11-24",
       "course": "Southwell",
       "off": "13:26",
-      "horse": "MADE IN REUGNY"
-    }
-  ],
-  "recent": [
+      "horse": "MADE IN REUGNY",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
+    {
+      "date": "2026-11-24",
+      "course": "Tramore",
+      "off": "13:15",
+      "horse": "EVEN THO",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-24",
       "course": "Tramore",
@@ -168,32 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-22",
-      "course": "Lingfield",
-      "off": "11:55",
-      "horse": "ARKAT",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-22",
-      "course": "Punchestown",
-      "off": "12:00",
-      "horse": "STUMPTOWN",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-24T13:31:01.041Z",
+    "updatedAt": "2026-11-24T13:41:01.201Z",
     "claude": {
       "races": 38,
       "won": 7,
