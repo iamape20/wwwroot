@@ -7263,10 +7263,18 @@
       "fav": {
         "horse": "GREEN SPAIN",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-24T12:31:03.137Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "125/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-24|Tramore|12:45",
@@ -7282,10 +7290,16 @@
       "fav": {
         "horse": "FORTY FIFTY",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/9"
       },
       "recordedAt": "2026-11-24T12:31:03.154Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-24|Southwell|12:56",
@@ -7305,21 +7319,59 @@
       },
       "recordedAt": "2026-11-24T12:41:09.548Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-24|Lingfield|13:08",
+      "date": "2026-11-24",
+      "course": "Lingfield",
+      "time": "13:08",
+      "horse": "LAST DANDELION",
+      "price": "9/2",
+      "runners": 10,
+      "liveHorse": "C'EST LUI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "C'EST LUI",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-24T13:00:59.003Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-24|Tramore|13:15",
+      "date": "2026-11-24",
+      "course": "Tramore",
+      "time": "13:15",
+      "horse": "LUCKY VALLEY",
+      "price": "9/1",
+      "runners": 10,
+      "liveHorse": "EVEN THO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EVEN THO",
+        "price": "1/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-24T13:00:59.160Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 266,
+    "recorded": 268,
     "pick": {
-      "settled": 261,
+      "settled": 263,
       "won": 62,
-      "pl": 39.13,
-      "roi": 15
+      "pl": 37.13,
+      "roi": 14.1
     },
     "favourite": {
-      "settled": 260,
+      "settled": 261,
       "won": 91,
-      "pl": 4.44,
-      "roi": 1.7
+      "pl": 3.44,
+      "roi": 1.3
     },
     "agree": {
       "settled": 81,
@@ -7328,10 +7380,10 @@
       "roi": 5.6
     },
     "disagree": {
-      "settled": 180,
+      "settled": 182,
       "won": 30,
-      "pl": 34.56,
-      "roi": 19.2
+      "pl": 32.56,
+      "roi": 17.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
