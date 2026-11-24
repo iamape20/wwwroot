@@ -1,20 +1,83 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "strong": [],
   "moderate": [
     {
-      "horse": "OLYMPIC CHARTER",
-      "course": "Lingfield",
+      "horse": "STARMOUNT",
+      "course": "Bangor-on-Dee",
+      "time": "12:05",
+      "rating": "85.2",
+      "margin": "12.0",
+      "marginValue": 12,
+      "confidence": 86,
+      "meetingId": "122735",
+      "raceIndex": 0,
+      "outcome": "lost"
+    },
+    {
+      "horse": "STARS ALIGNING",
+      "course": "Kempton",
       "time": "12:55",
-      "rating": "84.7",
-      "margin": "20.2",
-      "marginValue": 20.200000000000003,
-      "confidence": 58,
-      "meetingId": "122694",
-      "raceIndex": 3,
+      "rating": "75.5",
+      "margin": "22.6",
+      "marginValue": 22.6,
+      "confidence": 75,
+      "meetingId": "122716",
+      "raceIndex": 1,
+      "outcome": "unknown"
+    },
+    {
+      "horse": "CRYSTAL ISLAND",
+      "course": "Huntingdon",
+      "time": "13:45",
+      "rating": "90.5",
+      "margin": "23.5",
+      "marginValue": 23.5,
+      "confidence": 81,
+      "meetingId": "122713",
+      "raceIndex": 2,
       "outcome": "won"
+    },
+    {
+      "horse": "MILLE ET UNE VIES",
+      "course": "Bangor-on-Dee",
+      "time": "14:42",
+      "rating": "70.9",
+      "margin": "13.1",
+      "marginValue": 13.100000000000009,
+      "confidence": 70,
+      "meetingId": "122735",
+      "raceIndex": 5,
+      "outcome": "placed"
+    },
+    {
+      "horse": "OLD COMPTON",
+      "course": "Newcastle",
+      "time": "16:05",
+      "rating": "71.7",
+      "margin": "16.3",
+      "marginValue": 16.300000000000004,
+      "confidence": 58,
+      "meetingId": "122715",
+      "raceIndex": 1,
+      "outcome": "lost"
     }
   ],
-  "dailyDouble": [],
-  "pickMode": "none"
+  "dailyDouble": [
+    {
+      "horse": "STARMOUNT",
+      "course": "Bangor-on-Dee",
+      "time": "12:05",
+      "rating": "85.2",
+      "margin": "12.0",
+      "marginValue": 12,
+      "confidence": 86,
+      "meetingId": "122735",
+      "raceIndex": 0,
+      "tier": "Moderate",
+      "nap": true,
+      "outcome": "lost"
+    }
+  ],
+  "pickMode": "single"
 }
