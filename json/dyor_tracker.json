@@ -7604,10 +7604,18 @@
       "fav": {
         "horse": "KIMY",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-24T14:31:03.078Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "8/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-24|Southwell|14:56",
@@ -7627,21 +7635,59 @@
       },
       "recordedAt": "2026-11-24T14:50:57.350Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-24|Lingfield|15:08",
+      "date": "2026-11-24",
+      "course": "Lingfield",
+      "time": "15:08",
+      "horse": "ROVINIA",
+      "price": "5/1",
+      "runners": 13,
+      "liveHorse": "ORANGE EMPEROR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ORANGE EMPEROR",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-24T15:00:50.423Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-24|Tramore|15:15",
+      "date": "2026-11-24",
+      "course": "Tramore",
+      "time": "15:15",
+      "horse": "ROCCABAKER",
+      "price": "13/2",
+      "runners": 13,
+      "liveHorse": "STILY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "STILY",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-24T15:00:50.616Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 278,
+    "recorded": 280,
     "pick": {
-      "settled": 273,
+      "settled": 274,
       "won": 62,
-      "pl": 27.13,
-      "roi": 9.9
+      "pl": 26.13,
+      "roi": 9.5
     },
     "favourite": {
-      "settled": 269,
+      "settled": 270,
       "won": 91,
-      "pl": -4.56,
-      "roi": -1.7
+      "pl": -5.56,
+      "roi": -2.1
     },
     "agree": {
       "settled": 84,
@@ -7650,10 +7696,10 @@
       "roi": 1.9
     },
     "disagree": {
-      "settled": 189,
+      "settled": 190,
       "won": 30,
-      "pl": 25.56,
-      "roi": 13.5
+      "pl": 24.56,
+      "roi": 12.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
