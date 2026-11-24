@@ -7658,10 +7658,18 @@
       "fav": {
         "horse": "ORANGE EMPEROR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-24T15:00:50.423Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-24|Tramore|15:15",
@@ -7700,21 +7708,40 @@
       },
       "recordedAt": "2026-11-24T15:20:47.908Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-24|Lingfield|15:38",
+      "date": "2026-11-24",
+      "course": "Lingfield",
+      "time": "15:38",
+      "horse": "FAR FAR OUT",
+      "price": "3/1",
+      "runners": 14,
+      "liveHorse": "MERITOCRATIC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MERITOCRATIC",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-24T15:30:52.875Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 281,
+    "recorded": 282,
     "pick": {
-      "settled": 275,
+      "settled": 276,
       "won": 62,
-      "pl": 25.13,
-      "roi": 9.1
+      "pl": 24.13,
+      "roi": 8.7
     },
     "favourite": {
-      "settled": 271,
+      "settled": 272,
       "won": 91,
-      "pl": -6.56,
-      "roi": -2.4
+      "pl": -7.56,
+      "roi": -2.8
     },
     "agree": {
       "settled": 84,
@@ -7723,12 +7750,12 @@
       "roi": 1.9
     },
     "disagree": {
-      "settled": 191,
+      "settled": 192,
       "won": 30,
-      "pl": 23.56,
-      "roi": 12.3
+      "pl": 22.56,
+      "roi": 11.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795522882535
+  "lastBackfill": 1795534252928
 }
