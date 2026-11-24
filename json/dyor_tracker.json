@@ -7891,10 +7891,16 @@
       "fav": {
         "horse": "HAPPY LOVE",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-24T18:20:41.456Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     }
   ],
   "stats": {
@@ -7906,10 +7912,10 @@
       "roi": 6.8
     },
     "favourite": {
-      "settled": 278,
+      "settled": 279,
       "won": 91,
-      "pl": -13.56,
-      "roi": -4.9
+      "pl": -14.56,
+      "roi": -5.2
     },
     "agree": {
       "settled": 86,
@@ -7925,5 +7931,5 @@
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795534252928
+  "lastBackfill": 1795545647600
 }
