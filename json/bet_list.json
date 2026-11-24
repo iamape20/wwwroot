@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:41:06.575Z",
+  "generatedAt": "2026-11-24T12:51:06.664Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Tramore",
+      "off": "12:45",
+      "horse": "FORTY FIFTY"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-23",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-24T12:41:06.476Z",
+    "updatedAt": "2026-11-24T12:51:06.566Z",
     "claude": {
       "races": 38,
       "won": 7,
