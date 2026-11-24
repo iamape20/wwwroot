@@ -32,5 +32,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
+      # 23-24 Nov 2026: 7 of 40 publishes failed here with "No artifacts named
+      # github-pages were found" - GitHub had not yet registered the artifact
+      # uploaded seconds before (the next publish always worked). Wait and
+      # retry once instead of failing.
       - id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 45
+      - id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
