@@ -8747,10 +8747,18 @@
       "fav": {
         "horse": "LADY'S GRACE",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "13/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T16:40:53.598Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "13/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Newcastle|17:00",
@@ -8789,27 +8797,46 @@
       },
       "recordedAt": "2026-11-25T17:01:01.417Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Kempton|17:20",
+      "date": "2026-11-25",
+      "course": "Kempton",
+      "time": "17:20",
+      "horse": "LEAN D'AISLINGEAN",
+      "price": "10/3",
+      "runners": 7,
+      "liveHorse": "HIGHEST PEAK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HIGHEST PEAK",
+        "price": "2/7",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T17:10:43.240Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 321,
+    "recorded": 322,
     "pick": {
-      "settled": 313,
+      "settled": 314,
       "won": 68,
-      "pl": 13.16,
-      "roi": 4.2
+      "pl": 12.16,
+      "roi": 3.9
     },
     "favourite": {
-      "settled": 310,
+      "settled": 311,
       "won": 100,
-      "pl": -20.73,
-      "roi": -6.7
+      "pl": -21.73,
+      "roi": -7
     },
     "agree": {
-      "settled": 95,
+      "settled": 96,
       "won": 34,
-      "pl": -1.64,
-      "roi": -1.7
+      "pl": -2.64,
+      "roi": -2.8
     },
     "disagree": {
       "settled": 218,
