@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:50:58.639Z",
+  "generatedAt": "2026-11-25T16:01:13.674Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-25",
       "course": "Hereford",
       "off": "15:37",
-      "horse": "SLAVETOTHERHYTHM"
-    }
-  ],
-  "recent": [
+      "horse": "SLAVETOTHERHYTHM",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-25",
       "course": "Wetherby",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-22",
-      "course": "Punchestown",
-      "off": "15:00",
-      "horse": "GAELIC WARRIOR",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-25T15:50:58.535Z",
+    "updatedAt": "2026-11-25T16:01:13.494Z",
     "claude": {
       "races": 38,
       "won": 7,
