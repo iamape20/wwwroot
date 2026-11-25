@@ -8774,10 +8774,16 @@
       "fav": {
         "horse": "SHADOW BOXER",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "3/1"
       },
       "recordedAt": "2026-11-25T16:50:51.600Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Dundalk|17:10",
@@ -8816,15 +8822,34 @@
       },
       "recordedAt": "2026-11-25T17:10:43.240Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Newcastle|17:30",
+      "date": "2026-11-25",
+      "course": "Newcastle",
+      "time": "17:30",
+      "horse": "AUNTIE JO",
+      "price": "16/1",
+      "runners": 14,
+      "liveHorse": "DC COGENT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DC COGENT",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T17:20:50.125Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 322,
+    "recorded": 323,
     "pick": {
-      "settled": 314,
+      "settled": 315,
       "won": 68,
-      "pl": 12.16,
-      "roi": 3.9
+      "pl": 11.16,
+      "roi": 3.5
     },
     "favourite": {
       "settled": 311,
@@ -8839,10 +8864,10 @@
       "roi": -2.8
     },
     "disagree": {
-      "settled": 218,
+      "settled": 219,
       "won": 34,
-      "pl": 14.81,
-      "roi": 6.8
+      "pl": 13.81,
+      "roi": 6.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
