@@ -8348,10 +8348,18 @@
       "fav": {
         "horse": "YOUNG CHURCHILL",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T14:21:20.363Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Hereford|14:37",
@@ -8409,27 +8417,46 @@
       },
       "recordedAt": "2026-11-25T14:41:17.067Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Dundalk|15:01",
+      "date": "2026-11-25",
+      "course": "Dundalk",
+      "time": "15:01",
+      "horse": "SHARPE RATIO",
+      "price": "8/11",
+      "runners": 14,
+      "liveHorse": "SHARPE RATIO",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SHARPE RATIO",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T14:51:04.793Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 307,
+    "recorded": 308,
     "pick": {
-      "settled": 299,
+      "settled": 300,
       "won": 68,
-      "pl": 27.16,
-      "roi": 9.1
+      "pl": 26.16,
+      "roi": 8.7
     },
     "favourite": {
-      "settled": 297,
+      "settled": 298,
       "won": 100,
-      "pl": -7.73,
-      "roi": -2.6
+      "pl": -8.73,
+      "roi": -2.9
     },
     "agree": {
-      "settled": 91,
+      "settled": 92,
       "won": 34,
-      "pl": 2.36,
-      "roi": 2.6
+      "pl": 1.36,
+      "roi": 1.5
     },
     "disagree": {
       "settled": 208,
