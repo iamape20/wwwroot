@@ -8826,10 +8826,16 @@
       "fav": {
         "horse": "HIGHEST PEAK",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/3"
       },
       "recordedAt": "2026-11-25T17:10:43.240Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Newcastle|17:30",
@@ -8845,10 +8851,18 @@
       "fav": {
         "horse": "DC COGENT",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T17:20:50.125Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Dundalk|17:40",
@@ -8868,21 +8882,40 @@
       },
       "recordedAt": "2026-11-25T17:30:55.430Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Kempton|17:50",
+      "date": "2026-11-25",
+      "course": "Kempton",
+      "time": "17:50",
+      "horse": "MAGICAL LIFE",
+      "price": "16/1",
+      "runners": 14,
+      "liveHorse": "ADMIRAL LEACH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ADMIRAL LEACH",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T17:40:42.725Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 324,
+    "recorded": 325,
     "pick": {
-      "settled": 316,
+      "settled": 318,
       "won": 68,
-      "pl": 10.16,
-      "roi": 3.2
+      "pl": 8.16,
+      "roi": 2.6
     },
     "favourite": {
-      "settled": 312,
+      "settled": 313,
       "won": 100,
-      "pl": -22.73,
-      "roi": -7.3
+      "pl": -23.73,
+      "roi": -7.6
     },
     "agree": {
       "settled": 96,
@@ -8891,10 +8924,10 @@
       "roi": -2.8
     },
     "disagree": {
-      "settled": 220,
+      "settled": 222,
       "won": 34,
-      "pl": 12.81,
-      "roi": 5.8
+      "pl": 10.81,
+      "roi": 4.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
