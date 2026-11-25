@@ -8067,10 +8067,14 @@
       "fav": {
         "horse": "METS TA CEINTURE",
         "price": "1/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/11"
       },
       "recordedAt": "2026-11-25T12:01:53.537Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/11"
     },
     {
       "id": "2026-11-25|Hereford|12:31",
@@ -8090,10 +8094,29 @@
       },
       "recordedAt": "2026-11-25T12:21:23.803Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Wetherby|12:46",
+      "date": "2026-11-25",
+      "course": "Wetherby",
+      "time": "12:46",
+      "horse": "MASTERMINDING",
+      "price": "11/1",
+      "runners": 12,
+      "liveHorse": "I HEARD A RUMOUR",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "I HEARD A RUMOUR",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T12:31:24.429Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 294,
+    "recorded": 295,
     "pick": {
       "settled": 291,
       "won": 68,
