@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T14:51:00.744Z",
+  "generatedAt": "2026-11-25T15:01:12.732Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,7 +13,13 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [],
+  "awaitingResult": [
+    {
+      "course": "Dundalk",
+      "off": "15:01",
+      "horse": "SHARPE RATIO"
+    }
+  ],
   "recent": [
     {
       "date": "2026-11-25",
@@ -182,7 +188,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-25T14:51:00.640Z",
+    "updatedAt": "2026-11-25T15:01:12.627Z",
     "claude": {
       "races": 38,
       "won": 7,
