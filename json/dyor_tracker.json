@@ -8666,10 +8666,18 @@
       "fav": {
         "horse": "BET YOU CAN'T",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T16:10:55.656Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/2",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Newcastle|16:25",
@@ -8685,10 +8693,18 @@
       "fav": {
         "horse": "MASSIMO BLUE",
         "price": "7/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T16:10:55.696Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Dundalk|16:40",
@@ -8708,21 +8724,40 @@
       },
       "recordedAt": "2026-11-25T16:31:20.564Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Kempton|16:50",
+      "date": "2026-11-25",
+      "course": "Kempton",
+      "time": "16:50",
+      "horse": "LADY'S GRACE",
+      "price": "5/4",
+      "runners": 9,
+      "liveHorse": "LADY'S GRACE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "LADY'S GRACE",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T16:40:53.598Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 318,
+    "recorded": 319,
     "pick": {
-      "settled": 310,
+      "settled": 312,
       "won": 68,
-      "pl": 16.16,
-      "roi": 5.2
+      "pl": 14.16,
+      "roi": 4.5
     },
     "favourite": {
-      "settled": 307,
+      "settled": 309,
       "won": 100,
-      "pl": -17.73,
-      "roi": -5.8
+      "pl": -19.73,
+      "roi": -6.4
     },
     "agree": {
       "settled": 95,
@@ -8731,10 +8766,10 @@
       "roi": -1.7
     },
     "disagree": {
-      "settled": 215,
+      "settled": 217,
       "won": 34,
-      "pl": 17.81,
-      "roi": 8.3
+      "pl": 15.81,
+      "roi": 7.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
