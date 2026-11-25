@@ -8090,10 +8090,14 @@
       "fav": {
         "horse": "NORTH GALE",
         "price": "2/7",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/9"
       },
       "recordedAt": "2026-11-25T12:21:23.803Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/9"
     },
     {
       "id": "2026-11-25|Wetherby|12:46",
@@ -8113,10 +8117,29 @@
       },
       "recordedAt": "2026-11-25T12:31:24.429Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Hereford|13:01",
+      "date": "2026-11-25",
+      "course": "Hereford",
+      "time": "13:01",
+      "horse": "SAINT ARGENTE",
+      "price": "4/11",
+      "runners": 10,
+      "liveHorse": "SAINT ARGENTE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SAINT ARGENTE",
+        "price": "4/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T12:51:18.842Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 295,
+    "recorded": 296,
     "pick": {
       "settled": 291,
       "won": 68,
