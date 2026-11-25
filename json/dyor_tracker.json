@@ -9061,25 +9061,52 @@
       "fav": {
         "horse": "MIDNIGHT MEDIA",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T19:50:38.474Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-25|Kempton|20:30",
+      "date": "2026-11-25",
+      "course": "Kempton",
+      "time": "20:30",
+      "horse": "RHYTHM N ROCK",
+      "price": "11/2",
+      "runners": 13,
+      "liveHorse": "SPLIT ELEVENS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SPLIT ELEVENS",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T20:20:38.340Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 331,
+    "recorded": 332,
     "pick": {
-      "settled": 323,
+      "settled": 324,
       "won": 68,
-      "pl": 3.16,
-      "roi": 1
+      "pl": 2.16,
+      "roi": 0.7
     },
     "favourite": {
-      "settled": 319,
+      "settled": 320,
       "won": 100,
-      "pl": -29.73,
-      "roi": -9.3
+      "pl": -30.73,
+      "roi": -9.6
     },
     "agree": {
       "settled": 96,
@@ -9088,10 +9115,10 @@
       "roi": -2.8
     },
     "disagree": {
-      "settled": 227,
+      "settled": 228,
       "won": 34,
-      "pl": 5.81,
-      "roi": 2.6
+      "pl": 4.81,
+      "roi": 2.1
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
