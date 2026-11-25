@@ -8138,10 +8138,18 @@
       "fav": {
         "horse": "SAINT ARGENTE",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T12:51:18.842Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/11",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-25|Wetherby|13:16",
@@ -8161,27 +8169,46 @@
       },
       "recordedAt": "2026-11-25T13:01:15.792Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-25|Hereford|13:31",
+      "date": "2026-11-25",
+      "course": "Hereford",
+      "time": "13:31",
+      "horse": "ONEHUNDREDNEIGHTY",
+      "price": "6/5",
+      "runners": 6,
+      "liveHorse": "ONEHUNDREDNEIGHTY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "ONEHUNDREDNEIGHTY",
+        "price": "6/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T13:21:16.572Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 297,
+    "recorded": 298,
     "pick": {
-      "settled": 292,
+      "settled": 293,
       "won": 68,
-      "pl": 34.16,
-      "roi": 11.7
+      "pl": 33.16,
+      "roi": 11.3
     },
     "favourite": {
-      "settled": 291,
+      "settled": 292,
       "won": 100,
-      "pl": -1.73,
-      "roi": -0.6
+      "pl": -2.73,
+      "roi": -0.9
     },
     "agree": {
-      "settled": 89,
+      "settled": 90,
       "won": 34,
-      "pl": 4.36,
-      "roi": 4.9
+      "pl": 3.36,
+      "roi": 3.7
     },
     "disagree": {
       "settled": 203,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T13:11:27.080Z",
+  "generatedAt": "2026-11-25T13:21:11.977Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-25",
       "course": "Hereford",
       "off": "13:01",
-      "horse": "SAINT ARGENTE"
-    }
-  ],
-  "recent": [
+      "horse": "SAINT ARGENTE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-25",
       "course": "Wetherby",
@@ -174,21 +179,10 @@
       "bsp": 1.77,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-22",
-      "course": "Lingfield",
-      "off": "12:25",
-      "horse": "SEA FORTRESS",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-25T13:11:26.969Z",
+    "updatedAt": "2026-11-25T13:21:11.865Z",
     "claude": {
       "races": 38,
       "won": 7,
