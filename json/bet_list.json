@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:20:46.895Z",
+  "generatedAt": "2026-11-25T17:30:52.147Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,17 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Dundalk",
-      "off": "17:10",
-      "horse": "LET'S SMASH IT"
-    },
-    {
       "course": "Kempton",
       "off": "17:20",
       "horse": "HIGHEST PEAK"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-25",
+      "course": "Dundalk",
+      "off": "17:10",
+      "horse": "LET'S SMASH IT",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-25",
       "course": "Kempton",
@@ -179,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-23",
-      "course": "Huntingdon",
-      "off": "13:45",
-      "horse": "CRYSTAL ISLAND",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 2.07480956,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-25T17:20:46.790Z",
+    "updatedAt": "2026-11-25T17:30:52.047Z",
     "claude": {
       "races": 38,
       "won": 7,
