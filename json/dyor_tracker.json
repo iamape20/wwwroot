@@ -9007,25 +9007,52 @@
       "fav": {
         "horse": "EL CORDOBES",
         "price": "10/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/10",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-25T18:51:41.066Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/2",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-25|Kempton|19:30",
+      "date": "2026-11-25",
+      "course": "Kempton",
+      "time": "19:30",
+      "horse": "HAMLET'S NIGHT",
+      "price": "20/1",
+      "runners": 14,
+      "liveHorse": "CLASSICAL ALLUSION",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CLASSICAL ALLUSION",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-25T19:20:42.046Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 329,
+    "recorded": 330,
     "pick": {
-      "settled": 321,
+      "settled": 322,
       "won": 68,
-      "pl": 5.16,
-      "roi": 1.6
+      "pl": 4.16,
+      "roi": 1.3
     },
     "favourite": {
-      "settled": 317,
+      "settled": 318,
       "won": 100,
-      "pl": -27.73,
-      "roi": -8.7
+      "pl": -28.73,
+      "roi": -9
     },
     "agree": {
       "settled": 96,
@@ -9034,10 +9061,10 @@
       "roi": -2.8
     },
     "disagree": {
-      "settled": 225,
+      "settled": 226,
       "won": 34,
-      "pl": 7.81,
-      "roi": 3.5
+      "pl": 6.81,
+      "roi": 3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
