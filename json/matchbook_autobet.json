@@ -1915,8 +1915,45 @@
       "pl": -1.71,
       "potAfter": 65.33,
       "settledAt": "2026-11-24T19:40:36.062Z"
+    },
+    {
+      "id": "2026-11-25|Wetherby|12:16",
+      "kind": "NAP",
+      "mode": "DRY RUN",
+      "date": "2026-11-25",
+      "course": "Wetherby",
+      "time": "12:16",
+      "horse": "METS TA CEINTURE",
+      "decidedAt": "2026-11-25T12:01:49.378Z",
+      "minutesBeforeOff": 14,
+      "potBefore": 65.33,
+      "claude": {
+        "action": "skip",
+        "reason": "Odds-on at about 1/9 after 259 days off and with no hurdle run on its record, so the tiny return does not cover the risk of a jumping mistake on its return."
+      },
+      "eventId": "34947574830900023",
+      "marketId": "34947574898803023",
+      "runnerId": "34947574900604023",
+      "price": 1.12,
+      "available": 164.98,
+      "depth": [
+        [
+          1.12,
+          164.98
+        ],
+        [
+          1.11,
+          4755.83
+        ],
+        [
+          1.1,
+          3909.72
+        ]
+      ],
+      "status": "skipped",
+      "reason": "Claude decided not to bet: Odds-on at about 1/9 after 259 days off and with no hurdle run on its record, so the tiny return does not cover the risk of a jumping mistake on its return."
     }
   ],
-  "updatedAt": "2026-11-25T11:51:18.814Z",
+  "updatedAt": "2026-11-25T12:01:49.379Z",
   "bankPeak": 109.65222
 }
