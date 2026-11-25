@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:31:07.919Z",
+  "generatedAt": "2026-11-25T15:40:53.094Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -15,12 +15,23 @@
   "today": [],
   "awaitingResult": [
     {
-      "course": "Wetherby",
-      "off": "15:16",
-      "horse": "NORTHERN SINGER"
+      "course": "Hereford",
+      "off": "15:37",
+      "horse": "SLAVETOTHERHYTHM"
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-25",
+      "course": "Wetherby",
+      "off": "15:16",
+      "horse": "NORTHERN SINGER",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-25",
       "course": "Dundalk",
@@ -174,21 +185,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-22",
-      "course": "Punchestown",
-      "off": "14:00",
-      "horse": "OLDSCHOOL OUTLAW",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-25T15:31:07.779Z",
+    "updatedAt": "2026-11-25T15:40:52.992Z",
     "claude": {
       "races": 38,
       "won": 7,
