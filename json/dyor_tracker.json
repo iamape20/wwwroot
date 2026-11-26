@@ -9391,10 +9391,18 @@
       "fav": {
         "horse": "DIEUX DILIGENCE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T13:10:53.183Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Taunton|13:30",
@@ -9433,21 +9441,59 @@
       },
       "recordedAt": "2026-11-26T13:31:00.189Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Thurles|13:56",
+      "date": "2026-11-26",
+      "course": "Thurles",
+      "time": "13:56",
+      "horse": "KENOUGH",
+      "price": "2/1",
+      "runners": 10,
+      "liveHorse": "NERIA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NERIA",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:41:04.690Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-26|Lingfield|13:47",
+      "date": "2026-11-26",
+      "course": "Lingfield",
+      "time": "13:47",
+      "horse": "GRIZZLED SQUIRREL",
+      "price": "28/1",
+      "runners": 9,
+      "liveHorse": "TRUE TO MY WORD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "TRUE TO MY WORD",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:41:04.839Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 344,
+    "recorded": 346,
     "pick": {
-      "settled": 338,
+      "settled": 339,
       "won": 74,
-      "pl": 8.44,
-      "roi": 2.5
+      "pl": 7.44,
+      "roi": 2.2
     },
     "favourite": {
-      "settled": 335,
+      "settled": 336,
       "won": 111,
-      "pl": -19.35,
-      "roi": -5.8
+      "pl": -20.35,
+      "roi": -6.1
     },
     "agree": {
       "settled": 100,
@@ -9456,10 +9502,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 238,
+      "settled": 239,
       "won": 36,
-      "pl": 6.59,
-      "roi": 2.8
+      "pl": 5.59,
+      "roi": 2.3
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
