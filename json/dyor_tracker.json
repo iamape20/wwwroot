@@ -9268,10 +9268,16 @@
       "fav": {
         "horse": "COOLER THAN ME",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-26T12:30:59.862Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Thurles|12:46",
@@ -9287,10 +9293,16 @@
       "fav": {
         "horse": "CHAMP KIELY",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-26T12:41:07.895Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "12/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Taunton|12:55",
@@ -9329,15 +9341,34 @@
       },
       "recordedAt": "2026-11-26T12:50:58.586Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Lingfield|13:12",
+      "date": "2026-11-26",
+      "course": "Lingfield",
+      "time": "13:12",
+      "horse": "KITSILANO",
+      "price": "16/1",
+      "runners": 6,
+      "liveHorse": "LIFETIME IN MILAN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LIFETIME IN MILAN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:01:06.704Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 340,
+    "recorded": 341,
     "pick": {
-      "settled": 334,
+      "settled": 336,
       "won": 74,
-      "pl": 12.44,
-      "roi": 3.7
+      "pl": 10.44,
+      "roi": 3.1
     },
     "favourite": {
       "settled": 334,
@@ -9352,10 +9383,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 234,
+      "settled": 236,
       "won": 36,
-      "pl": 10.59,
-      "roi": 4.5
+      "pl": 8.59,
+      "roi": 3.6
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
