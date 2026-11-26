@@ -201980,7 +201980,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "4/7",
+            "current_odds": "4/6",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -203108,13 +203108,13 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 1",
-                  "Odds 4/7",
+                  "Odds 4/6",
                   "Current favourite"
                 ],
                 "metrics": {
                   "rank": 1,
-                  "odds": "4/7",
-                  "decimal_odds": 1.5714285714285714,
+                  "odds": "4/6",
+                  "decimal_odds": 1.6666666666666665,
                   "favourite": true,
                   "runners_with_prices": 11
                 }
@@ -203246,7 +203246,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Steady",
-                "evidence": "4/6 → 4/7 (27 snapshots)"
+                "evidence": "4/6 → 4/6 (27 snapshots)"
               },
               "winningMark": {
                 "points": 1,
@@ -204626,7 +204626,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "17/2",
+            "current_odds": "10/1",
             "historical_odds": [],
             "race_history_stats": [
               {
@@ -206584,12 +206584,12 @@
                 "confidence": "High",
                 "reasons": [
                   "Market Rank 3",
-                  "Odds 17/2"
+                  "Odds 10/1"
                 ],
                 "metrics": {
                   "rank": 3,
-                  "odds": "17/2",
-                  "decimal_odds": 9.5,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -206719,7 +206719,7 @@
                 "points": 1,
                 "max": 1,
                 "answer": "Steamer",
-                "evidence": "12/1 → 17/2 (27 snapshots)"
+                "evidence": "12/1 → 10/1 (27 snapshots)"
               },
               "winningMark": {
                 "points": 1,
@@ -208680,8 +208680,8 @@
               },
               "sample_size": 50
             },
-            "v2_score": 51,
-            "power_rating": 51,
+            "v2_score": 50.5,
+            "power_rating": 50.5,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -208691,14 +208691,14 @@
                 "weighted": 15
               },
               "context": {
-                "score": 40,
+                "score": 45,
                 "weight": 0.15,
-                "weighted": 6
+                "weighted": 6.75
               },
               "market": {
-                "score": 80,
+                "score": 74,
                 "weight": 0.2,
-                "weighted": 16
+                "weighted": 14.8
               },
               "verdict": {
                 "score": 40,
@@ -208734,12 +208734,13 @@
               },
               "context": {
                 "engine": "context",
-                "score": 40,
+                "score": 45,
                 "confidence": "Low",
                 "reasons": [
                   "9 wins",
                   "8 places",
-                  "Ran 33 days ago"
+                  "Ran 33 days ago",
+                  "Booked jockey previously won on this horse (market rank 5)"
                 ],
                 "metrics": {
                   "averageOR": 56,
@@ -208749,19 +208750,19 @@
                   "daysSinceRun": 33,
                   "trainerFormPoints": 0,
                   "jockeyOnDebutantPoints": 0,
-                  "jockeyWonOutsiderPoints": 0
+                  "jockeyWonOutsiderPoints": 5
                 }
               },
               "market": {
                 "engine": "market",
-                "score": 80,
+                "score": 74,
                 "confidence": "Medium",
                 "reasons": [
-                  "Market Rank 4",
+                  "Market Rank 5",
                   "Odds 12/1"
                 ],
                 "metrics": {
-                  "rank": 4,
+                  "rank": 5,
                   "odds": "12/1",
                   "decimal_odds": 13,
                   "favourite": false,
@@ -208925,7 +208926,7 @@
             "checklist_points": "9.85/19.5",
             "checklist_earned_points": 9.85,
             "stat_rating": 10.31,
-            "meta_rating": 11.41,
+            "meta_rating": 10.5,
             "trainer_trend": null,
             "form_chance": 0.161,
             "form_facts": {
@@ -208971,7 +208972,7 @@
             "jockey_claim": 0,
             "current_class": "6",
             "ride_status": "RUNNER",
-            "current_odds": "12/1",
+            "current_odds": "10/1",
             "historical_odds": [],
             "race_history_stats": [],
             "horse_lifetime_stats": [],
@@ -209652,8 +209653,8 @@
               },
               "sample_size": 17
             },
-            "v2_score": 49.3,
-            "power_rating": 49.3,
+            "v2_score": 50.5,
+            "power_rating": 50.5,
             "confidence": 40,
             "confidence_grade": "CAUTIOUS",
             "rating_breakdown": {
@@ -209668,9 +209669,9 @@
                 "weighted": 4.5
               },
               "market": {
-                "score": 80,
+                "score": 86,
                 "weight": 0.2,
-                "weighted": 16
+                "weighted": 17.2
               },
               "verdict": {
                 "score": 60,
@@ -209727,16 +209728,16 @@
               },
               "market": {
                 "engine": "market",
-                "score": 80,
-                "confidence": "Medium",
+                "score": 86,
+                "confidence": "High",
                 "reasons": [
-                  "Market Rank 4",
-                  "Odds 12/1"
+                  "Market Rank 3",
+                  "Odds 10/1"
                 ],
                 "metrics": {
-                  "rank": 4,
-                  "odds": "12/1",
-                  "decimal_odds": 13,
+                  "rank": 3,
+                  "odds": "10/1",
+                  "decimal_odds": 11,
                   "favourite": false,
                   "runners_with_prices": 11
                 }
@@ -209866,7 +209867,7 @@
                 "points": 0,
                 "max": 1,
                 "answer": "Drifter",
-                "evidence": "15/2 → 12/1 (27 snapshots)"
+                "evidence": "15/2 → 10/1 (27 snapshots)"
               },
               "winningMark": {
                 "points": 1,
@@ -209901,7 +209902,7 @@
             "checklist_points": "9.2/18.5",
             "checklist_earned_points": 9.2,
             "stat_rating": 7.63,
-            "meta_rating": 11.34,
+            "meta_rating": 12.31,
             "trainer_trend": "flat",
             "form_chance": 0.057,
             "form_facts": {
