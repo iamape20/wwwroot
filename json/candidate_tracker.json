@@ -8271,7 +8271,11 @@
       "rating": 75.3,
       "runners": 4,
       "recordedAt": "2026-11-26T14:30:45.780Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Lingfield|14:57",
@@ -8284,14 +8288,26 @@
       "runners": 8,
       "recordedAt": "2026-11-26T14:50:57.148Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Thurles|15:06",
+      "date": "2026-11-26",
+      "course": "Thurles",
+      "time": "15:06",
+      "horse": "MOMENT OF GRACE",
+      "price": "1/1",
+      "rating": 72,
+      "runners": 18,
+      "recordedAt": "2026-11-26T15:00:49.035Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 504,
-    "settled": 495,
+    "recorded": 505,
+    "settled": 496,
     "won": 237,
-    "pl": -34.99,
-    "roi": -7.1
+    "pl": -35.99,
+    "roi": -7.3
   },
   "lastBackfill": 1795695670154
 }
