@@ -9418,10 +9418,18 @@
       "fav": {
         "horse": "COURAGEOUS STRIKE",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T13:21:08.586Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Market Rasen|13:39",
@@ -9479,21 +9487,40 @@
       },
       "recordedAt": "2026-11-26T13:41:04.839Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Taunton|14:05",
+      "date": "2026-11-26",
+      "course": "Taunton",
+      "time": "14:05",
+      "horse": "RAFFLES NOBU",
+      "price": "11/2",
+      "runners": 10,
+      "liveHorse": "ELECTRIC EDDY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ELECTRIC EDDY",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:50:56.218Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 346,
+    "recorded": 347,
     "pick": {
-      "settled": 339,
+      "settled": 340,
       "won": 74,
-      "pl": 7.44,
-      "roi": 2.2
+      "pl": 6.44,
+      "roi": 1.9
     },
     "favourite": {
-      "settled": 336,
+      "settled": 337,
       "won": 111,
-      "pl": -20.35,
-      "roi": -6.1
+      "pl": -21.35,
+      "roi": -6.3
     },
     "agree": {
       "settled": 100,
@@ -9502,10 +9529,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 239,
+      "settled": 240,
       "won": 36,
-      "pl": 5.59,
-      "roi": 2.3
+      "pl": 4.59,
+      "roi": 1.9
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
