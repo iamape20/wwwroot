@@ -9940,25 +9940,52 @@
       "fav": {
         "horse": "FORBIDDEN COLOURS",
         "price": "11/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T18:20:38.965Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "3/1",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-26|Chelmsford City|19:00",
+      "date": "2026-11-26",
+      "course": "Chelmsford City",
+      "time": "19:00",
+      "horse": "SPACE BOB",
+      "price": "5/4",
+      "runners": 6,
+      "liveHorse": "FORCE OF LIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FORCE OF LIGHT",
+        "price": "4/5",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T18:50:37.167Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 363,
+    "recorded": 364,
     "pick": {
-      "settled": 356,
+      "settled": 357,
       "won": 74,
-      "pl": -9.56,
-      "roi": -2.7
+      "pl": -10.56,
+      "roi": -3
     },
     "favourite": {
-      "settled": 349,
+      "settled": 350,
       "won": 111,
-      "pl": -33.35,
-      "roi": -9.6
+      "pl": -34.35,
+      "roi": -9.8
     },
     "agree": {
       "settled": 101,
@@ -9967,10 +9994,10 @@
       "roi": 0.8
     },
     "disagree": {
-      "settled": 255,
+      "settled": 256,
       "won": 36,
-      "pl": -10.41,
-      "roi": -4.1
+      "pl": -11.41,
+      "roi": -4.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
