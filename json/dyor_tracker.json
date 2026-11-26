@@ -9732,10 +9732,18 @@
       "fav": {
         "horse": "KILIFI CREEK",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T15:00:49.842Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Market Rasen|15:24",
@@ -9774,21 +9782,40 @@
       },
       "recordedAt": "2026-11-26T15:20:47.043Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Thurles|15:39",
+      "date": "2026-11-26",
+      "course": "Thurles",
+      "time": "15:39",
+      "horse": "BOWGATE STREET",
+      "price": "6/1",
+      "runners": 18,
+      "liveHorse": "MIGHT BE THE ONE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MIGHT BE THE ONE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T15:30:49.846Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 357,
+    "recorded": 358,
     "pick": {
-      "settled": 349,
+      "settled": 350,
       "won": 74,
-      "pl": -2.56,
-      "roi": -0.7
+      "pl": -3.56,
+      "roi": -1
     },
     "favourite": {
-      "settled": 344,
+      "settled": 345,
       "won": 111,
-      "pl": -28.35,
-      "roi": -8.2
+      "pl": -29.35,
+      "roi": -8.5
     },
     "agree": {
       "settled": 100,
@@ -9797,12 +9824,12 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 249,
+      "settled": 250,
       "won": 36,
-      "pl": -4.41,
-      "roi": -1.8
+      "pl": -5.41,
+      "roi": -2.2
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795695672728
+  "lastBackfill": 1795707049862
 }
