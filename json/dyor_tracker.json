@@ -9657,10 +9657,18 @@
       "fav": {
         "horse": "JUKEBOX D'EDDY",
         "price": "5/2",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T14:40:53.546Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Lingfield|14:57",
@@ -9718,21 +9726,40 @@
       },
       "recordedAt": "2026-11-26T15:00:49.842Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Market Rasen|15:24",
+      "date": "2026-11-26",
+      "course": "Market Rasen",
+      "time": "15:24",
+      "horse": "NEVADA SAMBA",
+      "price": "9/2",
+      "runners": 9,
+      "liveHorse": "MONJEU DE CHAILLAC",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MONJEU DE CHAILLAC",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T15:10:49.696Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 355,
+    "recorded": 356,
     "pick": {
-      "settled": 347,
+      "settled": 348,
       "won": 74,
-      "pl": -0.56,
-      "roi": -0.2
+      "pl": -1.56,
+      "roi": -0.4
     },
     "favourite": {
-      "settled": 343,
+      "settled": 344,
       "won": 111,
-      "pl": -27.35,
-      "roi": -8
+      "pl": -28.35,
+      "roi": -8.2
     },
     "agree": {
       "settled": 100,
@@ -9741,10 +9768,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 247,
+      "settled": 248,
       "won": 36,
-      "pl": -2.41,
-      "roi": -1
+      "pl": -3.41,
+      "roi": -1.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
