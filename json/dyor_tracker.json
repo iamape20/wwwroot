@@ -9318,10 +9318,16 @@
       "fav": {
         "horse": "DUBLINOFFICECALLIN",
         "price": "9/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-26T12:41:07.947Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Market Rasen|13:04",
@@ -9379,15 +9385,34 @@
       },
       "recordedAt": "2026-11-26T13:10:53.183Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Taunton|13:30",
+      "date": "2026-11-26",
+      "course": "Taunton",
+      "time": "13:30",
+      "horse": "TARITINO",
+      "price": "11/4",
+      "runners": 7,
+      "liveHorse": "COURAGEOUS STRIKE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "COURAGEOUS STRIKE",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:21:08.586Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 342,
+    "recorded": 343,
     "pick": {
-      "settled": 336,
+      "settled": 337,
       "won": 74,
-      "pl": 10.44,
-      "roi": 3.1
+      "pl": 9.44,
+      "roi": 2.8
     },
     "favourite": {
       "settled": 334,
@@ -9402,10 +9427,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 236,
+      "settled": 237,
       "won": 36,
-      "pl": 8.59,
-      "roi": 3.6
+      "pl": 7.59,
+      "roi": 3.2
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
