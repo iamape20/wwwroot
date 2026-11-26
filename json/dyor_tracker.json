@@ -9368,7 +9368,11 @@
       "fav": {
         "horse": "LIFETIME IN MILAN",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "11/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T13:01:06.704Z",
       "stake": 1,
@@ -9445,10 +9449,16 @@
       "fav": {
         "horse": "CHATTY GIRL",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T13:31:00.189Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "3/1"
     },
     {
       "id": "2026-11-26|Thurles|13:56",
@@ -9506,10 +9516,29 @@
       },
       "recordedAt": "2026-11-26T13:50:56.218Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Market Rasen|14:14",
+      "date": "2026-11-26",
+      "course": "Market Rasen",
+      "time": "14:14",
+      "horse": "LADRONNE",
+      "price": "12/1",
+      "runners": 9,
+      "liveHorse": "JURY'S IN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "JURY'S IN",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T14:01:29.745Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 347,
+    "recorded": 348,
     "pick": {
       "settled": 340,
       "won": 74,
@@ -9517,10 +9546,10 @@
       "roi": 1.9
     },
     "favourite": {
-      "settled": 337,
+      "settled": 339,
       "won": 111,
-      "pl": -21.35,
-      "roi": -6.3
+      "pl": -23.35,
+      "roi": -6.9
     },
     "agree": {
       "settled": 100,
