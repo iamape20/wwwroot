@@ -2028,8 +2028,43 @@
       "pl": -1.8,
       "potAfter": 70.4,
       "settledAt": "2026-11-25T20:20:36.652Z"
+    },
+    {
+      "id": "2026-11-26|Market Rasen|11:54",
+      "kind": "NAP",
+      "mode": "DRY RUN",
+      "date": "2026-11-26",
+      "course": "Market Rasen",
+      "time": "11:54",
+      "horse": "COOLTOBECARELESS",
+      "decidedAt": "2026-11-26T11:41:08.337Z",
+      "minutesBeforeOff": 13,
+      "potBefore": 70.4,
+      "note": "half stake: price 1.58 is in the 1.5-2 band",
+      "eventId": "34956129730800023",
+      "marketId": "34956129791401002",
+      "runnerId": "34956129792000002",
+      "price": 1.58,
+      "available": 1040.07,
+      "depth": [
+        [
+          1.58,
+          1040.07
+        ],
+        [
+          1.57,
+          1110.42
+        ],
+        [
+          1.56,
+          587.47
+        ]
+      ],
+      "status": "placed",
+      "stake": 3.52,
+      "matched": 3.52
     }
   ],
-  "updatedAt": "2026-11-26T11:31:19.387Z",
+  "updatedAt": "2026-11-26T11:41:08.342Z",
   "bankPeak": 109.65222
 }
