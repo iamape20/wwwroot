@@ -9917,14 +9917,37 @@
       "fav": {
         "horse": "DOWMAN",
         "price": "7/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/1"
       },
       "recordedAt": "2026-11-26T17:50:42.404Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
+    },
+    {
+      "id": "2026-11-26|Chelmsford City|18:30",
+      "date": "2026-11-26",
+      "course": "Chelmsford City",
+      "time": "18:30",
+      "horse": "OVERBUDGET",
+      "price": "11/4",
+      "runners": 7,
+      "liveHorse": "FORBIDDEN COLOURS",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FORBIDDEN COLOURS",
+        "price": "11/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T18:20:38.965Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 362,
+    "recorded": 363,
     "pick": {
       "settled": 356,
       "won": 74,
