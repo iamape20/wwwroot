@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T13:21:05.102Z",
+  "generatedAt": "2026-11-26T13:30:57.319Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-26",
       "course": "Market Rasen",
       "off": "13:04",
-      "horse": "KALA CONTI"
-    }
-  ],
-  "recent": [
+      "horse": "KALA CONTI",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-26",
       "course": "Market Rasen",
@@ -174,21 +179,10 @@
       "bsp": 1.30316042,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-23",
-      "course": "Newcastle",
-      "off": "17:15",
-      "horse": "FAITHFUL",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-26T13:21:04.999Z",
+    "updatedAt": "2026-11-26T13:30:57.220Z",
     "claude": {
       "races": 38,
       "won": 7,

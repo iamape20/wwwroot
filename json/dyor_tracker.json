@@ -9343,10 +9343,16 @@
       "fav": {
         "horse": "KALA CONTI",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T12:50:58.586Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "85/40"
     },
     {
       "id": "2026-11-26|Lingfield|13:12",
@@ -9365,7 +9371,11 @@
         "stake": 1
       },
       "recordedAt": "2026-11-26T13:01:06.704Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "16/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Thurles|13:21",
@@ -9404,21 +9414,40 @@
       },
       "recordedAt": "2026-11-26T13:21:08.586Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Market Rasen|13:39",
+      "date": "2026-11-26",
+      "course": "Market Rasen",
+      "time": "13:39",
+      "horse": "NATUS VINCERE",
+      "price": "10/3",
+      "runners": 9,
+      "liveHorse": "CHATTY GIRL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHATTY GIRL",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T13:31:00.189Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 343,
+    "recorded": 344,
     "pick": {
-      "settled": 337,
+      "settled": 338,
       "won": 74,
-      "pl": 9.44,
-      "roi": 2.8
+      "pl": 8.44,
+      "roi": 2.5
     },
     "favourite": {
-      "settled": 334,
+      "settled": 335,
       "won": 111,
-      "pl": -18.35,
-      "roi": -5.5
+      "pl": -19.35,
+      "roi": -5.8
     },
     "agree": {
       "settled": 100,
@@ -9427,10 +9456,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 237,
+      "settled": 238,
       "won": 36,
-      "pl": 7.59,
-      "roi": 3.2
+      "pl": 6.59,
+      "roi": 2.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
