@@ -9967,19 +9967,44 @@
       "fav": {
         "horse": "FORCE OF LIGHT",
         "price": "4/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-26T18:50:37.167Z",
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/4",
+      "pl": -1,
+      "settledAt": "lost"
+    },
+    {
+      "id": "2026-11-26|Chelmsford City|19:30",
+      "date": "2026-11-26",
+      "course": "Chelmsford City",
+      "time": "19:30",
+      "horse": "HONEY DALE",
+      "price": "15/8",
+      "runners": 12,
+      "liveHorse": "HONEY DALE",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "HONEY DALE",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T19:20:45.703Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 364,
+    "recorded": 365,
     "pick": {
-      "settled": 357,
+      "settled": 358,
       "won": 74,
-      "pl": -10.56,
-      "roi": -3
+      "pl": -11.56,
+      "roi": -3.2
     },
     "favourite": {
       "settled": 350,
@@ -9994,10 +10019,10 @@
       "roi": 0.8
     },
     "disagree": {
-      "settled": 256,
+      "settled": 257,
       "won": 36,
-      "pl": -11.41,
-      "roi": -4.5
+      "pl": -12.41,
+      "roi": -4.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
