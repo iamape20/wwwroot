@@ -9164,10 +9164,14 @@
       "fav": {
         "horse": "COOLTOBECARELESS",
         "price": "1/2",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/7"
       },
       "recordedAt": "2026-11-26T11:41:10.658Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/7"
     },
     {
       "id": "2026-11-26|Thurles|12:11",
@@ -9187,10 +9191,29 @@
       },
       "recordedAt": "2026-11-26T12:01:44.083Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Taunton|12:20",
+      "date": "2026-11-26",
+      "course": "Taunton",
+      "time": "12:20",
+      "horse": "ARMS PARK",
+      "price": "7/4",
+      "runners": 6,
+      "liveHorse": "FORTIS ET LIBER",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "FORTIS ET LIBER",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T12:11:11.280Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 334,
+    "recorded": 335,
     "pick": {
       "settled": 331,
       "won": 74,
