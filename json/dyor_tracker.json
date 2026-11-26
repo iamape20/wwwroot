@@ -9214,10 +9214,18 @@
       "fav": {
         "horse": "FORTIS ET LIBER",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T12:11:11.280Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Market Rasen|12:29",
@@ -9256,21 +9264,59 @@
       },
       "recordedAt": "2026-11-26T12:30:59.862Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Thurles|12:46",
+      "date": "2026-11-26",
+      "course": "Thurles",
+      "time": "12:46",
+      "horse": "GERRI COLOMBE",
+      "price": "17/2",
+      "runners": 7,
+      "liveHorse": "CHAMP KIELY",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CHAMP KIELY",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T12:41:07.895Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-26|Taunton|12:55",
+      "date": "2026-11-26",
+      "course": "Taunton",
+      "time": "12:55",
+      "horse": "MAKINBECON",
+      "price": "5/1",
+      "runners": 8,
+      "liveHorse": "DUBLINOFFICECALLIN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "DUBLINOFFICECALLIN",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T12:41:07.947Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 337,
+    "recorded": 339,
     "pick": {
-      "settled": 332,
+      "settled": 333,
       "won": 74,
-      "pl": 14.44,
-      "roi": 4.3
+      "pl": 13.44,
+      "roi": 4
     },
     "favourite": {
-      "settled": 332,
+      "settled": 333,
       "won": 111,
-      "pl": -16.35,
-      "roi": -4.9
+      "pl": -17.35,
+      "roi": -5.2
     },
     "agree": {
       "settled": 100,
@@ -9279,10 +9325,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 232,
+      "settled": 233,
       "won": 36,
-      "pl": 12.59,
-      "roi": 5.4
+      "pl": 11.59,
+      "roi": 5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
