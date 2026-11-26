@@ -9474,10 +9474,16 @@
       "fav": {
         "horse": "NERIA",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-26T13:41:04.690Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "11/10",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Lingfield|13:47",
@@ -9493,10 +9499,18 @@
       "fav": {
         "horse": "TRUE TO MY WORD",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/6",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-26T13:41:04.839Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "33/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-26|Taunton|14:05",
@@ -9535,21 +9549,40 @@
       },
       "recordedAt": "2026-11-26T14:01:29.745Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-26|Lingfield|14:22",
+      "date": "2026-11-26",
+      "course": "Lingfield",
+      "time": "14:22",
+      "horse": "ROYAL WAY",
+      "price": "14/1",
+      "runners": 6,
+      "liveHorse": "LAUGHING JOHN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "LAUGHING JOHN",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-26T14:10:55.008Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 348,
+    "recorded": 349,
     "pick": {
-      "settled": 340,
+      "settled": 342,
       "won": 74,
-      "pl": 6.44,
-      "roi": 1.9
+      "pl": 4.44,
+      "roi": 1.3
     },
     "favourite": {
-      "settled": 339,
+      "settled": 340,
       "won": 111,
-      "pl": -23.35,
-      "roi": -6.9
+      "pl": -24.35,
+      "roi": -7.2
     },
     "agree": {
       "settled": 100,
@@ -9558,10 +9591,10 @@
       "roi": 1.8
     },
     "disagree": {
-      "settled": 240,
+      "settled": 242,
       "won": 36,
-      "pl": 4.59,
-      "roi": 1.9
+      "pl": 2.59,
+      "roi": 1.1
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
