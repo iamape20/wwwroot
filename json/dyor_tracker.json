@@ -10782,14 +10782,37 @@
       "fav": {
         "horse": "PROBING",
         "price": "4/9",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-27T16:31:13.020Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
+    },
+    {
+      "id": "2026-11-27|Southwell|17:15",
+      "date": "2026-11-27",
+      "course": "Southwell",
+      "time": "17:15",
+      "horse": "FLICK OF AN EYE",
+      "price": "11/4",
+      "runners": 9,
+      "liveHorse": "EZZ AL LEITH",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "EZZ AL LEITH",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T17:01:03.961Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 394,
+    "recorded": 395,
     "pick": {
       "settled": 382,
       "won": 79,
