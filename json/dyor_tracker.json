@@ -10251,10 +10251,18 @@
       "fav": {
         "horse": "INVINO HONNETETE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T12:21:04.913Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Newbury|12:40",
@@ -10293,27 +10301,46 @@
       },
       "recordedAt": "2026-11-27T12:41:10.412Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Doncaster|13:00",
+      "date": "2026-11-27",
+      "course": "Doncaster",
+      "time": "13:00",
+      "horse": "MASTERIUS",
+      "price": "2/1",
+      "runners": 5,
+      "liveHorse": "MATTY'S MATE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MATTY'S MATE",
+        "price": "8/15",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T12:50:57.923Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 375,
+    "recorded": 376,
     "pick": {
-      "settled": 369,
+      "settled": 370,
       "won": 79,
-      "pl": -7.86,
-      "roi": -2.1
+      "pl": -8.86,
+      "roi": -2.4
     },
     "favourite": {
-      "settled": 367,
+      "settled": 368,
       "won": 125,
-      "pl": -10.98,
-      "roi": -3
+      "pl": -11.98,
+      "roi": -3.3
     },
     "agree": {
-      "settled": 106,
+      "settled": 107,
       "won": 41,
-      "pl": 2.56,
-      "roi": 2.4
+      "pl": 1.56,
+      "roi": 1.5
     },
     "disagree": {
       "settled": 263,
