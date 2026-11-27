@@ -10830,10 +10830,18 @@
       "fav": {
         "horse": "CHICAGO CARAY",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "7/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T17:20:56.304Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Southwell|17:45",
@@ -10853,21 +10861,40 @@
       },
       "recordedAt": "2026-11-27T17:30:54.587Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Dundalk|18:00",
+      "date": "2026-11-27",
+      "course": "Dundalk",
+      "time": "18:00",
+      "horse": "MOYANNA CASTLE",
+      "price": "10/3",
+      "runners": 14,
+      "liveHorse": "RIA'S ANGEL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "RIA'S ANGEL",
+        "price": "3/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T17:50:47.339Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 397,
+    "recorded": 398,
     "pick": {
-      "settled": 383,
+      "settled": 384,
       "won": 79,
-      "pl": -21.86,
-      "roi": -5.7
+      "pl": -22.86,
+      "roi": -6
     },
     "favourite": {
-      "settled": 378,
+      "settled": 379,
       "won": 125,
-      "pl": -21.98,
-      "roi": -5.8
+      "pl": -22.98,
+      "roi": -6.1
     },
     "agree": {
       "settled": 111,
@@ -10876,10 +10903,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 272,
+      "settled": 273,
       "won": 38,
-      "pl": -19.42,
-      "roi": -7.1
+      "pl": -20.42,
+      "roi": -7.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
