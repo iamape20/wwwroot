@@ -10709,10 +10709,18 @@
       "fav": {
         "horse": "HARBOUR LIGHT",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T15:20:51.270Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Southwell|15:45",
@@ -10728,25 +10736,48 @@
       "fav": {
         "horse": "EL FOX",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/3"
       },
       "recordedAt": "2026-11-27T15:30:56.460Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
+    },
+    {
+      "id": "2026-11-27|Southwell|16:15",
+      "date": "2026-11-27",
+      "course": "Southwell",
+      "time": "16:15",
+      "horse": "GRACIOUS GIFT",
+      "price": "2/1",
+      "runners": 9,
+      "liveHorse": "GRACIOUS GIFT",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "GRACIOUS GIFT",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T16:01:11.320Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 392,
+    "recorded": 393,
     "pick": {
-      "settled": 381,
+      "settled": 382,
       "won": 79,
-      "pl": -19.86,
-      "roi": -5.2
+      "pl": -20.86,
+      "roi": -5.5
     },
     "favourite": {
-      "settled": 377,
+      "settled": 378,
       "won": 125,
-      "pl": -20.98,
-      "roi": -5.6
+      "pl": -21.98,
+      "roi": -5.8
     },
     "agree": {
       "settled": 111,
@@ -10755,10 +10786,10 @@
       "roi": -2.2
     },
     "disagree": {
-      "settled": 270,
+      "settled": 271,
       "won": 38,
-      "pl": -17.42,
-      "roi": -6.5
+      "pl": -18.42,
+      "roi": -6.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
