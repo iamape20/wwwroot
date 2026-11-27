@@ -10205,10 +10205,14 @@
       "fav": {
         "horse": "STICK TO THE BOARD",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/11"
       },
       "recordedAt": "2026-11-27T12:01:27.895Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "4/11"
     },
     {
       "id": "2026-11-27|Musselburgh|12:20",
@@ -10247,10 +10251,29 @@
       },
       "recordedAt": "2026-11-27T12:21:04.913Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Newbury|12:40",
+      "date": "2026-11-27",
+      "course": "Newbury",
+      "time": "12:40",
+      "horse": "COUNTRY MILE",
+      "price": "5/2",
+      "runners": 3,
+      "liveHorse": "KLUB DE REVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KLUB DE REVE",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T12:31:00.902Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 373,
+    "recorded": 374,
     "pick": {
       "settled": 369,
       "won": 79,
