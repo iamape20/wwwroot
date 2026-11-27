@@ -10228,10 +10228,14 @@
       "fav": {
         "horse": "NEVERSHEDATEAR",
         "price": "5/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-27T12:11:03.528Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "13/8"
     },
     {
       "id": "2026-11-27|Doncaster|12:30",
@@ -10270,10 +10274,29 @@
       },
       "recordedAt": "2026-11-27T12:31:00.902Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Musselburgh|12:50",
+      "date": "2026-11-27",
+      "course": "Musselburgh",
+      "time": "12:50",
+      "horse": "HUNTERS SPRING",
+      "price": "7/1",
+      "runners": 7,
+      "liveHorse": "NOVAK",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOVAK",
+        "price": "2/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T12:41:10.412Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 374,
+    "recorded": 375,
     "pick": {
       "settled": 369,
       "won": 79,
