@@ -10551,10 +10551,14 @@
       "fav": {
         "horse": "ANXIOUS MOMENTS",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "1/1"
       },
       "recordedAt": "2026-11-27T14:31:03.675Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "1/1"
     },
     {
       "id": "2026-11-27|Southwell|14:40",
@@ -10601,10 +10605,48 @@
       },
       "recordedAt": "2026-11-27T14:50:57.315Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Musselburgh|15:07",
+      "date": "2026-11-27",
+      "course": "Musselburgh",
+      "time": "15:07",
+      "horse": "BEAT THE RETREAT",
+      "price": "7/2",
+      "runners": 8,
+      "liveHorse": "PRESENTANDCORRECT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "PRESENTANDCORRECT",
+        "price": "10/3",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T15:00:56.812Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-27|Southwell|15:15",
+      "date": "2026-11-27",
+      "course": "Southwell",
+      "time": "15:15",
+      "horse": "MILITARY ORDER",
+      "price": "8/11",
+      "runners": 6,
+      "liveHorse": "MILITARY ORDER",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "MILITARY ORDER",
+        "price": "8/11",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T15:00:56.828Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 387,
+    "recorded": 389,
     "pick": {
       "settled": 377,
       "won": 79,
