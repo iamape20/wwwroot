@@ -10401,10 +10401,16 @@
       "fav": {
         "horse": "BOWMORE",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T13:21:16.606Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-27|Newbury|13:50",
@@ -10424,10 +10430,29 @@
       },
       "recordedAt": "2026-11-27T13:41:09.187Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Musselburgh|14:00",
+      "date": "2026-11-27",
+      "course": "Musselburgh",
+      "time": "14:00",
+      "horse": "SCRIABIN",
+      "price": "6/1",
+      "runners": 5,
+      "liveHorse": "MASTERFIELD",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MASTERFIELD",
+        "price": "13/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T13:51:01.686Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 380,
+    "recorded": 381,
     "pick": {
       "settled": 373,
       "won": 79,
@@ -10435,10 +10460,10 @@
       "roi": -3.2
     },
     "favourite": {
-      "settled": 369,
+      "settled": 370,
       "won": 125,
-      "pl": -12.98,
-      "roi": -3.5
+      "pl": -13.98,
+      "roi": -3.8
     },
     "agree": {
       "settled": 107,
