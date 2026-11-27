@@ -10153,10 +10153,16 @@
       "fav": {
         "horse": "GUEVARA",
         "price": "6/5",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "10/11"
       },
       "recordedAt": "2026-11-27T11:41:07.304Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Doncaster|12:00",
@@ -10195,15 +10201,34 @@
       },
       "recordedAt": "2026-11-27T12:01:27.895Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Musselburgh|12:20",
+      "date": "2026-11-27",
+      "course": "Musselburgh",
+      "time": "12:20",
+      "horse": "NEVERSHEDATEAR",
+      "price": "5/4",
+      "runners": 6,
+      "liveHorse": "NEVERSHEDATEAR",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "NEVERSHEDATEAR",
+        "price": "5/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T12:11:03.528Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 371,
+    "recorded": 372,
     "pick": {
-      "settled": 367,
+      "settled": 368,
       "won": 79,
-      "pl": -5.86,
-      "roi": -1.6
+      "pl": -6.86,
+      "roi": -1.9
     },
     "favourite": {
       "settled": 366,
@@ -10218,12 +10243,12 @@
       "roi": 3.4
     },
     "disagree": {
-      "settled": 262,
+      "settled": 263,
       "won": 38,
-      "pl": -9.42,
-      "roi": -3.6
+      "pl": -10.42,
+      "roi": -4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795762890635
+  "lastBackfill": 1795781463544
 }
