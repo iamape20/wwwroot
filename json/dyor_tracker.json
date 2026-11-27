@@ -10936,10 +10936,18 @@
       "fav": {
         "horse": "INVINCIBLE IRISH",
         "price": "4/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T18:21:06.118Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/5",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Southwell|18:45",
@@ -10959,27 +10967,46 @@
       },
       "recordedAt": "2026-11-27T18:30:55.238Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Dundalk|19:00",
+      "date": "2026-11-27",
+      "course": "Dundalk",
+      "time": "19:00",
+      "horse": "THALORIA",
+      "price": "7/1",
+      "runners": 13,
+      "liveHorse": "GO ATHLETICO",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "GO ATHLETICO",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T18:50:54.970Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 401,
+    "recorded": 402,
     "pick": {
-      "settled": 387,
+      "settled": 388,
       "won": 79,
-      "pl": -25.86,
-      "roi": -6.7
+      "pl": -26.86,
+      "roi": -6.9
     },
     "favourite": {
-      "settled": 381,
+      "settled": 382,
       "won": 125,
-      "pl": -24.98,
-      "roi": -6.6
+      "pl": -25.98,
+      "roi": -6.8
     },
     "agree": {
-      "settled": 111,
+      "settled": 112,
       "won": 41,
-      "pl": -2.44,
-      "roi": -2.2
+      "pl": -3.44,
+      "roi": -3.1
     },
     "disagree": {
       "settled": 276,
