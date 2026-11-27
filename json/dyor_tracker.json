@@ -10759,14 +10759,37 @@
       "fav": {
         "horse": "GRACIOUS GIFT",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-27T16:01:11.320Z",
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
+    },
+    {
+      "id": "2026-11-27|Southwell|16:45",
+      "date": "2026-11-27",
+      "course": "Southwell",
+      "time": "16:45",
+      "horse": "PROBING",
+      "price": "4/9",
+      "runners": 11,
+      "liveHorse": "PROBING",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PROBING",
+        "price": "4/9",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T16:31:13.020Z",
       "stake": 1
     }
   ],
   "stats": {
-    "recorded": 393,
+    "recorded": 394,
     "pick": {
       "settled": 382,
       "won": 79,
