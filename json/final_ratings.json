@@ -57721,8 +57721,8 @@
               },
               "sample_size": 37
             },
-            "v2_score": 52,
-            "power_rating": 52,
+            "v2_score": 53,
+            "power_rating": 53,
             "confidence": 54,
             "confidence_grade": "MODERATE",
             "rating_breakdown": {
@@ -57732,9 +57732,9 @@
                 "weighted": 15.9
               },
               "context": {
-                "score": 75,
+                "score": 82,
                 "weight": 0.15,
-                "weighted": 11.25
+                "weighted": 12.3
               },
               "market": {
                 "score": 74,
@@ -57775,13 +57775,14 @@
               },
               "context": {
                 "engine": "context",
-                "score": 75,
+                "score": 82,
                 "confidence": "High",
                 "reasons": [
                   "Average OR 108",
                   "7 wins",
                   "12 places",
                   "Ran 22 days ago",
+                  "Trainer hot form: 4/16 placed last 14 days",
                   "Booked jockey previously won on this horse (market rank 5)"
                 ],
                 "metrics": {
@@ -57790,7 +57791,7 @@
                   "places": 12,
                   "averageFinish": 3.6,
                   "daysSinceRun": 22,
-                  "trainerFormPoints": 0,
+                  "trainerFormPoints": 7,
                   "jockeyOnDebutantPoints": 0,
                   "jockeyWonOutsiderPoints": 5
                 }
@@ -57822,7 +57823,7 @@
                 }
               }
             },
-            "checklist_rating": 39.7,
+            "checklist_rating": 40.8,
             "checklist_breakdown": {
               "class": {
                 "points": 0.5,
@@ -57891,11 +57892,10 @@
                 "evidence": "3 of 16 rides placed in the last 14 days"
               },
               "trainer": {
-                "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null,
-                "note": "No trainer profile data available"
+                "points": 1,
+                "max": 1,
+                "answer": "Yes",
+                "evidence": "4 of 16 runners placed in the last 14 days"
               },
               "weightChange": {
                 "points": 0.25,
@@ -57907,7 +57907,8 @@
                 "points": 0,
                 "max": 0,
                 "answer": "N/A",
-                "evidence": null
+                "evidence": null,
+                "note": "Fewer than 10 runs at this course on record"
               },
               "jockeyCourse": {
                 "points": 0,
@@ -57918,9 +57919,9 @@
               },
               "jockeyTrainerCombo": {
                 "points": 0,
-                "max": 0,
-                "answer": "N/A",
-                "evidence": null
+                "max": 1,
+                "answer": "No",
+                "evidence": "4.3% with this jockey (23 runs) vs 6% overall for this trainer"
               },
               "jockeyOnDebutant": {
                 "points": 0,
@@ -57965,11 +57966,11 @@
               "weightAdvantage": 12,
               "combined": 5.5
             },
-            "checklist_points": "6.55/16.5",
-            "checklist_earned_points": 6.55,
+            "checklist_points": "7.55/18.5",
+            "checklist_earned_points": 7.55,
             "stat_rating": 14.06,
-            "meta_rating": 3.51,
-            "trainer_trend": null,
+            "meta_rating": 3.84,
+            "trainer_trend": "hot",
             "form_chance": 0.07,
             "form_facts": {
               "runs": 37,
@@ -59601,7 +59602,7 @@
             "checklist_points": "5.75/14.5",
             "checklist_earned_points": 5.75,
             "stat_rating": 7.49,
-            "meta_rating": 2.51,
+            "meta_rating": 2.29,
             "trainer_trend": null,
             "form_chance": 0.117,
             "form_facts": {
