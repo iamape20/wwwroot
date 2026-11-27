@@ -10426,10 +10426,14 @@
       "fav": {
         "horse": "TAURUS BAY",
         "price": "6/4",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "11/8"
       },
       "recordedAt": "2026-11-27T13:41:09.187Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-11-27|Musselburgh|14:00",
@@ -10468,10 +10472,29 @@
       },
       "recordedAt": "2026-11-27T14:01:32.790Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Newbury|14:25",
+      "date": "2026-11-27",
+      "course": "Newbury",
+      "time": "14:25",
+      "horse": "TEDDY BLUE",
+      "price": "5/1",
+      "runners": 5,
+      "liveHorse": "ETALON",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ETALON",
+        "price": "15/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T14:11:01.250Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 382,
+    "recorded": 383,
     "pick": {
       "settled": 373,
       "won": 79,
