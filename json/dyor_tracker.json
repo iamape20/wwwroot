@@ -10601,10 +10601,18 @@
       "fav": {
         "horse": "LE FRIMEUR",
         "price": "2/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T14:50:57.315Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Musselburgh|15:07",
@@ -10620,10 +10628,18 @@
       "fav": {
         "horse": "PRESENTANDCORRECT",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T15:00:56.812Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "4/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Southwell|15:15",
@@ -10662,35 +10678,54 @@
       },
       "recordedAt": "2026-11-27T15:10:56.266Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Newbury|15:35",
+      "date": "2026-11-27",
+      "course": "Newbury",
+      "time": "15:35",
+      "horse": "LIHYAN",
+      "price": "4/1",
+      "runners": 13,
+      "liveHorse": "HARBOUR LIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "HARBOUR LIGHT",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T15:20:51.270Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 390,
+    "recorded": 391,
     "pick": {
-      "settled": 377,
+      "settled": 379,
       "won": 79,
-      "pl": -15.86,
-      "roi": -4.2
+      "pl": -17.86,
+      "roi": -4.7
     },
     "favourite": {
-      "settled": 373,
+      "settled": 375,
       "won": 125,
-      "pl": -16.98,
-      "roi": -4.6
+      "pl": -18.98,
+      "roi": -5.1
     },
     "agree": {
-      "settled": 108,
+      "settled": 109,
       "won": 41,
-      "pl": 0.56,
-      "roi": 0.5
+      "pl": -0.44,
+      "roi": -0.4
     },
     "disagree": {
-      "settled": 269,
+      "settled": 270,
       "won": 38,
-      "pl": -16.42,
-      "roi": -6.1
+      "pl": -17.42,
+      "roi": -6.5
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795781463544
+  "lastBackfill": 1795792851286
 }
