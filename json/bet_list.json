@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T22:00:29.976Z",
+  "generatedAt": "2026-11-27T07:01:21.322Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -22,9 +22,9 @@
       "horse": "MAHOLLIA",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.65063304,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-26",
@@ -55,9 +55,9 @@
       "horse": "COOLTOBECARELESS",
       "phase": "STOPPED",
       "result": "won",
-      "bsp": null,
-      "pl": null,
-      "settledAt": null
+      "bsp": 1.67,
+      "pl": 0,
+      "settledAt": "betfair_sp"
     },
     {
       "date": "2026-11-25",
@@ -182,7 +182,7 @@
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-26T22:00:29.866Z",
+    "updatedAt": "2026-11-27T07:01:21.205Z",
     "claude": {
       "races": 38,
       "won": 7,
