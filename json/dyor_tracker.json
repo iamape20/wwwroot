@@ -10378,10 +10378,14 @@
       "fav": {
         "horse": "IAMYOUARE",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/4"
       },
       "recordedAt": "2026-11-27T13:11:07.009Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "7/4"
     },
     {
       "id": "2026-11-27|Doncaster|13:35",
@@ -10401,10 +10405,29 @@
       },
       "recordedAt": "2026-11-27T13:21:16.606Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Newbury|13:50",
+      "date": "2026-11-27",
+      "course": "Newbury",
+      "time": "13:50",
+      "horse": "TAURUS BAY",
+      "price": "6/4",
+      "runners": 5,
+      "liveHorse": "TAURUS BAY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "TAURUS BAY",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T13:41:09.187Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 379,
+    "recorded": 380,
     "pick": {
       "settled": 373,
       "won": 79,
