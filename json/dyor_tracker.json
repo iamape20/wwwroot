@@ -10328,10 +10328,16 @@
       "fav": {
         "horse": "MATTY'S MATE",
         "price": "8/15",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "4/7",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-27T12:50:57.923Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "5/2"
     },
     {
       "id": "2026-11-27|Newbury|13:15",
@@ -10370,10 +10376,29 @@
       },
       "recordedAt": "2026-11-27T13:11:07.009Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Doncaster|13:35",
+      "date": "2026-11-27",
+      "course": "Doncaster",
+      "time": "13:35",
+      "horse": "TOOTHLESS",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "BOWMORE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "BOWMORE",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T13:21:16.606Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 378,
+    "recorded": 379,
     "pick": {
       "settled": 372,
       "won": 79,
@@ -10381,10 +10406,10 @@
       "roi": -2.9
     },
     "favourite": {
-      "settled": 368,
+      "settled": 369,
       "won": 125,
-      "pl": -11.98,
-      "roi": -3.3
+      "pl": -12.98,
+      "roi": -3.5
     },
     "agree": {
       "settled": 107,
