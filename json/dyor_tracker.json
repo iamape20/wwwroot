@@ -10449,10 +10449,16 @@
       "fav": {
         "horse": "MASTERFIELD",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "13/8"
       },
       "recordedAt": "2026-11-27T13:51:01.686Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-27|Doncaster|14:10",
@@ -10491,15 +10497,34 @@
       },
       "recordedAt": "2026-11-27T14:11:01.250Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-27|Musselburgh|14:32",
+      "date": "2026-11-27",
+      "course": "Musselburgh",
+      "time": "14:32",
+      "horse": "BRUCE BANNER",
+      "price": "5/2",
+      "runners": 6,
+      "liveHorse": "NOBOTHERATALL",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "NOBOTHERATALL",
+        "price": "2/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-27T14:21:03.869Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 383,
+    "recorded": 384,
     "pick": {
-      "settled": 373,
+      "settled": 374,
       "won": 79,
-      "pl": -11.86,
-      "roi": -3.2
+      "pl": -12.86,
+      "roi": -3.4
     },
     "favourite": {
       "settled": 370,
@@ -10514,10 +10539,10 @@
       "roi": 1.5
     },
     "disagree": {
-      "settled": 266,
+      "settled": 267,
       "won": 38,
-      "pl": -13.42,
-      "roi": -5
+      "pl": -14.42,
+      "roi": -5.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
