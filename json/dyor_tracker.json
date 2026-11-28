@@ -11184,10 +11184,16 @@
       "fav": {
         "horse": "PADDY DE POLE",
         "price": "11/10",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T11:21:34.866Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "11/8"
     },
     {
       "id": "2026-11-28|Newcastle|11:40",
@@ -11245,10 +11251,29 @@
       },
       "recordedAt": "2026-11-28T11:41:25.696Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newbury|12:00",
+      "date": "2026-11-28",
+      "course": "Newbury",
+      "time": "12:00",
+      "horse": "SAPPINGIRL",
+      "price": "4/1",
+      "runners": 13,
+      "liveHorse": "AQUA BLEU",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "AQUA BLEU",
+        "price": "5/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T11:51:33.090Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 409,
+    "recorded": 410,
     "pick": {
       "settled": 404,
       "won": 90,
@@ -11256,10 +11281,10 @@
       "roi": -3.1
     },
     "favourite": {
-      "settled": 404,
+      "settled": 405,
       "won": 144,
-      "pl": 3.37,
-      "roi": 0.8
+      "pl": 2.37,
+      "roi": 0.6
     },
     "agree": {
       "settled": 123,
