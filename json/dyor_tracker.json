@@ -11619,10 +11619,14 @@
       "fav": {
         "horse": "SCOTT'S LEGACY",
         "price": "3/10",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "2/7"
       },
       "recordedAt": "2026-11-28T13:21:35.483Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/7"
     },
     {
       "id": "2026-11-28|Fairyhouse|13:30",
@@ -11638,10 +11642,18 @@
       "fav": {
         "horse": "SARATOGA",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T13:21:35.498Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "9/4",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Newbury|13:40",
@@ -11680,21 +11692,59 @@
       },
       "recordedAt": "2026-11-28T13:41:14.396Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newcastle|14:00",
+      "date": "2026-11-28",
+      "course": "Newcastle",
+      "time": "14:00",
+      "horse": "GOLDEN ACE",
+      "price": "13/2",
+      "runners": 5,
+      "liveHorse": "ALEXEI",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ALEXEI",
+        "price": "11/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:51:03.439Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-28|Fairyhouse|14:05",
+      "date": "2026-11-28",
+      "course": "Fairyhouse",
+      "time": "14:05",
+      "horse": "LUREKA DU NOYER",
+      "price": "7/2",
+      "runners": 8,
+      "liveHorse": "IF YOU BELIEVE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IF YOU BELIEVE",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:51:03.604Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 426,
+    "recorded": 428,
     "pick": {
-      "settled": 414,
+      "settled": 415,
       "won": 90,
-      "pl": -22.67,
-      "roi": -5.5
+      "pl": -23.67,
+      "roi": -5.7
     },
     "favourite": {
-      "settled": 416,
+      "settled": 417,
       "won": 144,
-      "pl": -8.63,
-      "roi": -2.1
+      "pl": -9.63,
+      "roi": -2.3
     },
     "agree": {
       "settled": 125,
@@ -11703,10 +11753,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 289,
+      "settled": 290,
       "won": 40,
-      "pl": -29.08,
-      "roi": -10.1
+      "pl": -30.08,
+      "roi": -10.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
