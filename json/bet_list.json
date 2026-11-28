@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T16:30:59.460Z",
+  "generatedAt": "2026-11-28T16:40:39.234Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-28",
       "course": "Southwell",
       "off": "16:30",
-      "horse": "LEVENS HALL"
-    }
-  ],
-  "recent": [
+      "horse": "LEVENS HALL",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-28",
       "course": "Fairyhouse",
@@ -174,21 +179,10 @@
       "bsp": 1.41818587,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-25",
-      "course": "Dundalk",
-      "off": "17:10",
-      "horse": "LET'S SMASH IT",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-28T16:30:59.272Z",
+    "updatedAt": "2026-11-28T16:40:39.120Z",
     "claude": {
       "races": 38,
       "won": 7,

@@ -12116,31 +12116,39 @@
       "fav": {
         "horse": "LEVENS HALL",
         "price": "1/4",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/11",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T16:20:45.228Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "2/11",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 442,
     "pick": {
-      "settled": 430,
+      "settled": 431,
       "won": 90,
-      "pl": -38.67,
-      "roi": -9
+      "pl": -39.67,
+      "roi": -9.2
     },
     "favourite": {
-      "settled": 430,
+      "settled": 431,
       "won": 144,
-      "pl": -22.63,
-      "roi": -5.3
+      "pl": -23.63,
+      "roi": -5.5
     },
     "agree": {
-      "settled": 130,
+      "settled": 131,
       "won": 50,
-      "pl": 1.41,
-      "roi": 1.1
+      "pl": 0.41,
+      "roi": 0.3
     },
     "disagree": {
       "settled": 300,
