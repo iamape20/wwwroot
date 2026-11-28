@@ -8714,7 +8714,11 @@
       "rating": 59.9,
       "runners": 8,
       "recordedAt": "2026-11-28T14:01:48.805Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Newbury|14:20",
@@ -8727,14 +8731,38 @@
       "runners": 8,
       "recordedAt": "2026-11-28T14:10:58.071Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Bangor-on-Dee|14:45",
+      "date": "2026-11-28",
+      "course": "Bangor-on-Dee",
+      "time": "14:45",
+      "horse": "DOCTORS HILL",
+      "price": "6/5",
+      "rating": 80.2,
+      "runners": 9,
+      "recordedAt": "2026-11-28T14:31:07.609Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-28|Fairyhouse|14:40",
+      "date": "2026-11-28",
+      "course": "Fairyhouse",
+      "time": "14:40",
+      "horse": "GREEN HINT",
+      "price": "4/5",
+      "rating": 89.8,
+      "runners": 25,
+      "recordedAt": "2026-11-28T14:31:07.645Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 531,
-    "settled": 521,
+    "recorded": 533,
+    "settled": 522,
     "won": 250,
-    "pl": -36.94,
-    "roi": -7.1
+    "pl": -37.94,
+    "roi": -7.3
   },
   "lastBackfill": 1795870275296
 }
