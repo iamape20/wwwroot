@@ -11542,10 +11542,16 @@
       "fav": {
         "horse": "KNIGHT OF ALLEN",
         "price": "4/1",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "7/2"
       },
       "recordedAt": "2026-11-28T13:01:24.908Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "6/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Newcastle|13:25",
@@ -11580,10 +11586,16 @@
       "fav": {
         "horse": "QUEEN ALICE",
         "price": "1/1",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "6/5",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T13:11:25.407Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "10/3"
     },
     {
       "id": "2026-11-28|Bangor-on-Dee|13:33",
@@ -11622,21 +11634,40 @@
       },
       "recordedAt": "2026-11-28T13:21:35.498Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newbury|13:40",
+      "date": "2026-11-28",
+      "course": "Newbury",
+      "time": "13:40",
+      "horse": "FRONTIER PRINCE",
+      "price": "11/1",
+      "runners": 17,
+      "liveHorse": "MONEYGARROW",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "MONEYGARROW",
+        "price": "9/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:31:07.748Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 424,
+    "recorded": 425,
     "pick": {
-      "settled": 412,
+      "settled": 413,
       "won": 90,
-      "pl": -20.67,
-      "roi": -5
+      "pl": -21.67,
+      "roi": -5.2
     },
     "favourite": {
-      "settled": 414,
+      "settled": 415,
       "won": 144,
-      "pl": -6.63,
-      "roi": -1.6
+      "pl": -7.63,
+      "roi": -1.8
     },
     "agree": {
       "settled": 125,
@@ -11645,10 +11676,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 287,
+      "settled": 288,
       "won": 40,
-      "pl": -27.08,
-      "roi": -9.4
+      "pl": -28.08,
+      "roi": -9.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",

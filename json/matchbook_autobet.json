@@ -2215,8 +2215,45 @@
       "status": "placed",
       "stake": 1.99,
       "matched": 1.99
+    },
+    {
+      "id": "2026-11-28|Newbury|13:40|TRIP|MONEYGARROW",
+      "kind": "TRIP",
+      "mode": "DRY RUN",
+      "date": "2026-11-28",
+      "course": "Newbury",
+      "time": "13:40",
+      "horse": "MONEYGARROW",
+      "decidedAt": "2026-11-28T13:31:06.374Z",
+      "minutesBeforeOff": 9,
+      "potBefore": 79.95,
+      "claude": {
+        "action": "half",
+        "reason": "Fairly short price after 260 days off the track, so the long absence is a real risk."
+      },
+      "eventId": "34973523827302023",
+      "marketId": "34973523932200023",
+      "runnerId": "34973523936412023",
+      "price": 4.7,
+      "available": 43.21,
+      "depth": [
+        [
+          4.7,
+          43.21
+        ],
+        [
+          4.6,
+          459.51
+        ],
+        [
+          4.5,
+          334.76
+        ]
+      ],
+      "status": "skipped",
+      "reason": "stake £0.99 under the £1.00 minimum"
     }
   ],
-  "updatedAt": "2026-11-28T13:21:34.182Z",
+  "updatedAt": "2026-11-28T13:31:06.376Z",
   "bankPeak": 109.65222
 }

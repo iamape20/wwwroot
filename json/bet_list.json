@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T13:21:32.421Z",
+  "generatedAt": "2026-11-28T13:31:03.895Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-28",
       "course": "Doncaster",
       "off": "13:18",
-      "horse": "QUEEN ALICE"
-    }
-  ],
-  "recent": [
+      "horse": "QUEEN ALICE",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-28",
       "course": "Fairyhouse",
@@ -174,21 +179,10 @@
       "bsp": 1.84007898,
       "pl": 0,
       "settledAt": "betfair_sp"
-    },
-    {
-      "date": "2026-11-25",
-      "course": "Dundalk",
-      "off": "15:01",
-      "horse": "SHARPE RATIO",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-28T13:21:32.321Z",
+    "updatedAt": "2026-11-28T13:31:03.807Z",
     "claude": {
       "races": 38,
       "won": 7,
