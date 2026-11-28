@@ -11465,10 +11465,16 @@
       "fav": {
         "horse": "OLD COAST ROAD",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "5/4",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T12:41:21.642Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "2/1"
     },
     {
       "id": "2026-11-28|Fairyhouse|12:55",
@@ -11484,10 +11490,18 @@
       "fav": {
         "horse": "WESTERN DIEGO",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "9/2",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T12:41:21.833Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "14/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Bangor-on-Dee|13:00",
@@ -11526,21 +11540,59 @@
       },
       "recordedAt": "2026-11-28T13:01:24.908Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newcastle|13:25",
+      "date": "2026-11-28",
+      "course": "Newcastle",
+      "time": "13:25",
+      "horse": "KONFUSION",
+      "price": "12/1",
+      "runners": 10,
+      "liveHorse": "CREST OF FORTUNE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "CREST OF FORTUNE",
+        "price": "7/2",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:11:25.392Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-28|Doncaster|13:18",
+      "date": "2026-11-28",
+      "course": "Doncaster",
+      "time": "13:18",
+      "horse": "LADY LITIGATOR",
+      "price": "3/1",
+      "runners": 7,
+      "liveHorse": "QUEEN ALICE",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "QUEEN ALICE",
+        "price": "1/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:11:25.407Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 420,
+    "recorded": 422,
     "pick": {
-      "settled": 410,
+      "settled": 411,
       "won": 90,
-      "pl": -18.67,
-      "roi": -4.6
+      "pl": -19.67,
+      "roi": -4.8
     },
     "favourite": {
-      "settled": 412,
+      "settled": 414,
       "won": 144,
-      "pl": -4.63,
-      "roi": -1.1
+      "pl": -6.63,
+      "roi": -1.6
     },
     "agree": {
       "settled": 125,
@@ -11549,10 +11601,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 285,
+      "settled": 286,
       "won": 40,
-      "pl": -25.08,
-      "roi": -8.8
+      "pl": -26.08,
+      "roi": -9.1
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
