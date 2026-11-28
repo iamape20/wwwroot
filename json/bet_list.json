@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T14:50:48.979Z",
+  "generatedAt": "2026-11-28T15:00:58.460Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-28",
       "course": "Fairyhouse",
       "off": "14:40",
-      "horse": "GREEN HINT"
-    }
-  ],
-  "recent": [
+      "horse": "GREEN HINT",
+      "phase": "STOPPED",
+      "result": "won",
+      "bsp": null,
+      "pl": null,
+      "settledAt": null
+    },
     {
       "date": "2026-11-28",
       "course": "Bangor-on-Dee",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-25",
-      "course": "Hereford",
-      "off": "15:37",
-      "horse": "SLAVETOTHERHYTHM",
-      "phase": "STOPPED",
-      "result": "won",
-      "bsp": 1.72357444,
-      "pl": 0,
-      "settledAt": "betfair_sp"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-28T14:50:48.880Z",
+    "updatedAt": "2026-11-28T15:00:58.368Z",
     "claude": {
       "races": 38,
       "won": 7,
