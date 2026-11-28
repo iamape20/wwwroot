@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T15:50:40.448Z",
+  "generatedAt": "2026-11-28T16:01:02.625Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-28",
       "course": "Fairyhouse",
       "off": "15:43",
-      "horse": "UNCLE PAD"
-    }
-  ],
-  "recent": [
+      "horse": "UNCLE PAD",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-28",
       "course": "Fairyhouse",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-25",
-      "course": "Kempton",
-      "off": "16:20",
-      "horse": "BET YOU CAN'T",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-28T15:50:40.337Z",
+    "updatedAt": "2026-11-28T16:01:02.471Z",
     "claude": {
       "races": 38,
       "won": 7,
