@@ -11696,10 +11696,16 @@
       "fav": {
         "horse": "LIBERTY COACH",
         "price": "13/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "2/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T13:41:14.396Z",
-      "stake": 1
+      "stake": 1,
+      "result": "won",
+      "isp": "15/8"
     },
     {
       "id": "2026-11-28|Newcastle|14:00",
@@ -11757,10 +11763,29 @@
       },
       "recordedAt": "2026-11-28T14:01:50.665Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newbury|14:20",
+      "date": "2026-11-28",
+      "course": "Newbury",
+      "time": "14:20",
+      "horse": "WHITE NOISE",
+      "price": "17/2",
+      "runners": 8,
+      "liveHorse": "IDAHO SUN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "IDAHO SUN",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T14:10:58.904Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 429,
+    "recorded": 430,
     "pick": {
       "settled": 416,
       "won": 90,
@@ -11768,10 +11793,10 @@
       "roi": -5.9
     },
     "favourite": {
-      "settled": 418,
+      "settled": 419,
       "won": 144,
-      "pl": -10.63,
-      "roi": -2.5
+      "pl": -11.63,
+      "roi": -2.8
     },
     "agree": {
       "settled": 125,
