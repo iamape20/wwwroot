@@ -11438,10 +11438,18 @@
       "fav": {
         "horse": "PALAMON",
         "price": "11/8",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "15/8",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T12:31:15.489Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "15/8",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Newcastle|12:50",
@@ -11499,27 +11507,46 @@
       },
       "recordedAt": "2026-11-28T12:51:18.069Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newbury|13:10",
+      "date": "2026-11-28",
+      "course": "Newbury",
+      "time": "13:10",
+      "horse": "EL CAPITAINE",
+      "price": "5/1",
+      "runners": 17,
+      "liveHorse": "KNIGHT OF ALLEN",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "KNIGHT OF ALLEN",
+        "price": "4/1",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:01:24.908Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 419,
+    "recorded": 420,
     "pick": {
-      "settled": 409,
+      "settled": 410,
       "won": 90,
-      "pl": -17.67,
-      "roi": -4.3
+      "pl": -18.67,
+      "roi": -4.6
     },
     "favourite": {
-      "settled": 411,
+      "settled": 412,
       "won": 144,
-      "pl": -3.63,
-      "roi": -0.9
+      "pl": -4.63,
+      "roi": -1.1
     },
     "agree": {
-      "settled": 124,
+      "settled": 125,
       "won": 50,
-      "pl": 7.41,
-      "roi": 6
+      "pl": 6.41,
+      "roi": 5.1
     },
     "disagree": {
       "settled": 285,
