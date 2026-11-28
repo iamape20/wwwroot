@@ -12170,31 +12170,39 @@
       "fav": {
         "horse": "LADY MARIKO",
         "price": "10/3",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "10/3",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T17:20:48.219Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/3",
+      "pl": -1,
+      "settledAt": "lost"
     }
   ],
   "stats": {
     "recorded": 444,
     "pick": {
-      "settled": 432,
+      "settled": 433,
       "won": 90,
-      "pl": -40.67,
-      "roi": -9.4
+      "pl": -41.67,
+      "roi": -9.6
     },
     "favourite": {
-      "settled": 432,
+      "settled": 433,
       "won": 144,
-      "pl": -24.63,
-      "roi": -5.7
+      "pl": -25.63,
+      "roi": -5.9
     },
     "agree": {
-      "settled": 132,
+      "settled": 133,
       "won": 50,
-      "pl": -0.59,
-      "roi": -0.4
+      "pl": -1.59,
+      "roi": -1.2
     },
     "disagree": {
       "settled": 300,
