@@ -11517,10 +11517,16 @@
       "fav": {
         "horse": "TRINITY STREET",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "won",
+        "isp": "4/6"
       },
       "recordedAt": "2026-11-28T12:51:18.069Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "10/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Newbury|13:10",
@@ -11578,15 +11584,53 @@
       },
       "recordedAt": "2026-11-28T13:11:25.407Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Bangor-on-Dee|13:33",
+      "date": "2026-11-28",
+      "course": "Bangor-on-Dee",
+      "time": "13:33",
+      "horse": "SCOTT'S LEGACY",
+      "price": "3/10",
+      "runners": 8,
+      "liveHorse": "SCOTT'S LEGACY",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "SCOTT'S LEGACY",
+        "price": "3/10",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:21:35.483Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-28|Fairyhouse|13:30",
+      "date": "2026-11-28",
+      "course": "Fairyhouse",
+      "time": "13:30",
+      "horse": "BARTHOLOMEW",
+      "price": "2/1",
+      "runners": 4,
+      "liveHorse": "SARATOGA",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "SARATOGA",
+        "price": "11/8",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T13:21:35.498Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 422,
+    "recorded": 424,
     "pick": {
-      "settled": 411,
+      "settled": 412,
       "won": 90,
-      "pl": -19.67,
-      "roi": -4.8
+      "pl": -20.67,
+      "roi": -5
     },
     "favourite": {
       "settled": 414,
@@ -11601,10 +11645,10 @@
       "roi": 5.1
     },
     "disagree": {
-      "settled": 286,
+      "settled": 287,
       "won": 40,
-      "pl": -26.08,
-      "roi": -9.1
+      "pl": -27.08,
+      "roi": -9.4
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
