@@ -11209,10 +11209,18 @@
       "fav": {
         "horse": "LEADER ALLEN",
         "price": "8/11",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "8/13",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T11:31:57.261Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "5/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Fairyhouse|11:45",
@@ -11228,10 +11236,18 @@
       "fav": {
         "horse": "KING RASKO GREY",
         "price": "5/6",
-        "stake": 1
+        "stake": 1,
+        "result": "lost",
+        "isp": "1/1",
+        "pl": -1,
+        "settledAt": "lost"
       },
       "recordedAt": "2026-11-28T11:31:57.291Z",
-      "stake": 1
+      "stake": 1,
+      "result": "lost",
+      "isp": "1/1",
+      "pl": -1,
+      "settledAt": "lost"
     },
     {
       "id": "2026-11-28|Bangor-on-Dee|11:50",
@@ -11270,35 +11286,73 @@
       },
       "recordedAt": "2026-11-28T11:51:33.090Z",
       "stake": 1
+    },
+    {
+      "id": "2026-11-28|Newcastle|12:15",
+      "date": "2026-11-28",
+      "course": "Newcastle",
+      "time": "12:15",
+      "horse": "PASSENGERONTHESHIP",
+      "price": "6/4",
+      "runners": 6,
+      "liveHorse": "PASSENGERONTHESHIP",
+      "agreesWithLive": true,
+      "isFavourite": true,
+      "fav": {
+        "horse": "PASSENGERONTHESHIP",
+        "price": "6/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T12:02:24.339Z",
+      "stake": 1
+    },
+    {
+      "id": "2026-11-28|Doncaster|12:08",
+      "date": "2026-11-28",
+      "course": "Doncaster",
+      "time": "12:08",
+      "horse": "DOWN TO BUSINESS",
+      "price": "9/4",
+      "runners": 6,
+      "liveHorse": "ONE KNIGHT",
+      "agreesWithLive": false,
+      "isFavourite": false,
+      "fav": {
+        "horse": "ONE KNIGHT",
+        "price": "7/4",
+        "stake": 1
+      },
+      "recordedAt": "2026-11-28T12:02:24.362Z",
+      "stake": 1
     }
   ],
   "stats": {
-    "recorded": 410,
+    "recorded": 412,
     "pick": {
-      "settled": 404,
+      "settled": 406,
       "won": 90,
-      "pl": -12.67,
-      "roi": -3.1
+      "pl": -14.67,
+      "roi": -3.6
     },
     "favourite": {
-      "settled": 405,
+      "settled": 407,
       "won": 144,
-      "pl": 2.37,
-      "roi": 0.6
+      "pl": 0.37,
+      "roi": 0.1
     },
     "agree": {
-      "settled": 123,
+      "settled": 124,
       "won": 50,
-      "pl": 8.41,
-      "roi": 6.8
+      "pl": 7.41,
+      "roi": 6
     },
     "disagree": {
-      "settled": 281,
+      "settled": 282,
       "won": 40,
-      "pl": -21.08,
-      "roi": -7.5
+      "pl": -22.08,
+      "roi": -7.8
     }
   },
   "note": "Restarted 2026-11-16 (user: yes go ahead with the fix): Recent Form is now measured in lengths behind the WINNER (js/beatenToWinner.js); before, beaten_lengths was the gap to the horse in front and winning runs were skipped. Old record: json/dyor_tracker_before_20261116.json Also 2026-11-16 (before any bet was recorded): all 11 categories checked against the document - placed = each-way places, similar-course tier restored (user track matrix), split going strings, blinkers/visor only, jockey any time, draw by stall spread, no race-day leak.",
-  "lastBackfill": 1795849299242
+  "lastBackfill": 1795867344366
 }

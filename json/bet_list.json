@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T11:51:29.092Z",
+  "generatedAt": "2026-11-28T12:02:18.472Z",
   "phase": "STOPPED",
   "phaseMessage": "STOPPED - the forward test lost money (-14.4% over 121 bets). Do not bet this strategy.",
   "rules": [
@@ -13,14 +13,19 @@
   ],
   "morningMissing": false,
   "today": [],
-  "awaitingResult": [
+  "awaitingResult": [],
+  "recent": [
     {
+      "date": "2026-11-28",
       "course": "Fairyhouse",
       "off": "11:45",
-      "horse": "KING RASKO GREY"
-    }
-  ],
-  "recent": [
+      "horse": "KING RASKO GREY",
+      "phase": "STOPPED",
+      "result": "lost",
+      "bsp": null,
+      "pl": 0,
+      "settledAt": "lost"
+    },
     {
       "date": "2026-11-27",
       "course": "Southwell",
@@ -174,21 +179,10 @@
       "bsp": null,
       "pl": 0,
       "settledAt": "lost"
-    },
-    {
-      "date": "2026-11-25",
-      "course": "Hereford",
-      "off": "13:01",
-      "horse": "SAINT ARGENTE",
-      "phase": "STOPPED",
-      "result": "lost",
-      "bsp": null,
-      "pl": 0,
-      "settledAt": "lost"
     }
   ],
   "claudeRecord": {
-    "updatedAt": "2026-11-28T11:51:28.976Z",
+    "updatedAt": "2026-11-28T12:02:18.316Z",
     "claude": {
       "races": 38,
       "won": 7,
