@@ -2,7 +2,7 @@
   "mode": "DRY RUN",
   "startedAt": "2026-10-29T08:35:35.463Z",
   "startPot": 100,
-  "pot": 79.95,
+  "pot": 93.21,
   "bets": [
     {
       "id": "2026-10-30|Uttoxeter|13:07",
@@ -2214,7 +2214,11 @@
       ],
       "status": "placed",
       "stake": 1.99,
-      "matched": 1.99
+      "matched": 1.99,
+      "result": "won",
+      "pl": 13.26,
+      "potAfter": 93.21,
+      "settledAt": "2026-11-28T13:41:12.956Z"
     },
     {
       "id": "2026-11-28|Newbury|13:40|TRIP|MONEYGARROW",
@@ -2254,6 +2258,6 @@
       "reason": "stake £0.99 under the £1.00 minimum"
     }
   ],
-  "updatedAt": "2026-11-28T13:31:06.376Z",
+  "updatedAt": "2026-11-28T13:41:12.957Z",
   "bankPeak": 109.65222
 }
